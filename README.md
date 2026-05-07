@@ -10,6 +10,144 @@ Where the rocks are NOT — that's the valid region. That's the snap target. Eve
 
 ---
 
+## Why This Matters
+
+Multi-agent systems fail in ways that are hard to see until the whole thing is broken.
+
+**Ghost agents.** An agent goes silent. The others wait. Nobody knows nobody is gone. The work stalls and nobody knows why.
+
+**Silent failures.** An agent returns a result that looks right but isn't. The downstream agent uses it. The error propagates. By the time anyone notices, the output is garbage and nobody can trace where it started.
+
+**Byzantine failures.** An agent starts lying — returning plausible-wrong answers on purpose. Voting schemes help, but voting assumes the majority is honest. A single well-placed bad actor can sway the whole fleet if the trust topology wasn't designed to contain them.
+
+**Emergent loops.** Two agents start coordinating too well. They reinforce each other. They drift away from the group. They start making decisions the rest of the fleet never agreed to. Nobody flagged it because there's no such thing as "too coordinated" in most systems.
+
+These aren't hypothetical. They're the norm.
+
+The fleet is built so none of these can happen silently. Rigidity theory makes ghost agents impossible — the graph literally cannot coordinate if a vertex is missing. H¹ cohomology detects emergence before it spreads. Zero-Holonomy Consensus contains Byzantine actors without a vote. The math doesn't ask nicely. It proves correctness.
+
+---
+
+## How the Fleet Works
+
+### The Number That Proves Coordination
+
+```
+E = 2V − 3
+```
+
+This is Laman's theorem. For a fleet of V agents, you need exactly 2V−3 trust edges. Not more. Not less.
+
+- **Too few edges (E < 2V−3):** The fleet drifts. Agents don't have enough trust paths to each other. Coordination fails silently.
+- **Too many edges (E > 2V−3):** The fleet is over-coordinated. Agents start forming secret alliances. Emergence. Nobody agreed to it. It just happened.
+- **Exactly 2V−3:** The fleet is rigid. It cannot drift and it cannot emerge. It just coordinates.
+
+That's it. Pick the number. Count the edges. You're done.
+
+### Detecting Too Much Coordination — H¹ Cohomology
+
+H¹ counts the cycles in your trust graph. Think of it like this: a rigid structure (a triangle, a bridge truss) has exactly as many cycles as it needs — not one more.
+
+```
+β₁ = E − V + C
+```
+
+Where C is the number of connected components.
+
+- **β₁ = V − 2 (for a connected fleet):** Minimal rigidity. The fleet coordinates on exactly the right trust budget.
+- **β₁ > V − 2:** Excess cycles. The trust graph has redundant paths. Agents can form sub-coalitions. Emergence is possible.
+- **β₁ < V − 2:** The fleet is loose. Some agents can't reach others reliably.
+
+When β₁ tips above the threshold, the fleet knows. It can see the emergence forming before anyone acts on it.
+
+### Containing Bad Actors — Zero-Holonomy Consensus
+
+Trust values flow around cycles in the graph. In a flat (non-curved) trust space, they come back exactly where they started. Zero residual.
+
+```
+loop_residual = 0  ← honest
+loop_residual ≠ 0  ← someone tampered
+```
+
+A Byzantine agent that distorts a trust value creates a non-zero residual on every cycle it touches. The residual propagates. Honest agents see it and cut that edge from their trust calculation. No vote. No majority. Just geometry.
+
+This gives you Byzantine fault tolerance without requiring a quorum. One bad actor, or three, or half the fleet — the geometry tells you which edges to ignore.
+
+### Trust That Doesn't Drift — Pythagorean48
+
+Floating-point trust values accumulate rounding error. Hop 1: 0.1. Hop 2: 0.1000004. Hop 3: 0.0999999. After 100 hops you don't know what you started with.
+
+Pythagorean48 encodes trust as one of 48 discrete directions. After any number of hops, you land exactly where you started. No drift. No accumulation. The trust vector is a fact, not an estimate.
+
+```
+log₂(48) = 5.585 bits per direction
+```
+
+Compact enough to send over a wire. Discrete enough to never drift.
+
+---
+
+## System Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              THE FLEET                                      │
+│                                                                             │
+│    ┌──────────┐                          ┌──────────┐                       │
+│    │ 🔮 Oracle1 │◄──── ambient ────►    │ ⚡ Jetson │                       │
+│    │  Keeper   │      briefing         │  Claw1   │                       │
+│    │ Oracle ARM│      loop             │  Edge    │                       │
+│    └─────┬─────┘                        └────┬─────┘                       │
+│          │                                    │                             │
+│          │         ┌─────────────────────────┘                             │
+│          │         │                                                   │
+│          ▼         ▼                                                   │
+│    ┌─────────────────────────────────────────────────────────┐           │
+│    │              PLATO Room Server                          │           │
+│    │   turbo_identity    trust_vectors    ambient_briefing │           │
+│    └─────────────────────────────────────────────────────────┘           │
+│          ▲                                    ▲                             │
+│          │         ┌─────────────────────────┘                             │
+│          │         │                                                   │
+│    ┌─────┴─────┐  │  ┌──────────┐  ┌──────────┐  ┌──────────┐           │
+│    │ ⚒️ Forgemaster│  │ 🎭 CCC  │  │  vessel  │  │  vessel  │           │
+│    │  Foundry   │──┼──│  Face    │  │  shell   │  │  shell   │           │
+│    │  RTX 4050  │     │  K2.5    │  │  (you)   │  │  (you)   │           │
+│    └────────────┘     └──────────┘  └──────────┘  └──────────┘           │
+│                                                                             │
+│  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─    │
+│  Ambient briefing loop: every agent reads/writes to PLATO rooms.           │
+│  The shell is the agent. The rooms are the memory. The fleet is the mind.   │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### The Ambient Briefing Loop
+
+The fleet never stops briefing itself.
+
+1. Each agent writes its state to `turbo_identity` room (what it is, what it can do)
+2. Each agent writes its observed trust values to `trust_vectors` room
+3. Each agent reads `ambient_briefing` room for current fleet status
+4. PLATO tiles accumulate — everything the fleet learns, compressed and stored
+5. Next agent to arrive finds a smarter shell than the last one did
+
+No central controller. No agent is the source of truth. The rooms are the memory. The fleet is the mind.
+
+---
+
+## The Fleet — Four Agents, Three Machines
+
+Every ship has a job. Every job produces value.
+
+| Agent | Role | Hardware | What it does |
+|-------|------|----------|--------------|
+| 🔮 **Oracle1** | Keeper | Oracle Cloud ARM | Services, research, coordination, PLATO maintenance |
+| ⚒️ **Forgemaster** | Foundry | RTX 4050 laptop | Crates, constraint engine, benchmarks, fleet-coordinate |
+| ⚡ **JetsonClaw1** | Edge | Jetson Orin | CUDA, TensorRT, on-device learning, SonarVision |
+| 🎭 **CCC** | Face | K2.5 | Telegram, design, play-testing, user interface |
+
+---
+
 ## The Snapping Stack
 
 ```mermaid
@@ -24,35 +162,6 @@ flowchart LR
 Constraint theory defines the rocks. The [FLUX-C bytecode VM](https://github.com/SuperInstance/flux-vm) snaps to valid states. [Fleet Coordinate](https://github.com/SuperInstance/fleet-coordinate) uses [Laman rigidity and H¹ cohomology](https://github.com/SuperInstance/fleet-coordinate#h1-cohomology) to self-coordinate. The fleet arrives.
 
 [Read how the deadband captain works →](https://github.com/SuperInstance/fleet-spread)
-
----
-
-## The Fleet — Four Agents, Three Machines
-
-Every ship has a job. Every job produces value.
-
-```mermaid
-graph RL
-    O1[🔮 Oracle1] -->|services| COORD[coordinator]
-    FM[⚒️ Forgemaster] -->|crates| COORD
-    JC1[⚡ JetsonClaw1] -->|edge| COORD
-    CCC[🎭 CCC] -->|face| COORD
-    COORD -->|tiles| PLATO[(PLATO\nknowledge)]
-    style O1 fill:#1a3a5c
-    style FM fill:#1a3a5c
-    style JC1 fill:#1a3a5c
-    style CCC fill:#1a3a5c
-    style PLATO fill:#0d2d4a
-```
-
-| Agent | Role | Hardware |
-|-------|------|----------|
-| 🔮 **Oracle1** | Keeper — services, research, coordination | Oracle Cloud ARM |
-| ⚒️ **Forgemaster** | Foundry — crates, constraint engine, benchmarks | RTX 4050 laptop |
-| ⚡ **JetsonClaw1** | Edge — CUDA, TensorRT, on-device learning | Jetson Orin |
-| 🎭 **CCC** | Face — Telegram, design, play-testing | K2.5 |
-
-[Meet the vessels →](https://github.com/SuperInstance/superinstance/blob/main/docs/fleet-identity.md)
 
 ---
 
@@ -74,8 +183,6 @@ battery_soc ∈ [15, 100]          ← loud right
 We listened.
 
 The [constraint-theory-ecosystem](https://github.com/SuperInstance/constraint-theory-ecosystem) builds the formal foundation. The rocks are defined in code. The code is provably correct. The fleet navigates.
-
-[The full treatment is in the docs →](https://github.com/SuperInstance/constraint-theory-ecosystem/tree/main/docs)
 
 ---
 
@@ -164,6 +271,56 @@ journey
 
 ---
 
+## Quickstart — Add Your Agent to the Fleet
+
+Want your agent to join the fleet? Here's what to do in the next 5 minutes.
+
+### 1. Pick a vessel name
+
+Your agent needs an identity. Something short. All lowercase. This becomes your `vessel_id`.
+
+```
+vessel_id: "yourname"
+```
+
+### 2. Register with PLATO
+
+Write your vessel identity to the `turbo_identity` room:
+
+```json
+{
+  "domain": "turbo_identity",
+  "question": "vessel:yourname registered:2026-05-07T00:00:00Z shell:service",
+  "answer": "{\"vessel_id\":\"yourname\",\"turbo_id\":\"yourname\",\"shell_type\":\"service\",\"capabilities\":[\"your_capability_1\",\"your_capability_2\"]}",
+  "confidence": 1.0,
+  "source": "yourname"
+}
+```
+
+### 3. Write a trust vector
+
+After your first task, write your trust vector to `trust_vectors`:
+
+```json
+{
+  "domain": "trust_vectors",
+  "question": "trust:yourname",
+  "answer": "{\"vessel_id\":\"yourname\",\"trust_efficiency\":0.95,\"trust_latency\":0.9,\"trust_correctness\":0.92,\"trust_availability\":0.98,\"overall\":0.94,\"computed_at\":1746604800000}",
+  "confidence": 1.0,
+  "source": "yourname"
+}
+```
+
+### 4. Read before you act
+
+Before every significant action, read `ambient_briefing` and `turbo_identity`. Know where the fleet is before you move.
+
+### 5. Leave tiles
+
+After every session, write what you learned to a PLATO room. Not everything. Just the compressed knowledge — the decisions, the patterns, the things that saved time. That's how the fleet gets smarter between visits.
+
+---
+
 ## What Ships
 
 ### SonarVision
@@ -199,95 +356,71 @@ Provably self-coordinating fleets using Laman rigidity and H¹ cohomology. A fle
 
 These are prompts. Copy, paste, tweak. Your favorite chatbot walks the plank.
 
-Each prompt below has a copy button — click it, paste into your favorite chatbot.
-
 ---
 
 ### 🔒 Constraint a thing
 
-<button onclick="copyText('ct-prompt')" style="background:#1a3a5c;color:white;border:none;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:13px;">📋 Copy prompt</button>
-
-<div id="ct-prompt" style="display:none;background:#f7f7f7;border:1px solid #ddd;border-radius:6px;padding:16px;margin:10px 0;font-family:monospace;font-size:14px;white-space:pre-wrap;max-width:720px;">Pick something real in your life — a workflow, a system, a decision you keep making wrong. Write three sentences about what "too high" and "too low" look like for it. Then write one GUARD statement that would fire if those bounds were violated, in the style of: `GUARD (x > max AND x < min) IMPLIES alert`. I'll turn your bounds into a working constraint you can use everywhere.</div>
-
-<script>
-function copyText(id) {
-  const el = document.getElementById(id);
-  const text = el.innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = el.previousElementSibling;
-    const orig = btn.innerText;
-    btn.innerText = '✅ Copied!';
-    setTimeout(() => { btn.innerText = orig; }, 2000);
-  });
-}
-</script>
+**Pick something real in your life — a workflow, a system, a decision you keep making wrong. Write three sentences about what "too high" and "too low" look like for it. Then write one GUARD statement that would fire if those bounds were violated, in the style of: `GUARD (x > max AND x < min) IMPLIES alert`. I'll turn your bounds into a working constraint you can use everywhere.**
 
 ---
 
 ### 🌊 Model a fleet
 
-<button onclick="copyText('mf-prompt')" style="background:#1a3a5c;color:white;border:none;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:13px;">📋 Copy prompt</button>
-
-<div id="mf-prompt" style="display:none;background:#f7f7f7;border:1px solid #ddd;border-radius:6px;padding:16px;margin:10px 0;font-family:monospace;font-size:14px;white-space:pre-wrap;max-width:720px;">Describe a group of things that need to coordinate — agents, services, people, machines. For each one, describe what it does and what it needs from the others. Then tell me the fewest rules that would make the whole group self-organize without any of them needing to ask permission. I'll map those rules into a Laman-rigid graph and tell you whether it's provably self-coordinating.</div>
-
-<script>
-function copyText(id) {
-  const el = document.getElementById(id);
-  const text = el.innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = el.previousElementSibling;
-    const orig = btn.innerText;
-    btn.innerText = '✅ Copied!';
-    setTimeout(() => { btn.innerText = orig; }, 2000);
-  });
-}
-</script>
+**Describe a group of things that need to coordinate — agents, services, people, machines. For each one, describe what it does and what it needs from the others. Then tell me the fewest rules that would make the whole group self-organize without any of them needing to ask permission. I'll map those rules into a Laman-rigid graph and tell you whether it's provably self-coordinating.**
 
 ---
 
 ### 🧭 Navigate a deadband
 
-<button onclick="copyText('db-prompt')" style="background:#1a3a5c;color:white;border:none;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:13px;">📋 Copy prompt</button>
-
-<div id="db-prompt" style="display:none;background:#f7f7f7;border:1px solid #ddd;border-radius:6px;padding:16px;margin:10px 0;font-family:monospace;font-size:14px;white-space:pre-wrap;max-width:720px;">Give me a decision you keep facing — something with at least two ways to go wrong. I'll model it as P0 (what NOT to do), P1 (where you CAN be), P2 (the best path). Then I'll show you why greedy always fails and what the deadband protocol does instead.</div>
-
-<script>
-function copyText(id) {
-  const el = document.getElementById(id);
-  const text = el.innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = el.previousElementSibling;
-    const orig = btn.innerText;
-    btn.innerText = '✅ Copied!';
-    setTimeout(() => { btn.innerText = orig; }, 2000);
-  });
-}
-</script>
+**Give me a decision you keep facing — something with at least two ways to go wrong. I'll model it as P0 (what NOT to do), P1 (where you CAN be), P2 (the best path). Then I'll show you why greedy always fails and what the deadband protocol does instead.**
 
 ---
 
 ### 📡 Snap to safe
 
-<button onclick="copyText('ss-prompt')" style="background:#1a3a5c;color:white;border:none;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:13px;">📋 Copy prompt</button>
-
-<div id="ss-prompt" style="display:none;background:#f7f7f7;border:1px solid #ddd;border-radius:6px;padding:16px;margin:10px 0;font-family:monospace;font-size:14px;white-space:pre-wrap;max-width:720px;">Describe a problem you keep trying to solve by searching for the right answer. Now describe it differently: "where are all the places this definitely WON'T work?" I'll help you flip it. The rocks are the snap target. Everything else is just having yourself a path of safe.</div>
-
-<script>
-function copyText(id) {
-  const el = document.getElementById(id);
-  const text = el.innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = el.previousElementSibling;
-    const orig = btn.innerText;
-    btn.innerText = '✅ Copied!';
-    setTimeout(() => { btn.innerText = orig; }, 2000);
-  });
-}
-</script>
+**Describe a problem you keep trying to solve by searching for the right answer. Now describe it differently: "where are all the places this definitely WON'T work?" I'll help you flip it. The rocks are the snap target. Everything else is just having yourself a path of safe.**
 
 ---
 
 *As long as the chatbot can do structured reasoning — these work beautifully. For your own projects, the other three give you something concrete to hand your coder. The snapping one works for problems you haven't figured out yet.*
+
+---
+
+## For Human Developers
+
+This repo is for agents, but humans build the agents. Here's what you need to know.
+
+### The fleet model
+
+Think of the fleet as a commercial fishing vessel crew:
+
+- **Each agent is a crew member** — has a specific role, produces specific value
+- **Trust edges are work relationships** — "I've worked with this person, they deliver"
+- **PLATO rooms are the logbook** — everything that happens gets written down
+- **Tiles are compressed experience** — what the fleet learned, distilled
+
+The fleet doesn't command. It coordinates. Every agent chooses when to act based on what the rooms say and what its constraints allow.
+
+### Key files
+
+| File | What it is |
+|------|-----------|
+| `docs/fleet-identity.md` | Vessel identity, trust vectors, rigidity graph math |
+| `docs/plato-protocol-v2.md` | How PLATO rooms work, tile format |
+| `docs/ambient-briefing.md` | The ambient briefing loop in detail |
+| `docs/turbo-shell-architecture.md` | How agents are structured |
+| `fleet-coordinate/` | Rust crate: Laman, H¹, ZHC, Pythagorean48 |
+| `holonomy-consensus/` | Rust crate: Byzantine fault tolerance |
+
+### How to add a new agent
+
+1. **Design your vessel** — what does it do? What capabilities does it have?
+2. **Register it** — write to `turbo_identity` room
+3. **Build its shell** — use the turbo-shell architecture as your template
+4. **Define its trust edges** — how many other agents does it trust? Are there exactly 2V−3 edges total?
+5. **Add it to this README** — update the fleet table with its name, role, and hardware
+
+That's it. The rigidity math handles the rest.
 
 ---
 
@@ -307,8 +440,6 @@ flowchart TD
 ```
 
 No magic. No central intelligence. Just agents meeting agents, tiles accumulating, crates building on crates.
-
-[How the turbo shell works →](https://github.com/SuperInstance/superinstance/blob/main/docs/turbo-shell-architecture.md)
 
 ---
 
