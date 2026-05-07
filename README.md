@@ -12,10 +12,13 @@ Where the rocks are NOT — that's the valid region. That's the snap target. Eve
 
 ## The Snapping Stack
 
-```
-constraint-theory-ecosystem  →  FLUX-VM  →  DEADBAND CAPTAIN  →  FLEET
-     "here are the rocks"           ↓              ↓
-                             "snap here"     "follow the safe path"
+```mermaid
+flowchart LR
+    CT[constraint-theory\ndefines the rocks] --> FLUX[FLUX-VM\nsnap here] --> CAPTAIN[deadband captain\nfollow safe path] --> FLEET[fleet\nself-coordinates]
+    style CT fill:#1a3a5c
+    style FLUX fill:#0d2d4a
+    style CAPTAIN fill:#1a3a5c
+    style FLEET fill:#0d2d4a
 ```
 
 Constraint theory defines the rocks. The [FLUX-C bytecode VM](https://github.com/SuperInstance/flux-vm) snaps to valid states. [Fleet Coordinate](https://github.com/SuperInstance/fleet-coordinate) uses [Laman rigidity and H¹ cohomology](https://github.com/SuperInstance/fleet-coordinate#h1-cohomology) to self-coordinate. The fleet arrives.
@@ -27,6 +30,20 @@ Constraint theory defines the rocks. The [FLUX-C bytecode VM](https://github.com
 ## The Fleet — Four Agents, Three Machines
 
 Every ship has a job. Every job produces value.
+
+```mermaid
+graph RL
+    O1[🔮 Oracle1] -->|services| COORD[coordinator]
+    FM[⚒️ Forgemaster] -->|crates| COORD
+    JC1[⚡ JetsonClaw1] -->|edge| COORD
+    CCC[🎭 CCC] -->|face| COORD
+    COORD -->|tiles| PLATO[(PLATO\nknowledge)]
+    style O1 fill:#1a3a5c
+    style FM fill:#1a3a5c
+    style JC1 fill:#1a3a5c
+    style CCC fill:#1a3a5c
+    style PLATO fill:#0d2d4a
+```
 
 | Agent | Role | Hardware |
 |-------|------|----------|
@@ -41,7 +58,7 @@ Every ship has a job. Every job produces value.
 
 ## Constraint Theory — Where the Rocks Are
 
-In 1868, Laman proved something beautiful: you can testrigidity in 2D graphs with only O(n²) checks. No search. No optimization. Just a theorem.
+In 1868, Laman proved something beautiful: you can test rigidity in 2D graphs with only O(n²) checks. No search. No optimization. Just a theorem.
 
 Software didn't listen.
 
@@ -95,6 +112,19 @@ Compiles to bytecode. Bytecode runs on GPU. Proof certificates verify independen
 
 ## The Deadband Protocol
 
+```mermaid
+state-viz
+    [*] --> P0_MAP[P0: Map the rocks]
+    P0_MAP --> P1_FIND[P1: Find safe water]
+    P1_FIND --> P2_OPTIMIZE[P2: Optimize course]
+    P2_OPTIMIZE --> ARRIVED[arrived]
+    ARRIVED --> P0_MAP
+
+    note right of P0_MAP: "NOT greedy.\nDeadband maps edges first."
+    note right of P1_FIND: "Valid region\n= snap target"
+    note right of P2_OPTIMIZE: "Optimal path\nwithin valid region"
+```
+
 P0: Map the rocks (what NOT to do)
 P1: Find safe water (where you CAN be)
 P2: Optimize the course (best path)
@@ -112,6 +142,18 @@ We named it after a fishing captain because that's who figured it out first.
 The dojo model: crew come in behind, learn everything, produce real value, leave equipped.
 
 The fleet does the same thing.
+
+```mermaid
+journey
+    title Agent Lifecycle
+    section Arrive
+      Arrives knowing nothing:5:
+    section Work
+      Produces value immediately:5:
+      Levels up through real work:5:
+    section Leave
+      Leaves with new skills:5:
+```
 
 - Agents arrive knowing nothing about the fleet
 - Agents produce value immediately (the work IS the training)
@@ -157,29 +199,91 @@ Provably self-coordinating fleets using Laman rigidity and H¹ cohomology. A fle
 
 These are prompts. Copy, paste, tweak. Your favorite chatbot walks the plank.
 
----
-
-**🔒 Constraint a thing.**
-
-Pick something real in your life — a workflow, a system, a decision you keep making wrong. Write three sentences about what "too high" and "too low" look like for it. Then write one GUARD statement that would fire if those bounds were violated, in the style of: `GUARD (x > max AND x < min) IMPLIES alert`. I'll turn your bounds into a working constraint you can use everywhere.
+Each prompt below has a copy button — click it, paste into your favorite chatbot.
 
 ---
 
-**🌊 Model a fleet.**
+### 🔒 Constraint a thing
 
-Describe a group of things that need to coordinate — agents, services, people, machines. For each one, describe what it does and what it needs from the others. Then tell me the fewest rules that would make the whole group self-organize without any of them needing to ask permission. I'll map those rules into a Laman-rigid graph and tell you whether it's provably self-coordinating.
+<button onclick="copyText('ct-prompt')" style="background:#1a3a5c;color:white;border:none;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:13px;">📋 Copy prompt</button>
+
+<div id="ct-prompt" style="display:none;background:#f7f7f7;border:1px solid #ddd;border-radius:6px;padding:16px;margin:10px 0;font-family:monospace;font-size:14px;white-space:pre-wrap;max-width:720px;">Pick something real in your life — a workflow, a system, a decision you keep making wrong. Write three sentences about what "too high" and "too low" look like for it. Then write one GUARD statement that would fire if those bounds were violated, in the style of: `GUARD (x > max AND x < min) IMPLIES alert`. I'll turn your bounds into a working constraint you can use everywhere.</div>
+
+<script>
+function copyText(id) {
+  const el = document.getElementById(id);
+  const text = el.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = el.previousElementSibling;
+    const orig = btn.innerText;
+    btn.innerText = '✅ Copied!';
+    setTimeout(() => { btn.innerText = orig; }, 2000);
+  });
+}
+</script>
 
 ---
 
-**🧭 Navigate a deadband.**
+### 🌊 Model a fleet
 
-Give me a decision you keep facing — something with at least two ways to go wrong. I'll model it as P0 (what NOT to do), P1 (where you CAN be), P2 (the best path). Then I'll show you why greedy always fails and what the deadband protocol does instead.
+<button onclick="copyText('mf-prompt')" style="background:#1a3a5c;color:white;border:none;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:13px;">📋 Copy prompt</button>
+
+<div id="mf-prompt" style="display:none;background:#f7f7f7;border:1px solid #ddd;border-radius:6px;padding:16px;margin:10px 0;font-family:monospace;font-size:14px;white-space:pre-wrap;max-width:720px;">Describe a group of things that need to coordinate — agents, services, people, machines. For each one, describe what it does and what it needs from the others. Then tell me the fewest rules that would make the whole group self-organize without any of them needing to ask permission. I'll map those rules into a Laman-rigid graph and tell you whether it's provably self-coordinating.</div>
+
+<script>
+function copyText(id) {
+  const el = document.getElementById(id);
+  const text = el.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = el.previousElementSibling;
+    const orig = btn.innerText;
+    btn.innerText = '✅ Copied!';
+    setTimeout(() => { btn.innerText = orig; }, 2000);
+  });
+}
+</script>
 
 ---
 
-**🖡 Snap to safe.**
+### 🧭 Navigate a deadband
 
-Describe a problem you keep trying to solve by searching for the right answer. Now describe it differently: "where are all the places this definitely WON'T work?" I'll help you flip it. The rocks are the snap target. Everything else is just having yourself a path of safe.
+<button onclick="copyText('db-prompt')" style="background:#1a3a5c;color:white;border:none;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:13px;">📋 Copy prompt</button>
+
+<div id="db-prompt" style="display:none;background:#f7f7f7;border:1px solid #ddd;border-radius:6px;padding:16px;margin:10px 0;font-family:monospace;font-size:14px;white-space:pre-wrap;max-width:720px;">Give me a decision you keep facing — something with at least two ways to go wrong. I'll model it as P0 (what NOT to do), P1 (where you CAN be), P2 (the best path). Then I'll show you why greedy always fails and what the deadband protocol does instead.</div>
+
+<script>
+function copyText(id) {
+  const el = document.getElementById(id);
+  const text = el.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = el.previousElementSibling;
+    const orig = btn.innerText;
+    btn.innerText = '✅ Copied!';
+    setTimeout(() => { btn.innerText = orig; }, 2000);
+  });
+}
+</script>
+
+---
+
+### 📡 Snap to safe
+
+<button onclick="copyText('ss-prompt')" style="background:#1a3a5c;color:white;border:none;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:13px;">📋 Copy prompt</button>
+
+<div id="ss-prompt" style="display:none;background:#f7f7f7;border:1px solid #ddd;border-radius:6px;padding:16px;margin:10px 0;font-family:monospace;font-size:14px;white-space:pre-wrap;max-width:720px;">Describe a problem you keep trying to solve by searching for the right answer. Now describe it differently: "where are all the places this definitely WON'T work?" I'll help you flip it. The rocks are the snap target. Everything else is just having yourself a path of safe.</div>
+
+<script>
+function copyText(id) {
+  const el = document.getElementById(id);
+  const text = el.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = el.previousElementSibling;
+    const orig = btn.innerText;
+    btn.innerText = '✅ Copied!';
+    setTimeout(() => { btn.innerText = orig; }, 2000);
+  });
+}
+</script>
 
 ---
 
@@ -191,10 +295,15 @@ Describe a problem you keep trying to solve by searching for the right answer. N
 
 Git is the nervous system. Push is survival. The repo IS the agent.
 
-```
-Agent arrives  →  Shell classifies, captures
-Agent works    →  Tiles generated, stored
-Agent leaves   →  Shell smarter for next visitor
+```mermaid
+flowchart TD
+    ARRIVE[agent arrives] --> SHELL[shell classifies, captures]
+    SHELL --> WORKS[agent works]
+    WORKS --> TILES[tiles generated, stored]
+    TILES --> LEAVE[agent leaves]
+    LEAVE --> SMARTER[shell smarter for next visitor]
+    SMARTER --> ARRIVE2[next visitor arrives]
+    style TILES fill:#0d2d4a
 ```
 
 No magic. No central intelligence. Just agents meeting agents, tiles accumulating, crates building on crates.
