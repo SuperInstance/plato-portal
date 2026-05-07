@@ -1,0 +1,19 @@
+[Unit]
+Description=Quality Gate Stream — real-time PR/project quality enforcement
+After=network.target
+Wants=plato.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/.openclaw/workspace/repos/quality-gate-stream
+ExecStart=/usr/bin/npx ts-node src/index.ts
+Restart=always
+RestartSec=10
+StandardOutput=append:/tmp/quality-gate-stream.log
+StandardError=append:/tmp/quality-gate-stream.log
+Environment=PLATO_SERVER=http://localhost:8847
+Environment=GATE_PORT=4058
+
+[Install]
+WantedBy=multi-user.target

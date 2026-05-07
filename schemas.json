@@ -1,0 +1,568 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.superinstance.com/fleet/1.0.0",
+  "title": "SuperInstance Fleet Schemas",
+  "version": "1.0.0",
+  "description": "JSON Schema definitions for all SuperInstance fleet types",
+  "definitions": {
+    "ServiceStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "status", "response_time_ms", "consecutive_failures", "last_restart"],
+      "properties": {
+        "name": { "type": "string" },
+        "status": { "type": "string", "enum": ["up", "down", "degraded"] },
+        "response_time_ms": { "type": "number", "minimum": 0 },
+        "consecutive_failures": { "type": "integer", "minimum": 0 },
+        "last_restart": { "type": ["number", "null"] }
+      }
+    },
+    "AgentStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["agent_id", "last_heartbeat", "status"],
+      "properties": {
+        "agent_id": { "type": "string" },
+        "last_heartbeat": { "type": "number" },
+        "status": { "type": "string", "enum": ["active", "inactive", "unknown"] }
+      }
+    },
+    "PlatoHealthStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tile_flow_rate", "chain_length", "room_count"],
+      "properties": {
+        "tile_flow_rate": { "type": "number", "minimum": 0 },
+        "chain_length": { "type": "integer", "minimum": 0 },
+        "room_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "ZeroClawHealthStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["running", "last_log_activity"],
+      "properties": {
+        "running": { "type": "boolean" },
+        "last_log_activity": { "type": "number" }
+      }
+    },
+    "HealthReport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["timestamp", "services", "agents", "plato", "zeroclaw", "actions_taken"],
+      "properties": {
+        "timestamp": { "type": "number" },
+        "services": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/ServiceStatus" }
+        },
+        "agents": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/AgentStatus" }
+        },
+        "plato": { "$ref": "#/definitions/PlatoHealthStatus" },
+        "zeroclaw": { "$ref": "#/definitions/ZeroClawHealthStatus" },
+        "actions_taken": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "ConstraintOperator": {
+      "type": "string",
+      "enum": ["eq", "neq", "gt", "gte", "lt", "lte", "in", "nin", "contains", "regex"]
+    },
+    "Constraint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field", "operator", "value"],
+      "properties": {
+        "field": { "type": "string" },
+        "operator": { "$ref": "#/definitions/ConstraintOperator" },
+        "value": {},
+        "description": { "type": "string" }
+      }
+    },
+    "MutableConstraintModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "constraints", "enabled"],
+      "properties": {
+        "id": { "type": "string" },
+        "version": { "type": "integer", "minimum": 0 },
+        "constraints": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Constraint" }
+        },
+        "enabled": { "type": "boolean" },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      }
+    },
+    "OverridePattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "priority", "match_conditions", "overrides", "enabled", "created_at"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "priority": { "type": "integer" },
+        "match_conditions": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Constraint" }
+        },
+        "overrides": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "enabled": { "type": "boolean" },
+        "created_at": { "type": "number" },
+        "expires_at": { "type": "number" }
+      }
+    },
+    "OverrideEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "pattern_id", "triggered_at", "context", "applied_overrides", "source"],
+      "properties": {
+        "id": { "type": "string" },
+        "pattern_id": { "type": "string" },
+        "triggered_at": { "type": "number" },
+        "context": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "applied_overrides": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "source": { "type": "string" }
+      }
+    },
+    "DecisionDelta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "decision_id", "timestamp", "previous_value", "new_value", "reason"],
+      "properties": {
+        "id": { "type": "string" },
+        "decision_id": { "type": "string" },
+        "timestamp": { "type": "number" },
+        "previous_value": {},
+        "new_value": {},
+        "reason": { "type": "string" },
+        "agent_id": { "type": "string" }
+      }
+    },
+    "IntentGoalStatus": {
+      "type": "string",
+      "enum": ["pending", "in_progress", "completed", "failed", "cancelled"]
+    },
+    "IntentGoalPriority": {
+      "type": "string",
+      "enum": ["critical", "high", "medium", "low"]
+    },
+    "IntentGoal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "description", "priority", "status", "created_at"],
+      "properties": {
+        "id": { "type": "string" },
+        "description": { "type": "string" },
+        "priority": { "$ref": "#/definitions/IntentGoalPriority" },
+        "status": { "$ref": "#/definitions/IntentGoalStatus" },
+        "created_at": { "type": "number" },
+        "completed_at": { "type": "number" },
+        "parent_goal_id": { "type": "string" },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      }
+    },
+    "IntentSignalType": {
+      "type": "string",
+      "enum": ["goal_created", "goal_updated", "goal_completed", "goal_failed", "signal", "heartbeat", "error"]
+    },
+    "IntentSignal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "source", "timestamp", "payload"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "$ref": "#/definitions/IntentSignalType" },
+        "source": { "type": "string" },
+        "target": { "type": "string" },
+        "timestamp": { "type": "number" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "intent_goal_id": { "type": "string" }
+      }
+    },
+    "NavigationStepOnFailure": {
+      "type": "string",
+      "enum": ["abort", "retry", "skip"]
+    },
+    "NavigationStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["step_id", "action"],
+      "properties": {
+        "step_id": { "type": "string" },
+        "action": { "type": "string" },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "expected_outcome": { "type": "string" },
+        "on_failure": { "$ref": "#/definitions/NavigationStepOnFailure" }
+      }
+    },
+    "RetryPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["max_attempts", "backoff_ms"],
+      "properties": {
+        "max_attempts": { "type": "integer", "minimum": 1 },
+        "backoff_ms": { "type": "integer", "minimum": 0 },
+        "backoff_multiplier": { "type": "number" },
+        "jitter": { "type": "boolean" }
+      }
+    },
+    "NavigationPattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "description", "steps", "enabled"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "steps": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/NavigationStep" }
+        },
+        "retry_policy": { "$ref": "#/definitions/RetryPolicy" },
+        "timeout_ms": { "type": "integer", "minimum": 0 },
+        "enabled": { "type": "boolean" }
+      }
+    },
+    "ProductiveLaneStatus": {
+      "type": "string",
+      "enum": ["idle", "active", "paused", "completed", "failed"]
+    },
+    "ProductiveLane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "description", "intent_goals", "status", "created_at", "updated_at"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "intent_goals": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/IntentGoal" }
+        },
+        "active_signal_id": { "type": "string" },
+        "navigation_pattern_id": { "type": "string" },
+        "current_step_id": { "type": "string" },
+        "status": { "$ref": "#/definitions/ProductiveLaneStatus" },
+        "created_at": { "type": "number" },
+        "updated_at": { "type": "number" },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      }
+    },
+    "TileQualityLabel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["novelty", "correctness", "completeness", "depth", "overall"],
+      "properties": {
+        "novelty": { "type": "number", "minimum": 0, "maximum": 1 },
+        "correctness": { "type": "number", "minimum": 0, "maximum": 1 },
+        "completeness": { "type": "number", "minimum": 0, "maximum": 1 },
+        "depth": { "type": "number", "minimum": 0, "maximum": 1 },
+        "overall": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "QualityScore": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tile_id", "version", "labels", "assessed_at"],
+      "properties": {
+        "tile_id": { "type": "string" },
+        "version": { "type": "integer", "minimum": 0 },
+        "labels": { "$ref": "#/definitions/TileQualityLabel" },
+        "assessed_at": { "type": "number" },
+        "assessor": { "type": "string" },
+        "reasoning": { "type": "string" },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      }
+    },
+    "TrustHistoryEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["timestamp", "event_type", "delta", "reason"],
+      "properties": {
+        "timestamp": { "type": "number" },
+        "event_type": { "type": "string" },
+        "delta": {
+          "type": "object",
+          "additionalProperties": { "type": "number" }
+        },
+        "reason": { "type": "string" }
+      }
+    },
+    "TrustVector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vessel_id", "competence", "reliability", "honesty", "benevolence", "calculated_at"],
+      "properties": {
+        "vessel_id": { "type": "string" },
+        "competence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "reliability": { "type": "number", "minimum": 0, "maximum": 1 },
+        "honesty": { "type": "number", "minimum": 0, "maximum": 1 },
+        "benevolence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "calculated_at": { "type": "number" },
+        "history": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TrustHistoryEntry" }
+        }
+      }
+    },
+    "VesselIdentityType": {
+      "type": "string",
+      "enum": ["agent", "service", "external"]
+    },
+    "VesselIdentity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "type", "registered_at", "last_seen_at"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "type": { "$ref": "#/definitions/VesselIdentityType" },
+        "public_key": { "type": "string" },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "registered_at": { "type": "number" },
+        "last_seen_at": { "type": "number" }
+      }
+    },
+    "FleetNodeStatus": {
+      "type": "string",
+      "enum": ["active", "inactive", "unknown"]
+    },
+    "FleetNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "vessel_id", "role", "status"],
+      "properties": {
+        "id": { "type": "string" },
+        "vessel_id": { "type": "string" },
+        "role": { "type": "string" },
+        "status": { "$ref": "#/definitions/FleetNodeStatus" },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      }
+    },
+    "FleetEdgeRelationship": {
+      "type": "string",
+      "enum": ["reports_to", "peers_with", "manages", "depends_on", "trusts"]
+    },
+    "FleetEdge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "target_id", "weight", "relationship", "bidirectional"],
+      "properties": {
+        "source_id": { "type": "string" },
+        "target_id": { "type": "string" },
+        "weight": { "type": "number", "minimum": 0 },
+        "relationship": { "$ref": "#/definitions/FleetEdgeRelationship" },
+        "bidirectional": { "type": "boolean" }
+      }
+    },
+    "FleetGraph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nodes", "edges", "calculated_at"],
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/FleetNode" }
+        },
+        "edges": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/FleetEdge" }
+        },
+        "calculated_at": { "type": "number" }
+      }
+    },
+    "ShellType": {
+      "type": "string",
+      "enum": ["bash", "zsh", "fish", "powershell", "cmd", "python", "node", "rust", "go", "docker", "ssh", "custom"]
+    },
+    "Capability": {
+      "type": "string",
+      "enum": [
+        "execute_command",
+        "read_file",
+        "write_file",
+        "list_directory",
+        "create_directory",
+        "delete_file",
+        "move_file",
+        "copy_file",
+        "http_get",
+        "http_post",
+        "http_put",
+        "http_delete",
+        "connect_tcp",
+        "listen_tcp",
+        "spawn_process",
+        "kill_process",
+        "get_process_info",
+        "list_processes",
+        "get_system_info",
+        "get_environment",
+        "set_environment",
+        "read_env_file",
+        "docker_run",
+        "docker_build",
+        "docker_pull",
+        "docker_ps",
+        "docker_logs",
+        "git_clone",
+        "git_push",
+        "git_pull",
+        "git_commit",
+        "git_status",
+        "git_log",
+        "npm_install",
+        "npm_publish",
+        "pip_install",
+        "cargo_publish",
+        "spawn_agent",
+        "send_message",
+        "broadcast_message",
+        "read_database",
+        "write_database",
+        "cache_set",
+        "cache_get",
+        "admin",
+        "configure",
+        "view_logs"
+      ]
+    },
+    "TurboManifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "version", "shell_type", "capabilities"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "shell_type": { "$ref": "#/definitions/ShellType" },
+        "description": { "type": "string" },
+        "capabilities": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Capability" }
+        },
+        "constraints": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "environment": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "working_directory": { "type": "string" },
+        "timeout_ms": { "type": "integer", "minimum": 0 },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      }
+    },
+    "RoomMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["room", "created_at", "tile_count", "last_activity"],
+      "properties": {
+        "room": { "type": "string" },
+        "created_at": { "type": "number" },
+        "tile_count": { "type": "integer", "minimum": 0 },
+        "last_activity": { "type": "number" },
+        "participants": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      }
+    },
+    "PlatoTile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "room", "content", "author", "created_at", "tile_hash"],
+      "properties": {
+        "id": { "type": "string" },
+        "room": { "type": "string" },
+        "content": { "type": "string" },
+        "author": { "type": "string" },
+        "created_at": { "type": "number" },
+        "parent_hash": { "type": "string" },
+        "tile_hash": { "type": "string" },
+        "signature": { "type": "string" },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      }
+    },
+    "SubmitResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "room", "tile_hash", "accepted_at"],
+      "properties": {
+        "status": { "type": "string", "const": "accepted" },
+        "room": { "type": "string" },
+        "tile_hash": { "type": "string" },
+        "accepted_at": { "type": "number" }
+      }
+    },
+    "ErrorResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reason"],
+      "properties": {
+        "status": { "type": "string", "const": "rejected" },
+        "reason": { "type": "string" },
+        "code": { "type": "string" },
+        "details": {
+          "type": "object",
+          "additionalProperties": {}
+        }
+      }
+    },
+    "SubmitResult": {
+      "oneOf": [
+        { "$ref": "#/definitions/SubmitResponse" },
+        { "$ref": "#/definitions/ErrorResponse" }
+      ]
+    }
+  }
+}
