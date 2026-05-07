@@ -1,0 +1,14 @@
+{
+  "name": "@superinstance/schemas",
+  "version": "1.0.0",
+  "description": "TypeScript interface schemas + JSON Schema definitions for SuperInstance fleet types",
+  "main": "schemas/index.js",
+  "types": "schemas/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,0 +1,18 @@
+[Unit]
+Description=Fleet Ambient Loop — "12 things happened while you were away" briefing system
+After=network.target
+Wants=plato.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/.openclaw/workspace/repos/fleet-ambient-loop
+ExecStart=/usr/bin/npx ts-node src/index.ts
+Restart=always
+RestartSec=10
+StandardOutput=append:/tmp/fleet-ambient-loop.log
+StandardError=append:/tmp/fleet-ambient-loop.log
+Environment=PLATO_SERVER=http://localhost:8847
+
+[Install]
+WantedBy=multi-user.target

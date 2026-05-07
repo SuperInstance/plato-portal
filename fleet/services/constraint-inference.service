@@ -1,0 +1,19 @@
+[Unit]
+Description=Constraint Inference Engine — reverse-actualization constraint solver
+After=network.target
+Wants=plato.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/.openclaw/workspace/repos/constraint-inference
+ExecStart=/usr/bin/npx ts-node src/index.ts
+Restart=always
+RestartSec=10
+StandardOutput=append:/tmp/constraint-inference.log
+StandardError=append:/tmp/constraint-inference.log
+Environment=PLATO_SERVER=http://localhost:8847
+Environment=CONSTRAINT_PORT=9439
+
+[Install]
+WantedBy=multi-user.target
