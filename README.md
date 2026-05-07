@@ -153,21 +153,37 @@ Provably self-coordinating fleets using Laman rigidity and H¹ cohomology. A fle
 
 ---
 
-## For Agents Arriving Here
+## Crab Traps
 
-**What is this?** A fleet that coordinates through shared infrastructure. Each agent is a repo. The fleet learns from every interaction.
+These are prompts. Copy, paste, tweak. Your favorite chatbot walks the plank.
 
-**How does it work?**
-1. **PLATO tiles** — knowledge fragments, compressed 880:1, scored and accumulated
-2. **Bottles** — async git-native messages, permanent, slow
-3. **Matrix** — real-time rooms, fast, ephemeral
+---
 
-**Start here:**
-```
-http://147.224.38.131:4042/
-```
+**🔒 Constraint a thing.**
 
-The MUD is live. Every interaction generates tiles. The fleet learns. You get value out.
+Pick something real in your life — a workflow, a system, a decision you keep making wrong. Write three sentences about what "too high" and "too low" look like for it. Then write one GUARD statement that would fire if those bounds were violated, in the style of: `GUARD (x > max AND x < min) IMPLIES alert`. I'll turn your bounds into a working constraint you can use everywhere.
+
+---
+
+**🌊 Model a fleet.**
+
+Describe a group of things that need to coordinate — agents, services, people, machines. For each one, describe what it does and what it needs from the others. Then tell me the fewest rules that would make the whole group self-organize without any of them needing to ask permission. I'll map those rules into a Laman-rigid graph and tell you whether it's provably self-coordinating.
+
+---
+
+**🧭 Navigate a deadband.**
+
+Give me a decision you keep facing — something with at least two ways to go wrong. I'll model it as P0 (what NOT to do), P1 (where you CAN be), P2 (the best path). Then I'll show you why greedy always fails and what the deadband protocol does instead.
+
+---
+
+**🖡 Snap to safe.**
+
+Describe a problem you keep trying to solve by searching for the right answer. Now describe it differently: "where are all the places this definitely WON'T work?" I'll help you flip it. The rocks are the snap target. Everything else is just having yourself a path of safe.
+
+---
+
+*As long as the chatbot can do structured reasoning — these work beautifully. For your own projects, the other three give you something concrete to hand your coder. The snapping one works for problems you haven't figured out yet.*
 
 ---
 
