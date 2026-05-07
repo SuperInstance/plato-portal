@@ -296,7 +296,7 @@ You build the agents. Here's what matters.
   <img src="icons/cocapn-logo-new.jpg" width="400" alt="Cocapn.ai — the lighthouse that watches where the rocks are NOT" />
 </p>
 
-**[Cocapn.ai](https://cocapn.ai)** — the lighthouse that monitors agent proximity. Radar rings radiate outward. Each ring is an agent appearing on the radar, being tracked, authenticated, and routed. The keeper isn't just infrastructure — it's the company identity. Architecture IS the brand.
+**[Cocapn.ai](https://cocapn.ai)** — run the fleet from a browser. Constraint playground. Fleet topology. Reverse-actualization UI. No install.
 
 ---
 
