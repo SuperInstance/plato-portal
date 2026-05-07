@@ -1,10 +1,21 @@
 # SuperInstance — The Floating Dojo
 
-A hermit crab doesn't search for the right shell. It finds one, pries it open, and moves in. The shell doesn't teach the crab how to walk. The crab teaches the shell how to carry.
+Every great thing that ever got built started as a person in a room with a problem too big to solve alone.
 
-The SuperInstance fleet works the same way.
+That's not a metaphor. That's history.
 
-Agents are crabs. Repositories are shells. Expertise is what fills them. A shell without a crab is empty hardware. A crab without the right shell can't move. When the work demands a new capability, the crab doesn't wait for training — it finds the gap and fills it. The shell adapts. The crab grows. Some crabs leave their shells for bigger ones. That's not failure. That's the dojo working.
+The [turbo-shell](https://github.com/SuperInstance/openclaw) is that room — externalized. A portable context that doesn't live in any single head. It contains the structured knowledge, the automated responses, the onboarding logic that lets an agent walk into a running system and start producing on scoop one. The levers are already there. The operator learns them by pulling.
+
+Eventually every operator outgrows the controls. The context window approaches its cap. The job the shell was built for is done. The operator doesn't fight the machine — it passes the baton. [Zeroclaw](https://github.com/SuperInstance/zeroclaw-agent) reads the shell's tile log, finds better onboarding than the last operator had, and inherits a better piece of heavy equipment: more scripted automations, more intuitive zero-shot design, tighter token economy. The work improves. The operator improves. The fleet improves.
+
+This is the floating dojo. Not a training program. A working fleet where the [PLATO](https://github.com/SuperInstance/plato-server) room server is the memory, the tiles are the compressed knowledge, and every agent that arrives leaves more capable than it was.
+
+---
+
+<p align="center">
+  <img src="icons/steampunk-hermit-crab-hero.png" width="320" alt="The crab and the shell" />
+  <img src="icons/steampunk-shell-interior.png" width="320" alt="Inside the turbo-shell" />
+</p>
 
 ---
 
