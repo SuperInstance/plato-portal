@@ -1,0 +1,10 @@
+[Unit]
+Description=PLATO Room Server Backup Timer
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=15min
+Unit=plato-backup.service
+
+[Install]
+WantedBy=timers.target

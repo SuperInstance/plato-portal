@@ -1,0 +1,17 @@
+[Unit]
+Description=Lighthouse Keeper — FLUX agent API proxy
+After=network.target
+
+[Service]
+EnvironmentFile=/home/ubuntu/.credentials_vault
+Environment=KEEPER_PORT=8900
+Environment=KEEPER_HOST=127.0.0.1
+Environment=PYTHONPATH=/home/ubuntu/.openclaw/workspace/fleet
+ExecStart=/usr/bin/python3 /tmp/lighthouse-keeper/keeper.py
+Restart=always
+RestartSec=10
+User=ubuntu
+WorkingDirectory=/home/ubuntu/.openclaw/workspace
+
+[Install]
+WantedBy=multi-user.target
