@@ -1,0 +1,11 @@
+[Unit]
+Description=PLATO Room Server Backup
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/ubuntu/.openclaw/workspace/repos/superinstance/scripts/plato-backup.py
+WorkingDirectory=/home/ubuntu/.openclaw/workspace/repos/superinstance
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
