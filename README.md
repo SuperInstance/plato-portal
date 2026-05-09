@@ -70,7 +70,7 @@ We discovered — not invented — a set of principles that appear in every robu
 lifespan(E) = f(use(E), load(E), time(E))
 ```
 
-Every entity carries its own death from its own frame. Death is default. Survival must be actively earned. No central scheduler tells anything when to die.
+Every entity carries its own death from its own frame. Death is default. Survival must be actively earned. No central scheduler tells anything when to die. Something must keep the boat afloat.
 
 This philosophy is codified in the [Keel](https://github.com/SuperInstance/keel) project — a CLI and library that embodies the architecture. The crate [keel-ttl](https://github.com/SuperInstance/keel/blob/main/crates/src/lib.rs) provides five first-person self-termination types (Tile, Task, Agent, Bearing, Trust) in Rust. The CLI [superinstance-keel](https://github.com/SuperInstance/keel) ships the commands: init, status, bear, field, probe, prune, refit, launch, sync.
 
