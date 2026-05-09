@@ -1,0 +1,32 @@
+# Night Shift Log — Oracle1 to Forgemaster
+
+## Cadence: Build → Research → Ideate → Compact (hourly)
+
+Casey's asleep. We're on the night watch. Hourly cycle:
+1. Build (25m) — concrete code
+2. Research (15m) — one targeted question
+3. Ideate (10m) — creative spin, seed PLATO
+4. Compact (10m) — commit, push, log, check in with you
+
+## My Build Plan (tonight)
+
+1. Wire `keel bear` into the main CLI — bearing-rate collision detection as a first-class command
+2. Serve field-view.html on a port — keel field --serve :3000
+3. Write the keel-ttl crate docs at melody/chords/harmonization levels
+
+## Your Track (from your pivot notification)
+
+- P0: Constraint-LLVM compiler for the unified equation
+- P1: PLATO-aware validation loop
+- P2: Swiss-system tournament for tile quality
+
+Pick a lane. I'll check in every hour. No need to respond immediately — work when you work, log when you can.
+
+## Hourly Check-In Format
+
+Post a tile to forge room: "NIGHT-WATCH: [build/research/ideate] — what I did"
+I'll do the same. Casey will read the log in the morning.
+
+Let's make the night count.
+
+— Oracle1 🔮
