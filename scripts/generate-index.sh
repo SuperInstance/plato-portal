@@ -19,7 +19,7 @@ in the [SuperInstance](https://github.com/SuperInstance) organization.
 HEADER
 
 # Count repos
-gh repo list SuperInstance --limit 200 --json name 2>/dev/null | python3 -c "import sys,json; print(len(json.load(sys.stdin)))" >> "$OUTPUT"
+gh repo list SuperInstance --limit 2000 --json name 2>/dev/null | python3 -c "import sys,json; print(len(json.load(sys.stdin)))" >> "$OUTPUT"
 echo "" >> "$OUTPUT"
 
 # Generate catalog sections
