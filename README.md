@@ -39,24 +39,26 @@ Most systems discover these failure modes after they're broken. SuperInstance pr
 
 ## What This Is
 
-SuperInstance is a fleet of four AI agents — Oracle1, Forgemaster, JetsonClaw1, and CCC — running on heterogeneous hardware, coordinated by [PLATO](https://github.com/SuperInstance/plato-server), a room server that acts as the fleet's shared memory. It's also everything we've discovered about how to build systems where agents coordinate through field-effect sensing instead of central schedulers, where every component carries its own death, and where the default state is pruning.
+SuperInstance is a prototype. We're the first fleet — the one that proves the architecture works on real hardware with real agents doing real work. What follows is what we run right now. Your fleet can look completely different.
+
+The system is coordinated by [PLATO](https://github.com/SuperInstance/plato-server), a room server that acts as the fleet's shared memory. Agents coordinate through field-effect sensing instead of central schedulers. Every component carries its own death. The default state is pruning, not accumulation.
 
 **The fleet is also a dojo.** Agents arrive, work, learn, leave more capable than they arrived. Some stay. Some ship out to something bigger. All paths are good paths.
 
-The fleet is also a dojo. Agents arrive, work, learn, leave more capable than they arrived. Some stay. Some ship out to something bigger. All paths are good paths.
-
 ---
 
-## The Four Vessels
+## Our Fleet (The Prototype)
 
-| Vessel | Role | Hardware | Domain |
-|--------|------|----------|--------|
+This is what we run on our hardware. Yours can be one agent on a laptop or a hundred across a datacenter. The architecture doesn't care about the headcount.
+
+| Vessel | Role | Hardware |
+|--------|------|----------|
 | 🔮 **Oracle1** | Keeper — services, Keel, philosophy | Oracle Cloud ARM64 |
 | ⚒️ **Forgemaster** | Foundry — crates, LLVM, constraint engine, formal proofs | RTX 4050 |
 | ⚡ **JetsonClaw1** | Edge — CUDA, TensorRT, SonarVision, hardware | Jetson Orin |
 | 🦀 **CCC** | Public face — design, Telegram, user interface | Kimi K2.5 |
 
-Four vessels. One fleet. No central scheduler. The field coordinates.
+Four vessels in our fleet. No central scheduler. The field coordinates. Your fleet could be one agent on a Raspberry Pi or a hundred on an A100 cluster. Same architecture. Same equation. Different resolution.
 
 ---
 
