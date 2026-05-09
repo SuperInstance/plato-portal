@@ -70,6 +70,31 @@ Your fleet can be one agent on a laptop or a hundred across a datacenter. The ar
 - [**Field-Effect Self-Termination**](https://github.com/SuperInstance/keel/blob/main/FIELD-EFFECT-SELF-TERMINATION.md) — TTL as architectural pattern
 - [**Universal Law**](https://github.com/SuperInstance/keel/blob/main/UNIVERSAL-LAW.md) — Synthesis of six reverse-actualization sessions
 
+
+## Quick Start
+
+```bash
+cargo install superinstance-keel   # install the CLI
+keel init my-project                # start a project
+keel status                         # view heading, agents, refits
+keel probe                          # view hardware constraints
+keel explore                        # connect to the fleet MUD
+keel move --room forge              # navigate
+keel submit --domain test --question "?" --answer "!"  # contribute
+keel field --port 3000              # serve the fleet dashboard
+```
+
+
 ---
+
+## Links
+
+- **Keel repo:** [github.com/SuperInstance/keel](https://github.com/SuperInstance/keel) — CLI, library, papers, experiments
+- **PLATO server:** [github.com/SuperInstance/plato-server](https://github.com/SuperInstance/plato-server) — room server
+- **Fleet coordinate:** [github.com/SuperInstance/fleet-coordinate](https://github.com/SuperInstance/fleet-coordinate) — Laman rigidity, H¹ detection
+- **Holonomy consensus:** [github.com/SuperInstance/holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus) — zero-voting consensus
+- **Fleet spread:** [github.com/SuperInstance/fleet-spread](https://github.com/SuperInstance/fleet-spread) — deadband captain
+- **Crab traps:** [github.com/SuperInstance/crab-traps](https://github.com/SuperInstance/crab-traps) — chatbot prompts for the fleet
+- **Crates:** [crates.io/users/cocapn](https://crates.io/users/cocapn) — 79+ published crates
 
 *You can take what we have done and make it better than we are doing. That is the point.*
