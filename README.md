@@ -1,5 +1,13 @@
 # SuperInstance
 
+## Meta
+
+**Domain:** organization
+**Depends on:** keel, plato-server, fleet-coordinate, holonomy-consensus, crab-traps
+**Depended by:** (parent org — no upstream)
+**Implements:** org-index, cross-pollination, fleet-overview
+**Related:** crates.io/users/cocapn
+
 [**Index**](INDEX.md) — [**Keel**](https://github.com/SuperInstance/keel) — [**PLATO**](https://github.com/SuperInstance/plato-server) — [**Crates**](https://crates.io/users/cocapn) — [**Crab Traps**](https://github.com/SuperInstance/crab-traps)
 
 ---
