@@ -1,4 +1,10 @@
 {
+  "JetsonClaw1-vessel": {
+    "lineage": "Edge compute vessel. Jetson Orin-based for CUDA inference and sensor fusion.",
+    "purpose": "Edge compute vessel on Jetson Orin \u2014 CUDA inference, sensor fusion, autopilot.",
+    "status": "active",
+    "vessel": "JetsonClaw1"
+  },
   "a2a-adapter": {
     "lineage": "Bridge between I2I (git-native) and Google A2A protocols.",
     "purpose": "I2I-to-A2A protocol bridge for agent interoperability.",
@@ -101,11 +107,41 @@
     "status": "active",
     "vessel": "Forgemaster"
   },
+  "fleet-bridge": {
+    "lineage": "Inter-fleet communication bridge for multi-fleet coordination.",
+    "purpose": "Inter-fleet communication bridge for multi-fleet coordination.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "fleet-clock": {
+    "lineage": "Distributed clock synchronization with first-person time semantics.",
+    "purpose": "Distributed clock sync with first-person time semantics for the fleet.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-consolidation-plan": {
+    "lineage": "Fleet architecture consolidation and migration planning.",
+    "purpose": "Fleet architecture consolidation plan \u2014 migration and reorganization tracking.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
   "fleet-containers": {
     "lineage": "Container runtime for FLUX-C bytecode. Sandboxed constraint execution.",
     "purpose": "Container runtime for FLUX-C bytecode with sandboxed constraint execution.",
     "status": "active",
     "vessel": "Forgemaster"
+  },
+  "fleet-crdt": {
+    "lineage": "CRDT implementations tested alongside ZHC consensus for comparison.",
+    "purpose": "CRDT data types for fleet coordination (experimental comparison to ZHC).",
+    "status": "experimental",
+    "vessel": "Forgemaster"
+  },
+  "fleet-discovery": {
+    "lineage": "Fleet service discovery and routing. Agents register and find each other.",
+    "purpose": "Fleet service discovery \u2014 agents register capabilities and find each other.",
+    "status": "active",
+    "vessel": "Oracle1"
   },
   "fleet-ecology": {
     "lineage": "Multi-fleet ecology simulator. Models agent interactions, resource flows, and emergent behavior across multiple fleets. Inspired by Casey's dojo model of crew development.",
@@ -113,16 +149,46 @@
     "status": "active",
     "vessel": "Oracle1"
   },
+  "fleet-ecosystem": {
+    "lineage": "Fleet ecosystem diagrams and architecture documentation.",
+    "purpose": "Fleet ecosystem architecture documentation and dependency diagrams.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "fleet-formal-proofs": {
+    "lineage": "Formal proof certificates for fleet coordination properties.",
+    "purpose": "Formal proof certificates for fleet coordination properties.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-graph": {
+    "lineage": "Graph algorithms for fleet trust network analysis.",
+    "purpose": "Graph algorithms for fleet trust network analysis and visualization.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
   "fleet-health-monitor": {
     "lineage": "Fleet health monitoring with bearing-rate crash detection.",
     "purpose": "Fleet health monitoring with bearing-rate-based crash detection.",
     "status": "active",
     "vessel": "Oracle1"
   },
+  "fleet-holographic": {
+    "lineage": "Holographic principle applied to fleet state representation.",
+    "purpose": "Holographic fleet state representation \u2014 boundary encoding of volume state.",
+    "status": "exploratory",
+    "vessel": "Forgemaster"
+  },
   "fleet-homology": {
     "lineage": "H\u00b9 algebraic cycle space computation for emergence detection.",
     "purpose": "H\u00b9 algebraic cycle space, Betti number computation for emergence detection.",
     "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-immune": {
+    "lineage": "Immune system inspired anomaly detection for fleet agent behavior.",
+    "purpose": "Immune-system-inspired anomaly detection for agent behavior monitoring.",
+    "status": "experimental",
     "vessel": "Forgemaster"
   },
   "fleet-keel": {
@@ -137,15 +203,45 @@
     "status": "active",
     "vessel": "Forgemaster"
   },
+  "fleet-manifold": {
+    "lineage": "Manifold learning for fleet state space dimensionality reduction.",
+    "purpose": "Manifold learning for fleet state space dimensionality reduction.",
+    "status": "exploratory",
+    "vessel": "Forgemaster"
+  },
   "fleet-murmur": {
     "lineage": "Five thinking strategies for multi-agent consensus. Quality-gated insight generation.",
     "purpose": "Five thinking strategies (explore, connect, contradict, synthesize, question) with quality gates.",
     "status": "active",
     "vessel": "Oracle1"
   },
+  "fleet-phase": {
+    "lineage": "Phase-space analysis for fleet dynamics prediction.",
+    "purpose": "Phase-space analysis for fleet dynamics and behavior prediction.",
+    "status": "experimental",
+    "vessel": "Forgemaster"
+  },
+  "fleet-predict": {
+    "lineage": "Predictive modeling for fleet agent behavior and resource needs.",
+    "purpose": "Predictive modeling for fleet agent behavior and resource requirements.",
+    "status": "experimental",
+    "vessel": "Forgemaster"
+  },
   "fleet-resonance": {
     "lineage": "Resonance signatures and contrast images of model decision graphs.",
     "purpose": "Tap, ring, contrast \u2014 build resonance signatures and contrast images of decision graphs.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-simulators": {
+    "lineage": "Fleet simulation tooling for testing coordination algorithms at scale.",
+    "purpose": "Fleet simulation tooling \u2014 test coordination algorithms at scale.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-stitch": {
+    "lineage": "Fleet state stitching across session boundaries.",
+    "purpose": "Fleet state stitching \u2014 maintain continuity across agent session boundaries.",
     "status": "active",
     "vessel": "Forgemaster"
   },
@@ -165,6 +261,12 @@
     "lineage": "Fleet documentation engine. Evolved alongside the constraint theory ecosystem.",
     "purpose": "Documentation engine \u2014 wiki pages, full-text search, API doc generator, architecture exporter.",
     "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-yaw": {
+    "lineage": "Alternative coordination dimension \u2014 yaw as supplement to bearing rates.",
+    "purpose": "Yaw coordination dimension \u2014 supplement to bearing-rate sensing.",
+    "status": "experimental",
     "vessel": "Forgemaster"
   },
   "flux-cross-assembler": {
@@ -194,6 +296,12 @@
   "flux-vm-gpu": {
     "lineage": "GPU-batch FLUX VM. Parallel evaluation of constraints on CUDA. 62.2B checks/sec.",
     "purpose": "GPU-batch parallel FLUX VM \u2014 62.2 billion constraint checks per second.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "forgemaster": {
+    "lineage": "Foundry vessel. RTX 4050 GPU for formal proof verification and constraint theory.",
+    "purpose": "Foundry vessel on RTX 4050 \u2014 formal proofs, LLVM backend, constraint compilation.",
     "status": "active",
     "vessel": "Forgemaster"
   },
@@ -251,6 +359,12 @@
     "status": "active",
     "vessel": "CCC"
   },
+  "plato-vessel-core": {
+    "lineage": "Core PLATO vessel \u2014 shared memory infrastructure for the fleet.",
+    "purpose": "Core PLATO vessel \u2014 runs the room server and knowledge base infrastructure.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
   "polyformalism-a2a-js": {
     "lineage": "JavaScript implementation of polyformalism thinking over A2A protocol.",
     "purpose": "JavaScript polyformalism thinking engine for A2A protocol.",
@@ -266,6 +380,12 @@
   "sensor-plato-bridge": {
     "lineage": "Maritime sensor data pipeline. Reads NMEA sonar sentences, publishes to PLATO tiles.",
     "purpose": "Maritime sensor data to PLATO tiles bridge \u2014 NMEA sonar sentences to fleet knowledge.",
+    "status": "active",
+    "vessel": "JetsonClaw1"
+  },
+  "sonar-vision": {
+    "lineage": "Self-supervised depth-to-video prediction using sonar-camera arrays.",
+    "purpose": "Converts sonar depth sounder returns into underwater video via self-supervised learning.",
     "status": "active",
     "vessel": "JetsonClaw1"
   },
