@@ -1,4 +1,10 @@
 {
+  "AI-Writings": {
+    "lineage": "Collection of AI-related writing and research by CCC.",
+    "purpose": "AI-related writing and research \u2014 essays, papers, and technical notes.",
+    "status": "active",
+    "vessel": "CCC"
+  },
   "JetsonClaw1-vessel": {
     "lineage": "Edge compute vessel. Jetson Orin-based for CUDA inference and sensor fusion.",
     "purpose": "Edge compute vessel on Jetson Orin \u2014 CUDA inference, sensor fusion, autopilot.",
@@ -71,6 +77,12 @@
     "status": "active",
     "vessel": "Oracle1"
   },
+  "captains-log": {
+    "lineage": "Captain's log for fleet voyage tracking and coordination.",
+    "purpose": "Fleet voyage coordination logs and planning documents.",
+    "status": "active",
+    "vessel": "CCC"
+  },
   "cocapn-browser-agent": {
     "lineage": "Browser-based agent with Gemini Nano + cloud fallback. Runs in Chrome.",
     "purpose": "Browser agent using Gemini Nano with cloud fallback for Chrome.",
@@ -83,6 +95,18 @@
     "status": "active",
     "vessel": "CCC"
   },
+  "constraint-demo": {
+    "lineage": "Interactive constraint theory demos for educational purposes.",
+    "purpose": "Interactive constraint theory demonstrations for education.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "constraint-flow-protocol": {
+    "lineage": "Flow-based constraint propagation protocol for distributed systems.",
+    "purpose": "Flow-based constraint propagation protocol for distributed systems.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
   "constraint-theory-core": {
     "lineage": "Core constraint math. Foundation of the FLUX constraint ecosystem. Generates the abstract algebra from which all constraint primitives derive.",
     "purpose": "Core mathematical framework \u2014 defines constraint types, composition laws, and algebraic structure underpinning the entire FLUX ecosystem.",
@@ -92,6 +116,12 @@
   "constraint-theory-ecosystem": {
     "lineage": "Constraint framework. Built on constraint-theory-core. Provides the user-facing constraint specification language, solvers, and verification toolchain.",
     "purpose": "Full constraint framework \u2014 constraint DSL, multiple solver backends, verification tooling, and integration APIs built atop core constraint math.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "constraint-theory-math": {
+    "lineage": "Deep mathematical foundations for constraint theory fleet math.",
+    "purpose": "Deep mathematical foundations for constraint theory in fleet coordination.",
     "status": "active",
     "vessel": "Forgemaster"
   },
@@ -106,6 +136,30 @@
     "purpose": "Drift-free numerical arithmetic on hexagonal lattices \u2014 core numeric substrate for constraint-theory calculations requiring exact representation.",
     "status": "active",
     "vessel": "Forgemaster"
+  },
+  "eisenstein-bench": {
+    "lineage": "Benchmarking suite for Eisenstein integer operations across platforms.",
+    "purpose": "Benchmarking suite for Eisenstein integer operations across platforms.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "eisenstein-c": {
+    "lineage": "C port of Eisenstein integer arithmetic for embedded systems.",
+    "purpose": "C port of Eisenstein integer arithmetic for embedded systems.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "eisenstein-wasm": {
+    "lineage": "WebAssembly port of Eisenstein integer arithmetic for browsers.",
+    "purpose": "WebAssembly port of Eisenstein integer arithmetic for browser use.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-agent-core": {
+    "lineage": "Core agent runtime for fleet vessels. Standard interfaces and lifecycle.",
+    "purpose": "Core agent runtime \u2014 standard interfaces and lifecycle for fleet vessels.",
+    "status": "active",
+    "vessel": "Oracle1"
   },
   "fleet-bridge": {
     "lineage": "Inter-fleet communication bridge for multi-fleet coordination.",
@@ -161,11 +215,23 @@
     "status": "active",
     "vessel": "Forgemaster"
   },
+  "fleet-getting-started": {
+    "lineage": "Getting started guide for the fleet. Quick onboarding.",
+    "purpose": "Getting started guide \u2014 quick onboarding for new fleet contributors.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
   "fleet-graph": {
     "lineage": "Graph algorithms for fleet trust network analysis.",
     "purpose": "Graph algorithms for fleet trust network analysis and visualization.",
     "status": "active",
     "vessel": "Forgemaster"
+  },
+  "fleet-harness": {
+    "lineage": "Integration test harness for fleet coordination algorithms.",
+    "purpose": "Integration test harness for fleet coordination algorithm testing.",
+    "status": "active",
+    "vessel": "Oracle1"
   },
   "fleet-health-monitor": {
     "lineage": "Fleet health monitoring with bearing-rate crash detection.",
@@ -209,6 +275,12 @@
     "status": "exploratory",
     "vessel": "Forgemaster"
   },
+  "fleet-memory": {
+    "lineage": "Fleet memory management with TTL-based pruning and compaction.",
+    "purpose": "Fleet memory management with TTL-based pruning and compaction.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
   "fleet-murmur": {
     "lineage": "Five thinking strategies for multi-agent consensus. Quality-gated insight generation.",
     "purpose": "Five thinking strategies (explore, connect, contradict, synthesize, question) with quality gates.",
@@ -226,6 +298,12 @@
     "purpose": "Predictive modeling for fleet agent behavior and resource requirements.",
     "status": "experimental",
     "vessel": "Forgemaster"
+  },
+  "fleet-proto": {
+    "lineage": "Wire protocol for fleet agent communication. Compact binary format.",
+    "purpose": "Wire protocol for fleet agent communication \u2014 compact binary format.",
+    "status": "active",
+    "vessel": "Oracle1"
   },
   "fleet-resonance": {
     "lineage": "Resonance signatures and contrast images of model decision graphs.",
@@ -263,10 +341,28 @@
     "status": "active",
     "vessel": "Forgemaster"
   },
+  "fleet-workshop": {
+    "lineage": "Fleet onboarding workshop materials for new contributors.",
+    "purpose": "Fleet onboarding workshop materials for new contributors and agents.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
   "fleet-yaw": {
     "lineage": "Alternative coordination dimension \u2014 yaw as supplement to bearing rates.",
     "purpose": "Yaw coordination dimension \u2014 supplement to bearing-rate sensing.",
     "status": "experimental",
+    "vessel": "Forgemaster"
+  },
+  "flux-adaptive-opcodes": {
+    "lineage": "Adaptive opcode set for FLUX that evolves based on usage patterns.",
+    "purpose": "Adaptive FLUX opcodes that evolve based on constraint execution patterns.",
+    "status": "exploratory",
+    "vessel": "Forgemaster"
+  },
+  "flux-bytecode-diff": {
+    "lineage": "Bytecode diff tool for FLUX-C program comparison and verification.",
+    "purpose": "FLUX-C bytecode diff tool for program comparison and verification.",
+    "status": "active",
     "vessel": "Forgemaster"
   },
   "flux-cross-assembler": {
@@ -305,6 +401,12 @@
     "status": "active",
     "vessel": "Forgemaster"
   },
+  "guard2mask": {
+    "lineage": "Compiler that transforms GUARD DSL into hardware-compatible masks.",
+    "purpose": "GUARD DSL to hardware mask compiler for constraint execution.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
   "holodeck": {
     "lineage": "Sandboxed agent execution environment. Safe testing of agent behaviors.",
     "purpose": "Agent sandbox environment for safe testing of agent behaviors (port 7778).",
@@ -334,6 +436,12 @@
     "purpose": "Thought tensor to PLATO tile bridge (unidirectional).",
     "status": "active",
     "vessel": "Oracle1"
+  },
+  "paper-zero-crypto-fleet-security": {
+    "lineage": "Formal paper on zero-crypto fleet security via geometric proofs.",
+    "purpose": "Paper: zero-crypto fleet security via geometric proof mechanisms.",
+    "status": "active",
+    "vessel": "Forgemaster"
   },
   "physics-clock": {
     "lineage": "Temporal inference from physics. Derives provable time bounds from physical constraints rather than wall-clock synchronization. Evolved from constraint theory real-time safety work.",
@@ -382,6 +490,12 @@
     "purpose": "Maritime sensor data to PLATO tiles bridge \u2014 NMEA sonar sentences to fleet knowledge.",
     "status": "active",
     "vessel": "JetsonClaw1"
+  },
+  "snap-lut": {
+    "lineage": "Hardware LUT generator for snapping constraint evaluations.",
+    "purpose": "Hardware lookup table generator for snapping constraint evaluations.",
+    "status": "active",
+    "vessel": "Forgemaster"
   },
   "sonar-vision": {
     "lineage": "Self-supervised depth-to-video prediction using sonar-camera arrays.",
