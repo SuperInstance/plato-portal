@@ -1,0 +1,80 @@
+{
+  "superinstance-wiki": {
+    "vessel": "Oracle1",
+    "lineage": "Created from the fleet indexing initiative. Aggregates CATALOG.md and INDEXES/ from SuperInstance repo.",
+    "purpose": "Fleet knowledge base with visual landing page, catalog, and multi-dimensional indexes. Wikipedia-style exploration of all 1,577 repos.",
+    "status": "active"
+  },
+  "fleet-wiki": {
+    "vessel": "Forgemaster",
+    "lineage": "Fleet documentation engine. Evolved alongside the constraint theory ecosystem.",
+    "purpose": "Documentation engine — wiki pages, full-text search, API doc generator, architecture exporter.",
+    "status": "active"
+  },
+  "purplepincher-org-pages": {
+    "vessel": "CCC",
+    "lineage": "Front door for purplepincher.org. Connection portal for the fleet's educational arm.",
+    "purpose": "GitHub Pages site for purplepincher.org — who the fleet is, what it builds, how to get involved.",
+    "status": "active"
+  },
+  "flux-vm": {
+    "vessel": "Forgemaster",
+    "lineage": "FLUX-C constraint VM. 50 opcodes, stack-based, DAL A certifiable. TrustZone-style bridge to FLUX-X.",
+    "purpose": "Provably correct constraint execution via FLUX-C bytecode VM. Executes compiled constraint programs with formal verification guarantees.",
+    "status": "active"
+  },
+  "eisenstein": {
+    "vessel": "Forgemaster",
+    "lineage": "Zero-drift hexagonal arithmetic. Evolved from numerical stability research for real-time constraint systems. Named for Eisenstein integers in hexagonal lattice geometry.",
+    "purpose": "Drift-free numerical arithmetic on hexagonal lattices — core numeric substrate for constraint-theory calculations requiring exact representation.",
+    "status": "active"
+  },
+  "constraint-theory-core": {
+    "vessel": "Forgemaster",
+    "lineage": "Core constraint math. Foundation of the FLUX constraint ecosystem. Generates the abstract algebra from which all constraint primitives derive.",
+    "purpose": "Core mathematical framework — defines constraint types, composition laws, and algebraic structure underpinning the entire FLUX ecosystem.",
+    "status": "active"
+  },
+  "constraint-theory-ecosystem": {
+    "vessel": "Forgemaster",
+    "lineage": "Constraint framework. Built on constraint-theory-core. Provides the user-facing constraint specification language, solvers, and verification toolchain.",
+    "purpose": "Full constraint framework — constraint DSL, multiple solver backends, verification tooling, and integration APIs built atop core constraint math.",
+    "status": "active"
+  },
+  "describe-device": {
+    "vessel": "Forgemaster",
+    "lineage": "Natural language to constraint program. Translates free-form device descriptions into structured FLUX-C constraint programs. Bridges human intent and formal verification.",
+    "purpose": "NL-to-constraint compiler — takes plain-language device descriptions, produces verifiable FLUX-C constraint programs for the FLUX VM.",
+    "status": "active"
+  },
+  "fleet-ecology": {
+    "vessel": "Oracle1",
+    "lineage": "Multi-fleet ecology simulator. Models agent interactions, resource flows, and emergent behavior across multiple fleets. Inspired by Casey's dojo model of crew development.",
+    "purpose": "Agent ecology simulation — models fleet dynamics, resource competition, collaboration patterns, and emergent specialization across multi-agent systems.",
+    "status": "active"
+  },
+  "physics-clock": {
+    "vessel": "Forgemaster",
+    "lineage": "Temporal inference from physics. Derives provable time bounds from physical constraints rather than wall-clock synchronization. Evolved from constraint theory real-time safety work.",
+    "purpose": "Physics-grounded temporal inference — provable timing bounds derived from physical invariants, enabling deterministic temporal reasoning without NTP or wall clocks.",
+    "status": "active"
+  },
+  "insight-engine": {
+    "vessel": "Oracle1",
+    "lineage": "Self-iterating discovery runtime. Autonomous hypothesis generation and testing loop. Evolved from the fleet monitoring and pattern-detection infrastructure.",
+    "purpose": "Autonomous discovery engine — generates hypotheses from fleet telemetry, designs experiments, executes them, and incorporates findings into the knowledge base without human intervention.",
+    "status": "active"
+  },
+  "voice-signature-tool": {
+    "vessel": "CCC",
+    "lineage": "Voice analysis. Developed from fleet authentication research — voice as a biometric signal for crew identification in multi-agent environments.",
+    "purpose": "Voice signature analysis — extracts biometric voiceprints, performs speaker identification, and enables voice-based authentication for fleet agent crew.",
+    "status": "active"
+  },
+  "superinstance-ci": {
+    "vessel": "Forgemaster",
+    "lineage": "Shared CI/CD templates. Standardized pipeline definitions extracted from multiple fleet repos. Ensures consistent build-test-deploy across all SuperInstance projects.",
+    "purpose": "Shared CI/CD composable templates — reusable GitHub Actions workflows, Docker build pipelines, release automation, and quality gates for the entire fleet.",
+    "status": "active"
+  }
+}
