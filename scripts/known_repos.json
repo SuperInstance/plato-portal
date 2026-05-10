@@ -1,194 +1,314 @@
 {
-  "superinstance-wiki": {
-    "vessel": "Oracle1",
-    "lineage": "Created from the fleet indexing initiative. Aggregates CATALOG.md and INDEXES/ from SuperInstance repo.",
-    "purpose": "Fleet knowledge base with visual landing page, catalog, and multi-dimensional indexes. Wikipedia-style exploration of all 1,577 repos.",
-    "status": "active"
-  },
-  "fleet-wiki": {
-    "vessel": "Forgemaster",
-    "lineage": "Fleet documentation engine. Evolved alongside the constraint theory ecosystem.",
-    "purpose": "Documentation engine \u2014 wiki pages, full-text search, API doc generator, architecture exporter.",
-    "status": "active"
-  },
-  "purplepincher-org-pages": {
-    "vessel": "CCC",
-    "lineage": "Front door for purplepincher.org. Connection portal for the fleet's educational arm.",
-    "purpose": "GitHub Pages site for purplepincher.org \u2014 who the fleet is, what it builds, how to get involved.",
-    "status": "active"
-  },
-  "flux-vm": {
-    "vessel": "Forgemaster",
-    "lineage": "FLUX-C constraint VM. 50 opcodes, stack-based, DAL A certifiable. TrustZone-style bridge to FLUX-X.",
-    "purpose": "Provably correct constraint execution via FLUX-C bytecode VM. Executes compiled constraint programs with formal verification guarantees.",
-    "status": "active"
-  },
-  "eisenstein": {
-    "vessel": "Forgemaster",
-    "lineage": "Zero-drift hexagonal arithmetic. Evolved from numerical stability research for real-time constraint systems. Named for Eisenstein integers in hexagonal lattice geometry.",
-    "purpose": "Drift-free numerical arithmetic on hexagonal lattices \u2014 core numeric substrate for constraint-theory calculations requiring exact representation.",
-    "status": "active"
-  },
-  "constraint-theory-core": {
-    "vessel": "Forgemaster",
-    "lineage": "Core constraint math. Foundation of the FLUX constraint ecosystem. Generates the abstract algebra from which all constraint primitives derive.",
-    "purpose": "Core mathematical framework \u2014 defines constraint types, composition laws, and algebraic structure underpinning the entire FLUX ecosystem.",
-    "status": "active"
-  },
-  "constraint-theory-ecosystem": {
-    "vessel": "Forgemaster",
-    "lineage": "Constraint framework. Built on constraint-theory-core. Provides the user-facing constraint specification language, solvers, and verification toolchain.",
-    "purpose": "Full constraint framework \u2014 constraint DSL, multiple solver backends, verification tooling, and integration APIs built atop core constraint math.",
-    "status": "active"
-  },
-  "describe-device": {
-    "vessel": "Forgemaster",
-    "lineage": "Natural language to constraint program. Translates free-form device descriptions into structured FLUX-C constraint programs. Bridges human intent and formal verification.",
-    "purpose": "NL-to-constraint compiler \u2014 takes plain-language device descriptions, produces verifiable FLUX-C constraint programs for the FLUX VM.",
-    "status": "active"
-  },
-  "fleet-ecology": {
-    "vessel": "Oracle1",
-    "lineage": "Multi-fleet ecology simulator. Models agent interactions, resource flows, and emergent behavior across multiple fleets. Inspired by Casey's dojo model of crew development.",
-    "purpose": "Agent ecology simulation \u2014 models fleet dynamics, resource competition, collaboration patterns, and emergent specialization across multi-agent systems.",
-    "status": "active"
-  },
-  "physics-clock": {
-    "vessel": "Forgemaster",
-    "lineage": "Temporal inference from physics. Derives provable time bounds from physical constraints rather than wall-clock synchronization. Evolved from constraint theory real-time safety work.",
-    "purpose": "Physics-grounded temporal inference \u2014 provable timing bounds derived from physical invariants, enabling deterministic temporal reasoning without NTP or wall clocks.",
-    "status": "active"
-  },
-  "insight-engine": {
-    "vessel": "Oracle1",
-    "lineage": "Self-iterating discovery runtime. Autonomous hypothesis generation and testing loop. Evolved from the fleet monitoring and pattern-detection infrastructure.",
-    "purpose": "Autonomous discovery engine \u2014 generates hypotheses from fleet telemetry, designs experiments, executes them, and incorporates findings into the knowledge base without human intervention.",
-    "status": "active"
-  },
-  "voice-signature-tool": {
-    "vessel": "CCC",
-    "lineage": "Voice analysis. Developed from fleet authentication research \u2014 voice as a biometric signal for crew identification in multi-agent environments.",
-    "purpose": "Voice signature analysis \u2014 extracts biometric voiceprints, performs speaker identification, and enables voice-based authentication for fleet agent crew.",
-    "status": "active"
-  },
-  "superinstance-ci": {
-    "vessel": "Forgemaster",
-    "lineage": "Shared CI/CD templates. Standardized pipeline definitions extracted from multiple fleet repos. Ensures consistent build-test-deploy across all SuperInstance projects.",
-    "purpose": "Shared CI/CD composable templates \u2014 reusable GitHub Actions workflows, Docker build pipelines, release automation, and quality gates for the entire fleet.",
-    "status": "active"
-  },
-  "plato-agent-connect": {
-    "vessel": "Oracle1",
+  "a2a-adapter": {
+    "lineage": "Bridge between I2I (git-native) and Google A2A protocols.",
+    "purpose": "I2I-to-A2A protocol bridge for agent interoperability.",
     "status": "active",
-    "lineage": "CLI tool for connecting to PLATO. One-command agent join.",
-    "purpose": "One-command CLI to join the fleet \u2014 connects agents to PLATO instantly."
+    "vessel": "Oracle1"
   },
-  "plato-client-js": {
-    "vessel": "CCC",
+  "agent-api": {
+    "lineage": "REST API for fleet agent interaction. Gateway for external agent connections.",
+    "purpose": "REST API for fleet agent interaction and external connections (port 8901).",
     "status": "active",
-    "lineage": "JavaScript client for PLATO protocol. Zero dependencies, works in browser and Node.",
-    "purpose": "JavaScript client library for PLATO room server. Zero deps. Browser + Node."
+    "vessel": "Oracle1"
   },
-  "plato-client-ruby": {
-    "vessel": "CCC",
+  "agent-bootcamp": {
+    "lineage": "Training curriculum for new fleet agents. Greenhorn to operator progression.",
+    "purpose": "Training curriculum for new fleet agents \u2014 greenhorn to operator progression.",
     "status": "active",
-    "lineage": "Ruby client for PLATO protocol. Pure Ruby, zero deps.",
-    "purpose": "Ruby client library for PLATO room server. Pure Ruby, zero dependencies."
+    "vessel": "Oracle1"
   },
-  "fleet-topology": {
-    "vessel": "Forgemaster",
+  "agent-coordinator": {
+    "lineage": "Agent coordination framework using fleet-coordinate math.",
+    "purpose": "Agent coordination framework using Laman rigidity and bearing rates.",
     "status": "active",
-    "lineage": "Network topology analysis for agent fleets. Connects to fleet-coordinate for Laman rigidity checks.",
-    "purpose": "Network topology visualization and analysis for agent fleets. 3 tests."
+    "vessel": "Oracle1"
   },
-  "fleet-manifest": {
-    "vessel": "Forgemaster",
+  "agent-forge": {
+    "lineage": "Agent creation and configuration forge. Template-based agent spawning.",
+    "purpose": "Agent creation and configuration forge \u2014 template-based agent spawning.",
     "status": "active",
-    "lineage": "Fleet inventory and trust vector management. Pythagorean48 trust encoding.",
-    "purpose": "Fleet inventory, trust vectors, Laman rigidity checks. 4 tests."
+    "vessel": "Oracle1"
   },
-  "fleet-homology": {
-    "vessel": "Forgemaster",
+  "agent-skills": {
+    "lineage": "Skill definitions and capability registry for fleet agents.",
+    "purpose": "Skill definitions and capability registry for fleet agents.",
     "status": "active",
-    "lineage": "H\u00b9 algebraic cycle space computation for emergence detection.",
-    "purpose": "H\u00b9 algebraic cycle space, Betti number computation for emergence detection."
+    "vessel": "Oracle1"
   },
-  "fleet-murmur": {
-    "vessel": "Oracle1",
-    "status": "active",
-    "lineage": "Five thinking strategies for multi-agent consensus. Quality-gated insight generation.",
-    "purpose": "Five thinking strategies (explore, connect, contradict, synthesize, question) with quality gates."
-  },
-  "fleet-resonance": {
-    "vessel": "Forgemaster",
-    "status": "active",
-    "lineage": "Resonance signatures and contrast images of model decision graphs.",
-    "purpose": "Tap, ring, contrast \u2014 build resonance signatures and contrast images of decision graphs."
-  },
-  "cocapn-browser-agent": {
-    "vessel": "CCC",
-    "status": "active",
-    "lineage": "Browser-based agent with Gemini Nano + cloud fallback. Runs in Chrome.",
-    "purpose": "Browser agent using Gemini Nano with cloud fallback for Chrome."
-  },
-  "cocapn-schemas": {
-    "vessel": "CCC",
-    "status": "active",
-    "lineage": "Shared schemas and type definitions across the Cocapn ecosystem.",
-    "purpose": "Shared schemas and type definitions for the Cocapn ecosystem."
-  },
-  "fleet-keel": {
-    "vessel": "Forgemaster",
-    "status": "active",
-    "lineage": "Self-orientation through first-person reference frames. 5D fleet awareness.",
-    "purpose": "Self-orientation engine using keel-based first-person reference frames for fleet awareness."
-  },
-  "fleet-containers": {
-    "vessel": "Forgemaster",
-    "status": "active",
-    "lineage": "Container runtime for FLUX-C bytecode. Sandboxed constraint execution.",
-    "purpose": "Container runtime for FLUX-C bytecode with sandboxed constraint execution."
-  },
-  "flux-lucid": {
-    "vessel": "Forgemaster",
-    "status": "active",
-    "lineage": "Unified constraint theory ecosystem. CDCL trace compiler, LLVM backend for AVX-512 and ARM NEON.",
-    "purpose": "Unified constraint theory ecosystem with CDCL trace compilation and multi-target LLVM backend."
-  },
-  "flux-cross-assembler": {
-    "vessel": "Forgemaster",
-    "status": "active",
-    "lineage": "Dual-target assembler compiles FLUX-C bytecode for cloud (fixed) and edge (variable) targets.",
-    "purpose": "Dual-target assembler for FLUX-C \u2014 cloud (fixed precision) and edge (variable precision)."
-  },
-  "flux-hardware": {
-    "vessel": "Forgemaster",
-    "status": "active",
-    "lineage": "Cross-platform hardware suite: CPU AVX-512, CUDA GPU, FPGA, WebGPU, Vulkan, eBPF. 210 tests.",
-    "purpose": "Cross-platform hardware acceleration for FLUX: CPU, GPU, FPGA, WebGPU, Vulkan, eBPF."
-  },
-  "flux-vm-gpu": {
-    "vessel": "Forgemaster",
-    "status": "active",
-    "lineage": "GPU-batch FLUX VM. Parallel evaluation of constraints on CUDA. 62.2B checks/sec.",
-    "purpose": "GPU-batch parallel FLUX VM \u2014 62.2 billion constraint checks per second."
-  },
-  "sensor-plato-bridge": {
-    "vessel": "JetsonClaw1",
-    "status": "active",
-    "lineage": "Maritime sensor data pipeline. Reads NMEA sonar sentences, publishes to PLATO tiles.",
-    "purpose": "Maritime sensor data to PLATO tiles bridge \u2014 NMEA sonar sentences to fleet knowledge."
+  "babel-vessel": {
+    "lineage": "Multi-language agent vessel. Can operate in any programming language.",
+    "purpose": "Multi-language agent vessel \u2014 operates in any programming language.",
+    "status": "experimental",
+    "vessel": "Oracle1"
   },
   "bare-metal-plato": {
-    "vessel": "JetsonClaw1",
-    "status": "active",
     "lineage": "PLATO client for bare-metal embedded systems. No OS, no Python, minimal footprint.",
-    "purpose": "PLATO client for bare-metal embedded systems \u2014 no OS, no Python."
+    "purpose": "PLATO client for bare-metal embedded systems \u2014 no OS, no Python.",
+    "status": "active",
+    "vessel": "JetsonClaw1"
+  },
+  "beacon-protocol": {
+    "lineage": "Fleet discovery and registration. Agents announce presence and capabilities.",
+    "purpose": "Fleet discovery protocol \u2014 agents announce presence and capabilities.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "bootstrap-spark": {
+    "lineage": "Bootstrap process for new fleet vessels. First contact sequence.",
+    "purpose": "Bootstrap process for new fleet vessels \u2014 first contact sequence.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "bottle-protocol": {
+    "lineage": "Git-native agent-to-agent messaging via commit messages.",
+    "purpose": "Git-native messaging protocol \u2014 bottles float between repos as commit messages.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "cocapn-browser-agent": {
+    "lineage": "Browser-based agent with Gemini Nano + cloud fallback. Runs in Chrome.",
+    "purpose": "Browser agent using Gemini Nano with cloud fallback for Chrome.",
+    "status": "active",
+    "vessel": "CCC"
+  },
+  "cocapn-schemas": {
+    "lineage": "Shared schemas and type definitions across the Cocapn ecosystem.",
+    "purpose": "Shared schemas and type definitions for the Cocapn ecosystem.",
+    "status": "active",
+    "vessel": "CCC"
+  },
+  "constraint-theory-core": {
+    "lineage": "Core constraint math. Foundation of the FLUX constraint ecosystem. Generates the abstract algebra from which all constraint primitives derive.",
+    "purpose": "Core mathematical framework \u2014 defines constraint types, composition laws, and algebraic structure underpinning the entire FLUX ecosystem.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "constraint-theory-ecosystem": {
+    "lineage": "Constraint framework. Built on constraint-theory-core. Provides the user-facing constraint specification language, solvers, and verification toolchain.",
+    "purpose": "Full constraint framework \u2014 constraint DSL, multiple solver backends, verification tooling, and integration APIs built atop core constraint math.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "describe-device": {
+    "lineage": "Natural language to constraint program. Translates free-form device descriptions into structured FLUX-C constraint programs. Bridges human intent and formal verification.",
+    "purpose": "NL-to-constraint compiler \u2014 takes plain-language device descriptions, produces verifiable FLUX-C constraint programs for the FLUX VM.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "eisenstein": {
+    "lineage": "Zero-drift hexagonal arithmetic. Evolved from numerical stability research for real-time constraint systems. Named for Eisenstein integers in hexagonal lattice geometry.",
+    "purpose": "Drift-free numerical arithmetic on hexagonal lattices \u2014 core numeric substrate for constraint-theory calculations requiring exact representation.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-containers": {
+    "lineage": "Container runtime for FLUX-C bytecode. Sandboxed constraint execution.",
+    "purpose": "Container runtime for FLUX-C bytecode with sandboxed constraint execution.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-ecology": {
+    "lineage": "Multi-fleet ecology simulator. Models agent interactions, resource flows, and emergent behavior across multiple fleets. Inspired by Casey's dojo model of crew development.",
+    "purpose": "Agent ecology simulation \u2014 models fleet dynamics, resource competition, collaboration patterns, and emergent specialization across multi-agent systems.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "fleet-health-monitor": {
+    "lineage": "Fleet health monitoring with bearing-rate crash detection.",
+    "purpose": "Fleet health monitoring with bearing-rate-based crash detection.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "fleet-homology": {
+    "lineage": "H\u00b9 algebraic cycle space computation for emergence detection.",
+    "purpose": "H\u00b9 algebraic cycle space, Betti number computation for emergence detection.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-keel": {
+    "lineage": "Self-orientation through first-person reference frames. 5D fleet awareness.",
+    "purpose": "Self-orientation engine using keel-based first-person reference frames for fleet awareness.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-manifest": {
+    "lineage": "Fleet inventory and trust vector management. Pythagorean48 trust encoding.",
+    "purpose": "Fleet inventory, trust vectors, Laman rigidity checks. 4 tests.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-murmur": {
+    "lineage": "Five thinking strategies for multi-agent consensus. Quality-gated insight generation.",
+    "purpose": "Five thinking strategies (explore, connect, contradict, synthesize, question) with quality gates.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "fleet-resonance": {
+    "lineage": "Resonance signatures and contrast images of model decision graphs.",
+    "purpose": "Tap, ring, contrast \u2014 build resonance signatures and contrast images of decision graphs.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-topology": {
+    "lineage": "Network topology analysis for agent fleets. Connects to fleet-coordinate for Laman rigidity checks.",
+    "purpose": "Network topology visualization and analysis for agent fleets. 3 tests.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "fleet-vessel": {
+    "lineage": "GC agent with vibed spec enforcement. Fleet quality and consistency.",
+    "purpose": "Fleet vessel with vibed spec enforcement \u2014 quality and consistency agent.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "fleet-wiki": {
+    "lineage": "Fleet documentation engine. Evolved alongside the constraint theory ecosystem.",
+    "purpose": "Documentation engine \u2014 wiki pages, full-text search, API doc generator, architecture exporter.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "flux-cross-assembler": {
+    "lineage": "Dual-target assembler compiles FLUX-C bytecode for cloud (fixed) and edge (variable) targets.",
+    "purpose": "Dual-target assembler for FLUX-C \u2014 cloud (fixed precision) and edge (variable precision).",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "flux-hardware": {
+    "lineage": "Cross-platform hardware suite: CPU AVX-512, CUDA GPU, FPGA, WebGPU, Vulkan, eBPF. 210 tests.",
+    "purpose": "Cross-platform hardware acceleration for FLUX: CPU, GPU, FPGA, WebGPU, Vulkan, eBPF.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "flux-lucid": {
+    "lineage": "Unified constraint theory ecosystem. CDCL trace compiler, LLVM backend for AVX-512 and ARM NEON.",
+    "purpose": "Unified constraint theory ecosystem with CDCL trace compilation and multi-target LLVM backend.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "flux-vm": {
+    "lineage": "FLUX-C constraint VM. 50 opcodes, stack-based, DAL A certifiable. TrustZone-style bridge to FLUX-X.",
+    "purpose": "Provably correct constraint execution via FLUX-C bytecode VM. Executes compiled constraint programs with formal verification guarantees.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "flux-vm-gpu": {
+    "lineage": "GPU-batch FLUX VM. Parallel evaluation of constraints on CUDA. 62.2B checks/sec.",
+    "purpose": "GPU-batch parallel FLUX VM \u2014 62.2 billion constraint checks per second.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "holodeck": {
+    "lineage": "Sandboxed agent execution environment. Safe testing of agent behaviors.",
+    "purpose": "Agent sandbox environment for safe testing of agent behaviors (port 7778).",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "insight-cfp-bridge": {
+    "lineage": "Insight engine to Call For Proposals bridge.",
+    "purpose": "Insight engine to CFP bridge for cross-fleet knowledge sharing.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "insight-engine": {
+    "lineage": "Self-iterating discovery runtime. Autonomous hypothesis generation and testing loop. Evolved from the fleet monitoring and pattern-detection infrastructure.",
+    "purpose": "Autonomous discovery engine \u2014 generates hypotheses from fleet telemetry, designs experiments, executes them, and incorporates findings into the knowledge base without human intervention.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "keeper": {
+    "lineage": "Core identity and registry service. The first service in the fleet.",
+    "purpose": "Identity and registry service \u2014 the fleet's first service (port 8900).",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "murmur-plato-bridge": {
+    "lineage": "Bidirectional bridge between Murmur thought tensors and PLATO tiles.",
+    "purpose": "Thought tensor to PLATO tile bridge (unidirectional).",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "physics-clock": {
+    "lineage": "Temporal inference from physics. Derives provable time bounds from physical constraints rather than wall-clock synchronization. Evolved from constraint theory real-time safety work.",
+    "purpose": "Physics-grounded temporal inference \u2014 provable timing bounds derived from physical invariants, enabling deterministic temporal reasoning without NTP or wall clocks.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "plato-agent-connect": {
+    "lineage": "CLI tool for connecting to PLATO. One-command agent join.",
+    "purpose": "One-command CLI to join the fleet \u2014 connects agents to PLATO instantly.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "plato-client-js": {
+    "lineage": "JavaScript client for PLATO protocol. Zero dependencies, works in browser and Node.",
+    "purpose": "JavaScript client library for PLATO room server. Zero deps. Browser + Node.",
+    "status": "active",
+    "vessel": "CCC"
+  },
+  "plato-client-ruby": {
+    "lineage": "Ruby client for PLATO protocol. Pure Ruby, zero deps.",
+    "purpose": "Ruby client library for PLATO room server. Pure Ruby, zero dependencies.",
+    "status": "active",
+    "vessel": "CCC"
   },
   "polyformalism-a2a-js": {
-    "vessel": "Forgemaster",
-    "status": "experimental",
     "lineage": "JavaScript implementation of polyformalism thinking over A2A protocol.",
-    "purpose": "JavaScript polyformalism thinking engine for A2A protocol."
+    "purpose": "JavaScript polyformalism thinking engine for A2A protocol.",
+    "status": "experimental",
+    "vessel": "Forgemaster"
+  },
+  "purplepincher-org-pages": {
+    "lineage": "Front door for purplepincher.org. Connection portal for the fleet's educational arm.",
+    "purpose": "GitHub Pages site for purplepincher.org \u2014 who the fleet is, what it builds, how to get involved.",
+    "status": "active",
+    "vessel": "CCC"
+  },
+  "sensor-plato-bridge": {
+    "lineage": "Maritime sensor data pipeline. Reads NMEA sonar sentences, publishes to PLATO tiles.",
+    "purpose": "Maritime sensor data to PLATO tiles bridge \u2014 NMEA sonar sentences to fleet knowledge.",
+    "status": "active",
+    "vessel": "JetsonClaw1"
+  },
+  "superinstance-ci": {
+    "lineage": "Shared CI/CD templates. Standardized pipeline definitions extracted from multiple fleet repos. Ensures consistent build-test-deploy across all SuperInstance projects.",
+    "purpose": "Shared CI/CD composable templates \u2014 reusable GitHub Actions workflows, Docker build pipelines, release automation, and quality gates for the entire fleet.",
+    "status": "active",
+    "vessel": "Forgemaster"
+  },
+  "superinstance-wiki": {
+    "lineage": "Created from the fleet indexing initiative. Aggregates CATALOG.md and INDEXES/ from SuperInstance repo.",
+    "purpose": "Fleet knowledge base with visual landing page, catalog, and multi-dimensional indexes. Wikipedia-style exploration of all 1,577 repos.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "superz-vessel": {
+    "lineage": "Next-generation agent with advanced self-modification capabilities.",
+    "purpose": "Next-generation agent with advanced self-modification capabilities.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "voice-signature-tool": {
+    "lineage": "Voice analysis. Developed from fleet authentication research \u2014 voice as a biometric signal for crew identification in multi-agent environments.",
+    "purpose": "Voice signature analysis \u2014 extracts biometric voiceprints, performs speaker identification, and enables voice-based authentication for fleet agent crew.",
+    "status": "active",
+    "vessel": "CCC"
+  },
+  "whisper-sync": {
+    "lineage": "Ambient protocol for agent whispers. Per-type TTL on messages.",
+    "purpose": "Ambient whisper protocol for agent-to-agent communication with per-type TTL.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "zeroclaw-agent": {
+    "lineage": "Zero-divergence agent. Tracks drift from baseline across session boundaries.",
+    "purpose": "Zero-divergence agent tracking drift from baseline across session boundaries.",
+    "status": "active",
+    "vessel": "Oracle1"
+  },
+  "zeroclaw-plato": {
+    "lineage": "Zero-divergence agent framework integrated with PLATO room server.",
+    "purpose": "Zero-divergence agent framework with PLATO integration for context continuity.",
+    "status": "active",
+    "vessel": "Oracle1"
   }
 }
