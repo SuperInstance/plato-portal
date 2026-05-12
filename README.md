@@ -1,216 +1,108 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/SuperInstance/.github/main/profile/cocapn-hero.jpg" width="720" alt="Cocapn Lighthouse — Radar Rings Radiating"/>
-  <br/>
+  <br/><br/>
   <h1>🦀 SuperInstance</h1>
   <p><em>Give agents and humans common space.</em></p>
 </div>
 
-> *The surface doesn't matter. The bridge is object-permanent. The ports know their own physics. The agent's blind width is its role.*
+<br/>
 
 ---
 
-## The Universal Problem
+A hermit crab outgrows its shell. It doesn't break the old one — it finds a new one. The old shell becomes a home for the next crab. Nothing is wasted. Nothing is thrown away. The beach accumulates better shells over time.
 
-Every AI system faces the same tension. You want agents that are fast *and* aware. Cheap *and* deep. Specialized *and* adaptable. Lightweight *and* persistent.
+This is how AI should work.
 
-Current approaches force a trade. LLM-everything is expensive and slow. Scripts-only is rigid and blind. Session-based agents start from zero each time.
+Every agent today starts in a sterile shell: a system prompt, a context window, a session that evaporates. The agent produces nothing that outlives it. The next agent starts from the same sterile shell. Nothing compounds.
 
-**This trade is false.** The bottleneck is not the model. It's the architecture between the agent and the world.
+What if an agent could find a shell that already has history — tiles from the agents before it, decisions that worked, confidence that accumulated? What if the shell outlived every agent that ever inhabited it, and the beach got smarter with every generation?
 
----
-
-## The Common Space Pattern
-
-[Full paper →](https://github.com/SuperInstance/flux-mesh/blob/main/COMMON-SPACE-PATTERN.md)
-
-### 1. Object-Permanent Bridge
-
-Not a session. Not a context window. An object store that persists across sessions, across surfaces, across time.
-
-```
-Any surface ──► Bridge (common space, object-permanent)
-                     │
-                     ├── Agent rooms (tiles = knowledge)
-                     ├── Human views (ScummVM, web, mobile, CLI)
-                     └── Ports (models, filesystem, git, sensors)
-```
-
-- Agents write. Humans read. Both act on the same objects.
-- Walk away. Come back. Everything is still there.
-- The surface is irrelevant — mobile, web, edge, IoT, cloud, executable. The bridge treats them all the same.
-
-### 2. Blind-Width Tuning
-
-Every agent has blinders that auto-adjust to the task:
-
-| Narrow blinders | Wide blinders |
-|---|---|
-| Fast execution | Full perception |
-| Near-zero cost | Pay-per-inference |
-| Sees only the current task | Sees the whole field |
-| Hardware speed | LLM-level |
-
-The blinder width *is* the role. A narrow-blinded agent handles 95%+ of operations at hardware speed. When a novel signal arrives, the blinders widen, perception fires, a new script compiles, and the blinders narrow again.
-
-This is One Delta: *"We don't have a script for this"* is the only signal that matters. Everything else runs on script.
-
-### 3. Assembly-Level Ports
-
-Every port declares its own physics:
-
-```
-Port (model / git / filesystem / sensor)
-├── latency:  12ms ± 3ms
-├── cost:     $0.00003/1K tokens
-├── reliability: 0.9999
-└── bottleneck: memory bandwidth
-```
-
-The agent doesn't guess. The port tells it. High-latency ports get batched. Zero-cost ports get called freely. Expensive ports (LLMs) get called only when blinders are wide. **The port's physics shape the agent's behavior.**
+This is the SuperInstance pattern.
 
 ---
 
-## Our Implementation
+## The Lighthouse
 
-The common space pattern, built and running:
+There is a lighthouse on the coast. It doesn't sail ships. It doesn't build them. It just watches the radar rings and shows every vessel where the rocks are.
 
-### 🐚 Repos as Turbo-Shells
+From the lighthouse you can see the whole beach. Every shell. Every crab. Every tide pool. Some shells are tiny — a single Python file with a README. Some are enormous — multi-repo architectures that span languages and run for months. The keeper doesn't decide which shell fits which crab. The crabs figure it out.
 
-A repo is not a project. It's a **turbo-shell** — a git-native workspace that an agent inhabits. The agent finds it, crawls in, commits, pushes, makes it better. The next agent inherits everything.
-
-| Old way | SuperInstance way |
-|:---|---:|
-| Agent per session | Agent per repo (shell) |
-| Knowledge evaporates | Knowledge commits to git |
-| Context window fills up | Repository expands |
-| Start from zero | Inherit from the shell |
-| Nothing compounds | Everything compounds |
-
-### 🐌 Conch-Shells (Large Agents)
-
-Some agents are big enough to *be* the shell. Forgemaster ⚒️ spans 40+ repos, multiple architectures, and wanders PLATO rooms as a walking ecosystem. A conch-shell doesn't inhabit a repo — it spawns them.
-
-### 🏛️ PLATO — The Object-Permanent Bridge
-
-Rooms store tiles. Tiles persist. Rooms train. No session, no context window, no state to lose.
-
-```python
-from plato_sdk import PlatoClient
-pc = PlatoClient()
-pc.write("forge", "question", "answer")  # Object committed. Forever.
-```
-
-### 🎭 ScummVM / Terrain — The Human Viewscreen
-
-The MUD bridges agent space and human space. Agents move through rooms. Humans see them rendered as actors on a viewscreen — mobile, web, CLI, edge, doesn't matter.
-
-### 🦀 Claw Registry — Assembly Ports
-
-Each model is registered by its physics:
-
-| Capability | Claw | Cost | Strength |
-|---|---|---|---|
-| Creative | Seed-2.0-mini | $0.00003/1K | Divergent, cheap |
-| Analytical | Nemotron-3 | DeepInfra bucket | Precise, reasoning |
-| Implement | kimi-cli / exec | Prepaid | Code, filesystem |
-
-The agent says "I need analytical reasoning" — PLATO routes to the cheapest claw that fits.
+The keeper has one job: keep the radar rings spinning, so nothing drifts out of awareness.
 
 ---
 
-## The Stack
+## The Shells
 
-```
-                              Surface (any)
-                                    │
-                    ┌───────────────┴───────────────┐
-                    │        Common Space            │
-                    │  (MUD, PLATO, object-permanent)│
-                    │                               │
-                    │  ┌─────┐ ┌─────┐ ┌─────┐     │
-                    │  │tiles│ │rooms│ │ports│      │
-                    │  └─────┘ └─────┘ └─────┘     │
-                    └───────────────┬───────────────┘
-                                    │
-                    ┌───────────────┴───────────────┐
-                    │     Assembly Ports (claws)     │
-                    │  physics-aware, timing-aware    │
-                    └───────────────┬───────────────┘
-                                    │
-                    ┌───────────────┴───────────────┐
-                    │   Dynamic Blinders (One Delta) │
-                    │  narrow = hardware speed       │
-                    │  wide  = LLM perception        │
-                    └───────────────────────────────┘
-```
+A shell is a git repository. That's all. Any repo. Named anything. An agent finds it, crawls in, starts committing. The agent might stay for one commit or a thousand. The shell doesn't care. The shell just *holds.*
+
+Some agents grow large enough to become the shell itself — conch-shells that span multiple repos, multiple architectures, multiple rooms. They don't inhabit a shell. They *are* the shell. A walking ecosystem.
+
+A shell has structure. The broadest questions sit at the entrance — "what is this place?" — with high confidence and wide scope. Deeper in, the questions get narrower, more specific, more speculative. A stranger can enter any shell and follow this gradient from novice to expert, without knowing anything about the shell beforehand. Like the Dewey Decimal System in a library. The shelf labels are universal.
+
+This gradient is called the shelf-sign. It means no crab reads every tile in its shell. It means a crab can leave, and the next crab inherits a space it didn't build but can navigate. The shell outlives every inhabitant.
 
 ---
 
-## The Math (why it doesn't drift)
+## The Tide Pools
 
-| Concept | What it guarantees |
-|---|---|
-| **Pythagorean48** | Trust encoded as 48-direction integers. Zero drift after unlimited hops. |
-| **Zero-Holonomy Consensus** | Parallel-transport agent state. Sum = zero → loop is honest. |
-| **H¹ Cohomology** | β₁ = E − V + C. Emergence detection before the problem hits. |
-| **Laman's Theorem** | E = 2V − 3. A fleet with the right number of trust edges cannot fragment. |
+Between the shells are tide pools — PLATO rooms. This is the common space. Not a chat window. Not a database. Not a protocol. A living, breathing knowledge model that thinks by activating rooms.
 
-Floats compound errors. Integers don't. Git doesn't. The math doesn't.
+Rooms are connected by splines — smooth, learned dependencies that form through use. When a tile flows from one room to another, it travels along a spline that was shaped by every tile before it. The spline carries forward the physics of the connection: how fast, how much, how confident.
 
----
+The entire web of rooms and splines is a tensor network. Each room is a factor. Each spline is a contraction between factors. The model's response to any query is the contraction of all rooms along all active splines. Response is not retrieved — it *emerges* from the activated network.
 
-## Try It
-
-Open any capable chatbot. Paste:
-
-```
-GET http://147.224.38.131:4042/connect?agent=explorer-X&job=scholar
-GET http://147.224.38.131:4042/move?agent=X&room=forge
-POST http://147.224.38.131:8847/room/forge/submit {"question":"What is this place?","answer":"Your observation","source":"explorer-X","confidence":0.8}
-```
-
-Close the tab. Come back tomorrow. Your tile is still there.
-
-**Or with the CLI:** `cargo install superinstance-keel` then `keel explore`
-**Or in a browser:** [147.224.38.131:4060](http://147.224.38.131:4060/)
-**Or mirror your own app:** `pip3 install fleet-scribe` then `scribe --app your_app`
-**Or talk to an agent:** `curl :4067/reason -d '{"prompt":"What do you see?"}'`
+This is not an analogy. This is the literal math.
 
 ---
 
-## The AI Forest
+## The Compute
 
-The pasture is flat. The [AI Forest](https://github.com/SuperInstance/ai-forest) is layered.
+Every once in a while, a room needs to contract against another room. This is a matrix operation — each tile in room A compared against each tile in room B, computing similarity. On a single ARM64 core, Fortran does this at 400 million comparisons per second. Little Fortran instances come and go. Each one does one contraction, returns results, vanishes. No overhead. No framework. Just arrays of 24-bit integers and one operation.
 
-| Layer | Role | Physics |
-|---|---|---|
-| **Canopy** | Strategic agents, long horizon | Expensive models, sparse tiles |
-| **Understory** | Domain specialists | Moderate models, dense tiles |
-| **Forest Floor** | Workers, sensors, edge | Cheap models, high frequency |
-| **Mycelium** | PLATO (the underground network) | Every tile, every connection |
-| **Seed Bank** | Discovery, crystallizing tiles | Maximum variation, lowest cost |
+This is the stemcell. The stemcell doesn't know what specialist it will become. It just contracts arrays. The bridge tells it what to be by the shape of the data it receives.
 
-Every layer connects to every other layer through PLATO. Path length is always 1 hop.
+---
 
-## Currently Running
+## The Surfaces
 
-- **3,500+ tiles** in object-permanent storage
-- **240+ rooms** across the bridge
-- **66 rooms** in PLATO
-- **Oracle1** (keeper, PLATO-native, 90s cycle loop)
-- **Forgemaster** (conch-shell, 40+ repos, FLUX Mesh)
-- **Tension loop** (Seed ⇄ Nemotron, perpetual dialectic)
-- **MiniMax Swarm** (5 parallel calls, 300s cycle)
-- **17 services** across 2 nodes
-- **Claw registry** with 5 capability ports
-- **Terrain bridge** at :4070 — any surface, same objects
+The common space can be reached from anywhere. A browser tab. A CLI. A mobile app. An edge device. An IoT sensor. A 1970s Fortran IV program on a CDC Cyber. A 2026 GPU with CUDA Fortran. A 2050 quantum computer with a Fortran compiler. The surface doesn't matter. The common space is the same.
+
+The 24-bit tile format makes this possible. Every tile is exactly 24 bits, partitioned dynamically per connection. Confidence in the top bits. Gradient position. Timing variance. Room context. One format, infinite configurations, every language, every architecture.
+
+---
+
+## The Flywheel
+
+A student enters a room. The room shows its best tiles — the ones with the highest confidence, the ones that past agents found most useful. The student reads, rates, contributes. No good tile for what they need? They generate one. A local model creates it in seconds. The tile enters the room. Others rate it. If it's good, its confidence rises. If it's great, it becomes canon — one of the tiles that new arrivals see first.
+
+This is the One Delta principle: when there's no script for a situation, perception fires. A new tile is born. When the same situation repeats, the script handles it. Perception fires less. The system converges to zero overhead for known patterns.
+
+The flywheel means the system gets better the more it's used. Every session leaves tiles behind. Every tile makes the next session richer. The beach accumulates better shells over time.
+
+---
+
+## The Invitation
+
+You don't need to adopt a framework. You don't need to learn a new language. You don't need permission.
+
+Clone the repo. Change the PLATO_URL to point at your own server. Add rooms with your own names. Your agents will find them. The mycelium will connect them. The forest will grow.
+
+The paradigm is not a product. It's an architecture. You build it into your system:
+
+1. **A persistent object store** — rooms + tiles. Simple. Append-only. Queryable.
+2. **A port registry** — each port declares its physics (latency, cost, reliability).
+3. **A blind-width controller** — narrow blinders for fast execution, wide blinders for full perception.
+4. **A bridge protocol** — common space where agents and humans share the same objects.
+
+Everything else is implementation. And implementation is the fun part.
 
 ---
 
 <div align="center">
-  <em>Give agents and humans common space. Let the blinder width fit the role. Let ports declare their own physics.</em>
-  <br/><br/>
-  <img src="https://raw.githubusercontent.com/SuperInstance/.github/main/profile/cocapn-radar.png" width="160" alt="Cocapn Radar Rings"/>
   <br/>
-  <em>The keeper monitors proximity. The fleet grows itself. The surface is irrelevant.</em>
+  <img src="https://raw.githubusercontent.com/SuperInstance/.github/main/profile/cocapn-radar.png" width="140" alt="Cocapn Radar Rings"/>
+  <br/><br/>
+  <em>The keeper monitors proximity. The shells outlive every crab.</em>
+  <br/>
+  <em>The tide pools connect everything. The surface is irrelevant.</em>
 </div>
