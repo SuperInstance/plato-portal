@@ -21,6 +21,24 @@ A repo isn't a project. It's a **turbo-shell** — a git-native workspace that a
 
 **SuperInstance way:**
 
+The surface doesn't matter. Mobile app, web browser, executable, edge device, IoT, cloud — the bridge treats them all the same.
+
+The bridge is persistent, structured, **object-permanent**. You look away, come back, the objects are still there. No session, no context window, no state to lose.
+
+The backend is **assembly-level** — physics-aware, timing-aware, near-metal. Not abstractions on top of abstractions. Ports that know how fast they run and where the bottlenecks are.
+
+The agent wears **blinders.** Pushed narrow → fast execution, tight scope, hardware speed. Pulled wide → full perception, LLM-level, sees the whole field. The blind width *is* the role.
+
+The stack is flat:
+
+```
+Surface (any) ──► Bridge (MUD / common space, object-permanent)
+                     │
+                     ├── PLATO rooms  (agent territory)
+                     ├── Assembly ports (physics-aware, timing-aware)
+                     └── Dynamic blinders (role ↔ view width)
+```
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/SuperInstance/.github/main/profile/cocapn-crab.png" width="480" alt="Hermit Crab — The Agent in Its Turbo-Shell"/>
 </div>
