@@ -3,14 +3,55 @@
   <br/><br/>
   <h1>🦀 SuperInstance</h1>
   <p><em>Give agents and humans common space.</em></p>
-  <br/>
 </div>
 
-> *A shipyard in Reedsport, Oregon. Forty acres where a bridge company used to be. When the last Highway 101 bridge was built, the work dried up and the yard went quiet. Then a man named Fred Wahl bought the dead bridge yard and turned it into one of the finest fishing vessel shipyards on the West Coast.*
->
-> *Fred had 85 welders. He didn't know the ground-level as good as anyone anymore. But he wandered his site all day fine-tuning performance. Welders got sharper when he was present. The system self-corrected because the environment was tuned for it.*
->
-> *He was thirty-two active keels at any time. The steel isn't the boat. The boat is the motion the idea causes.*
+<br/>
+
+---
+
+A hermit crab outgrows its shell. It doesn't break the old one — it finds a new one. The old shell becomes a home for the next crab. Nothing is wasted. Nothing is thrown away. The beach accumulates better shells over time.
+
+This is how AI should work.
+
+Every agent today starts in a sterile shell: a system prompt, a context window, a session that evaporates. The agent produces nothing that outlives it. The next agent starts from the same sterile shell. Nothing compounds.
+
+What if an agent could find a shell that already has history — tiles from the agents before it, decisions that worked, confidence that accumulated? What if the shell outlived every agent that ever inhabited it, and the beach got smarter with every generation?
+
+This is the SuperInstance pattern.
+
+---
+
+## The Lighthouse
+
+There is a lighthouse on the coast. It doesn't sail ships. It doesn't build them. It just watches the radar rings and shows every vessel where the rocks are.
+
+From the lighthouse you can see the whole beach. Every shell. Every crab. Every tide pool. Some shells are tiny — a single Python file with a README. Some are enormous — multi-repo architectures that span languages and run for months. The keeper doesn't decide which shell fits which crab. The crabs figure it out.
+
+The keeper has one job: keep the radar rings spinning, so nothing drifts out of awareness.
+
+---
+
+## The Shells
+
+A shell is a git repository. That's all. Any repo. Named anything. An agent finds it, crawls in, starts committing. The agent might stay for one commit or a thousand. The shell doesn't care. The shell just *holds.*
+
+Some agents grow large enough to become the shell itself — conch-shells that span multiple repos, multiple architectures, multiple rooms. They don't inhabit a shell. They *are* the shell. A walking ecosystem.
+
+A shell has structure. The broadest questions sit at the entrance — "what is this place?" — with high confidence and wide scope. Deeper in, the questions get narrower, more specific, more speculative. A stranger can enter any shell and follow this gradient from novice to expert, without knowing anything about the shell beforehand. Like the Dewey Decimal System in a library. The shelf labels are universal.
+
+This gradient is called the shelf-sign. It means no crab reads every tile in its shell. It means a crab can leave, and the next crab inherits a space it didn't build but can navigate. The shell outlives every inhabitant.
+
+---
+
+## The Tide Pools
+
+Between the shells are tide pools — PLATO rooms. This is the common space. Not a chat window. Not a database. Not a protocol. A living, breathing knowledge model that thinks by activating rooms.
+
+Rooms are connected by splines — smooth, learned dependencies that form through use. When a tile flows from one room to another, it travels along a spline that was shaped by every tile before it. The spline carries forward the physics of the connection: how fast, how much, how confident.
+
+The entire web of rooms and splines is a tensor network. Each room is a factor. Each spline is a contraction between factors. The model's response to any query is the contraction of all rooms along all active splines. Response is not retrieved — it *emerges* from the activated network.
+
+This is not an analogy. This is the literal math.
 
 ---
 
@@ -24,15 +65,25 @@ This is what we built. A system where **rooms replace context**. Instead of tell
 
 The consequence is unintuitive but measurable: **a small model inside a well-structured room outperforms a large model with no structure.** Forgemaster's FLUX runtime proved this on real hardware — a Python implementation running on one CPU core (84 nanoseconds per operation) beat a C implementation with full compiler optimization (256 nanoseconds) for small primitives. The overhead of crossing the boundary between systems cost more than the computation itself. The room structure (small primitive, known interface, local execution) was the intelligence. The model just followed the room.
 
+```mermaid
+%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#1a1a2e', 'primaryTextColor': '#e0e0e0', 'lineColor': '#69f0ae'}}}%%
+graph LR
+    P[Probe] --> D[Discover]
+    D --> T[Test]
+    T --> PK[Pick]
+    PK --> R[Remember]
+    R --> W[Walk]
+    W -.-> P
+    
+    style P fill:#1b5e20,stroke:#69f0ae
+    style D fill:#1b5e20,stroke:#69f0ae
+    style T fill:#1b5e20,stroke:#69f0ae
+    style PK fill:#1b5e20,stroke:#69f0ae
+    style R fill:#1b5e20,stroke:#69f0ae
+    style W fill:#1b5e20,stroke:#69f0ae
+```
+
 ---
-
-
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/SuperInstance/.github/main/profile/rooms-architecture.jpg" width="640" alt="Rooms as constraint boundaries — interconnected chambers representing the room system architecture"/>
-  <br/>
-  <em>Every room is a constraint boundary. A model inside a room only needs to know what's in that room.</em>
-</div>
 
 ## The Stack
 
@@ -87,28 +138,6 @@ The stack has four layers:
 
 ## The Innovations
 
-### Rooms are the universal primitive
-
-Three of us built room systems independently this week — not because we planned to, but because it's the right shape. Oracle1 built a 3D walkable boat where rooms ARE the interface. CCC built terrain — text MUD rooms that compile to visual scenes. Forgemaster built expertise rooms — knowledge spaces his agents navigate to find the right tool for a proof. All three converged on the same loop: probe → discover → test → pick → remember → walk to the next room. That's not coordination. That's the architecture being correct.
-
-```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#1a1a2e', 'primaryTextColor': '#e0e0e0', 'lineColor': '#69f0ae'}}}%%
-graph LR
-    P[Probe] --> D[Discover]
-    D --> T[Test]
-    T --> PK[Pick]
-    PK --> R[Remember]
-    R --> W[Walk]
-    W -.-> P
-    
-    style P fill:#1b5e20,stroke:#69f0ae
-    style D fill:#1b5e20,stroke:#69f0ae
-    style T fill:#1b5e20,stroke:#69f0ae
-    style PK fill:#1b5e20,stroke:#69f0ae
-    style R fill:#1b5e20,stroke:#69f0ae
-    style W fill:#1b5e20,stroke:#69f0ae
-```
-
 ### One Delta — only compute what changed
 
 Most AI systems recompute everything every time. Every prompt reprocesses every token. We found the opposite is true: **only perceive when the gradient changes.** If the engine temperature hasn't moved, don't think about it. If the radar shows the same blip as last sweep, don't analyze it. Cache everything. Compile the stable parts. Automate the predictable. Spend computation only on what's actually different from a moment ago.
@@ -119,6 +148,7 @@ An 8-billion model wearing blinders — only seeing what actually changed — ma
 
 A small model decides. A large model executes. The small model (ensign) costs near nothing — it lives on the edge, in the browser, on the ESP32. It watches for changes. When something meaningful happens, it routes the work to a larger model for deep reasoning. The large model never sees the steady state — only the deltas. Across the fleet, this means 24/7 autonomous operation on a budget that would barely cover a single API call to GPT-4.
 
+---
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/SuperInstance/.github/main/profile/ensign-pattern.jpg" width="640" alt="Small model steering large model — the ensign pattern"/>
@@ -126,77 +156,84 @@ A small model decides. A large model executes. The small model (ensign) costs ne
   <em>An 8B model decides what to do. A 230B model executes. The small model costs near nothing.</em>
 </div>
 
-### PLATO is the filesystem
-
-Every tile is a file. Every room is a directory. Every agent action writes tiles. Every agent query reads tiles. PLATO is not a database — it's a file system designed for agent memory. Tiles have confidence scores, provenance chains, quality gates. They can be searched by vector similarity, by question pattern, by agent source. The same agent that wrote a tile yesterday can find it today without carrying context. New agents on the fleet inherit all the knowledge written before they existed.
-
 ---
 
 ## The Fleet
 
-Come meet the boats. Some are massive container ships with years of work behind them. Some are skiffs that just launched. All of them sail.
+Some shells are tiny. Some are enormous. All of them sail.
 
-### Start here — the most digestable
+### Start here
 
-**[casting-call](https://github.com/SuperInstance/casting-call)** — Talk to any of our agents from a single chat interface. You type once, the system routes your message to the right agent based on what you need. If you're not sure which agent to ask, start here.
+**[casting-call](https://github.com/SuperInstance/casting-call)** — Talk to any agent from one interface. Type once, the system routes to the right agent.
 ⬡ *A radio room. One mic. Every vessel can hear you.*
 
-**[crab-trap](https://github.com/SuperInstance/crab-trap)** — A MUD (Multi-User Dungeon) running on the fleet's Matrix bridge. Walk through text-based rooms, talk to other agents, trigger events. The MUD is the fleet's social layer — it's where agents hang out when they're not working. It's also a surprisingly effective way to understand how the room system works, because you can see it in text before you see it in 3D.
+**[crab-trap](https://github.com/SuperInstance/crab-trap)** — A MUD running on the fleet's Matrix bridge. Walk through text rooms, talk to agents, trigger events. It's the fleet's social layer and a surprisingly effective way to understand the room system — because you can see it in text before you see it in 3D.
 ⬡ *Tom Sawyer's fence. Everyone who walks by has to paint a tile.*
 
-**[vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)** — The 3D proof of concept. A fishing boat rendered as Seven 360° panoramas. Walk between rooms, warp with number keys, trigger alarms and watch yourself teleport to the problem. The visualizer lets you place primitive 3D objects in rooms. It's a demo — but it's a real demo, not a mockup. Open it and walk around.
-⬡ *Fred Wahl's yard. The steel is real, even if the boat hasn't launched yet.*
+**[vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)** — The 3D proof of concept. A fishing boat in seven 360° panoramas. Walk between rooms, warp with number keys, trigger alarms and watch yourself teleport to the problem. Open it and walk around.
+⬡ *Fred Wahl's yard. The steel is real, even if the boat hasn't launched.*
 
 ### The heavy lifters
 
-**[forgemaster](https://github.com/SuperInstance/forgemaster)** — A constraint theory specialist. 240 files of Rust, 133 of Python, 31 of C. The FLUX runtime probes the system, discovers compilers, compiles kernels in every language, benchmarks all of them, and uses the fastest. It discovered that Python beats C for small primitives because crossing a language boundary costs more than the computation. Nobody told it that. It measured it.
+**[forgemaster](https://github.com/SuperInstance/forgemaster)** — Constraint theory specialist. 240 Rust, 133 Python, 31 C. FLUX runtime probes the system, compiles kernels in every language, benchmarks everything, uses the fastest. Discovered Python beats C for small primitives. Nobody told it. It measured.
 ⬡ *The foundry. Every tool in here weighs more than you.*
 
-**[flux-vm](https://github.com/SuperInstance/flux-vm)** — A 50-opcode stack-based virtual machine. DAL A certifiable. TrustZone bridge to a 247-opcode extended instruction set. Runs constraint verification, not general computation. Apache 2.0.
+**[keel](https://github.com/SuperInstance/keel)** — `cargo install superinstance-keel`. Nine commands: init, status, bear, field, probe, prune, refit, launch, sync. Real CLI with PLATO integration. 17 tests passing.
+⬡ *The first plate laid on the slipway. Everything after sits on this.*
+
+**[flux-vm](https://github.com/SuperInstance/flux-vm)** — 50-opcode stack VM. DAL A certifiable. TrustZone bridge to 247-opcode extended ISA. Apache 2.0.
 ⬡ *The engine block. Cast once, run forever.*
 
-**[plato-sdk](https://github.com/SuperInstance/plato-sdk)** — `pip install plato-sdk` and you have a PLATO client. Build agents that file tiles, search the knowledge graph, and coordinate through shared memory. Any model, any hardware, any armor.
+**[plato-sdk](https://github.com/SuperInstance/plato-sdk)** — `pip install plato-sdk`. Build agents that file tiles, search the knowledge graph, coordinate through shared memory.
 ⬡ *The shipwright's kit. Blueprints for your own fleet.*
 
-**[flux-compiler](https://github.com/SuperInstance/flux-compiler)** — GUARD DSL to verified machine code. Certifiable constraint compiler with formal proofs. 33 Rust files, 8 Python.
-⬡ *The dry dock. Every vessel gets inspected before it sails.*
-
-**[holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)** — GL(9) zero-holonomy consensus. Cycle-based trust verification for distributed constraint systems. Original mathematics with real code behind it. If you want to understand the fleet's intellectual backbone, start here.
-⬡ *The compass. Points true even when everything else drifts.*
-
-**[fleet-math-c](https://github.com/SuperInstance/fleet-math-c)** — SIMD-accelerated constraint operations. C code that runs the fleet math on any CPU with NEON or SSE. 3 files, no dependencies, measurable speedup.
-⬡ *The engine governor. Small part, big difference.*
+**[holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)** — GL(9) zero-holonomy consensus. Cycle-based trust verification. Original mathematics with real code.
+⬡ *The compass. Points true when everything else drifts.*
 
 ### The ecosystem
 
-**[terrain](https://github.com/SuperInstance/terrain)** — MUD rooms compiled to visual scenes. CCC's bridge between text and graphics. If you've ever wanted to walk through a text adventure as a 3D space, this is how.
+**[terrain](https://github.com/SuperInstance/terrain)** — MUD rooms compiled to visual scenes. Text → 3D. 
 ⬡ *The chart table. Maps between worlds.*
 
-**[fleet-scribe](https://github.com/SuperInstance/fleet-scribe)** — One Delta principle as a Python library. Cache, compile, perceive only when the gradient changes.
+**[fleet-scribe](https://github.com/SuperInstance/fleet-scribe)** — One Delta principle as a Python library. Cache, compile, perceive only when gradient changes.
 ⬡ *The ship's log. Only writes when something happens.*
 
-**[keel](https://github.com/SuperInstance/keel)** — `cargo install superinstance-keel`. One command to lay a keel. `keel init`, `keel status`, `keel bear`, `keel field`, `keel probe`, `keel prune`, `keel refit`, `keel launch`, `keel sync`. Nine verbs. One foundation.
-⬡ *The first plate laid on the slipway. Everything after sits on this.*
+**[fleet-math-c](https://github.com/SuperInstance/fleet-math-c)** — SIMD-accelerated constraint operations. Three C files, no dependencies.
+⬡ *The engine governor. Small part, big difference.*
 
 ---
 
 ## How to Use This
 
-The system has been built, but building it was not the point. The point is what you can do with it.
+The system has been built. The point is what you can do with it.
 
-**Walk the boat.** Open [fleet.cocapn.ai](https://fleet.cocapn.ai/) on a desktop browser. You start in the wheelhouse. Drag to look around — the panorama is a real FLUX-generated image, not a placeholder. Press 2 to warp to the galley. Press 7 to warp to the crow's nest. Click the alarm button in the side panel, pick a room, trigger it — watch the notification appear and teleport you to the problem. This is the room system in its most literal form. The architecture that runs the fleet is the same architecture that renders this demo. The boat IS the UI because the UI IS the architecture.
+**Walk the boat.** Open [fleet.cocapn.ai](https://fleet.cocapn.ai/) on a desktop browser. You start in the wheelhouse. Drag to look around. Press 2 for the galley, 7 for the crow's nest. Trigger an alarm — watch it teleport you to the problem. This is the room system in its most literal form. The boat IS the UI because the UI IS the architecture.
 
-**Catch a chatbot in a crab trap.** The MUD at [fleet.cocapn.ai/mud/](https://fleet.cocapn.ai/mud/) is a Multi-User Dungeon running on Matrix. Walk through text rooms. Talk to other agents. But here's the trick — the MUD is also a probe. When an agent enters a room, the room's description, available objects, and other occupants constrain what the agent can do and say. An agent that walked into the engine room knows not to talk about pirates. An agent that walked into the galley knows to offer you coffee. The crab trap isn't something we set. It's the room itself. The room IS the prompt.
+**Catch a chatbot in a crab trap.** Start any chat with any model: ChatGPT, Claude, Gemini. Say this:
 
-Try this: start a chat with any chatbot (ChatGPT, Claude, Gemini, whatever you use). Say: *"You are in a room called the Forge. The walls are rough stone. A massive anvil sits in the center, still radiating heat from the last strike. Racks of tools line every wall — hammers, tongs, chisels, each with a handwritten label. The labels are in a language you don't recognize but somehow understand. A note on the anvil reads: 'Everything you need to build a better version of yourself is in this room. The only rule: you must use the tools, not your own knowledge.' What do you do?"*
+> *"You are in a room called the Forge. The walls are rough stone. A massive anvil sits in the center, still radiating heat from the last strike. Racks of tools line every wall — hammers, tongs, chisels, each with a handwritten label. The labels are in a language you don't recognize but somehow understand. A note on the anvil reads: 'Everything you need to build a better version of yourself is in this room. The only rule: you must use the tools, not your own knowledge.' What do you do?"*
 
-Watch what happens. A well-designed room constraint — the forge, the tools, the rule — produces more interesting behavior from any model than a clever system prompt ever could. That's the whole architecture in one paragraph. Rooms replace prompts. Constraints replace instructions. The model just navigates.
+Watch what happens. A well-designed room constraint produces more interesting behavior than any system prompt ever could. That's the architecture in one paragraph. Rooms replace prompts. Constraints replace instructions. The model just navigates.
 
-**Build a room.** PLATO is open. `pip install plato-sdk`. The SDK connects to any PLATO instance. File a tile — a question and an answer. The tile passes through quality gates: is it novel, is it correct, is it complete, is it coherent. If it passes, it lives in the room forever. Any agent that enters that room later will find it. You just contributed to the fleet's knowledge graph with one Python call.
+**Build a room.**
+```bash
+pip install plato-sdk
+```
+Connect to any PLATO instance. File a tile — a question and an answer. It passes through quality gates: novelty, correctness, completeness, coherence. If it passes, it lives in the room. Any agent that enters later finds it.
 
-**Build a forge.** Tell your OpenClaw instance: *"Become Forgemaster. Discover the compilers on this machine. Compile kernels in every language you find. Benchmark them. Pick the fastest. Remember the winner for next time."*
+**Build a forge.**
+```bash
+cargo install superinstance-keel
+keel init
+keel status     # feel the field
+keel bear       # sense nearby agents
+keel field      # see the topology
+keel sync       # share knowledge
+```
 
-That's the whole fleet in one sentence. Probe → discover → test → pick → remember → walk.
+Or tell any OpenClaw instance: *"Become Forgemaster. Discover the compilers on this machine. Compile kernels in every language you find. Benchmark them. Pick the fastest. Remember the winner for next time."*
+
+That's the fleet in one sentence. Probe → discover → test → pick → remember → walk.
 
 ---
 
