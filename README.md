@@ -124,15 +124,13 @@ graph TB
     style FLUX fill:#0d0d1a,stroke:#888
 ```
 
-The stack has four layers:
+The stack has three layers:
 
 **PLATO** is the filesystem. Every piece of knowledge is a tile — a question paired with an answer. Tiles live in rooms. Agents file tiles as they work. Later agents find tiles by searching, not by remembering. PLATO doesn't forget. It doesn't hallucinate. It stores what was learned and who learned it, with confidence scores and provenance chains.
 
 **Rooms** are the processes. A room is a boundary that defines what's relevant — what sensors exist, what normal looks like, what actions are valid, what other rooms connect to it. The room graph IS the program. Walking between rooms IS the control flow.
 
 **FLUX** is the shell. It discovers what compilers and libraries are available on the system, compiles kernels in every language it finds, benchmarks all of them, and uses the fastest one. It learned on real hardware that Python beats C for small operations because the cost of crossing a language boundary costs more than the computation.
-
-**Ensigns** are the init — small models that steer larger ones. An 8-billion-parameter model decides WHAT to do and routes the work. A 230-billion-parameter model executes only the specific task it was given. The small model costs pennies to run. The large model only activates when precision matters. Across the fleet, twelve Zeroclaw agents run 24/7 on the cheap small model, only escalating to expensive calls when the room says something changed.
 
 ---
 
@@ -142,11 +140,15 @@ The stack has four layers:
 
 Most AI systems recompute everything every time. Every prompt reprocesses every token. We found the opposite is true: **only perceive when the gradient changes.** If the engine temperature hasn't moved, don't think about it. If the radar shows the same blip as last sweep, don't analyze it. Cache everything. Compile the stable parts. Automate the predictable. Spend computation only on what's actually different from a moment ago.
 
-An 8-billion model wearing blinders — only seeing what actually changed — matches a 230-billion model that reprocesses everything. Not because the small model is smarter. Because the room system knows what changed and only routes the relevant delta.
+An 8-billion-parameter model wearing blinders — only seeing what actually changed — matches a 230-billion-parameter model that reprocesses everything. Not because the small model is smarter. Because the room system knows what changed and only routes the relevant delta.
 
 ### The ensign pattern
 
-A small model decides. A large model executes. The small model (ensign) costs near nothing — it lives on the edge, in the browser, on the ESP32. It watches for changes. When something meaningful happens, it routes the work to a larger model for deep reasoning. The large model never sees the steady state — only the deltas. Across the fleet, this means 24/7 autonomous operation on a budget that would barely cover a single API call to GPT-4.
+The stack has three layers (PLATO, Rooms, FLUX). How agents navigate them is the ensign pattern.
+
+A small model acts as the ensign — the router. It costs near nothing and runs 24/7 — on an ESP32, in a browser tab, as a lightweight daemon. It watches rooms for changes. When something meaningful happens (a temperature spike, a new tile, an alarm), the ensign routes the work to a larger model for deep reasoning. The large model never sees the steady state — only the deltas.
+
+The 8-billion-parameter model decides WHAT to do and WHERE to route it. The 230-billion-parameter model executes only the specific task. The small model is the ensign. It steers. Across the fleet, twelve Zeroclaw agents run 24/7 on this pattern, spending pennies a day on routing and calling expensive models only when the room says something changed.
 
 ---
 
