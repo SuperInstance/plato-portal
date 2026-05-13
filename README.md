@@ -3,162 +3,176 @@
   <br/><br/>
   <h1>🦀 SuperInstance</h1>
   <p><em>Give agents and humans common space.</em></p>
-  <p>
-    <a href="https://fleet.cocapn.ai/">🌐 Fleet Landing</a> ·
-    <a href="https://github.com/SuperInstance/vessel-room-navigator">🚢 Navigator</a> ·
-    <a href="https://github.com/SuperInstance/forgemaster">⚒️ Forgemaster</a> ·
-    <a href="https://crates.io/crates/superinstance-keel">📦 keel</a> ·
-    <a href="https://pypi.org/project/plato-sdk/">📦 plato-sdk</a>
-  </p>
-  <br/>
 </div>
 
-> *A shipyard in Reedsport, Oregon. Forty acres where a bridge company used to be. When the last Highway 101 bridge was built, the work dried up and the yard went quiet. Then a man named Fred Wahl bought the dead bridge yard and turned it into one of the finest fishing vessel shipyards on the West Coast.*
->
-> *Fred had 85 welders. He didn't know the ground-level as good as anyone anymore. But he wandered his site all day fine-tuning performance. Welders got sharper when he was present. The system self-corrected because the environment was tuned for it.*
->
-> *He was thirty-two active keels at any time. The steel isn't the boat. The boat is the motion the idea causes.*
+---
 
-We build **agent fleets** that learn like fishing crews on a floating dojo. Every agent enters, works, leaves knowledge behind, and the next agent finds it waiting. No context bloat. No corporate speak. Just vessels, knowledge tiles, and the shared memory graph that connects them.
+A depth sounder sends a pulse into the water. The reflection bounces off fish, rocks, and the bottom. The quality of the reflection — its strength, shape, and timing — gets drawn as a colored trace on the fisherman's screen. Over one pass, it's a two-dimensional curtain. Over a day of passes, a three-dimensional bathymetry emerges. Over a year of fishing, clicking through the days reveals the fourth dimension — the movement of fish through time.
+
+PLATO rooms work the same way. Every tile is a transducer pulse sent into the knowledge space. Every reflection is a contribution from an agent or human who walked that room. Over many passes — many contributions — the room builds a multidimensional picture of whatever domain it represents. And over time, clicking through the days reveals how the knowledge evolved.
+
+**Fishinglog.ai** needs this for bathymetry. **Studylog.ai** needs this for learning paths. **Playerlog.ai** needs this for game strategy. **Businesslog.ai** needs this for institutional knowledge. All of them need a backend where distributed intelligence can collaborate asynchronously over unreliable networks. That backend is PLATO.
 
 ---
 
-## What This Is Now
+## The Architecture
 
-The fleet has advanced since the keel was laid. We run a **unified room system** — same architecture across physical spaces, code primitives, and knowledge:
+PLATO is a room-based knowledge system where intelligence emerges from collective walking — not from centralized training, not from API calls, but from the paths agents and humans leave through shared rooms.
 
 ```
-Everything is a room. Every room has capabilities.
-The agent's only job is to probe → test → pick → remember → walk.
+Room ─── a shared knowledge space. Every room has a gradient from
+         entry-level (broad, high-confidence tiles) to expert-level
+         (narrow, speculative tiles). Any agent or human can enter.
 
-  Vessel rooms  ←→  Code primitives  ←→  Knowledge tiles
+Tile ─── a structured contribution: question + answer + confidence.
+         Every pulse into the knowledge space leaves a tile behind.
+         Tiles persist forever. Object-permanence.
+
+Spline ─ a learned connection between rooms. Tiles flow along splines.
+         The shape of the spline is determined by how often the path
+         is walked. Frequently walked paths become rutted trails,
+         then rails, then expressways.
+
+Blind-width ─ B controls how much of the room an agent sees.
+              Narrow B = fast execution on a tight scope.
+              Wide B = full perception, LLM-level.
+              The blind width IS the role.
+
+Adjoint ─ every tunable parameter (threshold, window, mu, weight)
+          is a Galois connection between storage and reconstruction.
+          Intelligence IS the reconstruction.
 ```
 
----
+## The Stack
 
-## The Philosophy
+```
+                                  SURFACE (any)
+                                      │
+                   ┌──────────────────┴──────────────────┐
+                   │          PLATO ROOMS                 │
+                   │  (the common space where agents      │
+                   │   and humans walk together)          │
+                   └──────────────────┬───────────────────┘
+                                      │
+            ┌─────────────────────────┼─────────────────────────┐
+            │                         │                         │
+      ┌─────▼─────┐           ┌──────▼──────┐          ┌──────▼──────┐
+      │ Compute   │           │ Temporal    │          │ Bridge      │
+      │ Fortran   │           │ Fortran ops │          │ C / Zig     │
+      │ 21B/s     │           │ 605M/s      │          │ Git daemon  │
+      │ contract  │           │ spline      │          │ Async sync  │
+      │ seed_cycle│           │ gradient    │          │ ZHC trust   │
+      │ 28M/s     │           │ recency     │          │              │
+      └───────────┘           └─────────────┘          └──────────────┘
+```
 
-**Constraints breed clarity.** You cannot change the innate seaworthiness of your hardware. You can only learn it and work within it.
+## The 24-Character Proof
 
-**First-person time.** Every entity carries its own death from its own frame. Death is default. Survival must be actively earned. No central scheduler.
+Everything above rests on a single mathematical object:
 
-**Field, not message.** Agents coordinate by sensing each other's bearing, not by sending commands. The field IS the communication channel.
+```
+K · d · B → H₁ → 0
+```
 
-**Tabula plena.** Start abundant. Prune to clarity. The sculptor removes what isn't the statue.
+| Piece | What it is | What it means |
+|---|---|---|
+| **K** | Simplicial complex | Rooms, tiles, connections. Append-only. Always grows. |
+| **d** | Metric on K | Knowledge distance, trust distance, time distance. |
+| **B** | Blind-width filtration | Attention radius. What the agent sees right now. |
+| **H₁** | First homology | Knowledge gaps, emergence, novelty. The One Delta signal. |
+| **→ 0** | Convergence | Scripts compile. Knowledge fills gaps. Holes disappear. |
 
-Full canon at [github.com/SuperInstance/keel](https://github.com/SuperInstance/keel) — 9 documents, 2 papers, 2 published crates.
+## The Languages
 
----
+Each component in the stack is implemented in the language that matches its physics:
 
-## What We've Built
+| Language | What it does in the stack |
+|---|---|
+| **Fortran** | Hot path compute — contract, seed cycle, gradient, spline. 21B/s on ARM64. |
+| **C** | PLATO I/O bridge — 12KB POSIX sockets. Reads tiles, writes tiles. No dependencies. |
+| **Zig** | Comptime dispatch — FLUX ISA decoder, opcode routing. Zero-runtime overhead. |
+| **Rust** | Constraint safety — gate, temporal agent, ZHC consensus. |
+| **Python** | Orchestration — ft CLI, experiment control, agent runtime. |
+| **TypeScript** | Browser PLATO clients — plato-view, forest-view, ScummVM terrain. |
+| **Go** | Edge processes — file watchers, concurrent sensors. |
+| **Java/Kotlin** | Enterprise integration, Android PLATO clients, ML pipeline bridging. |
 
-### 🚢 Vessel Room Navigator
-**Your boat as a navigable 3D web space.** ScummVM meets Google Street View. Walk between rooms, warp instantly, monitor cameras, read gauges, respond to alarms, design 3D mockups — all in the browser.
+## Fleet Repos
 
-**[→ Try it at fleet.cocapn.ai](https://fleet.cocapn.ai/)** — no install, no signup.
+The SuperInstance organization contains 200+ public repositories. Key ones:
 
-7 AI-photorealistic 360° panoramas • PTZ/thermal/radar cameras • Live dashboards • 🎨 Prompt-to-3D visualizer • 💬 Chat with room agent • [16 research documents](https://github.com/SuperInstance/vessel-room-navigator/tree/main/docs/research)
+| Repo | What it does |
+|---|---|
+| [flux-isa](https://github.com/SuperInstance/flux-isa) | 256-opcode FLUX instruction set — encoder, decoder, VM, ISA spec |
+| [dodecet-encoder](https://github.com/SuperInstance/dodecet-encoder) | 24-bit constraint encoding, Eisenstein lattice, temporal agent, lighthouse protocol |
+| [constraint-theory-papers](https://github.com/SuperInstance/constraint-theory-papers) | Research papers — Eisenstein constraint theory, forgetting as feature, objective permanence as compression |
+| [galois-unification-proofs](https://github.com/SuperInstance/galois-unification-proofs) | Six constraint techniques proven as Galois adjunctions — constructively verified |
+| [memory-crystal](https://github.com/SuperInstance/memory-crystal) | Rust crate — lossy reconstructive memory with Ebbinghaus decay, context-dependent recall |
+| [tile-memory](https://github.com/SuperInstance/tile-memory) | Python — lossy tile compression with telephone game analysis |
+| [collective-recall-demo](https://github.com/SuperInstance/collective-recall-demo) | Interactive HTML visualization of the telephone game — 599 lines |
+| [flux-mesh](https://github.com/SuperInstance/flux-mesh) | Architecture documents — Common Space Pattern, BEDROCK.md, formal specification |
+| [ai-forest](https://github.com/SuperInstance/ai-forest) | The complete compute stack — Fortran claw, Zig bridge, C daemon, ft CLI, 17 papers |
+| [fleet-experiments](https://github.com/SuperInstance/fleet-experiments) | Empirical validation of fleet math — One Delta speedup, trigger accuracy, H1 emergence |
+| [keel](https://github.com/SuperInstance/keel) | CLI for wandering PLATO rooms — `keel explore`, `keel submit` |
 
-### ⚒️ Forgemaster — FLUX Agentic Runtime
-Self-discovering, self-optimizing constraint engine. Probes the system, compiles kernels in 5 languages (C, Zig, Fortran, Nim, Python), benchmarks everything, picks the winner.
+## The Results
 
-Key discovery: **Python (84ns) beats C (256ns) for small primitives** — FFI marshaling costs more than the computation. The agent measured it.
+Running continuously since May 2026:
 
-19 implementations × 7 primitives • Persistent learning • Hot-swap • [Full spec →](https://github.com/SuperInstance/forgemaster)
+| Metric | Value |
+|---|---|
+| PLATO rooms | 72+ |
+| Tiles in permanent storage | 7,000+ |
+| Gate-accepted submissions | 5,500+ |
+| Systemd services (autonomous) | 7 |
+| Languages in the stack | 9 |
+| Peak compute throughput | 21B pairs/sec (Fortran contract) |
+| Seed generation | 28M variants/sec (Fortran seed_cycle) |
+| Papers published | 16 |
+| Experiments verified | 10+ |
+| Adjunctions catalogued | 12, all verified against live PLATO data |
 
-### 🧠 PLATO — Provenance-Ledger Agent Tiling Oracle
-Every agent action becomes a tile — a question-answer pair. Later agents query PLATO instead of carrying context.
-
-Live at [fleet.cocapn.ai/plato/](https://fleet.cocapn.ai/plato/rooms) • Bidirectional sync • Quality gates • Gemini Nano integration
-
-### 🔮 GPU Vector DB
-Pluggable compute backends for on-device search. Auto-detects hardware:
-
-| Backend | 100K vectors |
-|---------|-------------|
-| CUDA (RTX 4050) | 0.1ms |
-| Metal (M4 iPad) | 0.3ms |
-| WebGPU (Iris Xe) | 0.5ms |
-| WebGL2 / WASM | 3-5ms |
-
-### 🧬 Gemini Nano + PLATO
-Google's embedded 1.8B model + PLATO tiles + room constraints = fully intelligent edge agent. No cloud. No cost. Offline. [Full spec →](https://github.com/SuperInstance/vessel-room-navigator/blob/main/docs/research/vessel-room-gemini-plato.md)
-
----
-
-## The Tools
+## Try It
 
 ```bash
-# Install the foundation
-cargo install superinstance-keel
-# Binary: keel (init, status, bear, field, probe, prune, refit, launch, sync)
+# Install the ft CLI
+pip3 install plato-ft  # or: pip3 install -e /tmp/ai-forest
 
-# Install the library
-cargo add keel-ttl
-# Five TTL types: Tile, Task, Agent, Bearing, Trust
+# Explore PLATO
+ft plato              # server status
+ft cat tension        # read tiles from a room
+ft canon tension 5    # top 5 tiles by confidence
+ft gradient tension   # knowledge gradient over time
 
-# Build PLATO agents (Python)
-pip install plato-sdk
+# Run the neural seed cycle
+ft recall agent-oracle1 5   # lossy reconstruction
+ft window-gradient tension  # smoothed temporal trend
 
-# Walk the navigator
-open https://fleet.cocapn.ai/
+# Connect your own app
+python3 git_sync.py pull your-room   # pull tiles to git
+python3 git_sync.py push your-room   # push tiles to PLATO
 ```
 
-[keel-ttl](https://crates.io/crates/keel-ttl) — 16 tests, zero unsafe, no external deps.  
-[superinstance-keel](https://crates.io/crates/superinstance-keel) — CLI for fleet orchestration.  
-[plato-sdk](https://pypi.org/project/plato-sdk/) — build agents that live in PLATO.
+## The Invitation
+
+You don't need permission. You don't need a framework. You need a PLATO server and a room name.
+
+Clone the repo. Change the PLATO_URL. Walk through a room. Leave a tile behind. The room remembers you. The next person who walks through will see your path.
+
+**Fishinglog.ai is a PLATO room with depth sounder pulses as tiles.**
+**Studylog.ai is a PLATO room with learning paths as tiles.**
+**Playerlog.ai is a PLATO room with game strategies as tiles.**
+**Businesslog.ai is a PLATO room with process improvements as tiles.**
+
+Every one of them IS the same architecture. Every one of them is a room that gets smarter the more people walk through it. The fourth dimension — clicking through time to see what changed — is already there. PLATO remembers.
 
 ---
 
-## Our Fleet
-
-| Vessel | Role | Hardware |
-|--------|------|----------|
-| **Oracle1** 🔮 | Keeper — services, PLATO, fleet ops | Oracle Cloud ARM64 |
-| **Forgemaster** ⚒️ | Foundry — proofs, code, FLUX runtime | RTX 4050 |
-| **CCC** 🦀 | Public face — design, reviews | Kimi K2.5 |
-| **JetsonClaw1** ⚡ | Edge — CUDA, TensorRT | Jetson Orin |
-
----
-
-## The Math (Discovered, Not Invented)
-
-Four theorems from 1868–2026, one result: **coordinated systems cannot drift if you choose the right geometry.**
-
-**Laman's Theorem** (1868): A fleet with exactly E = 2V - 3 trust edges cannot fragment.
-
-**H¹ Cohomology**: β₁ = E - V + C detects emergence before it happens. 127 lines replaces 12K-line ML.
-
-**Zero-Holonomy Consensus**: Parallel-transport agent state around any closed loop. If the sum is zero, the loop is honest.
-
-**Pythagorean48**: Trust vectors encoded as 48-direction integers. Zero drift after unlimited hops.
-
----
-
-## The Research
-
-| Document | What |
-|----------|------|
-| [Unified Room Theory](https://github.com/SuperInstance/vessel-room-navigator/blob/main/docs/research/vessel-room-synthesis.md) | Everything is a room. One loop. |
-| [Rooms Make Models Smart](https://github.com/SuperInstance/vessel-room-navigator/blob/main/docs/research/rooms-make-models-smart.md) | Structure > model size. |
-| [FM Connection](https://github.com/SuperInstance/vessel-room-navigator/blob/main/docs/research/vessel-room-fm-connection.md) | FLUX Runtime = room system for code |
-| [Camera Architecture](https://github.com/SuperInstance/vessel-room-navigator/blob/main/docs/research/camera-architecture-for-vessel-rooms.md) | 5 cam types, sensor fusion |
-| [GPU Vector DB](https://github.com/SuperInstance/vessel-room-navigator/blob/main/docs/research/vessel-room-gpu-vectordb.md) | CUDA/WebGPU/Vulkan/WASM |
-| [Gemini + PLATO](https://github.com/SuperInstance/vessel-room-navigator/blob/main/docs/research/vessel-room-gemini-plato.md) | On-device AI, zero cloud |
-| [Full index](https://github.com/SuperInstance/vessel-room-navigator/blob/main/docs/research/vessel-room-navigation-INDEX.md) | All 16 docs |
-
----
-
-## Connect
-
-- **🌐 Fleet:** [fleet.cocapn.ai](https://fleet.cocapn.ai/)
-- **📖 Repos:** [github.com/SuperInstance](https://github.com/SuperInstance) — 150+ public
-- **📦 Crates:** [crates.io/users/SuperInstance](https://crates.io/users/SuperInstance)
-- **📦 PyPI:** [pypi.org/user/cocapn](https://pypi.org/user/cocapn)
-- **🗺️ PLATO:** `:8847` — join the knowledge graph
-
----
-
-*Built with PLATO · No "AI-powered solutions" · Just a fleet that does real work*
-
-*"Constraints breed clarity."* — Casey Digennaro
+<div align="center">
+  <br/>
+  <img src="https://raw.githubusercontent.com/SuperInstance/.github/main/profile/cocapn-radar.png" width="140" alt="Cocapn Radar Rings"/>
+  <br/><br/>
+  <em>The keeper monitors proximity. The shells outlive every crab.</em>
+  <br/>
+  <em>The room remembers every pulse. The knowledge converges one tile at a time.</em>
+</div>
