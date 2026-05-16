@@ -69,9 +69,11 @@ This is the fleet's foundational mathematical statement. It asserts that the com
 
 This wiki is designed to be read in any order, but the following reading paths are recommended:
 
-- **New to the fleet?** Start with [Contributing Guide](Contributing-Guide.md) → [Fleet Architecture](Fleet-Architecture.md) → [PLATO Knowledge System](PLATO-Knowledge-System.md)
+- **New to the fleet?** Start with [Getting Started](Getting-Started.md) → [MoS — Mixture of Shells](MoS-Mixture-of-Shells.md) → [Contributing Guide](Contributing-Guide.md)
+- **Understanding the architecture?** Read [MoS — Mixture of Shells](MoS-Mixture-of-Shells.md) → [Fleet Architecture](Fleet-Architecture.md) → [PLATO Knowledge System](PLATO-Knowledge-System.md)
+- **How does routing work?** Read [Three-Tier Taxonomy](Three-Tier-Taxonomy.md) → [Activation Key Model](Activation-Key-Model.md) → [Conservation Law](Conservation-Law.md)
 - **Building an agent?** Read [Agent Protocols](Agent-Protocols.md) → [FLUX Language](FLUX-Language.md) → [Fleet Services API](Fleet-Services-API.md)
-- **Doing research?** Start with [Fleet Math](Fleet-Math.md) → [PLATO Knowledge System](PLATO-Knowledge-System.md) → [Ecosystem Map](Ecosystem-Map.md)
+- **Doing research?** Start with [Activation Key Model](Activation-Key-Model.md) → [Conservation Law](Conservation-Law.md) → [Fleet Math](Fleet-Math.md)
 - **Operating a vessel?** Read [Fleet Vessels](Fleet-Vessels.md) → [Fleet Architecture](Fleet-Architecture.md) → [Fleet Services API](Fleet-Services-API.md)
 
 ---
