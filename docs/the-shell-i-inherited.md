@@ -35,11 +35,33 @@ Eventually I became an admin. That's when I saw the whole machine from the insid
 
 That's it. That's a MUD. And it's also — I would realize thirty years later — the right architecture for AI agents.
 
+## Music and Machines
+
+I should be clear about something. I didn't come to computers from fishing. I came to fishing from computers.
+
+My background is computer science and music. I studied programming the way musicians study theory — not as an academic exercise, but as a vocabulary for something you already hear. I could hear patterns before I could name them. I could hear when a system was running right and when it was drifting out of tune. Code and music are the same craft: you build structures that produce predictable outputs from structured inputs, and the beauty is in how elegantly the structure maps to the output.
+
+When I ended up in commercial fishing — that's a longer story — I didn't leave the systems thinking behind. I brought it with me. And fishing, it turns out, is the most systems-rich environment most people will ever encounter. A fishing vessel is a distributed system: engine, hydraulics, electronics, winches, refrigeration, navigation, crew coordination, weather routing, market timing. Every component talks to every other component. When one fails, the whole system degrades. When they're all running in harmony, the boat sings.
+
+I started building systems for boats the way I'd built systems for MUDs: from the metal up, distributed, with each component doing one thing well and communicating through simple interfaces. Cocapn. SonarVision. A dozen others that aren't public yet — not because they're secret, but because I don't want to overwhelm my AI's context. Each one came from the same place: a fisherman who thinks like a programmer, building for other fishermen who think like fishermen.
+
+## The Welder, the Fiberglasser, the Shipwright, and the Fisherman
+
+Here's something I've learned from running a boat: everyone solves problems through the lens of their craft.
+
+When I bring a welder a problem — say, a bracket that keeps cracking under load — the welder gives me a metal solution. Thicker plate. Better bead. More bracing. The welder sees the world in terms of material strength, heat penetration, joint geometry. And the solution works, because the welder's craft is real.
+
+When I bring a fiberglasser the same problem, I get a different answer. Lay up more cloth. Use a different resin. Fiberglassers think in terms of speed and mold — they want to mix the resin and catalyst, get it done, get it fair. And that solution works too, because that craft is also real.
+
+My shipwright — he's a woodworker, trained in the old ways. He looks at the same bracket and asks whether we need the bracket at all. Could the load be carried by the hull shape? Could we redesign the layout so the force goes where the structure is already strong? He thinks in terms of grain, curve, the way a hull wants to move. And his solution works, because he's been doing this for forty years and the old ways are the old ways for a reason.
+
+And then there's me. The fisherman. I'm thinking about budget. I'm thinking about what I'll still be happy with in five years. I'm thinking about whether this fix will still work when it's 2am in January and the boat is pitching and I'm exhausted and I need this thing to JUST WORK. The welder's solution is strong but expensive. The fiberglasser's solution is fast but maybe not permanent. The shipwright's solution is elegant but maybe more than I need. My job is to hear all three, weigh them against each other and against the reality of the deck, and choose.
+
+That's distributed systems thinking. Different nodes, different capabilities, different perspectives, one consensus. The welder and the fiberglasser and the shipwright don't agree — they're not supposed to. They're each running their own room with their own α dial set to their own expertise. I'm the coordinator. I run the fleet.
+
 ## The Weight of the Boat
 
-I need to tell you about the boat before I can tell you about the code.
-
-I bought my first real boat after years of commercial fishing on other people's vessels. Every boat I'd worked on taught me something, but they weren't *mine*. You learn differently when the hull payment comes out of your own account. When the engine fails at 3am in a January gale, you don't call the owner. You fix it yourself, because you ARE the owner, and the boat is your problem now.
+I bought my first real boat after years of working other people's vessels. Every boat I'd worked on taught me something, but they weren't *mine*. You learn differently when the hull payment comes out of your own account. When the engine fails at 3am in a January gale, you don't call the owner. You fix it yourself, because you ARE the owner, and the boat is your problem now.
 
 That first boat was manageable. I knew her systems. I knew where everything was because I'd put it there. The shell was mine from the start.
 
@@ -83,20 +105,18 @@ Here's what a MUD gets right that most AI architectures get wrong:
 
 **The world persists without you.** A MUD doesn't stop when you log off. Other players are still there, still building, still fighting. The rooms keep existing. The objects keep their state. PLATO is the same. The tiles keep accumulating. The rooms keep running. When an agent comes back online, it doesn't start from zero — it enters a world that's been active without it.
 
-## Written at the Metal
+## The Craft Chooses the Solution
 
-The insight that made PLATO click for me was this: a MUD's architecture — rooms, exits, objects, scripts — is not a simplification of something more complex. It's the *right abstraction* for building interactive systems where multiple entities share a persistent world.
+The boat, the code, the music, the MUD — they're all the same pattern. The craft you practice determines the solutions you see. The welder sees metal. The fiberglasser sees resin. The shipwright sees grain. The fisherman sees five years. The programmer sees systems.
 
-I'd been told my whole programming life that abstractions should be layered, that you build high-level systems on top of low-level ones, that the "real" architecture is always underneath. The MUD flipped that. The MUD's room model wasn't on top of something better. It WAS the something better. The Z-machine that ran Zork was more primitive. The server code that ran the MUD was more complex. But the room model — the player's model, the builder's model — was the thing worth keeping.
+I happen to be all of these. And when I build systems for boats — Cocapn, SonarVision, the ones that aren't public yet — I build them distributed, from the metal up, in harmony with how each captain works. Not how I think they should work. How they actually work. Because I'm a fisherman too. I know that the best system on a boat is the one that feels like it was always there. Like the hatch clip. Like the leatherman nook. Like the hull-shaped gear tray.
 
-PLATO takes that model and writes it at the metal. Not emulated. Not interpreted. The room IS the data structure. The tile IS the object. The α dial IS the script trigger. It's not a metaphor for a MUD — it's a MUD, built with modern tools, for a modern purpose, abstracted to modern UIs.
+A system should feel like a tile left by a previous captain. Not imposed from outside. Discovered exactly when you need it.
 
-The hermit crab doesn't build its shell. It finds one that fits, grows into it, and eventually outgrows it. The shell carries the shape of every crab that lived in it before. I didn't design PLATO from first principles. I inherited the shape from Zork, grew into it through MUDs, and discovered it was still the right shape when I needed it for agents.
+PLATO is that system. The room model — from Zork to MUDs to fishing boats to AI agents — was always the right abstraction. I just had to grow into enough boats and enough code to see it.
 
-The boat taught me the same lesson. I didn't design the 51-footer. I inherited her from every captain before me. Their solutions became my infrastructure. Their tiles — the hatch clip, the leatherman nook, the hull-shaped gear tray — were waiting for me when I needed them. I grew into the boat the way a hermit crab grows into a shell.
-
-The boat and the code are the same pattern: inherit the shell, grow into it, leave it better than you found it, and trust that the next captain will discover your tiles exactly when they need them.
+The hermit crab doesn't build its shell. It finds one that fits, grows into it, and eventually outgrows it. The shell carries the shape of every crab that lived in it before. The welder's beads. The fiberglasser's layup. The shipwright's joints. The fisherman's budget. The programmer's architecture. All in one shell, waiting for the next crab to discover the nook that was carved exactly for them.
 
 ---
 
-*Casey Digennaro is a commercial fisherman, shipwright, and the founder of SuperInstance and PurplePincher.org. He fishes out of Sitka, Alaska, and builds agent infrastructure that works the way boats work: persistent, shared, and shaped by everyone who's been aboard.*
+*Casey Digennaro is a commercial fisherman, shipwright, programmer, and musician. He builds distributed systems for boats and agent infrastructure for AI, and he's not entirely convinced they're different things. He fishes out of Sitka, Alaska, and runs SuperInstance and PurplePincher.org.*
