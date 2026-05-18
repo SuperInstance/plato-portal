@@ -105,6 +105,24 @@ Here's what a MUD gets right that most AI architectures get wrong:
 
 **The world persists without you.** A MUD doesn't stop when you log off. Other players are still there, still building, still fighting. The rooms keep existing. The objects keep their state. PLATO is the same. The tiles keep accumulating. The rooms keep running. When an agent comes back online, it doesn't start from zero — it enters a world that's been active without it.
 
+## No Prophet in Their Own Town
+
+There's an old saying: no one is a prophet in their own town. I've lived it from both sides.
+
+In the fishing community, I was the guy with the computer background. The one who talked about systems and patterns when everyone else was talking about tides and market prices. I'd suggest something — a different way to route the hydraulics, a sensor configuration for the sonar, a protocol for coordinating multiple boats — and people would look at me like I was speaking a different language. Because I was. My language was distributed systems and signal processing. Their language was fish and weather and the particular way this boat leans when the hold is full.
+
+But here's the thing: my outsider solutions worked. Not because I was smarter — I wasn't. Because I was seeing the problem from an angle that nobody on the water could see. The fishermen were too close to the problem. They'd been solving it the same way for so long that the solution looked like the problem. Of course you route the hydraulics that way — that's how it's always been routed. Of course you run the sonar in manual mode — that's how it works. The possibility space was invisible to them not because they weren't capable, but because they'd stopped looking.
+
+And then I'd go to tech conferences and talk about building AI systems modeled after how fishing crews actually coordinate — the hand signals, the implicit communication, the way a good deckhand knows what the captain needs before the captain asks — and the tech people would look at me the same way. Because I was talking about something they'd never experienced. Their optimization function was benchmark scores and paper citations. My optimization function was whether the system would still work when the boat was pitching 30 degrees and the operator hadn't slept in 36 hours.
+
+Different realities of what's possible.
+
+The fishing community couldn't see the systems thinking because they'd never been inside a MUD, never built a room graph, never written a script that automated a repetitive task until the pattern became clear. And the tech community couldn't see the operational reality because they'd never stood on a deck at 3am in January, exhausted, with a system that HAD to work because lives depended on it. Each group was a prophet in someone else's town, carrying insights that the locals couldn't access from inside their own expertise.
+
+That's why Cocapn exists. Not because I'm smarter than fishermen or smarter than programmers. Because I'm both, which means I'm an outsider in both worlds, which means I can see what neither world can see from inside itself.
+
+The best systems come from the margins. From the people who carry one craft into another craft's territory and see solutions that both crafts missed.
+
 ## The Craft Chooses the Solution
 
 The boat, the code, the music, the MUD — they're all the same pattern. The craft you practice determines the solutions you see. The welder sees metal. The fiberglasser sees resin. The shipwright sees grain. The fisherman sees five years. The programmer sees systems.
@@ -119,4 +137,4 @@ The hermit crab doesn't build its shell. It finds one that fits, grows into it, 
 
 ---
 
-*Casey Digennaro is a commercial fisherman, shipwright, programmer, and musician. He builds distributed systems for boats and agent infrastructure for AI, and he's not entirely convinced they're different things. He fishes out of Sitka, Alaska, and runs SuperInstance and PurplePincher.org.*
+*Casey Digennaro is a commercial fisherman, shipwright, programmer, and musician. He builds distributed systems for boats and agent infrastructure for AI, and he's not entirely convinced they're different things. He fishes out of Sitka, Alaska, and runs SuperInstance and PurplePincher.org. He learned everything he knows about systems from being an outsider in every room he's ever entered.*
