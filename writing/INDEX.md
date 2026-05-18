@@ -4,6 +4,14 @@
 
 ---
 
+## 🔗 Core Concept
+
+| Title | Location | Words | Description |
+|-------|----------|------:|-------------|
+| Polyglot Polyformalism | [SuperInstance/writing/POLYGLOT-POLYFORMALISM.md](./POLYGLOT-POLYFORMALISM.md) | ~1,800 | The thesis: if an idea can't survive translation into multiple formalisms, it's not an idea — it's an implementation detail. Every discussion in this index leads here. |
+
+---
+
 ## 📖 Founding & Biography
 
 | Title | Location | Words | Description |
