@@ -1,0 +1,16 @@
+[package]
+name = "deadband"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+simd = []
+python = []
+
+[dependencies]
+rand = "0.8"
+
+[dev-dependencies]
+rand = "0.8"
+[workspace]
