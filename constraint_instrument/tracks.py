@@ -55,7 +55,7 @@ class Track:
     }
 
     def __init__(self, name: str, mode: str, terrain: str,
-                 voice: str = 'piano', key: str = 'C', bpm: int = 120):
+                 voice: str = 'piano', key: str = 'C', bpm: int = 120, seed = None):
         """
         Create a track.
 
@@ -66,6 +66,7 @@ class Track:
             voice: Voice/instrument type for register mapping
             key: Musical key
             bpm: Tempo in BPM
+            seed: Master seed for deterministic reproducibility
         """
         self.name = name
         self.mode = mode
@@ -73,6 +74,7 @@ class Track:
         self.voice = voice
         self.key = key
         self.bpm = bpm
+        self.seed = seed
         self.notes: List[dict] = []
         self._instrument = None
         self._bars = 4
@@ -86,6 +88,7 @@ class Track:
                 key=self.key,
                 bpm=self.bpm,
                 bars=bars,
+                seed=self.seed,
             )
         return self._instrument
 
@@ -211,7 +214,7 @@ class Arrangement:
     variation, and rendered to a single audio file or multi-track MIDI.
     """
 
-    def __init__(self, key: str = 'C', bpm: int = 120, bars: int = 4):
+    def __init__(self, key: str = 'C', bpm: int = 120, bars: int = 4, seed = None):
         """
         Create an arrangement.
 
@@ -219,10 +222,12 @@ class Arrangement:
             key: Musical key for all tracks
             bpm: Tempo in BPM
             bars: Number of bars per generation cycle
+            seed: Master seed for deterministic reproducibility
         """
         self.key = key
         self.bpm = bpm
         self.bars = bars
+        self.seed = seed
         self.tracks: List[Track] = []
         self._loop_count = 1  # How many times the arrangement has been looped
 
@@ -242,6 +247,7 @@ class Arrangement:
         track = Track(
             name=name, mode=mode, terrain=terrain,
             voice=voice, key=self.key, bpm=self.bpm,
+            seed=self.seed,
         )
         self.tracks.append(track)
         return track
@@ -517,17 +523,18 @@ class Arrangement:
 # PRESETS — Ready-made arrangements
 # ══════════════════════════════════════════════════════════════════════
 
-def trap_beat(bpm: int = 140, bars: int = 8) -> Arrangement:
+def trap_beat(bpm: int = 140, bars: int = 8, seed = None) -> Arrangement:
     """808 + hi-hats + snare + melody — the essential trap beat.
 
     Args:
         bpm: Tempo (default 140, felt in half-time at 70)
         bars: Bars per cycle (default 8)
+        seed: Master seed for deterministic reproducibility
 
     Returns:
         Arrangement ready for generate_all() and loop()
     """
-    arr = Arrangement(key='C', bpm=bpm, bars=bars)
+    arr = Arrangement(key='C', bpm=bpm, bars=bars, seed=seed)
     arr.add_track('808', 'parker', 'hip_hop_trap', 'bass')
     arr.add_track('hihat', 'basie', 'hip_hop_trap', 'hat')
     arr.add_track('snare', 'armstrong', 'hip_hop_trap', 'snare')
@@ -535,17 +542,18 @@ def trap_beat(bpm: int = 140, bars: int = 8) -> Arrangement:
     return arr
 
 
-def techno_loop(bpm: int = 130, bars: int = 8) -> Arrangement:
+def techno_loop(bpm: int = 130, bars: int = 8, seed = None) -> Arrangement:
     """Kick + bass + pad + arp — the minimal techno builder.
 
     Args:
         bpm: Tempo (default 130)
         bars: Bars per cycle (default 8)
+        seed: Master seed for deterministic reproducibility
 
     Returns:
         Arrangement ready for generate_all() and loop()
     """
-    arr = Arrangement(key='C', bpm=bpm, bars=bars)
+    arr = Arrangement(key='C', bpm=bpm, bars=bars, seed=seed)
     arr.add_track('kick', 'parker', 'electronic_techno', 'kick')
     arr.add_track('bass', 'ella', 'electronic_techno', 'bass')
     arr.add_track('pad', 'miles', 'electronic_techno', 'pad')
@@ -553,17 +561,18 @@ def techno_loop(bpm: int = 130, bars: int = 8) -> Arrangement:
     return arr
 
 
-def jazz_combo(bpm: int = 120, bars: int = 16) -> Arrangement:
+def jazz_combo(bpm: int = 120, bars: int = 16, seed = None) -> Arrangement:
     """Piano + bass + drums + sax — a classic jazz quartet.
 
     Args:
         bpm: Tempo (default 120)
         bars: Bars per cycle (default 16)
+        seed: Master seed for deterministic reproducibility
 
     Returns:
         Arrangement ready for generate_all() and loop()
     """
-    arr = Arrangement(key='C', bpm=bpm, bars=bars)
+    arr = Arrangement(key='C', bpm=bpm, bars=bars, seed=seed)
     arr.add_track('piano', 'ella', 'bebop', 'piano')
     arr.add_track('bass', 'basie', 'bebop', 'bass')
     arr.add_track('drums', 'armstrong', 'bebop', 'drums')
@@ -571,17 +580,18 @@ def jazz_combo(bpm: int = 120, bars: int = 16) -> Arrangement:
     return arr
 
 
-def lofi_beat(bpm: int = 85, bars: int = 8) -> Arrangement:
+def lofi_beat(bpm: int = 85, bars: int = 8, seed = None) -> Arrangement:
     """Lo-fi hip hop — chill beats to study to.
 
     Args:
         bpm: Tempo (default 85)
         bars: Bars per cycle (default 8)
+        seed: Master seed for deterministic reproducibility
 
     Returns:
         Arrangement ready for generate_all() and loop()
     """
-    arr = Arrangement(key='C', bpm=bpm, bars=bars)
+    arr = Arrangement(key='C', bpm=bpm, bars=bars, seed=seed)
     arr.add_track('keys', 'ella', 'modal_jazz', 'piano')
     arr.add_track('bass', 'basie', 'modal_jazz', 'bass')
     arr.add_track('drums', 'armstrong', 'hip_hop_trap', 'drums')
@@ -589,17 +599,18 @@ def lofi_beat(bpm: int = 85, bars: int = 8) -> Arrangement:
     return arr
 
 
-def house_beat(bpm: int = 124, bars: int = 8) -> Arrangement:
+def house_beat(bpm: int = 124, bars: int = 8, seed = None) -> Arrangement:
     """Four-on-the-floor house — deep and groovy.
 
     Args:
         bpm: Tempo (default 124)
         bars: Bars per cycle (default 8)
+        seed: Master seed for deterministic reproducibility
 
     Returns:
         Arrangement ready for generate_all() and loop()
     """
-    arr = Arrangement(key='C', bpm=bpm, bars=bars)
+    arr = Arrangement(key='C', bpm=bpm, bars=bars, seed=seed)
     arr.add_track('kick', 'parker', 'electronic_techno', 'kick')
     arr.add_track('hat', 'basie', 'electronic_techno', 'hat')
     arr.add_track('bass', 'ella', 'electronic_techno', 'bass')

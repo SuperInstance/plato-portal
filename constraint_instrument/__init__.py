@@ -23,6 +23,7 @@ Quick start:
 from .instrument import Instrument, resolve_key, resolve_terrain, TERRAIN_ALIASES
 from .terrain import Terrain, TERRAINS
 from .analyzer import ConstraintAnalyzer
+from .texture import TextureAutomation, TextureCurve
 
 __version__ = "0.2.0"
-__all__ = ["Instrument", "Terrain", "TERRAINS", "resolve_key", "resolve_terrain", "ConstraintAnalyzer"]
+__all__ = ["Instrument", "Terrain", "TERRAINS", "resolve_key", "resolve_terrain", "ConstraintAnalyzer", "TextureAutomation", "TextureCurve"]

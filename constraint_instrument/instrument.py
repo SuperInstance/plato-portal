@@ -29,6 +29,7 @@ from .basie import BasieEngine, JamSession
 from .goodman import GoodmanEngine, DiagnosticReport
 from .armstrong import ArmstrongEngine
 from .ella import EllaEngine
+from .seed_manager import SeedManager
 
 
 # ── Key Resolution ───────────────────────────────────────────────────
@@ -325,7 +326,7 @@ class Instrument:
     MODES = ("parker", "miles", "ellington", "basie", "goodman", "armstrong", "ella")
 
     def __init__(self, mode: str = "ella", terrain: str = "blues",
-                 key = 'C', bpm: int = 100, bars: int = 4):
+                 key = 'C', bpm: int = 100, bars: int = 4, seed = None):
         """
         Create an Instrument.
         
@@ -335,6 +336,7 @@ class Instrument:
             key: Musical key — a note name like 'C', 'Eb', 'F#' or a MIDI note number (default: 60 = C4)
             bpm: Tempo in beats per minute (default: 100)
             bars: Number of bars to generate (default: 4)
+            seed: Master seed for deterministic reproducibility (None = non-deterministic)
         """
         mode = mode.lower().strip()
         if mode not in self.MODES:
@@ -355,6 +357,9 @@ class Instrument:
         self.bpm = int(bpm)
         self.bars = int(bars)
         self._last_notes: Optional[List[dict]] = None
+
+        # Seed manager for deterministic reproducibility
+        self._seed_manager = SeedManager(master_seed=seed) if seed is not None else None
 
         # Initialize the appropriate engine
         self._engine = self._create_engine(mode)
@@ -386,6 +391,10 @@ class Instrument:
         """
         use_bars = bars or self.bars
         use_bpm = bpm or self.bpm
+
+        # Seed global random for determinism if seed was provided
+        if self._seed_manager is not None:
+            self._seed_manager.seed_global('perform')
 
         # Ella ignores bars/bpm — it flows on its own
         if self.mode == "ella":
@@ -587,9 +596,11 @@ class Instrument:
             "key": self._key,
             "bpm": self.bpm,
             "bars": self.bars,
+            "seed": self._seed_manager.master_seed if self._seed_manager else None,
             "has_performance": self._last_notes is not None,
             "note_count": len(self._last_notes) if self._last_notes else 0,
         }
 
     def __repr__(self) -> str:
-        return f"Instrument(mode={self.mode!r}, terrain={self.terrain_name!r}, key={self._key}, bpm={self.bpm}, bars={self.bars})"
+        seed_str = f", seed={self._seed_manager.master_seed}" if self._seed_manager else ""
+        return f"Instrument(mode={self.mode!r}, terrain={self.terrain_name!r}, key={self._key}, bpm={self.bpm}, bars={self.bars}{seed_str})"

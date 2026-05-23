@@ -382,6 +382,61 @@ class GenreBrain:
         """Return the arrangement structure for this genre, if any."""
         return self._preset.get('arrangement')
 
+    def create_arrangement(self, bpm: int = None, bars: int = None, **kwargs):
+        """Create a fully configured Arrangement for this genre.
+
+        For techno and house, auto-applies TextureAutomation.
+        For other genres, returns a plain Arrangement with genre-appropriate tracks.
+
+        Args:
+            bpm: Override genre default BPM.
+            bars: Override genre default bars.
+            **kwargs: Additional overrides.
+
+        Returns:
+            Arrangement instance, optionally with texture automation applied.
+        """
+        from .tracks import Arrangement, techno_loop, house_beat
+        from .texture import TextureAutomation
+
+        use_bpm = bpm or self._preset.get('default_bpm', 120)
+        use_bars = bars or self._preset.get('default_bars', 8)
+        use_key = kwargs.get('key', self._preset.get('default_key', 'C'))
+
+        # Genre-specific presets with texture
+        if self._genre_key == 'techno':
+            arr = techno_loop(bpm=use_bpm, bars=use_bars)
+            structure = 'build_drop' if use_bars == 16 else 'peak_time' if use_bars == 32 else 'minimal'
+            tex = TextureAutomation(structure, bars=use_bars, bpm=use_bpm)
+            tex.generate()
+            tex.apply_to_arrangement(arr)
+            arr._texture = tex  # attach for later export
+            return arr
+
+        elif self._genre_key in ('house',) or self._genre_key == 'techno' and use_bars != 16:
+            arr = house_beat(bpm=use_bpm, bars=use_bars)
+            structure = 'deep_house' if use_bars == 24 else 'minimal'
+            tex = TextureAutomation(structure, bars=use_bars, bpm=use_bpm)
+            tex.generate()
+            tex.apply_to_arrangement(arr)
+            arr._texture = tex
+            return arr
+
+        elif self._genre_key == 'ambient':
+            arr = Arrangement(key=use_key, bpm=use_bpm, bars=use_bars)
+            arr.add_track('drone', 'ella', 'free_improvisation', 'pad')
+            arr.add_track('texture', 'miles', 'free_improvisation', 'synth')
+            tex = TextureAutomation('ambient_drone', bars=use_bars, bpm=use_bpm)
+            tex.generate()
+            tex.apply_to_arrangement(arr)
+            arr._texture = tex
+            return arr
+
+        else:
+            # Generic arrangement — no texture automation
+            arr = Arrangement(key=use_key, bpm=use_bpm, bars=use_bars)
+            return arr
+
     def summary(self) -> str:
         """Return a human-readable summary of this genre configuration."""
         p = self._preset

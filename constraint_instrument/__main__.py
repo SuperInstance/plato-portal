@@ -43,6 +43,7 @@ def cmd_quick(args):
             'key': args.key,
             'bpm': args.bpm,
             'bars': args.bars,
+            'seed': getattr(args, 'seed', None),
         }
         inst = brain.create_instrument(**overrides)
         # Print genre info
@@ -54,6 +55,7 @@ def cmd_quick(args):
             key=args.key,
             bpm=args.bpm,
             bars=args.bars,
+            seed=getattr(args, 'seed', None),
         )
     notes = inst.perform()
     print(f"  Mode:    {inst.mode}")
@@ -463,6 +465,8 @@ def main():
                         help="Start interactive REPL mode")
     parser.add_argument("--genre", "-g", default=None,
                         help="Genre preset (jazz, hip_hop, techno, classical, education, blues, ambient, gospel). Auto-configures mode, terrain, weights.")
+    parser.add_argument("--seed", "-s", type=int, default=None,
+                        help="Master seed for deterministic reproducibility. Same seed + same params = identical output.")
     parser.add_argument("--list-terrains", action="store_true",
                         help="List all available terrains")
     parser.add_argument("--list-genres", action="store_true",
