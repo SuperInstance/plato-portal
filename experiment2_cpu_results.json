@@ -1,0 +1,16 @@
+{
+  "prime_theorem": {
+    "matches": 22,
+    "total": 46
+  },
+  "breakage": {
+    "total_ops": 100000,
+    "add_breaks": 0,
+    "sub_breaks": 0,
+    "mul_breaks": 0,
+    "div_breaks": 25174,
+    "conclusion": "add/sub are EXACT on /360. mul/div break \u2014 need /360^2 or /360*k lattice.",
+    "first_mul_break": null
+  },
+  "tower_plateaus": 23
+}

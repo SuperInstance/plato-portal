@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-21T07:08:34.018Z",
+  "updatedAt": "2026-05-23T06:12:00.056Z",
   "entries": {
     "memory:memory/2026-05-11.md:163:200": {
       "key": "memory:memory/2026-05-11.md:163:200",
@@ -5074,6 +5074,476 @@
         "collective-ai",
         "simulation-first",
         "agent-field"
+      ]
+    },
+    "memory:memory/2026-05-23.md:45:52": {
+      "key": "memory:memory/2026-05-23.md:45:52",
+      "path": "memory/2026-05-23.md",
+      "startLine": 45,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "- [ ] Add examples/ to counterpoint-engine, groove-analyzer, holonomy-harmony - [ ] Archive 4 empty snapkit stubs (cuda, zig, test-corpus, rust) - [ ] guard2mask local working tree cleanup - [ ] PyPI publishing retry (cooldown should be clear) - [ ] Eisenstein pitch demo (Seed code — was saved as .md not .py) - [ ] Close remaining sunset-ecosystem issues (#19-23) - [ ] Claude Code available after 2:10 PM AKDT — use aggressively before credit reset",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3918105155229568,
+      "maxScore": 0.3918105155229568,
+      "firstRecalledAt": "2026-05-23T06:05:48.731Z",
+      "lastRecalledAt": "2026-05-23T06:05:48.731Z",
+      "queryHashes": [
+        "d5f491da8639"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "counterpoint-engine",
+        "groove-analyzer",
+        "holonomy-harmony",
+        "test-corpus",
+        "sunset-ecosystem",
+        "19-23",
+        "add",
+        "examples"
+      ]
+    },
+    "memory:memory/2026-05-22.md:67:103": {
+      "key": "memory:memory/2026-05-22.md:67:103",
+      "path": "memory/2026-05-22.md",
+      "startLine": 67,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "8. **Style DNA as science** — not just collecting old artists, but tools for artists to decompose their own style ## In Progress - Claude Code architecture analysis complete - Style DNA design complete - Species 4 fix complete - Grok offered to re-test after v0.2 ## Next Steps 1. Build style-dna repo (full StyleExtractor + StyleMorpher from design doc) 2. Download Bach/Joplin/Chopin MIDI from KernScores, extract StyleTiles 3. Build \"make this sound more like Bach\" morphing pipeline 4. Add audio playback (fluidsynth) — #1 blocker 5. Push jazz-voicing-engine and style-extractor to GitHub 6. Build v0.2 of flux-tensor-midi (MIDI export, Jupyter, visualization) 7. Implement Claude Code's immedi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.363100266456604,
+      "maxScore": 0.363100266456604,
+      "firstRecalledAt": "2026-05-23T06:05:48.731Z",
+      "lastRecalledAt": "2026-05-23T06:05:48.731Z",
+      "queryHashes": [
+        "d5f491da8639"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "re-test",
+        "v0.2",
+        "style-dna",
+        "bach/joplin/chopin",
+        "jazz-voicing-engine",
+        "style-extractor",
+        "flux-tensor-midi",
+        "style"
+      ]
+    },
+    "memory:memory/2026-05-22.md:217:246": {
+      "key": "memory:memory/2026-05-22.md:217:246",
+      "path": "memory/2026-05-22.md",
+      "startLine": 217,
+      "endLine": 246,
+      "source": "memory",
+      "snippet": "- **Music repos** (11 repos): all polished, 3 new GitHub repos (constraint-synth, jazz-voicing-engine, style-dna) ### constraint-substrate Phase 1 Complete - Rust (19 tests), C (28 tests), Python (23 tests = now 34) — all passing - 5 primitives: snap, funnel, holonomy, rigidity, consensus - Shared test vectors across all 3 languages ### Education Content Built - **START-HERE.md** (4,000 words): gateway essay, 6 parts, plain language - **LEARNING-PATHS.md**: 7 guided paths by background (1-4 hours each) - **LINKS.md** (59KB): master index with difficulty ratings - **demo/index.html** (18KB): polished landing page - **demo/playground.html** (30KB): 5 interactive browser demos - 11 per-repo q",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2345183461904525,
+      "maxScore": 0.42584108412265775,
+      "firstRecalledAt": "2026-05-23T06:11:52.056Z",
+      "lastRecalledAt": "2026-05-23T06:12:00.056Z",
+      "queryHashes": [
+        "f15460aae4bf",
+        "e25ed8886c61",
+        "6a2284156443"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "gateway",
+        "constraint-synth",
+        "jazz-voicing-engine",
+        "style-dna",
+        "constraint-substrate",
+        "start-here.md",
+        "learning-paths.md",
+        "1-4"
+      ]
+    },
+    "memory:memory/2026-05-22.md:282:309": {
+      "key": "memory:memory/2026-05-22.md:282:309",
+      "path": "memory/2026-05-22.md",
+      "startLine": 282,
+      "endLine": 309,
+      "source": "memory",
+      "snippet": "3. **musicpy ✅ CONDITIONAL ADOPT**: Near-zero overlap — pure complementarity. musicpy = composition DSL (chord notation, scales, MIDI I/O), our math stays ours. PoC chains all 7 components: musicpy chords → lattice snap → counterpoint → style analysis → MIDI/WAV output. - RD-WATCH.md written tracking 14 repos across 5 categories + research frontiers - Deliverables: RD-DAWDREAMER-EVAL.md, RD-MUSICPY-EVAL.md, dawdreamer_render.py, musicpy_constraint_composition.py, audio_to_analysis.py ### constraint-viz Upgraded ✅ - 5th lattice snap panel (blue dots → red X snapped, 2×3 layout) - Color-coded holonomy (coolwarm colormap: blue=tonic, red=far) - `high_res` flag (300 DPI) - JSON export via `exp",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7623574018478394,
+      "maxScore": 0.38502925634384155,
+      "firstRecalledAt": "2026-05-23T06:11:52.056Z",
+      "lastRecalledAt": "2026-05-23T06:12:00.056Z",
+      "queryHashes": [
+        "f15460aae4bf",
+        "6a2284156443"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "near-zero",
+        "i/o",
+        "midi/wav",
+        "rd-watch.md",
+        "rd-dawdreamer-eval.md",
+        "rd-musicpy-eval.md",
+        "dawdreamer-render.py",
+        "audio-to-analysis.py"
+      ]
+    },
+    "memory:memory/2026-05-22.md:146:163": {
+      "key": "memory:memory/2026-05-22.md:146:163",
+      "path": "memory/2026-05-22.md",
+      "startLine": 146,
+      "endLine": 163,
+      "source": "memory",
+      "snippet": "- ASSEMBLY-FIRST-SYNTH-DESIGN.md (39KB): Everything-is-ε, 64 voices in 54ns - CHINESE-MUSIC-CONSTRAINT-THEORY.md (41KB): Wǔxíng = Laman-rigid, liúbái constrains absence - INDIAN-ARABIC-CONSTRAINT-THEORY.md (51KB): Raga = constraint program, maqam sayr = Hamiltonian path - SOUND-PARAMETER-ATLAS.md (45KB): 85 dials, 10 new paradigms - SIGNAL-SUBSTRATE.md: Constraint = Signal = Music at every scale, Fractal Music Theorem - CONSTRAINT-SUBSTRATE-DESIGN.md (40KB): API contract, math specs, 15-language implementation plan ### Test Status - **688+ tests** across 11+ repos, **zero failures** - constraint-theory-core 83, counterpoint-engine 109, groove-analyzer 11, holonomy-harmony 94, spline-midi-sm",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.07822241736303,
+      "maxScore": 0.6968878592337193,
+      "firstRecalledAt": "2026-05-23T06:11:52.056Z",
+      "lastRecalledAt": "2026-05-23T06:11:52.290Z",
+      "queryHashes": [
+        "f15460aae4bf",
+        "e25ed8886c61"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "assembly-first-synth-design.md",
+        "everything-is-ε",
+        "laman-rigid",
+        "sound-parameter-atlas.md",
+        "signal-substrate.md",
+        "constraint-substrate-design.md",
+        "15-language",
+        "constraint-theory-core"
+      ]
+    },
+    "memory:memory/2026-05-22.md:243:268": {
+      "key": "memory:memory/2026-05-22.md:243:268",
+      "path": "memory/2026-05-22.md",
+      "startLine": 243,
+      "endLine": 268,
+      "source": "memory",
+      "snippet": "### Critical Fixes Applied - **flux_tensor_midi**: 22 source files restored from wheel, imports work - **constraint-substrate**: 4 fundamental bugs fixed (is_laman Laman condition, exponential decay, nearest-neighbor snap, circular mean) - **Covering radii**: formula corrected from 1/(2sin(π/n)) to sin(π/n), all 8 traditions - **Language**: \"proof\" → \"conjecture\" throughout, \"IS\" → \"can be modeled as\" in cultural docs - **9 doc stubs created** for missing referenced documents ### Key Insight from Beta Pattern: ideas strong, execution has holes. The API designs are good (zero-shot testers figured them out). The failures are all infrastructure (broken imports, missing files) not conceptual.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37092867493629456,
+      "maxScore": 0.37092867493629456,
+      "firstRecalledAt": "2026-05-23T06:11:52.056Z",
+      "lastRecalledAt": "2026-05-23T06:11:52.056Z",
+      "queryHashes": [
+        "f15460aae4bf"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "flux-tensor-midi",
+        "constraint-substrate",
+        "is-laman",
+        "nearest-neighbor",
+        "π/n",
+        "zero-shot",
+        "critical",
+        "fixes"
+      ]
+    },
+    "memory:memory/2026-05-22.md:133:149": {
+      "key": "memory:memory/2026-05-22.md:133:149",
+      "path": "memory/2026-05-22.md",
+      "startLine": 133,
+      "endLine": 149,
+      "source": "memory",
+      "snippet": "- **style-dna** (29 tests): 8 deep invariants (Betti numbers, Lyapunov, entropy ratio, holonomy range, liubai rate), 5 composer presets (Bach/Chopin/Joplin/Debussy/Coltrane), StyleMorpher - **constraint-synth** (20 tests + 5 playback tests): LatticeOscillator, FunnelEnvelope, ConsonanceFilter, MIDIRenderer, AudioPlayer (WAV/IPython/sounddevice). 5 presets rendered: Bach Organ, Joplin Piano, Debussy Pad, Coltrane Sax, Aphex Glitch - **constraint-viz** (8 tests): 4-panel constraint oscilloscope (sample/note/phrase/piece levels), 5 PNG visualizations generated - **constraint-substrate** (70 tests across 3 languages): Rust (19), C (28), Python (23) — 5 primitives with shared test vectors ### De",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.760206776857376,
+      "maxScore": 0.39323770105838773,
+      "firstRecalledAt": "2026-05-23T06:11:52.056Z",
+      "lastRecalledAt": "2026-05-23T06:12:00.056Z",
+      "queryHashes": [
+        "f15460aae4bf",
+        "6a2284156443"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "style-dna",
+        "constraint-synth",
+        "wav/ipython/sounddevice",
+        "constraint-viz",
+        "4-panel",
+        "sample/note/phrase/piece",
+        "constraint-substrate",
+        "style"
+      ]
+    },
+    "memory:memory/2026-05-22.md:46:76": {
+      "key": "memory:memory/2026-05-22.md:46:76",
+      "path": "memory/2026-05-22.md",
+      "startLine": 46,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "- INTEGRATION-LAYER-DESIGN.md (39KB): Builder pattern for pipeline - DAW-INTEGRATION-REPORT.md: All 5 libs real-time capable - flux-tensor-midi/ROADMAP.md: v0.2 priorities from Grok review ### Test Status - **394 tests** across 6 core repos, **26** jazz-voicing, **219** flux-tensor-midi = **639 total, zero failures** ### Architecture Deep Think (Claude Code) - \"The enemy is Python call overhead, not algorithmic complexity\" - _pebble_game() is a STUB — Laman rigidity not verified for n>15 - Rust core + PyO3 bindings recommended - Immediate wins: vectorize spline 10-50x, scipy eigsh 100-1000x, incremental holonomy O(N)→O(1) ## Key Insights from Testing 1. **Deadband funnel = motor accessibi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3524546831846237,
+      "maxScore": 0.3524546831846237,
+      "firstRecalledAt": "2026-05-23T06:11:52.056Z",
+      "lastRecalledAt": "2026-05-23T06:11:52.056Z",
+      "queryHashes": [
+        "f15460aae4bf"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "integration-layer-design.md",
+        "daw-integration-report.md",
+        "real-time",
+        "flux-tensor-midi/roadmap.md",
+        "v0.2",
+        "jazz-voicing",
+        "flux-tensor-midi",
+        "pebble-game"
+      ]
+    },
+    "memory:memory/2026-05-22.md:193:223": {
+      "key": "memory:memory/2026-05-22.md:193:223",
+      "path": "memory/2026-05-22.md",
+      "startLine": 193,
+      "endLine": 223,
+      "source": "memory",
+      "snippet": "5. Implement Claude Code's immediate wins (vectorize spline, scipy eigsh, incremental holonomy) 6. Build constraint-synth Rust core with PyO3 bindings 7. Add Jupyter notebook walkthroughs 8. Add audio playback to ALL repos via constraint-synth bridge 9. Retry PyPI publishing after cooldown 10. Push style-dna, constraint-synth, constraint-viz, constraint-substrate to GitHub as standalone repos 11. Unarchive remaining archived repos across SuperInstance org 12. Continue flywheel: round 9 testers on fixed code + new repos ## Critical Files - Grok external review: captured in memory - End-to-end demo: examples/full_pipeline_demo.py → full_pipeline_output.wav - Signal substrate: SIGNAL-SUBSTRATE",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6568353291927678,
+      "maxScore": 0.6568353291927678,
+      "firstRecalledAt": "2026-05-23T06:11:52.290Z",
+      "lastRecalledAt": "2026-05-23T06:11:52.290Z",
+      "queryHashes": [
+        "e25ed8886c61"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "constraint-synth",
+        "style-dna",
+        "constraint-viz",
+        "constraint-substrate",
+        "end-to-end",
+        "examples/full-pipeline-demo.py",
+        "full-pipeline-output.wav",
+        "signal-substrate"
+      ]
+    },
+    "memory:memory/2026-05-22.md:159:179": {
+      "key": "memory:memory/2026-05-22.md:159:179",
+      "path": "memory/2026-05-22.md",
+      "startLine": 159,
+      "endLine": 179,
+      "source": "memory",
+      "snippet": "- **PLATO ecosystem** (4 repos): All READMEs rewritten teach-don't-pitch, plato-training root cleaned (23→20), all pushed. - **Forgemaster** (282→13 root files): docs/ with 60+ docs, research/ with 300+ docs, fleet/ with coordination modules, archive/ for bottles/logs. PR #6 opened. Reorganization into ~10 category directories in progress. - **Music repos** (11 repos): Polish agent still running. ### WAV Audio Files - constraint-synth/examples/output/: bach_organ, joplin_piano, debussy_pad, coltrane_sax, aphex_glitch - examples/full_pipeline_output.wav (end-to-end 7-stage demo) ## Key Insights 1. **Deadband funnel = motor accessibility primitive** (2.4→8.2 potential) 2. **Audio playback so",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40883157849311824,
+      "maxScore": 0.40883157849311824,
+      "firstRecalledAt": "2026-05-23T06:11:52.290Z",
+      "lastRecalledAt": "2026-05-23T06:11:52.290Z",
+      "queryHashes": [
+        "e25ed8886c61"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "teach-don",
+        "t-pitch",
+        "plato-training",
+        "bottles/logs",
+        "constraint-synth/examples/output",
+        "bach-organ",
+        "joplin-piano",
+        "debussy-pad"
+      ]
+    },
+    "memory:memory/2026-05-23.md:19:50": {
+      "key": "memory:memory/2026-05-23.md:19:50",
+      "path": "memory/2026-05-23.md",
+      "startLine": 19,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "- [x] **Push sweep**: 125 repos processed, 7 pushed, 14 FF-rejects fixed, 47 archived - [x] **Unified research doc**: TENSOR-MIDI-UNIFIED-RESEARCH.md (904 lines, 16K words, 33 citations) - [x] **46 dirty repos committed** ### Key Numbers - Total repos on GitHub: 1,681+ - Repos pushed this session: 21 - Total doc lines written: ~5,000+ - Research papers: 6 standalone + 1 unified - Test results: 73/78 counterpoint, 11/11 groove, 83/83 constraint-theory-core ### Agent Teams Used - z.ai (glm-5.1): 10 subagents (docs × 5, push, ff-fix, cleanup, unified-research, extract) - kimi: ~8 background agents (counterpoint, groove, holonomy, spline, PLATO, CI/CD, etc.) - DeepSeek: 3 API calls (consciousn",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3883398294448852,
+      "maxScore": 0.3883398294448852,
+      "firstRecalledAt": "2026-05-23T06:11:52.290Z",
+      "lastRecalledAt": "2026-05-23T06:11:52.290Z",
+      "queryHashes": [
+        "e25ed8886c61"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "ff-rejects",
+        "tensor-midi-unified-research.md",
+        "73/78",
+        "11/11",
+        "83/83",
+        "constraint-theory-core",
+        "z.ai",
+        "glm-5.1"
+      ]
+    },
+    "memory:memory/2026-05-22.md:175:198": {
+      "key": "memory:memory/2026-05-22.md:175:198",
+      "path": "memory/2026-05-22.md",
+      "startLine": 175,
+      "endLine": 198,
+      "source": "memory",
+      "snippet": "8. **Universal Lattice: fibre bundle model** — base B = 12-TET, fibre F varies by tradition 9. **constraint-substrate**: standalone 5-primitive library in Rust+C+Python, embeddable anywhere 10. **\"Everything is ε\"** — all synth parameters are projections of ONE constraint primitive 11. **Forgemaster = assembly as constraint** — agentic compiler participates in the constraint, not just glue ## Paradigm: \"The measurement IS the waveform\" Casey's insight: the constraint parameters ARE the waveform characteristics, just viewed from different scales. The vertical build-out of readable measurements and the waveform you see on a scope are the SAME thing. This led to signal substrate theory and the",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3873689502477646,
+      "maxScore": 0.3873689502477646,
+      "firstRecalledAt": "2026-05-23T06:11:52.290Z",
+      "lastRecalledAt": "2026-05-23T06:11:52.290Z",
+      "queryHashes": [
+        "e25ed8886c61"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "12-tet",
+        "constraint-substrate",
+        "5-primitive",
+        "build-out",
+        "universal",
+        "lattice",
+        "fibre",
+        "bundle"
+      ]
+    },
+    "memory:memory/2026-05-22.md:264:284": {
+      "key": "memory:memory/2026-05-22.md:264:284",
+      "path": "memory/2026-05-22.md",
+      "startLine": 264,
+      "endLine": 284,
+      "source": "memory",
+      "snippet": "- **C**: 41/41 tests ✅ (prior subagent fixed all 4 algorithms + added circular mean tests + M_PI define) - **Python**: 34/34 tests ✅ - **Total: 105 tests across 3 languages, mathematically identical outputs** - Fixes: exponential funnel decay, Eisenstein lattice nearest-neighbor snap, full Laman subgraph rigidity check, circular mean via atan2 ### R2 Beta Fixes Committed ✅ All 5 fixes from R2 feedback committed: - VoiceRange/Scale exports in counterpoint-engine - Rest filtering in style-dna pitch metrics (rests ≠ pitch 0) - Per-track interval computation (not cross-voice) - Crossfade anti-click in constraint-synth (475 clicks → 0) - START-HERE.md \"maps exactly to\" → \"can be modeled as\" ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40809651911258693,
+      "maxScore": 0.40809651911258693,
+      "firstRecalledAt": "2026-05-23T06:12:00.056Z",
+      "lastRecalledAt": "2026-05-23T06:12:00.056Z",
+      "queryHashes": [
+        "6a2284156443"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "41/41",
+        "m-pi",
+        "34/34",
+        "nearest-neighbor",
+        "voicerange/scale",
+        "counterpoint-engine",
+        "style-dna",
+        "per-track"
+      ]
+    },
+    "memory:memory/2026-05-22.md:94:122": {
+      "key": "memory:memory/2026-05-22.md:94:122",
+      "path": "memory/2026-05-22.md",
+      "startLine": 94,
+      "endLine": 122,
+      "source": "memory",
+      "snippet": "Continuation from May 21 session. Casey running fleet operations across SuperInstance org (1,681 repos). ## Completed ### Beta Testing Flywheel (8 rounds, 15 reports, 486KB analysis) **Round 1 scores:** spline 8.4, groove 7.5, counterpoint 7.0, holonomy 6.8, flux 6.5, constraint-theory 4.6 (wrong repo) **Round 2:** API design (25KB, 5 PRs), stress test (108 edge cases, 19 issues found), pipeline test (5/10) **Round 3:** Retest 19/19 fixed, musician experience 5/10, integration design (builder pattern wins) **Round 4:** DAW integration (all real-time capable 0.004-0.318ms), docs audit (5-8/10 per repo) **Round 5:** Classical 3.5→5.5, Hip-hop 5/10, Education (no audio = #1 blocker), Jaz",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40581250488758086,
+      "maxScore": 0.40581250488758086,
+      "firstRecalledAt": "2026-05-23T06:12:00.056Z",
+      "lastRecalledAt": "2026-05-23T06:12:00.056Z",
+      "queryHashes": [
+        "6a2284156443"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "8.4",
+        "7.5",
+        "7.0",
+        "6.8",
+        "6.5",
+        "constraint-theory",
+        "4.6",
+        "5/10"
+      ]
+    },
+    "memory:memory/2026-05-22.md:1:32": {
+      "key": "memory:memory/2026-05-22.md:1:32",
+      "path": "memory/2026-05-22.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# 2026-05-22 Session Notes ## Context Continuation from May 21 session. Casey running fleet operations across SuperInstance org (1,681 repos). ## Completed ### Beta Testing Flywheel (7 rounds, 14 reports, 486KB analysis) **Round 1 scores:** spline 8.4, groove 7.5, counterpoint 7.0, holonomy 6.8, flux 6.5, constraint-theory 4.6 (wrong repo) **Round 2:** API design (25KB, 5 PRs), stress test (108 edge cases, 19 issues found), pipeline test (5/10) **Round 3:** Retest 19/19 fixed, musician experience 5/10, integration design (builder pattern wins) **Round 4:** DAW integration (all real-time capable 0.004-0.318ms), docs audit (5-8/10 per repo) **Round 5:** Classical 3.5→5.5, Hip-hop 5/10,",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3944944262504577,
+      "maxScore": 0.3944944262504577,
+      "firstRecalledAt": "2026-05-23T06:12:00.056Z",
+      "lastRecalledAt": "2026-05-23T06:12:00.056Z",
+      "queryHashes": [
+        "6a2284156443"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "8.4",
+        "7.5",
+        "7.0",
+        "6.8",
+        "6.5",
+        "constraint-theory",
+        "4.6",
+        "5/10"
       ]
     }
   }

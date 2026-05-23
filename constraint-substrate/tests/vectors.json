@@ -1,0 +1,121 @@
+{
+  "lattice": {
+    "cases": [
+      {
+        "input": {"x": 0.0, "y": 0.0, "group_order": 3},
+        "output": {"x": 0.0, "y": 0.0, "error": 0.0}
+      },
+      {
+        "input": {"x": 0.01, "y": 0.99, "group_order": 3},
+        "output": {"x": 0.5, "y": 0.8660254037844386, "error": 0.5054401057561732}
+      },
+      {
+        "input": {"x": 1.0, "y": 0.0, "group_order": 3},
+        "output": {"x": 1.0, "y": 0.0, "error": 0.0}
+      },
+      {
+        "input": {"x": 0.5, "y": 0.5, "group_order": 3},
+        "output": {"x": 0.5, "y": 0.8660254037844386, "error": 0.3660254037844386}
+      }
+    ]
+  },
+  "funnel": {
+    "cases": [
+      {
+        "input": {"current": 0.0, "target": 5.0, "epsilon": 1.0, "decay": 0.1},
+        "output": {"value": 1.0, "epsilon": 0.9048374180359595}
+      },
+      {
+        "input": {"current": 1.0, "target": 1.05, "epsilon": 0.2, "decay": 0.1},
+        "output": {"value": 1.004758129098202, "epsilon": 0.18096748360719192}
+      },
+      {
+        "input": {"current": 10.0, "target": 0.0, "epsilon": 0.5, "decay": 0.2},
+        "output": {"value": 9.5, "epsilon": 0.4093653765389909}
+      },
+      {
+        "description": "Exponential decay: epsilon never reaches zero",
+        "input": {"current": 0.0, "target": 1.0, "epsilon": 1.0, "decay": 0.5},
+        "output": {"value": 1.0, "epsilon": 0.6065306597126334}
+      }
+    ]
+  },
+  "holonomy": {
+    "cases": [
+      {
+        "input": {"values": [1.0, 2.0, 3.0, 4.0], "modulus": 10.0},
+        "output": {"winding": 0.3}
+      },
+      {
+        "input": {"values": [1.0, 3.0, 5.0, 7.0, 9.0, 1.0], "modulus": 10.0},
+        "output": {"winding": 1.0}
+      },
+      {
+        "input": {"values": [], "modulus": 10.0},
+        "output": {"winding": 0.0}
+      },
+      {
+        "input": {"values": [0.5, 9.5], "modulus": 10.0},
+        "output": {"winding": -0.1}
+      }
+    ]
+  },
+  "rigidity": {
+    "cases": [
+      {
+        "input": {"n": 3, "edges": [[0, 1], [1, 2], [0, 2]]},
+        "output": {"is_rigid": true}
+      },
+      {
+        "input": {"n": 3, "edges": [[0, 1]]},
+        "output": {"is_rigid": false}
+      },
+      {
+        "input": {"n": 2, "edges": [[0, 1]]},
+        "output": {"is_rigid": true}
+      },
+      {
+        "input": {"n": 1, "edges": []},
+        "output": {"is_rigid": false}
+      },
+      {
+        "description": "K4: too many edges for minimal Laman (6 > 2*4-3=5)",
+        "input": {"n": 4, "edges": [[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]]},
+        "output": {"is_rigid": false}
+      },
+      {
+        "description": "Dense subgraph: K4 subgraph violates 2k-3 constraint despite having correct total edge count",
+        "input": {"n": 5, "edges": [[0,1],[0,2],[0,3],[1,2],[1,3],[2,3],[3,4]]},
+        "output": {"is_rigid": false}
+      },
+      {
+        "description": "Minimally rigid on 4 vertices (5 edges, properly distributed)",
+        "input": {"n": 4, "edges": [[0,1],[1,2],[2,3],[0,3],[0,2]]},
+        "output": {"is_rigid": true}
+      }
+    ]
+  },
+  "consensus": {
+    "cases": [
+      {
+        "input": {"values": [1.0, 2.0, 3.0], "epsilon": 0.5},
+        "output": {"values": [1.25, 2.0, 2.75], "converged": false}
+      },
+      {
+        "input": {"values": [2.0, 2.0, 2.0], "epsilon": 0.5},
+        "output": {"values": [2.0, 2.0, 2.0], "converged": true}
+      },
+      {
+        "input": {"values": [], "epsilon": 0.5},
+        "output": {"values": [], "converged": true}
+      }
+    ],
+    "circular_cases": [
+      {
+        "description": "Circular mean: values near wrap-around (0.1, 0.9 mod 1.0) should converge near 0.0, not 0.5",
+        "input": {"values": [0.1, 0.9], "epsilon": 0.5, "modulus": 1.0},
+        "output": {"mean_near": 0.0, "mean_not_near": 0.5, "tolerance": 0.3}
+      }
+    ]
+  }
+}
