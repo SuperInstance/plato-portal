@@ -448,6 +448,12 @@ class Monitor:
             reason="Current state assessment",
         )
 
+    def _update_state(self, snapshot: PerformerSnapshot, assessment: FlowAssessment):
+        """Update internal state from snapshot and assessment."""
+        self.error_history.append(snapshot.error_rate)
+        self.consistency_history.append(snapshot.consistency)
+        self.exploration_history.append(snapshot.exploration_velocity)
+
     # ── Learning ──────────────────────────────────────────────────────
 
     def _learn(self, notes: List[dict]):

@@ -7,6 +7,11 @@ Each terrain defines the topology of a musical landscape:
 - rhythmic skeletons
 - register tendencies
 - chromatic fields and their density
+
+Terrain maps are the 0th-order constraint surfaces — the bathymetric
+charts that musicians ride on. They define the lattice (pitch grid),
+the funnel (gravitational centers), the holonomy (loop consistency),
+the rigidity (structural requirements), and the metronome (time).
 """
 
 from dataclasses import dataclass, field
@@ -43,7 +48,7 @@ class Terrain:
     typical_tempo: Tuple[int, int] = (100, 180)  # (low, high) BPM
 
 
-# ── Terrain Definitions ──────────────────────────────────────────────
+# ── Legacy Terrain Definitions (kept for backward compat) ─────────────
 
 BLUES = Terrain(
     name="blues",
@@ -151,10 +156,42 @@ FREE_JAZZ = Terrain(
     typical_tempo=(40, 300),
 )
 
+# ── Rich Terrain Imports ──────────────────────────────────────────────
+
+from .terrains.delta_blues import DELTA_BLUES
+from .terrains.bebop import BEBOP as BEBOP_RICH
+from .terrains.modal_jazz import MODAL_JAZZ
+from .terrains.classical_counterpoint import CLASSICAL_COUNTERPOINT
+from .terrains.bluegrass import BLUEGRASS
+from .terrains.hip_hop_trap import HIP_HOP_TRAP
+from .terrains.afro_cuban import AFRO_CUBAN
+from .terrains.indian_raga import INDIAN_RAGA
+from .terrains.chinese_silk_bamboo import CHINESE_SILK_BAMBOO
+from .terrains.electronic_techno import ELECTRONIC_TECHNO
+from .terrains.gospel import GOSPEL
+from .terrains.free_improvisation import FREE_IMPROVISATION
+
+
+# ── Terrain Registry ─────────────────────────────────────────────────
+
 TERRAINS: Dict[str, Terrain] = {
+    # Legacy (backward compatible)
     "blues": BLUES,
     "bebop": BEBOP,
     "modal": MODAL,
     "classical": CLASSICAL,
     "free_jazz": FREE_JAZZ,
+    # Rich terrain maps — full bathymetric charts
+    "delta_blues": DELTA_BLUES,
+    "bebop_rich": BEBOP_RICH,
+    "modal_jazz": MODAL_JAZZ,
+    "classical_counterpoint": CLASSICAL_COUNTERPOINT,
+    "bluegrass": BLUEGRASS,
+    "hip_hop_trap": HIP_HOP_TRAP,
+    "afro_cuban": AFRO_CUBAN,
+    "indian_raga": INDIAN_RAGA,
+    "chinese_silk_bamboo": CHINESE_SILK_BAMBOO,
+    "electronic_techno": ELECTRONIC_TECHNO,
+    "gospel": GOSPEL,
+    "free_improvisation": FREE_IMPROVISATION,
 }
