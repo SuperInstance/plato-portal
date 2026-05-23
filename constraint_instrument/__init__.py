@@ -24,6 +24,7 @@ from .instrument import Instrument, resolve_key, resolve_terrain, TERRAIN_ALIASE
 from .terrain import Terrain, TERRAINS
 from .analyzer import ConstraintAnalyzer
 from .texture import TextureAutomation, TextureCurve
+from .seed_manager import SeedManager
 
 __version__ = "0.2.0"
-__all__ = ["Instrument", "Terrain", "TERRAINS", "resolve_key", "resolve_terrain", "ConstraintAnalyzer", "TextureAutomation", "TextureCurve"]
+__all__ = ["Instrument", "Terrain", "TERRAINS", "resolve_key", "resolve_terrain", "ConstraintAnalyzer", "TextureAutomation", "TextureCurve", "SeedManager"]
