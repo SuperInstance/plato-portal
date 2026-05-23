@@ -135,9 +135,9 @@ class ArmstrongEngine:
             else:
                 note_len = random.uniform(0.1, beat_dur * 4)
 
-            # Density
-            if self.layers["density"].active:
-                if random.random() > 0.5:
+            # Density (but always allow some notes through)
+            if self.layers["density"].active and len(notes) > 3:
+                if random.random() > 0.6:
                     t += beat_dur * random.choice([0.5, 1.0])
                     continue
 

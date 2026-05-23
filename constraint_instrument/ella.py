@@ -43,7 +43,7 @@ class EllaEngine:
         self._energy = 0.5  # current energy level, adapts
         self._register_center = (terrain.register_tendency[0] + terrain.register_tendency[1]) // 2
 
-    def perform(self, seed: Optional[int] = None) -> dict:
+    def perform(self, seed: Optional[int] = None, **kwargs) -> dict:
         """
         Perform. No parameters. The music flows.
         

@@ -184,7 +184,7 @@ class Instrument:
             "miles": lambda: MilesEngine(self._terrain, self._key),
             "ellington": lambda: EllingtonEngine(self._terrain, self._key),
             "basie": lambda: BasieEngine(self._terrain, self._key),
-            "goodman": lambda: GoodmanEngine(self._terrain, self._key),
+            "goodman": lambda: GoodmanEngine(terrain=self._terrain, key=self._key),
             "armstrong": lambda: ArmstrongEngine(self._terrain, self._key),
             "ella": lambda: EllaEngine(self._terrain, self._key),
         }
