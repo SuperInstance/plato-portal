@@ -61,6 +61,11 @@ class DiagnosticReport:
         lines.append("═" * 60)
         return "\n".join(lines)
 
+    @property
+    def stars(self) -> dict:
+        """Map order names to their star ratings."""
+        return {o.name: o.stars for o in self.orders}
+
 
 @dataclass
 class Prescription:
@@ -134,6 +139,54 @@ def _wrap_angle(angle: float) -> float:
     return angle
 
 
+def _normalize_notes(source: list) -> List[Note]:
+    """
+    Normalize any supported note format to Goodman's internal dict format.
+    
+    Accepts:
+      - List of dicts:  [{'pitch': 60, 'velocity': 80, ...}, ...]
+      - List of objects: [Note(pitch=60, ...), ...]  (any object with .pitch)
+      - List of ints:   [60, 64, 67, 72]
+    
+    Returns list of dicts with keys: pitch, velocity, start, duration
+    """
+    if not source:
+        return []
+
+    normalized = []
+    for i, item in enumerate(source):
+        if isinstance(item, int):
+            # Raw pitch int — assign sensible defaults
+            normalized.append({
+                "pitch": item,
+                "velocity": 80,
+                "start": float(i) * 0.5,
+                "duration": 0.4,
+            })
+        elif isinstance(item, dict):
+            n = {
+                "pitch": item.get("pitch", 60),
+                "velocity": item.get("velocity", 80),
+                "start": item.get("start", item.get("start_time", float(i) * 0.5)),
+                "duration": item.get("duration", 0.5),
+            }
+            normalized.append(n)
+        elif hasattr(item, "pitch"):
+            # Object with .pitch attribute (e.g. Note dataclass)
+            normalized.append({
+                "pitch": getattr(item, "pitch", 60),
+                "velocity": getattr(item, "velocity", 80),
+                "start": getattr(item, "start", getattr(item, "start_time", float(i) * 0.5)),
+                "duration": getattr(item, "duration", 0.5),
+            })
+        else:
+            raise TypeError(
+                f"Cannot normalize note at index {i}: {item!r}. "
+                "Expected int, dict, or note object with .pitch attribute."
+            )
+    return normalized
+
+
 # ── The Engine ──────────────────────────────────────────────────────────────
 
 class GoodmanEngine:
@@ -173,13 +226,16 @@ class GoodmanEngine:
                 if pc in self.degree_weights:
                     self.degree_weights[pc] = 0.2
 
-    def diagnose(self, notes: List[Note]) -> DiagnosticReport:
+    def diagnose(self, notes) -> DiagnosticReport:
         """
         Analyze a performance and return a full DiagnosticReport.
         
-        Each note is a dict with keys:
-            pitch (int), velocity (int), start (float), duration (float)
+        Accepts any supported note format:
+          - List of dicts:  [{'pitch': 60, 'velocity': 80, 'start': 0.0, 'duration': 0.5}, ...]
+          - List of objects: [Note(pitch=60, ...), ...]
+          - List of ints:   [60, 64, 67, 72]
         """
+        notes = _normalize_notes(notes)
         if len(notes) < 4:
             return self._trivial_report("Need at least 4 notes for diagnosis.")
 
@@ -738,6 +794,23 @@ class GoodmanEngine:
 
     # ── Prescription Engine ─────────────────────────────────────────────
 
+    def prescribe(self, missing_order: int, **kwargs) -> Prescription:
+        """Get exercises for a specific missing order."""
+        # Build placeholder orders
+        names = ["POSITION", "DIRECTION", "CURVATURE", "STRUCTURE"]
+        if missing_order < 0 or missing_order >= 4:
+            raise ValueError(f"missing_order must be 0-3")
+        o = OrderScore(
+            order=missing_order,
+            name=names[missing_order],
+            score=0.0,
+            stars="☆☆☆☆☆",
+            components={},
+            detail="(prescription for specific order)",
+            diagnosis="Targeted practice recommended",
+        )
+        return self._prescribe(o)
+
     def _prescribe_all(self, orders: List[OrderScore]) -> List[Prescription]:
         """Generate prescriptions, prioritizing weakest orders."""
         # Sort by score ascending (weakest first)
@@ -768,7 +841,10 @@ class GoodmanEngine:
     def _prescribe(self, order: OrderScore) -> Prescription:
         """Generate specific exercises for a weak order."""
         # Pick exercises based on which sub-component is weakest
-        weakest_component = min(order.components, key=order.components.get)
+        if order.components:
+            weakest_component = min(order.components, key=order.components.get)
+        else:
+            weakest_component = "general"
 
         exercise_map = {
             0: {
@@ -854,14 +930,16 @@ class GoodmanEngine:
         order_exercises = exercise_map.get(order.order, {})
         exercises = order_exercises.get(weakest_component, order_exercises.get("default", []))
 
+        component_pct = order.components.get(weakest_component, 0)
+
         rationale = {
-            0: f"Your weakest area is '{weakest_component}' ({order.components[weakest_component]:.0%}). "
+            0: f"Your weakest area is '{weakest_component}' ({component_pct:.0%}). "
                "These exercises will build automatic pitch selection.",
-            1: f"Your weakest area is '{weakest_component}' ({order.components[weakest_component]:.0%}). "
+            1: f"Your weakest area is '{weakest_component}' ({component_pct:.0%}). "
                "These exercises will build directional awareness in your lines.",
-            2: f"Your weakest area is '{weakest_component}' ({order.components[weakest_component]:.0%}). "
+            2: f"Your weakest area is '{weakest_component}' ({component_pct:.0%}). "
                "These exercises will develop your time feel and dynamic control.",
-            3: f"Your weakest area is '{weakest_component}' ({order.components[weakest_component]:.0%}). "
+            3: f"Your weakest area is '{weakest_component}' ({component_pct:.0%}). "
                "These exercises will build your structural and architectural awareness.",
         }.get(order.order, "Practice these exercises to improve.")
 

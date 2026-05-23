@@ -6,3 +6,5 @@ constraint_instrument.egg-info/requires.txt
 constraint_instrument.egg-info/top_level.txt
 tests/test_instrument.py
 tests/test_monitor.py
+tests/test_monitor_flow.py
+tests/test_terrain_morph.py

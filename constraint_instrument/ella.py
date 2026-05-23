@@ -86,14 +86,16 @@ class EllaEngine:
         No parameters — the phrase emerges from context.
         """
         # Phrase length follows a natural distribution
-        phrase_length = max(3, int(random.gauss(8, 3)))
+        # At least 16 notes for a meaningful 4-bar phrase
+        phrase_length = max(16, int(random.gauss(24, 6)))
         
         # The phrase has an arc: start, develop, resolve
         degrees = [d.degree for d in self.terrain.scale_degrees]
         weights = [d.weight for d in self.terrain.scale_degrees]
 
         notes = []
-        current_pitch = self._register_center
+        # Snap starting pitch to nearest terrain degree + key
+        current_pitch = self._snap_to_terrain(self._register_center)
         t = start_time
 
         for i in range(phrase_length):
@@ -103,28 +105,38 @@ class EllaEngine:
             # Energy follows a parabolic arc within the phrase
             phrase_energy = 4 * position * (1 - position)  # peaks at 0.5
 
-            # Choose direction
+            # Pick next degree from terrain, biased by weights
+            target_degree = random.choices(degrees, weights=weights, k=1)[0]
+            # Add octave offset based on current register
+            current_octave = (current_pitch - self.key) // 12
+            target_pitch = self.key + current_octave * 12 + target_degree
+
+            # Adjust octave if target is far from current pitch
+            if target_pitch < current_pitch - 7:
+                target_pitch += 12
+            elif target_pitch > current_pitch + 7:
+                target_pitch -= 12
+
+            # Direction for optional octave shifts
             if i == 0:
                 direction = random.choice([-1, 0, 1])
             elif position < 0.6:
-                # Developing: follow momentum with occasional turns
                 direction = self._last_direction if random.random() < 0.7 else random.choice([-1, 0, 1])
             else:
-                # Resolving: tend back toward center
-                if current_pitch > self._register_center + 7:
+                if target_pitch > self._register_center + 7:
                     direction = -1
-                elif current_pitch < self._register_center - 7:
+                elif target_pitch < self._register_center - 7:
                     direction = 1
                 else:
-                    direction = random.choice([-1, 0, 0, 1])
+                    direction = 0
 
             self._last_direction = direction
 
-            # Interval: larger during development, smaller at start/end
-            max_interval = 2 + int(phrase_energy * 5)
-            interval = random.randint(1, max_interval) * direction
+            # Shift by an octave in the phrase direction if energy is high
+            if phrase_energy > 0.7 and direction != 0 and random.random() < 0.15:
+                target_pitch += direction * 12
 
-            pitch = current_pitch + interval
+            pitch = target_pitch
             # Soft register boundaries (not hard walls)
             pitch = self._soft_clamp(pitch,
                                      self.terrain.register_tendency[0] - 5,
@@ -164,6 +176,15 @@ class EllaEngine:
 
         self._phrase_memory.append(notes)
         return notes
+
+    def _snap_to_terrain(self, pitch: int) -> int:
+        """Snap a pitch to the nearest terrain scale degree + key."""
+        degrees = [d.degree for d in self.terrain.scale_degrees]
+        octave = (pitch - self.key) // 12
+        candidates = [self.key + octave * 12 + d for d in degrees] + \
+                     [self.key + (octave + 1) * 12 + d for d in degrees] + \
+                     [self.key + (octave - 1) * 12 + d for d in degrees]
+        return min(candidates, key=lambda c: abs(c - pitch))
 
     def _soft_clamp(self, value: float, low: float, high: float) -> int:
         """Soft clamp: pushes back toward range but doesn't hard-wall."""

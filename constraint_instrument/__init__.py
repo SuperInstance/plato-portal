@@ -9,10 +9,19 @@ Seven modes, seven ways of relating to constraint space:
   Goodman  — diagnostic, find what's missing
   Armstrong — liberation through constraint removal
   Ella     — pure flow, the tool disappears
+
+Quick start:
+    from constraint_instrument import Instrument
+
+    inst = Instrument(mode='ella', terrain='blues', key='C', bpm=100, bars=4)
+    notes = inst.perform()
+    inst.play()
+    inst.render('output.wav')
+    inst.diagnose()
 """
 
-from .instrument import Instrument
+from .instrument import Instrument, resolve_key, resolve_terrain, TERRAIN_ALIASES
 from .terrain import Terrain, TERRAINS
 
-__version__ = "0.1.0"
-__all__ = ["Instrument", "Terrain", "TERRAINS"]
+__version__ = "0.2.0"
+__all__ = ["Instrument", "Terrain", "TERRAINS", "resolve_key", "resolve_terrain"]
