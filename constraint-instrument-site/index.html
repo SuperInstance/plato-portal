@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Constraint Instrument — Bathymetrics for Music</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#06060b;--bg2:#0d0d14;--bg3:#14141f;--bg4:#1c1c2a;
+  --fg:#e8e8ec;--fg2:#a0a0aa;--fg3:#666670;
+  --cyan:#22d3ee;--cyan2:#06b6d4;--cyan-dim:rgba(34,211,238,0.08);
+  --violet:#a78bfa;--amber:#fbbf24;--green:#4ade80;--red:#f87171;--rose:#fb7185;
+  --mono:'SF Mono',SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --radius:8px;
+}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;overflow-x:hidden}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+::selection{background:var(--cyan);color:var(--bg)}
+
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(6,6,11,0.8);backdrop-filter:blur(16px);border-bottom:1px solid var(--bg3);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem}
+nav .logo{font-weight:800;font-size:1.1rem;letter-spacing:-0.03em}
+nav .logo span{color:var(--cyan)}
+nav .links{display:flex;gap:1.5rem;font-size:0.85rem}
+nav .links a{color:var(--fg2);transition:color .15s}
+nav .links a:hover{color:var(--fg);text-decoration:none}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;overflow:hidden}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;opacity:0.12;pointer-events:none}
+.hero h1{font-size:clamp(2.2rem,5.5vw,4rem);font-weight:800;letter-spacing:-0.04em;line-height:1.05;margin-bottom:1rem;position:relative;z-index:1}
+.hero h1 .thin{font-weight:200;color:var(--fg2)}
+.hero h1 .em{color:var(--cyan)}
+.hero h1 .dash{color:var(--fg3);font-weight:300}
+.hero .tagline{font-size:clamp(1rem,1.8vw,1.2rem);color:var(--fg2);max-width:600px;margin:0 auto 2.5rem;font-weight:400;position:relative;z-index:1;line-height:1.7}
+.hero .cta-row{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;position:relative;z-index:1}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.75rem;border-radius:var(--radius);font-size:0.9375rem;font-weight:600;border:none;cursor:pointer;transition:all .2s;letter-spacing:-0.01em}
+.btn-primary{background:var(--cyan);color:var(--bg)}
+.btn-primary:hover{background:var(--cyan2);transform:translateY(-1px);box-shadow:0 4px 20px rgba(34,211,238,0.3)}
+.btn-ghost{background:transparent;color:var(--fg);border:1px solid var(--bg4)}
+.btn-ghost:hover{border-color:var(--fg3);transform:translateY(-1px)}
+
+/* Sections */
+section{padding:5rem 2rem;max-width:1100px;margin:0 auto}
+section h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-0.02em;margin-bottom:0.5rem}
+.subtitle{color:var(--fg2);font-size:1rem;margin-bottom:3rem;max-width:560px}
+.section-label{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--cyan);margin-bottom:0.75rem}
+
+/* Mode cards */
+.mode-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:0.75rem}
+.mode-card{background:var(--bg2);border:1px solid var(--bg3);border-radius:var(--radius);padding:1.25rem 1rem;text-align:center;transition:all .2s;cursor:default}
+.mode-card:hover{border-color:var(--cyan);transform:translateY(-3px);box-shadow:0 8px 24px rgba(34,211,238,0.08)}
+.mode-card .icon{font-size:2rem;margin-bottom:0.5rem;display:block}
+.mode-card .name{font-weight:700;font-size:0.9rem;margin-bottom:0.2rem}
+.mode-card .desc{font-size:0.75rem;color:var(--fg3)}
+
+/* Terrain showcase */
+.terrain-showcase{display:grid;grid-template-columns:280px 1fr;gap:2rem;align-items:start}
+.terrain-list{display:flex;flex-direction:column;gap:0.25rem;max-height:500px;overflow-y:auto;padding-right:0.5rem}
+.terrain-list::-webkit-scrollbar{width:4px}
+.terrain-list::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:2px}
+.terrain-item{padding:0.6rem 0.8rem;border-radius:6px;font-size:0.85rem;cursor:pointer;transition:all .15s;border:1px solid transparent}
+.terrain-item:hover{background:var(--bg3);border-color:var(--bg4)}
+.terrain-item.active{background:var(--cyan-dim);border-color:var(--cyan);color:var(--cyan)}
+.terrain-detail{background:var(--bg2);border:1px solid var(--bg3);border-radius:var(--radius);padding:2rem;min-height:300px}
+.terrain-detail h3{font-size:1.25rem;font-weight:700;margin-bottom:0.5rem}
+.terrain-detail .degrees{display:flex;gap:0.4rem;flex-wrap:wrap;margin:1rem 0}
+.terrain-detail .degree{width:36px;height:36px;border-radius:50%;background:var(--bg3);border:1px solid var(--bg4);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:0.8rem;color:var(--fg2);transition:all .15s}
+.terrain-detail .degree.root{background:var(--cyan);color:var(--bg);border-color:var(--cyan);font-weight:700}
+.terrain-detail .degree.alt{border-color:var(--amber);color:var(--amber)}
+.terrain-detail .description{font-size:0.9rem;color:var(--fg2);line-height:1.7;margin-top:1rem}
+
+/* Audio player */
+.audio-section{background:var(--bg2);border:1px solid var(--bg3);border-radius:12px;padding:2.5rem;text-align:center}
+.audio-section h2{margin-bottom:0.5rem}
+.audio-section .subtitle{margin-bottom:2rem;text-align:center;max-width:100%}
+audio{width:100%;max-width:600px;border-radius:var(--radius)}
+.waveform-vis{width:100%;max-width:600px;height:80px;margin:1.5rem auto 0;opacity:0.6}
+
+/* Code */
+.code-card{background:var(--bg2);border:1px solid var(--bg3);border-radius:var(--radius);padding:1.5rem 1.75rem;font-family:var(--mono);font-size:0.85rem;line-height:1.8;overflow-x:auto}
+.code-card .comment{color:var(--fg3)}
+.code-card .kw{color:var(--violet)}
+.code-card .fn{color:var(--cyan)}
+.code-card .str{color:var(--green)}
+.code-card .num{color:var(--amber)}
+.code-card .prompt{color:var(--fg3);user-select:none}
+
+/* Install */
+.install-box{background:var(--bg2);border:1px solid var(--bg3);border-radius:var(--radius);padding:2rem;display:flex;align-items:center;gap:1.5rem}
+.install-box code{font-family:var(--mono);font-size:1.1rem;color:var(--cyan);flex:1}
+.install-box .dollar{color:var(--fg3);margin-right:0.5rem}
+.install-box .copy-btn{padding:0.5rem 1rem;border-radius:6px;background:var(--bg3);border:1px solid var(--bg4);color:var(--fg2);font-size:0.8rem;cursor:pointer;transition:all .15s}
+.install-box .copy-btn:hover{border-color:var(--cyan);color:var(--cyan)}
+
+/* Footer */
+footer{border-top:1px solid var(--bg3);padding:3rem 2rem;margin-top:4rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem}
+.footer-col h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--fg3);margin-bottom:0.75rem}
+.footer-col a{display:block;color:var(--fg2);font-size:0.85rem;margin-bottom:0.4rem}
+.footer-col a:hover{color:var(--cyan);text-decoration:none}
+.footer-bottom{text-align:center;margin-top:2rem;font-size:0.8rem;color:var(--fg3)}
+
+@media(max-width:768px){
+  nav .links{gap:1rem;font-size:0.8rem}
+  .terrain-showcase{grid-template-columns:1fr}
+  .terrain-list{max-height:200px;flex-direction:row;flex-wrap:wrap}
+  .mode-grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
+  .footer-inner{grid-template-columns:1fr}
+  .install-box{flex-direction:column;align-items:stretch;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <div class="logo">Constraint<span>Instrument</span></div>
+  <div class="links">
+    <a href="#modes">Modes</a>
+    <a href="#terrains">Terrains</a>
+    <a href="#listen">Listen</a>
+    <a href="#code">Code</a>
+    <a href="playground.html">Playground</a>
+    <a href="https://github.com/SuperInstance">GitHub</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <canvas id="latticeBg"></canvas>
+  <h1><span class="thin">The Constraint</span> Instrument</h1>
+  <p class="tagline" style="font-size:clamp(0.9rem,1.6vw,1.1rem);margin-bottom:0.75rem">
+    <span class="dash">—</span> Bathymetrics for Music <span class="dash">—</span>
+  </p>
+  <p class="tagline">
+    Seven jazz legends. Seventeen constraint terrains. One instrument that plays the space between the notes.
+  </p>
+  <div class="cta-row">
+    <a href="#listen" class="btn btn-primary">▶ Hear the Demo</a>
+    <a href="playground.html" class="btn btn-ghost">Interactive Playground</a>
+    <a href="#code" class="btn btn-ghost">View the Code</a>
+  </div>
+</section>
+
+<!-- Modes -->
+<section id="modes">
+  <div class="section-label">Seven Voices</div>
+  <h2>Play Like the Masters</h2>
+  <p class="subtitle">Each mode captures a player's constraint signature — not their licks, but the shape of their musical decisions.</p>
+  <div class="mode-grid">
+    <div class="mode-card"><span class="icon">🐦</span><div class="name">Parker</div><div class="desc">Bebop velocity, chromatic escape</div></div>
+    <div class="mode-card"><span class="icon">🎺</span><div class="name">Miles</div><div class="desc">Modal space, mid-register truth</div></div>
+    <div class="mode-card"><span class="icon">🎹</span><div class="name">Ellington</div><div class="desc">Orchestral color, gospel depth</div></div>
+    <div class="mode-card"><span class="icon">👋</span><div class="name">Basie</div><div class="desc">Less is more, the perfect note</div></div>
+    <div class="mode-card"><span class="icon">🎶</span><div class="name">Goodman</div><div class="desc">Swing clarity, clarinet precision</div></div>
+    <div class="mode-card"><span class="icon">🌿</span><div class="name">Armstrong</div><div class="desc">Joyful risk, cornet exuberance</div></div>
+    <div class="mode-card"><span class="icon">🎤</span><div class="name">Ella</div><div class="desc">Vocal range, interval mastery</div></div>
+  </div>
+</section>
+
+<!-- Terrains -->
+<section id="terrains">
+  <div class="section-label">Constraint Terrains</div>
+  <h2>Seventeen Landscapes</h2>
+  <p class="subtitle">Every terrain is a set of scale degrees defining the melodic landscape. Select one to explore.</p>
+  <div class="terrain-showcase">
+    <div class="terrain-list" id="terrainList"></div>
+    <div class="terrain-detail" id="terrainDetail">
+      <h3 id="tdName">Select a terrain</h3>
+      <div class="degrees" id="tdDegrees"></div>
+      <div class="description" id="tdDesc">Click any terrain on the left to see its scale degrees and character.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Audio -->
+<section id="listen">
+  <div class="section-label">Listen</div>
+  <div class="audio-section">
+    <h2>30-Second Showcase</h2>
+    <p class="subtitle">Blues → Bebop → Piano Ballad, all generated by constraint synthesis. No samples, no loops.</p>
+    <audio controls src="demo_30sec_showcase.wav" preload="auto"></audio>
+    <canvas class="waveform-vis" id="waveformCanvas"></canvas>
+  </div>
+</section>
+
+<!-- Code -->
+<section id="code">
+  <div class="section-label">Three Lines</div>
+  <h2>That's All You Need</h2>
+  <p class="subtitle">The Constraint Instrument is a Python library. Install it, import it, play.</p>
+  <div class="code-card">
+    <span class="comment"># Install</span><br>
+    <span class="prompt">$ </span>pip install constraint-synth<br><br>
+    <span class="comment"># Play</span><br>
+    <span class="kw">from</span> constraint_synth <span class="kw">import</span> <span class="fn">ConstraintSynth</span><br>
+    synth = <span class="fn">ConstraintSynth.from_preset</span>(<span class="str">"blues_guitar"</span>)<br>
+    signal = synth.<span class="fn">play_note</span>(pitch=<span class="num">64</span>, velocity=<span class="num">90</span>, duration=<span class="num">0.5</span>)
+  </div>
+</section>
+
+<!-- Get Started -->
+<section id="getstarted">
+  <div class="section-label">Get Started</div>
+  <h2>One Command</h2>
+  <p class="subtitle">Clone, install, and hear your first constraint-generated note.</p>
+  <div class="install-box">
+    <code><span class="dollar">$</span>bash &lt;(curl -sL https://superinstance.github.io/constraint-instrument-site/download.sh)</code>
+    <button class="copy-btn" onclick="copyInstall()">Copy</button>
+  </div>
+  <p style="margin-top:1rem;font-size:0.8rem;color:var(--fg3)">Or manually: <code style="color:var(--cyan)">git clone https://github.com/SuperInstance/constraint-synth && cd constraint-synth && pip install -e .</code></p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Core Libraries</h4>
+      <a href="https://github.com/SuperInstance/constraint-synth">constraint-synth</a>
+      <a href="https://github.com/SuperInstance/constraint-theory-core">constraint-theory-core</a>
+      <a href="https://github.com/SuperInstance/constraint-substrate">constraint-substrate</a>
+      <a href="https://github.com/SuperInstance/flux-tensor-midi">flux-tensor-midi</a>
+    </div>
+    <div class="footer-col">
+      <h4>Analysis</h4>
+      <a href="https://github.com/SuperInstance/style-dna">style-dna</a>
+      <a href="https://github.com/SuperInstance/groove-analyzer">groove-analyzer</a>
+      <a href="https://github.com/SuperInstance/holonomy-harmony">holonomy-harmony</a>
+      <a href="https://github.com/SuperInstance/counterpoint-engine">counterpoint-engine</a>
+    </div>
+    <div class="footer-col">
+      <h4>Creative</h4>
+      <a href="https://github.com/SuperInstance/jazz-voicing-engine">jazz-voicing-engine</a>
+      <a href="https://github.com/SuperInstance/spline-midi-smooth">spline-midi-smooth</a>
+      <a href="https://github.com/SuperInstance/constraint-viz">constraint-viz</a>
+      <a href="https://github.com/SuperInstance">All Repos →</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    SuperInstance — Constraint Music — MIT License — <a href="https://github.com/SuperInstance">GitHub</a>
+  </div>
+</footer>
+
+<script>
+// Terrain data
+const TERRAINS = [
+  {name:"delta_blues", degrees:[0,3,5,6,7,10], desc:"The deep south. Six notes that contain all human emotion. Bend the third, cry on the flat seventh. The missing fifth degree is where the singer lives."},
+  {name:"bebop", degrees:[0,2,4,5,7,9,10,11], desc:"Eight notes to change jazz forever. The chromatic passing tone (11) turns every scale run into a cascade. Parker's playground."},
+  {name:"gospel", degrees:[0,2,4,5,7,9,11], desc:"Sunday morning. The major scale with raised expectations. Every resolution feels like redemption. Ellington's harmonic home."},
+  {name:"swing", degrees:[0,2,4,7,9], desc:"The pentatonic that built an era. Five notes, infinite swing. Basie proved you only need these to say everything."},
+  {name:"clarinet", degrees:[0,2,3,5,7,8,10,11], desc:"Goodman's domain. The harmonic minor with a raised seventh gives that klezmer-meets-jazz tension. Clarinet clarity in every interval."},
+  {name:"new_orleans", degrees:[0,2,4,5,7,9,10,11], desc:"Armstrong's joyride. Mixolydian with the major seventh — a scale that can't decide between happy and holy, and that's the point."},
+  {name:"vocal", degrees:[0,2,4,5,7,9,11], desc:"Ella's range. The major scale, pristine. When your instrument is the human voice, purity is its own kind of daring."},
+  {name:"dorian", degrees:[0,2,3,5,7,9,10], desc:"Minor with a major sixth. The mode of melancholy hope. Every modal jazz tune lives here at some point."},
+  {name:"mixolydian", degrees:[0,2,4,5,7,9,10], desc:"Dominant territory. The flat seventh turns any major key into a question. Miles used this to ask questions nobody had words for."},
+  {name:"phrygian", degrees:[0,1,3,5,7,8,10], desc:"Flamenco mystery. The flat second is the sound of surprise. Not used in traditional jazz, but the Constraint Instrument goes anywhere."},
+  {name:"lydian", degrees:[0,2,4,6,7,9,11], desc:"The sharp fourth. Floating, dreamlike. Debussy's playground. Everything sounds like a question that doesn't need an answer."},
+  {name:"whole_tone", degrees:[0,2,4,6,8,10], desc:"Six notes, no leading tone. Everything is ambiguous. The sound of being between places — Monk's late-night mischief."},
+  {name:"diminished", degrees:[0,2,3,5,6,8,9,11], desc:"Eight notes of pure tension. The octatonic scale that Coltrane used to build cathedrals of sound. Symmetric and relentless."},
+  {name:"blues_pentatonic", degrees:[0,3,5,7,10], desc:"Five notes that contain the 20th century. Remove one note from the blues and you still have the blues. Remove another — still blues."},
+  {name:"harmonic_minor", degrees:[0,2,3,5,7,8,11], desc:"The snake charmer's scale. That augmented second between 7 and 8 is three centuries of orientalist fascination distilled into one interval."},
+  {name:"melodic_minor", degrees:[0,2,3,5,7,9,11], desc:"Jazz's secret weapon. Ascending, it's a major scale with a minor third. Descending, it's whatever you need it to be."},
+  {name:"chromatic", degrees:[0,1,2,3,4,5,6,7,8,9,10,11], desc:"All twelve notes. No constraints. The terrain is flat — every direction is equally valid (and equally dangerous). Free jazz lives here."}
+];
+
+const DEGREE_NAMES = ['1','♭2','2','♭3','3','4','♭5','5','♯5','6','♭7','7'];
+
+// Build terrain list
+const listEl = document.getElementById('terrainList');
+TERRAINS.forEach((t,i) => {
+  const el = document.createElement('div');
+  el.className = 'terrain-item';
+  el.textContent = t.name;
+  el.addEventListener('click', () => selectTerrain(i));
+  listEl.appendChild(el);
+});
+
+function selectTerrain(idx) {
+  document.querySelectorAll('.terrain-item').forEach((el,i) => el.classList.toggle('active', i === idx));
+  const t = TERRAINS[idx];
+  document.getElementById('tdName').textContent = t.name;
+  document.getElementById('tdDesc').textContent = t.desc;
+  const degEl = document.getElementById('tdDegrees');
+  degEl.innerHTML = '';
+  const degreeNames = ['R','♭2','2','♭3','3','4','♭5','5','♯5','6','♭7','7'];
+  for (let d = 0; d < 12; d++) {
+    const dot = document.createElement('div');
+    dot.className = 'degree';
+    if (t.degrees.includes(d)) {
+      dot.classList.add(d === 0 ? 'root' : 'active');
+      dot.style.background = d === 0 ? 'var(--cyan)' : 'var(--bg4)';
+      dot.style.color = d === 0 ? 'var(--bg)' : 'var(--cyan)';
+      dot.style.borderColor = 'var(--cyan)';
+    }
+    dot.textContent = degreeNames[d];
+    degEl.appendChild(dot);
+  }
+}
+selectTerrain(0);
+
+// Lattice background animation
+(function(){
+  const c = document.getElementById('latticeBg');
+  const ctx = c.getContext('2d');
+  function resize() { c.width = c.offsetWidth * devicePixelRatio; c.height = c.offsetHeight * devicePixelRatio; ctx.scale(devicePixelRatio, devicePixelRatio); }
+  let t = 0;
+  function draw() {
+    ctx.clearRect(0, 0, c.offsetWidth, c.offsetHeight);
+    const S = 38, H = S * Math.sqrt(3) / 2;
+    ctx.fillStyle = '#22d3ee';
+    t += 0.004;
+    for (let row = -1; row < c.offsetHeight / H + 2; row++) {
+      for (let col = -1; col < c.offsetWidth / S + 2; col++) {
+        const x = col * S + (row % 2 ? S / 2 : 0);
+        const y = row * H;
+        const d = Math.sin(x * 0.008 + t) * Math.cos(y * 0.008 + t * 0.7) * 0.5 + 0.5;
+        ctx.globalAlpha = 0.15 + d * 0.5;
+        ctx.beginPath(); ctx.arc(x, y, 1 + d * 1.5, 0, Math.PI * 2); ctx.fill();
+        // Connect to neighbors
+        if (d > 0.5) {
+          ctx.strokeStyle = '#22d3ee';
+          ctx.globalAlpha = (d - 0.5) * 0.3;
+          ctx.lineWidth = 0.5;
+          const nx = (col + 1) * S + (row % 2 ? S / 2 : 0);
+          ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(nx, y); ctx.stroke();
+        }
+      }
+    }
+    ctx.globalAlpha = 1;
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize', resize);
+  resize(); draw();
+})();
+
+// Waveform visualization
+(function(){
+  const canvas = document.getElementById('waveformCanvas');
+  const ctx = canvas.getContext('2d');
+  const audio = document.querySelector('audio');
+  let audioCtx, analyser, source, connected = false;
+
+  function initAudio() {
+    if (connected) return;
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    source = audioCtx.createMediaElementSource(audio);
+    analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 256;
+    source.connect(analyser);
+    analyser.connect(audioCtx.destination);
+    connected = true;
+  }
+
+  function resize() {
+    canvas.width = canvas.offsetWidth * devicePixelRatio;
+    canvas.height = canvas.offsetHeight * devicePixelRatio;
+  }
+
+  function draw() {
+    requestAnimationFrame(draw);
+    if (!analyser) return;
+    const w = canvas.width, h = canvas.height;
+    const data = new Uint8Array(analyser.frequencyBinCount);
+    analyser.getByteFrequencyData(data);
+    ctx.clearRect(0, 0, w, h);
+    const barW = w / data.length;
+    for (let i = 0; i < data.length; i++) {
+      const barH = (data[i] / 255) * h;
+      const x = i * barW;
+      ctx.fillStyle = `rgba(34,211,238,${0.3 + (data[i] / 255) * 0.7})`;
+      ctx.fillRect(x, h - barH, barW - 1, barH);
+    }
+  }
+
+  audio.addEventListener('play', () => { initAudio(); });
+  window.addEventListener('resize', resize);
+  resize(); draw();
+
+  // Draw static placeholder waveform
+  ctx.fillStyle = 'rgba(34,211,238,0.15)';
+  for (let x = 0; x < canvas.width; x += 4) {
+    const h = Math.sin(x * 0.05) * 20 + Math.sin(x * 0.13) * 10 + 30;
+    ctx.fillRect(x, canvas.height / 2 - h, 2, h * 2);
+  }
+})();
+
+function copyInstall() {
+  navigator.clipboard.writeText('bash <(curl -sL https://superinstance.github.io/constraint-instrument-site/download.sh)');
+  const btn = document.querySelector('.copy-btn');
+  btn.textContent = 'Copied!';
+  setTimeout(() => btn.textContent = 'Copy', 1500);
+}
+</script>
+</body>
+</html>
