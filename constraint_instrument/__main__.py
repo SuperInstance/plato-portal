@@ -75,7 +75,8 @@ def cmd_quick(args):
             print(f"  (Audio playback unavailable. File saved at {path})")
     else:
         # Default: render to wav
-        default_out = f"{args.mode}_{args.terrain}_{args.key}.wav"
+        genre_tag = f"{args.genre}" if args.genre else f"{args.mode}"
+        default_out = f"{genre_tag}_{inst.terrain_name}_{args.key}.wav"
         path = inst.render(default_out)
         print(f"  Saved:   {path}")
 
