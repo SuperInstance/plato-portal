@@ -350,6 +350,8 @@ class Instrument:
         self.terrain_name = terrain_key
         self._terrain = TERRAINS[terrain_key]
         self._key = resolve_key(key)
+        if bars < 1:
+            raise ValueError("bars must be >= 1")
         self.bpm = int(bpm)
         self.bars = int(bars)
         self._last_notes: Optional[List[dict]] = None
@@ -415,8 +417,16 @@ class Instrument:
             session = kwargs.pop("session", None)
             if session is None:
                 session = self._engine.join_jam(players=4, tempo=use_bpm)
-            result = session.play(my_role="piano", **kwargs)
-            raw_notes = result.get("notes", [])
+            result = session.play(my_role="piano", bars=use_bars, **kwargs)
+            notes_by_player = result.get("notes", {})
+            # Flatten player-keyed dict into a single list
+            if isinstance(notes_by_player, dict):
+                raw_notes = []
+                for player_notes in notes_by_player.values():
+                    if isinstance(player_notes, list):
+                        raw_notes.extend(player_notes)
+            else:
+                raw_notes = notes_by_player
         elif self.mode == "goodman":
             # Goodman diagnoses — but we can still generate notes for it
             # Use ella as the generator, then diagnose

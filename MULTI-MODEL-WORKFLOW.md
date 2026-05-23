@@ -84,3 +84,31 @@ sessions_spawn(model="openrouter/auto", task="Be brutally realistic: ...")
 ```
 
 Note: Need to verify OpenRouter access to these specific models. If not available via openrouter/auto, check if z.ai has them or if we need a direct API key.
+
+## Model Fleet (Updated 2026-05-23)
+
+### Tier 1: Workhorse (90% of work)
+- **z.ai glm-5.1** — default subagent model. Fast, cheap, solid implementation.
+- **deepseek/deepseek-chat** — alternative perspective, good for debugging.
+
+### Tier 2: Creative / Diverse
+- **openrouter/auto** — routes to cheapest capable model, good for volume testing
+- **kimi-cli** (via tmux) — creative coding, interactive TTY work
+- **google/gemma-4-31B-it** — experimental, different training data = different insights
+
+### Tier 3: Heavy Reasoning (sparingly)
+- **Claude Code** — architecture opinions only. ONE file per session. Max 1/day.
+- **NousResearch/Hermes-3-Llama-3.1-405B** — massive context window. Use when:
+  - Need to digest the ENTIRE codebase and reason about cross-cutting concerns
+  - Abstract scaling ideas (how does this grow from 1 user to 10,000?)
+  - Synthesis across multiple research papers
+  - Finding deep patterns that require holding 100K+ tokens in mind
+
+### Flywheel Pattern
+```
+[Cheap model tests as user] → [finds bugs] → [cheap model fixes] → [different cheap model tests]
+         ↑                                                                    ↓
+         ←←←←←←←←← [Hermes 405B synthesizes findings] ←←←←←←←←←←←←←←←←←←←←
+```
+
+The wheel never stops. Every tester teaches. Every fix teaches. Every synthesis teaches.
