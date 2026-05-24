@@ -1,0 +1,18 @@
+{
+  "v2_experiments": {
+    "exp1_historical_simulation": "1000 agents \u00d7 600 years, meantone\u2192ET",
+    "exp2_euclidean_fifths": "Euclidean rhythm \u2194 circle of fifths isomorphism",
+    "exp3_beating_atlas": "12\u00d712 spectral beating matrices (meantone vs ET)",
+    "exp4_conservation_test": "10000 tuning stress test of I_vert + I_horiz",
+    "exp5_nancarrow_tempo": "50 canons, just/ET/irrational tempo ratios"
+  },
+  "timing": {
+    "exp1": 1.2,
+    "exp2": 0.0,
+    "exp3": 4.6,
+    "exp4": 22.3,
+    "exp5": 2.0,
+    "total": 30.2
+  },
+  "output_dir": "/home/phoenix/.openclaw/workspace/docs/gpu_output_v2"
+}

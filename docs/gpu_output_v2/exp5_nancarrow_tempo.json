@@ -1,0 +1,461 @@
+{
+  "description": "50 Nancarrow-style canons with just, ET, irrational tempo ratios",
+  "canons": [
+    {
+      "id": 0,
+      "type": "just",
+      "ratio": 1.0,
+      "ratio_label": "unison",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8766,
+      "combined_consonance": 0.9383
+    },
+    {
+      "id": 1,
+      "type": "just",
+      "ratio": 2.0,
+      "ratio_label": "octave",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8563,
+      "combined_consonance": 0.9281
+    },
+    {
+      "id": 2,
+      "type": "just",
+      "ratio": 1.5,
+      "ratio_label": "perfect fifth",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8712,
+      "combined_consonance": 0.9356
+    },
+    {
+      "id": 3,
+      "type": "just",
+      "ratio": 1.333333,
+      "ratio_label": "perfect fourth",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8484,
+      "combined_consonance": 0.9242
+    },
+    {
+      "id": 4,
+      "type": "just",
+      "ratio": 1.25,
+      "ratio_label": "major third",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8313,
+      "combined_consonance": 0.9156
+    },
+    {
+      "id": 5,
+      "type": "just",
+      "ratio": 1.666667,
+      "ratio_label": "major sixth",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8505,
+      "combined_consonance": 0.9252
+    },
+    {
+      "id": 6,
+      "type": "just",
+      "ratio": 1.2,
+      "ratio_label": "minor third",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8894,
+      "combined_consonance": 0.9447
+    },
+    {
+      "id": 7,
+      "type": "just",
+      "ratio": 3.0,
+      "ratio_label": "octave+fifth",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8776,
+      "combined_consonance": 0.9388
+    },
+    {
+      "id": 8,
+      "type": "just",
+      "ratio": 4.0,
+      "ratio_label": "double octave",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8661,
+      "combined_consonance": 0.933
+    },
+    {
+      "id": 9,
+      "type": "just",
+      "ratio": 2.5,
+      "ratio_label": "major tenth",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8334,
+      "combined_consonance": 0.9167
+    },
+    {
+      "id": 10,
+      "type": "just",
+      "ratio": 1.75,
+      "ratio_label": "harmonic seventh",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8702,
+      "combined_consonance": 0.9351
+    },
+    {
+      "id": 11,
+      "type": "just",
+      "ratio": 1.6,
+      "ratio_label": "minor sixth",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8933,
+      "combined_consonance": 0.9467
+    },
+    {
+      "id": 12,
+      "type": "just",
+      "ratio": 1.8,
+      "ratio_label": "just seventh",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8792,
+      "combined_consonance": 0.9396
+    },
+    {
+      "id": 13,
+      "type": "just",
+      "ratio": 1.125,
+      "ratio_label": "major second",
+      "tempo_consonance": 0.7985,
+      "spectral_periodicity": 0.8526,
+      "combined_consonance": 0.8256
+    },
+    {
+      "id": 14,
+      "type": "just",
+      "ratio": 1.875,
+      "ratio_label": "major seventh",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8745,
+      "combined_consonance": 0.9373
+    },
+    {
+      "id": 15,
+      "type": "ET",
+      "ratio": 1.059463,
+      "ratio_label": "2^(1/12)",
+      "tempo_consonance": 0.8366,
+      "spectral_periodicity": 0.8938,
+      "combined_consonance": 0.8652
+    },
+    {
+      "id": 16,
+      "type": "ET",
+      "ratio": 1.122462,
+      "ratio_label": "2^(2/12)",
+      "tempo_consonance": 0.7925,
+      "spectral_periodicity": 0.8433,
+      "combined_consonance": 0.8179
+    },
+    {
+      "id": 17,
+      "type": "ET",
+      "ratio": 1.189207,
+      "ratio_label": "2^(3/12)",
+      "tempo_consonance": 0.9681,
+      "spectral_periodicity": 0.8448,
+      "combined_consonance": 0.9065
+    },
+    {
+      "id": 18,
+      "type": "ET",
+      "ratio": 1.259921,
+      "ratio_label": "2^(4/12)",
+      "tempo_consonance": 0.9707,
+      "spectral_periodicity": 0.8562,
+      "combined_consonance": 0.9134
+    },
+    {
+      "id": 19,
+      "type": "ET",
+      "ratio": 1.33484,
+      "ratio_label": "2^(5/12)",
+      "tempo_consonance": 0.9955,
+      "spectral_periodicity": 0.8535,
+      "combined_consonance": 0.9245
+    },
+    {
+      "id": 20,
+      "type": "ET",
+      "ratio": 1.414214,
+      "ratio_label": "2^(6/12)",
+      "tempo_consonance": 0.7846,
+      "spectral_periodicity": 0.8838,
+      "combined_consonance": 0.8342
+    },
+    {
+      "id": 21,
+      "type": "ET",
+      "ratio": 1.498307,
+      "ratio_label": "2^(7/12)",
+      "tempo_consonance": 0.9949,
+      "spectral_periodicity": 0.8633,
+      "combined_consonance": 0.9291
+    },
+    {
+      "id": 22,
+      "type": "ET",
+      "ratio": 1.587401,
+      "ratio_label": "2^(8/12)",
+      "tempo_consonance": 0.9629,
+      "spectral_periodicity": 0.8592,
+      "combined_consonance": 0.911
+    },
+    {
+      "id": 23,
+      "type": "ET",
+      "ratio": 1.681793,
+      "ratio_label": "2^(9/12)",
+      "tempo_consonance": 0.9556,
+      "spectral_periodicity": 0.8672,
+      "combined_consonance": 0.9114
+    },
+    {
+      "id": 24,
+      "type": "ET",
+      "ratio": 1.781797,
+      "ratio_label": "2^(10/12)",
+      "tempo_consonance": 0.9469,
+      "spectral_periodicity": 0.8701,
+      "combined_consonance": 0.9085
+    },
+    {
+      "id": 25,
+      "type": "ET",
+      "ratio": 1.887749,
+      "ratio_label": "2^(11/12)",
+      "tempo_consonance": 0.9625,
+      "spectral_periodicity": 0.8624,
+      "combined_consonance": 0.9125
+    },
+    {
+      "id": 26,
+      "type": "ET",
+      "ratio": 2.0,
+      "ratio_label": "2^(12/12)",
+      "tempo_consonance": 1.0,
+      "spectral_periodicity": 0.8672,
+      "combined_consonance": 0.9336
+    },
+    {
+      "id": 27,
+      "type": "ET",
+      "ratio": 2.244924,
+      "ratio_label": "2^(14/12)",
+      "tempo_consonance": 0.4796,
+      "spectral_periodicity": 0.8816,
+      "combined_consonance": 0.6806
+    },
+    {
+      "id": 28,
+      "type": "ET",
+      "ratio": 2.519842,
+      "ratio_label": "2^(16/12)",
+      "tempo_consonance": 0.9422,
+      "spectral_periodicity": 0.8672,
+      "combined_consonance": 0.9047
+    },
+    {
+      "id": 29,
+      "type": "ET",
+      "ratio": 2.996614,
+      "ratio_label": "2^(19/12)",
+      "tempo_consonance": 0.9899,
+      "spectral_periodicity": 0.8678,
+      "combined_consonance": 0.9289
+    },
+    {
+      "id": 30,
+      "type": "irrational",
+      "ratio": 1.618034,
+      "ratio_label": "\u03c6 (golden ratio)",
+      "tempo_consonance": 0.9473,
+      "spectral_periodicity": 0.8608,
+      "combined_consonance": 0.9041
+    },
+    {
+      "id": 31,
+      "type": "irrational",
+      "ratio": 2.718282,
+      "ratio_label": "e (Euler)",
+      "tempo_consonance": 0.5195,
+      "spectral_periodicity": 0.8539,
+      "combined_consonance": 0.6867
+    },
+    {
+      "id": 32,
+      "type": "irrational",
+      "ratio": 1.414214,
+      "ratio_label": "\u221a2",
+      "tempo_consonance": 0.7846,
+      "spectral_periodicity": 0.8634,
+      "combined_consonance": 0.824
+    },
+    {
+      "id": 33,
+      "type": "irrational",
+      "ratio": 1.732051,
+      "ratio_label": "\u221a3",
+      "tempo_consonance": 0.9476,
+      "spectral_periodicity": 0.882,
+      "combined_consonance": 0.9148
+    },
+    {
+      "id": 34,
+      "type": "irrational",
+      "ratio": 2.236068,
+      "ratio_label": "\u221a5",
+      "tempo_consonance": 0.4925,
+      "spectral_periodicity": 0.8717,
+      "combined_consonance": 0.6821
+    },
+    {
+      "id": 35,
+      "type": "irrational",
+      "ratio": 1.570796,
+      "ratio_label": "\u03c0/2",
+      "tempo_consonance": 0.9161,
+      "spectral_periodicity": 0.8831,
+      "combined_consonance": 0.8996
+    },
+    {
+      "id": 36,
+      "type": "irrational",
+      "ratio": 1.047198,
+      "ratio_label": "\u03c0/3",
+      "tempo_consonance": 0.868,
+      "spectral_periodicity": 0.8691,
+      "combined_consonance": 0.8685
+    },
+    {
+      "id": 37,
+      "type": "irrational",
+      "ratio": 1.359141,
+      "ratio_label": "e/2",
+      "tempo_consonance": 0.9255,
+      "spectral_periodicity": 0.8907,
+      "combined_consonance": 0.9081
+    },
+    {
+      "id": 38,
+      "type": "irrational",
+      "ratio": 1.259921,
+      "ratio_label": "\u221b2",
+      "tempo_consonance": 0.9707,
+      "spectral_periodicity": 0.8714,
+      "combined_consonance": 0.921
+    },
+    {
+      "id": 39,
+      "type": "irrational",
+      "ratio": 1.148698,
+      "ratio_label": "2^(1/5)",
+      "tempo_consonance": 0.8574,
+      "spectral_periodicity": 0.8685,
+      "combined_consonance": 0.8629
+    },
+    {
+      "id": 40,
+      "type": "irrational",
+      "ratio": 1.44225,
+      "ratio_label": "\u221b3",
+      "tempo_consonance": 0.8409,
+      "spectral_periodicity": 0.8366,
+      "combined_consonance": 0.8388
+    },
+    {
+      "id": 41,
+      "type": "irrational",
+      "ratio": 1.495349,
+      "ratio_label": "5^(1/4)",
+      "tempo_consonance": 0.9861,
+      "spectral_periodicity": 0.8889,
+      "combined_consonance": 0.9375
+    },
+    {
+      "id": 42,
+      "type": "irrational",
+      "ratio": 1.584963,
+      "ratio_label": "log\u20823",
+      "tempo_consonance": 0.9559,
+      "spectral_periodicity": 0.8707,
+      "combined_consonance": 0.9133
+    },
+    {
+      "id": 43,
+      "type": "irrational",
+      "ratio": 2.321928,
+      "ratio_label": "log\u20825",
+      "tempo_consonance": 0.5861,
+      "spectral_periodicity": 0.8522,
+      "combined_consonance": 0.7192
+    },
+    {
+      "id": 44,
+      "type": "irrational",
+      "ratio": 1.618034,
+      "ratio_label": "\u03c6 precise",
+      "tempo_consonance": 0.9473,
+      "spectral_periodicity": 0.867,
+      "combined_consonance": 0.9072
+    },
+    {
+      "id": 45,
+      "type": "irrational",
+      "ratio": 1.414214,
+      "ratio_label": "\u221a2 precise",
+      "tempo_consonance": 0.7846,
+      "spectral_periodicity": 0.8504,
+      "combined_consonance": 0.8175
+    },
+    {
+      "id": 46,
+      "type": "irrational",
+      "ratio": 1.732051,
+      "ratio_label": "\u221a3 precise",
+      "tempo_consonance": 0.9476,
+      "spectral_periodicity": 0.8535,
+      "combined_consonance": 0.9005
+    },
+    {
+      "id": 47,
+      "type": "irrational",
+      "ratio": 2.236068,
+      "ratio_label": "\u221a5 precise",
+      "tempo_consonance": 0.4925,
+      "spectral_periodicity": 0.8676,
+      "combined_consonance": 0.68
+    },
+    {
+      "id": 48,
+      "type": "irrational",
+      "ratio": 1.202057,
+      "ratio_label": "Apery's const",
+      "tempo_consonance": 0.9938,
+      "spectral_periodicity": 0.8582,
+      "combined_consonance": 0.926
+    },
+    {
+      "id": 49,
+      "type": "irrational",
+      "ratio": 1.131988,
+      "ratio_label": "Viswanath's const",
+      "tempo_consonance": 0.8154,
+      "spectral_periodicity": 0.8555,
+      "combined_consonance": 0.8355
+    }
+  ],
+  "analysis": {
+    "just_avg_consonance": 0.9866,
+    "et_avg_consonance": 0.9055,
+    "irrational_avg_consonance": 0.829,
+    "perceptible_difference": "Just ratios show significantly higher tempo consonance than irrational ratios, confirming perceptual preference (just: 0.987 vs irrational: 0.829)"
+  }
+}
