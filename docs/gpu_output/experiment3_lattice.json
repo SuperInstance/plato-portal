@@ -1,0 +1,242 @@
+[
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "cents": 0.0,
+    "consonance": 1.0,
+    "ratio_expr": "2^0\u00b73^0\u00b75^0"
+  },
+  {
+    "a": -1,
+    "b": 0,
+    "c": 0,
+    "cents": -0.0,
+    "consonance": 0.5,
+    "ratio_expr": "2^-1\u00b73^0\u00b75^0"
+  },
+  {
+    "a": 1,
+    "b": 0,
+    "c": 0,
+    "cents": 0.0,
+    "consonance": 0.5,
+    "ratio_expr": "2^1\u00b73^0\u00b75^0"
+  },
+  {
+    "a": 0,
+    "b": -1,
+    "c": 0,
+    "cents": 498.05,
+    "consonance": 0.3333,
+    "ratio_expr": "2^0\u00b73^-1\u00b75^0"
+  },
+  {
+    "a": 0,
+    "b": 1,
+    "c": 0,
+    "cents": 701.95,
+    "consonance": 0.3333,
+    "ratio_expr": "2^0\u00b73^1\u00b75^0"
+  },
+  {
+    "a": -2,
+    "b": 0,
+    "c": 0,
+    "cents": -0.0,
+    "consonance": 0.25,
+    "ratio_expr": "2^-2\u00b73^0\u00b75^0"
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "c": 0,
+    "cents": 0.0,
+    "consonance": 0.25,
+    "ratio_expr": "2^2\u00b73^0\u00b75^0"
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": -1,
+    "cents": 813.69,
+    "consonance": 0.2,
+    "ratio_expr": "2^0\u00b73^0\u00b75^-1"
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 1,
+    "cents": 386.31,
+    "consonance": 0.2,
+    "ratio_expr": "2^0\u00b73^0\u00b75^1"
+  },
+  {
+    "a": -1,
+    "b": -1,
+    "c": 0,
+    "cents": 498.05,
+    "consonance": 0.1667,
+    "ratio_expr": "2^-1\u00b73^-1\u00b75^0"
+  },
+  {
+    "a": -1,
+    "b": 1,
+    "c": 0,
+    "cents": 701.95,
+    "consonance": 0.1667,
+    "ratio_expr": "2^-1\u00b73^1\u00b75^0"
+  },
+  {
+    "a": 1,
+    "b": -1,
+    "c": 0,
+    "cents": 498.05,
+    "consonance": 0.1667,
+    "ratio_expr": "2^1\u00b73^-1\u00b75^0"
+  },
+  {
+    "a": 1,
+    "b": 1,
+    "c": 0,
+    "cents": 701.95,
+    "consonance": 0.1667,
+    "ratio_expr": "2^1\u00b73^1\u00b75^0"
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": 0,
+    "cents": -0.0,
+    "consonance": 0.125,
+    "ratio_expr": "2^-3\u00b73^0\u00b75^0"
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": 0,
+    "cents": 0.0,
+    "consonance": 0.125,
+    "ratio_expr": "2^3\u00b73^0\u00b75^0"
+  },
+  {
+    "a": 0,
+    "b": -2,
+    "c": 0,
+    "cents": 996.09,
+    "consonance": 0.1111,
+    "ratio_expr": "2^0\u00b73^-2\u00b75^0"
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "c": 0,
+    "cents": 203.91,
+    "consonance": 0.1111,
+    "ratio_expr": "2^0\u00b73^2\u00b75^0"
+  },
+  {
+    "a": -1,
+    "b": 0,
+    "c": -1,
+    "cents": 813.69,
+    "consonance": 0.1,
+    "ratio_expr": "2^-1\u00b73^0\u00b75^-1"
+  },
+  {
+    "a": -1,
+    "b": 0,
+    "c": 1,
+    "cents": 386.31,
+    "consonance": 0.1,
+    "ratio_expr": "2^-1\u00b73^0\u00b75^1"
+  },
+  {
+    "a": 1,
+    "b": 0,
+    "c": -1,
+    "cents": 813.69,
+    "consonance": 0.1,
+    "ratio_expr": "2^1\u00b73^0\u00b75^-1"
+  },
+  {
+    "a": 1,
+    "b": 0,
+    "c": 1,
+    "cents": 386.31,
+    "consonance": 0.1,
+    "ratio_expr": "2^1\u00b73^0\u00b75^1"
+  },
+  {
+    "a": -2,
+    "b": -1,
+    "c": 0,
+    "cents": 498.04,
+    "consonance": 0.0833,
+    "ratio_expr": "2^-2\u00b73^-1\u00b75^0"
+  },
+  {
+    "a": -2,
+    "b": 1,
+    "c": 0,
+    "cents": 701.95,
+    "consonance": 0.0833,
+    "ratio_expr": "2^-2\u00b73^1\u00b75^0"
+  },
+  {
+    "a": 2,
+    "b": -1,
+    "c": 0,
+    "cents": 498.05,
+    "consonance": 0.0833,
+    "ratio_expr": "2^2\u00b73^-1\u00b75^0"
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "c": 0,
+    "cents": 701.96,
+    "consonance": 0.0833,
+    "ratio_expr": "2^2\u00b73^1\u00b75^0"
+  },
+  {
+    "a": 0,
+    "b": -1,
+    "c": -1,
+    "cents": 111.73,
+    "consonance": 0.0667,
+    "ratio_expr": "2^0\u00b73^-1\u00b75^-1"
+  },
+  {
+    "a": 0,
+    "b": -1,
+    "c": 1,
+    "cents": 884.36,
+    "consonance": 0.0667,
+    "ratio_expr": "2^0\u00b73^-1\u00b75^1"
+  },
+  {
+    "a": 0,
+    "b": 1,
+    "c": -1,
+    "cents": 315.64,
+    "consonance": 0.0667,
+    "ratio_expr": "2^0\u00b73^1\u00b75^-1"
+  },
+  {
+    "a": 0,
+    "b": 1,
+    "c": 1,
+    "cents": 1088.27,
+    "consonance": 0.0667,
+    "ratio_expr": "2^0\u00b73^1\u00b75^1"
+  },
+  {
+    "a": -4,
+    "b": 0,
+    "c": 0,
+    "cents": -0.0,
+    "consonance": 0.0625,
+    "ratio_expr": "2^-4\u00b73^0\u00b75^0"
+  }
+]
