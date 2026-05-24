@@ -1,0 +1,251 @@
+{
+  "traditions": {
+    "Hindustani": {
+      "I_vert": 2.77,
+      "I_horiz": 3.45,
+      "I_spectral": 2.5
+    },
+    "Carnatic": {
+      "I_vert": 2.77,
+      "I_horiz": 3.63,
+      "I_spectral": 2.8
+    },
+    "Arabic": {
+      "I_vert": 2.94,
+      "I_horiz": 3.1,
+      "I_spectral": 2.3
+    },
+    "Turkish": {
+      "I_vert": 2.83,
+      "I_horiz": 3.28,
+      "I_spectral": 2.2
+    },
+    "Javanese": {
+      "I_vert": 2.31,
+      "I_horiz": 2.75,
+      "I_spectral": 3.0
+    },
+    "Balinese": {
+      "I_vert": 2.31,
+      "I_horiz": 3.1,
+      "I_spectral": 3.2
+    },
+    "Gagaku": {
+      "I_vert": 2.38,
+      "I_horiz": 1.7,
+      "I_spectral": 3.5
+    },
+    "Chinese": {
+      "I_vert": 2.32,
+      "I_horiz": 2.05,
+      "I_spectral": 2.0
+    },
+    "West African": {
+      "I_vert": 2.41,
+      "I_horiz": 3.63,
+      "I_spectral": 2.6
+    },
+    "Western ET": {
+      "I_vert": 2.72,
+      "I_horiz": 2.05,
+      "I_spectral": 1.8
+    }
+  },
+  "clusters": {
+    "best_k": 4,
+    "silhouette": 0.49349590445680336,
+    "cluster_assignments": {
+      "Hindustani": 0,
+      "Carnatic": 0,
+      "Arabic": 0,
+      "Turkish": 0,
+      "Javanese": 2,
+      "Balinese": 2,
+      "Gagaku": 3,
+      "Chinese": 1,
+      "West African": 0,
+      "Western ET": 1
+    },
+    "centers": {
+      "cluster_0": {
+        "I_vert": 2.744,
+        "I_horiz": 3.418,
+        "I_spectral": 2.48
+      },
+      "cluster_1": {
+        "I_vert": 2.52,
+        "I_horiz": 2.05,
+        "I_spectral": 1.9
+      },
+      "cluster_2": {
+        "I_vert": 2.31,
+        "I_horiz": 2.925,
+        "I_spectral": 3.1
+      },
+      "cluster_3": {
+        "I_vert": 2.38,
+        "I_horiz": 1.7,
+        "I_spectral": 3.5
+      }
+    },
+    "all_k_results": {
+      "2": {
+        "silhouette": 0.4501411168339365
+      },
+      "3": {
+        "silhouette": 0.4888587996488966
+      },
+      "4": {
+        "silhouette": 0.49349590445680336
+      },
+      "5": {
+        "silhouette": 0.45958285391432413
+      }
+    }
+  },
+  "convex_hull": {
+    "vertices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "volume": 0.6128083333333333,
+    "area": 5.327628490262773,
+    "simplices": [
+      [
+        9,
+        6,
+        2
+      ],
+      [
+        1,
+        6,
+        2
+      ],
+      [
+        5,
+        6,
+        4
+      ],
+      [
+        5,
+        1,
+        6
+      ],
+      [
+        8,
+        5,
+        1
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        8,
+        1
+      ],
+      [
+        3,
+        9,
+        2
+      ],
+      [
+        7,
+        6,
+        4
+      ],
+      [
+        7,
+        9,
+        6
+      ],
+      [
+        7,
+        5,
+        4
+      ],
+      [
+        7,
+        8,
+        5
+      ],
+      [
+        7,
+        3,
+        9
+      ],
+      [
+        7,
+        3,
+        8
+      ]
+    ],
+    "vertex_coords": [
+      [
+        2.77,
+        3.63,
+        2.8
+      ],
+      [
+        2.94,
+        3.1,
+        2.3
+      ],
+      [
+        2.83,
+        3.28,
+        2.2
+      ],
+      [
+        2.31,
+        2.75,
+        3.0
+      ],
+      [
+        2.31,
+        3.1,
+        3.2
+      ],
+      [
+        2.38,
+        1.7,
+        3.5
+      ],
+      [
+        2.32,
+        2.05,
+        2.0
+      ],
+      [
+        2.41,
+        3.63,
+        2.6
+      ],
+      [
+        2.72,
+        2.05,
+        1.8
+      ]
+    ],
+    "vertex_names": [
+      "Carnatic",
+      "Arabic",
+      "Turkish",
+      "Javanese",
+      "Balinese",
+      "Gagaku",
+      "Chinese",
+      "West African",
+      "Western ET"
+    ]
+  }
+}
