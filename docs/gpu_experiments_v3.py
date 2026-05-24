@@ -800,7 +800,7 @@ def experiment4():
         "std_I_total": round(std_total, 4),
         "coefficient_of_variation": round(cv, 4),
         "I_vert_I_horiz_correlation": round(correlation, 4),
-        "conservation_holds": cv < 0.15,  # CV < 15% suggests conservation
+        "conservation_holds": bool(cv < 0.15),  # CV < 15% suggests conservation
         "outliers": outliers,
         "interpretation": (
             f"CV = {cv:.2%}. {'Conservation law holds reasonably well' if cv < 0.15 else 'Conservation is weak — traditions vary widely'}. "
