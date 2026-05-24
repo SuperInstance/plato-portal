@@ -429,14 +429,20 @@ These numbers are illustrative, not derived from corpus data. They represent the
 
 ### 10.1 Timbre as a Third Dimension
 
-The conservation framework implicitly assumes only two channels (harmonic and rhythmic). But the Lateral Manifesto (see internal research document) identifies a compelling pattern of *serial compensation* across three dimensions:
+The conservation framework implicitly assumes only two channels (harmonic and rhythmic). But there is compelling evidence of a *serial compensation* across at least three dimensions.
+
+Consider the pattern:
 
 | Era | What Was Lost | What Compensated |
 |-----|--------------|------------------|
 | ~1700–1900 | Harmonic color (ET) | Rhythmic complexity |
 | ~1980–present | Rhythmic micro-variation (MIDI grid, drum machines) | Timbral complexity |
 
-The second compensation layer is visible in EDM, dubstep, trap, and hyperpop: the rhythmic grid is utterly rigid (kick on 1 and 3, snare on 2 and 4, hi-hat at 16th notes), but timbre is exploding—wobble basses with LFO-swept filters, vocal chops, granular synthesis, sound design as compositional principle.
+The second compensation layer is visible in EDM, dubstep, trap, and hyperpop: the rhythmic grid is utterly rigid (kick on 1 and 3, snare on 2 and 4, hi-hat at 16th notes, everything locked to the grid), but timbre is exploding—wobble basses with LFO-swept filters, vocal chops, granular synthesis, sound design as compositional principle. In Skrillex's drops, SOPHIE's kicks, and Burial's pads, the timbral content carries more information than the rhythmic grid.
+
+The analogy to ET is precise. Drum machines and MIDI sequencers did to rhythm what ET did to harmony: they standardized a previously rich domain into a uniform grid. Before drum machines, a jazz drummer's swing was a complex, non-linear microtiming signature that changed with feel, energy, and repertoire. The hi-hat pattern in a James Brown groove has a specific placement that can't be encoded as "triplet feel at 110 BPM." The TR-808 reduced swing to a single parameter—a slider from 50% to 66%, where 66% is a hard-coded perfect triplet feel. Rhythmic variation was quantized into the same kind of uniform grid that ET imposed on pitch.
+
+The compensation was timbral. In the same way that composers responded to ET's harmonic uniformity by exploring rhythmic complexity, producers responded to grid quantization's rhythmic uniformity by exploring timbral complexity.
 
 This suggests a more complete model:
 
@@ -444,11 +450,37 @@ $$T_{\text{total}} = T_{\text{harmonic}} + T_{\text{rhythmic}} + T_{\text{timbra
 
 The conservation hypothesis should be stated as: *the sum of all information channels is approximately constant*, with the specific prediction that the harmonic→rhythmic redistribution dominates in the 18th–19th centuries, and the rhythmic→timbral redistribution dominates in the late 20th–early 21st centuries.
 
-### 10.2 Counter-Evidence from the Anti-Conservation
+### 10.2 The Drone Problem: Spectral Tension
+
+Indian alap—the improvised, unmetered opening of a raga—poses a challenge for the two-dimensional model. It has minimal harmonic motion (one drone, Sa-Pa) and minimal rhythmic structure (no meter, no pulse, rubato freely flowing). By the two-dimensional conservation law, it should be near-zero tension. Yet anyone who has heard a master perform an hour-long alap knows it is the opposite—a transcendental experience of mounting intensity.
+
+The resolution is that alap relocates tension to a dimension the two-dimensional model ignores: *spectral/timbral tension*. The tension lives in:
+
+1. **Microtonal inflection (gamaka):** The slide from one svara to another creates tension in the space between notes—the continuous pitch path deviating from the discrete grid.
+2. **Phase relationships in the drone:** The tambūrā's four strings (Pa-Sa-Sa-Sa) create constantly shifting combination tones and difference tones—a spectral ecology of beating patterns.
+3. **Timbral evolution:** A skilled dhrupad singer gradually shifts timbre over the course of the alap—from breathy and diffuse to bright and piercing—timbre acting as a tension vector.
+
+Similarly, Tibetan singing bowls produce complex multiphonic spectra where multiple harmonics ring simultaneously—tension from the beating between closely spaced partials. Japanese gagaku uses the shō (mouth organ) to create harmonically static but spectrally morphing tone clusters. These traditions demonstrate that spectral tension is a real, independent dimension.
+
+The extended model:
+
+$$T_{\text{total}} = T_{\text{harmonic}} + T_{\text{rhythmic}} + T_{\text{spectral}} \approx T_0$$
+
+**Prediction:** For music with $T_{\text{harmonic}} \approx 0$ and $T_{\text{rhythmic}} \approx 0$, we must find $T_{\text{spectral}} \gg 0$. If we do not, the music is genuinely boring. But great drone music always satisfies this.
+
+### 10.3 Counter-Evidence from the Anti-Conservation
 
 Arvo Pärt's *Spiegel im Spiegel* (1978), Satie's *Gymnopédies* (1888), and Cage's 4'33" (1952) all achieve devastating emotional impact with near-zero harmonic and rhythmic tension. They operate not through prediction-resolution dynamics (Meyer's implication-realization model) but through attention-presence dynamics—redirecting the listener from analytical mode to experiential mode.
 
-This means the conservation hypothesis applies primarily to music operating in the prediction-resolution framework. Music that operates through attention-presence has a different emotional economy. The conservation law is not a universal law of all music; it is a *historical description of a specific tradition* (Western tonal art music) that optimized for prediction-resolution dynamics.
+Pärt's tintinnabuli style achieves maximum emotional density with minimum information. The three-voice texture—one voice (M-voice) moving stepwise through the melody, another (T-voice) arpeggiating the tonic triad—creates a combinatorial space where every combination has specific acoustic character. This is not "zero information"; it is information that doesn't look like prediction-resolution. The information is in the ratio of consonance (M-voice on chord tone vs. non-chord tone), direction (ascending vs. descending changes spectral weight), and registration (high vs. low T-voice changes acoustic space). These parameters create a *field of acoustic potential* that the listener inhabits—a space, not a journey.
+
+Cage's 4'33" has zero composed sounds, yet audiences report intense experiences ranging from laughter to transcendence. The silence is a frame that activates perceptual attention—the tension is in the audience's ears, not in the composition.
+
+This means the conservation hypothesis applies primarily to music operating in the prediction-resolution framework. Music operating through attention-presence has a different emotional economy. The correct formulation may be:
+
+$$I_{\text{composition}} + I_{\text{perception}} \approx \text{const}$$
+
+where perception can compensate for compositional simplicity. The conservation law describes a specific tradition—Western tonal art music optimizing for prediction-resolution dynamics—not a universal law of all musical experience.
 
 ### 10.3 The 3/2 Isomorphism
 
@@ -456,9 +488,20 @@ The ratio 3:2, which appears throughout this framework as the perfect fifth, is 
 
 The 3:2 isomorphism between harmony and rhythm suggests that the two domains are not merely analogous but *structurally isomorphic*—the same ratio operating in different dimensions. The conservation hypothesis can be reframed: 3:2 is the "atom" of musical interest in both domains, and when it is suppressed in one domain (ET reduces the distinctiveness of the harmonic 3:2), it reappears with greater density in the other (hemiola, polyrhythm, asymmetric meter).
 
-### 10.4 What Comes Next
+### 10.5 What Comes Next: The Third Flattening
 
-If the serial compensation pattern continues, AI music generation—which collapses timbral uniqueness into statistical averages—should trigger a fourth compensation in macro-formal structure, interactive/adaptive music, spatial/architectural composition, or social/relational music. This is speculative but follows from the pattern.
+If the serial compensation pattern continues, AI music generation—which collapses timbral uniqueness into statistical averages—should trigger a fourth compensation. AI synthesis generates timbre from a probability distribution over all timbres in its training data, producing the "mean of all timbres"—timbral ET, where everything sounds equally average.
+
+Candidate dimensions for the next compensation:
+
+1. **Macro-formal structure:** AI can generate convincing 3-minute tracks but collapses at ~5 minutes. The new virtuosity may be the architecture of large forms—20-minute suites, multi-movement arcs, algorithmic long-form structures.
+2. **Interactive/adaptive music:** Music that changes based on the listener's physiological state, location, or choices. The act of hearing becomes something you *do*, not something done to you.
+3. **Spatial/architectural music:** Wave field synthesis creates sound objects in physical space. Compositions requiring the listener to walk through a building, or be at a specific location.
+4. **Biosonification:** Music composed by the listener's nervous system in real time—heart rate, brain waves, gut microbiome as composition material.
+
+This extrapolation is speculative but follows from the pattern: each dimensional collapse triggers compensation in the next available expressive dimension. The conservation hypothesis, if confirmed across the first two compensations, provides a framework for predicting where musical innovation will concentrate next.
+
+The broader philosophical implication concerns the ontological status of 3:2 itself. The ratio 3:2 is not culturally invented but *discovered*—it emerges from the physics of any vibrating system. In Sanskrit, the fifth is called पञ्चम (pañcama, "the fifth") and designated अचल (achala, "immovable"). In Chinese, the five tones of the pentatonic scale (宮商角徵羽) are all derivable from cycling 3:2. In every independently developed musical tradition, the fifth appears as the most consonant non-identity interval. The prediction that alien music would also use 3:2 follows from physics: any system supporting standing waves will exhibit this ratio in its eigenvalue structure. The conservation hypothesis, viewed through this lens, describes not a cultural accident but a structural feature of how information is distributed across the dimensions of any musical system built from the physics of vibration.
 
 ---
 
