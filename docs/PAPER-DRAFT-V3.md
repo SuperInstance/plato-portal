@@ -568,7 +568,19 @@ Multiple factors coincided with ET standardization:
 
 Disentangling these confounds from the tuning effect alone may be impossible with historical data. The experimental prediction (P5: random assignment to tuning conditions) provides the cleanest test.
 
-### 9.4 Limitations of the Framework
+### 9.4 Anti-Conservation: Music Beyond Prediction-Resolution
+
+Not all music operates through the prediction-resolution dynamics modeled by the dial framework. Arvo Pärt's *Spiegel im Spiegel* (1978), Satie's *Gymnopédies* (1888), and Cage's 4'33" (1952) achieve devastating emotional impact with near-zero harmonic, rhythmic, and timbral tension. They operate through **attention-presence dynamics**—redirecting the listener from analytical mode to experiential mode—rather than prediction-resolution.
+
+Pärt's tintinnabuli style achieves maximum emotional density with minimum information. The three-voice texture creates a field of acoustic potential where every combination has specific character. This is not "zero information"; it is information that doesn't look like prediction-resolution. Cage's 4'33" has zero composed sounds, yet audiences report intense experiences—the silence activates perceptual attention, and the tension lives in the audience's ears, not the composition.
+
+This means the dial framework applies primarily to music operating in the prediction-resolution framework (Meyer's implication-realization model). Music operating through attention-presence has a different emotional economy. The correct formulation may be:
+
+$$I_{\text{composition}} + I_{\text{perception}} \approx \text{const}$$
+
+where perception can compensate for compositional simplicity. The framework describes a specific tradition—Western tonal art music optimizing for prediction-resolution dynamics—not a universal law of all musical experience.
+
+### 9.5 Limitations of the Framework
 
 1. **Measurement granularity.** The tradition-level scores in Table 1 combine computational analysis with expert judgment. More fine-grained, corpus-based measurements are needed.
 
@@ -579,6 +591,10 @@ Disentangling these confounds from the tuning effect alone may be impossible wit
 4. **Static analysis of dynamic traditions.** Each tradition is assigned a single point in parameter space, but traditions move through this space over time (the Western tradition's trajectory from meantone to ET is the paradigmatic example).
 
 5. **Cultural heterogeneity within traditions.** "Carnatic" encompasses a range of sub-styles; "West African" encompasses dozens of ethnic traditions. The single-point representation is a necessary simplification.
+
+6. **Small sample size.** Ten traditions, while unprecedented for this type of analysis, represent a small fraction of the world's musical diversity. Adding traditions (Andean, Scandinavian, Tuvan, Australian Aboriginal, Polynesian) could reshape the cluster structure.
+
+7. **The β problem.** The magnitude of vertical information depends on the undetermined parameter β in the discrete choice model. Without empirical estimation of β for each tradition (which would require key-choice data across thousands of compositions), the vertical axis has an unavoidable scaling uncertainty.
 
 ---
 
@@ -703,6 +719,29 @@ White, William Braid. *Theory and Practice of Pianoforte Building.* 1906; revise
 Widdess, Richard. *The Rāgas of Early Indian Music.* Oxford University Press, 1995.
 
 Witek, Maria A.G., et al. "Syncopation, Body-Movement and Pleasure in Groove Music." *PLoS ONE* 9, no. 4 (2014).
+
+---
+
+## Appendix A: The Conservation Stress Test
+
+The computational stress test over 10,000 random tuning systems provides the strongest quantitative challenge to the conservation hypothesis. For each randomly generated tuning, we computed:
+
+1. The inter-key consonance variance $|\nabla_K \Phi_\mathcal{T}|$
+2. The Boltzmann key-choice distribution and $I_{\text{vert}}^{\text{eff}}$
+3. A synthetic rhythmic response via the conservation model
+4. The correlation between $I_{\text{vert}}$ loss and $I_{\text{horiz}}$ gain
+
+**Result:** The correlation across 10,000 tunings is **+0.436**—positive, not the predicted negative value. The conservation hypothesis explains roughly 19% of the variance ($R^2 \approx 0.19$) in the synthetic model. The majority of rhythmic complexity variation is driven by factors other than tuning: social competition, notational innovation, cultural contact, institutional change, and individual genius.
+
+The stress test reveals that many tunings with significant key-color variation do *not* produce the predicted rhythmic compensation. The conservation effect is real but modest—directionally plausible from the historical record but far from deterministic at the level of individual tuning systems.
+
+## Appendix B: The 3/2 Isomorphism
+
+A striking structural feature of Western compensation is the central role of the ratio 3:2. In the vertical domain, 3:2 is the perfect fifth—the most consonant non-identity interval, the foundational ratio of every independently developed musical tradition. In the horizontal domain, 3:2 is the hemiola—three equal durations in the space of two, the simplest rhythmic cell that creates asymmetry.
+
+Henry Cowell recognized this isomorphism in *New Musical Resources* (1930). Working with Leon Theremin, he built the Rhythmicon—each key produced both a pitch and a rhythm at the corresponding ratio. Nancarrow's Study No. 37 makes it structural: voice 8 moves at tempo ratio 3/2 relative to voice 1, so the vertical and horizontal perfect fifths are literally the same number.
+
+The 3/2 isomorphism is not evidence for a conservation law—it is evidence that the simplest non-trivial ratio appears in both pitch and rhythm domains because it is the simplest available building block. The isomorphism is structural, not causal.
 
 ---
 
