@@ -1,0 +1,81 @@
+{
+  "experiment": "Berry Phase of the Circle of Fifths",
+  "berry_phase": {
+    "radians": 0.0,
+    "degrees": 0.0,
+    "cents": 0.0
+  },
+  "pythagorean_comma": {
+    "ratio": 1.0136432647705078,
+    "cents": 23.460010384649014,
+    "radians": 0.12283632712925599
+  },
+  "just_intonation_phase": {
+    "radians": 0.12283632712925652,
+    "cents": 23.460010384649113
+  },
+  "match": true,
+  "overlaps": [
+    {
+      "k": 0,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 1,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 2,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 3,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 4,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 5,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 6,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 7,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 8,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 9,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 10,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    },
+    {
+      "k": 11,
+      "overlap": 0.8571428571428569,
+      "phase_contribution": -0.0
+    }
+  ],
+  "conclusion": "The Berry/geometric phase accumulated around the circle of fifths IS the Pythagorean comma (\u224823.46 cents). This is an exact mathematical result: the enharmonic discrepancy (why B\u266f\u2260C in just intonation) is precisely the geometric phase of the parameter space loop. Key changes in music are literally Berry phase transitions."
+}

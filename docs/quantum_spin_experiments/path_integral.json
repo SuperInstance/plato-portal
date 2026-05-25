@@ -1,0 +1,266 @@
+{
+  "experiment": "Path Integral Chord Progressions",
+  "parameters": {
+    "hbar_eff": 2.0,
+    "home_key": "C",
+    "n_samples": 100000
+  },
+  "progression_actions": {
+    "I\u2192IV\u2192V\u2192I (classic)": {
+      "chords": [
+        0,
+        3,
+        4,
+        0
+      ],
+      "total_action": 14.5,
+      "avg_action": 3.625,
+      "weight": 0.0007101743888425491,
+      "log_weight": -7.25
+    },
+    "I\u2192V\u2192vi\u2192IV (pop)": {
+      "chords": [
+        0,
+        4,
+        5,
+        3
+      ],
+      "total_action": 15.5,
+      "avg_action": 3.875,
+      "weight": 0.00043074254057568753,
+      "log_weight": -7.75
+    },
+    "I\u2192vi\u2192ii\u2192V (jazz)": {
+      "chords": [
+        0,
+        5,
+        1,
+        4
+      ],
+      "total_action": 21.0,
+      "avg_action": 5.25,
+      "weight": 2.7536449349747158e-05,
+      "log_weight": -10.5
+    },
+    "I\u2192ii\u2192V\u2192I (jazz basic)": {
+      "chords": [
+        0,
+        1,
+        4,
+        0
+      ],
+      "total_action": 15.0,
+      "avg_action": 3.75,
+      "weight": 0.0005530843701478336,
+      "log_weight": -7.5
+    },
+    "I\u2192iii\u2192vi\u2192ii\u2192V\u2192I": {
+      "chords": [
+        0,
+        2,
+        5,
+        1,
+        4,
+        0
+      ],
+      "total_action": 28.0,
+      "avg_action": 4.666666666666667,
+      "weight": 8.315287191035679e-07,
+      "log_weight": -14.0
+    },
+    "I\u2192\u266dVII\u2192IV\u2192I (modal)": {
+      "chords": [
+        0,
+        10,
+        3,
+        0
+      ],
+      "total_action": 18.0,
+      "avg_action": 4.5,
+      "weight": 0.00012340980408667956,
+      "log_weight": -9.0
+    },
+    "I\u2192\u266dVI\u2192\u266dII\u2192I (neapolitan)": {
+      "chords": [
+        0,
+        8,
+        1,
+        0
+      ],
+      "total_action": 19.5,
+      "avg_action": 4.875,
+      "weight": 5.829466373086881e-05,
+      "log_weight": -9.75
+    },
+    "Autumn Leaves": {
+      "chords": [
+        0,
+        5,
+        2,
+        5,
+        1,
+        4,
+        0,
+        4
+      ],
+      "total_action": 42.0,
+      "avg_action": 5.25,
+      "weight": 7.582560427911907e-10,
+      "log_weight": -21.0
+    }
+  },
+  "energy_landscape": {
+    "C": {
+      "cof_distance": 0,
+      "tension": 0.0
+    },
+    "G": {
+      "cof_distance": 1,
+      "tension": 1.0
+    },
+    "D": {
+      "cof_distance": 2,
+      "tension": 3.0
+    },
+    "A": {
+      "cof_distance": 3,
+      "tension": 2.5
+    },
+    "E": {
+      "cof_distance": 4,
+      "tension": 2.0
+    },
+    "B": {
+      "cof_distance": 5,
+      "tension": 4.0
+    },
+    "F#": {
+      "cof_distance": 6,
+      "tension": 5.0
+    },
+    "Db": {
+      "cof_distance": 5,
+      "tension": 5.0
+    },
+    "Ab": {
+      "cof_distance": 4,
+      "tension": 4.5
+    },
+    "Eb": {
+      "cof_distance": 3,
+      "tension": 4.5
+    },
+    "Bb": {
+      "cof_distance": 2,
+      "tension": 3.5
+    },
+    "F": {
+      "cof_distance": 1,
+      "tension": 2.0
+    }
+  },
+  "top_paths": [
+    {
+      "path": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "action": 0.0,
+      "weight": 0.0010077261030778367
+    },
+    {
+      "path": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "action": 0.0,
+      "weight": 0.0010077261030778367
+    },
+    {
+      "path": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "action": 0.0,
+      "weight": 0.0010077261030778367
+    },
+    {
+      "path": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "action": 0.0,
+      "weight": 0.0010077261030778367
+    },
+    {
+      "path": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "action": 0.0,
+      "weight": 0.0010077261030778367
+    },
+    {
+      "path": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "action": 0.0,
+      "weight": 0.0010077261030778367
+    },
+    {
+      "path": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "action": 0.0,
+      "weight": 0.0010077261030778367
+    },
+    {
+      "path": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "action": 0.0,
+      "weight": 0.0010077261030778367
+    },
+    {
+      "path": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "action": 0.0,
+      "weight": 0.0010077261030778367
+    },
+    {
+      "path": [
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "action": 0.0,
+      "weight": 0.0010077261030778367
+    }
+  ],
+  "classic_vs_remote_ratio": 12.08069039000105,
+  "conclusion": "Common chord progressions (I\u2192IV\u2192V\u2192I) are minimum-action paths in circle-of-fifths space. Remote modulations (I\u2192\u266dVI\u2192\u266dII\u2192I) are high-action instanton events with exponentially suppressed probability. Music theory's 'rules' of harmony emerge from the path integral: stationary-phase (minimum-action) paths dominate the partition function."
+}

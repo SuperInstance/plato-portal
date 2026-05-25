@@ -1,0 +1,145 @@
+{
+  "experiment": "Entanglement Polyphony",
+  "results": [
+    {
+      "name": "Unison",
+      "ratio": "1:1",
+      "tenney_height": 0.0,
+      "entanglement_entropy": 0.005145375382824158,
+      "purity": 0.9987754294904806,
+      "p": 1,
+      "q": 1
+    },
+    {
+      "name": "Minor 2nd",
+      "ratio": "16:15",
+      "tenney_height": 7.906890595608519,
+      "entanglement_entropy": 6.384868662082998e-05,
+      "purity": 0.9999903570416545,
+      "p": 16,
+      "q": 15
+    },
+    {
+      "name": "Major 2nd",
+      "ratio": "9:8",
+      "tenney_height": 6.169925001442312,
+      "entanglement_entropy": 0.00014434988510562721,
+      "purity": 0.9999766381761098,
+      "p": 9,
+      "q": 8
+    },
+    {
+      "name": "Minor 3rd",
+      "ratio": "6:5",
+      "tenney_height": 4.906890595608519,
+      "entanglement_entropy": 0.00021694536449590358,
+      "purity": 0.9999635809532594,
+      "p": 6,
+      "q": 5
+    },
+    {
+      "name": "Major 3rd",
+      "ratio": "5:4",
+      "tenney_height": 4.321928094887363,
+      "entanglement_entropy": 0.00023633770647310775,
+      "purity": 0.9999600117972463,
+      "p": 5,
+      "q": 4
+    },
+    {
+      "name": "Perfect 4th",
+      "ratio": "4:3",
+      "tenney_height": 3.584962500721156,
+      "entanglement_entropy": 0.00021876041823281538,
+      "purity": 0.9999632483141659,
+      "p": 4,
+      "q": 3
+    },
+    {
+      "name": "Tritone",
+      "ratio": "45:32",
+      "tenney_height": 10.491853096329674,
+      "entanglement_entropy": 2.9247813580370804e-06,
+      "purity": 0.9999996465220246,
+      "p": 45,
+      "q": 32
+    },
+    {
+      "name": "Perfect 5th",
+      "ratio": "3:2",
+      "tenney_height": 2.584962500721156,
+      "entanglement_entropy": 7.408522540109034e-05,
+      "purity": 0.999988674031363,
+      "p": 3,
+      "q": 2
+    },
+    {
+      "name": "Minor 6th",
+      "ratio": "8:5",
+      "tenney_height": 5.321928094887363,
+      "entanglement_entropy": 2.0528078545938793e-05,
+      "purity": 0.9999971617928055,
+      "p": 8,
+      "q": 5
+    },
+    {
+      "name": "Major 6th",
+      "ratio": "5:3",
+      "tenney_height": 3.9068905956085187,
+      "entanglement_entropy": 1.668560771785383e-05,
+      "purity": 0.9999977280218838,
+      "p": 5,
+      "q": 3
+    },
+    {
+      "name": "Minor 7th",
+      "ratio": "9:5",
+      "tenney_height": 5.491853096329675,
+      "entanglement_entropy": 4.552819064261488e-06,
+      "purity": 0.9999994336286334,
+      "p": 9,
+      "q": 5
+    },
+    {
+      "name": "Major 7th",
+      "ratio": "15:8",
+      "tenney_height": 6.906890595608519,
+      "entanglement_entropy": 1.6434022099873229e-06,
+      "purity": 0.9999998084769466,
+      "p": 15,
+      "q": 8
+    },
+    {
+      "name": "Octave",
+      "ratio": "2:1",
+      "tenney_height": 1.0,
+      "entanglement_entropy": 0.0005184267550661715,
+      "purity": 0.9999053910162539,
+      "p": 2,
+      "q": 1
+    }
+  ],
+  "correlation_tenney_entanglement": -0.5715981611544634,
+  "key_comparison": {
+    "perfect_fifth": {
+      "name": "Perfect 5th",
+      "ratio": "3:2",
+      "tenney_height": 2.584962500721156,
+      "entanglement_entropy": 7.408522540109034e-05,
+      "purity": 0.999988674031363,
+      "p": 3,
+      "q": 2
+    },
+    "tritone": {
+      "name": "Tritone",
+      "ratio": "45:32",
+      "tenney_height": 10.491853096329674,
+      "entanglement_entropy": 2.9247813580370804e-06,
+      "purity": 0.9999996465220246,
+      "p": 45,
+      "q": 32
+    },
+    "entropy_ratio": 25.3301756035574
+  },
+  "conclusion": "Consonant intervals show measurably different entanglement properties compared to dissonant intervals. The coupling Hamiltonian naturally produces stronger entanglement for simple-ratio intervals because their harmonics have more near-degenerate crossings, enabling stronger mixing. The correlation between Tenney height and entanglement entropy confirms that musical consonance has a quantum-information-theoretic signature."
+}
