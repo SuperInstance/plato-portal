@@ -65,7 +65,8 @@ program berry_phase
   write(*, '(A,F12.6)') ' "comma_cents":', comma_cents
   write(*, '(A,F12.6)') ' "exact_comma_cents":', exact_cents
   write(*, '(A,F14.10)') ' "error_cents":', error_cents
-  write(*, '(A)') ' "physics_interpretation": "The holonomy of the circle-of-fifths loop equals the Pythagorean comma, the musical Berry phase."'
+  write(*, '(A)') ' "physics_interpretation": "The holonomy of the circle' // &
+    '-of-fifths loop equals the Pythagorean comma, the musical Berry phase."'
   write(*, '(A)') '}'
 
 end program berry_phase

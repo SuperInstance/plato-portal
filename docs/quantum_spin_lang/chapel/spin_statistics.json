@@ -1,0 +1,18 @@
+{
+  "experiment": "Spin Statistics Consonance",
+  "intervals": [
+    {"name": "unison", "semitones": 0, "roughness": 0.880797, "consonance": 0.119203},
+    {"name": "m2", "semitones": 1, "roughness": 0.804291, "consonance": 0.195709},
+    {"name": "M2", "semitones": 2, "roughness": 0.710950, "consonance": 0.289050},
+    {"name": "m3", "semitones": 3, "roughness": 0.559714, "consonance": 0.440286},
+    {"name": "M3", "semitones": 4, "roughness": 0.450166, "consonance": 0.549834},
+    {"name": "P4", "semitones": 5, "roughness": 0.282249, "consonance": 0.717751},
+    {"name": "TT", "semitones": 6, "roughness": 0.171505, "consonance": 0.828495},
+    {"name": "P5", "semitones": 7, "roughness": 0.083173, "consonance": 0.916827},
+    {"name": "m6", "semitones": 8, "roughness": 0.036264, "consonance": 0.963736},
+    {"name": "M6", "semitones": 9, "roughness": 0.020499, "consonance": 0.979501},
+    {"name": "m7", "semitones": 10, "roughness": 0.006432, "consonance": 0.993568},
+    {"name": "M7", "semitones": 11, "roughness": 0.003335, "consonance": 0.996665},
+    {"name": "P8", "semitones": 12, "roughness": 0.001113, "consonance": 0.998887}
+  ]
+}

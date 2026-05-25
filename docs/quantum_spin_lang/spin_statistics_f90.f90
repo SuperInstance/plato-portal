@@ -23,7 +23,7 @@ program spin_statistics
   integer :: i, j, k, n_pairs
 
   ! Interval names and ratios (chromatic scale)
-  names = (/ "Unison", "m2     ", "M2     ", "m3     ", "M3     ", &
+  names = (/ "Unison ", "m2     ", "M2     ", "m3     ", "M3     ", &
              "P4     ", "TT     ", "P5     ", "m6     ", "M6     ", &
              "m7     ", "M7     ", "Octave " /)
   ratios = (/ 1.0d0, 16.0d0/15.0d0, 9.0d0/8.0d0, 6.0d0/5.0d0, 5.0d0/4.0d0, &

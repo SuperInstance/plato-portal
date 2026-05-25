@@ -1,0 +1,7 @@
+{
+  "experiment": "Berry Phase = Pythagorean Comma",
+  "starting_frequency": 440.00,
+  "frequencies": [660.000000, 495.000000, 742.500000, 556.875000, 835.312500, 626.484375, 469.863281, 704.794922, 528.596191, 792.894287, 594.670715, 446.003036],
+  "final_frequency": 446.003036,
+  "comma_cents": 23.4600
+}
