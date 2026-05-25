@@ -1,0 +1,542 @@
+{
+  "origin": "Western ET",
+  "origin_position": [
+    2.72,
+    2.05,
+    1.8
+  ],
+  "origin_score": 0.7148,
+  "gradient": [
+    -0.005,
+    0.0,
+    0.015
+  ],
+  "ascent_path": [
+    {
+      "step": 0,
+      "position": [
+        2.72,
+        2.05,
+        1.8
+      ],
+      "score": 0.7148
+    },
+    {
+      "step": 1,
+      "position": [
+        2.7042,
+        2.05,
+        1.8474
+      ],
+      "score": 0.7156
+    },
+    {
+      "step": 2,
+      "position": [
+        2.6884,
+        2.05,
+        1.8949
+      ],
+      "score": 0.7164
+    },
+    {
+      "step": 3,
+      "position": [
+        2.6726,
+        2.05,
+        1.9423
+      ],
+      "score": 0.7172
+    },
+    {
+      "step": 4,
+      "position": [
+        2.6726,
+        2.05,
+        1.9923
+      ],
+      "score": 0.718
+    },
+    {
+      "step": 5,
+      "position": [
+        2.6726,
+        2.05,
+        2.0423
+      ],
+      "score": 0.7188
+    },
+    {
+      "step": 6,
+      "position": [
+        2.6726,
+        2.05,
+        2.0923
+      ],
+      "score": 0.7196
+    },
+    {
+      "step": 7,
+      "position": [
+        2.6726,
+        2.05,
+        2.1423
+      ],
+      "score": 0.7204
+    },
+    {
+      "step": 8,
+      "position": [
+        2.6726,
+        2.05,
+        2.1923
+      ],
+      "score": 0.7212
+    },
+    {
+      "step": 9,
+      "position": [
+        2.6726,
+        2.05,
+        2.2423
+      ],
+      "score": 0.722
+    },
+    {
+      "step": 10,
+      "position": [
+        2.6726,
+        2.05,
+        2.2923
+      ],
+      "score": 0.7228
+    },
+    {
+      "step": 11,
+      "position": [
+        2.6726,
+        2.05,
+        2.3423
+      ],
+      "score": 0.7236
+    },
+    {
+      "step": 12,
+      "position": [
+        2.6726,
+        2.05,
+        2.3923
+      ],
+      "score": 0.7244
+    },
+    {
+      "step": 13,
+      "position": [
+        2.6726,
+        2.05,
+        2.4423
+      ],
+      "score": 0.7252
+    },
+    {
+      "step": 14,
+      "position": [
+        2.6726,
+        2.05,
+        2.4923
+      ],
+      "score": 0.726
+    },
+    {
+      "step": 15,
+      "position": [
+        2.6726,
+        2.05,
+        2.5423
+      ],
+      "score": 0.7268
+    },
+    {
+      "step": 16,
+      "position": [
+        2.6726,
+        2.05,
+        2.5923
+      ],
+      "score": 0.7276
+    },
+    {
+      "step": 17,
+      "position": [
+        2.6726,
+        2.05,
+        2.6423
+      ],
+      "score": 0.7284
+    },
+    {
+      "step": 18,
+      "position": [
+        2.6726,
+        2.05,
+        2.6923
+      ],
+      "score": 0.7292
+    },
+    {
+      "step": 19,
+      "position": [
+        2.6726,
+        2.05,
+        2.7423
+      ],
+      "score": 0.73
+    },
+    {
+      "step": 20,
+      "position": [
+        2.6726,
+        2.05,
+        2.7923
+      ],
+      "score": 0.7308
+    },
+    {
+      "step": 21,
+      "position": [
+        2.6726,
+        2.05,
+        2.8423
+      ],
+      "score": 0.7316
+    },
+    {
+      "step": 22,
+      "position": [
+        2.6726,
+        2.05,
+        2.8923
+      ],
+      "score": 0.7324
+    },
+    {
+      "step": 23,
+      "position": [
+        2.6726,
+        2.05,
+        2.9423
+      ],
+      "score": 0.7332
+    },
+    {
+      "step": 24,
+      "position": [
+        2.6726,
+        2.05,
+        2.9923
+      ],
+      "score": 0.734
+    },
+    {
+      "step": 25,
+      "position": [
+        2.6726,
+        2.05,
+        3.0423
+      ],
+      "score": 0.7348
+    },
+    {
+      "step": 26,
+      "position": [
+        2.6726,
+        2.05,
+        3.0923
+      ],
+      "score": 0.7356
+    },
+    {
+      "step": 27,
+      "position": [
+        2.6726,
+        2.05,
+        3.1423
+      ],
+      "score": 0.7364
+    },
+    {
+      "step": 28,
+      "position": [
+        2.6726,
+        2.05,
+        3.1923
+      ],
+      "score": 0.7372
+    },
+    {
+      "step": 29,
+      "position": [
+        2.6726,
+        2.05,
+        3.2423
+      ],
+      "score": 0.738
+    },
+    {
+      "step": 30,
+      "position": [
+        2.6726,
+        2.05,
+        3.2923
+      ],
+      "score": 0.7388
+    },
+    {
+      "step": 31,
+      "position": [
+        2.6726,
+        2.05,
+        3.3423
+      ],
+      "score": 0.7396
+    },
+    {
+      "step": 32,
+      "position": [
+        2.6726,
+        2.05,
+        3.3923
+      ],
+      "score": 0.7404
+    },
+    {
+      "step": 33,
+      "position": [
+        2.6726,
+        2.05,
+        3.4423
+      ],
+      "score": 0.7412
+    },
+    {
+      "step": 34,
+      "position": [
+        2.6726,
+        2.05,
+        3.4923
+      ],
+      "score": 0.742
+    },
+    {
+      "step": 35,
+      "position": [
+        2.6726,
+        2.05,
+        3.5423
+      ],
+      "score": 0.7428
+    },
+    {
+      "step": 36,
+      "position": [
+        2.6726,
+        2.05,
+        3.5923
+      ],
+      "score": 0.7436
+    },
+    {
+      "step": 37,
+      "position": [
+        2.6726,
+        2.05,
+        3.6423
+      ],
+      "score": 0.7444
+    },
+    {
+      "step": 38,
+      "position": [
+        2.6726,
+        2.05,
+        3.6923
+      ],
+      "score": 0.7452
+    },
+    {
+      "step": 39,
+      "position": [
+        2.6726,
+        2.05,
+        3.7423
+      ],
+      "score": 0.746
+    },
+    {
+      "step": 40,
+      "position": [
+        2.6726,
+        2.05,
+        3.7923
+      ],
+      "score": 0.7468
+    },
+    {
+      "step": 41,
+      "position": [
+        2.6726,
+        2.05,
+        3.8423
+      ],
+      "score": 0.7476
+    },
+    {
+      "step": 42,
+      "position": [
+        2.6726,
+        2.05,
+        3.8923
+      ],
+      "score": 0.7484
+    },
+    {
+      "step": 43,
+      "position": [
+        2.6726,
+        2.05,
+        3.9423
+      ],
+      "score": 0.7492
+    },
+    {
+      "step": 44,
+      "position": [
+        2.6726,
+        2.05,
+        3.9923
+      ],
+      "score": 0.75
+    },
+    {
+      "step": 45,
+      "position": [
+        2.6726,
+        2.05,
+        4.0
+      ],
+      "score": 0.7501
+    },
+    {
+      "step": 46,
+      "position": [
+        2.6726,
+        2.0658,
+        4.0
+      ],
+      "score": 0.7502
+    }
+  ],
+  "local_maximum": {
+    "position": [
+      2.6726,
+      2.0658,
+      4.0
+    ],
+    "score": 0.7502
+  },
+  "global_maximum": {
+    "position": [
+      2.6111,
+      2.3333,
+      4.0
+    ],
+    "score": 0.7507
+  },
+  "top_5_grid_points": [
+    {
+      "I_vert": 2.611,
+      "I_horiz": 2.333,
+      "I_spectral": 4.0,
+      "pleasantness": 0.7507,
+      "neural": {
+        "orbitofrontal": 0.6567,
+        "auditory_cortex": 0.8704,
+        "reward_system": 0.7639,
+        "amygdala": 0.784
+      },
+      "grid_index": [
+        4,
+        4,
+        9
+      ]
+    },
+    {
+      "I_vert": 2.611,
+      "I_horiz": 2.0,
+      "I_spectral": 4.0,
+      "pleasantness": 0.7503,
+      "neural": {
+        "orbitofrontal": 0.6767,
+        "auditory_cortex": 0.8704,
+        "reward_system": 0.7222,
+        "amygdala": 0.784
+      },
+      "grid_index": [
+        4,
+        3,
+        9
+      ]
+    },
+    {
+      "I_vert": 2.611,
+      "I_horiz": 1.667,
+      "I_spectral": 4.0,
+      "pleasantness": 0.75,
+      "neural": {
+        "orbitofrontal": 0.6967,
+        "auditory_cortex": 0.8704,
+        "reward_system": 0.6806,
+        "amygdala": 0.784
+      },
+      "grid_index": [
+        4,
+        2,
+        9
+      ]
+    },
+    {
+      "I_vert": 2.889,
+      "I_horiz": 2.667,
+      "I_spectral": 4.0,
+      "pleasantness": 0.75,
+      "neural": {
+        "orbitofrontal": 0.5533,
+        "auditory_cortex": 0.963,
+        "reward_system": 0.7361,
+        "amygdala": 0.9383
+      },
+      "grid_index": [
+        5,
+        5,
+        9
+      ]
+    },
+    {
+      "I_vert": 2.611,
+      "I_horiz": 1.333,
+      "I_spectral": 4.0,
+      "pleasantness": 0.7497,
+      "neural": {
+        "orbitofrontal": 0.7167,
+        "auditory_cortex": 0.8704,
+        "reward_system": 0.6389,
+        "amygdala": 0.784
+      },
+      "grid_index": [
+        4,
+        1,
+        9
+      ]
+    }
+  ]
+}

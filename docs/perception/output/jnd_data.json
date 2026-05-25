@@ -1,0 +1,5129 @@
+{
+  "I_vert": {
+    "reference_value": 2.72,
+    "jnd_up": 0.14,
+    "jnd_down": 0.14,
+    "jnd_avg": 0.14,
+    "sweep": [
+      {
+        "direction": "up",
+        "delta": 0.01,
+        "test_value": 2.73,
+        "perceptual_distance": 0.0735,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.02,
+        "test_value": 2.74,
+        "perceptual_distance": 0.1471,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.03,
+        "test_value": 2.75,
+        "perceptual_distance": 0.2206,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.04,
+        "test_value": 2.76,
+        "perceptual_distance": 0.2941,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.05,
+        "test_value": 2.77,
+        "perceptual_distance": 0.3676,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.06,
+        "test_value": 2.78,
+        "perceptual_distance": 0.4412,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.07,
+        "test_value": 2.79,
+        "perceptual_distance": 0.5147,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.08,
+        "test_value": 2.8,
+        "perceptual_distance": 0.5882,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.09,
+        "test_value": 2.81,
+        "perceptual_distance": 0.6618,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.1,
+        "test_value": 2.82,
+        "perceptual_distance": 0.7353,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.11,
+        "test_value": 2.83,
+        "perceptual_distance": 0.8088,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.12,
+        "test_value": 2.84,
+        "perceptual_distance": 0.8824,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.13,
+        "test_value": 2.85,
+        "perceptual_distance": 0.9559,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.14,
+        "test_value": 2.86,
+        "perceptual_distance": 1.0294,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.15,
+        "test_value": 2.87,
+        "perceptual_distance": 1.1029,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.16,
+        "test_value": 2.88,
+        "perceptual_distance": 1.1765,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.17,
+        "test_value": 2.89,
+        "perceptual_distance": 1.25,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.18,
+        "test_value": 2.9,
+        "perceptual_distance": 1.3235,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.19,
+        "test_value": 2.91,
+        "perceptual_distance": 1.3971,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.2,
+        "test_value": 2.92,
+        "perceptual_distance": 1.4706,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.21,
+        "test_value": 2.93,
+        "perceptual_distance": 1.5441,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.22,
+        "test_value": 2.94,
+        "perceptual_distance": 1.6176,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.23,
+        "test_value": 2.95,
+        "perceptual_distance": 1.6912,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.24,
+        "test_value": 2.96,
+        "perceptual_distance": 1.7647,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.25,
+        "test_value": 2.97,
+        "perceptual_distance": 1.8382,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.26,
+        "test_value": 2.98,
+        "perceptual_distance": 1.9118,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.27,
+        "test_value": 2.99,
+        "perceptual_distance": 1.9853,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.28,
+        "test_value": 3.0,
+        "perceptual_distance": 2.0588,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.29,
+        "test_value": 3.01,
+        "perceptual_distance": 2.1324,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.3,
+        "test_value": 3.02,
+        "perceptual_distance": 2.2059,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.31,
+        "test_value": 3.03,
+        "perceptual_distance": 2.2794,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.32,
+        "test_value": 3.04,
+        "perceptual_distance": 2.3529,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.33,
+        "test_value": 3.05,
+        "perceptual_distance": 2.4265,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.34,
+        "test_value": 3.06,
+        "perceptual_distance": 2.5,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.35,
+        "test_value": 3.07,
+        "perceptual_distance": 2.5735,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.36,
+        "test_value": 3.08,
+        "perceptual_distance": 2.6471,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.37,
+        "test_value": 3.09,
+        "perceptual_distance": 2.7206,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.38,
+        "test_value": 3.1,
+        "perceptual_distance": 2.7941,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.39,
+        "test_value": 3.11,
+        "perceptual_distance": 2.8676,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.4,
+        "test_value": 3.12,
+        "perceptual_distance": 2.9412,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.41,
+        "test_value": 3.13,
+        "perceptual_distance": 3.0147,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.42,
+        "test_value": 3.14,
+        "perceptual_distance": 3.0882,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.43,
+        "test_value": 3.15,
+        "perceptual_distance": 3.1618,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.44,
+        "test_value": 3.16,
+        "perceptual_distance": 3.2353,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.45,
+        "test_value": 3.17,
+        "perceptual_distance": 3.3088,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.46,
+        "test_value": 3.18,
+        "perceptual_distance": 3.3824,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.47,
+        "test_value": 3.19,
+        "perceptual_distance": 3.4559,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.48,
+        "test_value": 3.2,
+        "perceptual_distance": 3.5294,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.49,
+        "test_value": 3.21,
+        "perceptual_distance": 3.6029,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.5,
+        "test_value": 3.22,
+        "perceptual_distance": 3.6765,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.51,
+        "test_value": 3.23,
+        "perceptual_distance": 3.75,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.52,
+        "test_value": 3.24,
+        "perceptual_distance": 3.8235,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.53,
+        "test_value": 3.25,
+        "perceptual_distance": 3.8971,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.54,
+        "test_value": 3.26,
+        "perceptual_distance": 3.9706,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.55,
+        "test_value": 3.27,
+        "perceptual_distance": 4.0441,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.56,
+        "test_value": 3.28,
+        "perceptual_distance": 4.1176,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.57,
+        "test_value": 3.29,
+        "perceptual_distance": 4.1912,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.58,
+        "test_value": 3.3,
+        "perceptual_distance": 4.2647,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.59,
+        "test_value": 3.31,
+        "perceptual_distance": 4.3382,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.6,
+        "test_value": 3.32,
+        "perceptual_distance": 4.4118,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.61,
+        "test_value": 3.33,
+        "perceptual_distance": 4.4853,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.62,
+        "test_value": 3.34,
+        "perceptual_distance": 4.5588,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.63,
+        "test_value": 3.35,
+        "perceptual_distance": 4.6324,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.64,
+        "test_value": 3.36,
+        "perceptual_distance": 4.7059,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.65,
+        "test_value": 3.37,
+        "perceptual_distance": 4.7794,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.66,
+        "test_value": 3.38,
+        "perceptual_distance": 4.8529,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.67,
+        "test_value": 3.39,
+        "perceptual_distance": 4.9265,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.68,
+        "test_value": 3.4,
+        "perceptual_distance": 5.0,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.69,
+        "test_value": 3.41,
+        "perceptual_distance": 5.0735,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.7,
+        "test_value": 3.42,
+        "perceptual_distance": 5.1471,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.71,
+        "test_value": 3.43,
+        "perceptual_distance": 5.2206,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.72,
+        "test_value": 3.44,
+        "perceptual_distance": 5.2941,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.73,
+        "test_value": 3.45,
+        "perceptual_distance": 5.3676,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.74,
+        "test_value": 3.46,
+        "perceptual_distance": 5.4412,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.75,
+        "test_value": 3.47,
+        "perceptual_distance": 5.5147,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.76,
+        "test_value": 3.48,
+        "perceptual_distance": 5.5882,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.77,
+        "test_value": 3.49,
+        "perceptual_distance": 5.6618,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.78,
+        "test_value": 3.5,
+        "perceptual_distance": 5.7353,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.79,
+        "test_value": 3.51,
+        "perceptual_distance": 5.8088,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.8,
+        "test_value": 3.52,
+        "perceptual_distance": 5.8824,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.81,
+        "test_value": 3.53,
+        "perceptual_distance": 5.9559,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.82,
+        "test_value": 3.54,
+        "perceptual_distance": 6.0294,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.83,
+        "test_value": 3.55,
+        "perceptual_distance": 6.1029,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.84,
+        "test_value": 3.56,
+        "perceptual_distance": 6.1765,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.85,
+        "test_value": 3.57,
+        "perceptual_distance": 6.25,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.86,
+        "test_value": 3.58,
+        "perceptual_distance": 6.3235,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.87,
+        "test_value": 3.59,
+        "perceptual_distance": 6.3971,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.88,
+        "test_value": 3.6,
+        "perceptual_distance": 6.4706,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.89,
+        "test_value": 3.61,
+        "perceptual_distance": 6.5441,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.9,
+        "test_value": 3.62,
+        "perceptual_distance": 6.6176,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.91,
+        "test_value": 3.63,
+        "perceptual_distance": 6.6912,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.92,
+        "test_value": 3.64,
+        "perceptual_distance": 6.7647,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.93,
+        "test_value": 3.65,
+        "perceptual_distance": 6.8382,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.94,
+        "test_value": 3.66,
+        "perceptual_distance": 6.9118,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.95,
+        "test_value": 3.67,
+        "perceptual_distance": 6.9853,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.96,
+        "test_value": 3.68,
+        "perceptual_distance": 7.0588,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.97,
+        "test_value": 3.69,
+        "perceptual_distance": 7.1324,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.98,
+        "test_value": 3.7,
+        "perceptual_distance": 7.2059,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.99,
+        "test_value": 3.71,
+        "perceptual_distance": 7.2794,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.0,
+        "test_value": 3.72,
+        "perceptual_distance": 7.3529,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.01,
+        "test_value": 3.73,
+        "perceptual_distance": 7.4265,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.02,
+        "test_value": 3.74,
+        "perceptual_distance": 7.5,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.03,
+        "test_value": 3.75,
+        "perceptual_distance": 7.5735,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.04,
+        "test_value": 3.76,
+        "perceptual_distance": 7.6471,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.05,
+        "test_value": 3.77,
+        "perceptual_distance": 7.7206,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.06,
+        "test_value": 3.78,
+        "perceptual_distance": 7.7941,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.07,
+        "test_value": 3.79,
+        "perceptual_distance": 7.8676,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.08,
+        "test_value": 3.8,
+        "perceptual_distance": 7.9412,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.09,
+        "test_value": 3.81,
+        "perceptual_distance": 8.0147,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.1,
+        "test_value": 3.82,
+        "perceptual_distance": 8.0882,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.11,
+        "test_value": 3.83,
+        "perceptual_distance": 8.1618,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.12,
+        "test_value": 3.84,
+        "perceptual_distance": 8.2353,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.13,
+        "test_value": 3.85,
+        "perceptual_distance": 8.3088,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.14,
+        "test_value": 3.86,
+        "perceptual_distance": 8.3824,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.15,
+        "test_value": 3.87,
+        "perceptual_distance": 8.4559,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.16,
+        "test_value": 3.88,
+        "perceptual_distance": 8.5294,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.17,
+        "test_value": 3.89,
+        "perceptual_distance": 8.6029,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.18,
+        "test_value": 3.9,
+        "perceptual_distance": 8.6765,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.19,
+        "test_value": 3.91,
+        "perceptual_distance": 8.75,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.2,
+        "test_value": 3.92,
+        "perceptual_distance": 8.8235,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.21,
+        "test_value": 3.93,
+        "perceptual_distance": 8.8971,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.22,
+        "test_value": 3.94,
+        "perceptual_distance": 8.9706,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.23,
+        "test_value": 3.95,
+        "perceptual_distance": 9.0441,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.24,
+        "test_value": 3.96,
+        "perceptual_distance": 9.1176,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.25,
+        "test_value": 3.97,
+        "perceptual_distance": 9.1912,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.26,
+        "test_value": 3.98,
+        "perceptual_distance": 9.2647,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.27,
+        "test_value": 3.99,
+        "perceptual_distance": 9.3382,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.01,
+        "test_value": 2.71,
+        "perceptual_distance": 0.0735,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.02,
+        "test_value": 2.7,
+        "perceptual_distance": 0.1471,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.03,
+        "test_value": 2.69,
+        "perceptual_distance": 0.2206,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.04,
+        "test_value": 2.68,
+        "perceptual_distance": 0.2941,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.05,
+        "test_value": 2.67,
+        "perceptual_distance": 0.3676,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.06,
+        "test_value": 2.66,
+        "perceptual_distance": 0.4412,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.07,
+        "test_value": 2.65,
+        "perceptual_distance": 0.5147,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.08,
+        "test_value": 2.64,
+        "perceptual_distance": 0.5882,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.09,
+        "test_value": 2.63,
+        "perceptual_distance": 0.6618,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.1,
+        "test_value": 2.62,
+        "perceptual_distance": 0.7353,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.11,
+        "test_value": 2.61,
+        "perceptual_distance": 0.8088,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.12,
+        "test_value": 2.6,
+        "perceptual_distance": 0.8824,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.13,
+        "test_value": 2.59,
+        "perceptual_distance": 0.9559,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.14,
+        "test_value": 2.58,
+        "perceptual_distance": 1.0294,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.15,
+        "test_value": 2.57,
+        "perceptual_distance": 1.1029,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.16,
+        "test_value": 2.56,
+        "perceptual_distance": 1.1765,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.17,
+        "test_value": 2.55,
+        "perceptual_distance": 1.25,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.18,
+        "test_value": 2.54,
+        "perceptual_distance": 1.3235,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.19,
+        "test_value": 2.53,
+        "perceptual_distance": 1.3971,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.2,
+        "test_value": 2.52,
+        "perceptual_distance": 1.4706,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.21,
+        "test_value": 2.51,
+        "perceptual_distance": 1.5441,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.22,
+        "test_value": 2.5,
+        "perceptual_distance": 1.6176,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.23,
+        "test_value": 2.49,
+        "perceptual_distance": 1.6912,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.24,
+        "test_value": 2.48,
+        "perceptual_distance": 1.7647,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.25,
+        "test_value": 2.47,
+        "perceptual_distance": 1.8382,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.26,
+        "test_value": 2.46,
+        "perceptual_distance": 1.9118,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.27,
+        "test_value": 2.45,
+        "perceptual_distance": 1.9853,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.28,
+        "test_value": 2.44,
+        "perceptual_distance": 2.0588,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.29,
+        "test_value": 2.43,
+        "perceptual_distance": 2.1324,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.3,
+        "test_value": 2.42,
+        "perceptual_distance": 2.2059,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.31,
+        "test_value": 2.41,
+        "perceptual_distance": 2.2794,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.32,
+        "test_value": 2.4,
+        "perceptual_distance": 2.3529,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.33,
+        "test_value": 2.39,
+        "perceptual_distance": 2.4265,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.34,
+        "test_value": 2.38,
+        "perceptual_distance": 2.5,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.35,
+        "test_value": 2.37,
+        "perceptual_distance": 2.5735,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.36,
+        "test_value": 2.36,
+        "perceptual_distance": 2.6471,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.37,
+        "test_value": 2.35,
+        "perceptual_distance": 2.7206,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.38,
+        "test_value": 2.34,
+        "perceptual_distance": 2.7941,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.39,
+        "test_value": 2.33,
+        "perceptual_distance": 2.8676,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.4,
+        "test_value": 2.32,
+        "perceptual_distance": 2.9412,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.41,
+        "test_value": 2.31,
+        "perceptual_distance": 3.0147,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.42,
+        "test_value": 2.3,
+        "perceptual_distance": 3.0882,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.43,
+        "test_value": 2.29,
+        "perceptual_distance": 3.1618,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.44,
+        "test_value": 2.28,
+        "perceptual_distance": 3.2353,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.45,
+        "test_value": 2.27,
+        "perceptual_distance": 3.3088,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.46,
+        "test_value": 2.26,
+        "perceptual_distance": 3.3824,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.47,
+        "test_value": 2.25,
+        "perceptual_distance": 3.4559,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.48,
+        "test_value": 2.24,
+        "perceptual_distance": 3.5294,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.49,
+        "test_value": 2.23,
+        "perceptual_distance": 3.6029,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.5,
+        "test_value": 2.22,
+        "perceptual_distance": 3.6765,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.51,
+        "test_value": 2.21,
+        "perceptual_distance": 3.75,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.52,
+        "test_value": 2.2,
+        "perceptual_distance": 3.8235,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.53,
+        "test_value": 2.19,
+        "perceptual_distance": 3.8971,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.54,
+        "test_value": 2.18,
+        "perceptual_distance": 3.9706,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.55,
+        "test_value": 2.17,
+        "perceptual_distance": 4.0441,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.56,
+        "test_value": 2.16,
+        "perceptual_distance": 4.1176,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.57,
+        "test_value": 2.15,
+        "perceptual_distance": 4.1912,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.58,
+        "test_value": 2.14,
+        "perceptual_distance": 4.2647,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.59,
+        "test_value": 2.13,
+        "perceptual_distance": 4.3382,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.6,
+        "test_value": 2.12,
+        "perceptual_distance": 4.4118,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.61,
+        "test_value": 2.11,
+        "perceptual_distance": 4.4853,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.62,
+        "test_value": 2.1,
+        "perceptual_distance": 4.5588,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.63,
+        "test_value": 2.09,
+        "perceptual_distance": 4.6324,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.64,
+        "test_value": 2.08,
+        "perceptual_distance": 4.7059,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.65,
+        "test_value": 2.07,
+        "perceptual_distance": 4.7794,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.66,
+        "test_value": 2.06,
+        "perceptual_distance": 4.8529,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.67,
+        "test_value": 2.05,
+        "perceptual_distance": 4.9265,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.68,
+        "test_value": 2.04,
+        "perceptual_distance": 5.0,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.69,
+        "test_value": 2.03,
+        "perceptual_distance": 5.0735,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.7,
+        "test_value": 2.02,
+        "perceptual_distance": 5.1471,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.71,
+        "test_value": 2.01,
+        "perceptual_distance": 5.2206,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.72,
+        "test_value": 2.0,
+        "perceptual_distance": 5.2941,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.73,
+        "test_value": 1.99,
+        "perceptual_distance": 5.3676,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.74,
+        "test_value": 1.98,
+        "perceptual_distance": 5.4412,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.75,
+        "test_value": 1.97,
+        "perceptual_distance": 5.5147,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.76,
+        "test_value": 1.96,
+        "perceptual_distance": 5.5882,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.77,
+        "test_value": 1.95,
+        "perceptual_distance": 5.6618,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.78,
+        "test_value": 1.94,
+        "perceptual_distance": 5.7353,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.79,
+        "test_value": 1.93,
+        "perceptual_distance": 5.8088,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.8,
+        "test_value": 1.92,
+        "perceptual_distance": 5.8824,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.81,
+        "test_value": 1.91,
+        "perceptual_distance": 5.9559,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.82,
+        "test_value": 1.9,
+        "perceptual_distance": 6.0294,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.83,
+        "test_value": 1.89,
+        "perceptual_distance": 6.1029,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.84,
+        "test_value": 1.88,
+        "perceptual_distance": 6.1765,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.85,
+        "test_value": 1.87,
+        "perceptual_distance": 6.25,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.86,
+        "test_value": 1.86,
+        "perceptual_distance": 6.3235,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.87,
+        "test_value": 1.85,
+        "perceptual_distance": 6.3971,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.88,
+        "test_value": 1.84,
+        "perceptual_distance": 6.4706,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.89,
+        "test_value": 1.83,
+        "perceptual_distance": 6.5441,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.9,
+        "test_value": 1.82,
+        "perceptual_distance": 6.6176,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.91,
+        "test_value": 1.81,
+        "perceptual_distance": 6.6912,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.92,
+        "test_value": 1.8,
+        "perceptual_distance": 6.7647,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.93,
+        "test_value": 1.79,
+        "perceptual_distance": 6.8382,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.94,
+        "test_value": 1.78,
+        "perceptual_distance": 6.9118,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.95,
+        "test_value": 1.77,
+        "perceptual_distance": 6.9853,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.96,
+        "test_value": 1.76,
+        "perceptual_distance": 7.0588,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.97,
+        "test_value": 1.75,
+        "perceptual_distance": 7.1324,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.98,
+        "test_value": 1.74,
+        "perceptual_distance": 7.2059,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.99,
+        "test_value": 1.73,
+        "perceptual_distance": 7.2794,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.0,
+        "test_value": 1.72,
+        "perceptual_distance": 7.3529,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.01,
+        "test_value": 1.71,
+        "perceptual_distance": 7.4265,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.02,
+        "test_value": 1.7,
+        "perceptual_distance": 7.5,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.03,
+        "test_value": 1.69,
+        "perceptual_distance": 7.5735,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.04,
+        "test_value": 1.68,
+        "perceptual_distance": 7.6471,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.05,
+        "test_value": 1.67,
+        "perceptual_distance": 7.7206,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.06,
+        "test_value": 1.66,
+        "perceptual_distance": 7.7941,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.07,
+        "test_value": 1.65,
+        "perceptual_distance": 7.8676,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.08,
+        "test_value": 1.64,
+        "perceptual_distance": 7.9412,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.09,
+        "test_value": 1.63,
+        "perceptual_distance": 8.0147,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.1,
+        "test_value": 1.62,
+        "perceptual_distance": 8.0882,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.11,
+        "test_value": 1.61,
+        "perceptual_distance": 8.1618,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.12,
+        "test_value": 1.6,
+        "perceptual_distance": 8.2353,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.13,
+        "test_value": 1.59,
+        "perceptual_distance": 8.3088,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.14,
+        "test_value": 1.58,
+        "perceptual_distance": 8.3824,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.15,
+        "test_value": 1.57,
+        "perceptual_distance": 8.4559,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.16,
+        "test_value": 1.56,
+        "perceptual_distance": 8.5294,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.17,
+        "test_value": 1.55,
+        "perceptual_distance": 8.6029,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.18,
+        "test_value": 1.54,
+        "perceptual_distance": 8.6765,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.19,
+        "test_value": 1.53,
+        "perceptual_distance": 8.75,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.2,
+        "test_value": 1.52,
+        "perceptual_distance": 8.8235,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.21,
+        "test_value": 1.51,
+        "perceptual_distance": 8.8971,
+        "noticeable": true
+      }
+    ]
+  },
+  "I_horiz": {
+    "reference_value": 2.05,
+    "jnd_up": 0.24,
+    "jnd_down": 0.24,
+    "jnd_avg": 0.24,
+    "sweep": [
+      {
+        "direction": "up",
+        "delta": 0.01,
+        "test_value": 2.06,
+        "perceptual_distance": 0.0427,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.02,
+        "test_value": 2.07,
+        "perceptual_distance": 0.0854,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.03,
+        "test_value": 2.08,
+        "perceptual_distance": 0.128,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.04,
+        "test_value": 2.09,
+        "perceptual_distance": 0.1707,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.05,
+        "test_value": 2.1,
+        "perceptual_distance": 0.2134,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.06,
+        "test_value": 2.11,
+        "perceptual_distance": 0.2561,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.07,
+        "test_value": 2.12,
+        "perceptual_distance": 0.2988,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.08,
+        "test_value": 2.13,
+        "perceptual_distance": 0.3415,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.09,
+        "test_value": 2.14,
+        "perceptual_distance": 0.3841,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.1,
+        "test_value": 2.15,
+        "perceptual_distance": 0.4268,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.11,
+        "test_value": 2.16,
+        "perceptual_distance": 0.4695,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.12,
+        "test_value": 2.17,
+        "perceptual_distance": 0.5122,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.13,
+        "test_value": 2.18,
+        "perceptual_distance": 0.5549,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.14,
+        "test_value": 2.19,
+        "perceptual_distance": 0.5976,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.15,
+        "test_value": 2.2,
+        "perceptual_distance": 0.6402,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.16,
+        "test_value": 2.21,
+        "perceptual_distance": 0.6829,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.17,
+        "test_value": 2.22,
+        "perceptual_distance": 0.7256,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.18,
+        "test_value": 2.23,
+        "perceptual_distance": 0.7683,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.19,
+        "test_value": 2.24,
+        "perceptual_distance": 0.811,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.2,
+        "test_value": 2.25,
+        "perceptual_distance": 0.8537,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.21,
+        "test_value": 2.26,
+        "perceptual_distance": 0.8963,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.22,
+        "test_value": 2.27,
+        "perceptual_distance": 0.939,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.23,
+        "test_value": 2.28,
+        "perceptual_distance": 0.9817,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.24,
+        "test_value": 2.29,
+        "perceptual_distance": 1.0244,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.25,
+        "test_value": 2.3,
+        "perceptual_distance": 1.0671,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.26,
+        "test_value": 2.31,
+        "perceptual_distance": 1.1098,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.27,
+        "test_value": 2.32,
+        "perceptual_distance": 1.1524,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.28,
+        "test_value": 2.33,
+        "perceptual_distance": 1.1951,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.29,
+        "test_value": 2.34,
+        "perceptual_distance": 1.2378,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.3,
+        "test_value": 2.35,
+        "perceptual_distance": 1.2805,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.31,
+        "test_value": 2.36,
+        "perceptual_distance": 1.3232,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.32,
+        "test_value": 2.37,
+        "perceptual_distance": 1.3659,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.33,
+        "test_value": 2.38,
+        "perceptual_distance": 1.4085,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.34,
+        "test_value": 2.39,
+        "perceptual_distance": 1.4512,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.35,
+        "test_value": 2.4,
+        "perceptual_distance": 1.4939,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.36,
+        "test_value": 2.41,
+        "perceptual_distance": 1.5366,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.37,
+        "test_value": 2.42,
+        "perceptual_distance": 1.5793,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.38,
+        "test_value": 2.43,
+        "perceptual_distance": 1.622,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.39,
+        "test_value": 2.44,
+        "perceptual_distance": 1.6646,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.4,
+        "test_value": 2.45,
+        "perceptual_distance": 1.7073,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.41,
+        "test_value": 2.46,
+        "perceptual_distance": 1.75,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.42,
+        "test_value": 2.47,
+        "perceptual_distance": 1.7927,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.43,
+        "test_value": 2.48,
+        "perceptual_distance": 1.8354,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.44,
+        "test_value": 2.49,
+        "perceptual_distance": 1.878,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.45,
+        "test_value": 2.5,
+        "perceptual_distance": 1.9207,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.46,
+        "test_value": 2.51,
+        "perceptual_distance": 1.9634,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.47,
+        "test_value": 2.52,
+        "perceptual_distance": 2.0061,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.48,
+        "test_value": 2.53,
+        "perceptual_distance": 2.0488,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.49,
+        "test_value": 2.54,
+        "perceptual_distance": 2.0915,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.5,
+        "test_value": 2.55,
+        "perceptual_distance": 2.1341,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.51,
+        "test_value": 2.56,
+        "perceptual_distance": 2.1768,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.52,
+        "test_value": 2.57,
+        "perceptual_distance": 2.2195,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.53,
+        "test_value": 2.58,
+        "perceptual_distance": 2.2622,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.54,
+        "test_value": 2.59,
+        "perceptual_distance": 2.3049,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.55,
+        "test_value": 2.6,
+        "perceptual_distance": 2.3476,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.56,
+        "test_value": 2.61,
+        "perceptual_distance": 2.3902,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.57,
+        "test_value": 2.62,
+        "perceptual_distance": 2.4329,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.58,
+        "test_value": 2.63,
+        "perceptual_distance": 2.4756,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.59,
+        "test_value": 2.64,
+        "perceptual_distance": 2.5183,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.6,
+        "test_value": 2.65,
+        "perceptual_distance": 2.561,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.61,
+        "test_value": 2.66,
+        "perceptual_distance": 2.6037,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.62,
+        "test_value": 2.67,
+        "perceptual_distance": 2.6463,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.63,
+        "test_value": 2.68,
+        "perceptual_distance": 2.689,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.64,
+        "test_value": 2.69,
+        "perceptual_distance": 2.7317,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.65,
+        "test_value": 2.7,
+        "perceptual_distance": 2.7744,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.66,
+        "test_value": 2.71,
+        "perceptual_distance": 2.8171,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.67,
+        "test_value": 2.72,
+        "perceptual_distance": 2.8598,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.68,
+        "test_value": 2.73,
+        "perceptual_distance": 2.9024,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.69,
+        "test_value": 2.74,
+        "perceptual_distance": 2.9451,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.7,
+        "test_value": 2.75,
+        "perceptual_distance": 2.9878,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.71,
+        "test_value": 2.76,
+        "perceptual_distance": 3.0305,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.72,
+        "test_value": 2.77,
+        "perceptual_distance": 3.0732,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.73,
+        "test_value": 2.78,
+        "perceptual_distance": 3.1159,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.74,
+        "test_value": 2.79,
+        "perceptual_distance": 3.1585,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.75,
+        "test_value": 2.8,
+        "perceptual_distance": 3.2012,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.76,
+        "test_value": 2.81,
+        "perceptual_distance": 3.2439,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.77,
+        "test_value": 2.82,
+        "perceptual_distance": 3.2866,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.78,
+        "test_value": 2.83,
+        "perceptual_distance": 3.3293,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.79,
+        "test_value": 2.84,
+        "perceptual_distance": 3.372,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.8,
+        "test_value": 2.85,
+        "perceptual_distance": 3.4146,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.81,
+        "test_value": 2.86,
+        "perceptual_distance": 3.4573,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.82,
+        "test_value": 2.87,
+        "perceptual_distance": 3.5,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.83,
+        "test_value": 2.88,
+        "perceptual_distance": 3.5427,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.84,
+        "test_value": 2.89,
+        "perceptual_distance": 3.5854,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.85,
+        "test_value": 2.9,
+        "perceptual_distance": 3.628,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.86,
+        "test_value": 2.91,
+        "perceptual_distance": 3.6707,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.87,
+        "test_value": 2.92,
+        "perceptual_distance": 3.7134,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.88,
+        "test_value": 2.93,
+        "perceptual_distance": 3.7561,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.89,
+        "test_value": 2.94,
+        "perceptual_distance": 3.7988,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.9,
+        "test_value": 2.95,
+        "perceptual_distance": 3.8415,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.91,
+        "test_value": 2.96,
+        "perceptual_distance": 3.8841,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.92,
+        "test_value": 2.97,
+        "perceptual_distance": 3.9268,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.93,
+        "test_value": 2.98,
+        "perceptual_distance": 3.9695,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.94,
+        "test_value": 2.99,
+        "perceptual_distance": 4.0122,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.95,
+        "test_value": 3.0,
+        "perceptual_distance": 4.0549,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.96,
+        "test_value": 3.01,
+        "perceptual_distance": 4.0976,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.97,
+        "test_value": 3.02,
+        "perceptual_distance": 4.1402,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.98,
+        "test_value": 3.03,
+        "perceptual_distance": 4.1829,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.99,
+        "test_value": 3.04,
+        "perceptual_distance": 4.2256,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.0,
+        "test_value": 3.05,
+        "perceptual_distance": 4.2683,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.01,
+        "test_value": 3.06,
+        "perceptual_distance": 4.311,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.02,
+        "test_value": 3.07,
+        "perceptual_distance": 4.3537,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.03,
+        "test_value": 3.08,
+        "perceptual_distance": 4.3963,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.04,
+        "test_value": 3.09,
+        "perceptual_distance": 4.439,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.05,
+        "test_value": 3.1,
+        "perceptual_distance": 4.4817,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.06,
+        "test_value": 3.11,
+        "perceptual_distance": 4.5244,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.07,
+        "test_value": 3.12,
+        "perceptual_distance": 4.5671,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.08,
+        "test_value": 3.13,
+        "perceptual_distance": 4.6098,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.09,
+        "test_value": 3.14,
+        "perceptual_distance": 4.6524,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.1,
+        "test_value": 3.15,
+        "perceptual_distance": 4.6951,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.11,
+        "test_value": 3.16,
+        "perceptual_distance": 4.7378,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.12,
+        "test_value": 3.17,
+        "perceptual_distance": 4.7805,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.13,
+        "test_value": 3.18,
+        "perceptual_distance": 4.8232,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.14,
+        "test_value": 3.19,
+        "perceptual_distance": 4.8659,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.15,
+        "test_value": 3.2,
+        "perceptual_distance": 4.9085,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.16,
+        "test_value": 3.21,
+        "perceptual_distance": 4.9512,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.17,
+        "test_value": 3.22,
+        "perceptual_distance": 4.9939,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.18,
+        "test_value": 3.23,
+        "perceptual_distance": 5.0366,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.19,
+        "test_value": 3.24,
+        "perceptual_distance": 5.0793,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.2,
+        "test_value": 3.25,
+        "perceptual_distance": 5.122,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.21,
+        "test_value": 3.26,
+        "perceptual_distance": 5.1646,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.22,
+        "test_value": 3.27,
+        "perceptual_distance": 5.2073,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.23,
+        "test_value": 3.28,
+        "perceptual_distance": 5.25,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.24,
+        "test_value": 3.29,
+        "perceptual_distance": 5.2927,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.25,
+        "test_value": 3.3,
+        "perceptual_distance": 5.3354,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.26,
+        "test_value": 3.31,
+        "perceptual_distance": 5.378,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.27,
+        "test_value": 3.32,
+        "perceptual_distance": 5.4207,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.28,
+        "test_value": 3.33,
+        "perceptual_distance": 5.4634,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.29,
+        "test_value": 3.34,
+        "perceptual_distance": 5.5061,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.3,
+        "test_value": 3.35,
+        "perceptual_distance": 5.5488,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.31,
+        "test_value": 3.36,
+        "perceptual_distance": 5.5915,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.32,
+        "test_value": 3.37,
+        "perceptual_distance": 5.6341,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.33,
+        "test_value": 3.38,
+        "perceptual_distance": 5.6768,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.34,
+        "test_value": 3.39,
+        "perceptual_distance": 5.7195,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.35,
+        "test_value": 3.4,
+        "perceptual_distance": 5.7622,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.36,
+        "test_value": 3.41,
+        "perceptual_distance": 5.8049,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.37,
+        "test_value": 3.42,
+        "perceptual_distance": 5.8476,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.38,
+        "test_value": 3.43,
+        "perceptual_distance": 5.8902,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.39,
+        "test_value": 3.44,
+        "perceptual_distance": 5.9329,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.4,
+        "test_value": 3.45,
+        "perceptual_distance": 5.9756,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.41,
+        "test_value": 3.46,
+        "perceptual_distance": 6.0183,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.42,
+        "test_value": 3.47,
+        "perceptual_distance": 6.061,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.43,
+        "test_value": 3.48,
+        "perceptual_distance": 6.1037,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.44,
+        "test_value": 3.49,
+        "perceptual_distance": 6.1463,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.45,
+        "test_value": 3.5,
+        "perceptual_distance": 6.189,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.46,
+        "test_value": 3.51,
+        "perceptual_distance": 6.2317,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.47,
+        "test_value": 3.52,
+        "perceptual_distance": 6.2744,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.48,
+        "test_value": 3.53,
+        "perceptual_distance": 6.3171,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.49,
+        "test_value": 3.54,
+        "perceptual_distance": 6.3598,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.01,
+        "test_value": 2.04,
+        "perceptual_distance": 0.0427,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.02,
+        "test_value": 2.03,
+        "perceptual_distance": 0.0854,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.03,
+        "test_value": 2.02,
+        "perceptual_distance": 0.128,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.04,
+        "test_value": 2.01,
+        "perceptual_distance": 0.1707,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.05,
+        "test_value": 2.0,
+        "perceptual_distance": 0.2134,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.06,
+        "test_value": 1.99,
+        "perceptual_distance": 0.2561,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.07,
+        "test_value": 1.98,
+        "perceptual_distance": 0.2988,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.08,
+        "test_value": 1.97,
+        "perceptual_distance": 0.3415,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.09,
+        "test_value": 1.96,
+        "perceptual_distance": 0.3841,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.1,
+        "test_value": 1.95,
+        "perceptual_distance": 0.4268,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.11,
+        "test_value": 1.94,
+        "perceptual_distance": 0.4695,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.12,
+        "test_value": 1.93,
+        "perceptual_distance": 0.5122,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.13,
+        "test_value": 1.92,
+        "perceptual_distance": 0.5549,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.14,
+        "test_value": 1.91,
+        "perceptual_distance": 0.5976,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.15,
+        "test_value": 1.9,
+        "perceptual_distance": 0.6402,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.16,
+        "test_value": 1.89,
+        "perceptual_distance": 0.6829,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.17,
+        "test_value": 1.88,
+        "perceptual_distance": 0.7256,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.18,
+        "test_value": 1.87,
+        "perceptual_distance": 0.7683,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.19,
+        "test_value": 1.86,
+        "perceptual_distance": 0.811,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.2,
+        "test_value": 1.85,
+        "perceptual_distance": 0.8537,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.21,
+        "test_value": 1.84,
+        "perceptual_distance": 0.8963,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.22,
+        "test_value": 1.83,
+        "perceptual_distance": 0.939,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.23,
+        "test_value": 1.82,
+        "perceptual_distance": 0.9817,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.24,
+        "test_value": 1.81,
+        "perceptual_distance": 1.0244,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.25,
+        "test_value": 1.8,
+        "perceptual_distance": 1.0671,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.26,
+        "test_value": 1.79,
+        "perceptual_distance": 1.1098,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.27,
+        "test_value": 1.78,
+        "perceptual_distance": 1.1524,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.28,
+        "test_value": 1.77,
+        "perceptual_distance": 1.1951,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.29,
+        "test_value": 1.76,
+        "perceptual_distance": 1.2378,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.3,
+        "test_value": 1.75,
+        "perceptual_distance": 1.2805,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.31,
+        "test_value": 1.74,
+        "perceptual_distance": 1.3232,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.32,
+        "test_value": 1.73,
+        "perceptual_distance": 1.3659,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.33,
+        "test_value": 1.72,
+        "perceptual_distance": 1.4085,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.34,
+        "test_value": 1.71,
+        "perceptual_distance": 1.4512,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.35,
+        "test_value": 1.7,
+        "perceptual_distance": 1.4939,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.36,
+        "test_value": 1.69,
+        "perceptual_distance": 1.5366,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.37,
+        "test_value": 1.68,
+        "perceptual_distance": 1.5793,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.38,
+        "test_value": 1.67,
+        "perceptual_distance": 1.622,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.39,
+        "test_value": 1.66,
+        "perceptual_distance": 1.6646,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.4,
+        "test_value": 1.65,
+        "perceptual_distance": 1.7073,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.41,
+        "test_value": 1.64,
+        "perceptual_distance": 1.75,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.42,
+        "test_value": 1.63,
+        "perceptual_distance": 1.7927,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.43,
+        "test_value": 1.62,
+        "perceptual_distance": 1.8354,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.44,
+        "test_value": 1.61,
+        "perceptual_distance": 1.878,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.45,
+        "test_value": 1.6,
+        "perceptual_distance": 1.9207,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.46,
+        "test_value": 1.59,
+        "perceptual_distance": 1.9634,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.47,
+        "test_value": 1.58,
+        "perceptual_distance": 2.0061,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.48,
+        "test_value": 1.57,
+        "perceptual_distance": 2.0488,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.49,
+        "test_value": 1.56,
+        "perceptual_distance": 2.0915,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.5,
+        "test_value": 1.55,
+        "perceptual_distance": 2.1341,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.51,
+        "test_value": 1.54,
+        "perceptual_distance": 2.1768,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.52,
+        "test_value": 1.53,
+        "perceptual_distance": 2.2195,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.53,
+        "test_value": 1.52,
+        "perceptual_distance": 2.2622,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.54,
+        "test_value": 1.51,
+        "perceptual_distance": 2.3049,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.55,
+        "test_value": 1.5,
+        "perceptual_distance": 2.3476,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.56,
+        "test_value": 1.49,
+        "perceptual_distance": 2.3902,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.57,
+        "test_value": 1.48,
+        "perceptual_distance": 2.4329,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.58,
+        "test_value": 1.47,
+        "perceptual_distance": 2.4756,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.59,
+        "test_value": 1.46,
+        "perceptual_distance": 2.5183,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.6,
+        "test_value": 1.45,
+        "perceptual_distance": 2.561,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.61,
+        "test_value": 1.44,
+        "perceptual_distance": 2.6037,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.62,
+        "test_value": 1.43,
+        "perceptual_distance": 2.6463,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.63,
+        "test_value": 1.42,
+        "perceptual_distance": 2.689,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.64,
+        "test_value": 1.41,
+        "perceptual_distance": 2.7317,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.65,
+        "test_value": 1.4,
+        "perceptual_distance": 2.7744,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.66,
+        "test_value": 1.39,
+        "perceptual_distance": 2.8171,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.67,
+        "test_value": 1.38,
+        "perceptual_distance": 2.8598,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.68,
+        "test_value": 1.37,
+        "perceptual_distance": 2.9024,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.69,
+        "test_value": 1.36,
+        "perceptual_distance": 2.9451,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.7,
+        "test_value": 1.35,
+        "perceptual_distance": 2.9878,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.71,
+        "test_value": 1.34,
+        "perceptual_distance": 3.0305,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.72,
+        "test_value": 1.33,
+        "perceptual_distance": 3.0732,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.73,
+        "test_value": 1.32,
+        "perceptual_distance": 3.1159,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.74,
+        "test_value": 1.31,
+        "perceptual_distance": 3.1585,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.75,
+        "test_value": 1.3,
+        "perceptual_distance": 3.2012,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.76,
+        "test_value": 1.29,
+        "perceptual_distance": 3.2439,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.77,
+        "test_value": 1.28,
+        "perceptual_distance": 3.2866,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.78,
+        "test_value": 1.27,
+        "perceptual_distance": 3.3293,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.79,
+        "test_value": 1.26,
+        "perceptual_distance": 3.372,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.8,
+        "test_value": 1.25,
+        "perceptual_distance": 3.4146,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.81,
+        "test_value": 1.24,
+        "perceptual_distance": 3.4573,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.82,
+        "test_value": 1.23,
+        "perceptual_distance": 3.5,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.83,
+        "test_value": 1.22,
+        "perceptual_distance": 3.5427,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.84,
+        "test_value": 1.21,
+        "perceptual_distance": 3.5854,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.85,
+        "test_value": 1.2,
+        "perceptual_distance": 3.628,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.86,
+        "test_value": 1.19,
+        "perceptual_distance": 3.6707,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.87,
+        "test_value": 1.18,
+        "perceptual_distance": 3.7134,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.88,
+        "test_value": 1.17,
+        "perceptual_distance": 3.7561,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.89,
+        "test_value": 1.16,
+        "perceptual_distance": 3.7988,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.9,
+        "test_value": 1.15,
+        "perceptual_distance": 3.8415,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.91,
+        "test_value": 1.14,
+        "perceptual_distance": 3.8841,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.92,
+        "test_value": 1.13,
+        "perceptual_distance": 3.9268,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.93,
+        "test_value": 1.12,
+        "perceptual_distance": 3.9695,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.94,
+        "test_value": 1.11,
+        "perceptual_distance": 4.0122,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.95,
+        "test_value": 1.1,
+        "perceptual_distance": 4.0549,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.96,
+        "test_value": 1.09,
+        "perceptual_distance": 4.0976,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.97,
+        "test_value": 1.08,
+        "perceptual_distance": 4.1402,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.98,
+        "test_value": 1.07,
+        "perceptual_distance": 4.1829,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.99,
+        "test_value": 1.06,
+        "perceptual_distance": 4.2256,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.0,
+        "test_value": 1.05,
+        "perceptual_distance": 4.2683,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.01,
+        "test_value": 1.04,
+        "perceptual_distance": 4.311,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.02,
+        "test_value": 1.03,
+        "perceptual_distance": 4.3537,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.03,
+        "test_value": 1.02,
+        "perceptual_distance": 4.3963,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 1.04,
+        "test_value": 1.01,
+        "perceptual_distance": 4.439,
+        "noticeable": true
+      }
+    ]
+  },
+  "I_spectral": {
+    "reference_value": 1.8,
+    "jnd_up": 0.54,
+    "jnd_down": 0.54,
+    "jnd_avg": 0.54,
+    "sweep": [
+      {
+        "direction": "up",
+        "delta": 0.01,
+        "test_value": 1.81,
+        "perceptual_distance": 0.0185,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.02,
+        "test_value": 1.82,
+        "perceptual_distance": 0.037,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.03,
+        "test_value": 1.83,
+        "perceptual_distance": 0.0556,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.04,
+        "test_value": 1.84,
+        "perceptual_distance": 0.0741,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.05,
+        "test_value": 1.85,
+        "perceptual_distance": 0.0926,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.06,
+        "test_value": 1.86,
+        "perceptual_distance": 0.1111,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.07,
+        "test_value": 1.87,
+        "perceptual_distance": 0.1296,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.08,
+        "test_value": 1.88,
+        "perceptual_distance": 0.1481,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.09,
+        "test_value": 1.89,
+        "perceptual_distance": 0.1667,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.1,
+        "test_value": 1.9,
+        "perceptual_distance": 0.1852,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.11,
+        "test_value": 1.91,
+        "perceptual_distance": 0.2037,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.12,
+        "test_value": 1.92,
+        "perceptual_distance": 0.2222,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.13,
+        "test_value": 1.93,
+        "perceptual_distance": 0.2407,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.14,
+        "test_value": 1.94,
+        "perceptual_distance": 0.2593,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.15,
+        "test_value": 1.95,
+        "perceptual_distance": 0.2778,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.16,
+        "test_value": 1.96,
+        "perceptual_distance": 0.2963,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.17,
+        "test_value": 1.97,
+        "perceptual_distance": 0.3148,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.18,
+        "test_value": 1.98,
+        "perceptual_distance": 0.3333,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.19,
+        "test_value": 1.99,
+        "perceptual_distance": 0.3519,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.2,
+        "test_value": 2.0,
+        "perceptual_distance": 0.3704,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.21,
+        "test_value": 2.01,
+        "perceptual_distance": 0.3889,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.22,
+        "test_value": 2.02,
+        "perceptual_distance": 0.4074,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.23,
+        "test_value": 2.03,
+        "perceptual_distance": 0.4259,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.24,
+        "test_value": 2.04,
+        "perceptual_distance": 0.4444,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.25,
+        "test_value": 2.05,
+        "perceptual_distance": 0.463,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.26,
+        "test_value": 2.06,
+        "perceptual_distance": 0.4815,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.27,
+        "test_value": 2.07,
+        "perceptual_distance": 0.5,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.28,
+        "test_value": 2.08,
+        "perceptual_distance": 0.5185,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.29,
+        "test_value": 2.09,
+        "perceptual_distance": 0.537,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.3,
+        "test_value": 2.1,
+        "perceptual_distance": 0.5556,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.31,
+        "test_value": 2.11,
+        "perceptual_distance": 0.5741,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.32,
+        "test_value": 2.12,
+        "perceptual_distance": 0.5926,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.33,
+        "test_value": 2.13,
+        "perceptual_distance": 0.6111,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.34,
+        "test_value": 2.14,
+        "perceptual_distance": 0.6296,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.35,
+        "test_value": 2.15,
+        "perceptual_distance": 0.6481,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.36,
+        "test_value": 2.16,
+        "perceptual_distance": 0.6667,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.37,
+        "test_value": 2.17,
+        "perceptual_distance": 0.6852,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.38,
+        "test_value": 2.18,
+        "perceptual_distance": 0.7037,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.39,
+        "test_value": 2.19,
+        "perceptual_distance": 0.7222,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.4,
+        "test_value": 2.2,
+        "perceptual_distance": 0.7407,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.41,
+        "test_value": 2.21,
+        "perceptual_distance": 0.7593,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.42,
+        "test_value": 2.22,
+        "perceptual_distance": 0.7778,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.43,
+        "test_value": 2.23,
+        "perceptual_distance": 0.7963,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.44,
+        "test_value": 2.24,
+        "perceptual_distance": 0.8148,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.45,
+        "test_value": 2.25,
+        "perceptual_distance": 0.8333,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.46,
+        "test_value": 2.26,
+        "perceptual_distance": 0.8519,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.47,
+        "test_value": 2.27,
+        "perceptual_distance": 0.8704,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.48,
+        "test_value": 2.28,
+        "perceptual_distance": 0.8889,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.49,
+        "test_value": 2.29,
+        "perceptual_distance": 0.9074,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.5,
+        "test_value": 2.3,
+        "perceptual_distance": 0.9259,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.51,
+        "test_value": 2.31,
+        "perceptual_distance": 0.9444,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.52,
+        "test_value": 2.32,
+        "perceptual_distance": 0.963,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.53,
+        "test_value": 2.33,
+        "perceptual_distance": 0.9815,
+        "noticeable": false
+      },
+      {
+        "direction": "up",
+        "delta": 0.54,
+        "test_value": 2.34,
+        "perceptual_distance": 1.0,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.55,
+        "test_value": 2.35,
+        "perceptual_distance": 1.0185,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.56,
+        "test_value": 2.36,
+        "perceptual_distance": 1.037,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.57,
+        "test_value": 2.37,
+        "perceptual_distance": 1.0556,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.58,
+        "test_value": 2.38,
+        "perceptual_distance": 1.0741,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.59,
+        "test_value": 2.39,
+        "perceptual_distance": 1.0926,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.6,
+        "test_value": 2.4,
+        "perceptual_distance": 1.1111,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.61,
+        "test_value": 2.41,
+        "perceptual_distance": 1.1296,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.62,
+        "test_value": 2.42,
+        "perceptual_distance": 1.1481,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.63,
+        "test_value": 2.43,
+        "perceptual_distance": 1.1667,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.64,
+        "test_value": 2.44,
+        "perceptual_distance": 1.1852,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.65,
+        "test_value": 2.45,
+        "perceptual_distance": 1.2037,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.66,
+        "test_value": 2.46,
+        "perceptual_distance": 1.2222,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.67,
+        "test_value": 2.47,
+        "perceptual_distance": 1.2407,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.68,
+        "test_value": 2.48,
+        "perceptual_distance": 1.2593,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.69,
+        "test_value": 2.49,
+        "perceptual_distance": 1.2778,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.7,
+        "test_value": 2.5,
+        "perceptual_distance": 1.2963,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.71,
+        "test_value": 2.51,
+        "perceptual_distance": 1.3148,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.72,
+        "test_value": 2.52,
+        "perceptual_distance": 1.3333,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.73,
+        "test_value": 2.53,
+        "perceptual_distance": 1.3519,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.74,
+        "test_value": 2.54,
+        "perceptual_distance": 1.3704,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.75,
+        "test_value": 2.55,
+        "perceptual_distance": 1.3889,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.76,
+        "test_value": 2.56,
+        "perceptual_distance": 1.4074,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.77,
+        "test_value": 2.57,
+        "perceptual_distance": 1.4259,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.78,
+        "test_value": 2.58,
+        "perceptual_distance": 1.4444,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.79,
+        "test_value": 2.59,
+        "perceptual_distance": 1.463,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.8,
+        "test_value": 2.6,
+        "perceptual_distance": 1.4815,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.81,
+        "test_value": 2.61,
+        "perceptual_distance": 1.5,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.82,
+        "test_value": 2.62,
+        "perceptual_distance": 1.5185,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.83,
+        "test_value": 2.63,
+        "perceptual_distance": 1.537,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.84,
+        "test_value": 2.64,
+        "perceptual_distance": 1.5556,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.85,
+        "test_value": 2.65,
+        "perceptual_distance": 1.5741,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.86,
+        "test_value": 2.66,
+        "perceptual_distance": 1.5926,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.87,
+        "test_value": 2.67,
+        "perceptual_distance": 1.6111,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.88,
+        "test_value": 2.68,
+        "perceptual_distance": 1.6296,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.89,
+        "test_value": 2.69,
+        "perceptual_distance": 1.6481,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.9,
+        "test_value": 2.7,
+        "perceptual_distance": 1.6667,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.91,
+        "test_value": 2.71,
+        "perceptual_distance": 1.6852,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.92,
+        "test_value": 2.72,
+        "perceptual_distance": 1.7037,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.93,
+        "test_value": 2.73,
+        "perceptual_distance": 1.7222,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.94,
+        "test_value": 2.74,
+        "perceptual_distance": 1.7407,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.95,
+        "test_value": 2.75,
+        "perceptual_distance": 1.7593,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.96,
+        "test_value": 2.76,
+        "perceptual_distance": 1.7778,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.97,
+        "test_value": 2.77,
+        "perceptual_distance": 1.7963,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.98,
+        "test_value": 2.78,
+        "perceptual_distance": 1.8148,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 0.99,
+        "test_value": 2.79,
+        "perceptual_distance": 1.8333,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.0,
+        "test_value": 2.8,
+        "perceptual_distance": 1.8519,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.01,
+        "test_value": 2.81,
+        "perceptual_distance": 1.8704,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.02,
+        "test_value": 2.82,
+        "perceptual_distance": 1.8889,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.03,
+        "test_value": 2.83,
+        "perceptual_distance": 1.9074,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.04,
+        "test_value": 2.84,
+        "perceptual_distance": 1.9259,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.05,
+        "test_value": 2.85,
+        "perceptual_distance": 1.9444,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.06,
+        "test_value": 2.86,
+        "perceptual_distance": 1.963,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.07,
+        "test_value": 2.87,
+        "perceptual_distance": 1.9815,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.08,
+        "test_value": 2.88,
+        "perceptual_distance": 2.0,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.09,
+        "test_value": 2.89,
+        "perceptual_distance": 2.0185,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.1,
+        "test_value": 2.9,
+        "perceptual_distance": 2.037,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.11,
+        "test_value": 2.91,
+        "perceptual_distance": 2.0556,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.12,
+        "test_value": 2.92,
+        "perceptual_distance": 2.0741,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.13,
+        "test_value": 2.93,
+        "perceptual_distance": 2.0926,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.14,
+        "test_value": 2.94,
+        "perceptual_distance": 2.1111,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.15,
+        "test_value": 2.95,
+        "perceptual_distance": 2.1296,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.16,
+        "test_value": 2.96,
+        "perceptual_distance": 2.1481,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.17,
+        "test_value": 2.97,
+        "perceptual_distance": 2.1667,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.18,
+        "test_value": 2.98,
+        "perceptual_distance": 2.1852,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.19,
+        "test_value": 2.99,
+        "perceptual_distance": 2.2037,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.2,
+        "test_value": 3.0,
+        "perceptual_distance": 2.2222,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.21,
+        "test_value": 3.01,
+        "perceptual_distance": 2.2407,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.22,
+        "test_value": 3.02,
+        "perceptual_distance": 2.2593,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.23,
+        "test_value": 3.03,
+        "perceptual_distance": 2.2778,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.24,
+        "test_value": 3.04,
+        "perceptual_distance": 2.2963,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.25,
+        "test_value": 3.05,
+        "perceptual_distance": 2.3148,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.26,
+        "test_value": 3.06,
+        "perceptual_distance": 2.3333,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.27,
+        "test_value": 3.07,
+        "perceptual_distance": 2.3519,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.28,
+        "test_value": 3.08,
+        "perceptual_distance": 2.3704,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.29,
+        "test_value": 3.09,
+        "perceptual_distance": 2.3889,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.3,
+        "test_value": 3.1,
+        "perceptual_distance": 2.4074,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.31,
+        "test_value": 3.11,
+        "perceptual_distance": 2.4259,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.32,
+        "test_value": 3.12,
+        "perceptual_distance": 2.4444,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.33,
+        "test_value": 3.13,
+        "perceptual_distance": 2.463,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.34,
+        "test_value": 3.14,
+        "perceptual_distance": 2.4815,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.35,
+        "test_value": 3.15,
+        "perceptual_distance": 2.5,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.36,
+        "test_value": 3.16,
+        "perceptual_distance": 2.5185,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.37,
+        "test_value": 3.17,
+        "perceptual_distance": 2.537,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.38,
+        "test_value": 3.18,
+        "perceptual_distance": 2.5556,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.39,
+        "test_value": 3.19,
+        "perceptual_distance": 2.5741,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.4,
+        "test_value": 3.2,
+        "perceptual_distance": 2.5926,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.41,
+        "test_value": 3.21,
+        "perceptual_distance": 2.6111,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.42,
+        "test_value": 3.22,
+        "perceptual_distance": 2.6296,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.43,
+        "test_value": 3.23,
+        "perceptual_distance": 2.6481,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.44,
+        "test_value": 3.24,
+        "perceptual_distance": 2.6667,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.45,
+        "test_value": 3.25,
+        "perceptual_distance": 2.6852,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.46,
+        "test_value": 3.26,
+        "perceptual_distance": 2.7037,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.47,
+        "test_value": 3.27,
+        "perceptual_distance": 2.7222,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.48,
+        "test_value": 3.28,
+        "perceptual_distance": 2.7407,
+        "noticeable": true
+      },
+      {
+        "direction": "up",
+        "delta": 1.49,
+        "test_value": 3.29,
+        "perceptual_distance": 2.7593,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.01,
+        "test_value": 1.79,
+        "perceptual_distance": 0.0185,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.02,
+        "test_value": 1.78,
+        "perceptual_distance": 0.037,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.03,
+        "test_value": 1.77,
+        "perceptual_distance": 0.0556,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.04,
+        "test_value": 1.76,
+        "perceptual_distance": 0.0741,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.05,
+        "test_value": 1.75,
+        "perceptual_distance": 0.0926,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.06,
+        "test_value": 1.74,
+        "perceptual_distance": 0.1111,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.07,
+        "test_value": 1.73,
+        "perceptual_distance": 0.1296,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.08,
+        "test_value": 1.72,
+        "perceptual_distance": 0.1481,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.09,
+        "test_value": 1.71,
+        "perceptual_distance": 0.1667,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.1,
+        "test_value": 1.7,
+        "perceptual_distance": 0.1852,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.11,
+        "test_value": 1.69,
+        "perceptual_distance": 0.2037,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.12,
+        "test_value": 1.68,
+        "perceptual_distance": 0.2222,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.13,
+        "test_value": 1.67,
+        "perceptual_distance": 0.2407,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.14,
+        "test_value": 1.66,
+        "perceptual_distance": 0.2593,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.15,
+        "test_value": 1.65,
+        "perceptual_distance": 0.2778,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.16,
+        "test_value": 1.64,
+        "perceptual_distance": 0.2963,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.17,
+        "test_value": 1.63,
+        "perceptual_distance": 0.3148,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.18,
+        "test_value": 1.62,
+        "perceptual_distance": 0.3333,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.19,
+        "test_value": 1.61,
+        "perceptual_distance": 0.3519,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.2,
+        "test_value": 1.6,
+        "perceptual_distance": 0.3704,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.21,
+        "test_value": 1.59,
+        "perceptual_distance": 0.3889,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.22,
+        "test_value": 1.58,
+        "perceptual_distance": 0.4074,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.23,
+        "test_value": 1.57,
+        "perceptual_distance": 0.4259,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.24,
+        "test_value": 1.56,
+        "perceptual_distance": 0.4444,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.25,
+        "test_value": 1.55,
+        "perceptual_distance": 0.463,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.26,
+        "test_value": 1.54,
+        "perceptual_distance": 0.4815,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.27,
+        "test_value": 1.53,
+        "perceptual_distance": 0.5,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.28,
+        "test_value": 1.52,
+        "perceptual_distance": 0.5185,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.29,
+        "test_value": 1.51,
+        "perceptual_distance": 0.537,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.3,
+        "test_value": 1.5,
+        "perceptual_distance": 0.5556,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.31,
+        "test_value": 1.49,
+        "perceptual_distance": 0.5741,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.32,
+        "test_value": 1.48,
+        "perceptual_distance": 0.5926,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.33,
+        "test_value": 1.47,
+        "perceptual_distance": 0.6111,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.34,
+        "test_value": 1.46,
+        "perceptual_distance": 0.6296,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.35,
+        "test_value": 1.45,
+        "perceptual_distance": 0.6481,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.36,
+        "test_value": 1.44,
+        "perceptual_distance": 0.6667,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.37,
+        "test_value": 1.43,
+        "perceptual_distance": 0.6852,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.38,
+        "test_value": 1.42,
+        "perceptual_distance": 0.7037,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.39,
+        "test_value": 1.41,
+        "perceptual_distance": 0.7222,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.4,
+        "test_value": 1.4,
+        "perceptual_distance": 0.7407,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.41,
+        "test_value": 1.39,
+        "perceptual_distance": 0.7593,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.42,
+        "test_value": 1.38,
+        "perceptual_distance": 0.7778,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.43,
+        "test_value": 1.37,
+        "perceptual_distance": 0.7963,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.44,
+        "test_value": 1.36,
+        "perceptual_distance": 0.8148,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.45,
+        "test_value": 1.35,
+        "perceptual_distance": 0.8333,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.46,
+        "test_value": 1.34,
+        "perceptual_distance": 0.8519,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.47,
+        "test_value": 1.33,
+        "perceptual_distance": 0.8704,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.48,
+        "test_value": 1.32,
+        "perceptual_distance": 0.8889,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.49,
+        "test_value": 1.31,
+        "perceptual_distance": 0.9074,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.5,
+        "test_value": 1.3,
+        "perceptual_distance": 0.9259,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.51,
+        "test_value": 1.29,
+        "perceptual_distance": 0.9444,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.52,
+        "test_value": 1.28,
+        "perceptual_distance": 0.963,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.53,
+        "test_value": 1.27,
+        "perceptual_distance": 0.9815,
+        "noticeable": false
+      },
+      {
+        "direction": "down",
+        "delta": 0.54,
+        "test_value": 1.26,
+        "perceptual_distance": 1.0,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.55,
+        "test_value": 1.25,
+        "perceptual_distance": 1.0185,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.56,
+        "test_value": 1.24,
+        "perceptual_distance": 1.037,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.57,
+        "test_value": 1.23,
+        "perceptual_distance": 1.0556,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.58,
+        "test_value": 1.22,
+        "perceptual_distance": 1.0741,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.59,
+        "test_value": 1.21,
+        "perceptual_distance": 1.0926,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.6,
+        "test_value": 1.2,
+        "perceptual_distance": 1.1111,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.61,
+        "test_value": 1.19,
+        "perceptual_distance": 1.1296,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.62,
+        "test_value": 1.18,
+        "perceptual_distance": 1.1481,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.63,
+        "test_value": 1.17,
+        "perceptual_distance": 1.1667,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.64,
+        "test_value": 1.16,
+        "perceptual_distance": 1.1852,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.65,
+        "test_value": 1.15,
+        "perceptual_distance": 1.2037,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.66,
+        "test_value": 1.14,
+        "perceptual_distance": 1.2222,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.67,
+        "test_value": 1.13,
+        "perceptual_distance": 1.2407,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.68,
+        "test_value": 1.12,
+        "perceptual_distance": 1.2593,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.69,
+        "test_value": 1.11,
+        "perceptual_distance": 1.2778,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.7,
+        "test_value": 1.1,
+        "perceptual_distance": 1.2963,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.71,
+        "test_value": 1.09,
+        "perceptual_distance": 1.3148,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.72,
+        "test_value": 1.08,
+        "perceptual_distance": 1.3333,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.73,
+        "test_value": 1.07,
+        "perceptual_distance": 1.3519,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.74,
+        "test_value": 1.06,
+        "perceptual_distance": 1.3704,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.75,
+        "test_value": 1.05,
+        "perceptual_distance": 1.3889,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.76,
+        "test_value": 1.04,
+        "perceptual_distance": 1.4074,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.77,
+        "test_value": 1.03,
+        "perceptual_distance": 1.4259,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.78,
+        "test_value": 1.02,
+        "perceptual_distance": 1.4444,
+        "noticeable": true
+      },
+      {
+        "direction": "down",
+        "delta": 0.79,
+        "test_value": 1.01,
+        "perceptual_distance": 1.463,
+        "noticeable": true
+      }
+    ]
+  }
+}

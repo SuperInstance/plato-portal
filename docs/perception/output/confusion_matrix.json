@@ -1,0 +1,137 @@
+{
+  "labels": [
+    "Hindustani",
+    "Carnatic",
+    "Arabic",
+    "Turkish",
+    "Javanese",
+    "Balinese",
+    "Gagaku",
+    "Chinese",
+    "West African",
+    "Western ET"
+  ],
+  "matrix": {
+    "Hindustani": {
+      "Hindustani": 10,
+      "Carnatic": 0,
+      "Arabic": 0,
+      "Turkish": 0,
+      "Javanese": 0,
+      "Balinese": 0,
+      "Gagaku": 0,
+      "Chinese": 0,
+      "West African": 0,
+      "Western ET": 0
+    },
+    "Carnatic": {
+      "Hindustani": 0,
+      "Carnatic": 10,
+      "Arabic": 0,
+      "Turkish": 0,
+      "Javanese": 0,
+      "Balinese": 0,
+      "Gagaku": 0,
+      "Chinese": 0,
+      "West African": 0,
+      "Western ET": 0
+    },
+    "Arabic": {
+      "Hindustani": 0,
+      "Carnatic": 0,
+      "Arabic": 9,
+      "Turkish": 1,
+      "Javanese": 0,
+      "Balinese": 0,
+      "Gagaku": 0,
+      "Chinese": 0,
+      "West African": 0,
+      "Western ET": 0
+    },
+    "Turkish": {
+      "Hindustani": 0,
+      "Carnatic": 0,
+      "Arabic": 1,
+      "Turkish": 9,
+      "Javanese": 0,
+      "Balinese": 0,
+      "Gagaku": 0,
+      "Chinese": 0,
+      "West African": 0,
+      "Western ET": 0
+    },
+    "Javanese": {
+      "Hindustani": 0,
+      "Carnatic": 0,
+      "Arabic": 0,
+      "Turkish": 0,
+      "Javanese": 10,
+      "Balinese": 0,
+      "Gagaku": 0,
+      "Chinese": 0,
+      "West African": 0,
+      "Western ET": 0
+    },
+    "Balinese": {
+      "Hindustani": 0,
+      "Carnatic": 0,
+      "Arabic": 0,
+      "Turkish": 0,
+      "Javanese": 0,
+      "Balinese": 10,
+      "Gagaku": 0,
+      "Chinese": 0,
+      "West African": 0,
+      "Western ET": 0
+    },
+    "Gagaku": {
+      "Hindustani": 0,
+      "Carnatic": 0,
+      "Arabic": 0,
+      "Turkish": 0,
+      "Javanese": 0,
+      "Balinese": 0,
+      "Gagaku": 10,
+      "Chinese": 0,
+      "West African": 0,
+      "Western ET": 0
+    },
+    "Chinese": {
+      "Hindustani": 0,
+      "Carnatic": 0,
+      "Arabic": 0,
+      "Turkish": 0,
+      "Javanese": 0,
+      "Balinese": 0,
+      "Gagaku": 0,
+      "Chinese": 10,
+      "West African": 0,
+      "Western ET": 0
+    },
+    "West African": {
+      "Hindustani": 0,
+      "Carnatic": 0,
+      "Arabic": 0,
+      "Turkish": 0,
+      "Javanese": 0,
+      "Balinese": 0,
+      "Gagaku": 0,
+      "Chinese": 0,
+      "West African": 10,
+      "Western ET": 0
+    },
+    "Western ET": {
+      "Hindustani": 0,
+      "Carnatic": 0,
+      "Arabic": 0,
+      "Turkish": 0,
+      "Javanese": 0,
+      "Balinese": 0,
+      "Gagaku": 0,
+      "Chinese": 0,
+      "West African": 0,
+      "Western ET": 10
+    }
+  },
+  "note": "Rows = true tradition, Columns = predicted tradition"
+}
