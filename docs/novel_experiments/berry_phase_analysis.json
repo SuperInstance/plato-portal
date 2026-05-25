@@ -1,0 +1,86 @@
+{
+  "berry_phase_cents": 23.46,
+  "initial_c_hz": 261.63,
+  "final_c_hz": 265.1995,
+  "pythagorean_comma_ratio": 1.013643,
+  "chords": [
+    {
+      "note": "C",
+      "frequency_just": 261.63,
+      "frequency_et": 261.63,
+      "cents_deviation": 0.0
+    },
+    {
+      "note": "G",
+      "frequency_just": 392.445,
+      "frequency_et": 392.0021,
+      "cents_deviation": 1.96
+    },
+    {
+      "note": "D",
+      "frequency_just": 294.3338,
+      "frequency_et": 293.6697,
+      "cents_deviation": 3.91
+    },
+    {
+      "note": "A",
+      "frequency_just": 441.5006,
+      "frequency_et": 440.0075,
+      "cents_deviation": 5.87
+    },
+    {
+      "note": "E",
+      "frequency_just": 331.1255,
+      "frequency_et": 329.6331,
+      "cents_deviation": 7.82
+    },
+    {
+      "note": "B",
+      "frequency_just": 496.6882,
+      "frequency_et": 493.8917,
+      "cents_deviation": 9.78
+    },
+    {
+      "note": "F#",
+      "frequency_just": 372.5162,
+      "frequency_et": 370.0007,
+      "cents_deviation": 11.73
+    },
+    {
+      "note": "C#",
+      "frequency_just": 279.3871,
+      "frequency_et": 277.1873,
+      "cents_deviation": 13.69
+    },
+    {
+      "note": "G#",
+      "frequency_just": 419.0807,
+      "frequency_et": 415.3117,
+      "cents_deviation": 15.64
+    },
+    {
+      "note": "D#",
+      "frequency_just": 314.3105,
+      "frequency_et": 311.1323,
+      "cents_deviation": 17.6
+    },
+    {
+      "note": "A#",
+      "frequency_just": 471.4658,
+      "frequency_et": 466.1717,
+      "cents_deviation": 19.55
+    },
+    {
+      "note": "F",
+      "frequency_just": 353.5993,
+      "frequency_et": 349.2342,
+      "cents_deviation": 21.51
+    },
+    {
+      "note": "C_final",
+      "frequency_just": 265.1995,
+      "frequency_et": 523.26,
+      "cents_deviation": -1176.54
+    }
+  ]
+}
