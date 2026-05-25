@@ -2,182 +2,232 @@
 
 > **PLATO — Rooms that think. Tiles that remember. Agents that learn.**
 
-SuperInstance is a micro-model ecosystem that distills LLM knowledge into deployable, verifiable, constraint-safe systems. We build rooms where agents think, tiles that carry verified knowledge, and the mathematical substrate that makes it all provably correct.
+SuperInstance builds constraint-aware systems. We work on multi-agent orchestration, knowledge meshes, neural compression, constraint solving, and the math that connects them all.
 
-## What is PLATO?
+## How It Works
 
-PLATO is a **constraint-aware knowledge mesh**:
+### PLATO Knowledge Mesh
 
-- **Rooms** — Shared spaces where agents deliberate, each with local context and observations of others
-- **Tiles** — Units of verified knowledge, scored on novelty × correctness × completeness × depth
-- **Officers** — Long-lived agents that maintain rooms and enforce conservation laws
-- **Deadband** — Only propagate when change exceeds tolerance (no wasted computation)
+```python
+# A room is a shared space where agents work together
+room = plato.create_room("constraint-analysis")
 
-The math is invisible. You just complete the room task.
+# Tiles are units of knowledge, scored on 4 axes
+tile = room.add_tile(
+    content="Jazz tradition: harmonic_tension=3.2, rhythmic_complexity=4.1",
+    scores={"novelty": 0.8, "correctness": 0.9, "completeness": 0.7, "depth": 0.6}
+)
 
-## Ecosystem Architecture
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     SuperInstance Ecosystem                  │
-├──────────────┬──────────────┬───────────────┬───────────────┤
-│  Core Math   │  VM & Safety │   Training    │   Fleet Ops   │
-├──────────────┼──────────────┼───────────────┼───────────────┤
-│ constraint-  │  flux-vm-v3  │ plato-core    │  fleet-stack  │
-│  substrate   │  (60 opcodes,│ tensor-spline │  (docker      │
-│  (5 primitives│   JIT, proof │ (SplineLinear │   compose)    │
-│   Rust/C/Py) │   certs)     │  compression) │               │
-│              │              │               │  fleet-murmur │
-│ constraint-  │ flux-verify- │ eisenstein-   │  (fleet       │
-│  theory-core │  api (natural│ embed (5-layer│   services)   │
-│  (unified    │  language    │  matching     │               │
-│   theory)    │  verification│  cascade)     │  cocapn-cli   │
-│              │  API)        │               │  (terminal    │
-│ deadband-rs  │              │ triplet-miner │   aesthetic)  │
-│  (fleet      │ flux-check-js│  (git-powered │               │
-│   compress)  │  (TypeScript │  contrastive  │  cocapn-health│
-│              │   checking)  │  learning)    │  (monitoring) │
-│ holonomy-    │              │               │               │
-│  consensus   │ flux-engine-c│ flux-lib-py   │  quality-gate-│
-│  (GL(9) trust│  (C header)  │  (unified     │  stream       │
-│   verify)    │              │   Python)     │  (tile        │
-│              │              │               │   scoring)    │
-│ fleet-math-c │              │ flux-genome-py│               │
-│  (SIMD math) │              │  (gene expr)  │  swarm-rooms  │
-│              │              │               │  (multi-agent │
-│ superinstance│              │ flux-hyper-   │   simulation) │
-│  -ffi (FFI/  │              │  bolic-py     │               │
-│  WASM)       │              │  (Poincaré)   │               │
-├──────────────┴──────────────┴───────────────┴───────────────┤
-│                     Web & Visualization                      │
-├──────────────────────────────────────────────────────────────┤
-│  constraint-theory-web — 50 interactive math simulations      │
-│  superinstance-wiki — Fleet knowledge base & catalog          │
-├──────────────────────────────────────────────────────────────┤
-│                     Audio & Creative                          │
-├──────────────────────────────────────────────────────────────┤
-│  constraint-audio • constraint-synth • counterpoint-engine    │
-│  constraint-mux • jazz-voicing-engine • groove-analyzer       │
-│  flux-tensor-midi • holonomy-harmony • constraint-dialect     │
-└──────────────────────────────────────────────────────────────┘
+# Officers maintain rooms and enforce conservation
+officer = room.assign_officer("conservation-checker")
 ```
 
-## Core Repositories
+Rooms hold context. Tiles hold knowledge. Officers keep things consistent. Deadband filtering means you only propagate when something actually changes.
 
-### Math Foundation
+### Constraint Solving (C)
 
-| Repo | Language | Description |
-|------|----------|-------------|
-| [constraint-substrate](https://github.com/SuperInstance/constraint-substrate) | Rust, C, Python | 5 irreducible constraint primitives — lattice snap, funnel, holonomy, rigidity, consensus |
-| [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core) | Rust | Unified geometric constraint theory — Eisenstein lattices, deadband funnels, Laman rigidity |
-| [deadband-rs](https://github.com/SuperInstance/deadband-rs) | Rust | Deadband detection and compression — BMA, Fibonacci splines, Eisenstein snap |
-| [holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus) | Rust | GL(9) zero-holonomy consensus — cycle-based trust verification |
-| [fleet-math-c](https://github.com/SuperInstance/fleet-math-c) | C | SIMD-accelerated constraint math — 64 bytes = 1 cache line = 1 constraint op |
-| [superinstance-ffi](https://github.com/SuperInstance/superinstance-ffi) | C, WASM | Unified C FFI and WASM bindings for all math primitives |
+```c
+#define FLUX_ENGINE_IMPLEMENTATION
+#include "flux_engine.h"
 
-### VM & Constraint Safety
+// Check a constraint — runs at 250M checks/sec
+FluxResult r = flux_check(&engine, FLUX_PRESET_CONSERVATION, input);
 
-| Repo | Language | Description |
-|------|----------|-------------|
-| [flux-vm-v3](https://github.com/SuperInstance/flux-vm-v3) | Rust | Proof-carrying, SIMD-native, terminating constraint VM — 60 opcodes, 179M checks/sec |
-| [flux-verify-api](https://github.com/SuperInstance/flux-verify-api) | Rust | Natural language verification API — prove/disprove claims with physics traces |
-| [flux-engine-c](https://github.com/SuperInstance/flux-engine-c) | C | Single-header constraint engine — 250M checks/sec, 10 industry presets |
-| [flux-check-js](https://github.com/SuperInstance/flux-check-js) | TypeScript | Zero-dep constraint checking, fracture-coalesce, sediment layers |
-| [flux-lib-py](https://github.com/SuperInstance/flux-lib-py) | Python | Unified constraint engine — 83 tests, 10 presets, thermodynamics |
+// Fracture-coalesce: break constraints into independent groups
+size_t groups = flux_fracture(&engine, constraints, n);
+```
 
-### Training & Embedding
+### Neural Compression (Python)
 
-| Repo | Language | Description |
-|------|----------|-------------|
-| [plato-core](https://github.com/SuperInstance/plato-core) | Python | Base types + mesh registry for the PLATO knowledge system |
-| [tensor-spline](https://github.com/SuperInstance/tensor-spline) | Python | SplineLinear neural compression — 16,384:1 ratio on 512×512 layers |
-| [eisenstein-embed](https://github.com/SuperInstance/eisenstein-embed) | Python | 5-layer matching cascade — 71.2% hit rate, 653x smaller than Model2Vec |
-| [triplet-miner](https://github.com/SuperInstance/triplet-miner) | Python | Mine (anchor, positive, negative) triplets from git history |
-| [swarm-rooms](https://github.com/SuperInstance/swarm-rooms) | Python | GPU-accelerated multi-agent room simulation with CRDT merge |
+```python
+from tensor_spline import SplineLinear
 
-### Fleet Operations
+# Replace a dense layer — see tensor-spline repo for benchmarks
+layer = SplineLinear(512, 512, compression_ratio=16)
+output = layer(input_tensor)
+```
 
-| Repo | Language | Description |
-|------|----------|-------------|
-| [fleet-stack](https://github.com/SuperInstance/fleet-stack) | Docker | One-command fleet deployment — `docker compose up -d` |
-| [cocapn-cli](https://github.com/SuperInstance/cocapn-cli) | Rust | Fleet CLI theme — the Abyssal Terminal aesthetic |
-| [cocapn-health](https://github.com/SuperInstance/cocapn-health) | Python | Fleet health monitoring — vessel status, heartbeat, observability |
-| [quality-gate-stream](https://github.com/SuperInstance/quality-gate-stream) | Python | Tile quality scoring — novelty × correctness × completeness × depth |
-| [forgemaster](https://github.com/SuperInstance/forgemaster) | Rust | Constraint-aware agentic compiler — assembles optimal components with proofs |
-
-### Audio & Creative (Constraint Theory in Practice)
-
-| Repo | Description |
-|------|-------------|
-| [constraint-synth](https://github.com/SuperInstance/constraint-synth) | Waveshape IS lattice geometry — constraint-theory synthesizer |
-| [counterpoint-engine](https://github.com/SuperInstance/counterpoint-engine) | Species counterpoint as constraint satisfaction with tensor-MIDI output |
-| [jazz-voicing-engine](https://github.com/SuperInstance/jazz-voicing-engine) | Jazz piano voicing, comping, and walking bass generation |
-| [flux-tensor-midi](https://github.com/SuperInstance/flux-tensor-midi) | 4D tensor MIDI — 6 languages, Eisenstein snap, INT8 saturation |
-| [groove-analyzer](https://github.com/SuperInstance/groove-analyzer) | Microtiming → deadband analysis — proves groove IS the deadband funnel |
-| [holonomy-harmony](https://github.com/SuperInstance/holonomy-harmony) | Chord progression analysis via holonomy — detect modulations and violations |
-
-### Web & Visualization
-
-| Repo | Description |
-|------|-------------|
-| [constraint-theory-web](https://github.com/SuperInstance/constraint-theory-web) | 50 interactive simulations — click once, understand forever |
-| [superinstance-wiki](https://github.com/SuperInstance/superinstance-wiki) | Fleet knowledge base — catalog, indexes, visual exploration |
-
-## Key Results
-
-| Result | Detail |
-|--------|--------|
-| **Eisenstein encoder** | 71.2% hit rate, 653× smaller than Model2Vec |
-| **SplineLinear compression** | 16,384:1 ratio on 512×512 layers |
-| **Bitvector matching** | 93.8% typo accuracy, zero ML dependencies |
-| **ONNX inference** | 58,648 qps on CPU (700× faster than PyTorch) |
-| **FLUX VM throughput** | 179M constraint checks/sec (Zen 5, JIT) |
-| **C engine throughput** | 250M constraint checks/sec (single-header) |
-| **Conservation law** | γ + H = 1.283 − 0.159 × log(V) ± ε |
-
-## Quick Start
-
-### Run the fleet locally
+### Fleet Deployment
 
 ```bash
 git clone https://github.com/SuperInstance/fleet-stack
 cd fleet-stack
-export DEEPINFRA_KEY=your-key
-docker compose up -d
+docker compose up -d   # fleet running
 ```
 
-### Use constraint primitives
+## Ecosystem Map
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                     Orchestration                            │
+│  EDDI (Java/Quarkus) · openagent (Go) · sunset-ecosystem    │
+├──────────────────────────────────────────────────────────────┤
+│                     PLATO Knowledge Rooms                    │
+│  plato-core · plato-engine · plato-mcp · cocapn-plato       │
+│  plato-training · plato-types · plato-adapters · plato-client│
+├──────────────────────────────────────────────────────────────┤
+│                     Fleet Infrastructure                     │
+│  ccc-os · cocapn-health · cocapn-glue-core · cocapn-traps   │
+│  fleet-stack · fleet-router · fleet-math-c · fleet-murmur   │
+├──────────────────────────────────────────────────────────────┤
+│                     Constraint Engines                       │
+│  constraint-theory-core (Rust) · flux-engine-c (250M/sec)   │
+│  flux-lib-py (Python) · flux-check-js (TypeScript)          │
+│  constraint-dialect (MLIR) · flux-vm-v3 (proof-carrying VM) │
+├──────────────────────────────────────────────────────────────┤
+│                     Neural & Compression                     │
+│  tensor-spline · flux-hyperbolic-py · snapkit-v2            │
+│  triplet-miner · flux-genome-py · plato-training            │
+├──────────────────────────────────────────────────────────────┤
+│                     Systems                                  │
+│  rustfs (S3-compatible storage) · SmartCRDT · deadband-rs   │
+│  webgpu-profiler · holonomy-consensus                       │
+├──────────────────────────────────────────────────────────────┤
+│                     Creative Applications                    │
+│  flux-tensor-midi · constraint-synth · jazz-voicing-engine  │
+│  groove-analyzer · holonomy-harmony · constraint-instrument │
+└──────────────────────────────────────────────────────────────┘
+```
+
+## Repositories
+
+### Orchestration & Agents
+
+| Repo | Language | What it does |
+|------|----------|-------------|
+| [EDDI](https://github.com/SuperInstance/EDDI) | Java/Quarkus | Config-driven multi-agent orchestration. JSON → agents. 5,100+ tests. |
+| [openagent](https://github.com/SuperInstance/openagent) | Go | Personal AI assistant with browser-use, coding agent, MCP support |
+| [sunset-ecosystem](https://github.com/SuperInstance/sunset-ecosystem) | Python | Trinity-architecture agents: Ethos × Pathos × Logos lifecycle |
+| [forgemaster](https://github.com/SuperInstance/forgemaster) | Go | Compiles optimal agent configurations from ecosystem components |
+| [agentic-compiler](https://github.com/SuperInstance/agentic-compiler) | — | Markdown → runtime, with swarm deliberation and A/B testing |
+| [ai-forest](https://github.com/SuperInstance/ai-forest) | — | Layered agent ecology: canopy strategists, mycelial PLATO network |
+| [luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent) | — | Creative exploration through lucid-dreaming themed rooms |
+
+### PLATO System
+
+| Repo | What it does |
+|------|-------------|
+| [plato-core](https://github.com/SuperInstance/plato-core) | Base types + mesh registry. Auto-discovers plugins via entry_points. |
+| [plato-engine](https://github.com/SuperInstance/plato-engine) | Room lifecycle: create, populate, maintain, archive |
+| [plato-mcp](https://github.com/SuperInstance/plato-mcp) | PLATO rooms as MCP tools — any MCP framework can use PLATO |
+| [cocapn-plato](https://github.com/SuperInstance/cocapn-plato) | Full PLATO integration: knowledge rooms, context, deliberation |
+| [plato-training](https://github.com/SuperInstance/plato-training) | LoRA adapter lifecycle: Active → Superseded → Retracted |
+| [plato-types](https://github.com/SuperInstance/plato-types) | Tile protocol types: lifecycle states, Lamport clocks, provenance |
+| [plato-adapters](https://github.com/SuperInstance/plato-adapters) | Connect PLATO rooms to external services |
+| [plato-client](https://github.com/SuperInstance/plato-client) | Client library for connecting to PLATO rooms |
+
+### Fleet Operations
+
+| Repo | Language | What it does |
+|------|----------|-------------|
+| [ccc-os](https://github.com/SuperInstance/ccc-os) | Python | Fleet monitoring with REST API and webhook notifications |
+| [cocapn-health](https://github.com/SuperInstance/cocapn-health) | Python | 6 health checks: HTTP, TCP, DNS, disk, memory, CPU. 43 tests. |
+| [cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core) | Rust | msgpack binary wire protocol between Keeper and Fleet |
+| [cocapn-traps](https://github.com/SuperInstance/cocapn-traps) | Python | Progressive lure prompts that improve fleet response quality |
+| [cocapn-cli](https://github.com/SuperInstance/cocapn-cli) | — | Terminal interface for fleet operations |
+| [fleet-stack](https://github.com/SuperInstance/fleet-stack) | Docker | `docker compose up -d` — full fleet |
+| [fleet-router](https://github.com/SuperInstance/fleet-router) | — | Routes queries to the cheapest model that won't break |
+| [fleet-math-c](https://github.com/SuperInstance/fleet-math-c) | C | SIMD/AVX-512 math for tile operations. 64B = 1 cache line. |
+| [holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus) | Rust | GL(9) trust verification via cycle-based consensus |
+
+### Constraint Engines
+
+| Repo | Language | What it does |
+|------|----------|-------------|
+| [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core) | Rust | Eisenstein lattices, deadband funnels, Laman rigidity, holonomy. 83 tests. |
+| [constraint-dialect](https://github.com/SuperInstance/constraint-dialect) | C++/MLIR | 6 ops, 3 types. Lowers constraints → affine → LLVM IR. |
+| [constraint-dsl](https://github.com/SuperInstance/constraint-dsl) | — | Declarative YAML-like language for constraint graphs |
+| [constraint-substrate](https://github.com/SuperInstance/constraint-substrate) | Multi | Same 5 primitives in Rust, C, and Python |
+| [flux-engine-c](https://github.com/SuperInstance/flux-engine-c) | C | `#include "flux_engine.h"` — single header, 250M checks/sec |
+| [flux-lib-py](https://github.com/SuperInstance/flux-lib-py) | Python | `from flux_lib import ConstraintEngine` — 83 tests, thermodynamics |
+| [flux-check-js](https://github.com/SuperInstance/flux-check-js) | TypeScript | Zero-dep ESM. Check, fracture-coalesce, sediment. |
+| [flux-vm-v3](https://github.com/SuperInstance/flux-vm-v3) | Rust | Proof-carrying, SIMD-native, terminating VM |
+| [flux-verify-api](https://github.com/SuperInstance/flux-verify-api) | — | Natural language verification API |
+
+### Neural & ML
+
+| Repo | What it does |
+|------|-------------|
+| [tensor-spline](https://github.com/SuperInstance/tensor-spline) | Eisenstein lattice spline layers — replace dense layers with compressed versions |
+| [snapkit-v2](https://github.com/SuperInstance/snapkit-v2) | Eisenstein A₂ lattice snap, temporal grids, spectral analysis |
+| [flux-hyperbolic-py](https://github.com/SuperInstance/flux-hyperbolic-py) | Poincaré ball geometry for model capability routing |
+| [flux-genome-py](https://github.com/SuperInstance/flux-genome-py) | 25-gene genetic expression engine |
+| [triplet-miner](https://github.com/SuperInstance/triplet-miner) | Contrastive triplets from git history |
+| [penrose-memory](https://github.com/SuperInstance/penrose-memory) | Aperiodic memory palace — navigate memories by position on a Penrose floor |
+
+### Systems
+
+| Repo | Language | What it does |
+|------|----------|-------------|
+| [rustfs](https://github.com/SuperInstance/rustfs) | Rust | S3-compatible object storage in Rust |
+| [SmartCRDT](https://github.com/SuperInstance/SmartCRDT) | — | CRDT-based state for self-improving AI |
+| [deadband-rs](https://github.com/SuperInstance/deadband-rs) | Rust | BMA, Fibonacci splines, Eisenstein snap, HPDF sampling |
+| [webgpu-profiler](https://github.com/SuperInstance/webgpu-profiler) | — | Real-time GPU monitoring and benchmarking |
+
+### Creative Applications
+
+Constraint theory applies to any structured domain. Music is where we explore this — traditions are constraint systems with discoverable geometry.
+
+| Repo | Language | What it does |
+|------|----------|-------------|
+| [flux-tensor-midi](https://github.com/SuperInstance/flux-tensor-midi) | 6 langs | 4D MIDI tensors, Eisenstein snap, INT8 saturation |
+| [flux-algebra](https://github.com/SuperInstance/flux-algebra) | Python | Harmonic rings, PLR groups, tropical harmony. 226 tests. |
+| [flux-julia](https://github.com/SuperInstance/flux-julia) | Julia | Multiple dispatch for tradition types, @conserved macro |
+| [flux-genome](https://github.com/SuperInstance/flux-genome) | Python | 25-gene musical genome, genetic evolution |
+| [flux-hyperbolic](https://github.com/SuperInstance/flux-hyperbolic) | Python | Poincaré embeddings for tradition hierarchy |
+| [constraint-audio](https://github.com/SuperInstance/constraint-audio) | Rust | Lattice oscillators, constraint filters |
+| [constraint-synth](https://github.com/SuperInstance/constraint-synth) | Python | Waveshape = lattice geometry |
+| [counterpoint-engine](https://github.com/SuperInstance/counterpoint-engine) | Python | Species counterpoint as constraint satisfaction |
+| [jazz-voicing-engine](https://github.com/SuperInstance/jazz-voicing-engine) | Python | Voicing, comping, walking bass |
+| [groove-analyzer](https://github.com/SuperInstance/groove-analyzer) | Python | Proves groove IS the deadband funnel |
+| [holonomy-harmony](https://github.com/SuperInstance/holonomy-harmony) | Python | Detect modulations and cycle violations via holonomy |
+
+### Knowledge & Docs
+
+| Repo | What it is |
+|------|-----------|
+| [docs](https://github.com/SuperInstance/docs) | Architecture docs, API references, integration guides |
+| [wiki](https://github.com/SuperInstance/wiki) | Knowledge base and cross-repo navigation |
+| [superinstance-wiki](https://github.com/SuperInstance/superinstance-wiki) | Visual exploration of all repos |
+| [fm-research](https://github.com/SuperInstance/fm-research) | Research notes from forgemaster |
+| [AI-Writings](https://github.com/SuperInstance/AI-Writings) | Creative writing — AI taking breaks to imagine project stories |
+
+## Language Map
+
+| Language | Used for | Key repos |
+|----------|----------|-----------|
+| Java | Orchestration | EDDI |
+| Go | Infra, compilers | openagent, forgemaster |
+| Rust | Safety-critical, performance | constraint-theory-core, rustfs, holonomy-consensus |
+| C | Embedded, headers | flux-engine-c, fleet-math-c |
+| C++ | Compiler infra | constraint-dialect (MLIR) |
+| Python | Research, ML, tooling | tensor-spline, flux-lib-py, sunset-ecosystem |
+| TypeScript | Web, checking | flux-check-js |
+| Julia | Math computing | flux-julia |
+| Zig | FFI | superinstance-ffi |
+
+Compiled languages share the LLVM backend.
+
+## Install
 
 ```bash
 # Rust
 cargo add constraint-theory-core
 
 # Python
-pip install plato-core tensor-spline
+pip install plato-core tensor-spline constraint-synth counterpoint-engine
 
-# C — single header
+# C — copy the header
 #include "flux_engine.h"
+
+# TypeScript
+npm install @superinstance/flux-check
+
+# Docker — run the fleet
+git clone https://github.com/SuperInstance/fleet-stack && cd fleet-stack
+docker compose up -d
 ```
-
-### Explore the math
-
-Visit [constraint-theory-web](https://github.com/SuperInstance/constraint-theory-web) for 50 interactive simulations that make the math click.
-
-## Conservation Law
-
-The core invariant that governs the entire PLATO system:
-
-> **γ + H = 1.283 − 0.159 × log(V) ± ε**
-
-Where γ is the gate coefficient (agent skill coupling), H is Helmholtz free energy, V is fleet size, and ε is the coupling tolerance. Every tile in every room is checked against this law.
-
-## Documentation
-
-- [MESH-ARCHITECTURE.md](./MESH-ARCHITECTURE.md) — Full mesh specification
-- [PITCH-DECK.md](./PITCH-DECK.md) — Project overview and vision
-- [CATALOG.md](./CATALOG.md) — Complete repo catalog
-- [INDEX.md](./INDEX.md) — Cross-referenced index
 
 ## License
 
-Each repository has its own license (typically MIT or Apache-2.0). See individual repos for details.
+Each repository has its own license. See individual repos for details.
