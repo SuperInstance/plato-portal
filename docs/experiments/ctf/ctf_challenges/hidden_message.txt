@@ -1,6 +1,6 @@
 # Hidden Message — Consonance-to-ASCII Challenge
 #
-# A WAV file (hidden_message.wav) contains a melody.
+# A WAV file (hidden_message.wav) contains a melody with 8 notes.
 # Each note was synthesized at a specific position in consonance space.
 # The consonance score of each note encodes one character of the message.
 #
@@ -8,16 +8,12 @@
 # This maps scores (0.0 - 1.0) to printable ASCII (32 - 127).
 #
 # To solve:
-# 1. Analyze the WAV file to determine each note's fundamental frequency
-# 2. Reverse-engineer the lattice position from the frequency
-# 3. Compute the consonance score for each position
-# 4. Convert scores to ASCII characters
+# 1. Use the dial interpreter to analyze the WAV and compute consonance scores
+# 2. OR: reverse-engineer positions from the audio frequencies
+# 3. Apply the formula: character = chr(round(score * 95) + 32)
+# 4. Concatenate all 8 characters
 #
-# OR: Use the dial interpreter's --log feature to get consonance scores directly.
-#
-# Hint: The melody visits 18 positions. The message is a quote about music.
-#
-# The consonance scores (for verification):
-# 0.863, 0.947, 0.863, 0.905, 0.337, 0.863, 0.905, 0.337,
-# 0.947, 0.863, 0.863, 0.905, 0.337, 0.905, 0.863, 0.905,
-# 0.947, 0.947
+# The melody plays notes at these consonance-space positions:
+# (2.392, 2.941, 0.050), (0.179, 1.205, 1.557), (0.259, 2.346, 1.791),
+# (1.090, 0.219, 0.447), (2.959, 0.906, 0.329), (1.750, 0.100, 0.787),
+# (1.944, 1.096, 0.675), (1.134, 2.773, 2.825)

@@ -156,14 +156,13 @@ def synthesize_anachronism(era_key, modern_key, seed=0):
         jitter = rng.normal(0, (1.0 - i_horiz) * 0.1) * beat_period
         t_start = beat * beat_period + jitter
 
-        s0 = int(t_start * SAMPLE_RATE)
+        dur = beat_period * rng.uniform(0.4, 1.2)
+        s0 = max(0, int(t_start * SAMPLE_RATE))
+        s1 = min(int((t_start + dur) * SAMPLE_RATE), total_samples)
         if s0 >= total_samples:
             break
-
-        dur = beat_period * rng.uniform(0.4, 1.2)
-        s1 = min(int((t_start + dur) * SAMPLE_RATE), total_samples)
         n_samp = s1 - s0
-        if n_samp <= 0:
+        if n_samp <= 10:
             continue
 
         t = np.arange(n_samp) / SAMPLE_RATE
@@ -238,7 +237,7 @@ def score_plausibility(dials, era_key, modern_key):
 
     return {
         "structure_surplus": float(surplus),
-        "beyond_random": surplus > 0,
+        "beyond_random": bool(surplus > 0),
         "distance_from_era": float(distance_from_era),
         "distance_from_modern": float(distance_from_modern),
         "plausibility": float(plausibility),

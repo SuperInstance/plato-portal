@@ -1,0 +1,286 @@
+{
+  "experiment": "time_reversal",
+  "eras": {
+    "renaissance": {
+      "dials": [
+        0.45,
+        0.55,
+        0.3
+      ],
+      "instruments": "lute_voice_organ",
+      "period": "1400-1600"
+    },
+    "baroque": {
+      "dials": [
+        0.72,
+        0.6,
+        0.4
+      ],
+      "instruments": "harpsichord_strings_organ",
+      "period": "1600-1750"
+    },
+    "classical": {
+      "dials": [
+        0.68,
+        0.65,
+        0.42
+      ],
+      "instruments": "strings_woodwinds_piano",
+      "period": "1750-1820"
+    },
+    "romantic": {
+      "dials": [
+        0.7,
+        0.62,
+        0.48
+      ],
+      "instruments": "full_orchestra",
+      "period": "1820-1900"
+    },
+    "modernist": {
+      "dials": [
+        0.45,
+        0.5,
+        0.55
+      ],
+      "instruments": "extended_techniques",
+      "period": "1900-1950"
+    }
+  },
+  "modern_styles": {
+    "hip_hop": {
+      "dials": [
+        0.4,
+        0.85,
+        0.65
+      ],
+      "features": "strong_rhythm_bass_samples"
+    },
+    "electronic": {
+      "dials": [
+        0.5,
+        0.8,
+        0.9
+      ],
+      "features": "synthesized_repetitive_drops"
+    },
+    "ai_generated": {
+      "dials": [
+        0.6,
+        0.55,
+        0.85
+      ],
+      "features": "maximal_spectral_blend"
+    },
+    "ambient": {
+      "dials": [
+        0.55,
+        0.25,
+        0.7
+      ],
+      "features": "slow_textural_drone"
+    },
+    "math_rock": {
+      "dials": [
+        0.45,
+        0.9,
+        0.5
+      ],
+      "features": "complex_time_signatures"
+    }
+  },
+  "results": [
+    {
+      "rank": 1,
+      "era": "baroque",
+      "era_period": "1600-1750",
+      "modern_style": "hip_hop",
+      "description": "Baroque Hip-Hop \u2014 Bach counterpoint + hip-hop rhythm",
+      "dials": [
+        0.4,
+        0.85,
+        0.65
+      ],
+      "scores": {
+        "structure_surplus": 0.3999999999999999,
+        "beyond_random": true,
+        "distance_from_era": 0.47686476070265454,
+        "distance_from_modern": 0.0,
+        "plausibility": 0.304627047859469,
+        "tension": 0.0
+      },
+      "wav": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_01_baroque_hip_hop.wav"
+    },
+    {
+      "rank": 2,
+      "era": "classical",
+      "era_period": "1750-1820",
+      "modern_style": "ai_generated",
+      "description": "Classical AI \u2014 Mozartean melody + AI spectral maximalism",
+      "dials": [
+        0.6,
+        0.55,
+        0.85
+      ],
+      "scores": {
+        "structure_surplus": 0.5,
+        "beyond_random": true,
+        "distance_from_era": 0.44866468548349114,
+        "distance_from_modern": 0.0,
+        "plausibility": 0.4102670629033018,
+        "tension": 0.0
+      },
+      "wav": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_02_classical_ai_generated.wav"
+    },
+    {
+      "rank": 3,
+      "era": "renaissance",
+      "era_period": "1400-1600",
+      "modern_style": "electronic",
+      "description": "Renaissance Electronic \u2014 Josquin + synthesized timbres",
+      "dials": [
+        0.5,
+        0.8,
+        0.9
+      ],
+      "scores": {
+        "structure_surplus": 0.7000000000000002,
+        "beyond_random": true,
+        "distance_from_era": 0.651920240520265,
+        "distance_from_modern": 0.0,
+        "plausibility": 0.5696159518959472,
+        "tension": 0.0
+      },
+      "wav": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_03_renaissance_electronic.wav"
+    },
+    {
+      "rank": 4,
+      "era": "romantic",
+      "era_period": "1820-1900",
+      "modern_style": "ambient",
+      "description": "Romantic Ambient \u2014 Full orchestra + ambient textures",
+      "dials": [
+        0.55,
+        0.25,
+        0.7
+      ],
+      "scores": {
+        "structure_surplus": 0.0,
+        "beyond_random": false,
+        "distance_from_era": 0.4558508528016592,
+        "distance_from_modern": 0.0,
+        "plausibility": -0.09117017056033185,
+        "tension": 0.0
+      },
+      "wav": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_04_romantic_ambient.wav"
+    },
+    {
+      "rank": 5,
+      "era": "baroque",
+      "era_period": "1600-1750",
+      "modern_style": "math_rock",
+      "description": "Baroque Math Rock \u2014 Harpsichord + complex time signatures",
+      "dials": [
+        0.45,
+        0.9,
+        0.5
+      ],
+      "scores": {
+        "structure_surplus": 0.3500000000000001,
+        "beyond_random": true,
+        "distance_from_era": 0.41581245772583586,
+        "distance_from_modern": 0.0,
+        "plausibility": 0.2668375084548329,
+        "tension": 0.0
+      },
+      "wav": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_05_baroque_math_rock.wav"
+    },
+    {
+      "rank": 6,
+      "era": "classical",
+      "era_period": "1750-1820",
+      "modern_style": "electronic",
+      "description": "Classical Electronic \u2014 Strings + drops",
+      "dials": [
+        0.5,
+        0.8,
+        0.9
+      ],
+      "scores": {
+        "structure_surplus": 0.7000000000000002,
+        "beyond_random": true,
+        "distance_from_era": 0.5341348144429457,
+        "distance_from_modern": 0.0,
+        "plausibility": 0.593173037111411,
+        "tension": 0.0
+      },
+      "wav": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_06_classical_electronic.wav"
+    },
+    {
+      "rank": 7,
+      "era": "renaissance",
+      "era_period": "1400-1600",
+      "modern_style": "hip_hop",
+      "description": "Renaissance Hip-Hop \u2014 Lute + beats",
+      "dials": [
+        0.4,
+        0.85,
+        0.65
+      ],
+      "scores": {
+        "structure_surplus": 0.3999999999999999,
+        "beyond_random": true,
+        "distance_from_era": 0.4636809247747852,
+        "distance_from_modern": 0.0,
+        "plausibility": 0.30726381504504285,
+        "tension": 0.0
+      },
+      "wav": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_07_renaissance_hip_hop.wav"
+    },
+    {
+      "rank": 8,
+      "era": "modernist",
+      "era_period": "1900-1950",
+      "modern_style": "ambient",
+      "description": "Modernist Ambient \u2014 Extended techniques + drones",
+      "dials": [
+        0.55,
+        0.25,
+        0.7
+      ],
+      "scores": {
+        "structure_surplus": 0.0,
+        "beyond_random": false,
+        "distance_from_era": 0.3082207001484488,
+        "distance_from_modern": 0.0,
+        "plausibility": -0.061644140029689765,
+        "tension": 0.0
+      },
+      "wav": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_08_modernist_ambient.wav"
+    }
+  ],
+  "analysis": {
+    "beyond_random_count": 6,
+    "total_anachronisms": 8,
+    "highest_tension": {
+      "description": "Baroque Hip-Hop \u2014 Bach counterpoint + hip-hop rhythm",
+      "tension": 0.0
+    },
+    "highest_plausibility": {
+      "description": "Classical Electronic \u2014 Strings + drops",
+      "plausibility": 0.593173037111411
+    },
+    "dial_universality_verdict": "moderate"
+  },
+  "wav_files": {
+    "anachronism_1": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_01_baroque_hip_hop.wav",
+    "anachronism_2": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_02_classical_ai_generated.wav",
+    "anachronism_3": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_03_renaissance_electronic.wav",
+    "anachronism_4": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_04_romantic_ambient.wav",
+    "anachronism_5": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_05_baroque_math_rock.wav",
+    "anachronism_6": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_06_classical_electronic.wav",
+    "anachronism_7": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_07_renaissance_hip_hop.wav",
+    "anachronism_8": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_08_modernist_ambient.wav",
+    "bonus_renaissance_ai": "/home/phoenix/.openclaw/workspace/docs/experiments/output/anachronism_bonus_renaissance_ai.wav"
+  }
+}

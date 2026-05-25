@@ -73,14 +73,13 @@ def synthesize_from_dials(dials, seed=0):
         jitter = rng.normal(0, (1.0 - i_horiz) * 0.15) * beat_period
         t_start = beat * beat_period + jitter
 
-        s0 = int(t_start * SAMPLE_RATE)
+        dur = beat_period * rng.uniform(0.3, 1.0) * (0.5 + 0.5 * i_horiz)
+        s0 = max(0, int(t_start * SAMPLE_RATE))
+        s1 = min(int((t_start + dur) * SAMPLE_RATE), total_samples)
         if s0 >= total_samples:
             break
-
-        dur = beat_period * rng.uniform(0.3, 1.0) * (0.5 + 0.5 * i_horiz)
-        s1 = min(int((t_start + dur) * SAMPLE_RATE), total_samples)
         n_samp = s1 - s0
-        if n_samp <= 0:
+        if n_samp <= 10:
             continue
 
         t = np.arange(n_samp) / SAMPLE_RATE

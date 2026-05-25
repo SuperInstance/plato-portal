@@ -34,17 +34,24 @@ def save_wav(path, samples, sample_rate=SAMPLE_RATE):
 
 
 def gen_hidden_message_wav():
-    """Generate WAV for Challenge 1."""
+    """Generate WAV for Challenge 1 — encodes 'TONALITY'."""
+    # Positions chosen so their consonance scores decode to ASCII via: score*95+32
     positions = [
-        (2.72, 2.05, 1.80), (2.30, 2.50, 2.10), (2.77, 3.63, 2.80),
-        (2.77, 3.63, 2.80), (2.50, 3.10, 2.30), (1.40, 1.20, 2.90),
-        (2.10, 2.80, 1.60), (2.72, 2.05, 1.80), (2.90, 0.80, 3.00),
-        (2.50, 3.10, 2.30), (2.77, 3.63, 2.80), (1.80, 1.50, 2.20),
-        (2.30, 2.50, 2.10), (2.90, 0.80, 3.00), (2.50, 3.10, 2.30),
+        (2.392, 2.941, 0.050),  # score≈0.5474 → T
+        (0.179, 1.205, 1.557),  # score≈0.4947 → O
+        (0.259, 2.346, 1.791),  # score≈0.4842 → N
+        (1.090, 0.219, 0.447),  # score≈0.3474 → A
+        (2.959, 0.906, 0.329),  # score≈0.4632 → L
+        (1.750, 0.100, 0.787),  # score≈0.4316 → I
+        (1.944, 1.096, 0.675),  # score≈0.5474 → T
+        (1.134, 2.773, 2.825),  # score≈0.6000 → Y
     ]
     audio = []
     for v, h, s in positions:
-        note = synthesize_note(v, h, s, 0.5, volume=0.7)
+        sc = consonance_score(v, h, s)
+        ch = chr(round(sc * 95) + 32)
+        print(f"  ({v:.3f}, {h:.3f}, {s:.3f}) score={sc:.4f} → '{ch}'")
+        note = synthesize_note(v, h, s, 0.6, volume=0.7)
         audio.extend(note)
     save_wav(os.path.join(CHALLENGE_DIR, 'hidden_message.wav'), audio)
     print("Generated hidden_message.wav")
@@ -52,22 +59,19 @@ def gen_hidden_message_wav():
 
 def gen_anti_music_samples():
     """Generate 10 WAV files for Challenge 4."""
-    # Music samples are near tradition landmarks; anti-music is maximally distant
-    # Use positions that are clearly far from ALL traditions
     sample_positions = [
-        (2.72, 2.05, 1.80),  # 1: western → music (score=1.0)
-        (0.10, 0.15, 0.05),  # 2: anti-music (score~0.12)
-        (2.30, 2.50, 2.10),  # 3: jazz → music (score=1.0)
-        (0.05, 0.10, 0.10),  # 4: anti-music (score~0.13)
-        (2.77, 3.63, 2.80),  # 5: carnatic → music (score=1.0)
-        (0.15, 0.25, 0.05),  # 6: anti-music (score~0.14)
-        (2.10, 2.80, 1.60),  # 7: blues → music (score=1.0)
-        (0.08, 0.12, 0.03),  # 8: anti-music (score~0.12)
-        (2.50, 3.10, 2.30),  # 9: arabic → music (score=1.0)
-        (0.20, 0.05, 0.10),  # 10: anti-music (score~0.14)
+        (2.72, 2.05, 1.80),  # 1: western → music
+        (0.10, 0.15, 0.05),  # 2: anti-music
+        (2.30, 2.50, 2.10),  # 3: jazz → music
+        (0.05, 0.10, 0.10),  # 4: anti-music
+        (2.77, 3.63, 2.80),  # 5: carnatic → music
+        (0.15, 0.25, 0.05),  # 6: anti-music
+        (2.10, 2.80, 1.60),  # 7: blues → music
+        (0.08, 0.12, 0.03),  # 8: anti-music
+        (2.50, 3.10, 2.30),  # 9: arabic → music
+        (0.20, 0.05, 0.10),  # 10: anti-music
     ]
     for i, (v, h, s) in enumerate(sample_positions, 1):
-        # Generate 2 seconds of audio
         audio = synthesize_note(v, h, s, 2.0, volume=0.6)
         path = os.path.join(AUDIO_DIR, f'sample_{i:02d}.wav')
         save_wav(path, audio)
