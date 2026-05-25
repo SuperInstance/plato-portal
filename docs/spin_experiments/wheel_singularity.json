@@ -1,0 +1,13 @@
+{
+  "experiment": "wheel_singularity",
+  "dial_positions": {
+    "most_pleasing": {
+      "timbre": 2.61,
+      "tradition": 2.33,
+      "relationship": 4.0
+    },
+    "normalized_radius": 0.37,
+    "interpretation": "moderate radius \u2014 balance of information and expression"
+  },
+  "insight": "The center of the spinning wheel is a singularity: zero motion but maximum directional information. This maps to the DC component in Fourier analysis and to the pure-relationship end of our dials. The most aesthetically pleasing dial positions sit at moderate radius \u2014 neither pure information nor pure expression."
+}

@@ -1,0 +1,63 @@
+{
+  "experiment": "circle_map_consonance",
+  "K_values": {
+    "consonance": 0.1,
+    "threshold": 0.97,
+    "chaos": 5.0
+  },
+  "notable_intervals": {
+    "1/1": {
+      "ratio": 1.0,
+      "tenney_height": 0.0
+    },
+    "2/1": {
+      "ratio": 2.0,
+      "tenney_height": 1.0
+    },
+    "3/2": {
+      "ratio": 1.5,
+      "tenney_height": 2.584962500721156
+    },
+    "4/3": {
+      "ratio": 1.3333333333333333,
+      "tenney_height": 3.584962500721156
+    },
+    "5/4": {
+      "ratio": 1.25,
+      "tenney_height": 4.321928094887363
+    },
+    "5/3": {
+      "ratio": 1.6666666666666667,
+      "tenney_height": 3.9068905956085187
+    },
+    "6/5": {
+      "ratio": 1.2,
+      "tenney_height": 4.906890595608519
+    },
+    "7/4": {
+      "ratio": 1.75,
+      "tenney_height": 4.807354922057604
+    },
+    "9/8": {
+      "ratio": 1.125,
+      "tenney_height": 6.169925001442312
+    },
+    "7/5": {
+      "ratio": 1.4,
+      "tenney_height": 5.129283016944966
+    },
+    "3/1": {
+      "ratio": 3.0,
+      "tenney_height": 1.584962500721156
+    },
+    "8/5": {
+      "ratio": 1.6,
+      "tenney_height": 5.321928094887363
+    },
+    "11/8": {
+      "ratio": 1.375,
+      "tenney_height": 6.459431618637297
+    }
+  },
+  "insight": "The standard map shows that consonant musical intervals (simple p/q ratios) correspond to stable periodic orbits, while dissonant intervals (complex ratios) correspond to chaotic trajectories. This is NOT metaphor \u2014 it's the same mathematics."
+}

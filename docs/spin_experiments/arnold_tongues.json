@@ -1,0 +1,15 @@
+{
+  "experiment": "phase_locking",
+  "delta_omega": 1.884955592153874,
+  "locking_threshold": "K > \u0394\u03c9 = 1.885",
+  "notable_ratios": {
+    "1/1": 1.0,
+    "3/2": 1.5,
+    "4/3": 1.3333333333333333,
+    "5/4": 1.25,
+    "5/3": 1.6666666666666667,
+    "2/1": 2.0,
+    "6/5": 1.2
+  },
+  "insight": "Phase locking in coupled oscillators maps directly to musical consonance. Arnold tongues = consonance valleys. When coupling K exceeds frequency difference \u0394\u03c9, oscillators lock \u2014 this IS groove, IS rhythm perception, IS consonance."
+}
