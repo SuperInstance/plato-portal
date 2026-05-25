@@ -1,5 +1,53 @@
 
-## 2026-05-24 Mega Session — Conservation of Musical Tension Research Sprint
+## 2026-05-24 Mega Session — Complete Record
+
+### Published Packages
+- constraint-synth 0.4.0→**0.5.0** (PyPI LIVE, 266 tests, 20 modules)
+- counterpoint-engine 0.2.0 (PyPI)
+- flux-genome 0.1.0, flux-hyperbolic 0.1.0 (PyPI)
+- constraint-audio 0.1.0 (crates.io, Rust)
+- constraint-mux 0.2.0 (GitHub, 63 tests, Rust)
+- constraint-audio wheel + groove-analyzer: queued (429 rate limit)
+
+### Three Theoretical Frameworks
+1. **Conservation of Musical Tension** → DEMOTED to hypothesis (r=+0.436, not -1.0)
+2. **Dials Not Laws** (Casey's insight): traditions occupy dial positions, 82% unexplored, 5 clusters
+3. **Innovation Cycle**: Discovery→Codification→Ubiquity→Boredom→Rebellion→Discovery
+
+### Key Experimental Results
+- V_K/H_onset: r=-0.935 regional correlation, NOT a law (CV 14.4%)
+- Anti-music: 99.93% random still "beyond random" — thresholds need calibration
+- Evolution: GA converges to (1.0,1.0,1.0) max structure
+- Hybridization: No hybrid beats both parents (interpolation averages down)
+- Time-reversal: 6/8 anachronisms beyond random (moderate dial universality)
+- JND: I_vert 4x more noticeable than I_spectral (0.14 vs 0.54)
+- Tradition recognition: 98% from dial position alone
+- Most pleasing: (2.61, 2.33, 4.0) — Gagaku scores highest
+- Neural: dial-brain r=0.862 (TESTABLE with EEG)
+
+### Code Artifacts
+- RISC-V assembly lattice oscillator (RV64GC)
+- ARM Cortex-M7 bare-metal (STM32H7)
+- WASM browser demo (1006 lines, native compiles)
+- Live Python web demo (python3 server.py)
+- caffeinix C-SCHED + constraint_audio.ko (33 tests, bug fix)
+- Hindi-TTS lattice phoneme module (161 tests)
+- Dial esoteric language (interpreter + 10 programs)
+- CTF challenge suite (5 puzzles with flags)
+- 14 experiment scripts, 153 audio files
+
+### Paper
+- PAPER-DRAFT-V3-FINAL: 8,043 words, submittable
+- Targets: Music Perception, JMM, Computer Music Journal
+- 17 falsifiable predictions with test criteria
+
+### AI-Writings: 36 pieces, ~75,000 words
+
+### Friends' Forks
+- Troy: caffeinix C-SCHED + audio module, constraint-mux Rust rewrite
+- Avantika: Hindi-TTS lattice phoneme integration
+
+## 2026-05-24 Mega Session — Conservation of Musical Tension Research Sprint (earlier notes below)
 
 ### Research Breakthroughs
 - **PCA intrinsic dimension**: meantone d_int=2, ET d_int=0 — numerical proof of lattice collapse
