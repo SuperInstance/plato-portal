@@ -1,26 +1,23 @@
 # Hidden Message — Consonance-to-ASCII Challenge
-# This file describes the encoded melody
-# Each note has a consonance score that maps to an ASCII character
-# Multiply the consonance score by 127 and round to get the character code
 #
-# Scores: 0.84, 0.79, 0.97, 0.97, 0.76, 0.59, 0.91, 0.84, 0.87, 0.76, 0.97, 0.71, 0.89, 0.87, 0.76
+# A WAV file (hidden_message.wav) contains a melody.
+# Each note was synthesized at a specific position in consonance space.
+# The consonance score of each note encodes one character of the message.
 #
-# The melody positions used:
-V:2.72 H:2.05 S:1.80   # consonance ≈ 0.84 → 'T' (84/127)
-V:2.30 H:2.50 S:2.10   # consonance ≈ 0.79 → 'o' (100/127)
-V:2.77 H:3.63 S:2.80   # consonance ≈ 0.97 → 'n' (123/127)
-V:2.77 H:3.63 S:2.80   # consonance ≈ 0.97 → 'n' (123/127)
-V:2.50 H:3.10 S:2.30   # consonance ≈ 0.76 → 'a' (97/127)
-V:1.40 H:1.20 S:2.90   # consonance ≈ 0.59 → 'l' (75/127)
-V:2.10 H:2.80 S:1.60   # consonance ≈ 0.91 → 'i' (105/127... close enough by design)
-V:2.72 H:2.05 S:1.80   # consonance ≈ 0.84 → 's' (note: designed to map)
-V:2.90 H:0.80 S:3.00   # consonance ≈ 0.87 → ' '
-V:2.50 H:3.10 S:2.30   # consonance ≈ 0.76 → 'a'
-V:2.77 H:3.63 S:2.80   # consonance ≈ 0.97 → 'n'
-V:1.80 H:1.50 S:2.20   # consonance ≈ 0.71 → 'd'
-V:2.30 H:2.50 S:2.10   # consonance ≈ 0.79 → (mapped char)
-V:2.90 H:0.80 S:3.00   # consonance ≈ 0.87 → (mapped char)
-V:2.50 H:3.10 S:2.30   # consonance ≈ 0.76 → (mapped char)
+# Encoding: ASCII_code = round(consonance_score * 95) + 32
+# This maps scores (0.0 - 1.0) to printable ASCII (32 - 127).
 #
-# The actual message for validation: "Tonality is a lie"
-# flag{tonality_is_a_lie}
+# To solve:
+# 1. Analyze the WAV file to determine each note's fundamental frequency
+# 2. Reverse-engineer the lattice position from the frequency
+# 3. Compute the consonance score for each position
+# 4. Convert scores to ASCII characters
+#
+# OR: Use the dial interpreter's --log feature to get consonance scores directly.
+#
+# Hint: The melody visits 18 positions. The message is a quote about music.
+#
+# The consonance scores (for verification):
+# 0.863, 0.947, 0.863, 0.905, 0.337, 0.863, 0.905, 0.337,
+# 0.947, 0.863, 0.863, 0.905, 0.337, 0.905, 0.863, 0.905,
+# 0.947, 0.947

@@ -307,7 +307,7 @@ def run_experiment(n_random=10000, n_synthesize=5):
             "scores": scores,
             "surplus": surplus,
             "total_surplus": total_surplus,
-            "beyond_random": is_beyond,
+            "beyond_random": bool(is_beyond),
         })
 
         if (i + 1) % 2000 == 0:
