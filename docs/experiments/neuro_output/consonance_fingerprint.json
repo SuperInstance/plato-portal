@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "title": "Consonance Fingerprint \u2014 Interactive Experiment",
+    "description": "20 pairwise comparisons to map your unique consonance profile",
+    "instructions": "For each pair, choose which sounds better to you. There are no wrong answers.",
+    "output_note": "Your choices are mapped to (I_vert, I_horiz, I_spectral) space"
+  },
+  "pairs": [
+    {
+      "id": 1,
+      "description": "Perfect octave (2:1) vs. Tritone (45:32)",
+      "option_a": {
+        "name": "Perfect Octave",
+        "I_vert": 1.0,
+        "I_horiz": 1.0,
+        "I_spectral": 1.5,
+        "consonance": 0.95
+      },
+      "option_b": {
+        "name": "Tritone",
+        "I_vert": 3.5,
+        "I_horiz": 2.0,
+        "I_spectral": 2.0,
+        "consonance": 0.25
+      },
+      "tests": "basic consonance preference"
+    },
+    {
+      "id": 2,
+      "description": "Perfect fifth (3:2) vs. Minor second (25:24)",
+      "option_a": {
+        "name": "Perfect Fifth",
+        "I_vert": 1.2,
+        "I_horiz": 1.2,
+        "I_spectral": 1.6,
+        "consonance": 0.9
+      },
+      "option_b": {
+        "name": "Minor Second",
+        "I_vert": 3.8,
+        "I_horiz": 1.5,
+        "I_spectral": 1.8,
+        "consonance": 0.15
+      },
+      "tests": "simple interval preference"
+    },
+    {
+      "id": 3,
+      "description": "Major triad (4:5:6) vs. Cluster chord (15:16:17)",
+      "option_a": {
+        "name": "Major Triad",
+        "I_vert": 1.8,
+        "I_horiz": 1.5,
+        "I_spectral": 1.8,
+        "consonance": 0.85
+      },
+      "option_b": {
+        "name": "Tone Cluster",
+        "I_vert": 4.0,
+        "I_horiz": 2.0,
+        "I_spectral": 2.5,
+        "consonance": 0.1
+      },
+      "tests": "harmonic complexity tolerance"
+    },
+    {
+      "id": 4,
+      "description": "Steady pulse (repetition) vs. Syncopated rhythm",
+      "option_a": {
+        "name": "Steady 4/4 Pulse",
+        "I_vert": 1.5,
+        "I_horiz": 1.0,
+        "I_spectral": 1.2,
+        "consonance": 0.7
+      },
+      "option_b": {
+        "name": "Polyrhythm 7:5",
+        "I_vert": 2.0,
+        "I_horiz": 3.5,
+        "I_spectral": 1.5,
+        "consonance": 0.4
+      },
+      "tests": "horizontal complexity preference"
+    },
+    {
+      "id": 5,
+      "description": "Pure sine tone vs. Rich overtones (sawtooth wave)",
+      "option_a": {
+        "name": "Pure Sine",
+        "I_vert": 1.0,
+        "I_horiz": 1.0,
+        "I_spectral": 0.5,
+        "consonance": 0.6
+      },
+      "option_b": {
+        "name": "Sawtooth (rich harmonics)",
+        "I_vert": 1.5,
+        "I_horiz": 1.2,
+        "I_spectral": 3.5,
+        "consonance": 0.55
+      },
+      "tests": "spectral richness preference"
+    },
+    {
+      "id": 6,
+      "description": "Pentatonic melody vs. Chromatic melody",
+      "option_a": {
+        "name": "Pentatonic",
+        "I_vert": 1.5,
+        "I_horiz": 2.0,
+        "I_spectral": 1.5,
+        "consonance": 0.8
+      },
+      "option_b": {
+        "name": "12-tone row",
+        "I_vert": 3.5,
+        "I_horiz": 3.0,
+        "I_spectral": 1.8,
+        "consonance": 0.2
+      },
+      "tests": "melodic complexity preference"
+    },
+    {
+      "id": 7,
+      "description": "Gamelan-style inharmonic timbre vs. Western harmonic timbre",
+      "option_a": {
+        "name": "Gamelan (inharmonic)",
+        "I_vert": 2.0,
+        "I_horiz": 2.5,
+        "I_spectral": 3.5,
+        "consonance": 0.45
+      },
+      "option_b": {
+        "name": "Piano (harmonic)",
+        "I_vert": 2.0,
+        "I_horiz": 2.5,
+        "I_spectral": 1.5,
+        "consonance": 0.75
+      },
+      "tests": "timbral consonance preference"
+    },
+    {
+      "id": 8,
+      "description": "Drone + microtonal ornament vs. Chord progression",
+      "option_a": {
+        "name": "Drone + Microtones",
+        "I_vert": 3.0,
+        "I_horiz": 1.5,
+        "I_spectral": 2.5,
+        "consonance": 0.5
+      },
+      "option_b": {
+        "name": "I-IV-V-I Progression",
+        "I_vert": 1.5,
+        "I_horiz": 3.0,
+        "I_spectral": 1.5,
+        "consonance": 0.8
+      },
+      "tests": "vertical vs. horizontal orientation"
+    },
+    {
+      "id": 9,
+      "description": "Slow tempo (Adagio) vs. Fast tempo (Presto)",
+      "option_a": {
+        "name": "Adagio (60 BPM)",
+        "I_vert": 2.0,
+        "I_horiz": 1.5,
+        "I_spectral": 2.0,
+        "consonance": 0.65
+      },
+      "option_b": {
+        "name": "Presto (200 BPM)",
+        "I_vert": 2.0,
+        "I_horiz": 3.8,
+        "I_spectral": 2.2,
+        "consonance": 0.45
+      },
+      "tests": "tempo / horizontal density preference"
+    },
+    {
+      "id": 10,
+      "description": "Just intonation thirds vs. Equal temperament thirds",
+      "option_a": {
+        "name": "Just Major Third (5:4)",
+        "I_vert": 1.3,
+        "I_horiz": 1.5,
+        "I_spectral": 1.8,
+        "consonance": 0.85
+      },
+      "option_b": {
+        "name": "ET Major Third (400\u00a2)",
+        "I_vert": 2.0,
+        "I_horiz": 1.5,
+        "I_spectral": 1.8,
+        "consonance": 0.65
+      },
+      "tests": "tuning system sensitivity"
+    },
+    {
+      "id": 11,
+      "description": "Solo voice (monophonic) vs. Full orchestra",
+      "option_a": {
+        "name": "Solo Voice",
+        "I_vert": 1.0,
+        "I_horiz": 2.0,
+        "I_spectral": 2.0,
+        "consonance": 0.5
+      },
+      "option_b": {
+        "name": "Full Orchestra",
+        "I_vert": 3.0,
+        "I_horiz": 3.0,
+        "I_spectral": 3.0,
+        "consonance": 0.7
+      },
+      "tests": "textural complexity preference"
+    },
+    {
+      "id": 12,
+      "description": "Repetitive minimalism vs. Through-composed",
+      "option_a": {
+        "name": "Minimalist Repetition",
+        "I_vert": 1.2,
+        "I_horiz": 1.5,
+        "I_spectral": 2.0,
+        "consonance": 0.6
+      },
+      "option_b": {
+        "name": "Through-composed",
+        "I_vert": 2.5,
+        "I_horiz": 3.5,
+        "I_spectral": 2.5,
+        "consonance": 0.5
+      },
+      "tests": "structural predictability preference"
+    },
+    {
+      "id": 13,
+      "description": "Arabic maqam quarter tones vs. Western semitones",
+      "option_a": {
+        "name": "Maqam Quarter Tones",
+        "I_vert": 3.2,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "consonance": 0.35
+      },
+      "option_b": {
+        "name": "Western Semitones",
+        "I_vert": 2.0,
+        "I_horiz": 2.5,
+        "I_spectral": 1.5,
+        "consonance": 0.7
+      },
+      "tests": "pitch granularity cultural preference"
+    },
+    {
+      "id": 14,
+      "description": "Tonal resolution (V\u2192I) vs. Unresolved suspension",
+      "option_a": {
+        "name": "Resolved (V\u2192I)",
+        "I_vert": 1.5,
+        "I_horiz": 2.5,
+        "I_spectral": 1.5,
+        "consonance": 0.85
+      },
+      "option_b": {
+        "name": "Unresolved Suspension",
+        "I_vert": 2.5,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "consonance": 0.4
+      },
+      "tests": "closure preference (tonal vs. open)"
+    },
+    {
+      "id": 15,
+      "description": "Balinese gong kebyar vs. Bach chorale",
+      "option_a": {
+        "name": "Gong Kebyar",
+        "I_vert": 2.3,
+        "I_horiz": 3.5,
+        "I_spectral": 3.5,
+        "consonance": 0.3
+      },
+      "option_b": {
+        "name": "Bach Chorale",
+        "I_vert": 2.0,
+        "I_horiz": 1.5,
+        "I_spectral": 1.5,
+        "consonance": 0.8
+      },
+      "tests": "cultural style preference"
+    },
+    {
+      "id": 16,
+      "description": "Funk groove (strong syncopation) vs. March (straight rhythm)",
+      "option_a": {
+        "name": "Funk Groove",
+        "I_vert": 2.0,
+        "I_horiz": 3.5,
+        "I_spectral": 2.5,
+        "consonance": 0.55
+      },
+      "option_b": {
+        "name": "March",
+        "I_vert": 1.5,
+        "I_horiz": 1.5,
+        "I_spectral": 1.5,
+        "consonance": 0.65
+      },
+      "tests": "groove/syncopation preference"
+    },
+    {
+      "id": 17,
+      "description": "Indian raga alap (slow unfold) vs. Jazz solo (fast changes)",
+      "option_a": {
+        "name": "Raga Alap",
+        "I_vert": 3.0,
+        "I_horiz": 1.0,
+        "I_spectral": 2.5,
+        "consonance": 0.45
+      },
+      "option_b": {
+        "name": "Jazz Bebop Solo",
+        "I_vert": 2.5,
+        "I_horiz": 3.5,
+        "I_spectral": 2.0,
+        "consonance": 0.5
+      },
+      "tests": "horizontal density vs. vertical complexity"
+    },
+    {
+      "id": 18,
+      "description": "Silence + single note vs. Dense cluster",
+      "option_a": {
+        "name": "Single Note from Silence",
+        "I_vert": 0.5,
+        "I_horiz": 1.0,
+        "I_spectral": 1.0,
+        "consonance": 0.7
+      },
+      "option_b": {
+        "name": "Dense Tone Cluster",
+        "I_vert": 4.0,
+        "I_horiz": 1.5,
+        "I_spectral": 3.0,
+        "consonance": 0.05
+      },
+      "tests": "density tolerance"
+    },
+    {
+      "id": 19,
+      "description": "Major key (happy) vs. Minor key (sad)",
+      "option_a": {
+        "name": "C Major",
+        "I_vert": 1.5,
+        "I_horiz": 2.0,
+        "I_spectral": 2.0,
+        "consonance": 0.8
+      },
+      "option_b": {
+        "name": "C Minor",
+        "I_vert": 2.0,
+        "I_horiz": 2.0,
+        "I_spectral": 1.8,
+        "consonance": 0.7
+      },
+      "tests": "emotional valence preference"
+    },
+    {
+      "id": 20,
+      "description": "Familiar pop song structure vs. Free improvisation",
+      "option_a": {
+        "name": "Pop (Verse-Chorus)",
+        "I_vert": 1.5,
+        "I_horiz": 2.0,
+        "I_spectral": 2.0,
+        "consonance": 0.75
+      },
+      "option_b": {
+        "name": "Free Improvisation",
+        "I_vert": 3.5,
+        "I_horiz": 3.5,
+        "I_spectral": 3.0,
+        "consonance": 0.25
+      },
+      "tests": "structural predictability tolerance"
+    }
+  ],
+  "scoring": {
+    "description": "After completing all 20 pairs, your profile is computed as the weighted average of your chosen options",
+    "weights": "Each choice adds to your cumulative dial position. Equal weighting.",
+    "mapping": {
+      "high_I_vert_choice": "You prefer complex, dissonant harmonies",
+      "high_I_horiz_choice": "You prefer complex rhythms and fast harmonic rhythm",
+      "high_I_spectral_choice": "You prefer rich, complex timbres"
+    }
+  },
+  "tradition_reference": {
+    "Hindustani": {
+      "I_vert": 2.77,
+      "I_horiz": 3.45,
+      "I_spectral": 2.5
+    },
+    "Carnatic": {
+      "I_vert": 2.77,
+      "I_horiz": 3.63,
+      "I_spectral": 2.8
+    },
+    "Arabic": {
+      "I_vert": 2.94,
+      "I_horiz": 3.1,
+      "I_spectral": 2.3
+    },
+    "Turkish": {
+      "I_vert": 2.83,
+      "I_horiz": 3.28,
+      "I_spectral": 2.2
+    },
+    "Javanese": {
+      "I_vert": 2.31,
+      "I_horiz": 2.75,
+      "I_spectral": 3.0
+    },
+    "Balinese": {
+      "I_vert": 2.31,
+      "I_horiz": 3.1,
+      "I_spectral": 3.2
+    },
+    "Gagaku": {
+      "I_vert": 2.38,
+      "I_horiz": 1.7,
+      "I_spectral": 3.5
+    },
+    "Chinese": {
+      "I_vert": 2.32,
+      "I_horiz": 2.05,
+      "I_spectral": 2.0
+    },
+    "West African": {
+      "I_vert": 2.41,
+      "I_horiz": 3.63,
+      "I_spectral": 2.6
+    },
+    "Western ET": {
+      "I_vert": 2.72,
+      "I_horiz": 2.05,
+      "I_spectral": 1.8
+    }
+  }
+}

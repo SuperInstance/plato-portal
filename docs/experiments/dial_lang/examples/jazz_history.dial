@@ -1,0 +1,57 @@
+# jazz_history.dial
+# A musical walk through the history of jazz
+# From New Orleans to free jazz and beyond
+
+tempo 100
+dur 0.6
+
+# Roots — blues and spirituals
+V:2.10 H:2.80 S:1.60 roots
+tradition blues
+
+# New Orleans — collective improvisation
+V:2.15 H:2.90 S:1.70
+V:2.20 H:2.85 S:1.75
+
+# Swing era — smoother, more organized
+V:2.25 H:2.60 S:1.85
+V:2.30 H:2.50 S:1.90
+
+# Bebop — faster, more complex
+tempo 140
+V:2.30 H:2.50 S:2.10
+V:2.28 H:2.70 S:2.15
+V:2.35 H:2.80 S:2.10
+
+# Cool jazz — laid back
+tempo 80
+V:2.40 H:2.20 S:2.00
+V:2.45 H:2.10 S:1.95
+
+# Hard bop — return to blues/gospel roots
+tempo 110
+tradition blues
+V:2.20 H:2.60 S:1.80
+V:2.15 H:2.70 S:1.75
+
+# Modal jazz — exploring new scales
+tempo 90
+V:2.35 H:2.40 S:2.05
+V:2.40 H:2.30 S:2.10
+
+# Free jazz — breaking all rules
+V:1.80 H:3.20 S:2.50
+V:1.40 H:3.40 S:2.70
+V:1.00 H:3.50 S:2.90
+
+# Fusion — electronic and world influences
+tempo 120
+V:2.00 H:2.80 S:2.40
+V:2.10 H:2.60 S:2.30
+
+# Modern jazz — synthesis of everything
+V:2.30 H:2.50 S:2.10 jazz_arrival
+tradition jazz
+
+# What comes next?
+unplayed

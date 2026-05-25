@@ -1,0 +1,44 @@
+# round_trip.dial
+# A round trip from Western → Carnatic → Japanese → back to Western
+# Demonstrates that the lattice is traversable in all directions
+
+tempo 100
+dur 0.5
+
+# Depart Western
+tradition western
+V:2.72 H:2.05 S:1.80 depart
+V:2.70 H:2.20 S:1.90
+
+# Southeast toward Carnatic
+V:2.65 H:2.40 S:2.00
+V:2.60 H:2.60 S:2.10
+V:2.65 H:2.80 S:2.20
+V:2.70 H:3.00 S:2.40
+
+# Arrive Carnatic
+tradition carnatic
+V:2.77 H:3.63 S:2.80 carnatic_stop
+V:2.75 H:3.50 S:2.70
+
+# Northward toward Japanese
+V:2.60 H:3.20 S:2.60
+V:2.40 H:2.90 S:2.50
+V:2.10 H:2.60 S:2.40
+V:1.90 H:2.30 S:2.30
+
+# Arrive Japanese
+tradition japanese
+V:1.80 H:1.50 S:2.20 japan_stop
+V:1.85 H:1.40 S:2.10
+
+# Southwest back toward Western
+V:1.90 H:1.30 S:2.00
+V:2.00 H:1.20 S:1.90
+V:2.10 H:1.15 S:1.85
+V:2.30 H:1.10 S:1.82
+V:2.50 H:1.08 S:1.80
+
+# Home
+tradition western
+V:2.72 H:2.05 S:1.80 home

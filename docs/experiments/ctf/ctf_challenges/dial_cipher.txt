@@ -1,0 +1,36 @@
+# The Dial Cipher — Tradition XOR Challenge
+# Each line contains a dial position (V, H, S) and an encoded character
+# To decode: find the nearest tradition, take its first letter's ASCII code, 
+# XOR with the encoded character value.
+#
+# Format: V H S encoded_char
+#
+# Nearest traditions and their key letters:
+#   western → 'W' (87), carnatic → 'C' (67), jazz → 'J' (74)
+#   gamelan → 'G' (71), blues → 'B' (66), arabic → 'A' (65)
+#   japanese → 'J' (74), throat_singing → 'T' (84)
+#
+# Encoded data:
+2.72 2.05 1.80 29
+1.40 1.20 2.90 39
+2.10 2.80 1.60 35
+2.50 3.10 2.30 33
+2.77 3.63 2.80 28
+2.72 2.05 1.80 46
+2.90 0.80 3.00 39
+2.30 2.50 2.10 17
+1.80 1.50 2.20 36
+2.72 2.05 1.80 46
+2.72 2.05 1.80 32
+1.40 1.20 2.90 44
+2.10 2.80 1.60 38
+2.50 3.10 2.30 49
+2.77 3.63 2.80 28
+2.72 2.05 1.80 45
+2.90 0.80 3.00 40
+2.30 2.50 2.10 34
+1.80 1.50 2.20 36
+2.72 2.05 1.80 46
+2.50 3.10 2.30 38
+#
+# Validation: flag{the_lattice_remembers}

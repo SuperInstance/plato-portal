@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "description": "Predicted neural adaptation rates across the Innovation Cycle",
+    "basis": "Predictive coding theory: familiarity \u2192 faster prediction error minimization \u2192 faster habituation",
+    "measured_as": "N1/P2 ERP amplitude reduction over repeated exposure (half-life in seconds)"
+  },
+  "phases": {
+    "Phase 1: Discovery": {
+      "halflife_s": 40.8,
+      "pleasantness": 5.8,
+      "consonance": 0.638,
+      "interpretation": "Novel sounds sustain attention \u2014 slow adaptation drives exploration"
+    },
+    "Phase 2: Codification": {
+      "halflife_s": 27.3,
+      "pleasantness": 7.9,
+      "consonance": 0.726,
+      "interpretation": "Patterns become recognizable \u2014 moderate adaptation as schemas form"
+    },
+    "Phase 3: Ubiquity": {
+      "halflife_s": 12.3,
+      "pleasantness": 8.2,
+      "consonance": 0.847,
+      "interpretation": "Highly predictable \u2014 fast adaptation, brain conserves resources"
+    },
+    "Phase 4: Saturation": {
+      "halflife_s": 8.4,
+      "pleasantness": 7.7,
+      "consonance": 0.896,
+      "interpretation": "Maximum habituation \u2014 'boredom' is neural efficiency"
+    },
+    "Phase 5: Rebellion": {
+      "halflife_s": 32.3,
+      "pleasantness": 7.3,
+      "consonance": 0.683,
+      "interpretation": "Violation of expectations \u2192 renewed attention, slow adaptation"
+    },
+    "Phase 6: Synthesis": {
+      "halflife_s": 22.2,
+      "pleasantness": 8.3,
+      "consonance": 0.756,
+      "interpretation": "Balanced novelty-familiarity \u2192 sustained engagement"
+    }
+  },
+  "tradition_adaptation": {
+    "Hindustani": {
+      "halflife_s": 25.7,
+      "pleasantness": 7.9,
+      "consonance": 0.697
+    },
+    "Carnatic": {
+      "halflife_s": 28.9,
+      "pleasantness": 7.7,
+      "consonance": 0.685
+    },
+    "Arabic": {
+      "halflife_s": 22.4,
+      "pleasantness": 7.8,
+      "consonance": 0.699
+    },
+    "Turkish": {
+      "halflife_s": 23.1,
+      "pleasantness": 7.9,
+      "consonance": 0.704
+    },
+    "Javanese": {
+      "halflife_s": 22.3,
+      "pleasantness": 8.2,
+      "consonance": 0.747
+    },
+    "Balinese": {
+      "halflife_s": 25.8,
+      "pleasantness": 8.0,
+      "consonance": 0.731
+    },
+    "Gagaku": {
+      "halflife_s": 23.6,
+      "pleasantness": 8.3,
+      "consonance": 0.766
+    },
+    "Chinese": {
+      "halflife_s": 13.3,
+      "pleasantness": 7.5,
+      "consonance": 0.789
+    },
+    "West African": {
+      "halflife_s": 26.5,
+      "pleasantness": 7.9,
+      "consonance": 0.718
+    },
+    "Western ET": {
+      "halflife_s": 11.0,
+      "pleasantness": 6.3,
+      "consonance": 0.761
+    }
+  }
+}

@@ -1,0 +1,41 @@
+# evolution.dial
+# Traces the evolution of music from primal dissonance to modern consonance
+# Maps the "ascent" from noise to harmony
+
+tempo 80
+dur 1.0
+
+# The primordial soup — pure dissonance
+V:0.10 H:0.10 S:0.10 origin
+V:0.15 H:0.20 S:0.15
+V:0.20 H:0.30 S:0.20
+
+# Early rhythmic patterns emerge
+V:0.30 H:0.80 S:0.40
+V:0.40 H:1.00 S:0.50
+V:0.50 H:1.20 S:0.60
+
+# Primitive vocalizations
+V:0.70 H:1.40 S:0.80
+V:0.90 H:1.50 S:1.00
+V:1.10 H:1.60 S:1.20
+
+# Early melodic development
+V:1.30 H:1.80 S:1.40
+V:1.50 H:2.00 S:1.50
+V:1.70 H:2.10 S:1.60
+
+# Classical harmony emerges
+V:1.90 H:2.20 S:1.70
+V:2.10 H:2.30 S:1.80
+V:2.30 H:2.40 S:1.90
+
+# Modern complexity
+V:2.50 H:2.60 S:2.00
+V:2.60 H:2.70 S:2.10
+V:2.70 H:2.80 S:2.20
+
+# And beyond — the unexplored
+V:2.80 H:2.90 S:2.40
+unplayed
+unplayed

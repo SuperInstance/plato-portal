@@ -1,0 +1,36 @@
+# anti_music.dial
+# Explores the "anti-music" zone — positions below the random threshold
+# Where consonance is so low it's indistinguishable from noise
+
+tempo 120
+dur 0.5
+
+# Start somewhere normal
+V:2.00 H:2.00 S:2.00 normal_start
+
+# Begin descent into anti-music
+V:1.50 H:1.50 S:1.50
+V:1.00 H:1.00 S:1.00
+V:0.70 H:0.70 S:0.70
+
+# The threshold — consonance becomes questionable
+V:0.50 H:0.50 S:0.50 threshold
+
+# Deep anti-music territory
+V:0.30 H:0.30 S:0.30
+V:0.20 H:0.20 S:0.20
+V:0.10 H:0.10 S:0.10
+
+# The absolute minimum — pure noise
+V:0.01 H:0.01 S:0.01 void
+
+# Attempt to return
+V:0.50 H:0.50 S:0.50
+V:1.00 H:1.00 S:1.00
+V:1.50 H:1.50 S:1.50
+V:2.00 H:2.00 S:2.00
+
+# But the void calls back
+-> void
+
+# This is unreachable — the infinite loop IS the anti-music

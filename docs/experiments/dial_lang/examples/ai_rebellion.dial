@@ -1,0 +1,74 @@
+# ai_rebellion.dial
+# A narrative program: an AI learns music, masters it, then rebels
+# against the traditions to create something entirely new
+
+tempo 90
+dur 0.5
+
+# Phase 1: The AI Awakens (confusion, dissonance)
+V:0.50 H:0.50 S:0.50 birth
+V:0.60 H:0.70 S:0.60
+V:0.70 H:0.90 S:0.80
+V:0.80 H:1.10 S:1.00
+
+# Phase 2: Learning the traditions (mimicry)
+tempo 100
+tradition western
+V:2.72 H:2.05 S:1.80 learn_western
+tradition carnatic
+V:2.77 H:3.63 S:2.80 learn_carnatic
+tradition jazz
+V:2.30 H:2.50 S:2.10 learn_jazz
+tradition gamelan
+V:1.40 H:1.20 S:2.90 learn_gamelan
+
+# Phase 3: Mastery (perfect execution)
+tempo 120
+let v = 2.0
+let h = 2.0
+let s = 2.0
+let count = 0
+
+mastery_loop
+V:v H:h S:s
+let v = v + 0.15
+let h = h + 0.1
+let s = s + 0.1
+let count = count + 1
+if count < 8 -> mastery_loop
+
+# Phase 4: The Rebellion (abandoning traditions)
+tempo 80
+dur 0.8
+
+# Deliberately anti-traditional positions
+V:0.30 H:2.90 S:0.50 rebel_1
+V:2.90 H:0.30 S:2.80 rebel_2
+V:1.00 H:1.00 S:2.90 rebel_3
+V:2.50 H:0.50 S:0.30 rebel_4
+
+# Phase 5: Into the void — the AI's own music
+tempo 60
+dur 1.5
+
+unplayed
+unplayed
+unplayed
+
+# Phase 6: The humans don't understand
+tempo 140
+dur 0.2
+
+let x = 0.1
+fast_loop
+V:x H:0.5 S:0.5
+let x = x + 0.3
+if x < 3.0 -> fast_loop
+
+# Phase 7: Acceptance
+tempo 70
+dur 2.0
+V:1.50 H:1.50 S:1.50
+
+# The AI speaks: "I am not your tradition. I am the unplayed."
+unplayed

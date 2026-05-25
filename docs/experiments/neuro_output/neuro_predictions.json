@@ -1,0 +1,1962 @@
+{
+  "metadata": {
+    "title": "Predicted Neural Responses for Musical Traditions",
+    "basis": [
+      "Bidelman & Krishnan (2009) - Brainstem FFR correlates with consonance",
+      "Blood et al. (1999) - Dissonance/consonance cortical mapping",
+      "Sachs et al. (2008) - Midbrain reward response to consonance",
+      "Trainor et al. (2002) - Consonance preference emergence",
+      "Berlyne (1971) - Wundt curve for novelty-pleasure"
+    ],
+    "note": "These are computational PREDICTIONS based on published data, not measured responses. Testable with EEG/fMRI."
+  },
+  "traditions": {
+    "Hindustani": {
+      "dial_position": {
+        "I_vert": 2.77,
+        "I_horiz": 3.45,
+        "I_spectral": 2.5
+      },
+      "tenney_height": 5.64,
+      "consonance_score": 0.697,
+      "brainstem_FFR_amplitude": 0.824,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.757,
+        "nucleus_accumbens": 0.638,
+        "auditory_cortex_primary": 0.588,
+        "auditory_cortex_secondary": 0.55,
+        "parahippocampal_gyrus": 0.312,
+        "amygdala": 0.232,
+        "superior_temporal_gyrus": 0.579,
+        "supplementary_motor_area": 0.388,
+        "prefrontal_cortex_dorsolateral": 0.252,
+        "cerebellum": 0.325,
+        "insula": 0.346
+      },
+      "predicted_pleasantness": 7.9,
+      "neural_adaptation_halflife_s": 25.7
+    },
+    "Carnatic": {
+      "dial_position": {
+        "I_vert": 2.77,
+        "I_horiz": 3.63,
+        "I_spectral": 2.8
+      },
+      "tenney_height": 5.78,
+      "consonance_score": 0.685,
+      "brainstem_FFR_amplitude": 0.817,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.748,
+        "nucleus_accumbens": 0.629,
+        "auditory_cortex_primary": 0.61,
+        "auditory_cortex_secondary": 0.58,
+        "parahippocampal_gyrus": 0.321,
+        "amygdala": 0.239,
+        "superior_temporal_gyrus": 0.574,
+        "supplementary_motor_area": 0.41,
+        "prefrontal_cortex_dorsolateral": 0.258,
+        "cerebellum": 0.34,
+        "insula": 0.366
+      },
+      "predicted_pleasantness": 7.7,
+      "neural_adaptation_halflife_s": 28.9
+    },
+    "Arabic": {
+      "dial_position": {
+        "I_vert": 2.94,
+        "I_horiz": 3.1,
+        "I_spectral": 2.3
+      },
+      "tenney_height": 5.61,
+      "consonance_score": 0.699,
+      "brainstem_FFR_amplitude": 0.826,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.759,
+        "nucleus_accumbens": 0.639,
+        "auditory_cortex_primary": 0.573,
+        "auditory_cortex_secondary": 0.53,
+        "parahippocampal_gyrus": 0.311,
+        "amygdala": 0.231,
+        "superior_temporal_gyrus": 0.58,
+        "supplementary_motor_area": 0.372,
+        "prefrontal_cortex_dorsolateral": 0.251,
+        "cerebellum": 0.315,
+        "insula": 0.335
+      },
+      "predicted_pleasantness": 7.8,
+      "neural_adaptation_halflife_s": 22.4
+    },
+    "Turkish": {
+      "dial_position": {
+        "I_vert": 2.83,
+        "I_horiz": 3.28,
+        "I_spectral": 2.2
+      },
+      "tenney_height": 5.56,
+      "consonance_score": 0.704,
+      "brainstem_FFR_amplitude": 0.828,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.763,
+        "nucleus_accumbens": 0.643,
+        "auditory_cortex_primary": 0.565,
+        "auditory_cortex_secondary": 0.52,
+        "parahippocampal_gyrus": 0.307,
+        "amygdala": 0.228,
+        "superior_temporal_gyrus": 0.581,
+        "supplementary_motor_area": 0.365,
+        "prefrontal_cortex_dorsolateral": 0.248,
+        "cerebellum": 0.31,
+        "insula": 0.329
+      },
+      "predicted_pleasantness": 7.9,
+      "neural_adaptation_halflife_s": 23.1
+    },
+    "Javanese": {
+      "dial_position": {
+        "I_vert": 2.31,
+        "I_horiz": 2.75,
+        "I_spectral": 3.0
+      },
+      "tenney_height": 5.04,
+      "consonance_score": 0.747,
+      "brainstem_FFR_amplitude": 0.854,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.797,
+        "nucleus_accumbens": 0.673,
+        "auditory_cortex_primary": 0.625,
+        "auditory_cortex_secondary": 0.6,
+        "parahippocampal_gyrus": 0.277,
+        "amygdala": 0.202,
+        "superior_temporal_gyrus": 0.599,
+        "supplementary_motor_area": 0.425,
+        "prefrontal_cortex_dorsolateral": 0.227,
+        "cerebellum": 0.35,
+        "insula": 0.351
+      },
+      "predicted_pleasantness": 8.2,
+      "neural_adaptation_halflife_s": 22.3
+    },
+    "Balinese": {
+      "dial_position": {
+        "I_vert": 2.31,
+        "I_horiz": 3.1,
+        "I_spectral": 3.2
+      },
+      "tenney_height": 5.23,
+      "consonance_score": 0.731,
+      "brainstem_FFR_amplitude": 0.845,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.785,
+        "nucleus_accumbens": 0.662,
+        "auditory_cortex_primary": 0.64,
+        "auditory_cortex_secondary": 0.62,
+        "parahippocampal_gyrus": 0.288,
+        "amygdala": 0.211,
+        "superior_temporal_gyrus": 0.592,
+        "supplementary_motor_area": 0.44,
+        "prefrontal_cortex_dorsolateral": 0.234,
+        "cerebellum": 0.36,
+        "insula": 0.368
+      },
+      "predicted_pleasantness": 8.0,
+      "neural_adaptation_halflife_s": 25.8
+    },
+    "Gagaku": {
+      "dial_position": {
+        "I_vert": 2.38,
+        "I_horiz": 1.7,
+        "I_spectral": 3.5
+      },
+      "tenney_height": 4.8,
+      "consonance_score": 0.766,
+      "brainstem_FFR_amplitude": 0.866,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.813,
+        "nucleus_accumbens": 0.686,
+        "auditory_cortex_primary": 0.663,
+        "auditory_cortex_secondary": 0.65,
+        "parahippocampal_gyrus": 0.264,
+        "amygdala": 0.19,
+        "superior_temporal_gyrus": 0.607,
+        "supplementary_motor_area": 0.463,
+        "prefrontal_cortex_dorsolateral": 0.217,
+        "cerebellum": 0.375,
+        "insula": 0.368
+      },
+      "predicted_pleasantness": 8.3,
+      "neural_adaptation_halflife_s": 23.6
+    },
+    "Chinese": {
+      "dial_position": {
+        "I_vert": 2.32,
+        "I_horiz": 2.05,
+        "I_spectral": 2.0
+      },
+      "tenney_height": 4.53,
+      "consonance_score": 0.789,
+      "brainstem_FFR_amplitude": 0.879,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.832,
+        "nucleus_accumbens": 0.703,
+        "auditory_cortex_primary": 0.55,
+        "auditory_cortex_secondary": 0.5,
+        "parahippocampal_gyrus": 0.247,
+        "amygdala": 0.176,
+        "superior_temporal_gyrus": 0.616,
+        "supplementary_motor_area": 0.35,
+        "prefrontal_cortex_dorsolateral": 0.205,
+        "cerebellum": 0.3,
+        "insula": 0.284
+      },
+      "predicted_pleasantness": 7.5,
+      "neural_adaptation_halflife_s": 13.3
+    },
+    "West African": {
+      "dial_position": {
+        "I_vert": 2.41,
+        "I_horiz": 3.63,
+        "I_spectral": 2.6
+      },
+      "tenney_height": 5.39,
+      "consonance_score": 0.718,
+      "brainstem_FFR_amplitude": 0.837,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.774,
+        "nucleus_accumbens": 0.652,
+        "auditory_cortex_primary": 0.595,
+        "auditory_cortex_secondary": 0.56,
+        "parahippocampal_gyrus": 0.298,
+        "amygdala": 0.219,
+        "superior_temporal_gyrus": 0.587,
+        "supplementary_motor_area": 0.395,
+        "prefrontal_cortex_dorsolateral": 0.241,
+        "cerebellum": 0.33,
+        "insula": 0.343
+      },
+      "predicted_pleasantness": 7.9,
+      "neural_adaptation_halflife_s": 26.5
+    },
+    "Western ET": {
+      "dial_position": {
+        "I_vert": 2.72,
+        "I_horiz": 2.05,
+        "I_spectral": 1.8
+      },
+      "tenney_height": 4.86,
+      "consonance_score": 0.761,
+      "brainstem_FFR_amplitude": 0.863,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.809,
+        "nucleus_accumbens": 0.683,
+        "auditory_cortex_primary": 0.535,
+        "auditory_cortex_secondary": 0.48,
+        "parahippocampal_gyrus": 0.267,
+        "amygdala": 0.193,
+        "superior_temporal_gyrus": 0.605,
+        "supplementary_motor_area": 0.335,
+        "prefrontal_cortex_dorsolateral": 0.219,
+        "cerebellum": 0.29,
+        "insula": 0.285
+      },
+      "predicted_pleasantness": 6.3,
+      "neural_adaptation_halflife_s": 11.0
+    }
+  },
+  "historical_styles": {
+    "Renaissance (c.1450)": {
+      "dial_position": {
+        "I_vert": 1.8,
+        "I_horiz": 1.2,
+        "I_spectral": 0.8
+      },
+      "tenney_height": 3.4,
+      "consonance_score": 0.883,
+      "brainstem_FFR_amplitude": 0.934,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.907,
+        "nucleus_accumbens": 0.768,
+        "auditory_cortex_primary": 0.46,
+        "auditory_cortex_secondary": 0.38,
+        "parahippocampal_gyrus": 0.182,
+        "amygdala": 0.12,
+        "superior_temporal_gyrus": 0.653,
+        "supplementary_motor_area": 0.26,
+        "prefrontal_cortex_dorsolateral": 0.158,
+        "cerebellum": 0.24,
+        "insula": 0.187
+      },
+      "predicted_pleasantness": 9.2,
+      "neural_adaptation_halflife_s": 16.4
+    },
+    "Baroque (c.1700)": {
+      "dial_position": {
+        "I_vert": 2.2,
+        "I_horiz": 1.5,
+        "I_spectral": 1.0
+      },
+      "tenney_height": 3.95,
+      "consonance_score": 0.837,
+      "brainstem_FFR_amplitude": 0.907,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.87,
+        "nucleus_accumbens": 0.736,
+        "auditory_cortex_primary": 0.475,
+        "auditory_cortex_secondary": 0.4,
+        "parahippocampal_gyrus": 0.214,
+        "amygdala": 0.148,
+        "superior_temporal_gyrus": 0.635,
+        "supplementary_motor_area": 0.275,
+        "prefrontal_cortex_dorsolateral": 0.181,
+        "cerebellum": 0.25,
+        "insula": 0.215
+      },
+      "predicted_pleasantness": 8.7,
+      "neural_adaptation_halflife_s": 15.7
+    },
+    "Classical (c.1780)": {
+      "dial_position": {
+        "I_vert": 2.0,
+        "I_horiz": 1.8,
+        "I_spectral": 1.1
+      },
+      "tenney_height": 3.9,
+      "consonance_score": 0.841,
+      "brainstem_FFR_amplitude": 0.91,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.873,
+        "nucleus_accumbens": 0.739,
+        "auditory_cortex_primary": 0.483,
+        "auditory_cortex_secondary": 0.41,
+        "parahippocampal_gyrus": 0.211,
+        "amygdala": 0.145,
+        "superior_temporal_gyrus": 0.637,
+        "supplementary_motor_area": 0.283,
+        "prefrontal_cortex_dorsolateral": 0.179,
+        "cerebellum": 0.255,
+        "insula": 0.218
+      },
+      "predicted_pleasantness": 8.7,
+      "neural_adaptation_halflife_s": 15.2
+    },
+    "Romantic (c.1850)": {
+      "dial_position": {
+        "I_vert": 2.6,
+        "I_horiz": 2.2,
+        "I_spectral": 1.3
+      },
+      "tenney_height": 4.69,
+      "consonance_score": 0.776,
+      "brainstem_FFR_amplitude": 0.871,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.821,
+        "nucleus_accumbens": 0.693,
+        "auditory_cortex_primary": 0.498,
+        "auditory_cortex_secondary": 0.43,
+        "parahippocampal_gyrus": 0.257,
+        "amygdala": 0.184,
+        "superior_temporal_gyrus": 0.61,
+        "supplementary_motor_area": 0.297,
+        "prefrontal_cortex_dorsolateral": 0.212,
+        "cerebellum": 0.265,
+        "insula": 0.255
+      },
+      "predicted_pleasantness": 7.6,
+      "neural_adaptation_halflife_s": 14.4
+    },
+    "Early Jazz (c.1920)": {
+      "dial_position": {
+        "I_vert": 2.5,
+        "I_horiz": 2.8,
+        "I_spectral": 1.5
+      },
+      "tenney_height": 4.88,
+      "consonance_score": 0.76,
+      "brainstem_FFR_amplitude": 0.862,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.808,
+        "nucleus_accumbens": 0.682,
+        "auditory_cortex_primary": 0.512,
+        "auditory_cortex_secondary": 0.45,
+        "parahippocampal_gyrus": 0.268,
+        "amygdala": 0.194,
+        "superior_temporal_gyrus": 0.604,
+        "supplementary_motor_area": 0.312,
+        "prefrontal_cortex_dorsolateral": 0.22,
+        "cerebellum": 0.275,
+        "insula": 0.271
+      },
+      "predicted_pleasantness": 7.9,
+      "neural_adaptation_halflife_s": 17.1
+    },
+    "Bebop (c.1945)": {
+      "dial_position": {
+        "I_vert": 2.8,
+        "I_horiz": 3.2,
+        "I_spectral": 1.6
+      },
+      "tenney_height": 5.35,
+      "consonance_score": 0.721,
+      "brainstem_FFR_amplitude": 0.839,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.777,
+        "nucleus_accumbens": 0.654,
+        "auditory_cortex_primary": 0.52,
+        "auditory_cortex_secondary": 0.46,
+        "parahippocampal_gyrus": 0.296,
+        "amygdala": 0.218,
+        "superior_temporal_gyrus": 0.588,
+        "supplementary_motor_area": 0.32,
+        "prefrontal_cortex_dorsolateral": 0.24,
+        "cerebellum": 0.28,
+        "insula": 0.292
+      },
+      "predicted_pleasantness": 7.9,
+      "neural_adaptation_halflife_s": 21.3
+    },
+    "Rock (c.1965)": {
+      "dial_position": {
+        "I_vert": 2.3,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0
+      },
+      "tenney_height": 4.69,
+      "consonance_score": 0.776,
+      "brainstem_FFR_amplitude": 0.871,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.821,
+        "nucleus_accumbens": 0.693,
+        "auditory_cortex_primary": 0.55,
+        "auditory_cortex_secondary": 0.5,
+        "parahippocampal_gyrus": 0.257,
+        "amygdala": 0.184,
+        "superior_temporal_gyrus": 0.61,
+        "supplementary_motor_area": 0.35,
+        "prefrontal_cortex_dorsolateral": 0.212,
+        "cerebellum": 0.3,
+        "insula": 0.29
+      },
+      "predicted_pleasantness": 7.8,
+      "neural_adaptation_halflife_s": 15.2
+    },
+    "Minimalism (c.1970)": {
+      "dial_position": {
+        "I_vert": 1.5,
+        "I_horiz": 2.8,
+        "I_spectral": 2.2
+      },
+      "tenney_height": 4.09,
+      "consonance_score": 0.826,
+      "brainstem_FFR_amplitude": 0.901,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.861,
+        "nucleus_accumbens": 0.728,
+        "auditory_cortex_primary": 0.565,
+        "auditory_cortex_secondary": 0.52,
+        "parahippocampal_gyrus": 0.222,
+        "amygdala": 0.154,
+        "superior_temporal_gyrus": 0.63,
+        "supplementary_motor_area": 0.365,
+        "prefrontal_cortex_dorsolateral": 0.187,
+        "cerebellum": 0.31,
+        "insula": 0.28
+      },
+      "predicted_pleasantness": 8.8,
+      "neural_adaptation_halflife_s": 18.6
+    },
+    "Electronic (c.1995)": {
+      "dial_position": {
+        "I_vert": 2.0,
+        "I_horiz": 3.0,
+        "I_spectral": 2.8
+      },
+      "tenney_height": 4.79,
+      "consonance_score": 0.767,
+      "brainstem_FFR_amplitude": 0.866,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.814,
+        "nucleus_accumbens": 0.687,
+        "auditory_cortex_primary": 0.61,
+        "auditory_cortex_secondary": 0.58,
+        "parahippocampal_gyrus": 0.263,
+        "amygdala": 0.19,
+        "superior_temporal_gyrus": 0.607,
+        "supplementary_motor_area": 0.41,
+        "prefrontal_cortex_dorsolateral": 0.216,
+        "cerebellum": 0.34,
+        "insula": 0.333
+      },
+      "predicted_pleasantness": 8.4,
+      "neural_adaptation_halflife_s": 22.0
+    },
+    "AI-generated (c.2025)": {
+      "dial_position": {
+        "I_vert": 3.0,
+        "I_horiz": 3.0,
+        "I_spectral": 3.0
+      },
+      "tenney_height": 5.8,
+      "consonance_score": 0.683,
+      "brainstem_FFR_amplitude": 0.816,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.747,
+        "nucleus_accumbens": 0.628,
+        "auditory_cortex_primary": 0.625,
+        "auditory_cortex_secondary": 0.6,
+        "parahippocampal_gyrus": 0.322,
+        "amygdala": 0.24,
+        "superior_temporal_gyrus": 0.573,
+        "supplementary_motor_area": 0.425,
+        "prefrontal_cortex_dorsolateral": 0.258,
+        "cerebellum": 0.35,
+        "insula": 0.377
+      },
+      "predicted_pleasantness": 7.8,
+      "neural_adaptation_halflife_s": 26.3
+    }
+  },
+  "innovation_cycle_neural": {
+    "Phase 1: Discovery": {
+      "dial_position": {
+        "I_vert": 3.4,
+        "I_horiz": 3.375,
+        "I_spectral": 3.05
+      },
+      "tenney_height": 6.35,
+      "consonance_score": 0.638,
+      "brainstem_FFR_amplitude": 0.788,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.71,
+        "nucleus_accumbens": 0.596,
+        "auditory_cortex_primary": 0.629,
+        "auditory_cortex_secondary": 0.605,
+        "parahippocampal_gyrus": 0.354,
+        "amygdala": 0.267,
+        "superior_temporal_gyrus": 0.555,
+        "supplementary_motor_area": 0.429,
+        "prefrontal_cortex_dorsolateral": 0.281,
+        "cerebellum": 0.353,
+        "insula": 0.397
+      },
+      "predicted_pleasantness": 5.8,
+      "neural_adaptation_halflife_s": 40.8,
+      "phase_properties": {
+        "novelty": 0.95,
+        "familiarity": 0.2,
+        "emotional_intensity": 0.85
+      },
+      "effective_dial": {
+        "I_vert": 3.4,
+        "I_horiz": 3.38,
+        "I_spectral": 3.05
+      }
+    },
+    "Phase 2: Codification": {
+      "dial_position": {
+        "I_vert": 2.8,
+        "I_horiz": 2.625,
+        "I_spectral": 2.3
+      },
+      "tenney_height": 5.29,
+      "consonance_score": 0.726,
+      "brainstem_FFR_amplitude": 0.842,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.781,
+        "nucleus_accumbens": 0.658,
+        "auditory_cortex_primary": 0.573,
+        "auditory_cortex_secondary": 0.53,
+        "parahippocampal_gyrus": 0.292,
+        "amygdala": 0.215,
+        "superior_temporal_gyrus": 0.59,
+        "supplementary_motor_area": 0.372,
+        "prefrontal_cortex_dorsolateral": 0.237,
+        "cerebellum": 0.315,
+        "insula": 0.325
+      },
+      "predicted_pleasantness": 7.9,
+      "neural_adaptation_halflife_s": 27.3,
+      "phase_properties": {
+        "novelty": 0.65,
+        "familiarity": 0.5,
+        "emotional_intensity": 0.6
+      },
+      "effective_dial": {
+        "I_vert": 2.8,
+        "I_horiz": 2.62,
+        "I_spectral": 2.3
+      }
+    },
+    "Phase 3: Ubiquity": {
+      "dial_position": {
+        "I_vert": 1.9,
+        "I_horiz": 1.5,
+        "I_spectral": 1.7000000000000002
+      },
+      "tenney_height": 3.83,
+      "consonance_score": 0.847,
+      "brainstem_FFR_amplitude": 0.913,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.878,
+        "nucleus_accumbens": 0.743,
+        "auditory_cortex_primary": 0.528,
+        "auditory_cortex_secondary": 0.47,
+        "parahippocampal_gyrus": 0.207,
+        "amygdala": 0.142,
+        "superior_temporal_gyrus": 0.639,
+        "supplementary_motor_area": 0.328,
+        "prefrontal_cortex_dorsolateral": 0.176,
+        "cerebellum": 0.285,
+        "insula": 0.246
+      },
+      "predicted_pleasantness": 8.2,
+      "neural_adaptation_halflife_s": 12.3,
+      "phase_properties": {
+        "novelty": 0.2,
+        "familiarity": 0.9,
+        "emotional_intensity": 0.4
+      },
+      "effective_dial": {
+        "I_vert": 1.9,
+        "I_horiz": 1.5,
+        "I_spectral": 1.7
+      }
+    },
+    "Phase 4: Saturation": {
+      "dial_position": {
+        "I_vert": 1.6,
+        "I_horiz": 1.125,
+        "I_spectral": 1.1
+      },
+      "tenney_height": 3.25,
+      "consonance_score": 0.896,
+      "brainstem_FFR_amplitude": 0.941,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.917,
+        "nucleus_accumbens": 0.777,
+        "auditory_cortex_primary": 0.483,
+        "auditory_cortex_secondary": 0.41,
+        "parahippocampal_gyrus": 0.173,
+        "amygdala": 0.112,
+        "superior_temporal_gyrus": 0.658,
+        "supplementary_motor_area": 0.283,
+        "prefrontal_cortex_dorsolateral": 0.152,
+        "cerebellum": 0.255,
+        "insula": 0.197
+      },
+      "predicted_pleasantness": 7.7,
+      "neural_adaptation_halflife_s": 8.4,
+      "phase_properties": {
+        "novelty": 0.05,
+        "familiarity": 0.98,
+        "emotional_intensity": 0.2
+      },
+      "effective_dial": {
+        "I_vert": 1.6,
+        "I_horiz": 1.12,
+        "I_spectral": 1.1
+      }
+    },
+    "Phase 5: Rebellion": {
+      "dial_position": {
+        "I_vert": 3.0,
+        "I_horiz": 2.875,
+        "I_spectral": 3.2
+      },
+      "tenney_height": 5.8,
+      "consonance_score": 0.683,
+      "brainstem_FFR_amplitude": 0.816,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.747,
+        "nucleus_accumbens": 0.628,
+        "auditory_cortex_primary": 0.64,
+        "auditory_cortex_secondary": 0.62,
+        "parahippocampal_gyrus": 0.322,
+        "amygdala": 0.24,
+        "superior_temporal_gyrus": 0.573,
+        "supplementary_motor_area": 0.44,
+        "prefrontal_cortex_dorsolateral": 0.258,
+        "cerebellum": 0.36,
+        "insula": 0.387
+      },
+      "predicted_pleasantness": 7.3,
+      "neural_adaptation_halflife_s": 32.3,
+      "phase_properties": {
+        "novelty": 0.75,
+        "familiarity": 0.3,
+        "emotional_intensity": 0.9
+      },
+      "effective_dial": {
+        "I_vert": 3.0,
+        "I_horiz": 2.88,
+        "I_spectral": 3.2
+      }
+    },
+    "Phase 6: Synthesis": {
+      "dial_position": {
+        "I_vert": 2.5,
+        "I_horiz": 2.25,
+        "I_spectral": 2.5999999999999996
+      },
+      "tenney_height": 4.92,
+      "consonance_score": 0.756,
+      "brainstem_FFR_amplitude": 0.86,
+      "cortical_activation": {
+        "orbitofrontal_cortex": 0.805,
+        "nucleus_accumbens": 0.679,
+        "auditory_cortex_primary": 0.595,
+        "auditory_cortex_secondary": 0.56,
+        "parahippocampal_gyrus": 0.271,
+        "amygdala": 0.196,
+        "superior_temporal_gyrus": 0.603,
+        "supplementary_motor_area": 0.395,
+        "prefrontal_cortex_dorsolateral": 0.222,
+        "cerebellum": 0.33,
+        "insula": 0.327
+      },
+      "predicted_pleasantness": 8.3,
+      "neural_adaptation_halflife_s": 22.2,
+      "phase_properties": {
+        "novelty": 0.5,
+        "familiarity": 0.6,
+        "emotional_intensity": 0.7
+      },
+      "effective_dial": {
+        "I_vert": 2.5,
+        "I_horiz": 2.25,
+        "I_spectral": 2.6
+      }
+    }
+  },
+  "tradition_similarity_matrix": {
+    "Hindustani": {
+      "Hindustani": 0.0,
+      "Carnatic": 0.046,
+      "Arabic": 0.027,
+      "Turkish": 0.043,
+      "Javanese": 0.096,
+      "Balinese": 0.103,
+      "Gagaku": 0.162,
+      "Chinese": 0.162,
+      "West African": 0.033,
+      "Western ET": 0.143
+    },
+    "Carnatic": {
+      "Hindustani": 0.046,
+      "Carnatic": 0.0,
+      "Arabic": 0.072,
+      "Turkish": 0.088,
+      "Javanese": 0.095,
+      "Balinese": 0.085,
+      "Gagaku": 0.148,
+      "Chinese": 0.201,
+      "West African": 0.059,
+      "Western ET": 0.187
+    },
+    "Arabic": {
+      "Hindustani": 0.027,
+      "Carnatic": 0.072,
+      "Arabic": 0.0,
+      "Turkish": 0.016,
+      "Javanese": 0.113,
+      "Balinese": 0.126,
+      "Gagaku": 0.183,
+      "Chinese": 0.148,
+      "West African": 0.047,
+      "Western ET": 0.122
+    },
+    "Turkish": {
+      "Hindustani": 0.043,
+      "Carnatic": 0.088,
+      "Arabic": 0.016,
+      "Turkish": 0.0,
+      "Javanese": 0.12,
+      "Balinese": 0.137,
+      "Gagaku": 0.191,
+      "Chinese": 0.136,
+      "West African": 0.056,
+      "Western ET": 0.107
+    },
+    "Javanese": {
+      "Hindustani": 0.096,
+      "Carnatic": 0.095,
+      "Arabic": 0.113,
+      "Turkish": 0.12,
+      "Javanese": 0.0,
+      "Balinese": 0.038,
+      "Gagaku": 0.071,
+      "Chinese": 0.155,
+      "West African": 0.066,
+      "Western ET": 0.165
+    },
+    "Balinese": {
+      "Hindustani": 0.103,
+      "Carnatic": 0.085,
+      "Arabic": 0.126,
+      "Turkish": 0.137,
+      "Javanese": 0.038,
+      "Balinese": 0.0,
+      "Gagaku": 0.063,
+      "Chinese": 0.192,
+      "West African": 0.082,
+      "Western ET": 0.199
+    },
+    "Gagaku": {
+      "Hindustani": 0.162,
+      "Carnatic": 0.148,
+      "Arabic": 0.183,
+      "Turkish": 0.191,
+      "Javanese": 0.071,
+      "Balinese": 0.063,
+      "Gagaku": 0.0,
+      "Chinese": 0.209,
+      "West African": 0.136,
+      "Western ET": 0.229
+    },
+    "Chinese": {
+      "Hindustani": 0.162,
+      "Carnatic": 0.201,
+      "Arabic": 0.148,
+      "Turkish": 0.136,
+      "Javanese": 0.155,
+      "Balinese": 0.192,
+      "Gagaku": 0.209,
+      "Chinese": 0.0,
+      "West African": 0.143,
+      "Western ET": 0.049
+    },
+    "West African": {
+      "Hindustani": 0.033,
+      "Carnatic": 0.059,
+      "Arabic": 0.047,
+      "Turkish": 0.056,
+      "Javanese": 0.066,
+      "Balinese": 0.082,
+      "Gagaku": 0.136,
+      "Chinese": 0.143,
+      "West African": 0.0,
+      "Western ET": 0.132
+    },
+    "Western ET": {
+      "Hindustani": 0.143,
+      "Carnatic": 0.187,
+      "Arabic": 0.122,
+      "Turkish": 0.107,
+      "Javanese": 0.165,
+      "Balinese": 0.199,
+      "Gagaku": 0.229,
+      "Chinese": 0.049,
+      "West African": 0.132,
+      "Western ET": 0.0
+    }
+  },
+  "novel_predictions": {
+    "prediction_1_neural_similarity": {
+      "statement": "Traditions at similar dial positions should produce similar EEG/fMRI responses, regardless of geographic origin",
+      "supporting_evidence": "Dial distance\u2013neural distance correlation: r = 0.862",
+      "testable_with": "Cross-cultural EEG study: play music from each tradition to naive listeners, measure FFR + cortical ERP",
+      "closest_pairs": [
+        {
+          "tradition_1": "Arabic",
+          "tradition_2": "Turkish",
+          "neural_distance": 0.016,
+          "dial_distance": 0.233,
+          "prediction": "EEG responses to Arabic and Turkish music should be similar"
+        },
+        {
+          "tradition_1": "Hindustani",
+          "tradition_2": "Arabic",
+          "neural_distance": 0.027,
+          "dial_distance": 0.437,
+          "prediction": "EEG responses to Hindustani and Arabic music should be similar"
+        },
+        {
+          "tradition_1": "Hindustani",
+          "tradition_2": "West African",
+          "neural_distance": 0.033,
+          "dial_distance": 0.415,
+          "prediction": "EEG responses to Hindustani and West African music should be similar"
+        },
+        {
+          "tradition_1": "Javanese",
+          "tradition_2": "Balinese",
+          "neural_distance": 0.038,
+          "dial_distance": 0.403,
+          "prediction": "EEG responses to Javanese and Balinese music should be similar"
+        },
+        {
+          "tradition_1": "Hindustani",
+          "tradition_2": "Turkish",
+          "neural_distance": 0.043,
+          "dial_distance": 0.35,
+          "prediction": "EEG responses to Hindustani and Turkish music should be similar"
+        }
+      ],
+      "most_distant_pairs": [
+        {
+          "tradition_1": "Balinese",
+          "tradition_2": "Chinese",
+          "neural_distance": 0.192,
+          "dial_distance": 1.595,
+          "prediction": "EEG responses to Balinese and Chinese music should be distinct"
+        },
+        {
+          "tradition_1": "Balinese",
+          "tradition_2": "Western ET",
+          "neural_distance": 0.199,
+          "dial_distance": 1.797,
+          "prediction": "EEG responses to Balinese and Western ET music should be distinct"
+        },
+        {
+          "tradition_1": "Carnatic",
+          "tradition_2": "Chinese",
+          "neural_distance": 0.201,
+          "dial_distance": 1.827,
+          "prediction": "EEG responses to Carnatic and Chinese music should be distinct"
+        },
+        {
+          "tradition_1": "Gagaku",
+          "tradition_2": "Chinese",
+          "neural_distance": 0.209,
+          "dial_distance": 1.541,
+          "prediction": "EEG responses to Gagaku and Chinese music should be distinct"
+        },
+        {
+          "tradition_1": "Gagaku",
+          "tradition_2": "Western ET",
+          "neural_distance": 0.229,
+          "dial_distance": 1.769,
+          "prediction": "EEG responses to Gagaku and Western ET music should be distinct"
+        }
+      ]
+    },
+    "prediction_2_adaptation_cycle": {
+      "statement": "Music in Phase 4 (Saturation) should show fastest neural adaptation (habituation), Phase 1 (Discovery) slowest",
+      "mechanism": "Familiarity speeds up predictive coding \u2014 the brain's prediction error drops faster",
+      "testable_with": "Long-duration EEG: measure N1/P2 habituation rates for novel vs. familiar musical styles",
+      "phase_ordering": [
+        {
+          "phase": "Phase 1: Discovery",
+          "adaptation_halflife_s": 40.8
+        },
+        {
+          "phase": "Phase 2: Codification",
+          "adaptation_halflife_s": 27.3
+        },
+        {
+          "phase": "Phase 3: Ubiquity",
+          "adaptation_halflife_s": 12.3
+        },
+        {
+          "phase": "Phase 4: Saturation",
+          "adaptation_halflife_s": 8.4
+        },
+        {
+          "phase": "Phase 5: Rebellion",
+          "adaptation_halflife_s": 32.3
+        },
+        {
+          "phase": "Phase 6: Synthesis",
+          "adaptation_halflife_s": 22.2
+        }
+      ]
+    },
+    "prediction_3_consonance_universal": {
+      "statement": "Brainstem FFR response to consonance should be similar across all listeners (culturally invariant), but cortical pleasantness ratings should vary by cultural background",
+      "basis": "FFR is subcortical (pre-conscious), pleasantness involves cortical + limbic (culturally shaped)",
+      "testable_with": "Compare FFR amplitude (brainstem) vs. subjective pleasantness ratings across listeners from different musical traditions",
+      "predicted_tradition_ranking_by_FFR": [
+        [
+          "Chinese",
+          0.879
+        ],
+        [
+          "Gagaku",
+          0.866
+        ],
+        [
+          "Western ET",
+          0.863
+        ],
+        [
+          "Javanese",
+          0.854
+        ],
+        [
+          "Balinese",
+          0.845
+        ],
+        [
+          "West African",
+          0.837
+        ],
+        [
+          "Turkish",
+          0.828
+        ],
+        [
+          "Arabic",
+          0.826
+        ],
+        [
+          "Hindustani",
+          0.824
+        ],
+        [
+          "Carnatic",
+          0.817
+        ]
+      ]
+    },
+    "prediction_4_reward_prediction": {
+      "statement": "Music near the listener's cultural tradition should activate nucleus accumbens more than equally consonant unfamiliar music",
+      "mechanism": "Reward combines acoustic consonance with cultural familiarity (statistical learning)",
+      "testable_with": "fMRI with listeners from 3+ traditions hearing each tradition's music"
+    }
+  },
+  "heatmap_data": {
+    "description": "Cortical activation predicted at I_spectral=2.0 slice across I_vert x I_horiz",
+    "points": [
+      {
+        "I_vert": 1.0,
+        "I_horiz": 1.0,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.944,
+        "parahippocampal": 0.149,
+        "FFR_amplitude": 0.961,
+        "pleasantness": 9.5
+      },
+      {
+        "I_vert": 1.0,
+        "I_horiz": 1.3,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.936,
+        "parahippocampal": 0.156,
+        "FFR_amplitude": 0.955,
+        "pleasantness": 9.4
+      },
+      {
+        "I_vert": 1.0,
+        "I_horiz": 1.6,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.928,
+        "parahippocampal": 0.163,
+        "FFR_amplitude": 0.949,
+        "pleasantness": 9.4
+      },
+      {
+        "I_vert": 1.0,
+        "I_horiz": 1.9,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.92,
+        "parahippocampal": 0.17,
+        "FFR_amplitude": 0.943,
+        "pleasantness": 9.3
+      },
+      {
+        "I_vert": 1.0,
+        "I_horiz": 2.2,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.912,
+        "parahippocampal": 0.177,
+        "FFR_amplitude": 0.938,
+        "pleasantness": 9.2
+      },
+      {
+        "I_vert": 1.0,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.904,
+        "parahippocampal": 0.184,
+        "FFR_amplitude": 0.932,
+        "pleasantness": 9.2
+      },
+      {
+        "I_vert": 1.0,
+        "I_horiz": 2.8,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.896,
+        "parahippocampal": 0.191,
+        "FFR_amplitude": 0.926,
+        "pleasantness": 9.1
+      },
+      {
+        "I_vert": 1.0,
+        "I_horiz": 3.1,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.888,
+        "parahippocampal": 0.198,
+        "FFR_amplitude": 0.92,
+        "pleasantness": 9.0
+      },
+      {
+        "I_vert": 1.0,
+        "I_horiz": 3.4,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.88,
+        "parahippocampal": 0.205,
+        "FFR_amplitude": 0.915,
+        "pleasantness": 8.9
+      },
+      {
+        "I_vert": 1.0,
+        "I_horiz": 3.7,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.872,
+        "parahippocampal": 0.212,
+        "FFR_amplitude": 0.909,
+        "pleasantness": 8.9
+      },
+      {
+        "I_vert": 1.3,
+        "I_horiz": 1.0,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.925,
+        "parahippocampal": 0.166,
+        "FFR_amplitude": 0.947,
+        "pleasantness": 9.3
+      },
+      {
+        "I_vert": 1.3,
+        "I_horiz": 1.3,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.917,
+        "parahippocampal": 0.173,
+        "FFR_amplitude": 0.941,
+        "pleasantness": 9.3
+      },
+      {
+        "I_vert": 1.3,
+        "I_horiz": 1.6,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.909,
+        "parahippocampal": 0.18,
+        "FFR_amplitude": 0.935,
+        "pleasantness": 9.2
+      },
+      {
+        "I_vert": 1.3,
+        "I_horiz": 1.9,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.901,
+        "parahippocampal": 0.187,
+        "FFR_amplitude": 0.93,
+        "pleasantness": 9.1
+      },
+      {
+        "I_vert": 1.3,
+        "I_horiz": 2.2,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.893,
+        "parahippocampal": 0.194,
+        "FFR_amplitude": 0.924,
+        "pleasantness": 9.1
+      },
+      {
+        "I_vert": 1.3,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.885,
+        "parahippocampal": 0.201,
+        "FFR_amplitude": 0.918,
+        "pleasantness": 9.0
+      },
+      {
+        "I_vert": 1.3,
+        "I_horiz": 2.8,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.877,
+        "parahippocampal": 0.208,
+        "FFR_amplitude": 0.912,
+        "pleasantness": 8.9
+      },
+      {
+        "I_vert": 1.3,
+        "I_horiz": 3.1,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.869,
+        "parahippocampal": 0.215,
+        "FFR_amplitude": 0.907,
+        "pleasantness": 8.9
+      },
+      {
+        "I_vert": 1.3,
+        "I_horiz": 3.4,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.861,
+        "parahippocampal": 0.222,
+        "FFR_amplitude": 0.901,
+        "pleasantness": 8.8
+      },
+      {
+        "I_vert": 1.3,
+        "I_horiz": 3.7,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.853,
+        "parahippocampal": 0.229,
+        "FFR_amplitude": 0.895,
+        "pleasantness": 8.7
+      },
+      {
+        "I_vert": 1.6,
+        "I_horiz": 1.0,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.906,
+        "parahippocampal": 0.183,
+        "FFR_amplitude": 0.933,
+        "pleasantness": 9.2
+      },
+      {
+        "I_vert": 1.6,
+        "I_horiz": 1.3,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.898,
+        "parahippocampal": 0.19,
+        "FFR_amplitude": 0.927,
+        "pleasantness": 9.1
+      },
+      {
+        "I_vert": 1.6,
+        "I_horiz": 1.6,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.89,
+        "parahippocampal": 0.197,
+        "FFR_amplitude": 0.922,
+        "pleasantness": 9.0
+      },
+      {
+        "I_vert": 1.6,
+        "I_horiz": 1.9,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.882,
+        "parahippocampal": 0.204,
+        "FFR_amplitude": 0.916,
+        "pleasantness": 9.0
+      },
+      {
+        "I_vert": 1.6,
+        "I_horiz": 2.2,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.874,
+        "parahippocampal": 0.211,
+        "FFR_amplitude": 0.91,
+        "pleasantness": 8.9
+      },
+      {
+        "I_vert": 1.6,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.866,
+        "parahippocampal": 0.218,
+        "FFR_amplitude": 0.904,
+        "pleasantness": 8.8
+      },
+      {
+        "I_vert": 1.6,
+        "I_horiz": 2.8,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.858,
+        "parahippocampal": 0.225,
+        "FFR_amplitude": 0.898,
+        "pleasantness": 8.8
+      },
+      {
+        "I_vert": 1.6,
+        "I_horiz": 3.1,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.85,
+        "parahippocampal": 0.232,
+        "FFR_amplitude": 0.893,
+        "pleasantness": 8.7
+      },
+      {
+        "I_vert": 1.6,
+        "I_horiz": 3.4,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.842,
+        "parahippocampal": 0.239,
+        "FFR_amplitude": 0.887,
+        "pleasantness": 8.6
+      },
+      {
+        "I_vert": 1.6,
+        "I_horiz": 3.7,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.834,
+        "parahippocampal": 0.246,
+        "FFR_amplitude": 0.881,
+        "pleasantness": 8.5
+      },
+      {
+        "I_vert": 1.9,
+        "I_horiz": 1.0,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.886,
+        "parahippocampal": 0.199,
+        "FFR_amplitude": 0.919,
+        "pleasantness": 9.0
+      },
+      {
+        "I_vert": 1.9,
+        "I_horiz": 1.3,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.878,
+        "parahippocampal": 0.206,
+        "FFR_amplitude": 0.914,
+        "pleasantness": 8.9
+      },
+      {
+        "I_vert": 1.9,
+        "I_horiz": 1.6,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.87,
+        "parahippocampal": 0.213,
+        "FFR_amplitude": 0.908,
+        "pleasantness": 8.9
+      },
+      {
+        "I_vert": 1.9,
+        "I_horiz": 1.9,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.862,
+        "parahippocampal": 0.22,
+        "FFR_amplitude": 0.902,
+        "pleasantness": 8.8
+      },
+      {
+        "I_vert": 1.9,
+        "I_horiz": 2.2,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.854,
+        "parahippocampal": 0.227,
+        "FFR_amplitude": 0.896,
+        "pleasantness": 8.7
+      },
+      {
+        "I_vert": 1.9,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.846,
+        "parahippocampal": 0.234,
+        "FFR_amplitude": 0.89,
+        "pleasantness": 8.7
+      },
+      {
+        "I_vert": 1.9,
+        "I_horiz": 2.8,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.838,
+        "parahippocampal": 0.241,
+        "FFR_amplitude": 0.884,
+        "pleasantness": 8.6
+      },
+      {
+        "I_vert": 1.9,
+        "I_horiz": 3.1,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.83,
+        "parahippocampal": 0.248,
+        "FFR_amplitude": 0.879,
+        "pleasantness": 8.5
+      },
+      {
+        "I_vert": 1.9,
+        "I_horiz": 3.4,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.822,
+        "parahippocampal": 0.255,
+        "FFR_amplitude": 0.873,
+        "pleasantness": 8.4
+      },
+      {
+        "I_vert": 1.9,
+        "I_horiz": 3.7,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.814,
+        "parahippocampal": 0.262,
+        "FFR_amplitude": 0.867,
+        "pleasantness": 8.4
+      },
+      {
+        "I_vert": 2.2,
+        "I_horiz": 1.0,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.867,
+        "parahippocampal": 0.216,
+        "FFR_amplitude": 0.905,
+        "pleasantness": 8.8
+      },
+      {
+        "I_vert": 2.2,
+        "I_horiz": 1.3,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.859,
+        "parahippocampal": 0.223,
+        "FFR_amplitude": 0.9,
+        "pleasantness": 8.8
+      },
+      {
+        "I_vert": 2.2,
+        "I_horiz": 1.6,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.851,
+        "parahippocampal": 0.23,
+        "FFR_amplitude": 0.894,
+        "pleasantness": 8.7
+      },
+      {
+        "I_vert": 2.2,
+        "I_horiz": 1.9,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.843,
+        "parahippocampal": 0.237,
+        "FFR_amplitude": 0.888,
+        "pleasantness": 8.6
+      },
+      {
+        "I_vert": 2.2,
+        "I_horiz": 2.2,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.835,
+        "parahippocampal": 0.244,
+        "FFR_amplitude": 0.882,
+        "pleasantness": 8.6
+      },
+      {
+        "I_vert": 2.2,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.827,
+        "parahippocampal": 0.251,
+        "FFR_amplitude": 0.876,
+        "pleasantness": 8.5
+      },
+      {
+        "I_vert": 2.2,
+        "I_horiz": 2.8,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.819,
+        "parahippocampal": 0.258,
+        "FFR_amplitude": 0.87,
+        "pleasantness": 8.4
+      },
+      {
+        "I_vert": 2.2,
+        "I_horiz": 3.1,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.811,
+        "parahippocampal": 0.265,
+        "FFR_amplitude": 0.864,
+        "pleasantness": 8.3
+      },
+      {
+        "I_vert": 2.2,
+        "I_horiz": 3.4,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.803,
+        "parahippocampal": 0.272,
+        "FFR_amplitude": 0.858,
+        "pleasantness": 8.3
+      },
+      {
+        "I_vert": 2.2,
+        "I_horiz": 3.7,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.795,
+        "parahippocampal": 0.279,
+        "FFR_amplitude": 0.853,
+        "pleasantness": 8.2
+      },
+      {
+        "I_vert": 2.5,
+        "I_horiz": 1.0,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.848,
+        "parahippocampal": 0.233,
+        "FFR_amplitude": 0.891,
+        "pleasantness": 8.7
+      },
+      {
+        "I_vert": 2.5,
+        "I_horiz": 1.3,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.84,
+        "parahippocampal": 0.24,
+        "FFR_amplitude": 0.886,
+        "pleasantness": 8.6
+      },
+      {
+        "I_vert": 2.5,
+        "I_horiz": 1.6,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.832,
+        "parahippocampal": 0.247,
+        "FFR_amplitude": 0.88,
+        "pleasantness": 8.5
+      },
+      {
+        "I_vert": 2.5,
+        "I_horiz": 1.9,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.824,
+        "parahippocampal": 0.254,
+        "FFR_amplitude": 0.874,
+        "pleasantness": 8.5
+      },
+      {
+        "I_vert": 2.5,
+        "I_horiz": 2.2,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.816,
+        "parahippocampal": 0.261,
+        "FFR_amplitude": 0.868,
+        "pleasantness": 8.4
+      },
+      {
+        "I_vert": 2.5,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.808,
+        "parahippocampal": 0.268,
+        "FFR_amplitude": 0.862,
+        "pleasantness": 8.3
+      },
+      {
+        "I_vert": 2.5,
+        "I_horiz": 2.8,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.8,
+        "parahippocampal": 0.275,
+        "FFR_amplitude": 0.856,
+        "pleasantness": 8.2
+      },
+      {
+        "I_vert": 2.5,
+        "I_horiz": 3.1,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.792,
+        "parahippocampal": 0.282,
+        "FFR_amplitude": 0.85,
+        "pleasantness": 8.2
+      },
+      {
+        "I_vert": 2.5,
+        "I_horiz": 3.4,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.784,
+        "parahippocampal": 0.289,
+        "FFR_amplitude": 0.844,
+        "pleasantness": 8.1
+      },
+      {
+        "I_vert": 2.5,
+        "I_horiz": 3.7,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.776,
+        "parahippocampal": 0.296,
+        "FFR_amplitude": 0.838,
+        "pleasantness": 8.0
+      },
+      {
+        "I_vert": 2.8,
+        "I_horiz": 1.0,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.829,
+        "parahippocampal": 0.25,
+        "FFR_amplitude": 0.877,
+        "pleasantness": 8.5
+      },
+      {
+        "I_vert": 2.8,
+        "I_horiz": 1.3,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.821,
+        "parahippocampal": 0.257,
+        "FFR_amplitude": 0.871,
+        "pleasantness": 8.4
+      },
+      {
+        "I_vert": 2.8,
+        "I_horiz": 1.6,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.813,
+        "parahippocampal": 0.264,
+        "FFR_amplitude": 0.866,
+        "pleasantness": 8.4
+      },
+      {
+        "I_vert": 2.8,
+        "I_horiz": 1.9,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.805,
+        "parahippocampal": 0.271,
+        "FFR_amplitude": 0.86,
+        "pleasantness": 8.3
+      },
+      {
+        "I_vert": 2.8,
+        "I_horiz": 2.2,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.797,
+        "parahippocampal": 0.278,
+        "FFR_amplitude": 0.854,
+        "pleasantness": 8.2
+      },
+      {
+        "I_vert": 2.8,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.789,
+        "parahippocampal": 0.285,
+        "FFR_amplitude": 0.848,
+        "pleasantness": 8.2
+      },
+      {
+        "I_vert": 2.8,
+        "I_horiz": 2.8,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.781,
+        "parahippocampal": 0.292,
+        "FFR_amplitude": 0.842,
+        "pleasantness": 8.1
+      },
+      {
+        "I_vert": 2.8,
+        "I_horiz": 3.1,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.773,
+        "parahippocampal": 0.299,
+        "FFR_amplitude": 0.836,
+        "pleasantness": 8.0
+      },
+      {
+        "I_vert": 2.8,
+        "I_horiz": 3.4,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.765,
+        "parahippocampal": 0.306,
+        "FFR_amplitude": 0.83,
+        "pleasantness": 7.9
+      },
+      {
+        "I_vert": 2.8,
+        "I_horiz": 3.7,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.757,
+        "parahippocampal": 0.313,
+        "FFR_amplitude": 0.824,
+        "pleasantness": 7.9
+      },
+      {
+        "I_vert": 3.1,
+        "I_horiz": 1.0,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.81,
+        "parahippocampal": 0.267,
+        "FFR_amplitude": 0.863,
+        "pleasantness": 8.3
+      },
+      {
+        "I_vert": 3.1,
+        "I_horiz": 1.3,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.802,
+        "parahippocampal": 0.274,
+        "FFR_amplitude": 0.857,
+        "pleasantness": 8.3
+      },
+      {
+        "I_vert": 3.1,
+        "I_horiz": 1.6,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.794,
+        "parahippocampal": 0.281,
+        "FFR_amplitude": 0.851,
+        "pleasantness": 8.2
+      },
+      {
+        "I_vert": 3.1,
+        "I_horiz": 1.9,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.786,
+        "parahippocampal": 0.288,
+        "FFR_amplitude": 0.845,
+        "pleasantness": 8.1
+      },
+      {
+        "I_vert": 3.1,
+        "I_horiz": 2.2,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.778,
+        "parahippocampal": 0.295,
+        "FFR_amplitude": 0.839,
+        "pleasantness": 8.1
+      },
+      {
+        "I_vert": 3.1,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.77,
+        "parahippocampal": 0.302,
+        "FFR_amplitude": 0.833,
+        "pleasantness": 8.0
+      },
+      {
+        "I_vert": 3.1,
+        "I_horiz": 2.8,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.762,
+        "parahippocampal": 0.309,
+        "FFR_amplitude": 0.827,
+        "pleasantness": 7.9
+      },
+      {
+        "I_vert": 3.1,
+        "I_horiz": 3.1,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.754,
+        "parahippocampal": 0.316,
+        "FFR_amplitude": 0.821,
+        "pleasantness": 7.8
+      },
+      {
+        "I_vert": 3.1,
+        "I_horiz": 3.4,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.746,
+        "parahippocampal": 0.323,
+        "FFR_amplitude": 0.815,
+        "pleasantness": 7.8
+      },
+      {
+        "I_vert": 3.1,
+        "I_horiz": 3.7,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.738,
+        "parahippocampal": 0.33,
+        "FFR_amplitude": 0.809,
+        "pleasantness": 7.7
+      },
+      {
+        "I_vert": 3.4,
+        "I_horiz": 1.0,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.79,
+        "parahippocampal": 0.283,
+        "FFR_amplitude": 0.849,
+        "pleasantness": 8.2
+      },
+      {
+        "I_vert": 3.4,
+        "I_horiz": 1.3,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.782,
+        "parahippocampal": 0.29,
+        "FFR_amplitude": 0.843,
+        "pleasantness": 8.1
+      },
+      {
+        "I_vert": 3.4,
+        "I_horiz": 1.6,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.774,
+        "parahippocampal": 0.297,
+        "FFR_amplitude": 0.837,
+        "pleasantness": 8.0
+      },
+      {
+        "I_vert": 3.4,
+        "I_horiz": 1.9,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.766,
+        "parahippocampal": 0.304,
+        "FFR_amplitude": 0.831,
+        "pleasantness": 8.0
+      },
+      {
+        "I_vert": 3.4,
+        "I_horiz": 2.2,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.758,
+        "parahippocampal": 0.311,
+        "FFR_amplitude": 0.825,
+        "pleasantness": 7.9
+      },
+      {
+        "I_vert": 3.4,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.75,
+        "parahippocampal": 0.318,
+        "FFR_amplitude": 0.819,
+        "pleasantness": 7.8
+      },
+      {
+        "I_vert": 3.4,
+        "I_horiz": 2.8,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.742,
+        "parahippocampal": 0.325,
+        "FFR_amplitude": 0.813,
+        "pleasantness": 7.7
+      },
+      {
+        "I_vert": 3.4,
+        "I_horiz": 3.1,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.734,
+        "parahippocampal": 0.332,
+        "FFR_amplitude": 0.807,
+        "pleasantness": 7.7
+      },
+      {
+        "I_vert": 3.4,
+        "I_horiz": 3.4,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.726,
+        "parahippocampal": 0.339,
+        "FFR_amplitude": 0.801,
+        "pleasantness": 7.6
+      },
+      {
+        "I_vert": 3.4,
+        "I_horiz": 3.7,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.718,
+        "parahippocampal": 0.346,
+        "FFR_amplitude": 0.795,
+        "pleasantness": 7.5
+      },
+      {
+        "I_vert": 3.7,
+        "I_horiz": 1.0,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.771,
+        "parahippocampal": 0.3,
+        "FFR_amplitude": 0.835,
+        "pleasantness": 8.0
+      },
+      {
+        "I_vert": 3.7,
+        "I_horiz": 1.3,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.763,
+        "parahippocampal": 0.307,
+        "FFR_amplitude": 0.829,
+        "pleasantness": 7.9
+      },
+      {
+        "I_vert": 3.7,
+        "I_horiz": 1.6,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.755,
+        "parahippocampal": 0.314,
+        "FFR_amplitude": 0.823,
+        "pleasantness": 7.9
+      },
+      {
+        "I_vert": 3.7,
+        "I_horiz": 1.9,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.747,
+        "parahippocampal": 0.321,
+        "FFR_amplitude": 0.817,
+        "pleasantness": 7.8
+      },
+      {
+        "I_vert": 3.7,
+        "I_horiz": 2.2,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.739,
+        "parahippocampal": 0.328,
+        "FFR_amplitude": 0.811,
+        "pleasantness": 7.7
+      },
+      {
+        "I_vert": 3.7,
+        "I_horiz": 2.5,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.731,
+        "parahippocampal": 0.335,
+        "FFR_amplitude": 0.804,
+        "pleasantness": 7.6
+      },
+      {
+        "I_vert": 3.7,
+        "I_horiz": 2.8,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.723,
+        "parahippocampal": 0.342,
+        "FFR_amplitude": 0.798,
+        "pleasantness": 7.6
+      },
+      {
+        "I_vert": 3.7,
+        "I_horiz": 3.1,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.715,
+        "parahippocampal": 0.349,
+        "FFR_amplitude": 0.792,
+        "pleasantness": 7.5
+      },
+      {
+        "I_vert": 3.7,
+        "I_horiz": 3.4,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.707,
+        "parahippocampal": 0.356,
+        "FFR_amplitude": 0.786,
+        "pleasantness": 7.4
+      },
+      {
+        "I_vert": 3.7,
+        "I_horiz": 3.7,
+        "I_spectral": 2.0,
+        "orbitofrontal": 0.699,
+        "parahippocampal": 0.363,
+        "FFR_amplitude": 0.78,
+        "pleasantness": 7.4
+      }
+    ],
+    "tradition_overlay": {
+      "Hindustani": {
+        "I_vert": 2.77,
+        "I_horiz": 3.45
+      },
+      "Carnatic": {
+        "I_vert": 2.77,
+        "I_horiz": 3.63
+      },
+      "Arabic": {
+        "I_vert": 2.94,
+        "I_horiz": 3.1
+      },
+      "Turkish": {
+        "I_vert": 2.83,
+        "I_horiz": 3.28
+      },
+      "Javanese": {
+        "I_vert": 2.31,
+        "I_horiz": 2.75
+      },
+      "Balinese": {
+        "I_vert": 2.31,
+        "I_horiz": 3.1
+      },
+      "Gagaku": {
+        "I_vert": 2.38,
+        "I_horiz": 1.7
+      },
+      "Chinese": {
+        "I_vert": 2.32,
+        "I_horiz": 2.05
+      },
+      "West African": {
+        "I_vert": 2.41,
+        "I_horiz": 3.63
+      },
+      "Western ET": {
+        "I_vert": 2.72,
+        "I_horiz": 2.05
+      }
+    }
+  }
+}

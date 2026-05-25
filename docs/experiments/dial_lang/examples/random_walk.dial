@@ -1,0 +1,47 @@
+# random_walk.dial
+# A random walk through consonance space using variables
+# Each step is a small perturbation from the current position
+
+tempo 130
+dur 0.35
+
+# Starting position
+let v = 1.5
+let h = 1.5
+let s = 1.5
+let step = 0.3
+let count = 0
+
+# Walk with fixed perturbation pattern (since we have no RNG)
+# Simulating randomness with arithmetic
+walk_start
+V:v H:h S:s
+
+let v = v + step
+let h = h + step * 0.7
+let s = s + step * 0.5
+
+# Reverse direction periodically
+let count = count + 1
+if count == 5 -> reverse
+if count == 11 -> reverse2
+if count == 17 -> reverse3
+if count < 20 -> walk_start
+-> done
+
+reverse
+let step = -0.3
+-> walk_start
+
+reverse2
+let step = 0.25
+-> walk_start
+
+reverse3
+let step = -0.2
+-> walk_start
+
+done
+# Final resting place — wherever we ended up
+dur 2.0
+V:v H:h S:s

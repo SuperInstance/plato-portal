@@ -1,0 +1,53 @@
+# tradition_tour.dial
+# A guided tour through all 8 tradition landmarks in the lattice
+
+tempo 100
+dur 0.6
+
+# 1. Western Tonal
+tradition western
+V:2.72 H:2.05 S:1.80
+
+# 2. Blues
+tradition blues
+V:2.10 H:2.80 S:1.60
+
+# 3. Jazz
+tradition jazz
+V:2.30 H:2.50 S:2.10
+
+# 4. Arabic Maqam
+tradition arabic
+V:2.50 H:3.10 S:2.30
+
+# 5. Carnatic
+tradition carnatic
+V:2.77 H:3.63 S:2.80
+
+# 6. Throat Singing
+tradition throat_singing
+V:2.90 H:0.80 S:3.00
+
+# 7. Japanese
+tradition japanese
+V:1.80 H:1.50 S:2.20
+
+# 8. Gamelan
+tradition gamelan
+V:1.40 H:1.20 S:2.90
+
+# Now visit them all in reverse!
+dur 0.3
+
+V:1.40 H:1.20 S:2.90
+V:1.80 H:1.50 S:2.20
+V:2.90 H:0.80 S:3.00
+V:2.77 H:3.63 S:2.80
+V:2.50 H:3.10 S:2.30
+V:2.30 H:2.50 S:2.10
+V:2.10 H:2.80 S:1.60
+V:2.72 H:2.05 S:1.80
+
+# Grand finale — the center of everything
+dur 2.0
+V:2.31 H:2.32 S:2.19

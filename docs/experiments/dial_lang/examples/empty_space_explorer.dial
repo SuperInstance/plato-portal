@@ -1,0 +1,49 @@
+# empty_space_explorer.dial
+# Ventures into the unexplored regions of consonance space
+# Uses the 'unplayed' directive to find new territory
+
+tempo 110
+dur 0.8
+
+# Start from a known tradition
+tradition western
+V:2.72 H:2.05 S:1.80 home
+
+# Venture outward step by step
+unplayed
+unplayed
+unplayed
+unplayed
+unplayed
+
+# Change tradition and explore from there
+tradition gamelan
+V:1.40 H:1.20 S:2.90
+
+unplayed
+unplayed
+unplayed
+
+# Try from the Arabic tradition
+tradition arabic
+V:2.50 H:3.10 S:2.30
+
+unplayed
+unplayed
+
+# The great unknown — 10 consecutive unplayed
+# Each finds the farthest point from everything visited so far
+tempo 140
+dur 0.3
+
+let x = 0
+loop
+unplayed
+let x = x + 1
+if x < 10 -> loop
+
+# Return home
+tempo 80
+dur 1.5
+tradition western
+V:2.72 H:2.05 S:1.80

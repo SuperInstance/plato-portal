@@ -1,0 +1,48 @@
+# canon.dial
+# A musical canon — two voices chase each other through the lattice
+# Voice 1 leads, Voice 2 follows with a delay
+
+tempo 100
+
+# === Voice 1 (theme) ===
+dur 0.6
+vol 0.7
+
+V:2.72 H:2.05 S:1.80 theme_a
+V:2.50 H:2.30 S:2.00
+V:2.30 H:2.50 S:2.10
+V:2.77 H:3.63 S:2.80 theme_b
+V:2.50 H:3.00 S:2.40
+V:2.30 H:2.50 S:2.10
+
+# === Voice 2 (canon at distance +0.3 in each axis) ===
+vol 0.5
+dur 0.6
+
+V:3.02 H:2.35 S:2.10
+V:2.80 H:2.60 S:2.30
+V:2.60 H:2.80 S:2.40
+V:3.07 H:3.93 S:3.10
+V:2.80 H:3.30 S:2.70
+V:2.60 H:2.80 S:2.40
+
+# === Both voices converge ===
+vol 0.6
+dur 0.8
+
+V:2.72 H:2.05 S:1.80
+V:2.72 H:2.05 S:1.80
+
+# === Inverted theme (mirror in V axis) ===
+vol 0.7
+dur 0.5
+
+V:3.00 H:2.05 S:1.80
+V:3.22 H:2.30 S:2.00
+V:3.42 H:2.50 S:2.10
+V:2.95 H:3.63 S:2.80
+
+# === Final unison ===
+vol 0.8
+dur 1.5
+V:2.72 H:2.05 S:1.80
