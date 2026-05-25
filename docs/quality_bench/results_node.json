@@ -1,0 +1,69 @@
+{
+  "Q1_precision": {
+    "pi": 3.1415926535897936,
+    "bits_of_agreement": 51
+  },
+  "Q2_consistency": {
+    "variance": 2.527589226418644e-26
+  },
+  "Q3_linearity": {
+    "errors": [
+      {
+        "x": 1e-10,
+        "rel_error": 0
+      },
+      {
+        "x": 0.00001,
+        "rel_error": 0
+      },
+      {
+        "x": 1,
+        "rel_error": 0
+      },
+      {
+        "x": 100000,
+        "rel_error": 0
+      },
+      {
+        "x": 10000000000,
+        "rel_error": 0
+      }
+    ]
+  },
+  "Q4_smoothness": {
+    "delta": 1.1102230246251565e-16,
+    "expected": 1.1997121204657452e-16,
+    "ratio": 0.9254078588404627
+  },
+  "Q5_spectral": {
+    "spurious_dB": -279.74
+  },
+  "Q6_temporal_drift": {
+    "f32_vs_f64_diverge": 0
+  },
+  "Q7_accumulation": {
+    "naive": -2000146.5559738828,
+    "kahan": -2000146.5559738828,
+    "relative_diff": 0
+  },
+  "Q8_edge_cases": {
+    "score": "6/6",
+    "details": {
+      "zero_div_zero": true,
+      "one_div_zero": true,
+      "sqrt_neg1": true,
+      "neg_zero_eq": true,
+      "nan_eq_nan_false": true,
+      "inf_minus_inf": true
+    },
+    "percent": 100
+  },
+  "Q9_cross_config": {
+    "note": "JS has no optimization levels",
+    "reference_value": 4.793202299695027
+  },
+  "Q10_error_entropy": {
+    "shannon_entropy_bits": 5.642,
+    "num_samples": 10000
+  }
+}

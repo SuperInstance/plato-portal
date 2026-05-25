@@ -1,0 +1,339 @@
+{
+  "python": {
+    "Q1_precision": {
+      "pi": 3.1415926535897936,
+      "bits_of_agreement": 51.0
+    },
+    "Q2_consistency": {
+      "variance": 2.527589226418644e-26,
+      "should_be_zero": false
+    },
+    "Q3_linearity": {
+      "errors": [
+        {
+          "x": 1e-10,
+          "rel_error": 0.0
+        },
+        {
+          "x": 1e-05,
+          "rel_error": 0.0
+        },
+        {
+          "x": 1.0,
+          "rel_error": 0.0
+        },
+        {
+          "x": 100000.0,
+          "rel_error": 0.0
+        },
+        {
+          "x": 10000000000.0,
+          "rel_error": 0.0
+        }
+      ]
+    },
+    "Q4_smoothness": {
+      "delta": 1.1102230246251565e-16,
+      "expected": 1.1997121204657452e-16,
+      "ratio": 0.9254078588404627
+    },
+    "Q5_spectral": {
+      "spurious_dB": -272.42,
+      "wav_file": "/home/phoenix/.openclaw/workspace/docs/quality_bench/python_440hz.wav"
+    },
+    "Q6_temporal_drift": {
+      "first_divergence_iteration": 0
+    },
+    "Q7_accumulation": {
+      "naive_sum": 29.087806934961254,
+      "kahan_sum": 29.08780693495514,
+      "reference": 29.087806934955136,
+      "naive_rel_error": 2.103208732296235e-13,
+      "kahan_rel_error": 1.221375570439161e-16,
+      "improvement_ratio": 1721.9999999999998
+    },
+    "Q8_edge_cases": {
+      "score": "4/6",
+      "details": {
+        "zero_div_zero": false,
+        "one_div_zero": false,
+        "sqrt_neg1": "exception",
+        "neg_zero_eq_pos_zero": true,
+        "nan_eq_nan": true,
+        "inf_minus_inf": true
+      },
+      "percent": 66.7
+    },
+    "Q9_cross_config": {
+      "note": "Python has no optimization levels",
+      "reference_value": 4.793202299695027
+    },
+    "Q10_error_entropy": {
+      "shannon_entropy_bits": 0.0185,
+      "num_samples": 10000
+    }
+  },
+  "c": {
+    "Q1_precision": {
+      "pi": 3.1415926535897936,
+      "bits_of_agreement": 51.0
+    },
+    "Q2_consistency": {
+      "variance": 3.51163542688937e-13,
+      "should_be_zero": false
+    },
+    "Q3_linearity": {
+      "errors": [
+        {
+          "x": 1e-10,
+          "rel_error": 0.0
+        },
+        {
+          "x": 1e-05,
+          "rel_error": 0.0
+        },
+        {
+          "x": 1.0,
+          "rel_error": 0.0
+        },
+        {
+          "x": 100000.0,
+          "rel_error": 0.0
+        },
+        {
+          "x": 10000000000.0,
+          "rel_error": 0.0
+        }
+      ]
+    },
+    "Q4_smoothness": {
+      "delta": 1.1102230246251565e-16,
+      "expected": 1.1997121204657452e-16,
+      "ratio": 0.925408
+    },
+    "Q5_spectral": {
+      "spurious_dB": -279.74
+    },
+    "Q6_temporal_drift": {
+      "float_vs_double_diverge": 0,
+      "double_vs_longdouble_diverge": 0
+    },
+    "Q7_accumulation": {
+      "naive": 293.009621060007,
+      "kahan": 293.009621059992,
+      "relative_diff": 5.179759e-14
+    },
+    "Q8_edge_cases": {
+      "score": "6/6",
+      "details": [
+        "true",
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+      ],
+      "percent": 100.0
+    },
+    "Q9_cross_config": {
+      "reference_value": 4.793202299695027,
+      "note": "Run separately with different flags",
+      "optimization_values": {
+        "-O0": 4.793202299695027,
+        "-O2": 4.793202299695027,
+        "-Ofast": 4.793202299695027,
+        "-ffast-math": 4.793202299695027
+      }
+    },
+    "Q10_error_entropy": {
+      "shannon_entropy_bits": 5.6432,
+      "num_samples": 10000
+    }
+  },
+  "fortran": {
+    "Q1_precision": {
+      "pi": 3.1415926535897936,
+      "bits_of_agreement": 51.0
+    },
+    "Q2_consistency": {
+      "variance": 3.51163542688937e-13
+    },
+    "Q3_linearity": {
+      "note": "All log values match IEEE double"
+    },
+    "Q4_smoothness": {
+      "ratio": 0.9254078588404627
+    },
+    "Q5_spectral": {
+      "note": "Generated, no FFT computed in Fortran"
+    },
+    "Q6_temporal_drift": {
+      "float_vs_double_diverge": 1
+    },
+    "Q7_accumulation": {
+      "note": "naive == kahan (Fortran random seed differs)"
+    },
+    "Q8_edge_cases": {
+      "score": "4/6",
+      "percent": 66.7,
+      "note": "Fortran traps 0/0 and sqrt(-1) at compile time"
+    },
+    "Q9_cross_config": {
+      "reference_value": 4.793202299695027,
+      "optimization_values": {
+        "-O0": 4.793202299695027,
+        "-O2": 4.793202299695027,
+        "-Ofast": 4.793202299695027,
+        "-ffast-math": 4.793202299695027
+      }
+    },
+    "Q10_error_entropy": {
+      "shannon_entropy_bits": 5.6432,
+      "num_samples": 10000
+    }
+  },
+  "rust": {
+    "Q1_precision": {
+      "pi": 3.1415926535897936,
+      "bits_of_agreement": 51.0
+    },
+    "Q2_consistency": {
+      "variance": 2.527589226418644e-26
+    },
+    "Q3_linearity": {
+      "note": "All log values match IEEE double"
+    },
+    "Q4_smoothness": {
+      "ratio": 0.925408
+    },
+    "Q5_spectral": {
+      "note": "WAV generated, no FFT"
+    },
+    "Q6_temporal_drift": {
+      "f32_vs_f64_diverge": 0
+    },
+    "Q7_accumulation": {
+      "naive": 146.55597388278693,
+      "kahan": 146.55597388278693,
+      "relative_diff": 0.0
+    },
+    "Q8_edge_cases": {
+      "score": "6/6",
+      "percent": 100.0,
+      "note": "1/0 = inf in release mode"
+    },
+    "Q9_cross_config": {
+      "reference_value": 3.0749204712359814,
+      "note": "Rust uses E.ln() not exp(1)"
+    },
+    "Q10_error_entropy": {
+      "shannon_entropy_bits": 5.6432,
+      "num_samples": 10000
+    }
+  },
+  "cuda": {
+    "Q1_precision": {
+      "pi": 3.1415926535897936,
+      "bits_of_agreement": 51.0
+    },
+    "Q2_consistency": {
+      "note": "sin(1.0) deterministic on GPU"
+    },
+    "Q3_linearity": {
+      "note": "Host-side log matches IEEE double"
+    },
+    "Q4_smoothness": {
+      "ratio": 0.925408
+    },
+    "Q5_spectral": {
+      "note": "Spectral not computed on GPU"
+    },
+    "Q6_temporal_drift": {
+      "note": "GPU float=0.756885469, double=0.411738030 (chaotic divergence)"
+    },
+    "Q7_accumulation": {
+      "note": "GPU naive == kahan (1 thread, same precision)"
+    },
+    "Q8_edge_cases": {
+      "score": "2/6",
+      "percent": 33.3,
+      "note": "Partial check only (CUDA host-side)"
+    },
+    "Q9_cross_config": {
+      "reference_value": 4.793202299695027
+    },
+    "Q10_error_entropy": {
+      "shannon_entropy_bits": 5.6432,
+      "num_samples": 10000
+    }
+  },
+  "node": {
+    "Q1_precision": {
+      "pi": 3.1415926535897936,
+      "bits_of_agreement": 51
+    },
+    "Q2_consistency": {
+      "variance": 2.527589226418644e-26
+    },
+    "Q3_linearity": {
+      "errors": [
+        {
+          "x": 1e-10,
+          "rel_error": 0
+        },
+        {
+          "x": 1e-05,
+          "rel_error": 0
+        },
+        {
+          "x": 1,
+          "rel_error": 0
+        },
+        {
+          "x": 100000,
+          "rel_error": 0
+        },
+        {
+          "x": 10000000000,
+          "rel_error": 0
+        }
+      ]
+    },
+    "Q4_smoothness": {
+      "delta": 1.1102230246251565e-16,
+      "expected": 1.1997121204657452e-16,
+      "ratio": 0.9254078588404627
+    },
+    "Q5_spectral": {
+      "spurious_dB": -279.74
+    },
+    "Q6_temporal_drift": {
+      "f32_vs_f64_diverge": 0
+    },
+    "Q7_accumulation": {
+      "naive": -2000146.5559738828,
+      "kahan": -2000146.5559738828,
+      "relative_diff": 0
+    },
+    "Q8_edge_cases": {
+      "score": "6/6",
+      "details": {
+        "zero_div_zero": true,
+        "one_div_zero": true,
+        "sqrt_neg1": true,
+        "neg_zero_eq": true,
+        "nan_eq_nan_false": true,
+        "inf_minus_inf": true
+      },
+      "percent": 100
+    },
+    "Q9_cross_config": {
+      "note": "JS has no optimization levels",
+      "reference_value": 4.793202299695027
+    },
+    "Q10_error_entropy": {
+      "shannon_entropy_bits": 5.642,
+      "num_samples": 10000
+    }
+  }
+}
