@@ -580,6 +580,55 @@ class QualityEffectChain:
             compander={'alpha': 1.2},
         )
 
+    def preset_chip_8bit(self, audio):
+        """8-bit chip: depth=8, purity=dirty, alias=high."""
+        return self.process(audio,
+            depth={'bits': 8},
+            purity={'level': 'dirty'},
+            alias={'step_size': 0.6, 'density': 0.008},
+            compander={'alpha': 1.2},
+        )
+
+    def preset_broken_dac(self, audio):
+        """Broken DAC: glitch=high, jitter=high, stereo=wide."""
+        return self.process(audio,
+            depth={'bits': 12},
+            glitch={'prob_nan': 0.002, 'prob_inf': 0.003, 'prob_negzero': 0.008, 'prob_denorm': 0.015},
+            jitter={'amount': 0.8, 'mode': 'cpu'},
+            alias={'step_size': 0.8, 'density': 0.01},
+            purity={'level': 'destroyed'},
+            stereo={'width': 0.8},
+        )
+
+    def preset_vinyl_crackle(self, audio):
+        """Vinyl crackle: glitch + noise + depth reduction."""
+        return self.process(audio,
+            noise={'amount': 1.2, 'entropy': 0.15},
+            drift={'amount': 0.6, 'rate': 0.005},
+            depth={'bits': 36},
+            saturation={'alpha': 1.15, 'beta': 0.02},
+            glitch={'prob_nan': 0.0005, 'prob_inf': 0.0, 'prob_negzero': 0.0, 'prob_denorm': 0.008},
+            purity={'level': 'warm'},
+        )
+
+    def preset_mainframe_fortran(self, audio):
+        """Mainframe FORTRAN: depth=32, very clean, ultra-low jitter."""
+        return self.process(audio,
+            depth={'bits': 32},
+            jitter={'amount': 0.02, 'mode': 'fortran_parallel'},
+            purity={'level': 'warm'},
+        )
+
+    def preset_teen_engine(self, audio):
+        """Teen engine: depth=4, alias=high, purity=destroyed."""
+        return self.process(audio,
+            depth={'bits': 4},
+            alias={'step_size': 1.0, 'density': 0.015},
+            purity={'level': 'destroyed'},
+            compander={'alpha': 1.5},
+            noise={'amount': 0.5, 'entropy': 0.8},
+        )
+
     def preset_radio_shortwave(self, audio):
         """Shortwave radio: noisy, fading, drifting."""
         return self.process(audio,
