@@ -2,9 +2,8 @@ name: Auto-Index
 
 on:
   schedule:
-    # Daily at 05:00 UTC
     - cron: '0 5 * * *'
-  workflow_dispatch:  # manual trigger
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -18,15 +17,10 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install GitHub CLI
-        run: |
-          type gh || (sudo apt-get update && sudo apt-get install -y gh)
-
-      - name: Authenticate
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
 
       - name: Fetch all repos
         run: |
