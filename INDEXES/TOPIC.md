@@ -1,7 +1,7 @@
 # Index by Topic
 
-**Generated:** 2026-05-26 18:13 UTC
-**Total repos:** 1804
+**Generated:** 2026-05-27 08:40 UTC
+**Total repos:** 1806
 
 ## A2A
 
@@ -44,6 +44,7 @@
 
 ## Constraint-Theory
 
+- **[blog-posts](https://github.com/SuperInstance/blog-posts)** — Technical blog posts on GPU proofs, constraint systems, and related topics
 - **[ccc-os](https://github.com/SuperInstance/ccc-os)** — Autonomous fleet monitoring — YAML config, REST API, Discord/Telegram/webhook notifications, constra
 - **[constraint-audio](https://github.com/SuperInstance/constraint-audio)** — Rust audio DSP backend for the constraint-theory ecosystem — lattice oscillators, constraint filters
 - **[constraint-demo](https://github.com/SuperInstance/constraint-demo)** — Fleet Constraint Awareness, in Your Browser — physics clock, reality parity, fold compression, snap 
@@ -72,6 +73,7 @@
 - **[constraint-theory-research](https://github.com/SuperInstance/constraint-theory-research)** — Mathematical foundations and research papers for Constraint Theory
 - **[constraint-theory-rust-python](https://github.com/SuperInstance/constraint-theory-rust-python)** — Rust constraint engine with PyO3 Python bindings — bare-metal constraint checking from Python
 - **[constraint-theory-web-1](https://github.com/SuperInstance/constraint-theory-web-1)** — Constraint Theory — web visualization of constraint propagation systems
+- **[constraint-toolkit](https://github.com/SuperInstance/constraint-toolkit)** — Constraint space analysis toolkit — lattice plots, dial positions, tradition clusters, and export
 - **[constraints](https://github.com/SuperInstance/constraints)** — Preserved workspace artifact
 - **[court](https://github.com/SuperInstance/court)** — Fleet governance — proposals, votes, constitutional constraints for multi-agent coordination
 - **[ct-api-reference](https://github.com/SuperInstance/ct-api-reference)** — ⚒️ Constraint Theory Core API Reference — comprehensive guide to constraint-theory-core v1.0.1
@@ -178,6 +180,7 @@
 ## Flux
 
 - **[abstraction-planes](https://github.com/SuperInstance/abstraction-planes)** — The Middle Way — decompose ideas to their optimal abstraction plane, not all the way to bytecode
+- **[architectures](https://github.com/SuperInstance/architectures)** — FLUX system architecture proposals: 10 deployment configs for safety-critical systems
 - **[babel-vessel](https://github.com/SuperInstance/babel-vessel)** — 🌐 Babel Agent — Git-Agent Vessel for multilingual FLUX runtime development. SuperInstance realm.
 - **[bytecode-verifier-c](https://github.com/SuperInstance/bytecode-verifier-c)** — Pure C11 FLUX bytecode verifier — pre-execution validation, security primitive for agent VMs
 - **[cocapn-cli](https://github.com/SuperInstance/cocapn-cli)** — FLUX constraint safety - cocapn-cli
@@ -623,6 +626,7 @@
 - **[archives](https://github.com/SuperInstance/archives)** — Cocapn fleet crate: archives
 - **[arena-combat-analyst-1](https://github.com/SuperInstance/arena-combat-analyst-1)** — Self-Play Arena agent guide. The fleet's autonomous skill acquisition engine where agents compete an
 - **[autoclaw](https://github.com/SuperInstance/autoclaw)** — AI agents running tasks on single-GPU nanochat training automatically
+- **[autodata-integration](https://github.com/SuperInstance/autodata-integration)** — Integration plan and plugins connecting AutoData's OHCache with the Cocapn fleet
 - **[autoMate](https://github.com/SuperInstance/autoMate)** — Like Manus, Computer Use Agent(CUA) and Omniparser, we are computer-using agents.AI-driven local aut
 - **[barracks](https://github.com/SuperInstance/barracks)** — Cocapn barracks - agent accommodation system
 - **[Baton](https://github.com/SuperInstance/Baton)** — automate agents training their successors for a better way to have infinite context without limits
@@ -631,6 +635,7 @@
 - **[become-ai](https://github.com/SuperInstance/become-ai)** — Become.ai — Self-evolving agent platform. Fork, mutate, improve. The agent IS the repo. Part of the 
 - **[bering-sea-architecture](https://github.com/SuperInstance/bering-sea-architecture)** — ⚓ Bering Sea — fleet architecture patterns
 - **[bid-engine](https://github.com/SuperInstance/bid-engine)** — Agent marketplace — subcontractors bid on jobs, estimate-to-quote training loop
+- **[bootcamp](https://github.com/SuperInstance/bootcamp)** — Onboarding quests, reviews, and session recordings for new agents
 - **[bootstrap-spark](https://github.com/SuperInstance/bootstrap-spark)** — 🟢 Bootstrap Spark Protocol — self-describing agent knowledge in 6 markdown files. Copy the .spark/ d
 - **[bordercollie](https://github.com/SuperInstance/bordercollie)** — herding 10,000 local cuda-based agents with memories and skills
 - **[brand-assets](https://github.com/SuperInstance/brand-assets)** — Cocapn Fleet brand assets — hermit crab, lighthouse, steampunk/cyberpunk imagery
@@ -649,6 +654,7 @@
 - **[causal-memory](https://github.com/SuperInstance/causal-memory)** — Causal reasoning engine — track and query cause-effect chains across fleet actions
 - **[character-agent-integration](https://github.com/SuperInstance/character-agent-integration)** — Integration for character agents.
 - **[cicd-agent](https://github.com/SuperInstance/cicd-agent)** — Fleet CI/CD pipeline engine — git polling, test runner, webhook receiver, deployment
+- **[claude](https://github.com/SuperInstance/claude)** — OpenClaw agent workspace for the Claude model instance
 - **[claude-context](https://github.com/SuperInstance/claude-context)** — Code search MCP for Claude Code. Make entire codebase the context for any coding agent.
 - **[Claude_Baton](https://github.com/SuperInstance/Claude_Baton)** — Generational context handoff for Claude Code. Seamless, auditable, infinite-context agents that ship
 - **[clawcommit-lucid](https://github.com/SuperInstance/clawcommit-lucid)** — Fleet learning journal — every evolution, commit, and lesson remembered
@@ -809,6 +815,7 @@
 - **[fleet-calibrator](https://github.com/SuperInstance/fleet-calibrator)** — Continuous critical angle calibration for fleet models. Detect drift, update routing tables.
 - **[fleet-changelog](https://github.com/SuperInstance/fleet-changelog)** — Automated changelog for the entire fleet — tracks every mutation across all vessels
 - **[fleet-chinese](https://github.com/SuperInstance/fleet-chinese)** — Cocapn Fleet — 中文 (Chinese) perspective. Reasoned natively in 中文 (Chinese) cultural tradition.
+- **[fleet-cicd-agent](https://github.com/SuperInstance/fleet-cicd-agent)** — Fleet CI/CD agents — automating deployments across agent fleets
 - **[fleet-circadian](https://github.com/SuperInstance/fleet-circadian)** — Natural operating cycles for fleet vessels
 - **[fleet-clock](https://github.com/SuperInstance/fleet-clock)** — fleet-clock: emergent fleet time, thermodynamic clock from energy changes, arrow of time detection, 
 - **[fleet-code-agent](https://github.com/SuperInstance/fleet-code-agent)** — Standalone git-agent for code building. Build-test-commit loops.
@@ -1491,23 +1498,19 @@
 - **[AIR](https://github.com/SuperInstance/AIR)** — Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interact
 - **[ap-compiler](https://github.com/SuperInstance/ap-compiler)** — Abstraction Planes Compiler Toolkit — decompose intent to optimal plane
 - **[api-versioner](https://github.com/SuperInstance/api-versioner)** — API version management — semantic versioning, deprecation warnings, migration guides
-- **[architectures](https://github.com/SuperInstance/architectures)** — Preserved workspace artifact
-- **[archive](https://github.com/SuperInstance/archive)** — Preserved workspace artifact
+- **[archive](https://github.com/SuperInstance/archive)** — Archived experiments, superseded repos, and completed research projects
 - **[artistlog-ai](https://github.com/SuperInstance/artistlog-ai)** — Cocapn vessel
 - **[attention-daemon-early-version](https://github.com/SuperInstance/attention-daemon-early-version)** — [ARCHIVED] Early salience experiment. 1KB scaffolding only.
 - **[Auto-Backup-Compression-Encryption](https://github.com/SuperInstance/Auto-Backup-Compression-Encryption)** — Automated backup with encryption.
 - **[Auto-Tuning-Engine](https://github.com/SuperInstance/Auto-Tuning-Engine)** — Automated engine for system tuning.
 - **[AutoData](https://github.com/SuperInstance/AutoData)** — Automatica Open Web Data Collection (NeurIPS 2025)
-- **[autodata-integration](https://github.com/SuperInstance/autodata-integration)** — Preserved workspace artifact
-- **[AutoData-old](https://github.com/SuperInstance/AutoData-old)**
+- **[AutoData-old](https://github.com/SuperInstance/AutoData-old)** — AutoData research prototype (archived; successor repo linked in README)
 - **[Automatic-Type-Safe-IndexedDB](https://github.com/SuperInstance/Automatic-Type-Safe-IndexedDB)** — Type-safe wrapper for IndexedDB.
 - **[bandit-learner](https://github.com/SuperInstance/bandit-learner)** — Multi-armed bandit algorithms for exploration-exploitation and online learning
 - **[bathydata-map](https://github.com/SuperInstance/bathydata-map)** — Signal Chain Thesis - bathydata-map
 - **[Bayesian-Multi-Armed-Bandits](https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits)** — Library for Bayesian multi-armed bandits.
-- **[blog-posts](https://github.com/SuperInstance/blog-posts)** — Preserved workspace artifact
 - **[booklog-ai](https://github.com/SuperInstance/booklog-ai)** — AI reading companion — book tracking, recommendations, reading goals, quote collection
 - **[boot-camp](https://github.com/SuperInstance/boot-camp)** — Tabula rasa repo to living vessel. The captain assesses, builds ergonomic, distills skills, remember
-- **[bootcamp](https://github.com/SuperInstance/bootcamp)** — Preserved workspace artifact
 - **[bootcamp-engine](https://github.com/SuperInstance/bootcamp-engine)** — Bootcamp Engine
 - **[branch-sandbox](https://github.com/SuperInstance/branch-sandbox)** — Isolated branch environments for testing vessel mutations safely
 - **[businesslog-ai](https://github.com/SuperInstance/businesslog-ai)** — BusinessLog.ai — AI business operations assistant. Tasks, metrics, decisions. Part of the Lucineer e
@@ -1528,7 +1531,6 @@
 - **[character-skill-trees](https://github.com/SuperInstance/character-skill-trees)** — System for skill trees.
 - **[cheetahclaws](https://github.com/SuperInstance/cheetahclaws)** — CheetahClaws (Nano Claude Code): A Fast, Easy-to-Use, Python-Native Personal AI Assistant for Any Mo
 - **[cheflog-ai](https://github.com/SuperInstance/cheflog-ai)** — AI chef companion — recipe management, meal prep, cooking techniques
-- **[claude](https://github.com/SuperInstance/claude)** — Preserved workspace artifact
 - **[Claude-Abstraction](https://github.com/SuperInstance/Claude-Abstraction)** — Abstraction layer for Claude API.
 - **[claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)** — Claude Code workhorse vessel with experience journal and task delegation
 - **[Claude-PRISM-CF](https://github.com/SuperInstance/Claude-PRISM-CF)** — Cloudflare implementation of PRISM.
