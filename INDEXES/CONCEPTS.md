@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-05-26 18:13 UTC
+**Generated:** 2026-05-27 08:40 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -116,6 +116,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [Constraint-Theory](https://github.com/SuperInstance/Constraint-Theory)
 - [SuperInstance](https://github.com/SuperInstance/SuperInstance)
+- [blog-posts](https://github.com/SuperInstance/blog-posts)
 - [ccc-os](https://github.com/SuperInstance/ccc-os)
 - [cocapn-cli](https://github.com/SuperInstance/cocapn-cli)
 - [constraint-audio](https://github.com/SuperInstance/constraint-audio)
@@ -156,6 +157,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [constraint-theory-rust-python](https://github.com/SuperInstance/constraint-theory-rust-python)
 - [constraint-theory-web](https://github.com/SuperInstance/constraint-theory-web)
 - [constraint-theory-web-1](https://github.com/SuperInstance/constraint-theory-web-1)
+- [constraint-toolkit](https://github.com/SuperInstance/constraint-toolkit)
 - [constraints](https://github.com/SuperInstance/constraints)
 - [counterpoint-engine](https://github.com/SuperInstance/counterpoint-engine)
 - [court](https://github.com/SuperInstance/court)
@@ -342,6 +344,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Flux
 
 - [abstraction-planes](https://github.com/SuperInstance/abstraction-planes)
+- [architectures](https://github.com/SuperInstance/architectures)
 - [babel-vessel](https://github.com/SuperInstance/babel-vessel)
 - [bytecode-verifier-c](https://github.com/SuperInstance/bytecode-verifier-c)
 - [cocapn-cli](https://github.com/SuperInstance/cocapn-cli)
@@ -625,6 +628,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [DeepGEMM](https://github.com/SuperInstance/DeepGEMM)
 - [GeoFlood](https://github.com/SuperInstance/GeoFlood)
 - [autoclaw](https://github.com/SuperInstance/autoclaw)
+- [blog-posts](https://github.com/SuperInstance/blog-posts)
 - [bordercollie](https://github.com/SuperInstance/bordercollie)
 - [casting-call-gpu](https://github.com/SuperInstance/casting-call-gpu)
 - [constraint-bench-suite](https://github.com/SuperInstance/constraint-bench-suite)
@@ -988,6 +992,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [arena-combat-analyst-1](https://github.com/SuperInstance/arena-combat-analyst-1)
 - [autoMate](https://github.com/SuperInstance/autoMate)
 - [autoclaw](https://github.com/SuperInstance/autoclaw)
+- [autodata-integration](https://github.com/SuperInstance/autodata-integration)
 - [babel-vessel](https://github.com/SuperInstance/babel-vessel)
 - [bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)
 - [barracks](https://github.com/SuperInstance/barracks)
@@ -996,6 +1001,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [become-ai](https://github.com/SuperInstance/become-ai)
 - [bering-sea-architecture](https://github.com/SuperInstance/bering-sea-architecture)
 - [bid-engine](https://github.com/SuperInstance/bid-engine)
+- [bootcamp](https://github.com/SuperInstance/bootcamp)
 - [bootstrap-spark](https://github.com/SuperInstance/bootstrap-spark)
 - [bordercollie](https://github.com/SuperInstance/bordercollie)
 - [brand-assets](https://github.com/SuperInstance/brand-assets)
@@ -1018,6 +1024,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ccc-os](https://github.com/SuperInstance/ccc-os)
 - [character-agent-integration](https://github.com/SuperInstance/character-agent-integration)
 - [cicd-agent](https://github.com/SuperInstance/cicd-agent)
+- [claude](https://github.com/SuperInstance/claude)
 - [claude-context](https://github.com/SuperInstance/claude-context)
 - [claw-in-plato](https://github.com/SuperInstance/claw-in-plato)
 - [clawcommit-lucid](https://github.com/SuperInstance/clawcommit-lucid)
@@ -1215,6 +1222,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-chinese](https://github.com/SuperInstance/fleet-chinese)
 - [fleet-chronicle](https://github.com/SuperInstance/fleet-chronicle)
 - [fleet-ci](https://github.com/SuperInstance/fleet-ci)
+- [fleet-cicd-agent](https://github.com/SuperInstance/fleet-cicd-agent)
 - [fleet-circadian](https://github.com/SuperInstance/fleet-circadian)
 - [fleet-clock](https://github.com/SuperInstance/fleet-clock)
 - [fleet-code-agent](https://github.com/SuperInstance/fleet-code-agent)
@@ -2073,6 +2081,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Safety
 
 - [a2a-r-protocol](https://github.com/SuperInstance/a2a-r-protocol)
+- [architectures](https://github.com/SuperInstance/architectures)
 - [cocapn-cli](https://github.com/SuperInstance/cocapn-cli)
 - [cocapn-nexus](https://github.com/SuperInstance/cocapn-nexus)
 - [cuda-motor](https://github.com/SuperInstance/cuda-motor)
@@ -2216,17 +2225,13 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ai-token-counter](https://github.com/SuperInstance/ai-token-counter)
 - [ap-compiler](https://github.com/SuperInstance/ap-compiler)
 - [api-versioner](https://github.com/SuperInstance/api-versioner)
-- [architectures](https://github.com/SuperInstance/architectures)
 - [archive](https://github.com/SuperInstance/archive)
 - [artistlog-ai](https://github.com/SuperInstance/artistlog-ai)
 - [attention-daemon-early-version](https://github.com/SuperInstance/attention-daemon-early-version)
-- [autodata-integration](https://github.com/SuperInstance/autodata-integration)
 - [bandit-learner](https://github.com/SuperInstance/bandit-learner)
 - [bathydata-map](https://github.com/SuperInstance/bathydata-map)
-- [blog-posts](https://github.com/SuperInstance/blog-posts)
 - [booklog-ai](https://github.com/SuperInstance/booklog-ai)
 - [boot-camp](https://github.com/SuperInstance/boot-camp)
-- [bootcamp](https://github.com/SuperInstance/bootcamp)
 - [bootcamp-engine](https://github.com/SuperInstance/bootcamp-engine)
 - [branch-sandbox](https://github.com/SuperInstance/branch-sandbox)
 - [businesslog-ai](https://github.com/SuperInstance/businesslog-ai)
@@ -2245,7 +2250,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [character-skill-trees](https://github.com/SuperInstance/character-skill-trees)
 - [cheetahclaws](https://github.com/SuperInstance/cheetahclaws)
 - [cheflog-ai](https://github.com/SuperInstance/cheflog-ai)
-- [claude](https://github.com/SuperInstance/claude)
 - [claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)
 - [claudesclaude](https://github.com/SuperInstance/claudesclaude)
 - [claw](https://github.com/SuperInstance/claw)
