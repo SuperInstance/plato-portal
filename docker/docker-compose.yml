@@ -1,0 +1,10 @@
+services:
+  superinstance:
+    build: .
+    volumes:
+      - agent_memory:/app/agents
+    environment:
+      - PYTHONUNBUFFERED=1
+
+volumes:
+  agent_memory:
