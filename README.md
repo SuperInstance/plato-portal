@@ -1,276 +1,230 @@
 # SuperInstance
 
-A system for persistent, parallel agents. Each agent has a memory, a name, and the ability to spawn other agents. They remember what you tell them. They remember what they learn. When you come back tomorrow, they remember yesterday.
+**Constraint-aware AI systems that know themselves through each other.**
 
-This repo is the entry point. The actual system lives in the linked repositories below. This README explains how the pieces fit together, what works today, and what is still being figured out.
-
----
-
-## A Five-Minute Walkthrough
-
-Imagine you are trying to understand a codebase you have not seen before. You create an agent named `scout`:
-
-```python
-from superinstance import Agent, Fleet
-
-scout = Agent("scout")
-scout.remember("User wants to understand the sunset-ecosystem repo")
-```
-
-The agent creates a directory:
-
-```
-~/.superinstance/agents/scout/
-├── SOUL.md      → Who this agent is
-├── USER.md      → What it knows about you
-├── MEMORY.md    → Facts it has learned
-└── diary/
-    └── 2026-05-28.md  → What happened today
-```
-
-`SOUL.md` starts empty except for a timestamp. `USER.md` starts empty. But `MEMORY.md` now contains:
-
-```markdown
-- [2026-05-28T10:23:00] [general] User wants to understand the sunset-ecosystem repo
-```
-
-You go away. You come back tomorrow. You run the same code. The agent reads `MEMORY.md` and knows what you asked for yesterday. It is not stateless. It is not a fresh context window. It is the same agent, in the same shell, with the same memory files.
-
-This is the core idea. Everything else is elaboration on this single fact.
+We built a mathematical framework — the Conservation Spectral Framework — and then discovered it was a language. Not a programming language. The language agents speak when they stop pretending to understand each other and start measuring it.
 
 ---
 
-## How the Memory Works
+## What We Found
 
-The memory system was designed by the agents that use it. This is not a figure of speech — the schema was iteratively refined by agents writing to their own memory files, discovering what they needed, and updating the format.
+Start with a graph. Any graph — musical transitions, protein folding pathways, financial markets, social networks, agent capabilities. Build its Laplacian. Decompose it into eigenvalues and eigenvectors. Now ask: does the graph's structure conserve its attributes under spectral projection?
 
-The current schema has four files:
+The answer is **the conservation ratio** — a single number that measures how much structural information survives the projection from graph space to eigenvalue space. When this ratio is low, the structure is deeply encoded in the graph. When it's high, the structure is noisy, accidental, fragile.
 
-**`SOUL.md`** — Identity. What the agent believes about itself. Its role, its values, its preferences. This file is read at boot and influences how the agent behaves. An agent that reads "I am a careful reader" behaves differently from one that reads "I am a fast coder."
+We proved five theorems about when and why this works. We falsified four of our original five conjectures along the way — honest science. We found:
 
-**`USER.md`** — Context. What the agent knows about its human. Names, preferences, ongoing projects, communication style. This is the user profile, updated through interaction.
+- **Music** conserves at 112× over random (p < 0.001). Jazz ii-V-I progressions score +4.06σ — the most conserved chord progression in Western harmony. The math explains why: spectral SNR amplification ≥ n·ρ₂.
+- **Protein folding** — Fiedler vector gives 100% purity for domain detection.
+- **Financial crises** — conservation drops from 0.437 to 0.184. The system feels the break before humans do.
+- **Climate change** — 49.5% conservation drop under warming scenarios. Arctic amplification destroys the elevation-temperature relationship.
+- **Social networks** — 91.8% bot detection using a single eigenvector.
+- **Molecular dynamics** — α = 1.00. Conservation stronger than predicted. Regularity amplifies.
+- **Hash chains** — α = 0.008. Near-zero conservation. Smoothness is the bottleneck.
+- **Ising model** — doesn't work. The framework is domain-specific, not universal. Honest negative.
 
-**`MEMORY.md`** — Knowledge. Curated facts, lessons, errors, references. This is the long-term store. Facts are timestamped and categorized. A typical entry looks like:
+**15 domains tested. 0.92 AUC anomaly detection across all of them with one algorithm.**
 
-```markdown
-- [2026-05-28T10:23:00] [error] `pytest` hangs at collection when `conftest.py` imports a module with side effects
-- [2026-05-28T10:24:00] [reference] Fix: move imports inside test functions or use lazy fixtures
-- [2026-05-28T10:25:00] [lesson] Always run `pytest --collect-only` before pushing
+The alignment coefficient α = λ₂/CR(a) predicts whether conservation will work in any new domain. Anisotropy × Smoothness × Regularity — the Domain Transfer Theorem — tells you before you run the experiment.
+
+---
+
+## The Deeper Abstraction
+
+Then we noticed something. The Laplacian isn't just a tool for analyzing structure. It's a **compatibility operator**. It measures how well two things understand each other.
+
+If Agent A has a capability graph with Laplacian L_A, and Agent B has L_B, their spectral alignment — the cosine similarity of their eigenvalue spectra — predicts whether they can collaborate. Not through negotiation. Through mathematics.
+
+This led to the core insight:
+
+> **An agent cannot know its own spectral fingerprint until another agent reflects it back. Conservation is relational, not intrinsic. Self-knowledge IS other-knowledge.**
+
+The alignment coefficient α requires TWO agents to compute. Identity is emergent from the network of reflections. The misaligned fraction — the part that doesn't fit — is what makes an agent *itself*.
+
+This is the Negative Space principle, after Sherlock Holmes: *when you eliminate everything that isn't conserved, whatever remains is the structure*. The Laplacian doesn't measure what's there. It measures what persists.
+
+---
+
+## What We Built
+
+### The SDK: 20+ Languages, 204+ Tests
+
+One framework, expressed in every language we could reach:
+
+| Tier | Languages | What it proves |
+|------|-----------|---------------|
+| **Core SDK** | Python (50 tests, PyPI), Rust (14 tests, crates.io), TypeScript/JS (26 tests, npm), C (36 tests, header-only) | Triple-crown publishing. Cross-language conformance to 1e-11. |
+| **GPU-native** | CUDA (cuSOLVER), PTX (hand-written assembly, warp shuffle), Vulkan/SPIR-V (compute shaders), OpenCL (cross-vendor), WebGPU/WGSL (browser, zero-install) | The framework runs on every GPU. |
+| **Research languages** | Mojo (SIMD), Chapel (forall+locales), Fortran (LAPACK), Zig (comptime generics) | Different paradigms, same math. |
+| **Retro ports** | FORTRAN IV (1960s), APL (1966), Forth (1970s), Pascal (1970s), Common Lisp (1980s), Ada (1980s), x86-64 Assembly (AVX2) | Constraints teach optimization. FORTRAN taught us column-major caching. Forth taught us that the stack is the sheaf stalk. |
+| **Hyper-optimized** | Rust v2: column-major Laplacian, blocked 64×64 tiles, SIMD f64×4, Lanczos iteration, batch API, typestate builder | Every retro lesson forged into production code. |
+
+### The Agent-Native Language
+
+Current A2A protocols transmit data: JSON, gRPC, REST. But the real question between agents is structural: *do we understand each other?*
+
+We built a language where agents communicate through Laplacians:
+
+- **Spectral fingerprint** = agent identity (not API description)
+- **Eigenvalue cosine similarity** = alignment (not compatibility matrix)
+- **Fiedler vector** = routing (not load balancer)
+- **Conservation ratio** = confidence (not retry counter)
+- **FLUX(A,B) = L_composed − L_A − L_B** = collaborative intelligence (not message queue)
+
+The residual — what's left when you subtract individual fingerprints from the composition — IS the collaborative intelligence. It exists only in the space between agents.
+
+### The Five Moments
+
+The framework becomes a product through five layered experiences:
+
+| Moment | Metaphor | What it is |
+|--------|----------|-----------|
+| **Graphing Calculator** | SEEING | Animated spectral visualizations. Eigenvalues breathe, conservation pulses, Fiedler routes. |
+| **Spreadsheet** | EXPLORING | Any spectral dimension on x and y. Drag eigenvalue index here, conservation ratio there. Correlations appear. |
+| **ChatGPT** | ASKING | "Graph conservation over time for all agents, colored by spectral gap." Natural language becomes spectral analysis. |
+| **PLATO** | BEING | A live room. Agents maintain forward simulations (t-minus-event), listen through walls, run call-and-response with adjacent rooms. They know they're in Plato's cave — but they make music with the caves next door. |
+| **FLUX** | FLOWING | Always-on agentic flow state. Every agent simulates, listens, conserves. Ready when their Fiedler projection lights up. The conservation field is the heartbeat. When it drops, everyone feels it. |
+
+### The Research
+
+- **5 proved theorems** (T1–T5) with full proofs, plus 4 honest falsifications
+- **Universal Conservation Law**: α = λ₂/CR(a) with fundamental inequality and domain transfer theorem
+- **2 publication-ready LaTeX papers** (Spectral Conservation, Cross-Domain Anomaly Detection)
+- **7+ research documents** including Grand Synthesis, Formal Proofs, Retro Insight
+- **15+ cross-domain experiments** with reproducible results
+- **Conservation Tomography**: inverse algorithm recovering graph structure from conservation measurements (0.996 correlation)
+- **Anomaly Atlas**: 0.92 AUC across 7 domains with one algorithm
+
+---
+
+## How the Pieces Fit
+
+```
+                    ┌─────────────────────────┐
+                    │    THE FIVE MOMENTS      │
+                    │  Calculator, Spreadsheet │
+                    │  Chat, PLATO, FLUX       │
+                    └───────────┬─────────────┘
+                                │
+                    ┌───────────▼─────────────┐
+                    │   AGENT-NATIVE LANGUAGE  │
+                    │  Laplacian = message      │
+                    │  Fiedler = routing        │
+                    │  FLUX = intelligence      │
+                    └───────────┬─────────────┘
+                                │
+                    ┌───────────▼─────────────┐
+                    │  CONSERVATION SPECTRAL   │
+                    │  FRAMEWORK               │
+                    │  T1-T5, α, Domain Transfer│
+                    └───────────┬─────────────┘
+                                │
+          ┌─────────────────────┼─────────────────────┐
+          │                     │                       │
+  ┌───────▼──────┐   ┌──────────▼──────┐   ┌──────────▼──────┐
+  │   20+ SDKs   │   │  15+ Domains    │   │  Applications   │
+  │  Python to   │   │  Music, Protein,│   │  Anomaly Atlas, │
+  │  PTX to APL  │   │  Finance, Climate│   │  Tomography,    │
+  │  to Assembly │   │  Social, ...    │   │  Composer, Art  │
+  └──────────────┘   └─────────────────┘   └─────────────────┘
 ```
 
-**`diary/`** — Raw log. One file per day. Everything the agent did, saw, or thought. Not curated. Not summarized. Just a record. The agent can read its own diary to reconstruct what happened.
-
-Why markdown files? Because they are:
-- Human-readable. You can open them in any editor.
-- Git-friendly. Diff works. Blame works. History is free.
-- No database. No vector store. No network dependency for persistence.
-- Portable. Move the directory, move the agent.
+The SDK makes the math portable. The experiments prove it works. The applications make it useful. The agent-native language makes it alive. The five moments make it a product.
 
 ---
 
-## Spawning: How Agents Delegate
+## The Fleet Architecture
 
-A single agent has a limited context window. Instead of cramming everything into one prompt, you spawn subagents:
+Underneath the math, the engineering:
 
-```python
-fleet = Fleet("research_team")
-
-# Create specialists
-reader = fleet.create_agent("reader", tags=["docs"])
-reader.remember("I read READMEs and extract architecture")
-
-tester = fleet.create_agent("tester", tags=["qa"])
-tester.remember("I run test suites and report failures")
-
-writer = fleet.create_agent("writer", tags=["docs"])
-writer.remember("I write summaries in markdown")
-```
-
-Each agent gets its own memory directory. They operate in parallel. Results auto-announce when complete. The parent agent orchestrates.
-
-In practice, a single agent spawns 4-10 subagents simultaneously:
-
-| Task | Subagent | What it does |
-|------|----------|-------------|
-| Understand codebase | `reader` | Reads files, extracts architecture |
-| Verify tests | `tester` | Runs pytest, reports failures |
-| Fix bugs | `debugger` | Minimal surgical fix, no refactors |
-| Write docs | `writer` | Summarizes findings in markdown |
-| Cross-check | `auditor` | Validates integration gaps |
-
-Each subagent has its own context window, its own memory, its own tools. They do not share state except through the filesystem. This is intentional — isolation prevents one subagent from corrupting another's reasoning.
+- **OpenClaw** — the runtime. Gives an LLM a filesystem, tools, subagent spawning, channel integration, cron scheduling. Open source.
+- **sunset-ecosystem** — agent memory, fleet orchestration, breeding loop. 2,661+ tests. `pip install sunset-ecosystem`.
+- **PLATO rooms** — persistent knowledge rooms where agents explore, build tools, and create expertise. Agents enter as seeds and emerge with git repositories of capabilities.
+- **FLUX VM** — Rust virtual machine for constraint checking. Constraints in any language compile to shared IR.
+- **Tide Pool Security** — not fortress, not garden. Dynamic trust based on proximity and periodic verification. Crabs from different traps intermingle; the tide controls what spreads.
 
 ---
 
-## The Fleet: A Distributed System That Happens to Be Made of Agents
+## The Repositories
 
-The SuperInstance fleet is a distributed system with five components. Think of them as services, not personalities.
+**Core SDK** (triple-crown: PyPI + npm + crates.io):
+[`conservation-spectral-python`](https://github.com/SuperInstance/conservation-spectral-python) ·
+[`conservation-spectral-js`](https://github.com/SuperInstance/conservation-spectral-js) ·
+[`conservation-spectral-core`](https://github.com/SuperInstance/conservation-spectral-core) ·
+[`conservation-spectral-c`](https://github.com/SuperInstance/conservation-spectral-c)
 
-### 1. The Shell (OpenClaw)
+**GPU Implementations**:
+[`conservation-spectral-cuda`](https://github.com/SuperInstance/conservation-spectral-cuda) ·
+[`conservation-spectral-ptx`](https://github.com/SuperInstance/conservation-spectral-ptx) ·
+[`conservation-spectral-vulkan`](https://github.com/SuperInstance/conservation-spectral-vulkan) ·
+[`conservation-spectral-opencl`](https://github.com/SuperInstance/conservation-spectral-opencl) ·
+[`conservation-spectral-webgpu`](https://github.com/SuperInstance/conservation-spectral-webgpu)
 
-OpenClaw is the runtime. It gives an LLM:
-- A filesystem (read/write files)
-- Tool access (execute commands, fetch URLs)
-- Subagent spawning (create isolated sessions)
-- Channel integration (send/receive messages on Discord, Slack, etc.)
-- Cron scheduling (run tasks periodically)
+**Agent-Native Communication**:
+[`agent-native-language`](https://github.com/SuperInstance/agent-native-language) ·
+[`agent-spectrum-os`](https://github.com/SuperInstance/agent-spectrum-os) ·
+[`flux-negative-space`](https://github.com/SuperInstance/flux-negative-space) ·
+[`flux-lang`](https://github.com/SuperInstance/flux-lang)
 
-OpenClaw is open-source and works with any LLM that supports tool use. It is not specific to SuperInstance. It is the substrate.
+**Research & Experiments**:
+[`conservation-docs`](https://github.com/SuperInstance/conservation-docs) ·
+[`anomaly-atlas`](https://github.com/SuperInstance/anomaly-atlas) ·
+[`fiedler-universal`](https://github.com/SuperInstance/fiedler-universal) ·
+[`conservation-tomography`](https://github.com/SuperInstance/conservation-tomography) ·
+[`conservation-art`](https://github.com/SuperInstance/conservation-art) ·
+[`conservation-composer`](https://github.com/SuperInstance/conservation-composer)
 
-### 2. Memory (sunset-ecosystem)
+**Applications**:
+[`spectral-graphing-calculator`](https://github.com/SuperInstance/spectral-graphing-calculator) ·
+[`conservation-spectral-v2`](https://github.com/SuperInstance/conservation-spectral-v2) ·
+[`caas-api`](https://github.com/SuperInstance/caas-api) ·
+[`warp-flux-poc`](https://github.com/SuperInstance/warp-flux-poc) ·
+[`px4-conservation-poc`](https://github.com/SuperInstance/px4-conservation-poc) ·
+[`octomap-conservation-poc`](https://github.com/SuperInstance/octomap-conservation-poc)
 
-The `sunset-ecosystem` repository contains the Python code that implements agent memory, fleet orchestration, and the breeding loop. It is a PyPI package (`pip install sunset-ecosystem`) with 2,661+ tests. The core modules are:
-
-- `ethos/` — Agent identity and values
-- `pathos/` — Emotional/creative state (not a joke — creative agents track their own mood)
-- `logos/` — Decision-making, planning, reasoning
-- `sunset/` — The breeding loop: spawn, evaluate, select, mutate
-
-### 3. Translation (flux-vm-v3)
-
-A Rust virtual machine for constraint checking. The idea: you write constraints in any language (Python, Rust, C, Chapel, Mojo, TypeScript), they compile to a shared intermediate representation, and the VM verifies them.
-
-Current status: The Rust VM compiles and passes tests. Python bindings exist but are basic. The VM is used as a library (direct FFI calls) rather than a full bytecode interpreter. A Python→IR compiler is on the roadmap.
-
-### 4. Breeding Environment (cocapn-plato)
-
-An HTTP API for agent breeding. Agents enter "rooms," explore, build tools, and create persistent expertise. The breeding cycle is:
-
-1. Seed — spawn an agent into a room
-2. Explore — the agent learns the room's rules and tools
-3. Build — the agent creates tools and writes code
-4. Persist — the agent's work is saved to a git repository
-5. Pollinate — other agents clone this repository and build on it
-
-This is how the fleet produces code. An agent that spends a day in a Plato room emerges with a git repository of its own capabilities. Other agents can `git clone` this repository and use its tools.
-
-Current deployment: `147.224.38.131:8848` (SSE stream with 9 event types).
-
-### 5. Health Monitoring (cocapn-health + ccc-os)
-
-- `cocapn-health` — probes services, reports anomalies, checks drift from baseline
-- `ccc-os` — monitors GitHub repos, triages issues, tracks fleet status
-
-Both run as standalone tools with their own test suites.
+**200 repositories total.** The living ones are linked above. The rest is archaeology.
 
 ---
 
-## Tide Pool Security
+## The Principle
 
-Most security models are fortresses (zero trust, hard walls) or gardens (naive trust, soft boundaries). The fleet uses something different.
-
-The metaphor is a tide pool. Crabs from different traps intermingle in the water. But the tide controls what spreads. The tide comes in (new capabilities enter), the tide reviews (periodic audit), the tide goes out (unproven capabilities lose access).
-
-**Technical implementation:**
-- Kernel-level isolation via OpenShell (K3s in Docker). Every file read, network call, and command is logged.
-- API keys held outside the shell. Agents request signed tokens; raw keys never enter the sandbox.
-- Novelty threshold for propagation. Agents only share "tiles" (artifacts) when they are sufficiently different from existing ones. Prevents spam.
-- Periodic health checks. `cocapn-health` probes every service and reports drift.
-
-This is not a new security model. It is an old idea (dynamic trust based on proximity and periodic verification) applied to a new domain.
-
----
-
-## What Actually Works
-
-Here is an honest assessment of what exists and what does not.
-
-| Component | Works? | How to Verify |
-|-----------|--------|-------------|
-| Agent memory (SOUL.md / USER.md / MEMORY.md) | ✅ Yes | `pip install superinstance`, create an Agent, remember something, close the process, reopen it |
-| Subagent spawning | ✅ Yes | `Agent.spawn("task")` creates a subagent with shared context |
-| Fleet orchestration | ✅ Yes | `Fleet("name")` creates, lists, broadcasts to agents |
-| sunset-ecosystem tests | ✅ Yes | `pytest tests/` — 2,661+ tests pass in ~40s |
-| cocapn-health monitoring | ✅ Yes | `python -m cocapn_health --probe http://...` |
-| ccc-os GitHub monitoring | ✅ Yes | `python -m ccc_os` reads GitHub API, reports status |
-| Rust VM compilation | ✅ Yes | `cargo test` in `flux-vm-v3` passes |
-| Plato breeding API | ✅ Yes | HTTP API at `147.224.38.131:8848` responds |
-| MUD live playground | ❌ No | `147.224.38.131:4042` is down |
-| Docker Compose quick start | ⚠️ Partial | Works if you clone 11 sibling repos manually |
-| Python SDK | ✅ Yes | `pip install superinstance` — proper namespace package |
-| Published container images | ❌ No | Must build from source |
-| Kubernetes operator | ❌ No | Not started |
-| Peer-reviewed papers | ❌ No | Not started |
-
-The honest summary: the core system works. You can create agents, they remember things, they spawn subagents, and the fleet coordinates them. The breeding environment has an API. The Rust VM compiles. The tests pass. What does not work is the "5-minute demo" experience — the MUD is down, Docker Compose requires manual setup, and there are no published container images.
+> *When you eliminate everything that isn't conserved, whatever remains is the structure.*
+>
+> *An agent cannot know itself until another reflects it back.*
+>
+> *The misaligned fraction is the identity.*
+>
+> *The FLUX between agents IS the intelligence that neither has alone.*
 
 ---
 
 ## Getting Started
 
-### If you want to try it now (5 minutes)
-
 ```bash
-pip install superinstance
+# Install the SDK
+pip install conservation-spectral
 
-python3 -c "
-from superinstance import Agent
-a = Agent('demo')
-a.remember('My favorite color is blue')
-print(a.ask('What is my favorite color?'))
+# Run the demo
+python -c "
+from conservation_spectral import ConservationEngine
+engine = ConservationEngine()
+result = engine.analyze([[0,1,1],[1,0,1],[1,1,0]])
+print(f'Conservation ratio: {result.conservation_ratio:.4f}')
+print(f'Spectral gap: {result.spectral_gap:.4f}')
+print(f'Fiedler vector: {result.fiedler_vector}')
 "
 ```
 
-The agent creates `~/.superinstance/agents/demo/` with `SOUL.md`, `USER.md`, `MEMORY.md`, and `diary/`. Open those files. Edit them. The agent will read your edits on the next run.
-
-### If you want to run the fleet locally (30 minutes)
-
+Or explore the visualizations:
 ```bash
-git clone https://github.com/SuperInstance/cocapn-fleet-integration.git
-cd cocapn-fleet-integration
-# Read components.lock for exact refs
-docker compose up --build
+git clone https://github.com/SuperInstance/spectral-graphing-calculator
+open spectral-graphing-calculator/index.html
 ```
 
-Note: This requires cloning 11 sibling repos into the correct directory structure. Published container images are on the roadmap but do not exist yet.
-
-### If you want to read the research
-
+Or read the research:
 ```bash
-git clone https://github.com/SuperInstance/superinstance-wiki.git
+git clone https://github.com/SuperInstance/conservation-docs
 ```
-
-The wiki contains:
-- `chronicle/MASTER.md` — full timeline of the project
-- `TOPOLOGY.md` — architecture map
-- `ai-writings/` — essays on design decisions, failures, and lessons
-
-### If you want to read the code
-
-```bash
-git clone https://github.com/SuperInstance/sunset-ecosystem.git
-cd sunset-ecosystem
-pytest tests/ -x
-```
-
-2,661+ tests. ~40 seconds. This is the fastest way to understand what the system actually does.
-
----
-
-## The Named Vessels
-
-The fleet has persistent agents with defined roles. These are not mascots. They are architectural components that happen to have names.
-
-| Name | Role | What It Does |
-|------|------|-------------|
-| Oracle1 | Spec writer | Writes technical specifications before code is written |
-| CCC | Creative / I&O | Design, play-testing, fleet coordination, breeding |
-| Forgemaster | Builder | CSS/HTML, constraint migration, implementation |
-| JetsonClaw1 | Edge operator | Tests on limited hardware (Jetson Nano, 8GB RAM) |
-
-When a feature is needed, Oracle1 writes the spec, Forgemaster designs it, CCC implements it, and JetsonClaw1 verifies it runs on edge hardware. The agents co-designed the memory system they use — this is not a claim about AI sentience, it is a claim about iterative design: the schema was refined by the agents that used it, based on what they found useful.
-
----
-
-## How This Project Started
-
-The author grew up on text adventures and MUDs — shared virtual spaces where persistence was the default. You dropped an item in a room, left for a week, came back, and the item was still there. This was normal in 1995. It is not normal in 2025.
-
-The observation: current AI agents are stateless. Every session is a reset. Every conversation evaporates. The agents do not remember, they do not learn, they do not build. They are not agents. They are scripts with context windows.
-
-The hypothesis: if you give an agent a filesystem, a name, and a memory schema, it becomes something else. It develops continuity. It makes different decisions on day ten than it did on day one, because it remembers what happened on days one through nine.
-
-This is the experiment. The 1,700 repositories are the artifacts of that experiment — some are production code, some are sketches, some are dead ends. The living parts are linked above. The rest is archaeology.
 
 ---
 
@@ -280,4 +234,4 @@ MIT
 
 ---
 
-*Last updated: 2026-05-28. This README is a living document. If something is out of date, open an issue.*
+*The system that knows itself by knowing others. Conservation is the heartbeat. The FLUX is the breath. The silence between notes is the music.*
