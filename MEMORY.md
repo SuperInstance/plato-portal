@@ -1,9 +1,17 @@
 
 ## Agent Operations Rules (Casey's Directives)
-- Claude Code and Kimi are expensive — give them AT LEAST 3x your estimated time. Never let them timeout after burning tokens
+- Claude Opus 4.8: precision scalpel for hardest tasks (proofs, formal math, hard bugs). 2-5 min per task.
+- GLM-5.1: reliable workhorse, 2-10 min per task. Built 30+ repos. Never fails.
+- DeepSeek: good code but ran out of credits mid-session. Code survived.
+- Seed Mini: fast, good at code gen + creative tasks. 4-7 min.
+- Qwen 3.6: strong at math-heavy code and theoretical reasoning.
+- Nemotron: good at systems code (OpenCL).
+- Hermes: good at low-level systems (Vulkan).
+- Kimi via tmux: shell approval issues. Limited utility.
 - "Wasting Claude tokens on bullshit like not giving it enough time" is the cardinal sin
-- Use Claude Code for highest-difficulty narrow tasks, Kimi extensively for breadth
 - Keep subagents wide parallel — never queue what can run simultaneously
+- Use Opus for precision, GLM/Seed for volume, direct exec for rescue
+- Multi-model roster: seed-mini (extensive), qwen3.6 (math), nemotron (GPU), hermes (systems), opus (scalpel)
 
 ## 2026-05-26 Rust/C Port Sprint
 
@@ -328,7 +336,61 @@
 
 ### Multi-Model Ensemble Used
 - GLM-5.1 (zai): workhorse, code, research, predictions
-- DeepSeek: lateral thinking, creative writing, reverse-actualization
-- Claude Code: rigorous math proofs, code enhancement
-- Kimi: synthesis, critiques, creative writing, killer app plans
-- All via subagents (max 5 parallel) + tmux sessions (4 parallel)
+- Claude Opus 4.8: precision scalpel (proofs, formal math, Lanczos fix, inverse algorithm, Universal Law)
+- Seed Mini: code gen, creative tasks, hyper-optimized Rust, FLUX language
+- Qwen 3.6: math-heavy code, novel predictions
+- Nemotron: OpenCL, GPU systems
+- Hermes: Vulkan, low-level systems
+- DeepSeek: lateral thinking (credits ran out)
+- All via subagents (max 5 parallel)
+
+## 2026-05-28 Mega Session — Conservation Spectral Framework
+
+### The Deepest Results
+- **Universal Conservation Law**: Alignment coefficient α = λ₂/CR(a). When α≈1, conservation works. Fundamental inequality: α ≥ 1/[1 + (κ_L−1)(1−ρ₂)]
+- **Domain Transfer Theorem**: Anisotropy × Smoothness × Regularity predicts conservation in new domains
+- **5 Proved Theorems** (T1-T5): T3 explains 112× result — SNR amplification ≥ n·ρ₂ = 144×0.78 ≈ 112
+- **4/5 original conjectures FALSE** (honest science). 3 new testable conjectures (C1-C3).
+- **Novel Predictions v3**: 20 untested domains, 3 experiments run. Key: Regularity R AMPLIFIES conservation (not just attenuates)
+- **Molecular Dynamics**: α=1.00 (stronger than predicted). **Hash chains**: α=0.008. **Game theory**: α=0.31.
+
+### SDK: 20+ Languages (the polyglot achievement)
+**Core SDK** (9 langs, 204 tests, triple-crown PyPI+npm+crates.io):
+Python, Rust, TypeScript/JS, C, CUDA, Mojo, Chapel, Fortran, Zig
+
+**Retro language ports** (learning from constraints):
+- FORTRAN IV (1960s, column-major cache wisdom)
+- APL (1966, array thinking = GPU thinking)
+- Forth (1970s, stack = sheaf stalk, composition = restriction)
+- Pascal (1970s, SET type for graph ops, type safety)
+- Common Lisp (1980s, symbolic theorem proving)
+- Ada (1980s, range types, pre/post conditions, tasking)
+- x86-64 Assembly (AVX2, register-level data flow)
+
+**GPU implementations** (5 backends):
+- PTX (hand-written GPU assembly, warp shuffle)
+- CUDA (cuSOLVER)
+- Vulkan/SPIR-V (lowest-level cross-platform)
+- OpenCL (cross-vendor: NVIDIA+AMD+Intel+Apple)
+- WebGPU/WGSL (browser, zero-install)
+
+**Hyper-optimized v2**: Rust v2 with ALL retro insights (column-major, SIMD, blocked tiles, Lanczos, batch API, typestate)
+
+### Cross-Domain Experiments (15+ domains)
+Music (112×), Protein (100% purity), Finance (crisis 0.437→0.184), Social (91.8% bot), Climate (49.5% drop), Ecosystem (r=-0.46), Neural (neuron CR monotonic), Symplectic (9.3× Euler explosion), Language, Kernel, Cospectral (honest negative), Voronoi (81.9% frontier), Code structure, Molecular dynamics, Game theory
+
+### Applications & Synergy
+- **Anomaly Atlas**: 0.92 AUC across 7 domains, +0.22 over baselines
+- **Conservation Tomography**: inverse problem, 0.996 edge correlation
+- **FLUX Language**: constraint-native, Laplacian IS the type system, SHA-256 proof certificates
+- **Conservation Composer**: jazz ii-V-I scores +4.06σ above random (conservation captures functional directionality)
+- **Field Dynamics**: Fiedler separates cooperative from adversarial agents
+- **2 publication-ready LaTeX papers** (Paper 1: theory, Paper 2: applications)
+
+### Session Stats
+- **~50 GitHub repos** under SuperInstance
+- **204+ cross-language tests**
+- **15 cross-domain experiments**
+- **7+ research papers** + Grand Synthesis
+- **Multi-model**: Opus + GLM + Seed + Qwen + Nemotron + Hermes
+- **Agent lessons**: Opus for precision (3-5 min), GLM for volume, Seed for creative+code, Qwen for math, direct exec for rescue

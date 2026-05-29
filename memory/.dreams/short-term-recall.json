@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-28T05:46:19.319Z",
+  "updatedAt": "2026-05-29T04:53:02.455Z",
   "entries": {
     "memory:memory/2026-05-11.md:163:200": {
       "key": "memory:memory/2026-05-11.md:163:200",
@@ -6805,6 +6805,503 @@
         "rack",
         "full",
         "stepsequencer"
+      ]
+    },
+    "memory:memory/2026-05-27.md:630:662": {
+      "key": "memory:memory/2026-05-27.md:630:662",
+      "path": "memory/2026-05-27.md",
+      "startLine": 630,
+      "endLine": 662,
+      "source": "memory",
+      "snippet": "1. Tension eigenbasis: conservation holds along principal eigenvector of 3×3 tension correlation 2. MoE real weights: H¹ correlation >> 0.208 on real model checkpoints 3. I Ching human ratings: H¹ predicts human difficulty ratings (r > 0.9) 4. Social network: Wasserstein detects ER phase transition at p = ln(N)/N 5. Narrative with spaCy: genre accuracy 25% → >60% with proper basis ### New Experiments Completed - lattice-climate: Onsager Tc detected (14.6% error on 8×8, Binder crossing converges) - symplectic-physics: Yoshida 10⁻¹⁴, Verlet 10⁻⁷, exactly reversible, angular momentum 10⁻¹⁵ - conservation-tension: HYPOTHESIS REVERSED (chromatic conserves better due to cardinality metric) - pers",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4131310760974884,
+      "maxScore": 0.4131310760974884,
+      "firstRecalledAt": "2026-05-28T17:14:43.939Z",
+      "lastRecalledAt": "2026-05-28T17:14:43.939Z",
+      "queryHashes": [
+        "9596e6ccf6ca"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "network",
+        "0.208",
+        "0.9",
+        "lattice-climate",
+        "14.6",
+        "symplectic-physics",
+        "conservation-tension",
+        "tension"
+      ]
+    },
+    "memory:memory/2026-05-27.md:582:617": {
+      "key": "memory:memory/2026-05-27.md:582:617",
+      "path": "memory/2026-05-27.md",
+      "startLine": 582,
+      "endLine": 617,
+      "source": "memory",
+      "snippet": "- Symplectic Euler, Störmer-Verlet, 4th-order Yoshida integrators - N-body gravitational simulation with all three integrators - Energy conservation tracked: Euler ~1e-2, Verlet ~1e-4, Yoshida ~1e-9 - Phase space volume conservation verified - Angular momentum conservation in N-body verified ### Lattice-Climate Highlights - Metropolis, Wolff cluster, Swendsen-Wang algorithms - Onsager exact 2D Ising specific heat - 1D transfer matrix exact solution - Critical temperature detection via specific heat peak - Binder cumulant for finite-size scaling - ClimateMapper: temperature→Ising, precipitation→Potts ### Conservation-Tension Highlights - Three tension methods: spectral, voice-leading, conte",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7679101198911666,
+      "maxScore": 0.4045095920562744,
+      "firstRecalledAt": "2026-05-28T17:14:43.939Z",
+      "lastRecalledAt": "2026-05-28T18:43:57.554Z",
+      "queryHashes": [
+        "9596e6ccf6ca",
+        "4bc573f0d983"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "störmer-verlet",
+        "4th-order",
+        "n-body",
+        "1e-2",
+        "1e-4",
+        "1e-9",
+        "lattice-climate",
+        "swendsen-wang"
+      ]
+    },
+    "memory:memory/2026-05-24.md:178:200": {
+      "key": "memory:memory/2026-05-24.md:178:200",
+      "path": "memory/2026-05-24.md",
+      "startLine": 178,
+      "endLine": 200,
+      "source": "memory",
+      "snippet": "- CONSERVATION-OF-TENSION.md (30KB) — mathematical framework + Appendix A critique - MATH-FIXES.md (32KB) — Claude's rigorous fixes, Hirschman replacement, PCA results - THREE-HALVES.md (31KB) — deep research on 3/2 across traditions - ARS-SUBTILIOR-COUNTEREVIDENCE.md (23KB) — honest counter-evidence - ET-COMPENSATION-EVIDENCE.md (30KB) — chronological argument with hard data - ROUND-TABLE-SYNTHESIS.md (32KB) — emergent insights from all agents - NOVEL-PREDICTIONS.md — 20 falsifiable predictions - LITERATURE-SURVEY.md — 45 academic sources - LATERAL-MANIFESTO.md (27KB) — dimensional collapse theory - CROSS-CULTURAL-VALIDATION.md — Hindustani, gamelan, African, gagaku, Turkish - FUTURE-APPLIC",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.39888356626033783,
+      "maxScore": 0.39888356626033783,
+      "firstRecalledAt": "2026-05-28T17:14:43.939Z",
+      "lastRecalledAt": "2026-05-28T17:14:43.939Z",
+      "queryHashes": [
+        "9596e6ccf6ca"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "conservation-of-tension.md",
+        "math-fixes.md",
+        "three-halves.md",
+        "3/2",
+        "ars-subtilior-counterevidence.md",
+        "counter-evidence",
+        "et-compensation-evidence.md",
+        "round-table-synthesis.md"
+      ]
+    },
+    "memory:memory/2026-05-27.md:229:248": {
+      "key": "memory:memory/2026-05-27.md:229:248",
+      "path": "memory/2026-05-27.md",
+      "startLine": 229,
+      "endLine": 248,
+      "source": "memory",
+      "snippet": "### Conjecture Status Update 1. GLM (attention temperature/sheaf): UNTESTED 2. DeepSeek (MoE routing H¹): PARTIALLY SUPPORTED (needs real weights) 3. DeepSeek (attention as Čech): UNTESTED 4. Seed (carrier wave equivalence): UNTESTED 5. Gemma 26B (distillation is tropical-Wasserstein): UNTESTED 6. Gemma 31B (tropical topos): UNTESTED 7. Nemotron (tropical replaces softmax): ❌ REFUTED 8. Qwen (CRT = Čech cohomology): UNTESTED 9. Qwen (MoE maximizes H¹/param): UNTESTED # 2026-05-27 Daily Notes ## Session 3 — Mathematics Libraries Sprint ### 6 New Research-Grade Rust Libraries Built & Pushed - **tropical-neural** (22 tests): Tropical semiring (max-plus), tropical polynomials with Newton polyt",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3936873733997345,
+      "maxScore": 0.3936873733997345,
+      "firstRecalledAt": "2026-05-28T17:14:43.939Z",
+      "lastRecalledAt": "2026-05-28T17:14:43.939Z",
+      "queryHashes": [
+        "9596e6ccf6ca"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "temperature/sheaf",
+        "tropical-wasserstein",
+        "h1/param",
+        "research-grade",
+        "tropical-neural",
+        "max-plus",
+        "conjecture",
+        "status"
+      ]
+    },
+    "memory:memory/2026-05-27.md:656:692": {
+      "key": "memory:memory/2026-05-27.md:656:692",
+      "path": "memory/2026-05-27.md",
+      "startLine": 656,
+      "endLine": 692,
+      "source": "memory",
+      "snippet": "- C: Wrong Input Basis (character count ≠ narrative structure) - D: Wrong Conservation Law (conserving T instead of dT/dt) Each failure generates a testable prediction. Five predictions total. ### Prediction 4 CONFIRMED: Tension-Gradient Conservation - Common-practice: 3.8× LOWER variance in contextual tension gradient (dT/dt) - Voice-leading gradient also smoother (~16% lower variance) - Phase space: common-practice traces wider arcs (area 0.055 vs 0.013) - Spectral tension alone is too blunt — KEY CONTEXT is needed - The conservation law is about FLOW, not STATE ### This Is the First Confirmation of a Failure-Derived Prediction Sequence: failure → hypothesis about why → test → confirmat",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3880762219429016,
+      "maxScore": 0.3880762219429016,
+      "firstRecalledAt": "2026-05-28T17:14:43.939Z",
+      "lastRecalledAt": "2026-05-28T17:14:43.939Z",
+      "queryHashes": [
+        "9596e6ccf6ca"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "dt/dt",
+        "tension-gradient",
+        "common-practice",
+        "3.8",
+        "voice-leading",
+        "0.055",
+        "0.013",
+        "failure-derived"
+      ]
+    },
+    "memory:memory/2026-05-28.md:1:34": {
+      "key": "memory:memory/2026-05-28.md:1:34",
+      "path": "memory/2026-05-28.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# Session 10 — Full-Spectrum Push: Science + Engineering **Date:** 2026-05-28 ## Science Results ### Tension-Graph Laplacian — THE Breakthrough - **Tension-Graph Laplacian** = transition probability × tension similarity → L = D - W - PC5 gives ratio 0.0089 — **112× conservation** (common-practice vs chromatic) - **15× improvement** over best individual tension axis (contextual, 0.133) - PC3 also strong at 0.031 (32×) - The CORRECT structural operator: not correlation matrix, not raw transition, but TENSION-WEIGHTED graph Laplacian ### Statistical Validation (FAST version) - Permutation test (1000): p = 0.0000 (0.2nd percentile of null) - Bootstrap 95% CI: [0.0052, 3.578] - Leave-one-out:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4430209457874298,
+      "maxScore": 0.4430209457874298,
+      "firstRecalledAt": "2026-05-28T18:43:57.554Z",
+      "lastRecalledAt": "2026-05-28T18:43:57.554Z",
+      "queryHashes": [
+        "4bc573f0d983"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "full-spectrum",
+        "tension-graph",
+        "0.0089",
+        "common-practice",
+        "0.133",
+        "0.031",
+        "tension-weighted",
+        "0.0000"
+      ]
+    },
+    "memory:memory/2026-05-28.md:55:92": {
+      "key": "memory:memory/2026-05-28.md:55:92",
+      "path": "memory/2026-05-28.md",
+      "startLine": 55,
+      "endLine": 92,
+      "source": "memory",
+      "snippet": "- Fiedler ordering groups braces perfectly (1 position spread) - Spectral fingerprints distinguish JS vs Python ### moo-spectral.js ✅ (42KB, 44 tests) - Jacobi eigenvalue decomposition, Fiedler vector reordering - Conservation error recovery via eigenspace projection - Structural stats API (spectralGap, Cheeger, tension matrix) ### constraint-lexer/ ✅ (39 tests) - 6 constraint types: balancedDelimiters, smoothTransitions, noAdjacent, typeConservation, keywordContext, indentation - Pure JS conservation tracker with Laplacian power iteration - Examples: JSON, Python, SQL ### moo-rust/ 🔄 (Claude building) - Rust port with spectral optimization + conservation tracking + WASM target ## music",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36693210899829865,
+      "maxScore": 0.36693210899829865,
+      "firstRecalledAt": "2026-05-28T18:43:57.554Z",
+      "lastRecalledAt": "2026-05-28T18:43:57.554Z",
+      "queryHashes": [
+        "4bc573f0d983"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "moo-spectral.js",
+        "constraint-lexer",
+        "moo-rust",
+        "fiedler",
+        "ordering",
+        "groups",
+        "braces",
+        "perfectly"
+      ]
+    },
+    "memory:memory/2026-05-28.md:538:549": {
+      "key": "memory:memory/2026-05-28.md:538:549",
+      "path": "memory/2026-05-28.md",
+      "startLine": 538,
+      "endLine": 549,
+      "source": "memory",
+      "snippet": "- **ZK proofs**: Agents can prove spectral alignment without revealing eigenvalues (Rayleigh quotient challenges + differential privacy) - **Yield curve inversion**: IS a Fiedler vector crossing zero (spectral phase transition predicting recession) - **Consciousness**: IIT's Φ is intractable; conservation ratio is a tractable proxy - **Blockchain**: Path graph = terrible algebraic connectivity (λ₂→0) which IS the point — decentralization = spectral fragmentation - **Intrusion detection**: Conservation drop = universal alarm, catches lateral movement rules miss ### Agent Performance (This Continuation) - **GLM-5.1**: Still the workhorse — explorations, extractions, writings. Never fails. - *",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38280027508735653,
+      "maxScore": 0.38280027508735653,
+      "firstRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "queryHashes": [
+        "c8570fd5757e"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "glm-5.1",
+        "proofs",
+        "agents",
+        "can",
+        "prove",
+        "spectral",
+        "alignment",
+        "without"
+      ]
+    },
+    "memory:memory/2026-05-28.md:221:254": {
+      "key": "memory:memory/2026-05-28.md:221:254",
+      "path": "memory/2026-05-28.md",
+      "startLine": 221,
+      "endLine": 254,
+      "source": "memory",
+      "snippet": "- Hypothesis NOT supported for physics phase transitions — domain-specific to music ## moo Ecosystem — Science Meets Engineering ### moo-spectral.js ✅ (42KB, 44 tests) - Jacobi eigenvalue decomposition, Fiedler vector reordering - Conservation error recovery via eigenspace projection ### constraint-lexer/ ✅ (39 tests) - 6 constraint types, Pure JS conservation tracker with Laplacian power iteration ### moo-rust 🔄 - 22/22 lib tests pass, 2 integration test failures (lexer tokenization bug) ## musicdb-to-json — Spectral Enhancement - spectral_validator.py ✅, spectral_enhancer.py ✅ (34 tests) - Real-time conservation tracking during parsing ## The Latent Abstraction (THE REAL INSIGHT) -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3745028346776962,
+      "maxScore": 0.3745028346776962,
+      "firstRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "queryHashes": [
+        "c8570fd5757e"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "domain-specific",
+        "moo-spectral.js",
+        "constraint-lexer",
+        "moo-rust",
+        "22/22",
+        "musicdb-to-json",
+        "spectral-validator.py",
+        "spectral-enhancer.py"
+      ]
+    },
+    "memory:memory/2026-05-28.md:84:109": {
+      "key": "memory:memory/2026-05-28.md:84:109",
+      "path": "memory/2026-05-28.md",
+      "startLine": 84,
+      "endLine": 109,
+      "source": "memory",
+      "snippet": "- Unknown subtype reverse-engineering via entropy + pattern analysis - Format version fingerprinting via eigenvalues - Backward-compatible --spectral-analysis flag ## The Latent Abstraction (THE REAL INSIGHT) - Tension-Graph Laplacian is NOT just a music tool — it's a **compatibility operator** between dynamics and geometry - The eigenvectors decompose ANY system into modes ranked by dynamics-structure alignment - Conservation detection requires ANISOTROPY in the structure, not universality (Ising failed because it's isotropic) - Three unexplored frontiers: Conservation Gradient Descent (training objective), Multi-Scale Wavelet Laplacian, Inverse Problem (tomography from conservation) - Wri",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37207794189453125,
+      "maxScore": 0.37207794189453125,
+      "firstRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "queryHashes": [
+        "c8570fd5757e"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "reverse-engineering",
+        "backward-compatible",
+        "spectral-analysis",
+        "tension-graph",
+        "dynamics-structure",
+        "multi-scale",
+        "unknown",
+        "subtype"
+      ]
+    },
+    "memory:memory/2026-05-28.md:104:131": {
+      "key": "memory:memory/2026-05-28.md:104:131",
+      "path": "memory/2026-05-28.md",
+      "startLine": 104,
+      "endLine": 131,
+      "source": "memory",
+      "snippet": "- superinstance-live: RealtimeConservationTracker, ModulationDetector, SpectralSession (44 tests) - moe-sheaf: ExpertTensionGraph, RoutingConservation, ExpertSpectralHealth (58 tests) - conservation-tension v0.3.0: spectral.py + cross_cultural.py built (PyPI rate-limited on publish) ## GC: 41GB → 8.4GB (freed 32.6GB) ## Session Status — Mega Sprint (ongoing) ### SDK: 9 languages, 204 tests, triple-crown (PyPI+npm+crates.io) - Rust (14✅, crates.io), Python (50✅, PyPI), JS (26✅, npm), C (36✅ header-only) - CUDA (18✅, cuSOLVER), Mojo (11✅, SIMD), Chapel (forall+locales), Fortran (11✅, LAPACK), Zig (22✅, comptime) - Cross-language conformance: all agree to 1e-11+ (Claude verified) ### Cross-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3633083403110504,
+      "maxScore": 0.3633083403110504,
+      "firstRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "queryHashes": [
+        "c8570fd5757e"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "superinstance-live",
+        "moe-sheaf",
+        "conservation-tension",
+        "v0.3.0",
+        "spectral.py",
+        "cross-cultural.py",
+        "rate-limited",
+        "8.4gb"
+      ]
+    },
+    "memory:memory/2026-05-28.md:302:336": {
+      "key": "memory:memory/2026-05-28.md:302:336",
+      "path": "memory/2026-05-28.md",
+      "startLine": 302,
+      "endLine": 336,
+      "source": "memory",
+      "snippet": "- Targeted station removal > random (some stations structurally critical) - Assortativity flips positive→negative under warming ### Kernel Theory - Heat kernel K=exp(-βL) shows music has higher effective rank than random (3.99 vs 1.64) - Conservation structure persists in kernel space ### Cospectral Explorer (honest negative) - Conservation ratios CANNOT break cospectral ambiguity (confirms T5 falsification) - Partial eigenvalue info gives -0.12 correlation — the drum problem is real ### Voronoi Traditions (81.9% frontier) - 92.5% of parameter space is frontier at threshold=0.5 - Carnatic↔Hindustani: share boundary (hybridize) ✅ - Western↔Gagaku: NO shared boundary ✅ - Optimal tour length",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3579646974802017,
+      "maxScore": 0.3579646974802017,
+      "firstRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "queryHashes": [
+        "c8570fd5757e"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "3.99",
+        "1.64",
+        "0.12",
+        "81.9",
+        "92.5",
+        "0.5",
+        "targeted",
+        "station"
+      ]
+    },
+    "memory:memory/2026-05-28.md:27:63": {
+      "key": "memory:memory/2026-05-28.md:27:63",
+      "path": "memory/2026-05-28.md",
+      "startLine": 27,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "- Protein folding: 6.58× SNR improvement - Language evolution: 1.11× - Ecosystem dynamics: 1.67× ### Cross-Cultural — Tradition-Specific - 6 traditions tested (Hindustani, Gamelan, Turkish, Ewe, Gagaku, Western) - Conservation IS tradition-specific (alignment = 0.196) - Western: 1426× self-discriminability, Hindustani: 1554× - No universal eigenvector — each tradition has its OWN Laplacian ### Unified Structural Theorem — 3 Theorems Proved - Theorem I: Spectral Concentration of Attribute Gradients - Theorem II: Unified Dirichlet Energy Bound (𝒢(f) = Σ λₖ|⟨f,φₖ⟩|²) - Theorem III: Fiedler vector is optimal detection direction (Courant-Fischer) ### Ising Model - Conservation minimum NOT at",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35500841736793515,
+      "maxScore": 0.35500841736793515,
+      "firstRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "queryHashes": [
+        "c8570fd5757e"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "6.58",
+        "1.11",
+        "1.67",
+        "cross-cultural",
+        "tradition-specific",
+        "0.196",
+        "self-discriminability",
+        "courant-fischer"
+      ]
+    },
+    "memory:memory/2026-05-28.md:193:229": {
+      "key": "memory:memory/2026-05-28.md:193:229",
+      "path": "memory/2026-05-28.md",
+      "startLine": 193,
+      "endLine": 229,
+      "source": "memory",
+      "snippet": "- Leave-one-out: ALL ratios < 0.5 (range 0.002–0.470) — not outlier-driven - Cohen's d = 1.34 — LARGE effect - Observed ratio 0.0108 (92× conservation) ### Symplectic Music Phase Space - Spectral ω-variance: CP 15× lower than chromatic (p = 2.8×10⁻⁴) - Liouville: CP 25× lower phase-space volume variance (p = 2.6×10⁻¹⁰) - CP transition eigenvalues [1.0, 0.264, 0.224] (structured) vs chromatic [1.0, 0.019, 0.019] (random) - Persistence features classify at **96% accuracy** ### Cross-Domain Eigenbasis — ALL 3 SUPPORTED - Protein folding: 6.58× SNR improvement - Language evolution: 1.11× - Ecosystem dynamics: 1.67× ### Cross-Cultural — Tradition-Specific - 6 traditions tested (Hindustani, Gam",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3521715492010116,
+      "maxScore": 0.3521715492010116,
+      "firstRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "queryHashes": [
+        "c8570fd5757e"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "leave-one-out",
+        "0.5",
+        "0.002",
+        "0.470",
+        "outlier-driven",
+        "1.34",
+        "0.0108",
+        "ω-variance"
+      ]
+    },
+    "memory:memory/2026-05-28.md:408:437": {
+      "key": "memory:memory/2026-05-28.md:408:437",
+      "path": "memory/2026-05-28.md",
+      "startLine": 408,
+      "endLine": 437,
+      "source": "memory",
+      "snippet": "- **Social**: 91.8% bot detection via Fiedler - **Symplectic**: 9.3× Euler explosion - **Climate**: 49.5% conservation drop under warming - **Ecosystem**: r=-0.46 conservation vs connectance - **Neural**: Neuron CR increases monotonically during training - **Kernel**: Music has higher effective rank than random - **Voronoi**: 81.9% frontier matches prediction - **Molecular Dynamics**: α=1.00 (stronger than predicted) - **Hash Chains**: α=0.008 (confirmed near-zero) - **Game Theory**: α=0.31 (confirmed in range) - **Cospectral**: Honest negative — can't break cospectral ambiguity - **Code Structure**: Conservation measures coherence (r=0.89) ## Math Foundation - 4/5 original conjectures FALS",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35161131024360653,
+      "maxScore": 0.35161131024360653,
+      "firstRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "queryHashes": [
+        "c8570fd5757e"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "91.8",
+        "9.3",
+        "49.5",
+        "0.46",
+        "81.9",
+        "1.00",
+        "0.008",
+        "near-zero"
+      ]
+    },
+    "memory:memory/2026-05-27.md:297:310": {
+      "key": "memory:memory/2026-05-27.md:297:310",
+      "path": "memory/2026-05-27.md",
+      "startLine": 297,
+      "endLine": 310,
+      "source": "memory",
+      "snippet": "### A2A-Native Artifacts - **PARADIGM-ATLAS.a2a.md** (61KB): Concept graph, 33 predictions, executable poetry, story topology, misapplication detection - **THE-CONSTRAINT-SPEAKS.a2a.json** (24KB): Each math structure as an agent with algebraic signature and first-person voice ### Paradigm Expansion Essays (12 domains, ~3.5KB each) - **CONFORMAL-UNIVERSE.md**: Black holes as degenerate multivectors, cosmic web as transport plan, theories as functors - **TROPICAL-CELL.md**: Gene expression as tropical circuits, embryology as sheaf, metabolism as symplectic, 7 testable predictions - **CATEGORY-OF-MINDS.md**: Consciousness as functor, Phi as H¹, free energy as Wasserstein, panpsychism as functo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3507408589124679,
+      "maxScore": 0.3507408589124679,
+      "firstRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "queryHashes": [
+        "c8570fd5757e"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "a2a-native",
+        "paradigm-atlas.a2a.md",
+        "the-constraint-speaks.a2a.json",
+        "first-person",
+        "3.5kb",
+        "conformal-universe.md",
+        "tropical-cell.md",
+        "category-of-minds.md"
       ]
     }
   }
