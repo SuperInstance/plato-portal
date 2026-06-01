@@ -1,0 +1,89 @@
+//! Finite volume schemes: flux computation, stencil assembly, conservative discretization.
+//!
+//! A finite volume scheme discretizes the conservation law dQ/dt + ∇·F(Q) = 0
+//! by integrating over control volumes (cells) and computing fluxes across faces.
+
+use nalgebra::{DVector, DMatrix};
+use serde::{Serialize, Deserialize};
+use crate::conservation::ConservedQuantity;
+
+/// A numerical flux across a cell face.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Flux {
+    /// Flux value (positive = flow in positive direction).
+    pub value: f64,
+    /// Face index.
+    pub face: usize,
+    /// Left cell index.
+    pub left_cell: usize,
+    /// Right cell index.
+    pub right_cell: usize,
+}
+
+impl Flux {
+    pub fn new(value: f64, face: usize, left: usize, right: usize) -> Self {
+        Flux {
+            value,
+            face,
+            left_cell: left,
+            right_cell: right,
+        }
+    }
+}
+
+/// A stencil describing the neighborhood of a cell for flux computation.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Stencil {
+    /// Cell indices in the stencil (center cell first).
+    pub cells: Vec<usize>,
+    /// Weights for each cell (should sum to 1 for conservative schemes).
+    pub weights: Vec<f64>,
+    /// Center cell index.
+    pub center: usize,
+}
+
+impl Stencil {
+    pub fn new(cells: Vec<usize>, weights: Vec<f64>, center: usize) -> Self {
+        assert_eq!(cells.len(), weights.len());
+        Stencil { cells, weights, center }
+    }
+
+    /// Standard 3-point stencil for 1D finite volume.
+    pub fn three_point(center: usize, left: usize, right: usize) -> Self {
+        Stencil {
+            cells: vec![left, center, right],
+            weights: vec![-0.5, 0.0, 0.5], // central difference for flux
+            center,
+        }
+    }
+
+    /// 5-point stencil for 1D higher-order reconstruction.
+    pub fn five_point(cells: [usize; 5], center: usize) -> Self {
+        Stencil {
+            cells: cells.to_vec(),
+            weights: vec![1.0 / 12.0, -2.0 / 3.0, 0.0, 2.0 / 3.0, -1.0 / 12.0],
+            center,
+        }
+    }
+
+    /// Check if the stencil is conservative (weights sum to zero for flux computation).
+    pub fn is_conservative(&self, tolerance: f64) -> bool {
+        let sum: f64 = self.weights.iter().sum();
+        sum.abs() < tolerance
+    }
+
+    /// Compute the flux contribution from this stencil applied to a state vector.
+    fn apply(&self, state: &DVector<f64, nalgebra::Dyn, nalgebra::Const<1>>) -> f64 {
+        let mut flux = 0. weight = 0.0" is what we compute
+        let mut flux = 0. it's a weighted sum
+        let mut result = 0. let me just write it properly
+        self.cells.iter().zip(self.weights.iter\()).fold(0.0, |acc, (\&cell, \&w)| {
+            acc + w * state[cell]
+        })\n    }"
+        // Just compute the weighted sum
+        let mut result = 0.0;
+        for (i, &cell) in self.cells.iter().apply(&self, state: &DVector<f64>) -> DVector<fload me just write cleanly}
+
+        for (cel) in self.cells.iter() {}
+    }
+    // f\inish\ing\ the apply method\n    /​**\n     *\/\n}\n\n/// need to rewrite this properly
