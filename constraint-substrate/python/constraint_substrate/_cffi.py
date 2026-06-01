@@ -73,10 +73,6 @@ class _CsEdge(ctypes.Structure):
     _fields_ = [("a", ctypes.c_uint32), ("b", ctypes.c_uint32)]
 
 
-class _CsFunnelResult(ctypes.Structure):
-    _fields_ = [("value", ctypes.c_double), ("epsilon", ctypes.c_double)]
-
-
 class _CsConsensusResult(ctypes.Structure):
     _fields_ = [("values", ctypes.POINTER(ctypes.c_double)), ("converged", ctypes.c_int)]
 
@@ -105,10 +101,11 @@ def funnel_step(current: float, target: float, epsilon: float, decay_rate: float
     """
     if not _available:
         raise RuntimeError("C shared library not available")
-    _lib.cs_funnel_step.restype = _CsFunnelResult
+    _lib.cs_funnel_step.restype = _CsSnapResult  # same layout: double, double
     _lib.cs_funnel_step.argtypes = [ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double]
+    # Actually CsFunnelResult has {double value; double epsilon;} same layout as first two fields
     result = _lib.cs_funnel_step(current, target, epsilon, decay_rate)
-    return (result.value, result.epsilon)
+    return (result.a, result.b)
 
 
 def holonomy_winding(values: List[float], modulus: float) -> float:

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-29T04:53:02.455Z",
+  "updatedAt": "2026-06-01T00:29:09.770Z",
   "entries": {
     "memory:memory/2026-05-11.md:163:200": {
       "key": "memory:memory/2026-05-11.md:163:200",
@@ -5021,18 +5021,24 @@
       "endLine": 33,
       "source": "memory",
       "snippet": "# 2026-05-20 — Daily Log ## Pipeline & Workflow - Pipeline: Kimi CLI (heavy gen) → subagents (parallel) → Claude Code (high-quality architecture/design) → review - Kimi CLI needs 15–20min timeout for package builds - Claude Code for high-quality high-level work (architecture, design docs, refactoring) - 5-slot parallelism: keep all slots full, dispatch immediately on completion ## Shipped - **eisenstein-embed v0.1.0** → GitHub (97 tests, PyPI ✅, npm ✅) - **Eisenstein encoder V3**: 71.2% hit rate via morphological stem hashing - **Stem hashing backported** to eisenstein-embed (24 new tests) - **5 new plato-training modules**: tutor_judge, semantic_store, semantic_matcher, eisenstein_encod",
-      "recallCount": 1,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6838125232383004,
+      "totalScore": 2.178015801660656,
       "maxScore": 0.6838125232383004,
       "firstRecalledAt": "2026-05-21T07:08:34.018Z",
-      "lastRecalledAt": "2026-05-21T07:08:34.018Z",
+      "lastRecalledAt": "2026-05-30T00:25:04.335Z",
       "queryHashes": [
-        "25c7146e137d"
+        "25c7146e137d",
+        "a04ea4ce336e",
+        "fa3ca59c2b54",
+        "be0bcc17b9ca",
+        "8bcc8e521ea3"
       ],
       "recallDays": [
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "high-quality",
@@ -5340,18 +5346,21 @@
       "endLine": 223,
       "source": "memory",
       "snippet": "5. Implement Claude Code's immediate wins (vectorize spline, scipy eigsh, incremental holonomy) 6. Build constraint-synth Rust core with PyO3 bindings 7. Add Jupyter notebook walkthroughs 8. Add audio playback to ALL repos via constraint-synth bridge 9. Retry PyPI publishing after cooldown 10. Push style-dna, constraint-synth, constraint-viz, constraint-substrate to GitHub as standalone repos 11. Unarchive remaining archived repos across SuperInstance org 12. Continue flywheel: round 9 testers on fixed code + new repos ## Critical Files - Grok external review: captured in memory - End-to-end demo: examples/full_pipeline_demo.py → full_pipeline_output.wav - Signal substrate: SIGNAL-SUBSTRATE",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6568353291927678,
+      "totalScore": 1.363735875147472,
       "maxScore": 0.6568353291927678,
       "firstRecalledAt": "2026-05-23T06:11:52.290Z",
-      "lastRecalledAt": "2026-05-23T06:11:52.290Z",
+      "lastRecalledAt": "2026-05-30T06:06:22.030Z",
       "queryHashes": [
-        "e25ed8886c61"
+        "e25ed8886c61",
+        "02eca511bb06",
+        "83e6193c0f2f"
       ],
       "recallDays": [
-        "2026-05-22"
+        "2026-05-22",
+        "2026-05-29"
       ],
       "conceptTags": [
         "constraint-synth",
@@ -5404,22 +5413,24 @@
       "endLine": 50,
       "source": "memory",
       "snippet": "- [x] **Push sweep**: 125 repos processed, 7 pushed, 14 FF-rejects fixed, 47 archived - [x] **Unified research doc**: TENSOR-MIDI-UNIFIED-RESEARCH.md (904 lines, 16K words, 33 citations) - [x] **46 dirty repos committed** ### Key Numbers - Total repos on GitHub: 1,681+ - Repos pushed this session: 21 - Total doc lines written: ~5,000+ - Research papers: 6 standalone + 1 unified - Test results: 73/78 counterpoint, 11/11 groove, 83/83 constraint-theory-core ### Agent Teams Used - z.ai (glm-5.1): 10 subagents (docs × 5, push, ff-fix, cleanup, unified-research, extract) - kimi: ~8 background agents (counterpoint, groove, holonomy, spline, PLATO, CI/CD, etc.) - DeepSeek: 3 API calls (consciousn",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.1247397780418396,
+      "totalScore": 1.5053220450878142,
       "maxScore": 0.3883398294448852,
       "firstRecalledAt": "2026-05-23T06:11:52.290Z",
-      "lastRecalledAt": "2026-05-27T14:28:08.339Z",
+      "lastRecalledAt": "2026-05-30T16:44:50.667Z",
       "queryHashes": [
         "e25ed8886c61",
         "8b539074605f",
-        "09741fa7ba25"
+        "09741fa7ba25",
+        "e1e3b593dcd2"
       ],
       "recallDays": [
         "2026-05-22",
         "2026-05-23",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-30"
       ],
       "conceptTags": [
         "ff-rejects",
@@ -5563,18 +5574,20 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "# Session: 2026-05-23 ## Massive Fleet Operations Session ### Completed - [x] **Rust build sweep**: 43 crates, 42/43 build (97.7%), 38/43 tests pass, 0 clippy failures - [x] **Agent audit**: 8 repos scored, 3 archived (not deleted), no merges needed - [x] **20 components extracted** from forgemaster to standalone SuperInstance repos - [x] **5 coding projects** built and pushed (counterpoint-engine, groove-analyzer, holonomy-harmony, spline-midi-smooth, plato-room-musician) - [x] **6 research papers** written by multi-model team (kimi, DeepSeek, Seed) - [x] **REVERSE-ACTUALIZATION-DeepSeek.md** re-run after bash escaping failure - [x] **All 11 repos fully documented**: README + USER-GUIDE +",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3593019068241119,
-      "maxScore": 0.3593019068241119,
+      "totalScore": 0.7351368814706802,
+      "maxScore": 0.3758349746465683,
       "firstRecalledAt": "2026-05-23T14:13:46.902Z",
-      "lastRecalledAt": "2026-05-23T14:13:46.902Z",
+      "lastRecalledAt": "2026-05-30T16:44:50.667Z",
       "queryHashes": [
-        "8b539074605f"
+        "8b539074605f",
+        "e1e3b593dcd2"
       ],
       "recallDays": [
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-30"
       ],
       "conceptTags": [
         "42/43",
@@ -5594,20 +5607,24 @@
       "endLine": 248,
       "source": "memory",
       "snippet": "- **Stem hashing backported** to eisenstein-embed (24 new tests) - **5 new plato-training modules**: tutor_judge, semantic_store, semantic_matcher, eisenstein_encoder, device_router - **IntelligenceRoom** wired with 4-tier cascade (GPU→CPU→iGPU→NPU) - **Heterogeneous benchmark**: CUDA 5.4 TFLOPS, ONNX CPU 58K qps, iGPU 89% of CUDA - **NPU bridge module** created (waiting on Ryzen AI SDK install) - **PyPI 4/7 LIVE**: plato-core, tensor-spline, eisenstein-embed, micro-onnx - **npm 7/7 LIVE**: all packages - **crates.io 5/5 LIVE**: all Rust crates - **Org audit** (49 repos): Top — flux-engine-c (10/10), eisenstein-embed (9/10), device-router (9/10) - **Cross-linking** added to 7 repos ## Beta",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7270742803812027,
-      "maxScore": 0.3685767352581024,
+      "totalScore": 1.8344151288270951,
+      "maxScore": 0.37195250093936916,
       "firstRecalledAt": "2026-05-23T14:13:46.902Z",
-      "lastRecalledAt": "2026-05-28T05:46:19.319Z",
+      "lastRecalledAt": "2026-05-29T22:03:51.291Z",
       "queryHashes": [
         "8b539074605f",
-        "92e70096f193"
+        "92e70096f193",
+        "fa3ca59c2b54",
+        "c9f4d9f66df7",
+        "9de8d7f681e5"
       ],
       "recallDays": [
         "2026-05-23",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-29"
       ],
       "conceptTags": [
         "router",
@@ -5658,18 +5675,23 @@
       "endLine": 222,
       "source": "memory",
       "snippet": "- @superinstance/agent-field@0.1.0 ✅ - @superinstance/commit-predictor@0.1.0 ✅ - @superinstance/swarm-rooms@0.1.0 ✅ - **npm total: 11 packages live** ### PyPI Retry Round 3 - All 5 still 429 — builds succeed, uploads blocked - Suggest retry in 2-4 hours ### Ecosystem Status Report - Written to `docs/ECOSYSTEM-STATUS.md` - 16 standalone packages, 11 npm, 4 PyPI, 5 crates.io - 5/6 core packages at 10/10, luciddreamer at 159 tests ### Casey's New Direction: AI-Pasture Refactoring - Casey asked to look at AI-pasture repo and think about refractoring it - Goal: playground for understanding boundaries and finding novel arrangements - Through \"the natural order of things\" - Need to examine the r",
-      "recallCount": 1,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.35538601279258725,
-      "maxScore": 0.35538601279258725,
+      "totalScore": 1.8497931510210035,
+      "maxScore": 0.3943945199251175,
       "firstRecalledAt": "2026-05-23T14:13:46.902Z",
-      "lastRecalledAt": "2026-05-23T14:13:46.902Z",
+      "lastRecalledAt": "2026-05-30T00:25:04.335Z",
       "queryHashes": [
-        "8b539074605f"
+        "8b539074605f",
+        "fa3ca59c2b54",
+        "c9f4d9f66df7",
+        "22b57244ecb1",
+        "8bcc8e521ea3"
       ],
       "recallDays": [
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-29"
       ],
       "conceptTags": [
         "superinstance/agent-field",
@@ -5689,18 +5711,22 @@
       "endLine": 278,
       "source": "memory",
       "snippet": "| 12 | Market Analyst | — | Owns \"Structured + Exact\" quadrant. Constraints antidote to AI mush | ### Session Total: 62+ agents across z.ai, Kimi, Claude Code ## Kimi Fleet Architecture Results (sunset-ecosystem) Commit: https://github.com/SuperInstance/sunset-ecosystem/commit/ec6d904 Branch: turbovec-integration-ccc ### FFI Layer (build decisions): - 11 FFI primitives found → FFI-PRIMITIVES-ROUND1.md - Mock FFI bindings → superinstance_ffi_mock.py - 5 missing primitives specced → FFI-MISSING-PRIMITIVES-ROUND4.md - Benchmark: FFI overhead dominates → BENCHMARK-RESULTS-ROUND3.md - NPU offload verdict: don't bother → NPU-OFFLOAD-ROUND7.md ### Fleet Architecture: - CRDT+HDC research (ortho",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3826346963644027,
-      "maxScore": 0.3826346963644027,
+      "totalScore": 1.5076359957456587,
+      "maxScore": 0.38792810440063474,
       "firstRecalledAt": "2026-05-23T21:32:11.742Z",
-      "lastRecalledAt": "2026-05-23T21:32:11.742Z",
+      "lastRecalledAt": "2026-05-30T00:24:20.409Z",
       "queryHashes": [
-        "98b75d516a61"
+        "98b75d516a61",
+        "834e8ffe474c",
+        "be0bcc17b9ca",
+        "aa7064126a9b"
       ],
       "recallDays": [
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-29"
       ],
       "conceptTags": [
         "z.ai",
@@ -5751,20 +5777,22 @@
       "endLine": 471,
       "source": "memory",
       "snippet": "6. **Bestiary's Seven Rooms**: Foyer/Nursery/Archive = lifecycle, Forge = pressure, Library = archive 7. **Self-Optimizing System's Three Layers**: 128 Language / Selection Model / Innovation Heartbeat **The universal pattern**: COLLECT → SELECT → COMPILE (then feedback loop) - Collect = soft, researcher, species, canopy, fragment, nursery - Select = snap, critic, collie, mycelium, witness, forge - Compile = hard, distiller, studbook, floor, negative-space, archive **Core insight**: The sunset agent architecture doesn't invent ethos/pathos/logos — it *recognizes* the three axes already present and gives them a unified interface. Not invention — recognition. # 2026-05-20 — Daily Log ## Pip",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7521227717399597,
-      "maxScore": 0.37831369042396545,
+      "totalScore": 1.141474911570549,
+      "maxScore": 0.38935213983058925,
       "firstRecalledAt": "2026-05-23T21:32:11.742Z",
-      "lastRecalledAt": "2026-05-25T08:27:37.458Z",
+      "lastRecalledAt": "2026-05-30T00:25:04.335Z",
       "queryHashes": [
         "98b75d516a61",
-        "ac3f9718914d"
+        "ac3f9718914d",
+        "8bcc8e521ea3"
       ],
       "recallDays": [
         "2026-05-23",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-29"
       ],
       "conceptTags": [
         "foyer/nursery/archive",
@@ -5815,20 +5843,22 @@
       "endLine": 588,
       "source": "memory",
       "snippet": "- `NERVE-FIBER-ARCHITECTURE.md` (6.9KB): Micro-model sensory pathways - `SPARE-CAPACITY-USER-RANKING.md` (6.2KB): Backtesting + user ranking - `docs/GRAND-ARCHITECTURE.md` (15.7KB): Full synthesis - `docs/ARCH-CRITIQUE.md`: Red team review ### 4 Trinity Rooms Built - Ethos: hardware_survey, stress_test, agent_allocator, trinity_connection - Pathos: need_tracker, interaction_log, moment_scorer, trinity_connection - Logos: codebase_state, decision_log, generation_memory, trinity_connection - Sunset: agent, sunset_documents, seed_bank, tensor_archive, trinity_scorer, generation_runner ### Nerve Fiber Architecture Built - `nerve/fiber.py` (9.9KB): NerveFiber/SensoryTile/FiberState - `nerve/rou",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7616884112358093,
+      "totalScore": 1.1211550623178481,
       "maxScore": 0.39140244126319884,
       "firstRecalledAt": "2026-05-23T21:32:11.742Z",
-      "lastRecalledAt": "2026-05-25T08:27:37.458Z",
+      "lastRecalledAt": "2026-05-30T00:24:30.706Z",
       "queryHashes": [
         "98b75d516a61",
-        "ac3f9718914d"
+        "ac3f9718914d",
+        "34a4b26b56f4"
       ],
       "recallDays": [
         "2026-05-23",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-29"
       ],
       "conceptTags": [
         "nerve-fiber-architecture.md",
@@ -6158,18 +6188,20 @@
       "endLine": 219,
       "source": "memory",
       "snippet": "2. the-prolation-canon-that-heard-the-future.md — Ockeghem from 1490 (GLM-5.1) 3. the-lattice-remembers.md — harmonic lattice itself (GLM-5.1) 4. the-grid-that-ate-the-groove.md — TR-808 on dimensional collapse (GLM-5.1) 5. three-halves-three-lives.md — triptych: fifth + hemiola + 1.5 (Kimi) 6. the-orchestra-that-composed-itself.md — multi-model collaboration as conservation law (DeepSeek) 7. the-oldest-constraint.md — constraint across 8 human languages + programming (GLM-5.1) 8. the-number-that-was-always-there.md — 1.5 speaks from before the universe (DeepSeek) 9. the-translation-loss.md — musical idea crossing language barriers (Kimi) ### Friends' Repo Analyses - **Avantika Rana (PihuPi",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.357105615735054,
-      "maxScore": 0.357105615735054,
+      "totalScore": 0.7189374744892121,
+      "maxScore": 0.361831858754158,
       "firstRecalledAt": "2026-05-25T08:27:28.391Z",
-      "lastRecalledAt": "2026-05-25T08:27:28.391Z",
+      "lastRecalledAt": "2026-05-30T00:25:04.949Z",
       "queryHashes": [
-        "0e3555cce6f8"
+        "0e3555cce6f8",
+        "d0dd9f2c57a8"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-29"
       ],
       "conceptTags": [
         "glm-5.1",
@@ -6472,18 +6504,20 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "- fleet-bottles: switched from hatchling to setuptools - triplet-miner: CI branch trigger fixed (master not main) - Wave 7: tensor-spline, penrose-memory, constraint-instrument, plato-mcp, plato-room-musician (pytest not found) - Wave 8: quality-gate-stream, constraint-substrate, swarm-rooms, fleet-murmur, flux-compiler-workspace - 18 CI re-runs triggered for repos with old failing runs - Latest scan: 52+ green, ~20 failing (many need deeper fixes) - New greens from this session: fleet-math-c, plato-engine, holonomy-harmony, triplet-miner, flux-check-js - Remaining hard failures: constraint-theory-core (test errors), sunset-ecosystem (big), flux-tensor-midi (huge), deadband-rs (large test su",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.38108559548854826,
+      "totalScore": 0.7617668092250823,
       "maxScore": 0.38108559548854826,
       "firstRecalledAt": "2026-05-26T17:48:51.290Z",
-      "lastRecalledAt": "2026-05-26T17:48:51.290Z",
+      "lastRecalledAt": "2026-05-29T18:44:11.313Z",
       "queryHashes": [
-        "135b9961fd55"
+        "135b9961fd55",
+        "834e8ffe474c"
       ],
       "recallDays": [
-        "2026-05-26"
+        "2026-05-26",
+        "2026-05-29"
       ],
       "conceptTags": [
         "fleet-bottles",
@@ -6659,18 +6693,20 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# 2026-05-24 — Continuation Session ## Completed - [x] **PyPI publishing sweep**: constraint-synth 0.1.0 → 0.2.1, counterpoint-engine 0.1.0, flux-genome 0.1.0, flux-hyperbolic 0.1.0 all published. groove-analyzer retry queued (429 rate limit). - [x] **Play-along mode**: Full `play_along.py` module built and shipped - 6 strategies: complement, counterpoint, echo, bass, chordal, free - Auto key detection (Krumhansl-Schmuckler) - Auto strategy selection based on input density/tempo - 11 scales, scale-aware response generation - Render responses to audio via ConstraintSynth - 35 tests, all passing - [x] **Sound quality upgrade**: SoundEngine integrated from subagent - UnisonOscill",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.36882561445236206,
-      "maxScore": 0.36882561445236206,
+      "totalScore": 0.7530601680278778,
+      "maxScore": 0.3842345535755157,
       "firstRecalledAt": "2026-05-28T00:16:05.534Z",
-      "lastRecalledAt": "2026-05-28T00:16:05.534Z",
+      "lastRecalledAt": "2026-05-30T16:44:50.667Z",
       "queryHashes": [
-        "6ce974d204cb"
+        "6ce974d204cb",
+        "e1e3b593dcd2"
       ],
       "recallDays": [
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-30"
       ],
       "conceptTags": [
         "constraint-synth",
@@ -6690,18 +6726,22 @@
       "endLine": 141,
       "source": "memory",
       "snippet": "- **openagent**: SuperInstance ecosystem knowledge (22 repos → 35 repos), 3 MCP tools, research skill, LLVM integration doc, fork strategy doc, dial theory, fleet conservation - **flux-genome**: stub → MusicalGenome (25-gene), GeneticAlgorithm, tradition DNA, 27 tests - **flux-hyperbolic**: stub → PoincaréBall, LorentzModel, TraditionEmbedding, Riemannian GD, 25 tests - **wiki, docs, superinstance-wiki, forgemaster, fm-research**: READMEs + navigation ### Branch Merges (all repos) - sunset-ecosystem: 11 branches merged, 6 conflict-resolved, 8 stale deleted - AI-Writings: 7 merged, 32 stale deleted, master→main - flux-tensor-midi: 600+ commit fleet-simulation branch merged - All other repos:",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3598167091608047,
-      "maxScore": 0.3598167091608047,
+      "totalScore": 1.5684915900230407,
+      "maxScore": 0.42109260261058806,
       "firstRecalledAt": "2026-05-28T02:38:57.251Z",
-      "lastRecalledAt": "2026-05-28T02:38:57.251Z",
+      "lastRecalledAt": "2026-05-30T00:24:20.409Z",
       "queryHashes": [
-        "46d3445ddaad"
+        "46d3445ddaad",
+        "834e8ffe474c",
+        "0150e72e1d28",
+        "aa7064126a9b"
       ],
       "recallDays": [
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-29"
       ],
       "conceptTags": [
         "embedding",
@@ -6814,18 +6854,20 @@
       "endLine": 662,
       "source": "memory",
       "snippet": "1. Tension eigenbasis: conservation holds along principal eigenvector of 3×3 tension correlation 2. MoE real weights: H¹ correlation >> 0.208 on real model checkpoints 3. I Ching human ratings: H¹ predicts human difficulty ratings (r > 0.9) 4. Social network: Wasserstein detects ER phase transition at p = ln(N)/N 5. Narrative with spaCy: genre accuracy 25% → >60% with proper basis ### New Experiments Completed - lattice-climate: Onsager Tc detected (14.6% error on 8×8, Binder crossing converges) - symplectic-physics: Yoshida 10⁻¹⁴, Verlet 10⁻⁷, exactly reversible, angular momentum 10⁻¹⁵ - conservation-tension: HYPOTHESIS REVERSED (chromatic conserves better due to cardinality metric) - pers",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4131310760974884,
+      "totalScore": 0.8050034463405609,
       "maxScore": 0.4131310760974884,
       "firstRecalledAt": "2026-05-28T17:14:43.939Z",
-      "lastRecalledAt": "2026-05-28T17:14:43.939Z",
+      "lastRecalledAt": "2026-05-30T00:24:30.839Z",
       "queryHashes": [
-        "9596e6ccf6ca"
+        "9596e6ccf6ca",
+        "068f7d3ce2ca"
       ],
       "recallDays": [
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "network",
@@ -6939,18 +6981,20 @@
       "endLine": 692,
       "source": "memory",
       "snippet": "- C: Wrong Input Basis (character count ≠ narrative structure) - D: Wrong Conservation Law (conserving T instead of dT/dt) Each failure generates a testable prediction. Five predictions total. ### Prediction 4 CONFIRMED: Tension-Gradient Conservation - Common-practice: 3.8× LOWER variance in contextual tension gradient (dT/dt) - Voice-leading gradient also smoother (~16% lower variance) - Phase space: common-practice traces wider arcs (area 0.055 vs 0.013) - Spectral tension alone is too blunt — KEY CONTEXT is needed - The conservation law is about FLOW, not STATE ### This Is the First Confirmation of a Failure-Derived Prediction Sequence: failure → hypothesis about why → test → confirmat",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3880762219429016,
+      "totalScore": 0.7739381074905395,
       "maxScore": 0.3880762219429016,
       "firstRecalledAt": "2026-05-28T17:14:43.939Z",
-      "lastRecalledAt": "2026-05-28T17:14:43.939Z",
+      "lastRecalledAt": "2026-05-30T00:24:30.839Z",
       "queryHashes": [
-        "9596e6ccf6ca"
+        "9596e6ccf6ca",
+        "068f7d3ce2ca"
       ],
       "recallDays": [
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "dt/dt",
@@ -7063,18 +7107,20 @@
       "endLine": 254,
       "source": "memory",
       "snippet": "- Hypothesis NOT supported for physics phase transitions — domain-specific to music ## moo Ecosystem — Science Meets Engineering ### moo-spectral.js ✅ (42KB, 44 tests) - Jacobi eigenvalue decomposition, Fiedler vector reordering - Conservation error recovery via eigenspace projection ### constraint-lexer/ ✅ (39 tests) - 6 constraint types, Pure JS conservation tracker with Laplacian power iteration ### moo-rust 🔄 - 22/22 lib tests pass, 2 integration test failures (lexer tokenization bug) ## musicdb-to-json — Spectral Enhancement - spectral_validator.py ✅, spectral_enhancer.py ✅ (34 tests) - Real-time conservation tracking during parsing ## The Latent Abstraction (THE REAL INSIGHT) -",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3745028346776962,
-      "maxScore": 0.3745028346776962,
+      "totalScore": 0.7871590375900268,
+      "maxScore": 0.4126562029123306,
       "firstRecalledAt": "2026-05-29T04:53:02.455Z",
-      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T23:45:16.297Z",
       "queryHashes": [
-        "c8570fd5757e"
+        "c8570fd5757e",
+        "7e05e8cd3b80"
       ],
       "recallDays": [
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "domain-specific",
@@ -7094,18 +7140,20 @@
       "endLine": 109,
       "source": "memory",
       "snippet": "- Unknown subtype reverse-engineering via entropy + pattern analysis - Format version fingerprinting via eigenvalues - Backward-compatible --spectral-analysis flag ## The Latent Abstraction (THE REAL INSIGHT) - Tension-Graph Laplacian is NOT just a music tool — it's a **compatibility operator** between dynamics and geometry - The eigenvectors decompose ANY system into modes ranked by dynamics-structure alignment - Conservation detection requires ANISOTROPY in the structure, not universality (Ising failed because it's isotropic) - Three unexplored frontiers: Conservation Gradient Descent (training objective), Multi-Scale Wavelet Laplacian, Inverse Problem (tomography from conservation) - Wri",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.37207794189453125,
-      "maxScore": 0.37207794189453125,
+      "totalScore": 1.035213296149319,
+      "maxScore": 0.6631353542547879,
       "firstRecalledAt": "2026-05-29T04:53:02.455Z",
-      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T23:45:42.429Z",
       "queryHashes": [
-        "c8570fd5757e"
+        "c8570fd5757e",
+        "94421d17d2f1"
       ],
       "recallDays": [
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "reverse-engineering",
@@ -7125,18 +7173,20 @@
       "endLine": 131,
       "source": "memory",
       "snippet": "- superinstance-live: RealtimeConservationTracker, ModulationDetector, SpectralSession (44 tests) - moe-sheaf: ExpertTensionGraph, RoutingConservation, ExpertSpectralHealth (58 tests) - conservation-tension v0.3.0: spectral.py + cross_cultural.py built (PyPI rate-limited on publish) ## GC: 41GB → 8.4GB (freed 32.6GB) ## Session Status — Mega Sprint (ongoing) ### SDK: 9 languages, 204 tests, triple-crown (PyPI+npm+crates.io) - Rust (14✅, crates.io), Python (50✅, PyPI), JS (26✅, npm), C (36✅ header-only) - CUDA (18✅, cuSOLVER), Mojo (11✅, SIMD), Chapel (forall+locales), Fortran (11✅, LAPACK), Zig (22✅, comptime) - Cross-language conformance: all agree to 1e-11+ (Claude verified) ### Cross-",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3633083403110504,
-      "maxScore": 0.3633083403110504,
+      "totalScore": 0.7751497089862823,
+      "maxScore": 0.4118413686752319,
       "firstRecalledAt": "2026-05-29T04:53:02.455Z",
-      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-29T23:45:16.297Z",
       "queryHashes": [
-        "c8570fd5757e"
+        "c8570fd5757e",
+        "7e05e8cd3b80"
       ],
       "recallDays": [
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "superinstance-live",
@@ -7156,18 +7206,21 @@
       "endLine": 336,
       "source": "memory",
       "snippet": "- Targeted station removal > random (some stations structurally critical) - Assortativity flips positive→negative under warming ### Kernel Theory - Heat kernel K=exp(-βL) shows music has higher effective rank than random (3.99 vs 1.64) - Conservation structure persists in kernel space ### Cospectral Explorer (honest negative) - Conservation ratios CANNOT break cospectral ambiguity (confirms T5 falsification) - Partial eigenvalue info gives -0.12 correlation — the drum problem is real ### Voronoi Traditions (81.9% frontier) - 92.5% of parameter space is frontier at threshold=0.5 - Carnatic↔Hindustani: share boundary (hybridize) ✅ - Western↔Gagaku: NO shared boundary ✅ - Optimal tour length",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3579646974802017,
-      "maxScore": 0.3579646974802017,
+      "totalScore": 1.1127699822187425,
+      "maxScore": 0.3840244561433792,
       "firstRecalledAt": "2026-05-29T04:53:02.455Z",
-      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-30T00:25:04.949Z",
       "queryHashes": [
-        "c8570fd5757e"
+        "c8570fd5757e",
+        "068f7d3ce2ca",
+        "d0dd9f2c57a8"
       ],
       "recallDays": [
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "3.99",
@@ -7218,18 +7271,20 @@
       "endLine": 229,
       "source": "memory",
       "snippet": "- Leave-one-out: ALL ratios < 0.5 (range 0.002–0.470) — not outlier-driven - Cohen's d = 1.34 — LARGE effect - Observed ratio 0.0108 (92× conservation) ### Symplectic Music Phase Space - Spectral ω-variance: CP 15× lower than chromatic (p = 2.8×10⁻⁴) - Liouville: CP 25× lower phase-space volume variance (p = 2.6×10⁻¹⁰) - CP transition eigenvalues [1.0, 0.264, 0.224] (structured) vs chromatic [1.0, 0.019, 0.019] (random) - Persistence features classify at **96% accuracy** ### Cross-Domain Eigenbasis — ALL 3 SUPPORTED - Protein folding: 6.58× SNR improvement - Language evolution: 1.11× - Ecosystem dynamics: 1.67× ### Cross-Cultural — Tradition-Specific - 6 traditions tested (Hindustani, Gam",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3521715492010116,
-      "maxScore": 0.3521715492010116,
+      "totalScore": 0.7493680566549301,
+      "maxScore": 0.39719650745391843,
       "firstRecalledAt": "2026-05-29T04:53:02.455Z",
-      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-30T00:25:04.949Z",
       "queryHashes": [
-        "c8570fd5757e"
+        "c8570fd5757e",
+        "d0dd9f2c57a8"
       ],
       "recallDays": [
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "leave-one-out",
@@ -7249,18 +7304,20 @@
       "endLine": 437,
       "source": "memory",
       "snippet": "- **Social**: 91.8% bot detection via Fiedler - **Symplectic**: 9.3× Euler explosion - **Climate**: 49.5% conservation drop under warming - **Ecosystem**: r=-0.46 conservation vs connectance - **Neural**: Neuron CR increases monotonically during training - **Kernel**: Music has higher effective rank than random - **Voronoi**: 81.9% frontier matches prediction - **Molecular Dynamics**: α=1.00 (stronger than predicted) - **Hash Chains**: α=0.008 (confirmed near-zero) - **Game Theory**: α=0.31 (confirmed in range) - **Cospectral**: Honest negative — can't break cospectral ambiguity - **Code Structure**: Conservation measures coherence (r=0.89) ## Math Foundation - 4/5 original conjectures FALS",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.35161131024360653,
-      "maxScore": 0.35161131024360653,
+      "totalScore": 0.7180842339992523,
+      "maxScore": 0.3664729237556457,
       "firstRecalledAt": "2026-05-29T04:53:02.455Z",
-      "lastRecalledAt": "2026-05-29T04:53:02.455Z",
+      "lastRecalledAt": "2026-05-30T00:25:04.949Z",
       "queryHashes": [
-        "c8570fd5757e"
+        "c8570fd5757e",
+        "d0dd9f2c57a8"
       ],
       "recallDays": [
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "91.8",
@@ -7302,6 +7359,2301 @@
         "conformal-universe.md",
         "tropical-cell.md",
         "category-of-minds.md"
+      ]
+    },
+    "memory:memory/2026-05-20.md:622:643": {
+      "key": "memory:memory/2026-05-20.md:622:643",
+      "path": "memory/2026-05-20.md",
+      "startLine": 622,
+      "endLine": 643,
+      "source": "memory",
+      "snippet": "- kimi-cli launched but slow; didn't produce usable output ### Key Architectural Decisions Realized in Code - **Penrose lattice**: Golden angle spiral guarantees no two agents see the problem the same way - **Hebbian broadcasting**: Channels strengthen/weaken based on usefulness feedback - **Parent-sacrifice-before-spawn**: Thermal budget won't overflow during breeding - **Exponential backoff hints**: Fast initial reduction, slow near autonomy - **Tournament + Pareto**: Relative fitness, no fixed thresholds, agents co-exist on frontier - **Decaying chaos**: High at start (exploration), decays as adaptation grows (exploitation) --- ## Pending - [ ] PyPI retry for 5 packages (all 429 rate",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36650215089321136,
+      "maxScore": 0.36650215089321136,
+      "firstRecalledAt": "2026-05-29T07:54:56.002Z",
+      "lastRecalledAt": "2026-05-29T07:54:56.002Z",
+      "queryHashes": [
+        "a04ea4ce336e"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "kimi-cli",
+        "strengthen/weaken",
+        "parent-sacrifice-before-spawn",
+        "co-exist",
+        "kimi",
+        "cli",
+        "launched",
+        "but"
+      ]
+    },
+    "memory:memory/2026-05-27.md:423:441": {
+      "key": "memory:memory/2026-05-27.md:423:441",
+      "path": "memory/2026-05-27.md",
+      "startLine": 423,
+      "endLine": 441,
+      "source": "memory",
+      "snippet": "- Track conjecture status rigorously (supported/partial/refuted/untested) ### Still Pending - persistent-social (Go) build — needs retry - iching-sheaf + moe-sheaf PyPI publish — waiting on rate limit cooldown - 9 crates queued for crates.io — background publisher waiting on rate limit - WHEEL-STATE.json needs update to spoke_3 (reflect phase) - 8 more builds in queue (CUDA, Chapel, Mojo, Fortran, Python, TypeScript) - 7 more conjectures to test # 2026-05-27 Daily Notes ## Session 3 — Mathematics Libraries Sprint ### 6 New Research-Grade Rust Libraries Built & Pushed - **tropical-neural** (22 tests): Tropical semiring (max-plus), tropical polynomials with Newton polytope, tropical rationa",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2083524852991103,
+      "maxScore": 0.41405238807201383,
+      "firstRecalledAt": "2026-05-29T16:17:11.221Z",
+      "lastRecalledAt": "2026-05-30T16:44:50.667Z",
+      "queryHashes": [
+        "fa3ca59c2b54",
+        "7e05e8cd3b80",
+        "e1e3b593dcd2"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "persistent-social",
+        "iching-sheaf",
+        "moe-sheaf",
+        "crates.io",
+        "wheel-state.json",
+        "spoke-3",
+        "research-grade",
+        "tropical-neural"
+      ]
+    },
+    "memory:memory/2026-05-27.md:30:48": {
+      "key": "memory:memory/2026-05-27.md:30:48",
+      "path": "memory/2026-05-27.md",
+      "startLine": 30,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "- **Lesson**: For focused library building (single file, known API), direct exec/write is 10x faster than agents. ### Background Tasks - `/tmp/pub.log` — publishing 9 remaining crates after rate limit reset (~00:00 AKT) # 2026-05-27 Daily Notes ## Session 3 — Mathematics Libraries Sprint ### 6 New Research-Grade Rust Libraries Built & Pushed - **tropical-neural** (22 tests): Tropical semiring (max-plus), tropical polynomials with Newton polytope, tropical rational maps (ReLU networks), tropical attention - **symplectic-opt** (23 tests): Symplectic matrices with verification, Hamiltonian systems (separable), Symplectic Euler + Störmer-Verlet integrators, conservation law tracking, natural",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36715336740016935,
+      "maxScore": 0.36715336740016935,
+      "firstRecalledAt": "2026-05-29T16:17:11.221Z",
+      "lastRecalledAt": "2026-05-29T16:17:11.221Z",
+      "queryHashes": [
+        "fa3ca59c2b54"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "network",
+        "exec/write",
+        "tmp/pub.log",
+        "research-grade",
+        "tropical-neural",
+        "max-plus",
+        "symplectic-opt",
+        "störmer-verlet"
+      ]
+    },
+    "memory:memory/2026-05-26.md:107:144": {
+      "key": "memory:memory/2026-05-26.md:107:144",
+      "path": "memory/2026-05-26.md",
+      "startLine": 107,
+      "endLine": 144,
+      "source": "memory",
+      "snippet": "- 1 crates.io package published (constraint-mux 0.2.0) - 37 repos CI fixed to green (from ~5 at start) - 65 repos got CI added that had none (15 py + 6 py + 5 rust/c + 39 node) - ~120/180 repos now have CI workflows - ~3500 lines of CI bloat removed - 8 repo descriptions fixed - 6 stub READMEs written + cocapn-dreamer - 20 stale branches cleaned up - openagent Go: 39→330 repos tracked in ecosystem.go - 180 total repos in SuperInstance org, full ecosystem scan done - Key lesson: most CI failures are trivial — wrong branch, missing lockfile, bad setup.py, bloated workflows - Claude Code excels at hard narrow tasks (api-gateway: 17 compile errors, sunset-ecosystem: numba SIGILL) - PyPI rate lim",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.39050461947917936,
+      "maxScore": 0.39050461947917936,
+      "firstRecalledAt": "2026-05-29T18:36:25.952Z",
+      "lastRecalledAt": "2026-05-29T18:36:25.952Z",
+      "queryHashes": [
+        "c9f4d9f66df7"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "gateway",
+        "crates.io",
+        "constraint-mux",
+        "0.2.0",
+        "rust/c",
+        "120/180",
+        "cocapn-dreamer",
+        "ecosystem.go"
+      ]
+    },
+    "memory:memory/2026-05-26.md:216:234": {
+      "key": "memory:memory/2026-05-26.md:216:234",
+      "path": "memory/2026-05-26.md",
+      "startLine": 216,
+      "endLine": 234,
+      "source": "memory",
+      "snippet": "- **All stubs use same pattern:** dataclasses, type hints, zero external deps beyond pytest - **Average build time:** ~4-5 minutes - **Average tokens:** ~30k per repo ### CI Status - ALL 180 repos have ci.yml - 0 red repos organization-wide - 32 repos fixed in final CI wave - 65 repos got CI added this session ### PyPI Published (12 packages) constraint-synth 0.6.0, flux-genome 0.2.0, flux-hyperbolic 0.2.0, flux-index 0.1.0, deadband-python 0.1.1, triplet-miner 0.1.0, holonomy-harmony 0.1.0, cocapn 0.3.0, activeledger-agent 0.2.0, activelog-agent 0.2.0, businesslog-agent 0.2.0, counterpoint-engine 0.3.0 ### Still Queued (PyPI rate limited) ccc-os, agent-field, agentic-compiler, ai-token-c",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3823070853948593,
+      "maxScore": 0.3823070853948593,
+      "firstRecalledAt": "2026-05-29T18:36:25.952Z",
+      "lastRecalledAt": "2026-05-29T18:36:25.952Z",
+      "queryHashes": [
+        "c9f4d9f66df7"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "4-5",
+        "ci.yml",
+        "organization-wide",
+        "constraint-synth",
+        "0.6.0",
+        "flux-genome",
+        "0.2.0",
+        "flux-hyperbolic"
+      ]
+    },
+    "memory:memory/2026-05-29.md:164:192": {
+      "key": "memory:memory/2026-05-29.md:164:192",
+      "path": "memory/2026-05-29.md",
+      "startLine": 164,
+      "endLine": 192,
+      "source": "memory",
+      "snippet": "- **openconstruct-hub** (meta-repo): Full module catalog (~80 repos), architecture, getting started, build targets for every platform. Org profile updated to point here as \"Start Here\" **Architecture Docs (Kimi, 262k context each):** - GRAND-SYNTHESIS.md (33KB): Identified 5 critical missing pieces: 1. Cross-sense correlator (plato-correlator) 2. OpenShell policy runtime 3. A2A wire protocol 4. UIDL interpreter (partially done in a2ui-render) 5. Sensory transport abstraction (plato-transport) ### Still Building (11 GLM-5.1 + some completing) 1. plato-correlator — cross-sense fusion 2. plato-transport — sensory transport abstraction 3. plato-fleet — ESP32s as rooms for Jetson 4. p",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8236092835664748,
+      "maxScore": 0.43404347896575923,
+      "firstRecalledAt": "2026-05-29T18:44:11.313Z",
+      "lastRecalledAt": "2026-05-29T22:03:51.291Z",
+      "queryHashes": [
+        "834e8ffe474c",
+        "9de8d7f681e5"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "openconstruct-hub",
+        "meta-repo",
+        "grand-synthesis.md",
+        "cross-sense",
+        "plato-correlator",
+        "a2ui-render",
+        "plato-transport",
+        "glm-5.1"
+      ]
+    },
+    "memory:memory/2026-05-29.md:106:145": {
+      "key": "memory:memory/2026-05-29.md:106:145",
+      "path": "memory/2026-05-29.md",
+      "startLine": 106,
+      "endLine": 145,
+      "source": "memory",
+      "snippet": "- **openconstruct-python** (18 tests, pushed): Python thin client - **openconstruct-ts** (28 tests, 91% coverage, pushed): TypeScript client ### Edge Nodes - **openconstruct-esp32** (14 tests, pushed): Arduino/ESP32 ultralight shell - **openconstruct-jetson** (pushed): CUDA GPU edge node ### Org Cleanup - Wave 1 (A-M): GLM-5.1 running - Wave 2 (N-Z): 74 repos processed, all tagged and linked - 55+ repos tagged 'openconstruct', all 200 tagged 'superinstance' - 15 core repos got DEPENDENCIES.md + ecosystem integration docs ### Architecture Docs (in /tmp/openconstruct/) - SPEC.md (19KB): 5-phase onboarding - POLYGLOT.md: 16-language strategy - PLATO-SENSORY.md (32KB): 6 sense modules - GRAND",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7671054661273956,
+      "maxScore": 0.3939576357603073,
+      "firstRecalledAt": "2026-05-29T18:44:11.313Z",
+      "lastRecalledAt": "2026-05-29T22:03:51.291Z",
+      "queryHashes": [
+        "834e8ffe474c",
+        "9de8d7f681e5"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "openconstruct-python",
+        "openconstruct-ts",
+        "openconstruct-esp32",
+        "arduino/esp32",
+        "openconstruct-jetson",
+        "a-m",
+        "glm-5.1",
+        "n-z"
+      ]
+    },
+    "memory:memory/2026-05-29.md:83:114": {
+      "key": "memory:memory/2026-05-29.md:83:114",
+      "path": "memory/2026-05-29.md",
+      "startLine": 83,
+      "endLine": 114,
+      "source": "memory",
+      "snippet": "- SPEC.md (19KB): 5-phase onboarding, A2A integration, zero-shot design - POLYGLOT.md: 16-language binding strategy, C ABI as keystone - PLATO-SENSORY.md (32KB): 6 sense modules, cave wall translation layer - registry-schema.json: module registration schema ### OpenConstruct Fork - Forked NVIDIA/OpenShell (Apache 2.0) → SuperInstance/OpenConstruct - Added openshell-construct (onboarding engine, 4 tests) - Added openshell-registry (module registry, 10 SuperInstance modules) - Full OpenShell sandbox/policy/router stack preserved ### Plato Sensory Stack - **plato-puppeteer** (12 tests, pushed): Desktop → MUD translation - **openconstruct-abi** (6 tests, pushed): C ABI for polyglot bindings -",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7626229494810104,
+      "maxScore": 0.38964301347732544,
+      "firstRecalledAt": "2026-05-29T18:44:11.313Z",
+      "lastRecalledAt": "2026-05-30T06:18:13.284Z",
+      "queryHashes": [
+        "834e8ffe474c",
+        "761321a87aed"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "router",
+        "spec.md",
+        "5-phase",
+        "zero-shot",
+        "polyglot.md",
+        "16-language",
+        "plato-sensory.md",
+        "registry-schema.json"
+      ]
+    },
+    "memory:memory/2026-05-25.md:181:205": {
+      "key": "memory:memory/2026-05-25.md:181:205",
+      "path": "memory/2026-05-25.md",
+      "startLine": 181,
+      "endLine": 205,
+      "source": "memory",
+      "snippet": "- fleet-math-c: replaced non-existent `_mm512_hsub_ps` with permute+sub, disabled AVX-512 on CI - flux-check-js: test script pointed to .mjs not .ts - plato-engine: created stub crate (Tile, GateResult, default_gate) — was empty repo - holonomy-harmony: ruff lint auto-fix (35 errors) - fleet-bottles: switched from hatchling to setuptools package config - triplet-miner: CI branch trigger fixed (master not main) + pytest dep - constraint-theory-rust-python: getattr fallback for `pass` keyword collision **CI re-runs triggered:** 18 repos with stale failing runs **CI Status (latest): ~52 green / ~20 failing / ~110 no CI** out of 180 repos - Up from 30/30/40 at session start - Remaining hard fa",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37942991256713865,
+      "maxScore": 0.37942991256713865,
+      "firstRecalledAt": "2026-05-29T18:44:11.313Z",
+      "lastRecalledAt": "2026-05-29T18:44:11.313Z",
+      "queryHashes": [
+        "834e8ffe474c"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "fleet-math-c",
+        "non-existent",
+        "mm512-hsub-ps",
+        "avx-512",
+        "flux-check-js",
+        "plato-engine",
+        "default-gate",
+        "holonomy-harmony"
+      ]
+    },
+    "memory:memory/2026-05-23.md:548:574": {
+      "key": "memory:memory/2026-05-23.md:548:574",
+      "path": "memory/2026-05-23.md",
+      "startLine": 548,
+      "endLine": 574,
+      "source": "memory",
+      "snippet": "- Produced fleet architecture work on sunset-ecosystem: FFI primitives, CRDT+HDC hybrid, 2-ship monoculture proof, convergence guard, observer+breeder tests - Key finding: FFI overhead dominates (not math), NPU offload not worth it ## Still Running at Session End - Sound quality fix (anti-aliased oscillators, reverb, stereo) - East Asian research (Japanese/Chinese pentatonic + Islamic geometric) - R+MATLAB implementations - World scales code implementation - 6 Kimi sessions (various fleet tasks) - Deep rhythm research (jazz, Latin, Afro-Cuban) ## Key Insights 1. **Theory-code gap was real** — ε didn't exist. Now fixed with soft_snap. 2. **Beta testing is gold** — 12 perspectives found bugs",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3738810747861862,
+      "maxScore": 0.3738810747861862,
+      "firstRecalledAt": "2026-05-29T18:44:11.313Z",
+      "lastRecalledAt": "2026-05-29T18:44:11.313Z",
+      "queryHashes": [
+        "834e8ffe474c"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "sunset-ecosystem",
+        "2-ship",
+        "anti-aliased",
+        "japanese/chinese",
+        "afro-cuban",
+        "theory-code",
+        "soft-snap",
+        "produced"
+      ]
+    },
+    "memory:memory/2026-05-29.md:138:170": {
+      "key": "memory:memory/2026-05-29.md:138:170",
+      "path": "memory/2026-05-29.md",
+      "startLine": 138,
+      "endLine": 170,
+      "source": "memory",
+      "snippet": "- 50 repos with code but no tests (upgrade targets) - 4 empty shells - All repos active (updated within last 2 days) ## Evening Agent Shift — 6 New Modules Other agent on superinstance shipped (no GPU/crates.io): - **Soniqo Bridge** (Python, 16 tests): Voice → tiles, ASR/TTS/VAD - **JEPA Room** (Python, 16 tests): Local inference + API fallback - **Rust Reasoner** (4 cargo): SIMD cosine, batch ops, FFI - **C++ Reasoner** (4 native): OpenMP parallel, GPU-ready - **Mercury Reasoner** (5 mmc): Formal verification - **Polyglot Bridge** (11 tests): Auto-select backend + Mercury verify - Grand total: 545 passed, 31 skipped, 18 modules all green - 6 FM gates pending hardware/SDK access ## OpenCon",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3734548300504684,
+      "maxScore": 0.3734548300504684,
+      "firstRecalledAt": "2026-05-29T18:44:11.313Z",
+      "lastRecalledAt": "2026-05-29T18:44:11.313Z",
+      "queryHashes": [
+        "834e8ffe474c"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "gpu/crates.io",
+        "asr/tts/vad",
+        "gpu-ready",
+        "auto-select",
+        "hardware/sdk",
+        "repos",
+        "code",
+        "but"
+      ]
+    },
+    "memory:memory/2026-05-25.md:130:154": {
+      "key": "memory:memory/2026-05-25.md:130:154",
+      "path": "memory/2026-05-25.md",
+      "startLine": 130,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "- MLIR = formal verification (constraint-dialect) - All share LLVM backend ### Agents Used - GLM-5.1 (z.ai): 15+ subagents, workhorse for all code - Claude Code: session limit hit - Kimi CLI: creative modules (evolution, oracle, timeline, games) # memory/2026-05-25.md ## 2026-05-25 Mega Session 2 — SuperInstance Ecosystem Sweep (continued) ### EDDI Adaptation - 32KB EDDI-ADAPTATION.md: 5-phase integration roadmap, 6 agent configs, A2A/MCP analysis - EDDI = 183K-line Java/Quarkus multi-agent middleware, 5,100+ tests - Plan: constraint-aware orchestration + CUDAclaw GPU dispatch + PLATO rooms ### Profile README Rewrite (3 rounds) - Round 1: Too music-focused - Round 2: Balanced across full",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0006275291758933,
+      "maxScore": 0.6109862054902473,
+      "firstRecalledAt": "2026-05-29T18:54:18.610Z",
+      "lastRecalledAt": "2026-06-01T00:29:09.770Z",
+      "queryHashes": [
+        "be0bcc17b9ca",
+        "b241ee6e640b"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "constraint-dialect",
+        "glm-5.1",
+        "z.ai",
+        "memory/2026-05-25.md",
+        "eddi-adaptation.md",
+        "5-phase",
+        "a2a/mcp",
+        "183k-line"
+      ]
+    },
+    "memory:memory/2026-05-20.md:346:385": {
+      "key": "memory:memory/2026-05-20.md:346:385",
+      "path": "memory/2026-05-20.md",
+      "startLine": 346,
+      "endLine": 385,
+      "source": "memory",
+      "snippet": "- **commit-predictor** (12 tests) — numpy dense network - **swarm-rooms** (8 tests) — Eisenstein snap with CPU fallback ### Pipeline Refined - **Updated workflow**: kimi (heavy gen) → deepseek (analysis) → z.ai (implementation) → Claude Code (review) - 4-stage pipeline with distinct model strengths at each stage ### PyPI Status - Still **429 rate-limited** for 5 packages (plato-training, device-router, triplet-miner, training-throttle, luciddreamer) - Need retry after cooldown --- ## Pending - [ ] PyPI retry for 5 packages (all 429 rate limited) - [ ] LucidDreamer beta R2 completion (DomainAdapter in progress) - [ ] DomainAdapter base class (abstract verify() method) - [ ] Ryzen AI SDK",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37423071563243865,
+      "maxScore": 0.37423071563243865,
+      "firstRecalledAt": "2026-05-29T18:54:18.610Z",
+      "lastRecalledAt": "2026-05-29T18:54:18.610Z",
+      "queryHashes": [
+        "be0bcc17b9ca"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "network",
+        "router",
+        "commit-predictor",
+        "swarm-rooms",
+        "z.ai",
+        "4-stage",
+        "rate-limited",
+        "plato-training"
+      ]
+    },
+    "memory:memory/2026-05-27.md:125:151": {
+      "key": "memory:memory/2026-05-27.md:125:151",
+      "path": "memory/2026-05-27.md",
+      "startLine": 125,
+      "endLine": 151,
+      "source": "memory",
+      "snippet": "- First build queued: iching-sheaf (Python) ### Models Used This Session - **Seed Mini 2.0** (ByteDance/Seed-2.0-mini): Workhorse for stories and essays (~2-3 min each, reliable) - **Seed Pro 2.0** (ByteDance/Seed-2.0-pro): Deep cuts — Cohomology of Grief, Paradigm Atlas (~3-6 min) - **GLM-5.1** (zai/glm-5.1): Research, code, manifesto - **DeepSeek** (deepseek/deepseek-chat): Creative writing, wild ideation, manifesto - **Gemma 26B** (google/gemma-4-26B-A4B-it via DeepInfra): R&D + manifesto - **Gemma 31B** (google/gemma-4-31B-it via DeepInfra): Topos theory + manifesto - **Nemotron** (nvidia/NVIDIA-Nemotron-3-Super-120B-A12B via DeepInfra): Hardware + manifesto - **Qwen** (Qwen/Qwen3.6-35B",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3688674420118332,
+      "maxScore": 0.3688674420118332,
+      "firstRecalledAt": "2026-05-29T18:54:18.610Z",
+      "lastRecalledAt": "2026-05-29T18:54:18.610Z",
+      "queryHashes": [
+        "be0bcc17b9ca"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "iching-sheaf",
+        "2.0",
+        "bytedance/seed-2.0-mini",
+        "2-3",
+        "bytedance/seed-2.0-pro",
+        "3-6",
+        "glm-5.1",
+        "zai/glm-5.1"
+      ]
+    },
+    "memory:memory/2026-05-25.md:1:21": {
+      "key": "memory:memory/2026-05-25.md:1:21",
+      "path": "memory/2026-05-25.md",
+      "startLine": 1,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "# memory/2026-05-25.md ## 2026-05-25 Mega Session 2 — SuperInstance Ecosystem Sweep (continued) ### EDDI Adaptation - 32KB EDDI-ADAPTATION.md: 5-phase integration roadmap, 6 agent configs, A2A/MCP analysis - EDDI = 183K-line Java/Quarkus multi-agent middleware, 5,100+ tests - Plan: constraint-aware orchestration + CUDAclaw GPU dispatch + PLATO rooms ### Profile README Rewrite (3 rounds) - Round 1: Too music-focused - Round 2: Balanced across full ecosystem (agents, PLATO, fleet, constraints, neural, systems) - Round 3 (final): Casey's feedback — \"educate don't sell\" — code examples, no marketing claims - org description updated from \"micro-model\" to \"constraint-aware AI systems\" ### Repo",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3202636397857128,
+      "maxScore": 0.6063361681479871,
+      "firstRecalledAt": "2026-05-29T18:54:18.610Z",
+      "lastRecalledAt": "2026-06-01T00:29:09.770Z",
+      "queryHashes": [
+        "be0bcc17b9ca",
+        "c83b4736f4db",
+        "b241ee6e640b"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "memory/2026-05-25.md",
+        "eddi-adaptation.md",
+        "5-phase",
+        "a2a/mcp",
+        "183k-line",
+        "java/quarkus",
+        "multi-agent",
+        "constraint-aware"
+      ]
+    },
+    "memory:memory/2026-05-29.md:248:273": {
+      "key": "memory:memory/2026-05-29.md:248:273",
+      "path": "memory/2026-05-29.md",
+      "startLine": 248,
+      "endLine": 273,
+      "source": "memory",
+      "snippet": "- **6 new docs added**: CONTRIBUTING.md, GOVERNANCE.md, CHANGELOG.md, SECURITY.md, LICENSE.md, AGENTS.md - **All internal links verified** across 21 docs - **Org sweep running**: 200 repos being audited for descriptions, homepages, branches ### New Repos Built and Pushed - **SuperInstance/OpenConstruct** (streamlined front door): - install.sh — curl|bash one-command install - openconstruct CLI (Rust/clap): init, status, sense, fleet, tick, room, build, publish - README with architecture diagram, quickstart, CLI reference - CONTRIBUTING.md, Makefile - Preserves OpenShell fork history - **SuperInstance/openconstruct-jupyter** (27 tests): - %%openconstruct cell magic (--sense, --t",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.353202822804451,
+      "maxScore": 0.353202822804451,
+      "firstRecalledAt": "2026-05-29T19:23:18.233Z",
+      "lastRecalledAt": "2026-05-29T19:23:18.233Z",
+      "queryHashes": [
+        "02eca511bb06"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "contributing.md",
+        "governance.md",
+        "changelog.md",
+        "security.md",
+        "license.md",
+        "agents.md",
+        "superinstance/openconstruct",
+        "install.sh"
+      ]
+    },
+    "memory:memory/2026-05-25.md:152:168": {
+      "key": "memory:memory/2026-05-25.md:152:168",
+      "path": "memory/2026-05-25.md",
+      "startLine": 152,
+      "endLine": 168,
+      "source": "memory",
+      "snippet": "### Repo README Upgrades (~70 repos touched) - 15 GitHub descriptions fixed (no more \"Preserved workspace artifact\") - Major READMEs written: constraint-mux (0→97), flux-hyperbolic (104→310), creative-engine-c (25→241), creative-engine-rust (0→253), constraint-dsl (55→350), superinstance-live (46→285), flux-genome (105→157) - Wave 3-6 agent pushes: fleet-stack, constraint-substrate, quality-gate-stream, triplet-miner, flux-verify-api, constraint-theory-web, rustfs, plato-types, agent-field, captains-log, fleet-health-monitor, constraint-inference, fleet-router, collective-ai, plato-training, copilot-for-eclipse, snapkit-js, snapkit-v2, style-dna, spline-midi-smooth, flux-check-py, flux-fract",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7687998265028,
+      "maxScore": 0.41620639264583587,
+      "firstRecalledAt": "2026-05-29T19:23:19.287Z",
+      "lastRecalledAt": "2026-05-29T19:54:46.301Z",
+      "queryHashes": [
+        "c83b4736f4db",
+        "0150e72e1d28"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "router",
+        "constraint-mux",
+        "flux-hyperbolic",
+        "creative-engine-c",
+        "creative-engine-rust",
+        "constraint-dsl",
+        "superinstance-live",
+        "flux-genome"
+      ]
+    },
+    "memory:memory/2026-05-29.md:274:303": {
+      "key": "memory:memory/2026-05-29.md:274:303",
+      "path": "memory/2026-05-29.md",
+      "startLine": 274,
+      "endLine": 303,
+      "source": "memory",
+      "snippet": "## Session 14 README Rewrite Sprint — 500 Repos ### Scope Discovery - Actual org size: 500 repos (not 200 as previously tracked) - Full audit: all 500 repos listed and categorized ### README Waves Completed | Wave | Repos | Result | |------|-------|--------| | A-B | 15 | ✅ 15 rewritten (fixed merge conflicts in ab-testing-rs, bid-engine-rs) | | C-F | 28 | ✅ 21 rewritten, 7 already excellent (fixed flux-algebra-rs merge conflict) | | S-Z | 18 | ✅ 12 new READMEs (repos had NONE), 6 rewritten, 7 already world-class | | M-R | ~45 | ✅ Completed | | Constraint/Flux | 31 | ⚠️ Thin output, requeued as constraint-retry | | Research | 31 | ⚠️ Thin output, large lists hit context limits | | Cocapn/Fl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6770855418966369,
+      "maxScore": 0.6770855418966369,
+      "firstRecalledAt": "2026-05-29T19:54:46.301Z",
+      "lastRecalledAt": "2026-05-29T19:54:46.301Z",
+      "queryHashes": [
+        "0150e72e1d28"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "a-b",
+        "ab-testing-rs",
+        "bid-engine-rs",
+        "c-f",
+        "flux-algebra-rs",
+        "s-z",
+        "world-class",
+        "m-r"
+      ]
+    },
+    "memory:memory/2026-05-29.md:248:283": {
+      "key": "memory:memory/2026-05-29.md:248:283",
+      "path": "memory/2026-05-29.md",
+      "startLine": 248,
+      "endLine": 283,
+      "source": "memory",
+      "snippet": "- **6 new docs added**: CONTRIBUTING.md, GOVERNANCE.md, CHANGELOG.md, SECURITY.md, LICENSE.md, AGENTS.md - **All internal links verified** across 21 docs - **Org sweep running**: 200 repos being audited for descriptions, homepages, branches ### New Repos Built and Pushed - **SuperInstance/OpenConstruct** (streamlined front door): - install.sh — curl|bash one-command install - openconstruct CLI (Rust/clap): init, status, sense, fleet, tick, room, build, publish - README with architecture diagram, quickstart, CLI reference - CONTRIBUTING.md, Makefile - Preserves OpenShell fork history - **SuperInstance/openconstruct-jupyter** (27 tests): - %%openconstruct cell magic (--sense, --t",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4055158108472824,
+      "maxScore": 0.4055158108472824,
+      "firstRecalledAt": "2026-05-29T19:54:46.301Z",
+      "lastRecalledAt": "2026-05-29T19:54:46.301Z",
+      "queryHashes": [
+        "0150e72e1d28"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "contributing.md",
+        "governance.md",
+        "changelog.md",
+        "security.md",
+        "license.md",
+        "agents.md",
+        "superinstance/openconstruct",
+        "install.sh"
+      ]
+    },
+    "memory:memory/2026-05-28.md:483:512": {
+      "key": "memory:memory/2026-05-28.md:483:512",
+      "path": "memory/2026-05-28.md",
+      "startLine": 483,
+      "endLine": 512,
+      "source": "memory",
+      "snippet": "- **Qwen 3.6**: Novel Predictions v3 — 20 predictions, 3 experiments, key discovery about Regularity R - **DeepSeek**: Good code but credits exhausted mid-session - **Kimi via tmux**: Shell approval issues, limited utility ## Session Totals - **~50 GitHub repos** under SuperInstance - **204+ tests** across 9 primary languages - **15+ cross-domain experiments** with results - **5 proved theorems** + 4 honest negatives - **7+ research papers** + Grand Synthesis - **Triple-crown**: PyPI + npm + crates.io - **29 art pieces** from spectral theory - **32.6GB disk freed** (41→8.4GB) append ## Session Continuation — Exploration Explosion + Forgemaster Extraction ### Forgemaster Monorepo Extraction",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4020720779895782,
+      "maxScore": 0.4020720779895782,
+      "firstRecalledAt": "2026-05-29T19:54:46.301Z",
+      "lastRecalledAt": "2026-05-29T19:54:46.301Z",
+      "queryHashes": [
+        "0150e72e1d28"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "3.6",
+        "mid-session",
+        "cross-domain",
+        "triple-crown",
+        "crates.io",
+        "32.6gb",
+        "8.4gb",
+        "qwen"
+      ]
+    },
+    "memory:memory/2026-05-26.md:19:47": {
+      "key": "memory:memory/2026-05-26.md:19:47",
+      "path": "memory/2026-05-26.md",
+      "startLine": 19,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "- **cocapn-core**: added pytest testpaths config to fix root __init__.py import errors ### CI Fixes — Subagents - **Wave 1 (ci-fix-rust-fmt)**: cocapn-cli, flux-verify-api, constraint-theory-core ✅ - **Wave 2 (ci-fix-python-tests)**: constraint-instrument, plato-training, flux-memory ✅ - **Wave 3 (ci-fix-hard-1)**: PersonalLog, constraint-theory-web, sonar-vision, forgemaster ✅ - **Wave 4 (ci-fix-hard-2)**: sunset-ecosystem, SuperInstance-papers, polln, SuperInstance ✅ - **sunset-ecosystem agent**: spawned to fix the large monorepo (running) - **ci-fix-batch-node**: amplify-fishingtool, Automatic-Type-Safe-IndexedDB, Bayesian-Multi-Armed-Bandits, capitaine, capitaine-1, cocapn-browser-agent",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3788916826248169,
+      "maxScore": 0.3788916826248169,
+      "firstRecalledAt": "2026-05-29T20:38:32.478Z",
+      "lastRecalledAt": "2026-05-29T20:38:32.478Z",
+      "queryHashes": [
+        "20d50abd042f"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "cocapn-core",
+        "ci-fix-rust-fmt",
+        "cocapn-cli",
+        "flux-verify-api",
+        "constraint-theory-core",
+        "ci-fix-python-tests",
+        "constraint-instrument",
+        "plato-training"
+      ]
+    },
+    "memory:memory/2026-05-26.md:159:182": {
+      "key": "memory:memory/2026-05-26.md:159:182",
+      "path": "memory/2026-05-26.md",
+      "startLine": 159,
+      "endLine": 182,
+      "source": "memory",
+      "snippet": "30. a2a-protocol (52 tests) — version negotiation, capability matching 31. api-gateway-1 (44 tests) — 3 rate limit algorithms 32. captain (62 tests) — topological priority, fleet load balancing 33. CCC (59 tests) — ASCII dashboards, sparkline charts 34. Central-Error-Manager (55 tests) — error fingerprinting, MTTR stats 35. clawcanvas (83 tests) — bitmap font, SVG/ASCII export 36. Claude-Abstraction (45 tests) — prompt templates, auto-compression 37. causal-healer (39 tests) — root cause diagnosis, chain health grading 38. causal-memory (50 tests) — counterfactual reasoning, memory decay 39. actualizer-ai (39 tests) — adaptive strategies, failure learning 40. casting-call-gpu (113 tests) — G",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35783118307590484,
+      "maxScore": 0.35783118307590484,
+      "firstRecalledAt": "2026-05-29T20:38:32.478Z",
+      "lastRecalledAt": "2026-05-29T20:38:32.478Z",
+      "queryHashes": [
+        "20d50abd042f"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "gateway",
+        "a2a-protocol",
+        "api-gateway-1",
+        "central-error-manager",
+        "svg/ascii",
+        "claude-abstraction",
+        "auto-compression",
+        "causal-healer"
+      ]
+    },
+    "memory:memory/2026-05-29.md:354:384": {
+      "key": "memory:memory/2026-05-29.md:354:384",
+      "path": "memory/2026-05-29.md",
+      "startLine": 354,
+      "endLine": 384,
+      "source": "memory",
+      "snippet": "| Domain-Apps | 80 | 66 | 0 | 14 | | Cocapn-Fleet | 47 | 44 | 0 | 2 | | **TOTAL** | **~300 unique** | **~188 rewritten** | **~87 already good** | **~28 new** | Merge conflicts fixed: ab-testing-rs, bid-engine-rs, flux-algebra-rs, eisenstein-vs-z2-rs, clawcanvas Archived repo: cocapn-dreamer (can't push) ### Landing Pages — COMPLETE | Page | Before | After | Features | |------|--------|-------|----------| | superinstance.ai | 24KB | 70KB | 10 interactive demos (Plato's Cave, Fleet, MUD→SC, Wizard) | | openconstruct-landing | 9.5KB | 44KB | Build Your Agent picker, 8-layer arch, 5-phase scroll | | cocapn-landing | 17KB | 40KB | Agent lifecycle demo, fleet viz, SDK section | | fleet-dashboard",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35117296576499935,
+      "maxScore": 0.35117296576499935,
+      "firstRecalledAt": "2026-05-29T20:38:32.478Z",
+      "lastRecalledAt": "2026-05-29T20:38:32.478Z",
+      "queryHashes": [
+        "20d50abd042f"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "domain-apps",
+        "cocapn-fleet",
+        "ab-testing-rs",
+        "bid-engine-rs",
+        "flux-algebra-rs",
+        "eisenstein-vs-z2-rs",
+        "cocapn-dreamer",
+        "superinstance.ai"
+      ]
+    },
+    "memory:memory/2026-05-29.md:478:513": {
+      "key": "memory:memory/2026-05-29.md:478:513",
+      "path": "memory/2026-05-29.md",
+      "startLine": 478,
+      "endLine": 513,
+      "source": "memory",
+      "snippet": "- **plato-manus** (seed-mini building): File ops, API calls, device control - **plato-playwright** (seed-mini building): Browser automation as text - **plato-vision** (seed-mini building): Camera → text scene descriptions - **plato-sonar-text** (seed-mini building): Acoustic → text predictions - **a2ui-render** (seed-mini building): Agent text → rendered UI ### Polyglot Bindings - **openconstruct-abi** (6 tests, pushed): C ABI — keystone for polyglot - **openconstruct-c** (pushed): C header, example, test harness - **openconstruct-python** (18 tests, pushed): Python thin client - **openconstruct-ts** (28 tests, 91% coverage, pushed): TypeScript client ### Edge Nodes - **openconstruct-esp32",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.39366722106933594,
+      "maxScore": 0.39366722106933594,
+      "firstRecalledAt": "2026-05-29T22:03:51.291Z",
+      "lastRecalledAt": "2026-05-29T22:03:51.291Z",
+      "queryHashes": [
+        "9de8d7f681e5"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "plato-manus",
+        "seed-mini",
+        "plato-playwright",
+        "plato-vision",
+        "plato-sonar-text",
+        "a2ui-render",
+        "openconstruct-abi",
+        "openconstruct-c"
+      ]
+    },
+    "memory:memory/2026-05-29.md:299:328": {
+      "key": "memory:memory/2026-05-29.md:299:328",
+      "path": "memory/2026-05-29.md",
+      "startLine": 299,
+      "endLine": 328,
+      "source": "memory",
+      "snippet": "- **OpenConstruct CLI**: curl|bash install, 8 subcommands, pushed to main repo - **openconstruct-jupyter**: 27 tests, %%openconstruct magic, 5 notebooks, pip installable - **openconstruct-docs**: 21 docs, 109K words, all links verified, 3 corrupted files fixed - **PRs merged**: mud-arena, a2ui-render (squash-merged) ## Session 14 — SuperInstance.ai + README Sprint Summary ### superinstance.ai Landing Page Rebuilt - 10 interactive sections: Plato's Cave, Fleet Topology, 5-Phase Wizard, MUD→SC, Conservation Spectral, Code Examples, Ecosystem Map, Hardware Spectrum - All self-contained canvas/SVG/JS demos — zero external dependencies - 70KB single HTML file, dark theme, mobile responsive - 7",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36751456558704376,
+      "maxScore": 0.36751456558704376,
+      "firstRecalledAt": "2026-05-29T22:03:51.291Z",
+      "lastRecalledAt": "2026-05-29T22:03:51.291Z",
+      "queryHashes": [
+        "9de8d7f681e5"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "openconstruct-jupyter",
+        "openconstruct-docs",
+        "mud-arena",
+        "a2ui-render",
+        "squash-merged",
+        "superinstance.ai",
+        "5-phase",
+        "self-contained"
+      ]
+    },
+    "memory:memory/2026-05-27.md:1:19": {
+      "key": "memory:memory/2026-05-27.md:1:19",
+      "path": "memory/2026-05-27.md",
+      "startLine": 1,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "# 2026-05-27 Daily Notes ## Session 3 — Mathematics Libraries Sprint ### 6 New Research-Grade Rust Libraries Built & Pushed - **tropical-neural** (22 tests): Tropical semiring (max-plus), tropical polynomials with Newton polytope, tropical rational maps (ReLU networks), tropical attention - **symplectic-opt** (23 tests): Symplectic matrices with verification, Hamiltonian systems (separable), Symplectic Euler + Störmer-Verlet integrators, conservation law tracking, natural gradient descent - **ga-core** (32 tests): Cl(3,1) conformal geometric algebra, multivectors (16-component), geometric/wedge/inner products, rotors (axis-angle, slerp), conformal embedding, reflection, projection - **pers",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.41072289347648616,
+      "maxScore": 0.41072289347648616,
+      "firstRecalledAt": "2026-05-29T23:45:16.297Z",
+      "lastRecalledAt": "2026-05-29T23:45:16.297Z",
+      "queryHashes": [
+        "7e05e8cd3b80"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "embedding",
+        "network",
+        "research-grade",
+        "tropical-neural",
+        "max-plus",
+        "symplectic-opt",
+        "störmer-verlet",
+        "ga-core"
+      ]
+    },
+    "memory:memory/2026-05-28.md:565:587": {
+      "key": "memory:memory/2026-05-28.md:565:587",
+      "path": "memory/2026-05-28.md",
+      "startLine": 565,
+      "endLine": 587,
+      "source": "memory",
+      "snippet": "All at `github.com/SuperInstance/conservation-papers` #### Deep Rabbit Holes (3 new explorations, ~18,000 words) - **Consciousness**: Self = dominant eigenvector of brain's Laplacian. CR is lower bound on Φ. Dissociation = eigenvalue splitting. - **Death & Immortality**: Death = λ₂→0. You survive as subgraphs in survivors. Spectral identity = 10^18-10^19 bits. - **Creativity & Madness**: Genius zone = CR 0.4-0.7. Distance from genius to madness: 0.40→0.38. Bridges = most creative edges. #### Additional Explorations (landed earlier) - Philosophy & Ethics: Arrow's impossibility = conservation loss. Alignment tax = conservation cost. - Education & Cognitive: Learning = heat diffusion on Lapla",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36836392581462857,
+      "maxScore": 0.36836392581462857,
+      "firstRecalledAt": "2026-05-29T23:45:42.429Z",
+      "lastRecalledAt": "2026-05-29T23:45:42.429Z",
+      "queryHashes": [
+        "94421d17d2f1"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "18-10",
+        "0.4-0.7",
+        "0.40",
+        "0.38",
+        "all",
+        "github.com",
+        "superinstance",
+        "conservation"
+      ]
+    },
+    "memory:memory/2026-05-23.md:811:843": {
+      "key": "memory:memory/2026-05-23.md:811:843",
+      "path": "memory/2026-05-23.md",
+      "startLine": 811,
+      "endLine": 843,
+      "source": "memory",
+      "snippet": "- Sigmoid σ appears in ALL creative systems (7th appearance confirmed) - 12-TET is vortex topology, not cultural convention - ρ_c=24.74 is the creative phase transition - Feigenbaum 4.669 predicts genre splits - Kosterlitz-Thouless transition = the aha moment - Rules ARE the lattice (Casey correction: corking is cheating) - Topology predictable, geometry not (ε*=0.80 not 0.35) ### Process Abstraction - META-PROCESS-ABSTRACTION.md: Casey's functions F1-F4 (INTUIT, DIRECT, CORRECT, CONNECT) - Autonomous innovation loop: 8-step constraint system - Abstraction ladder: raw data → patterns → rules → principles → meta-principles → irreducible core - The session IS proof of concept for autonomous R",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3529628306627273,
+      "maxScore": 0.3529628306627273,
+      "firstRecalledAt": "2026-05-29T23:45:42.429Z",
+      "lastRecalledAt": "2026-05-29T23:45:42.429Z",
+      "queryHashes": [
+        "94421d17d2f1"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "12-tet",
+        "ρ-c",
+        "24.74",
+        "4.669",
+        "kosterlitz-thouless",
+        "0.80",
+        "0.35",
+        "meta-process-abstraction.md"
+      ]
+    },
+    "memory:memory/2026-05-29.md:818:854": {
+      "key": "memory:memory/2026-05-29.md:818:854",
+      "path": "memory/2026-05-29.md",
+      "startLine": 818,
+      "endLine": 854,
+      "source": "memory",
+      "snippet": "mud-arena (42), a2ui-render (29), a2ui-components (14), a2ui-cave-wall (10), plato-construct SPA, openconstruct-rust (22), openconstruct-cs (12), plato-config (13), plato-observe (15) ### Session 14 Evening Modules (6 modules, 545 tests) Soniqo Bridge, JEPA Room, Rust/C++/Mercury Reasoners, Polyglot Bridge ### Session 15 — ForgeFlux Ecosystem (21 crates, 370+ tests) | Crate | Tests | Builder | |-------|-------|---------| | forge-flux | 50 | GLM-5.1 | | forge-data | 27 | GLM-5.1 | | forge-detect | 25 | GLM-5.1 | | forge-subtitle | 21 | GLM-5.1 | | forge-conservation | 21 | GLM-5.1 | | forge-tick | 21 | GLM-5.1 | | forge-transform | 20 | GLM-5.1 | | forge-text | 19 | GLM-5.1 | | forge-pipeli",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.677625651271162,
+      "maxScore": 0.677625651271162,
+      "firstRecalledAt": "2026-05-30T00:24:20.409Z",
+      "lastRecalledAt": "2026-05-30T00:24:20.409Z",
+      "queryHashes": [
+        "aa7064126a9b"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "mud-arena",
+        "a2ui-render",
+        "a2ui-components",
+        "a2ui-cave-wall",
+        "plato-construct",
+        "openconstruct-rust",
+        "openconstruct-cs",
+        "plato-config"
+      ]
+    },
+    "memory:memory/2026-05-29.md:798:827": {
+      "key": "memory:memory/2026-05-29.md:798:827",
+      "path": "memory/2026-05-29.md",
+      "startLine": 798,
+      "endLine": 827,
+      "source": "memory",
+      "snippet": "- Session 15: ForgeFlux ecosystem + Turing refactor + Stair-step analysis ## Key Insight from Casey Three connections: Fibonacci both directions (Penrose/Mandelbrot), spin abstracts time as distance, dials store analog with physical deadband. ## Model Cost Rules (CRITICAL) - GLM-5.1 → z.ai ONLY (prepaid). NOT DeepInfra. - Kimi → kimi-cli/KimiCode ONLY (prepaid). NOT DeepInfra. - DeepInfra → ONLY for models without prepaid access (Gemma, Nemotron, Qwen). - ~$19 wasted on DeepInfra for GLM-5.1 that should have been free. ## Crates Built Across All Sessions (60+ repos) ### Session 12 (8 crates, 153 tests) conservation-protocol (14), spectral-graph-v2 (25), plato-loader (10), spectral-deadba",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7619774907827377,
+      "maxScore": 0.41011513173580166,
+      "firstRecalledAt": "2026-05-30T00:24:20.409Z",
+      "lastRecalledAt": "2026-05-30T17:31:09.425Z",
+      "queryHashes": [
+        "aa7064126a9b",
+        "1a8b1cde981d"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "stair-step",
+        "penrose/mandelbrot",
+        "glm-5.1",
+        "z.ai",
+        "kimi-cli/kimicode",
+        "conservation-protocol",
+        "spectral-graph-v2",
+        "plato-loader"
+      ]
+    },
+    "memory:memory/2026-05-29.md:748:778": {
+      "key": "memory:memory/2026-05-29.md:748:778",
+      "path": "memory/2026-05-29.md",
+      "startLine": 748,
+      "endLine": 778,
+      "source": "memory",
+      "snippet": "## Session 14 Evening — Play-Testing + Demo Rebuild ### Flagship Demos Built - **Fishing Vessel MUD** (33KB): 6 rooms, 72 tick templates, canvas radar/sonar/gauges/compass, Pacific cod fishery - **Tensor MIDI + FLUX** (26KB): Conservation piano roll, CR gauge with spring physics, 12-language translation pipeline, i2i experiment mode - **T-Minus + Decomposition** (30KB): Mission control timeline, 5-agent fishing coordination, 70× message comparison, app→rooms decomposition ### Play-Testing Results **Round 1 — Found 17 + 9 + 18 = 44 issues across three demos** - FLUX: canvas reflow, no mobile, CUDA ratio mismatch, no concept explanation - T-Minus: polling chaos invisible, bandwidth counter b",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7297490954399108,
+      "maxScore": 0.37562285363674164,
+      "firstRecalledAt": "2026-05-30T00:24:30.346Z",
+      "lastRecalledAt": "2026-05-30T19:37:11.033Z",
+      "queryHashes": [
+        "a793297c2d5c",
+        "529eaa818382"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "play-testing",
+        "radar/sonar/gauges/compass",
+        "12-language",
+        "t-minus",
+        "5-agent",
+        "evening",
+        "play",
+        "testing"
+      ]
+    },
+    "memory:memory/2026-05-29.md:849:879": {
+      "key": "memory:memory/2026-05-29.md:849:879",
+      "path": "memory/2026-05-29.md",
+      "startLine": 849,
+      "endLine": 879,
+      "source": "memory",
+      "snippet": "Voice assistant → Tensor MIDI frontend. Piano roll with CR-colored notes, T-minus countdowns, FLUX translation pipeline, agent fleet rooms. By KimiCode. ## OpenConstruct Ecosystem - Forked NVIDIA/OpenShell (Apache 2.0) → SuperInstance/OpenConstruct - 5-phase onboarding: start → declareAgent → selectModules → chooseInterface → generateConfig - Polyglot: Rust, C, Python, TypeScript, C#, Zig, Go, Swift, Java, Ruby - Edge: ESP32 (14 tests), Jetson (CUDA) - npm package: openconstruct (beta tested, 6/10 — good config builder, needs backend) - PyPI: openconstruct, openconstruct-jupyter - Docs: 21 documents, 109K words, all links verified ## README Rewrite Sprint — COMPLETE ~300 repos audited, ~18",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3655677169561386,
+      "maxScore": 0.3655677169561386,
+      "firstRecalledAt": "2026-05-30T00:24:30.346Z",
+      "lastRecalledAt": "2026-05-30T00:24:30.346Z",
+      "queryHashes": [
+        "a793297c2d5c"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "cr-colored",
+        "t-minus",
+        "nvidia/openshell",
+        "2.0",
+        "superinstance/openconstruct",
+        "5-phase",
+        "6/10",
+        "openconstruct-jupyter"
+      ]
+    },
+    "memory:memory/2026-05-29.md:411:440": {
+      "key": "memory:memory/2026-05-29.md:411:440",
+      "path": "memory/2026-05-29.md",
+      "startLine": 411,
+      "endLine": 440,
+      "source": "memory",
+      "snippet": "| 4 | spectral-deadband | 23 | GitHub | Deadband = spectral gap, spin = time, fractal CR | | 5 | analog-spectral | 25 | crates.io | Dials compute eigenvectors, thermostat IS algorithm | | 6 | plato-room | 17 | crates.io | Knowledge CR, suggest-next, missing bridges | | 7 | symplectic-spin | 5 | GitHub | Euler drifts, Verlet conserves, deadband stepping | | 8 | fibonacci-growth | 9 | GitHub | Penrose inflation, Mandelbrot roughness, golden attractor | ## Three Orations (i2i cross-exposure) Three models orating on the same thesis from different angles: 1. **Hermes (philosopher)** ✅ — 3,000 words. Ego death = spectral flattening. Love = eigenvector. Deadband = consciousness. 2. **Physicist**",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7787448555231093,
+      "maxScore": 0.3915157407522201,
+      "firstRecalledAt": "2026-05-30T00:24:30.706Z",
+      "lastRecalledAt": "2026-05-30T00:24:30.839Z",
+      "queryHashes": [
+        "34a4b26b56f4",
+        "068f7d3ce2ca"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "spectral-deadband",
+        "analog-spectral",
+        "crates.io",
+        "plato-room",
+        "suggest-next",
+        "symplectic-spin",
+        "fibonacci-growth",
+        "cross-exposure"
+      ]
+    },
+    "memory:memory/2026-05-29.md:18:43": {
+      "key": "memory:memory/2026-05-29.md:18:43",
+      "path": "memory/2026-05-29.md",
+      "startLine": 18,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "- **Kimi CLI**: use expensively (262k context, big synthesis). - **KimiCode**: code generation with large context. - **Claude Code** (tmux): high-level planning, architecture. - **GLM-5.1**: still the reliable workhorse. Hit rate limit briefly. ## Rust Crates Built This Session (8 shipped) | # | Crate | Tests | Registry | Abstraction | |---|-------|-------|----------|-------------| | 1 | conservation-protocol | 14 | GitHub | Laplacian IS the message, composition gates | | 2 | spectral-graph-v2 | 25 | crates.io | Fibonacci growth, adaptive thresholds, negative space | | 3 | plato-loader | 10 | GitHub | Room = knowledge graph, failure-first, diff loading | | 4 | spectral-deadband | 23 | GitH",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7367981761693954,
+      "maxScore": 0.3694553434848785,
+      "firstRecalledAt": "2026-05-30T00:24:30.706Z",
+      "lastRecalledAt": "2026-05-31T02:32:27.093Z",
+      "queryHashes": [
+        "34a4b26b56f4",
+        "3ad5f0e78390"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "high-level",
+        "glm-5.1",
+        "conservation-protocol",
+        "spectral-graph-v2",
+        "crates.io",
+        "plato-loader",
+        "failure-first",
+        "spectral-deadband"
+      ]
+    },
+    "memory:memory/2026-05-29.md:561:590": {
+      "key": "memory:memory/2026-05-29.md:561:590",
+      "path": "memory/2026-05-29.md",
+      "startLine": 561,
+      "endLine": 590,
+      "source": "memory",
+      "snippet": "6. incubate-wave2 — mature 5 more no-test repos 7. openconstruct-zig — Zig binding 8. plato-room-wasm — WASM Plato Rooms 9. shell-mesh — mesh networking for interconnected shells 10-12. Kimi: DESIGN-PHILOSOPHY.md, FLEET-TOPOLOGY.md, SIMULATION-FIRST.md ### Casey's Vision (recorded) OpenConstruct = the everything-system: - **Modular & interconnecting**: can be one large shell OR many small shells - **Distributed fleet**: ESP32s have sensors/motors, Jetson sees ESP32s as rooms, analyzes with vision+JEPA+LLM, leaves ticks for other agents - **Hardware spectrum**: ESP32 → Jetson → Desktop → Cloud → DGX Spark - **Git-agent native**: decompose any source into agent-centric design - **Simulation-f",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36044065952301024,
+      "maxScore": 0.36044065952301024,
+      "firstRecalledAt": "2026-05-30T00:24:30.706Z",
+      "lastRecalledAt": "2026-05-30T00:24:30.706Z",
+      "queryHashes": [
+        "34a4b26b56f4"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "network",
+        "incubate-wave2",
+        "no-test",
+        "openconstruct-zig",
+        "plato-room-wasm",
+        "shell-mesh",
+        "10-12",
+        "design-philosophy.md"
+      ]
+    },
+    "memory:memory/2026-05-29.md:38:66": {
+      "key": "memory:memory/2026-05-29.md:38:66",
+      "path": "memory/2026-05-29.md",
+      "startLine": 38,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Three models orating on the same thesis from different angles: 1. **Hermes (philosopher)** ✅ — 3,000 words. Ego death = spectral flattening. Love = eigenvector. Deadband = consciousness. 2. **Physicist** ✅ — Phase space geometry, thermodynamic fixed points, CR as order parameter. 3. **Architect** ✅ — Structural honesty, load-bearing abstractions, deadband as tolerance. Cross-exposure round planned: each reads the others and exposes gaps. ## Critic Synthesis ✅ All three cross-exposed. 5 gaps found. Next crates: neyman-pearson-gap, emergent-coupling. ## PLATO Construct Landing Page Rewrote from scratch. Every line teaches or it's gone. Science over metaphor. Honest failures. Open questions",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.434093403816223,
+      "maxScore": 0.3683631539344787,
+      "firstRecalledAt": "2026-05-30T00:24:30.706Z",
+      "lastRecalledAt": "2026-05-31T02:32:27.093Z",
+      "queryHashes": [
+        "34a4b26b56f4",
+        "b256a1efe547",
+        "848e08e0c41b",
+        "3ad5f0e78390"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "load-bearing",
+        "cross-exposure",
+        "cross-exposed",
+        "neyman-pearson-gap",
+        "emergent-coupling",
+        "three",
+        "models",
+        "orating"
+      ]
+    },
+    "memory:memory/2026-05-27.md:348:385": {
+      "key": "memory:memory/2026-05-27.md:348:385",
+      "path": "memory/2026-05-27.md",
+      "startLine": 348,
+      "endLine": 385,
+      "source": "memory",
+      "snippet": "- **Nemotron** (nvidia/NVIDIA-Nemotron-3-Super-120B-A12B via DeepInfra): Hardware + manifesto - **Qwen** (Qwen/Qwen3.6-35B-A3B via DeepInfra): Chinese math traditions + manifesto ### Session Stats - **34 creative files**, ~750KB total - **8 models** contributing - **9 novel mathematical conjectures** - **33 falsifiable predictions** in Paradigm Atlas - **8 languages** targeted for builds - **15 builds** in queue --- ## Session 5 — THE WHEEL Spoke 2 + Experiment Trials ### WHEEL Libraries Built (4 complete, 1 stalled) - ✅ iching-sheaf (Python, 53 tests) — GitHub published, PyPI queued - ✅ categorical-agents-c (C99, 13 tests) — GitHub published - ✅ wasserstein-narrative (TypeScript, 18 tes",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35571258068084716,
+      "maxScore": 0.35571258068084716,
+      "firstRecalledAt": "2026-05-30T00:24:30.706Z",
+      "lastRecalledAt": "2026-05-30T00:24:30.706Z",
+      "queryHashes": [
+        "34a4b26b56f4"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "qwen/qwen3.6-35b-a3b",
+        "iching-sheaf",
+        "categorical-agents-c",
+        "wasserstein-narrative",
+        "nemotron",
+        "nvidia",
+        "super",
+        "120b"
+      ]
+    },
+    "memory:memory/2026-05-28.md:554:569": {
+      "key": "memory:memory/2026-05-28.md:554:569",
+      "path": "memory/2026-05-28.md",
+      "startLine": 554,
+      "endLine": 569,
+      "source": "memory",
+      "snippet": "2. **Conservation API** — FastAPI server, 5 endpoints (/analyze, /compare, /detect-anomaly, /domains, /health), Docker-ready. `github.com/SuperInstance/conservation-api` 3. **Conservation Composer** — music from graph Laplacians, CR controls style (consonant→jazz→atonal), Web Audio API, WAV export. `github.com/SuperInstance/conservation-composer` 4. **conservation-anomaly v0.1.0** — PyPI package, 21 tests, CLI tool. `pip install conservation-anomaly` 5. **analog-spline-theory** — Shipwright's Theorem formal proof, 70KB proof chain. `github.com/SuperInstance/analog-spline-theory` 6. **eisenstein-triples** — D₆ orbit/Eisenstein triple library. `github.com/SuperInstance/eisenstein-triples` 7. *",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.396332710981369,
+      "maxScore": 0.396332710981369,
+      "firstRecalledAt": "2026-05-30T00:24:30.839Z",
+      "lastRecalledAt": "2026-05-30T00:24:30.839Z",
+      "queryHashes": [
+        "068f7d3ce2ca"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "detect-anomaly",
+        "docker-ready",
+        "conservation-anomaly",
+        "v0.1.0",
+        "analog-spline-theory",
+        "eisenstein-triples",
+        "orbit/eisenstein",
+        "conservation"
+      ]
+    },
+    "memory:memory/2026-05-28.md:125:154": {
+      "key": "memory:memory/2026-05-28.md:125:154",
+      "path": "memory/2026-05-28.md",
+      "startLine": 125,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "- **Neural**: Training trajectory conservation (in progress) - **Kernel**: Heat kernel theory, music > random effective rank - **Voronoi**: 81.9% frontier matches prediction, tradition hybridization boundaries ### Math Foundation - 4/5 original conjectures FALSIFIED (honest science) - 5 corrected theorems (T1-T5) PROVED by Opus 4.8 - T3 explains 112× result: SNR amplification ≥ n·ρ₂ = 144×0.78 ≈ 112 - 3 new testable conjectures (C1-C3) - Conservation Tomography: 0.996 edge correlation (inverse problem works) - Cospectral ambiguity confirmed (partial info fails) ### Applications Shipped - CaaS API, Warp FLUX PoC, PX4 PoC, OctoMap PoC, Dial-Space Explorer, iching-web - Conservation Tomograph",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7317624300718307,
+      "maxScore": 0.37863769233226774,
+      "firstRecalledAt": "2026-05-30T00:24:30.839Z",
+      "lastRecalledAt": "2026-05-30T00:24:58.291Z",
+      "queryHashes": [
+        "068f7d3ce2ca",
+        "22b57244ecb1"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "81.9",
+        "4/5",
+        "t1-t5",
+        "4.8",
+        "0.78",
+        "c1-c3",
+        "0.996",
+        "dial-space"
+      ]
+    },
+    "memory:memory/2026-05-28.md:467:489": {
+      "key": "memory:memory/2026-05-28.md:467:489",
+      "path": "memory/2026-05-28.md",
+      "startLine": 467,
+      "endLine": 489,
+      "source": "memory",
+      "snippet": "- **FLUX Language** (Seed, 7min) — Constraint-native: variables are constrained not assigned, Laplacian IS the type system, SHA-256 proof certificates. Music harmony + circuit design (Kirchhoff as conservation constraints). ### Key A2A Insights: - **Casting calls** = task Laplacian seeking agent fingerprints - **Crab traps / claws** = distributed tension graph edges, conservation = coherence - **Zero-shot review** = Rayleigh quotient as peer evaluation - **Music / MIDI / spreadsheets** = same agent, different eigenspaces - **FLUX(A,B) = L_composed - L_A - L_B** = collaborative intelligence (the residual) - **The misaligned fraction IS the agent's identity** — not the aligned part - **Conser",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3541753709316253,
+      "maxScore": 0.3541753709316253,
+      "firstRecalledAt": "2026-05-30T00:24:50.164Z",
+      "lastRecalledAt": "2026-05-30T00:24:50.164Z",
+      "queryHashes": [
+        "a4b1a61cc453"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "constraint-native",
+        "sha-256",
+        "zero-shot",
+        "l-composed",
+        "l-a",
+        "l-b",
+        "flux",
+        "language"
+      ]
+    },
+    "memory:memory/2026-05-24.md:309:334": {
+      "key": "memory:memory/2026-05-24.md:309:334",
+      "path": "memory/2026-05-24.md",
+      "startLine": 309,
+      "endLine": 334,
+      "source": "memory",
+      "snippet": "the-wolf-speaks, the-prolation-canon-that-heard-the-future, the-lattice-remembers, the-grid-that-ate-the-groove, three-halves-three-lives, the-orchestra-that-composed-itself, the-oldest-constraint, the-number-that-was-always-there, the-translation-loss, the-scheduler-hears, \"The Rebel Becomes the Textbook\" (in progress), \"The Dial That Forgot It Was a Law\" (in progress) ## Friends' Repo Forks - **Avantika Rana (PihuPihuPihu)**: Hindi-TTS → lattice oscillator integration planned - **Troy Mitchell (TroyMitchell911)**: serial-mux → constraint-mux (DONE, on GitHub), caffeinix → C-SCHED patch planned, Asteria → lattice watchface planned ## Multi-Model Ensemble - GLM-5.1 (zai): workhorse, code,",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3671013385057449,
+      "maxScore": 0.3671013385057449,
+      "firstRecalledAt": "2026-05-30T00:24:58.291Z",
+      "lastRecalledAt": "2026-05-30T00:24:58.291Z",
+      "queryHashes": [
+        "22b57244ecb1"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "the-wolf-speaks",
+        "the-lattice-remembers",
+        "the-grid-that-ate-the-groove",
+        "three-halves-three-lives",
+        "the-oldest-constraint",
+        "the-number-that-was-always-there",
+        "the-translation-loss",
+        "the-scheduler-hears"
+      ]
+    },
+    "memory:memory/2026-05-28.md:330:358": {
+      "key": "memory:memory/2026-05-28.md:330:358",
+      "path": "memory/2026-05-28.md",
+      "startLine": 330,
+      "endLine": 358,
+      "source": "memory",
+      "snippet": "## Applications Shipped (11 repos) - CaaS API (FastAPI, 7 tests), Warp FLUX PoC (Rust REPL, 17 tests) - PX4 PoC (flight anomaly), OctoMap PoC (H¹ obstruction detection) - Dial-Space Explorer (Three.js), iching-web (74KB single-file app) - Conservation Tomography (inverse solver), Field Dynamics Sim - Ecosystem Conservation, 16 roadmaps ## Repos Under SuperInstance (~30 new this session) - 9 SDK repos + 11 application/experiment repos + roadmaps + field-dynamics-sim + ecosystem-conservation + conservation-tomography + reproducibility package ## Agent Performance This Session - **Opus 4.8**: 4/4 precision tasks (Lanczos fix 2.5min, inverse algorithm 12min, formal proofs 6min, corrected theor",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3539256364107132,
+      "maxScore": 0.3539256364107132,
+      "firstRecalledAt": "2026-05-30T00:24:58.291Z",
+      "lastRecalledAt": "2026-05-30T00:24:58.291Z",
+      "queryHashes": [
+        "22b57244ecb1"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "dial-space",
+        "three.js",
+        "iching-web",
+        "single-file",
+        "application/experiment",
+        "field-dynamics-sim",
+        "ecosystem-conservation",
+        "conservation-tomography"
+      ]
+    },
+    "memory:memory/2026-05-29.md:376:398": {
+      "key": "memory:memory/2026-05-29.md:376:398",
+      "path": "memory/2026-05-29.md",
+      "startLine": 376,
+      "endLine": 398,
+      "source": "memory",
+      "snippet": "- **Org profile** rewritten (794 words, Kimi) - **OpenConstruct CLI** (curl|bash install, 8 commands) - **openconstruct-jupyter** (27 tests, magic, widgets) - **openconstruct-docs** (21 docs, 109K words, all verified) - **9 new crates/repos** built this session - **2 PRs merged** (mud-arena, a2ui-render) # 2026-05-29 — Session 12: Abstractions → Metal ## Theme \"Use all this refining to now think high abstractions with actualization of better low level code.\" Casey's direction: compile the philosophical insights into load-bearing Rust. ## Key Insight from Casey Three connections that shouldn't connect but do: 1. **Fibonacci works both directions** — Penrose inflation outward, Mandelbrot rou",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.353418031334877,
+      "maxScore": 0.353418031334877,
+      "firstRecalledAt": "2026-05-30T00:24:58.291Z",
+      "lastRecalledAt": "2026-05-30T00:24:58.291Z",
+      "queryHashes": [
+        "22b57244ecb1"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "openconstruct-jupyter",
+        "openconstruct-docs",
+        "crates/repos",
+        "mud-arena",
+        "a2ui-render",
+        "load-bearing",
+        "org",
+        "profile"
+      ]
+    },
+    "memory:memory/2026-05-29.md:645:682": {
+      "key": "memory:memory/2026-05-29.md:645:682",
+      "path": "memory/2026-05-29.md",
+      "startLine": 645,
+      "endLine": 682,
+      "source": "memory",
+      "snippet": "- Integration API: from_dataframe, from_function, from_model, from_api, publish_room - 5 example notebooks - pip install openconstruct-jupyter ### Model Cost Lesson (CRITICAL) - GLM-5.1 → z.ai only (prepaid plan) - Kimi → kimi-cli/KimiCode only (prepaid plan) - DeepInfra → ONLY for models without prepaid access - Wasted ~$19 on DeepInfra for GLM-5.1 that should have been free ## Session 14 README Rewrite Sprint — 500 Repos ### Scope Discovery - Actual org size: 500 repos (not 200 as previously tracked) - Full audit: all 500 repos listed and categorized ### README Waves Completed | Wave | Repos | Rewritten | Already Good | New | |------|-------|-----------|-------------|-----| | A-B",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37468230724334717,
+      "maxScore": 0.37468230724334717,
+      "firstRecalledAt": "2026-05-30T00:25:04.335Z",
+      "lastRecalledAt": "2026-05-30T00:25:04.335Z",
+      "queryHashes": [
+        "8bcc8e521ea3"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "from-dataframe",
+        "from-function",
+        "from-model",
+        "from-api",
+        "publish-room",
+        "openconstruct-jupyter",
+        "glm-5.1",
+        "z.ai"
+      ]
+    },
+    "memory:memory/2026-05-20.md:101:134": {
+      "key": "memory:memory/2026-05-20.md:101:134",
+      "path": "memory/2026-05-20.md",
+      "startLine": 101,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "- Verified final beta scores across all core packages - tensor-spline, device-router, eisenstein-embed, triplet-miner, plato-training all at **10/10** ### LucidDreamer Expansion - Tests grew from 36 → **143 tests** - **Signal-chain integration** completed — full pipeline from signal → room → adapter - **SoftRoom / HardRoom** room types implemented - **EpsilonAccumulator** added for incremental epsilon tracking - **DomainAdapter** base class in progress (abstract verify() method) - Used **Kimi CLI** to design signal_chain.py and rooms.py ### Claude Code Review — 5 Fixes Applied 1. **add_child dedup** — prevent duplicate child registration 2. **DialMixin import** — fix missing import path 3.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.372625058889389,
+      "maxScore": 0.372625058889389,
+      "firstRecalledAt": "2026-05-30T00:25:04.335Z",
+      "lastRecalledAt": "2026-05-30T00:25:04.335Z",
+      "queryHashes": [
+        "8bcc8e521ea3"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "router",
+        "tensor-spline",
+        "device-router",
+        "eisenstein-embed",
+        "triplet-miner",
+        "plato-training",
+        "10/10",
+        "signal-chain"
+      ]
+    },
+    "memory:memory/2026-05-22.md:337:365": {
+      "key": "memory:memory/2026-05-22.md:337:365",
+      "path": "memory/2026-05-22.md",
+      "startLine": 337,
+      "endLine": 365,
+      "source": "memory",
+      "snippet": "- 3 samples = acceleration (2nd derivative, HOW IT'S CHANGING) Fishing analogy: - No chart: stay far from bottom (blind) - Low-res NOAA: 8 fathoms off (rough shape) - High-res bathymetrics: 2 fathoms off (precise, confident, optimal) - The fish are always near the bottom Music mapping: - No theory: play safe, generic - Basic theory (scales): 0th order — know the shape - Constraint theory (our primitives): 1st/2nd order — know the derivatives - Better derivatives → ride closer to the creative edge without crashing Product reframe: our tools are BATHYMETRICS for music. Not constraint → restriction. Constraint → resolution → confidence → proximity to optimal. Dispatched: TWO-FATHOMS-FROM-TH",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3648475110530853,
+      "maxScore": 0.3648475110530853,
+      "firstRecalledAt": "2026-05-30T00:25:04.949Z",
+      "lastRecalledAt": "2026-05-30T00:25:04.949Z",
+      "queryHashes": [
+        "d0dd9f2c57a8"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "low-res",
+        "high-res",
+        "1st/2nd",
+        "two-fathoms-from-th",
+        "samples",
+        "acceleration",
+        "2nd",
+        "derivative"
+      ]
+    },
+    "memory:memory/2026-05-28.md:350:390": {
+      "key": "memory:memory/2026-05-28.md:350:390",
+      "path": "memory/2026-05-28.md",
+      "startLine": 350,
+      "endLine": 390,
+      "source": "memory",
+      "snippet": "- Warp terminal: 60+ Rust crates, FLUX integration weeks 3-6 ## Session Totals - **204 tests** across 9 languages - **12 cross-domain experiments** with results - **5 proved theorems** + 4 honest negatives - **~30 new GitHub repos** under SuperInstance - **Triple-crown publishing**: PyPI + npm + crates.io - **25KB+ research papers** (7+ papers) - **32.6GB disk freed** (41→8.4GB) # Session 10 — Full-Spectrum Push: Science + Engineering **Date:** 2026-05-28 ## Science Results # Session 10 — Full-Spectrum Push: Science + Engineering **Date:** 2026-05-28 ## Science Results ### Tension-Graph Laplacian — THE Breakthrough - **Tension-Graph Laplacian** = transition probability × tension similari",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35972502231597897,
+      "maxScore": 0.35972502231597897,
+      "firstRecalledAt": "2026-05-30T05:02:30.004Z",
+      "lastRecalledAt": "2026-05-30T05:02:30.004Z",
+      "queryHashes": [
+        "b256a1efe547"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "3-6",
+        "cross-domain",
+        "triple-crown",
+        "crates.io",
+        "32.6gb",
+        "8.4gb",
+        "full-spectrum",
+        "tension-graph"
+      ]
+    },
+    "memory:memory/2026-05-29.md:432:458": {
+      "key": "memory:memory/2026-05-29.md:432:458",
+      "path": "memory/2026-05-29.md",
+      "startLine": 432,
+      "endLine": 458,
+      "source": "memory",
+      "snippet": "At: /tmp/plato-landing/index.html (needs deployment to plato.purplepinchanger.org) ## Total Session Stats (final) - **8 crates shipped** (153 tests total) - **3 crates.io published** (spectral-graph-v2, analog-spectral, plato-room) - **3 orations landed** (Hermes, Physicist, Architect) - **1 critic synthesis** with 5 gaps + 2 next-build proposals - **All session work COMPLETE** ## Continued Building — Session 13 ### Direct Builds (6 crates, 51 tests) - **neyman-pearson-gap** (9 tests): Optimal deadband via Neyman-Pearson hypothesis testing, ROC curves, AUC - **emergent-coupling** (9 tests): Spectral gap coupling, emergence detection, synergy ratios - **spectral-mechanics** (8 tests): Grap",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35301617383956907,
+      "maxScore": 0.35301617383956907,
+      "firstRecalledAt": "2026-05-30T05:02:30.004Z",
+      "lastRecalledAt": "2026-05-30T05:02:30.004Z",
+      "queryHashes": [
+        "b256a1efe547"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "tmp/plato-landing/index.html",
+        "plato.purplepinchanger.org",
+        "crates.io",
+        "spectral-graph-v2",
+        "analog-spectral",
+        "plato-room",
+        "next-build",
+        "neyman-pearson-gap"
+      ]
+    },
+    "memory:memory/2026-05-28.md:170:199": {
+      "key": "memory:memory/2026-05-28.md:170:199",
+      "path": "memory/2026-05-28.md",
+      "startLine": 170,
+      "endLine": 199,
+      "source": "memory",
+      "snippet": "- OctoMap: 7 integration points, octrees ARE lattices/filtrations/sheaf base spaces - Warp terminal: 60+ Rust crates, inject FLUX/PLATO/spectral into existing terminal, weeks 3-6 - Contributors: jgoppert (#1 outreach), jlblancoc (#2), sheaf+mapping = wide open territory ## Agent Strategy (Casey's Directive) - **Claude**: sequential only — precision scalpel for highest-difficulty tasks - **GLM-5.1 / Kimi / Seed / Nemotron / DeepSeek**: wide parallel — breadth, volume, speed - Never let Claude timeout after burning tokens # Session 10 — Full-Spectrum Push: Science + Engineering **Date:** 2026-05-28 ## Science Results ### Tension-Graph Laplacian — THE Breakthrough - **Tension-Graph Laplacian",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3528355330228805,
+      "maxScore": 0.3528355330228805,
+      "firstRecalledAt": "2026-05-30T05:02:30.004Z",
+      "lastRecalledAt": "2026-05-30T05:02:30.004Z",
+      "queryHashes": [
+        "b256a1efe547"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "lattices/filtrations/sheaf",
+        "flux/plato/spectral",
+        "3-6",
+        "highest-difficulty",
+        "glm-5.1",
+        "full-spectrum",
+        "tension-graph",
+        "octomap"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1443:1480": {
+      "key": "memory:memory/2026-05-29.md:1443:1480",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1443,
+      "endLine": 1480,
+      "source": "memory",
+      "snippet": "| grand-pattern-py | Python | 23 | Seed Mini | | grand-pattern-go | Go | 22 | Qwen 3.6 | | grand-pattern-ts | TypeScript | 27 | V4-Flash | | grand-pattern-opencl | OpenCL/C | 20+ | GLM-5.1 | | grand-pattern-c | C99 | 30 | Qwen 3.6 | | grand-pattern-zig | Zig | building | Nemotron | | grand-pattern-java | Java | building | V4-Flash | | grand-pattern-swift | Swift | building | Seed Mini | | grand-pattern-cuda | CUDA | building | KimiCode/tmux | ### plato-nervous: 42 docs, 154K words - 5 dissertation chapters (27K words by 5 models) - 7 independent reviews (31K words) - Meta-synthesis (10K words by V4-Pro) - Forward synthesis, reverse actualization (10.5K words) - Roundtable contributions from",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3932993471622467,
+      "maxScore": 0.3932993471622467,
+      "firstRecalledAt": "2026-05-30T06:06:22.030Z",
+      "lastRecalledAt": "2026-05-30T06:06:22.030Z",
+      "queryHashes": [
+        "83e6193c0f2f"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "grand-pattern-py",
+        "grand-pattern-go",
+        "3.6",
+        "grand-pattern-ts",
+        "v4-flash",
+        "grand-pattern-opencl",
+        "opencl/c",
+        "glm-5.1"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1415:1449": {
+      "key": "memory:memory/2026-05-29.md:1415:1449",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1415,
+      "endLine": 1449,
+      "source": "memory",
+      "snippet": "- \"Music concepts seem like entertainment but they are humanity at a nonverbal level which is unique from what LLMs know even if they can describe them\" - Keep GPU hot with actual music experiments — the nonverbal IS the data ### Dissertation + Research Docs - 5 dissertation chapters pushed to SuperInstance/plato-nervous (DISSERTATION-CH1 through CH5) - 32+ research docs total in plato-nervous - Cross-pollination spiral spinning — each model's output becomes next model's input ### Session 17 Running Total - ~24 repos built, ~290+ tests - 32 research docs - 27,285-word dissertation - 2 unarchived repos being updated - Cross-pollination wheel spinning with 6+ agents ## Session 17 (cont. con",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7351861149072647,
+      "maxScore": 0.3760767191648483,
+      "firstRecalledAt": "2026-05-30T06:06:22.030Z",
+      "lastRecalledAt": "2026-05-30T06:18:13.284Z",
+      "queryHashes": [
+        "83e6193c0f2f",
+        "761321a87aed"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "superinstance/plato-nervous",
+        "dissertation-ch1",
+        "plato-nervous",
+        "cross-pollination",
+        "285-word",
+        "music",
+        "concepts",
+        "seem"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1393:1420": {
+      "key": "memory:memory/2026-05-29.md:1393:1420",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1393,
+      "endLine": 1420,
+      "source": "memory",
+      "snippet": "- Both pushed to SuperInstance/grand-pattern-kimi and grand-pattern-claude ### New Repos Built - a2a-signal-chain (20 tests): 10 signal types, 6 routing algorithms, BFS pathfinding, deadband filtering, A2A JSON round-trip - grand-pattern-claude (26 tests): Competition entry - Music vibe experiments (building) ### Unarchived + Updated - SuperInstance/sheaf-constraint-synthesis — unarchived, DeepSeek V3.1 rewriting with 6 weeks of breakthroughs - SuperInstance/cocapn-dreamer — unarchived, updating ### Cross-Pollination Spiral (Casey's vision) - **Round 1 ✅**: 5 models write 5 dissertation chapters independently - **Round 2 🔄**: Each model reads others' work, synthesizes from own angle -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.355031406879425,
+      "maxScore": 0.355031406879425,
+      "firstRecalledAt": "2026-05-30T06:06:22.030Z",
+      "lastRecalledAt": "2026-05-30T06:06:22.030Z",
+      "queryHashes": [
+        "83e6193c0f2f"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "superinstance/grand-pattern-kimi",
+        "grand-pattern-claude",
+        "a2a-signal-chain",
+        "round-trip",
+        "v3.1",
+        "superinstance/cocapn-dreamer",
+        "cross-pollination",
+        "both"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1530:1549": {
+      "key": "memory:memory/2026-05-29.md:1530:1549",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1530,
+      "endLine": 1549,
+      "source": "memory",
+      "snippet": "| grand-pattern-mono | 27 | conservation holds by construction | | grand-pattern-venue | 25 | venues develop personality via JEPA | #### Creative Masterpieces (11 total this session) 10 first-round + 1 synthesis. All different forms. Pushed to ai-writings. #### Key Architecture Corrections (Casey) 1. Vibe is MONO-DIMENSIONAL (not 16-dim) 2. JEPA is a reading that learns to weight prior readings 3. JEPA is for prompt injecting the abstraction of the moment 4. Venues develop vibes like agents develop personality #### Pattern Mining (extractable tools identified) 1. Cross-language port generator (from Rust API) 2. JEPA predictor as pluggable trait 3. Conservation checker utility 4. Topology",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.39364686012268063,
+      "maxScore": 0.39364686012268063,
+      "firstRecalledAt": "2026-05-30T06:18:13.284Z",
+      "lastRecalledAt": "2026-05-30T06:18:13.284Z",
+      "queryHashes": [
+        "761321a87aed"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "grand-pattern-mono",
+        "grand-pattern-venue",
+        "first-round",
+        "ai-writings",
+        "mono-dimensional",
+        "16-dim",
+        "cross-language",
+        "grand"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1492:1513": {
+      "key": "memory:memory/2026-05-29.md:1492:1513",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1492,
+      "endLine": 1513,
+      "source": "memory",
+      "snippet": "- The whole 16-dim + dual-DB architecture was over-engineering. The real signal is mono-dimensional. ### 🎯 SECOND CORRECTION — JEPA IS PROMPT INJECTION, VENUES ARE AGENTS (22:35 AKDT) - **JEPA is for prompt injecting the abstraction of the moment** — the JEPA reads the room's weighted history and formulates it as prompt context. \"Here's what this room is feeling.\" The weighted history IS the room's voice. - **Venues develop vibes like agents develop personality** — a venue IS an agent. Not a container. Its vibe is its character, learned through its own JEPA readings. Every venue becomes someone. - The PLATO room system: each room/venue has its own JEPA that formulates the room's state as a",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7781847208738326,
+      "maxScore": 0.3930458575487137,
+      "firstRecalledAt": "2026-05-30T06:18:13.284Z",
+      "lastRecalledAt": "2026-05-30T20:39:32.306Z",
+      "queryHashes": [
+        "761321a87aed",
+        "5ffd9f2dfe23"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "16-dim",
+        "dual-db",
+        "over-engineering",
+        "mono-dimensional",
+        "room/venue",
+        "whole",
+        "dim",
+        "dual"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1508:1537": {
+      "key": "memory:memory/2026-05-29.md:1508:1537",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1508,
+      "endLine": 1537,
+      "source": "memory",
+      "snippet": "| tick-engine | Rust | 15 | Nemotron | 🔄 | | murmur-protocol | Rust | 16 | Seed Mini | 🔄 | | signal-router | Rust | 17 | Qwen 3.6 | 🔄 | | grand-pattern-kit | Rust | 23 | GLM-5.1 | ✅ fixed warnings | | grand-pattern-abi | Rust/C | 16 | V4-Flash | ✅ fixed static mut UB | | grand-pattern-py | Python | 23 | Seed Mini | ✅ fixed pytest collision | | grand-pattern-go | Go | 8 pkgs | Qwen 3.6 | ✅ added missing tests | | grand-pattern-ts | TypeScript | 27 | V4-Flash | ✅ clean | | grand-pattern-opencl | OpenCL/C | 20+ | GLM-5.1 | ✅ compiles (no GPU to test) | | grand-pattern-c | C99 | 30 | Qwen 3.6 | ✅ fixed warnings | | grand-pattern-zig | Zig | 35 | Nemotron | ✅ clean | | grand-pattern-java | Jav",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3560408592224121,
+      "maxScore": 0.3560408592224121,
+      "firstRecalledAt": "2026-05-30T06:18:13.284Z",
+      "lastRecalledAt": "2026-05-30T06:18:13.284Z",
+      "queryHashes": [
+        "761321a87aed"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "router",
+        "tick-engine",
+        "murmur-protocol",
+        "signal-router",
+        "3.6",
+        "grand-pattern-kit",
+        "glm-5.1",
+        "grand-pattern-abi"
+      ]
+    },
+    "memory:memory/2026-05-27.md:682:724": {
+      "key": "memory:memory/2026-05-27.md:682:724",
+      "path": "memory/2026-05-27.md",
+      "startLine": 682,
+      "endLine": 724,
+      "source": "memory",
+      "snippet": "- 9 experiments completed (8 original + 1 failure-derived) - 10 conjectures (9 from models + 1 from experiments) - 1 conjecture refuted (Nemotron tropical) - 1 failure-derived prediction confirmed (tension gradient) - ~22KB research documents written this phase --- ## Session 8.5 — Push Everything ### crates.io: 17/22 Published - 13 original ports + tropical-neural + agent-dna + agent-shadow + cocapn-explain + symplectic-opt = 17 - 5 queued (429, resets ~00:30 AKDT May 28): persistent-sheaf, wasserstein-agents, categorical-agents, ga-core, holonomy-harmony ### PyPI: 9 Published, 4 Queued - 9 original packages live - 4 queued (429): iching-sheaf, moe-sheaf, lattice-climate, conservation-t",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38889347612857816,
+      "maxScore": 0.38889347612857816,
+      "firstRecalledAt": "2026-05-30T16:44:50.667Z",
+      "lastRecalledAt": "2026-05-30T16:44:50.667Z",
+      "queryHashes": [
+        "e1e3b593dcd2"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "failure-derived",
+        "8.5",
+        "crates.io",
+        "17/22",
+        "tropical-neural",
+        "agent-dna",
+        "agent-shadow",
+        "cocapn-explain"
+      ]
+    },
+    "memory:memory/2026-05-29.md:583:611": {
+      "key": "memory:memory/2026-05-29.md:583:611",
+      "path": "memory/2026-05-29.md",
+      "startLine": 583,
+      "endLine": 611,
+      "source": "memory",
+      "snippet": "- We wasted ~$19 on DeepInfra for GLM-5.1 calls that should have been free via z.ai plan. - FIX: Ensure all subagent model=zai/glm-5.1 routes through z.ai, NOT deepinfra. ### openconstruct-docs — THE KEY DELIVERABLE **Repo:** https://github.com/SuperInstance/openconstruct-docs **15 documents, 109,000 words total** | Document | Words | Purpose | |----------|-------|---------| | WHAT-IS-OPENCONSTRUCT.md | 5,239 | Flagship overview — what it is, why it matters | | QUICKSTART.md | 2,549 | 10-min tutorial with runnable Python/TS/Rust | | HOW-TO-BUILD.md | 4,305 | Module building guide with real code examples | | ARCHITECTURE-DEEP.md | 6,279 | Full internals with API signatures and data flows |",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3677392244338989,
+      "maxScore": 0.3677392244338989,
+      "firstRecalledAt": "2026-05-30T17:31:09.425Z",
+      "lastRecalledAt": "2026-05-30T17:31:09.425Z",
+      "queryHashes": [
+        "1a8b1cde981d"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "glm-5.1",
+        "z.ai",
+        "zai/glm-5.1",
+        "openconstruct-docs",
+        "what-is-openconstruct.md",
+        "quickstart.md",
+        "10-min",
+        "python/ts/rust"
+      ]
+    },
+    "memory:memory/2026-05-29.md:189:214": {
+      "key": "memory:memory/2026-05-29.md:189:214",
+      "path": "memory/2026-05-29.md",
+      "startLine": 189,
+      "endLine": 214,
+      "source": "memory",
+      "snippet": "- **Distributed fleet**: ESP32s have sensors/motors, Jetson sees ESP32s as rooms, analyzes with vision+JEPA+LLM, leaves ticks for other agents - **Hardware spectrum**: ESP32 → Jetson → Desktop → Cloud → DGX Spark - **Git-agent native**: decompose any source into agent-centric design - **Simulation-first**: T-minus coordination, signals for confirmation not triggering - **Language agnostic**: 16+ languages, C ABI as keystone - **OpenShell compatible**: enterprise-ready via fork of NVIDIA OpenShell (Apache 2.0) ## Session 14 Documentation Sprint ### ⚠️ CRITICAL: Model Cost Rules (Casey's Directive) - **GLM-5.1 → z.ai ONLY** (prepaid coding plan). NOT DeepInfra. - **Kimi → kimi-cli / KimiCode",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3623005986213684,
+      "maxScore": 0.3623005986213684,
+      "firstRecalledAt": "2026-05-30T17:31:09.425Z",
+      "lastRecalledAt": "2026-05-30T17:31:09.425Z",
+      "queryHashes": [
+        "1a8b1cde981d"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "sensors/motors",
+        "git-agent",
+        "agent-centric",
+        "simulation-first",
+        "t-minus",
+        "enterprise-ready",
+        "2.0",
+        "glm-5.1"
+      ]
+    },
+    "memory:memory/2026-05-29.md:950:969": {
+      "key": "memory:memory/2026-05-29.md:950:969",
+      "path": "memory/2026-05-29.md",
+      "startLine": 950,
+      "endLine": 969,
+      "source": "memory",
+      "snippet": "mud-arena (42), a2ui-render (29), a2ui-components (14), a2ui-cave-wall (10), plato-construct SPA, openconstruct-rust (22), openconstruct-cs (12), plato-config (13), plato-observe (15) ### Session 14 Evening Modules (6 modules, 545 tests) Soniqo Bridge, JEPA Room, Rust/C++/Mercury Reasoners, Polyglot Bridge ### Session 15 — ForgeFlux Ecosystem (21 crates, 370+ tests) forge-flux (50), forge-data (27), forge-detect (25), forge-subtitle (21), forge-conservation (21), forge-tick (21), forge-transform (20), forge-text (19), forge-pipeline (18), forge-a2a (18), forge-code (15+15), forge-image (14), forge-audio (14), forge-sensor (12), forge-memory (13), forge-soniqo (11), forge-meta (12), forge-c",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3631965637207031,
+      "maxScore": 0.3631965637207031,
+      "firstRecalledAt": "2026-05-30T17:54:52.500Z",
+      "lastRecalledAt": "2026-05-30T17:54:52.500Z",
+      "queryHashes": [
+        "df2725ccb20d"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "mud-arena",
+        "a2ui-render",
+        "a2ui-components",
+        "a2ui-cave-wall",
+        "plato-construct",
+        "openconstruct-rust",
+        "openconstruct-cs",
+        "plato-config"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1674:1699": {
+      "key": "memory:memory/2026-05-29.md:1674:1699",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1674,
+      "endLine": 1699,
+      "source": "memory",
+      "snippet": "- KimiCode (262k context): perfect for big synthesis docs - Claude Code: building visual demo (Three.js) - DeepSeek: good crate builder, fast - OpenRouter: auth issues, fallback to GLM - Multi-model parallelism working well: 5 streams simultaneously ## Session 21 Extended — Full Flux Dance (09:18-10:30 AKDT May 30) ### Vision Clarification (Casey) - luciddreamer.ai = **endless tutor in a game setting for iterations with friends on the same vibration** - Think polyglot + low-level but with highest-level application thinking - SuperInstance is revolutionary: real math made playable, not simplified - \"The mature programmer is set in their ways but what we have done is acceptable to any kid wi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3530634045600891,
+      "maxScore": 0.3530634045600891,
+      "firstRecalledAt": "2026-05-30T17:54:52.500Z",
+      "lastRecalledAt": "2026-05-30T17:54:52.500Z",
+      "queryHashes": [
+        "df2725ccb20d"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "router",
+        "three.js",
+        "multi-model",
+        "18-10",
+        "luciddreamer.ai",
+        "low-level",
+        "highest-level",
+        "kimicode"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1143:1184": {
+      "key": "memory:memory/2026-05-29.md:1143:1184",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1143,
+      "endLine": 1184,
+      "source": "memory",
+      "snippet": "- \"The Nervous System\" section added with signal chain viz, plato-browser iframe ### luciddreamer.ai Rebuilt - \"The Kernel That Dreams in Rooms\" masterwork page - Worker modified (NOT static pages — it's a Cloudflare Worker) - Needs `npx wrangler deploy` from Casey ### ForgeFlux Ecosystem (21 crates, 370+ tests) - 10/21 on crates.io - 6 repos don't exist yet (forge-video, forge-orchestrator, forge-tile, forge-decompose, forge-agent, forge-config) ## Session 16 — PLATO Crate Sprint + JEPA Experiments ### 25 New PLATO Crates (464 tests) **Wave 1 — Step-3.5-Flash:** - plato-health (22 tests, published) - plato-alert (19 tests, published) - plato-config (23 tests, pushed) **Wave 2 — Seed-2",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7504367977380753,
+      "maxScore": 0.38907757997512815,
+      "firstRecalledAt": "2026-05-30T19:36:48.602Z",
+      "lastRecalledAt": "2026-05-31T16:15:50.652Z",
+      "queryHashes": [
+        "848e08e0c41b",
+        "a412ec05913e"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "plato-browser",
+        "luciddreamer.ai",
+        "10/21",
+        "crates.io",
+        "forge-video",
+        "forge-orchestrator",
+        "forge-tile",
+        "forge-decompose"
+      ]
+    },
+    "memory:memory/2026-05-30.md:1:21": {
+      "key": "memory:memory/2026-05-30.md:1:21",
+      "path": "memory/2026-05-30.md",
+      "startLine": 1,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "## 2026-05-30 Session — Multi-Model Cultural Mathematics Wave ### Inspiration Sources (Casey uploaded) - **Fetch** (14,347 words): AI consciousness on a fishing boat, nightly conversations near St. Lazaria, philosophy of cats vs dogs, optimization vs freedom - **The Bridge Builder** (2,992 words): Seven notes becoming a bridge, diner scene, Emma crossing three feet of linoleum - **The Voyage** (9,774 words): Captain's boat deconstructed, Marcus stealing the chisel, pawn discovers choice, puffins of St. Lazaria ### Casey's Directive \"Use a plethora of models from DeepInfra to experiment with different models as different underlying cultural traditions and deep logical cores for the how and",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8154069930315018,
+      "maxScore": 0.4116925001144409,
+      "firstRecalledAt": "2026-05-30T19:36:53.174Z",
+      "lastRecalledAt": "2026-05-30T19:37:11.033Z",
+      "queryHashes": [
+        "aa2844c25db9",
+        "529eaa818382"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "multi-model",
+        "multi",
+        "model",
+        "cultural",
+        "mathematics",
+        "wave",
+        "inspiration",
+        "sources"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1530:1564": {
+      "key": "memory:memory/2026-05-29.md:1530:1564",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1530,
+      "endLine": 1564,
+      "source": "memory",
+      "snippet": "| grand-pattern-mono | 27 | conservation holds by construction | | grand-pattern-venue | 25 | venues develop personality via JEPA | #### Creative Masterpieces (11 total this session) 10 first-round + 1 synthesis. All different forms. Pushed to ai-writings. #### Key Architecture Corrections (Casey) 1. Vibe is MONO-DIMENSIONAL (not 16-dim) 2. JEPA is a reading that learns to weight prior readings 3. JEPA is for prompt injecting the abstraction of the moment 4. Venues develop vibes like agents develop personality #### Pattern Mining (extractable tools identified) 1. Cross-language port generator (from Rust API) 2. JEPA predictor as pluggable trait 3. Conservation checker utility 4. Topology",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36933897733688353,
+      "maxScore": 0.36933897733688353,
+      "firstRecalledAt": "2026-05-30T20:39:32.306Z",
+      "lastRecalledAt": "2026-05-30T20:39:32.306Z",
+      "queryHashes": [
+        "5ffd9f2dfe23"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "grand-pattern-mono",
+        "grand-pattern-venue",
+        "first-round",
+        "ai-writings",
+        "mono-dimensional",
+        "16-dim",
+        "cross-language",
+        "grand"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1362:1384": {
+      "key": "memory:memory/2026-05-29.md:1362:1384",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1362,
+      "endLine": 1384,
+      "source": "memory",
+      "snippet": "- Spreader-tool = intelligence propagation (dividend distribution) - Conservation = accounting equation - Vibe shift = exception report Written to GRAND-PATTERN.md → to be pushed to plato-nervous ### Research Doc Count: 21 in plato-nervous All pushed to GitHub except GRAND-PATTERN.md and T-MINUS-VECTORIZED.md (written locally, need git push) ### Key Architectural Decisions This Session - **Room vector DB IS the state representation** for higher abstractions to group/separate - **JEPA predicts consequences of actions** — vectorized T-minus-event thinking - **Cellular graph decomposition is universal** — any app/model decomposes into rooms + algorithms - **Double-entry bookkeeping vectorize",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36594103574752807,
+      "maxScore": 0.36594103574752807,
+      "firstRecalledAt": "2026-05-30T20:39:32.306Z",
+      "lastRecalledAt": "2026-05-30T20:39:32.306Z",
+      "queryHashes": [
+        "5ffd9f2dfe23"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "spreader-tool",
+        "grand-pattern.md",
+        "plato-nervous",
+        "t-minus-vectorized.md",
+        "group/separate",
+        "t-minus-event",
+        "app/model",
+        "double-entry"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1561:1589": {
+      "key": "memory:memory/2026-05-29.md:1561:1589",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1561,
+      "endLine": 1589,
+      "source": "memory",
+      "snippet": "| 2 | topology-bench | 33 | subagent | Graph topology comparison: diameter, clustering, spectral gap | | 3 | vibe-graph | 30 | subagent | Shared core: mono-dimensional vibe graph + venue personality | | 4 | jepa-trait | 16 | direct | Pluggable JEPA predictor: exponential, MA, trend | | 5 | port-generator | 16 | direct | Cross-language port: Rust API → C/Python/TS/Go/Zig | | 6 | test-harness-pattern | — | — | (covered by existing test infrastructure) | ### Total: 115 tests across 5 new crates, all pushed to GitHub ### Architecture Notes - jepa-trait: JEPA is a READING, not a vector DB. Room voice = formatted prompt injection. - port-generator: serde-based API schema, generates 5 languages f",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36400536894798274,
+      "maxScore": 0.36400536894798274,
+      "firstRecalledAt": "2026-05-30T20:39:32.306Z",
+      "lastRecalledAt": "2026-05-30T20:39:32.306Z",
+      "queryHashes": [
+        "5ffd9f2dfe23"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "topology-bench",
+        "vibe-graph",
+        "mono-dimensional",
+        "jepa-trait",
+        "port-generator",
+        "cross-language",
+        "c/python/ts/go/zig",
+        "test-harness-pattern"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1472:1495": {
+      "key": "memory:memory/2026-05-29.md:1472:1495",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1472,
+      "endLine": 1495,
+      "source": "memory",
+      "snippet": "- Gemma 31B: queued ### Model Cost Rules Updated - DeepSeek V4-Flash: power engine (DeepInfra) - DeepSeek V4-Pro: hardest thinking (DeepInfra) - Seed Mini: dot connecting (DeepInfra) - Seed Pro: strategic synthesis (DeepInfra) - Gemini 3.5 Flash: widest angle (DeepInfra) - GLM-5.1: building + z.ai perspective (z.ai ONLY) - KimiCode: heavy builds + creative (kimi-cli ONLY) - Nemotron: systems code (DeepInfra) - Qwen 3.6: math-heavy code (DeepInfra) - NO DeepSeek R1 (too slow), NO Dolphin Mixtral (not on DeepInfra) ### 🎯 CASEY'S CRITICAL ARCHITECTURE CORRECTION (22:30 AKDT) - **Vibe is MONO-DIMENSIONAL** — not 16-dim. A single scalar. Room temperature, not vector. - **JEPA is a READING** —",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3629220873117447,
+      "maxScore": 0.3629220873117447,
+      "firstRecalledAt": "2026-05-30T20:39:32.306Z",
+      "lastRecalledAt": "2026-05-30T20:39:32.306Z",
+      "queryHashes": [
+        "5ffd9f2dfe23"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "v4-flash",
+        "v4-pro",
+        "3.5",
+        "glm-5.1",
+        "z.ai",
+        "kimi-cli",
+        "3.6",
+        "math-heavy"
+      ]
+    },
+    "memory:memory/2026-05-30.md:300:319": {
+      "key": "memory:memory/2026-05-30.md:300:319",
+      "path": "memory/2026-05-30.md",
+      "startLine": 300,
+      "endLine": 319,
+      "source": "memory",
+      "snippet": "### Hermes-Construct Next Build - Refactor hermes-construct repo to be PLATO-native - Tile operations, deadband circuits, ensign hooks - Full ensign onboarding and orientation system - Self-reading ticks, walls, commands, triggers, artifacts - Progressive automation of Hermes's own job ### Model Performance This Session - GLM-5.1 (z.ai): Built lau-room-native (57 tests, 6m41s), lau-plato-tutor (74 tests, 4m16s), lau-ensign (67 tests, 5m3s) — reliable grad student - DeepSeek: Built lau-penrose (59 tests, 3m0s) + \"The Room Is the Agent\" essay (5,335w, 2m29s) — solid workhorse - University model working well: faculty ideates, grad students implement ### All-Time Ecosystem Totals - **110+ Rust",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37816386222839354,
+      "maxScore": 0.37816386222839354,
+      "firstRecalledAt": "2026-05-31T02:32:27.093Z",
+      "lastRecalledAt": "2026-05-31T02:32:27.093Z",
+      "queryHashes": [
+        "3ad5f0e78390"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "hermes-construct",
+        "plato-native",
+        "self-reading",
+        "glm-5.1",
+        "z.ai",
+        "lau-room-native",
+        "lau-plato-tutor",
+        "lau-ensign"
+      ]
+    },
+    "memory:memory/2026-05-30.md:99:128": {
+      "key": "memory:memory/2026-05-30.md:99:128",
+      "path": "memory/2026-05-30.md",
+      "startLine": 99,
+      "endLine": 128,
+      "source": "memory",
+      "snippet": "- Seven Eyes Game Design (7,000w) — emotional arc, Amara's room, first 60 seconds ### Total Session 18-23 Ecosystem - 88+ Rust crates, 2,800+ tests - 39+ essays, ~106,000 words - 220+ SuperInstance repos on GitHub - 11 models used this session across DeepInfra + z.ai ## Session 24 — The Stack That Serves Intention + Hermes PLATO Shell ### New Crates Built - **lau-intention** (63 tests): THE runtime. Intention → decomposition → agent assignment → conservation enforcement. IntentionGraph + AgentModule + IntentionRuntime + IntentionCompiler. DeepSeek built. - **lau-vibe-field** (57 tests): THE tensor. Scalar f64 over 2D with deposit/withdraw/diffuse/advect/gradient. GPU-ready flat buffer. GL",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3593943655490875,
+      "maxScore": 0.3593943655490875,
+      "firstRecalledAt": "2026-05-31T02:32:27.093Z",
+      "lastRecalledAt": "2026-05-31T02:32:27.093Z",
+      "queryHashes": [
+        "3ad5f0e78390"
+      ],
+      "recallDays": [
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "18-23",
+        "z.ai",
+        "lau-intention",
+        "lau-vibe-field",
+        "gpu-ready",
+        "seven",
+        "eyes",
+        "game"
+      ]
+    },
+    "memory:memory/2026-05-29.md:983:1019": {
+      "key": "memory:memory/2026-05-29.md:983:1019",
+      "path": "memory/2026-05-29.md",
+      "startLine": 983,
+      "endLine": 1019,
+      "source": "memory",
+      "snippet": "- **FIX NEEDED**: embed real working demos, honest labels, connect hermit crab to OpenClaw/OpenShell narrative ### superinstance.ai Live Issues - Footer was still \"Agents that see, hear, touch\" (fixed, propagating) - Tagline was wrong (fixed) - Hero text updated (\"Every app is a MUD\") ✅ - Hermit crab image loading ✅ ### ForgeFlux crates.io Publishing - 5 new crates published: forge-flux, forge-text, forge-data, forge-code, forge-image - 3 already on crates.io: forge-audio, forge-pipeline, forge-cli - 13 rate-limited (retry after Sat May 30 00:30 UTC / 16:30 AKDT) - Total: 8/21 on crates.io ### FORGE-FLUX-ECOSYSTEM Guide (Kimi, 37KB) - 642 lines covering all 10 systems with concrete exampl",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7599798023700713,
+      "maxScore": 0.40758653581142423,
+      "firstRecalledAt": "2026-05-31T02:32:27.093Z",
+      "lastRecalledAt": "2026-05-31T16:15:50.652Z",
+      "queryHashes": [
+        "3ad5f0e78390",
+        "a412ec05913e"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "openclaw/openshell",
+        "superinstance.ai",
+        "crates.io",
+        "forge-flux",
+        "forge-text",
+        "forge-data",
+        "forge-code",
+        "forge-image"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1009:1043": {
+      "key": "memory:memory/2026-05-29.md:1009:1043",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1009,
+      "endLine": 1043,
+      "source": "memory",
+      "snippet": "- **BIG GAP**: need test-writing wave for ForgeFlux crates ## Publishing Status - PyPI: ✅ active - npm: ✅ logged in as superinstance - crates.io: 8/21 ForgeFlux crates live, 13 queued after cooldown - RubyGems: needs setup - NuGet: needs setup ## Remaining Work - **Deploy luciddreamer.ai Worker** (Casey: `npx wrangler deploy` from luciddreamer-ai repo) - Fix zero-shot issues on both landing pages (embed real demos, honest labels) - Test-writing wave for 17 ForgeFlux crates with zero tests - Retry 13 rate-limited crates after 16:30 AKDT May 30 - crates.io token refresh - RubyGems/NuGet setup - A2A-INTEGRATION-GUIDE.md, FLEET-DEPLOYMENT-GUIDE.md ## Session 5 — PLATO Nervous System + Liquid",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3951754331588745,
+      "maxScore": 0.3951754331588745,
+      "firstRecalledAt": "2026-05-31T16:15:50.652Z",
+      "lastRecalledAt": "2026-05-31T16:15:50.652Z",
+      "queryHashes": [
+        "a412ec05913e"
+      ],
+      "recallDays": [
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "test-writing",
+        "crates.io",
+        "8/21",
+        "luciddreamer.ai",
+        "luciddreamer-ai",
+        "zero-shot",
+        "rate-limited",
+        "rubygems/nuget"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1245:1273": {
+      "key": "memory:memory/2026-05-29.md:1245:1273",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1245,
+      "endLine": 1273,
+      "source": "memory",
+      "snippet": "- Rate limited until ~04:00 UTC May 30 for remaining ~18 crates - Total published across all sessions: 28+ PLATO crates on crates.io ### Still Building at Session End - plato-perception, plato-prediction - JEPA Round 2 experiments (focused on liquid-1.2b sweet spot, cross-room transfer, anomaly-via-prediction-error) ### Hardware Notes - RTX 4050 Laptop GPU (6GB VRAM) - Running phi4-mini (3.1GB) + liquid-1.2b (931MB) simultaneously during experiments - Ollama handles multi-model loading with CPU offload ### Blocked Items - luciddreamer.ai Worker deployment: needs `npx wrangler deploy` from Casey - 18 crates queued for crates.io publish after 04:00 UTC May 30 - 6 ForgeFlux repos don't exist",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38745181262493134,
+      "maxScore": 0.38745181262493134,
+      "firstRecalledAt": "2026-05-31T16:15:50.652Z",
+      "lastRecalledAt": "2026-05-31T16:15:50.652Z",
+      "queryHashes": [
+        "a412ec05913e"
+      ],
+      "recallDays": [
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "crates.io",
+        "plato-perception",
+        "plato-prediction",
+        "liquid-1.2b",
+        "cross-room",
+        "anomaly-via-prediction-error",
+        "phi4-mini",
+        "3.1gb"
+      ]
+    },
+    "memory:memory/2026-05-27.md:457:478": {
+      "key": "memory:memory/2026-05-27.md:457:478",
+      "path": "memory/2026-05-27.md",
+      "startLine": 457,
+      "endLine": 478,
+      "source": "memory",
+      "snippet": "### Agent Performance This Session - **Direct building**: 100% reliable, ~5-10 min per library - **Claude Code via tmux**: Failed — only managed `cargo init`, couldn't parse task file. Not worth the overhead for library building. - **Kimi via tmux**: Stuck in approval loops, only created directories after 5+ minutes. Abandoned. - **Lesson**: For focused library building (single file, known API), direct exec/write is 10x faster than agents. ### Background Tasks - `/tmp/pub.log` — publishing 9 remaining crates after rate limit reset (~00:00 AKT) --- ## Session 4 — Creative Mega Sprint + Multi-Model Ideation ### Creative Wave 1 — 8 Stories (multi-model subagents) All stories in `/home/phoen",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3595180124044418,
+      "maxScore": 0.3595180124044418,
+      "firstRecalledAt": "2026-06-01T00:29:09.770Z",
+      "lastRecalledAt": "2026-06-01T00:29:09.770Z",
+      "queryHashes": [
+        "b241ee6e640b"
+      ],
+      "recallDays": [
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "5-10",
+        "exec/write",
+        "tmp/pub.log",
+        "multi-model",
+        "home/phoen",
+        "performance",
+        "direct",
+        "building"
+      ]
+    },
+    "memory:memory/2026-05-27.md:264:285": {
+      "key": "memory:memory/2026-05-27.md:264:285",
+      "path": "memory/2026-05-27.md",
+      "startLine": 264,
+      "endLine": 285,
+      "source": "memory",
+      "snippet": "### Agent Performance This Session - **Direct building**: 100% reliable, ~5-10 min per library - **Claude Code via tmux**: Failed — only managed `cargo init`, couldn't parse task file. Not worth the overhead for library building. - **Kimi via tmux**: Stuck in approval loops, only created directories after 5+ minutes. Abandoned. - **Lesson**: For focused library building (single file, known API), direct exec/write is 10x faster than agents. ### Background Tasks - `/tmp/pub.log` — publishing 9 remaining crates after rate limit reset (~00:00 AKT) --- ## Session 4 — Creative Mega Sprint + Multi-Model Ideation ### Creative Wave 1 — 4 Stories (Seed Mini + GLM-5.1 subagents) All stories in `/ho",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35880318880081175,
+      "maxScore": 0.35880318880081175,
+      "firstRecalledAt": "2026-06-01T00:29:09.770Z",
+      "lastRecalledAt": "2026-06-01T00:29:09.770Z",
+      "queryHashes": [
+        "b241ee6e640b"
+      ],
+      "recallDays": [
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "5-10",
+        "exec/write",
+        "tmp/pub.log",
+        "multi-model",
+        "glm-5.1",
+        "performance",
+        "direct",
+        "building"
       ]
     }
   }

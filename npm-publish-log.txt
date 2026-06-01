@@ -1,0 +1,21 @@
+conservation-spectral npm publish log
+======================================
+Date: 2026-05-28 13:10 AKDT
+
+Step 1 - Prepare:
+- Updated package.json with description, author, keywords per spec
+- TypeScript compiled successfully (no errors)
+- All 26 tests passed (4 test files: graph, eigen, tracker, conservation)
+
+Step 2 - Publish:
+- Dry-run: SUCCESS (21.1 kB tarball, 37 files)
+- Live publish: SUCCESS
+  + conservation-spectral@0.1.0
+
+Step 3 - Verify:
+- npm info confirms package live on npmjs.org
+- Tarball: https://registry.npmjs.org/conservation-spectral/-/conservation-spectral-0.1.0.tgz
+- Shasum: d55ba4fa7bd7bd1de4d8f570cf186e676c6ee3e7
+- License: MIT
+- No dependencies
+- Published by: superinstance

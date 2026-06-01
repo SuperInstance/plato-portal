@@ -1,0 +1,423 @@
+{
+  "cocapn": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "cocapn-core": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": true
+  },
+  "cocapn-cli": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "cocapn-sdk": {
+    "missing": [
+      "badges"
+    ],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "cocapn-py": {
+    "missing": [
+      "badges"
+    ],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "cocapn-com": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "cocapn-landing": {
+    "missing": [
+      "documentation_link",
+      "how_it_fits"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": false,
+    "has_dependencies_md": false
+  },
+  "cocapn-health-rs": {
+    "missing": [
+      "badges"
+    ],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "cocapn-explain": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "cocapn-explain-rs": {
+    "missing": [
+      "badges"
+    ],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "cocapn-benchmark": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "cocapn-lessons": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "OpenConstruct": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": true
+  },
+  "openconstruct-rust": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": true
+  },
+  "openconstruct-abi": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": true
+  },
+  "openconstruct-landing": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "plato-construct": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "plato-manus": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "plato-sonar-text": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "plato-training": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "plato-adapters": {
+    "missing": [
+      "badges"
+    ],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "plato-vision": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": true
+  },
+  "plato-tick": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": true
+  },
+  "constraint-theory-web": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "constraint-theory-rust-python": {
+    "missing": [
+      "documentation_link",
+      "badges"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "constraint-theory-engine-cpp-lua": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "constraint-dsl": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "constraint-mux": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "constraint-synth": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "constraint-toolkit": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "constraint-dialect": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "constraint-instrument": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "constraint-audio": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "constraint-substrate": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "conservation-spectral-js": {
+    "missing": [
+      "documentation_link",
+      "badges"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "conservation-spectral-python": {
+    "missing": [
+      "documentation_link",
+      "badges"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "conservation-spectral-ada": {
+    "missing": [
+      "documentation_link",
+      "badges"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "conservation-protocol": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "conservation-conformance": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "captain": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "fleet-health-monitor": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "fleet-cicd-agent": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "forgemaster": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "ccc-os": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "casting-call-mcp": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "cartridge-mcp": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "agent-forge": {
+    "missing": [],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "api-gateway-1": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "co-captain-git-agent": {
+    "missing": [
+      "documentation_link"
+    ],
+    "has_docs": false,
+    "has_ecosystem": true,
+    "has_related": true,
+    "has_dependencies_md": false
+  },
+  "superinstance-wiki": {
+    "missing": [
+      "how_it_fits"
+    ],
+    "has_docs": true,
+    "has_ecosystem": true,
+    "has_related": false,
+    "has_dependencies_md": false
+  }
+}

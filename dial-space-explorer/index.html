@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Dial-Space Explorer</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: #0a0a0f; color: #ddd; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+
+#canvas-container {
+  width: 100vw; height: 100vh; display: block;
+}
+
+/* Info Panel Overlay (top-left) */
+#info-panel {
+  position: fixed;
+  top: 24px; left: 24px;
+  z-index: 10;
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 20px 24px;
+  max-width: 320px;
+  pointer-events: none;
+  user-select: none;
+}
+#info-panel h1 {
+  font-size: 22px; font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin-bottom: 2px;
+}
+#info-panel .subtitle {
+  font-size: 13px; color: rgba(255,255,255,0.5);
+  margin-bottom: 14px;
+}
+#info-panel .stats {
+  font-size: 12px; color: rgba(255,255,255,0.4);
+  margin-bottom: 12px;
+}
+
+/* Legend */
+#legend {
+  display: flex; flex-direction: column; gap: 5px;
+}
+.legend-item {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 12px; color: rgba(255,255,255,0.7);
+}
+.legend-dot {
+  width: 12px; height: 12px; border-radius: 50%;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Tradition detail popup */
+#tradition-popup {
+  position: fixed;
+  z-index: 20;
+  background: rgba(10,10,15,0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 18px 22px;
+  min-width: 220px;
+  max-width: 300px;
+  display: none;
+  pointer-events: none;
+}
+#tradition-popup .popup-name {
+  font-size: 18px; font-weight: 600; color: #fff;
+  margin-bottom: 8px;
+}
+#tradition-popup .popup-detail {
+  font-size: 12px; color: rgba(255,255,255,0.6);
+  margin-bottom: 3px;
+  line-height: 1.5;
+}
+#tradition-popup .popup-cluster {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.05em;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.popup-close {
+  position: absolute; top: 10px; right: 14px;
+  cursor: pointer; pointer-events: auto;
+  color: rgba(255,255,255,0.3); font-size: 18px;
+  transition: color 0.2s;
+}
+.popup-close:hover { color: #fff; }
+
+/* Controls hint (bottom) */
+#controls-hint {
+  position: fixed;
+  bottom: 24px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 11px; color: rgba(255,255,255,0.25);
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: 0.03em;
+}
+#controls-hint span { margin: 0 10px; }
+
+/* Axis labels (3D CSS overlay, we'll use sprite labels instead) */
+
+/* Touch / mobile */
+@media (max-width: 640px) {
+  #info-panel {
+    top: 12px; left: 12px; right: 12px;
+    max-width: none;
+    padding: 14px 16px;
+  }
+  #info-panel h1 { font-size: 18px; }
+  #tradition-popup {
+    left: 12px !important; right: 12px !important;
+    max-width: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="canvas-container"></div>
+
+<div id="info-panel">
+  <h1>Dial-Space Explorer</h1>
+  <div class="subtitle">Musical Traditions in Parameter Space</div>
+  <div class="stats">10 traditions · 5 clusters · 82% empty space</div>
+  <div id="legend"></div>
+</div>
+
+<div id="tradition-popup">
+  <div class="popup-close" id="popup-close">&times;</div>
+  <div class="popup-name" id="popup-name"></div>
+  <div class="popup-detail" id="popup-coords"></div>
+  <div class="popup-detail" id="popup-cluster-label"></div>
+  <div class="popup-detail" id="popup-desc"></div>
+  <div class="popup-cluster" id="popup-badge"></div>
+</div>
+
+<div id="controls-hint">
+  <span>🖱 Drag to orbit</span>
+  <span>🔄 Scroll to zoom</span>
+  <span>🎯 Click a sphere</span>
+  <span>👆 Double-click to zoom</span>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+
+// ── DATA ────────────────────────────────────────────────────────
+const traditions = [
+  { name: 'Carnatic',       iVert: 2.77, iHoriz: 3.63, iSpectral: 1.8,  cluster: 'Maximal',    color: '#FF4136', desc: 'South Indian classical. Rich melodic system (ragas) with intricate ornamentation (gamakas) and complex rhythmic cycles (talas).' },
+  { name: 'Hindustani',     iVert: 2.77, iHoriz: 3.45, iSpectral: 1.8,  cluster: 'Maximal',    color: '#FF4136', desc: 'North Indian classical. Raga-based improvisation with drone accompaniment. Highly developed microtonal ornamentation.' },
+  { name: 'Turkish Makam',  iVert: 2.83, iHoriz: 3.28, iSpectral: 2.0,  cluster: 'Maximal',    color: '#FF4136', desc: 'Ottoman classical art music. Complex makam system with microtonal intervals (commas) and rhythmic usul cycles.' },
+  { name: 'Arabic Maqam',   iVert: 2.94, iHoriz: 3.10, iSpectral: 2.0,  cluster: 'Maximal',    color: '#FF4136', desc: 'Arab classical tradition. Maqam modal system with quarter-tone intervals and rich rhythmic iqa\'at patterns.' },
+  { name: 'West African',   iVert: 2.41, iHoriz: 3.63, iSpectral: 0.5,  cluster: 'Rhythmic',   color: '#FFDC00', desc: 'Ewe and Dagomba traditions. Polyrhythmic drumming with extreme rhythmic density. Call-and-response structure.' },
+  { name: 'Balinese Gamelan', iVert: 2.31, iHoriz: 3.10, iSpectral: 3.5, cluster: 'Balanced',  color: '#2ECC40', desc: 'Indonesian gamelan orchestra. Paired tuning produces shimmering interference beats. Cyclic colotomic structures.' },
+  { name: 'Javanese Gamelan', iVert: 2.31, iHoriz: 2.75, iSpectral: 3.5, cluster: 'Balanced',  color: '#2ECC40', desc: 'Central Javanese court gamelan. More subdued than Balinese. Slendro and pelog tuning systems with meditative pacing.' },
+  { name: 'Western Common Practice', iVert: 2.72, iHoriz: 2.05, iSpectral: 1.2, cluster: 'Harmonic', color: '#0074D9', desc: 'European tonal harmony from Baroque to Romantic. Functional harmony, equal temperament, orchestral timbres.' },
+  { name: 'Chinese Traditional', iVert: 2.32, iHoriz: 2.05, iSpectral: 2.5, cluster: 'Presence', color: '#B10DC9', desc: 'Ancient Chinese pentatonic system. Elegant linear melodies with heterophonic texture. Guqin and pipa traditions.' },
+  { name: 'Japanese Gagaku', iVert: 2.38, iHoriz: 1.70, iSpectral: 3.8, cluster: 'Presence', color: '#B10DC9', desc: 'Imperial court music of Japan. The world\'s oldest orchestral tradition. Ethereal sho mouth organ chords and sparse rhythm.' }
+];
+
+const clusterInfo = {
+  Maximal:  { color: '#FF4136', label: 'Maximal Cluster',  members: ['Carnatic', 'Hindustani', 'Turkish Makam', 'Arabic Maqam'] },
+  Rhythmic: { color: '#FFDC00', label: 'Rhythmic Cluster',  members: ['West African'] },
+  Balanced: { color: '#2ECC40', label: 'Balanced Cluster',  members: ['Balinese Gamelan', 'Javanese Gamelan'] },
+  Harmonic: { color: '#0074D9', label: 'Harmonic Cluster',  members: ['Western Common Practice'] },
+  Presence: { color: '#B10DC9', label: 'Presence Cluster',  members: ['Chinese Traditional', 'Japanese Gagaku'] }
+};
+
+// ── SCENE SETUP ─────────────────────────────────────────────────
+const container = document.getElementById('canvas-container');
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0a0a0f);
+
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+camera.position.set(6, 4, 8);
+camera.lookAt(2.6, 2.6, 2.0);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
+container.appendChild(renderer.domElement);
+
+const labelRenderer = new CSS2DRenderer();
+labelRenderer.setSize(window.innerWidth, window.innerHeight);
+labelRenderer.domElement.style.position = 'absolute';
+labelRenderer.domElement.style.top = '0px';
+labelRenderer.domElement.style.pointerEvents = 'none';
+labelRenderer.domElement.style.left = '0px';
+container.appendChild(labelRenderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(2.6, 2.6, 2.0);
+controls.enableDamping = true;
+controls.dampingFactor = 0.08;
+controls.minDistance = 2;
+controls.maxDistance = 20;
+controls.rotateSpeed = 0.8;
+controls.zoomSpeed = 1.2;
+controls.update();
+
+// ── LIGHTING ────────────────────────────────────────────────────
+const ambient = new THREE.AmbientLight(0x222244, 0.6);
+scene.add(ambient);
+
+const dirLight = new THREE.DirectionalLight(0xffeedd, 1.8);
+dirLight.position.set(5, 10, 7);
+dirLight.castShadow = true;
+scene.add(dirLight);
+
+const fillLight = new THREE.DirectionalLight(0x4466ff, 0.3);
+fillLight.position.set(-3, 1, 5);
+scene.add(fillLight);
+
+const backLight = new THREE.DirectionalLight(0xff66aa, 0.2);
+backLight.position.set(-2, -1, -5);
+scene.add(backLight);
+
+// ── STARS (background particles) ───────────────────────────────
+const starCount = 2000;
+const starGeom = new THREE.BufferGeometry();
+const starPos = new Float32Array(starCount * 3);
+const starSizes = new Float32Array(starCount);
+for (let i = 0; i < starCount; i++) {
+  starPos[i*3] = (Math.random() - 0.5) * 40;
+  starPos[i*3+1] = (Math.random() - 0.5) * 40;
+  starPos[i*3+2] = (Math.random() - 0.5) * 40 - 10;
+  starSizes[i] = Math.random() * 1.5 + 0.3;
+}
+starGeom.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+starGeom.setAttribute('size', new THREE.BufferAttribute(starSizes, 1));
+const starMat = new THREE.PointsMaterial({
+  color: 0xffffff,
+  size: 0.04,
+  transparent: true,
+  opacity: 0.7,
+  sizeAttenuation: true,
+  blending: THREE.AdditiveBlending
+});
+const stars = new THREE.Points(starGeom, starMat);
+scene.add(stars);
+
+// ── GRID / AXIS ────────────────────────────────────────────────
+const axisLength = 5.0;
+const origin = new THREE.Vector3(1.0, 1.0, 0.0);
+
+function createAxisLine(from, to, color, label, offset) {
+  const mat = new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.4 });
+  const geom = new THREE.BufferGeometry().setFromPoints([
+    new THREE.Vector3(from.x, from.y, from.z),
+    new THREE.Vector3(to.x, to.y, to.z)
+  ]);
+  const line = new THREE.Line(geom, mat);
+  scene.add(line);
+
+  // Arrow cap
+  const dir = new THREE.Vector3().copy(to).sub(from).normalize();
+  const arrowLen = 0.15;
+  const arrowPos = new THREE.Vector3().copy(to);
+  const arrow = new THREE.ArrowHelper(dir, arrowPos, arrowLen, color, 0.2, 0.12);
+  scene.add(arrow);
+
+  // Label sprite
+  const div = document.createElement('div');
+  div.textContent = label;
+  div.style.color = '#fff';
+  div.style.fontSize = '13px';
+  div.style.fontWeight = '600';
+  div.style.textShadow = '0 0 10px rgba(0,0,0,0.8)';
+  div.style.letterSpacing = '0.02em';
+  const labelObj = new CSS2DObject(div);
+  labelObj.position.copy(to);
+  if (offset) labelObj.position.add(offset);
+  scene.add(labelObj);
+}
+
+createAxisLine(
+  new THREE.Vector3(1.0, 1.0, 0),
+  new THREE.Vector3(axisLength, 1.0, 0),
+  0xff6666, 'I_vert  →', new THREE.Vector3(0.3, 0, 0)
+);
+createAxisLine(
+  new THREE.Vector3(1.0, 1.0, 0),
+  new THREE.Vector3(1.0, axisLength, 0),
+  0x66ff66, 'I_horiz  →', new THREE.Vector3(0, 0.3, 0)
+);
+createAxisLine(
+  new THREE.Vector3(1.0, 1.0, 0),
+  new THREE.Vector3(1.0, 1.0, axisLength - 1),
+  0x6688ff, 'I_spectral  →', new THREE.Vector3(0, 0, 0.3)
+);
+
+// Grid floor
+const gridHelper = new THREE.GridHelper(6, 12, 0x444466, 0x333355);
+gridHelper.position.set(2.5, 1.0, 0.5);
+gridHelper.material.transparent = true;
+gridHelper.material.opacity = 0.25;
+scene.add(gridHelper);
+
+// Subtle vertical/horizontal grid planes
+function addWirePlane(points, color, opacity) {
+  const geom = new THREE.BufferGeometry().setFromPoints(points);
+  const mat = new THREE.LineBasicMaterial({ color, transparent: true, opacity });
+  const line = new THREE.Line(geom, mat);
+  scene.add(line);
+}
+
+// ── TRADITION SPHERES ──────────────────────────────────────────
+const traditionObjects = [];
+const raycasterTargets = [];
+
+traditions.forEach((t) => {
+  const pos = new THREE.Vector3(t.iVert, t.iHoriz, t.iSpectral);
+  const color = new THREE.Color(t.color);
+  const radius = 0.20 + (t.iVert + t.iHoriz + t.iSpectral) / 20;
+
+  // Main sphere
+  const sphereGeom = new THREE.SphereGeometry(radius, 32, 32);
+  const sphereMat = new THREE.MeshPhysicalMaterial({
+    color: color,
+    emissive: color,
+    emissiveIntensity: 0.25,
+    roughness: 0.2,
+    metalness: 0.1,
+    clearcoat: 0.3,
+    transparent: true,
+    opacity: 0.95
+  });
+  const sphere = new THREE.Mesh(sphereGeom, sphereMat);
+  sphere.position.copy(pos);
+  sphere.castShadow = true;
+  sphere.userData = { tradition: t, originalScale: 1 };
+  scene.add(sphere);
+  raycasterTargets.push(sphere);
+  traditionObjects.push(sphere);
+
+  // Glow aura (larger transparent ring)
+  const glowGeom = new THREE.SphereGeometry(radius * 1.6, 24, 24);
+  const glowMat = new THREE.MeshBasicMaterial({
+    color: color,
+    transparent: true,
+    opacity: 0.08,
+    blending: THREE.AdditiveBlending,
+    side: THREE.BackSide
+  });
+  const glow = new THREE.Mesh(glowGeom, glowMat);
+  glow.position.copy(pos);
+  scene.add(glow);
+
+  // Outer glow ring (pulse)
+  const ringGeom = new THREE.SphereGeometry(radius * 2.4, 16, 16);
+  const ringMat = new THREE.MeshBasicMaterial({
+    color: color,
+    transparent: true,
+    opacity: 0.03,
+    blending: THREE.AdditiveBlending,
+    side: THREE.BackSide
+  });
+  const ring = new THREE.Mesh(ringGeom, ringMat);
+  ring.position.copy(pos);
+  scene.add(ring);
+
+  // Store for animation
+  sphere.userData.glow = glow;
+  sphere.userData.ring = ring;
+
+  // CSS2D Label
+  const labelDiv = document.createElement('div');
+  labelDiv.textContent = t.name;
+  labelDiv.style.color = '#fff';
+  labelDiv.style.fontSize = '11px';
+  labelDiv.style.fontWeight = '500';
+  labelDiv.style.textShadow = '0 0 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)';
+  labelDiv.style.background = 'rgba(0,0,0,0.5)';
+  labelDiv.style.padding = '2px 8px';
+  labelDiv.style.borderRadius = '10px';
+  labelDiv.style.border = '1px solid rgba(255,255,255,0.1)';
+  labelDiv.style.backdropFilter = 'blur(4px)';
+  labelDiv.style.pointerEvents = 'none';
+  labelDiv.style.transition = 'opacity 0.3s';
+  const label = new CSS2DObject(labelDiv);
+  label.position.set(pos.x, pos.y - radius - 0.25, pos.z);
+  scene.add(label);
+  sphere.userData.label = label;
+});
+
+// ── FRONTIER REGIONS (golden clouds in the void) ──────────────
+function addFrontierCloud(center, size, opacity) {
+  const count = 120;
+  const geom = new THREE.BufferGeometry();
+  const pos = new Float32Array(count * 3);
+  const sizes = new Float32Array(count);
+  for (let i = 0; i < count; i++) {
+    pos[i*3] = center.x + (Math.random() - 0.5) * size;
+    pos[i*3+1] = center.y + (Math.random() - 0.5) * size;
+    pos[i*3+2] = center.z + (Math.random() - 0.5) * size;
+    sizes[i] = Math.random() * 0.08 + 0.02;
+  }
+  geom.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  geom.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+  const mat = new THREE.PointsMaterial({
+    color: 0xffd700,
+    size: 0.06,
+    transparent: true,
+    opacity: opacity,
+    blending: THREE.AdditiveBlending,
+    sizeAttenuation: true
+  });
+  const cloud = new THREE.Points(geom, mat);
+  scene.add(cloud);
+  return cloud;
+}
+
+// Frontier regions where S > 0 but no tradition exists
+const frontiers = [
+  addFrontierCloud(new THREE.Vector3(3.5, 1.4, 3.5), 0.8, 0.25),    // Position A: extreme pitch+spectral
+  addFrontierCloud(new THREE.Vector3(1.8, 4.0, 0.5), 0.8, 0.25),    // Position B: extreme rhythm
+  addFrontierCloud(new THREE.Vector3(3.0, 3.0, 3.0), 0.7, 0.2)      // Position C: maximum everything
+];
+
+// ── AMBIENT PARTICLES (floating dots) ─────────────────────────
+const particleCount = 400;
+const pGeom = new THREE.BufferGeometry();
+const pPos = new Float32Array(particleCount * 3);
+const pVel = [];
+for (let i = 0; i < particleCount; i++) {
+  pPos[i*3] = (Math.random() * 6) + 0.5;
+  pPos[i*3+1] = (Math.random() * 6) + 0.5;
+  pPos[i*3+2] = (Math.random() * 5);
+  pVel.push({
+    x: (Math.random() - 0.5) * 0.002,
+    y: (Math.random() - 0.5) * 0.002,
+    z: (Math.random() - 0.5) * 0.002
+  });
+}
+pGeom.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
+const pMat = new THREE.PointsMaterial({
+  color: 0x8888ff,
+  size: 0.03,
+  transparent: true,
+  opacity: 0.3,
+  blending: THREE.AdditiveBlending,
+  sizeAttenuation: true
+});
+const particles = new THREE.Points(pGeom, pMat);
+scene.add(particles);
+particles.userData.velocities = pVel;
+
+// ── LEGEND ─────────────────────────────────────────────────────
+const legendEl = document.getElementById('legend');
+Object.entries(clusterInfo).forEach(([name, info]) => {
+  const item = document.createElement('div');
+  item.className = 'legend-item';
+  const dot = document.createElement('span');
+  dot.className = 'legend-dot';
+  dot.style.background = info.color;
+  const label = document.createElement('span');
+  label.textContent = info.label + ' (' + info.members.length + ')';
+  item.appendChild(dot);
+  item.appendChild(label);
+  legendEl.appendChild(item);
+});
+
+// ── POPUP ──────────────────────────────────────────────────────
+const popup = document.getElementById('tradition-popup');
+const popupName = document.getElementById('popup-name');
+const popupCoords = document.getElementById('popup-coords');
+const popupClusterLabel = document.getElementById('popup-cluster-label');
+const popupDesc = document.getElementById('popup-desc');
+const popupBadge = document.getElementById('popup-badge');
+const popupClose = document.getElementById('popup-close');
+
+let selectedTradition = null;
+
+function showPopup(t, x, y) {
+  const info = clusterInfo[t.cluster];
+  popupName.textContent = t.name;
+  popupCoords.textContent = `I_vert: ${t.iVert} · I_horiz: ${t.iHoriz} · I_spectral: ${t.iSpectral}`;
+  popupClusterLabel.innerHTML = `<span style="color:${info.color}">●</span> ${info.label}`;
+  popupDesc.textContent = t.desc;
+  popupBadge.textContent = t.cluster;
+  popupBadge.style.background = info.color + '22';
+  popupBadge.style.color = info.color;
+  popupBadge.style.border = '1px solid ' + info.color + '44';
+  popup.style.display = 'block';
+
+  // Position with viewport clamping
+  let px = x; let py = y;
+  const w = parseInt(popup.style.minWidth) || 220;
+  const h = popup.offsetHeight;
+  if (px + w + 20 > window.innerWidth) px = window.innerWidth - w - 20;
+  if (py + h + 20 > window.innerHeight) py = window.innerHeight - h - 20;
+  if (px < 10) px = 10;
+  if (py < 10) py = 10;
+  popup.style.left = px + 'px';
+  popup.style.top = py + 'px';
+
+  selectedTradition = t;
+  selectedTradition.popupActive = true;
+}
+
+function hidePopup() {
+  popup.style.display = 'none';
+  if (selectedTradition) {
+    selectedTradition.popupActive = false;
+    selectedTradition = null;
+  }
+}
+
+popupClose.addEventListener('click', hidePopup);
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hidePopup(); });
+
+// ── RAYCASTER & INTERACTION ────────────────────────────────────
+const raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
+let hoveredObject = null;
+let clickedObject = null;
+
+function getPointerNDC(event) {
+  const rect = renderer.domElement.getBoundingClientRect();
+  const x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+  const y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+  return new THREE.Vector2(x, y);
+}
+
+function getIntersects(event) {
+  pointer.copy(getPointerNDC(event));
+  raycaster.setFromCamera(pointer, camera);
+  return raycaster.intersectObjects(raycasterTargets);
+}
+
+// Mouse move → hover
+renderer.domElement.addEventListener('pointermove', (event) => {
+  const intersects = getIntersects(event);
+  if (intersects.length > 0) {
+    const obj = intersects[0].object;
+    if (hoveredObject && hoveredObject !== obj) {
+      // Reset previous
+      const mat = hoveredObject.material;
+      mat.emissiveIntensity = 0.25;
+      mat.opacity = 0.95;
+      hoveredObject.scale.set(1, 1, 1);
+      if (hoveredObject.userData.label) {
+        hoveredObject.userData.label.element.style.opacity = '1';
+      }
+    }
+    // Highlight current
+    const mat = obj.material;
+    mat.emissiveIntensity = 0.6;
+    mat.opacity = 1;
+    obj.scale.set(1.15, 1.15, 1.15);
+    if (obj.userData.label) {
+      obj.userData.label.element.style.opacity = '1';
+    }
+    renderer.domElement.style.cursor = 'pointer';
+    hoveredObject = obj;
+  } else {
+    if (hoveredObject) {
+      const mat = hoveredObject.material;
+      mat.emissiveIntensity = 0.25;
+      mat.opacity = 0.95;
+      hoveredObject.scale.set(1, 1, 1);
+      if (hoveredObject.userData.label) {
+        hoveredObject.userData.label.element.style.opacity = '1';
+      }
+      hoveredObject = null;
+    }
+    renderer.domElement.style.cursor = 'default';
+  }
+});
+
+// Click → show popup
+renderer.domElement.addEventListener('click', (event) => {
+  if (clickInProgress) return;
+
+  const intersects = getIntersects(event);
+  if (intersects.length > 0) {
+    const obj = intersects[0].object;
+    const t = obj.userData.tradition;
+    if (t) {
+      showPopup(t, event.clientX + 15, event.clientY + 15);
+      clickedObject = obj;
+    }
+  } else {
+    // Click empty space
+    if (!event.target.closest('#tradition-popup')) {
+      hidePopup();
+    }
+  }
+});
+
+// Double-click → zoom to tradition
+let clickInProgress = false;
+let lastClickTime = 0;
+renderer.domElement.addEventListener('dblclick', (event) => {
+  const intersects = getIntersects(event);
+  if (intersects.length > 0) {
+    const obj = intersects[0].object;
+    const t = obj.userData.tradition;
+    if (t) {
+      const target = new THREE.Vector3(t.iVert, t.iHoriz, t.iSpectral);
+      // Animate camera to position
+      animateCameraTo(target);
+      showPopup(t, event.clientX + 15, event.clientY + 15);
+    }
+    hidePopup();
+  }
+});
+
+function animateCameraTo(target) {
+  const startPos = camera.position.clone();
+  const startTarget = controls.target.clone();
+  const endPos = new THREE.Vector3(
+    target.x + 1.2,
+    target.y + 0.8,
+    target.z + 1.5
+  );
+  const duration = 800;
+  const startTime = performance.now();
+
+  function animateZoom(time) {
+    const t = Math.min((time - startTime) / duration, 1);
+    const ease = 1 - Math.pow(1 - t, 3); // easeOutCubic
+
+    camera.position.lerpVectors(startPos, endPos, ease);
+    controls.target.lerpVectors(startTarget, target, ease);
+    controls.update();
+
+    if (t < 1) requestAnimationFrame(animateZoom);
+  }
+  requestAnimationFrame(animateZoom);
+}
+
+// ── RESIZE ─────────────────────────────────────────────────────
+window.addEventListener('resize', () => {
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+  labelRenderer.setSize(w, h);
+});
+
+// ── ANIMATION LOOP ─────────────────────────────────────────────
+const clock = new THREE.Clock();
+
+function animate() {
+  const delta = clock.getDelta();
+  const elapsed = clock.getElapsedTime();
+
+  // Pulse sphere glows
+  traditionObjects.forEach((sphere) => {
+    const t = sphere.userData.tradition;
+    if (t && !t.popupActive) {
+      const pulse = Math.sin(elapsed * 1.5 + sphere.id) * 0.5 + 0.5;
+      if (sphere.userData.glow) {
+        sphere.userData.glow.material.opacity = 0.05 + pulse * 0.06;
+      }
+      if (sphere.userData.ring) {
+        sphere.userData.ring.material.opacity = 0.02 + pulse * 0.03;
+      }
+    }
+  });
+
+  // Float ambient particles
+  const pPosAttr = particles.geometry.attributes.position;
+  const pArr = pPosAttr.array;
+  const vels = particles.userData.velocities;
+  for (let i = 0; i < particleCount; i++) {
+    pArr[i*3] += vels[i].x;
+    pArr[i*3+1] += vels[i].y;
+    pArr[i*3+2] += vels[i].z;
+    if (pArr[i*3] < 0.5 || pArr[i*3] > 6.5) vels[i].x *= -1;
+    if (pArr[i*3+1] < 0.5 || pArr[i*3+1] > 6.5) vels[i].y *= -1;
+    if (pArr[i*3+2] < 0 || pArr[i*3+2] > 5) vels[i].z *= -1;
+  }
+  pPosAttr.needsUpdate = true;
+
+  // Slow star rotation
+  stars.rotation.y += delta * 0.01;
+
+  // Update frontier cloud opacity (gentle breathing)
+  frontiers.forEach((cloud, idx) => {
+    const breathe = Math.sin(elapsed * 0.3 + idx * 2) * 0.5 + 0.5;
+    cloud.material.opacity = 0.12 + breathe * 0.15;
+  });
+
+  controls.update();
+
+  // Render
+  renderer.render(scene, camera);
+  labelRenderer.render(scene, camera);
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+console.log('🌌 Dial-Space Explorer loaded');
+console.log(`📍 ${traditions.length} traditions mapped across 5 clusters`);
+console.log('🌠 Frontier regions active: Position A (extreme pitch+spectral), Position B (extreme rhythm), Position C (max everything)');
+</script>
+</body>
+</html>

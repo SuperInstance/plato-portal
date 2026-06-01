@@ -1,48 +1,16 @@
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
-build-backend = "setuptools.backends._legacy:_Backend"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "constraint-toolkit"
-version = "0.2.0"
-description = "Music analysis and composition toolkit based on Dials Not Laws theory and groove/deadband framework"
-readme = "README.md"
+version = "0.1.0"
+description = "Constraint space analysis toolkit — lattice plots, dial positions, tradition clusters, and export"
 requires-python = ">=3.10"
 license = {text = "MIT"}
-authors = [
-    {name = "Constraint Toolkit Contributors"},
-]
-classifiers = [
-    "Development Status :: 4 - Beta",
-    "Intended Audience :: Science/Research",
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Topic :: Multimedia :: Sound/Audio :: Analysis",
-    "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
-    "Topic :: Scientific/Engineering :: Artificial Intelligence",
-]
-dependencies = [
-    "numpy>=1.24",
-    "scipy>=1.10",
-    "mido>=1.3",
-]
-
-[project.scripts]
-constraint-toolkit = "constraint_toolkit.cli:main"
 
 [project.optional-dependencies]
-dev = [
-    "pytest>=7.0",
-    "matplotlib>=3.7",
-]
-
-[tool.setuptools.packages.find]
-include = ["constraint_toolkit*", "experiments*"]
+dev = ["pytest>=7.0"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-v --tb=short"

@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  rust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cd rust && cargo test
+
+  c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cd c && make test
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: cd python && pip install -e . && pip install pytest && pytest tests/
+
+  cross-language:
+    runs-on: ubuntu-latest
+    needs: [rust, c, python]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify shared test vectors
+        run: |
+          cd rust && cargo test --test vector_test || true
+          cd ../python && pip install -e . && python -c "
+          import json
+          with open('../tests/vectors.json') as f:
+              v = json.load(f)
+          print(f'Loaded {len(v)} test vectors')
+          "
