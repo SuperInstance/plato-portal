@@ -617,6 +617,26 @@ Casey's insight: "A model is not alive. It's the genetic material that nudges th
 plato-diffusion, plato-signal-chain, plato-autonomy, plato-state, plato-rooms, plato-coordination, plato-tiles, plato-dashboard
 Plus 20 new from session: plato-health, plato-alert, plato-metrics, plato-transform, plato-history, plato-event, plato-schema, plato-serialize, plato-ring, plato-capability, plato-downsample, plato-window, plato-correlate, plato-normalize, plato-validate, plato-route, plato-anomaly, plato-compress, plato-filter, plato-backtest
 
+## 2026-06-01 Session — hermes-construct + crates.io Publishing
+
+### hermes-construct Major Upgrade
+- 126 Rust tests across 9 kernel modules (was 0)
+- Module system (trait, registry, autoloader, 17 tests), onboarding wizard (role presets, TOML, 19 tests)
+- ARM deployment pipeline: Oracle Cloud, Jetson, systemd, memory profiles
+- Rooms 4→13 fields (7 rooms), ensigns with escalation/cost/watch (4 ensigns)
+- Clippy clean, 3 new examples, upstream security + bug fixes cherry-picked
+
+### crates.io Publishing
+- cathedral-probe (26 tests), negative-space-testing, conservation-checker, crackle-runtime, lau-closure, lau-glue published
+- ⚠️ "spacemap" name taken — needs rename (forbidden-zones or similar)
+- **Total published: ~69+ crates**
+- 5 more rate-limited, queued for next wave
+
+### PyPI
+- 4 mythos packages still rate-limited (songline, palaver, rhythm-nation, adinkra)
+
+---
+
 ## 2026-05-30 Session — JEPA + Tile Sprint
 
 ### JEPA + Tile Theory
