@@ -36,15 +36,25 @@ class Agent:
 
     def __init__(
         self,
-        name: str,
+        name: str | AgentConfig | None = None,
         memory_dir: str | Path | None = None,
         config: AgentConfig | None = None,
     ):
-        self.config = config or AgentConfig(name=name)
-        self.name = name
-        self.memory = AgentMemory(name, base_dir=memory_dir)
+        # Accept Agent(config) style: if name is an AgentConfig, treat as config
+        if isinstance(name, AgentConfig):
+            config = name
+            name = config.name
+        config = config or AgentConfig(name=name) if name else AgentConfig()
+        self.config = config
+        self.name = config.name
+        self.memory = AgentMemory(self.name, base_dir=memory_dir)
         self._spawned: list[Agent] = []
         self._created_at = datetime.now().isoformat()
+
+    def send(self, message: str) -> str:
+        """Send a message to the agent (memory-based response)."""
+        self.remember(f"Received message: {message}", "inbox")
+        return f"Agent {self.name} processed: {message}"
 
     def remember(self, fact: str, category: str = "general") -> None:
         """Store a fact in long-term memory."""
@@ -55,9 +65,10 @@ class Agent:
         return self.memory.recall(query)
 
     def ask(self, question: str) -> str:
-        """Answer based on memory (keyword search).
+        """Answer based on memory context.
         
-        In production, this calls an LLM API with memory context.
+        Uses keyword search over stored facts. In production,
+        this would call an LLM API with memory context.
         """
         stop_words = {"what", "does", "the", "user", "is", "are", "how", 
                       "why", "when", "where", "who", "a", "an", "do", 

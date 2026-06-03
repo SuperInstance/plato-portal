@@ -84,6 +84,29 @@ class AgentMemory:
             "files": {k: str(v) for k, v in self._files.items()},
         }
 
+    def store(self, key: str, value: str) -> None:
+        """Store a key-value pair."""
+        self.remember(f"key:{key} → {value}", "kvstore")
+
+    def retrieve(self, key: str) -> str | None:
+        """Retrieve a stored value by key."""
+        text = self._files["MEMORY.md"].read_text()
+        prefix = f"key:{key} → "
+        for line in text.split("\n"):
+            if prefix in line:
+                return line.split(prefix, 1)[1].strip()
+        return None
+
+    def search(self, query: str) -> list[str]:
+        """Semantic-style search over memories.
+        
+        Currently uses substring matching. In production this
+        would use embedding-based semantic search.
+        """
+        text = self._files["MEMORY.md"].read_text()
+        return [l.strip() for l in text.split("\n") 
+                if l.strip().startswith("- [") and query.lower() in l.lower()]
+
     def clear(self) -> None:
         """Clear all memories."""
         self._files["MEMORY.md"].write_text("# Long-Term Memory\n\n")
