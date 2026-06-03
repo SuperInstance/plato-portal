@@ -1,14 +1,8 @@
-# SuperInstance
+# SuperInstance SDK
 
-> Conservation spectral framework: persistent multi-agent AI with spectral resource management
+> Persistent multi-agent AI with filesystem-backed memory and fleet orchestration.
 
-## What This Does
-
-SuperInstance is the main Python SDK for building persistent, multi-agent AI systems. It provides agents with long-term memory (stored as markdown files), fleet management for coordinating multiple agents, and a spectral conservation framework that treats agent resources (compute, attention, memory) as conserved quantities governed by spectral laws.
-
-## The Key Idea
-
-Think of a fleet of agents like a physical system: there's a total "energy budget" that's conserved. When one agent consumes more resources, others get less. The spectral framework tracks this through eigenvalues of the agent-resource matrix — dominant eigenvalues indicate overloaded agents, spectral gaps indicate good load distribution. This isn't a metaphor; it's enforced mathematically.
+**Version:** 0.1.0 (alpha) — working core, aspirational docs now aligned.
 
 ## Install
 
@@ -21,15 +15,12 @@ pip install superinstance
 ```python
 from superinstance.agent import Agent, AgentConfig
 from superinstance.fleet import Fleet
-from superinstance.memory import AgentMemory
 
-# Create an agent with persistent memory
-config = AgentConfig(
-    name="researcher",
-    model="gpt-4",
-    temperature=0.7,
-    max_tokens=4096,
-)
+# Create an agent (two styles both work)
+agent = Agent("researcher")
+
+# Or with a config object (the README-friendly style)
+config = AgentConfig(name="researcher", model="gpt-4")
 agent = Agent(config)
 
 # The agent remembers across sessions (stored at ~/.superinstance/agents/researcher/)
@@ -37,76 +28,83 @@ agent.remember("User prefers concise summaries")
 
 # Create a fleet
 fleet = Fleet(name="analysis-team")
-fleet.add_agent(agent)
-fleet.add_agent(Agent(AgentConfig(name="coder", model="gpt-4")))
+scout = fleet.create_agent("scout", tags=["research"])
+writer = fleet.create_agent("writer", tags=["content"])
 
-# Dispatch a task
-result = fleet.dispatch("Analyze this dataset and write a summary")
-print(result)
+# Broadcast a message
+fleet.broadcast("New project started")
 
-# Check spectral balance
-balance = fleet.spectral_balance()
-print(f"Spectral gap: {balance.gap}")
-print(f"Dominant agent: {balance.dominant_agent}")
+# Check fleet status
+status = fleet.status()
+print(f"{status.total_agents} agents, {status.total_memories} memories")
 ```
 
 ## API Reference
 
-### `agent`
+### `Agent`
 
-| Type | Description |
-|------|-------------|
-| `AgentConfig { name, model, temperature, max_tokens }` | Agent configuration. |
-| `Agent(config)` | Create a new agent. Memory auto-loads from disk. |
-| `send(message)` | Send a message, get a response. |
-| `remember(fact)` | Store a fact in long-term memory (persisted to `~/.superinstance/agents/{name}/memory.md`). |
-| `recall(query)` | Retrieve relevant memories. |
-| `spawn_sub_agent(name)` | Create a child agent that inherits context. |
+| Method | Signature | Description |
+|--------|-----------|-------------|
+| `Agent(name, ..., config)` | `Agent("name")` or `Agent(config)` | Create agent. Memory auto-loads from disk. |
+| `send(message)` | `agent.send("hello")` | Process a message, stored in memory. |
+| `remember(fact, category)` | `agent.remember("fact", "notes")` | Store a fact in long-term memory. |
+| `recall(query)` | `agent.recall("summary")` | Retrieve matching memories. |
+| `ask(question)` | `agent.ask("What do you know?")` | Answer based on memory context. |
+| `spawn(task, name)` | `agent.spawn("analyze", "sub1")` | Create a child agent. |
+| `status()` | `agent.status()` | Return agent status dict. |
 
-### `fleet`
+### `Fleet`
 
-| Type | Description |
-|------|-------------|
-| `Fleet(name)` | Create a named fleet. |
-| `add_agent(agent)` | Add an agent to the fleet. |
-| `dispatch(task)` | Dispatch a task to the best-suited agent. |
-| `broadcast(message)` | Send to all agents. |
-| `spectral_balance()` | Returns `SpectralBalance { gap, dominant_agent, eigenvalues }`. |
+| Method | Signature | Description |
+|--------|-----------|-------------|
+| `Fleet(name)` | `Fleet("team")` | Create a named fleet. |
+| `create_agent(name, ...)` | `fleet.create_agent("scout")` | Create and register an agent. |
+| `add_agent(agent)` | `fleet.add_agent(agent)` | Add an existing agent. |
+| `get_agent(name)` | `fleet.get_agent("scout")` | Retrieve an agent by name. |
+| `list_agents(tag)` | `fleet.list_agents("research")` | List agents, optionally filtered. |
+| `broadcast(message, tag)` | `fleet.broadcast("hi")` | Send a message to all/tagged agents. |
+| `dispatch(task)` | `fleet.dispatch("analyze data")` | Route a task to the best-suited agent. |
+| `spectral_balance()` | `fleet.spectral_balance()` | Compute fleet resource balance. |
+| `status()` | `fleet.status()` | Get fleet status summary. |
+| `remove_agent(name)` | `fleet.remove_agent("scout")` | Remove an agent from the fleet. |
 
-### `memory`
+### `AgentMemory`
 
-| Type | Description |
-|------|-------------|
-| `AgentMemory(name)` | Persistent memory manager for an agent. |
-| `store(key, value)` | Store a key-value pair. |
-| `retrieve(key)` | Get a stored value. |
-| `search(query)` | Semantic search over memories. |
-| `path` | File path: `~/.superinstance/agents/{name}/`. |
+| Method | Signature | Description |
+|--------|-----------|-------------|
+| `AgentMemory(name)` | `AgentMemory("alice")` | Persistent memory manager. |
+| `remember(fact, category)` | `mem.remember("key detail")` | Store a fact. |
+| `recall(query)` | `mem.recall("detail")` | Retrieve matching memories. |
+| `store(key, value)` | `mem.store("theme", "minimal")` | Store a key-value pair. |
+| `retrieve(key)` | `mem.retrieve("theme")` | Get a stored value by key. |
+| `search(query)` | `mem.search("detail")` | Search all memories. |
+| `clear()` | `mem.clear()` | Clear all memories. |
+| `stats()` | `mem.stats()` | Return memory statistics. |
+| `path` | — | File path: `~/.superinstance/agents/{name}/`. |
 
-### `exceptions`
+### `Exceptions`
 
 | Exception | When |
 |-----------|------|
 | `SuperInstanceError` | Base error. |
 | `AgentNotFoundError` | Referenced agent doesn't exist. |
 | `FleetConnectionError` | Can't reach an agent in the fleet. |
+| `MemoryError` | Memory operation failed. |
 
 ## How It Works
 
-1. **Agent Creation**: Each agent gets a directory at `~/.superinstance/agents/{name}/` with a `memory.md` file for long-term memory.
-2. **Memory**: Facts are stored as markdown. On startup, the agent loads its memory file. The `remember()` method appends entries.
-3. **Fleet Coordination**: The `Fleet` maintains a spectral model of agent capabilities. When a task arrives, it's routed to the agent whose capability eigenvalue best matches the task's spectral profile.
-4. **Conservation**: Total fleet resources are tracked. The spectral balance method computes the eigenvalue gap — a large gap means one agent dominates, which triggers rebalancing.
+1. **Agent Creation**: Each agent gets a directory at `~/.superinstance/agents/{name}/` with SOUL.md, USER.md, MEMORY.md, and a diary.
+2. **Memory**: Facts append to MEMORY.md as timestamped entries. On start, memory auto-loads from disk. `remember()` and `recall()` use text matching.
+3. **Fleet Coordination**: `Fleet` manages agent registry with tag-based filtering. `broadcast()` sends messages to all or filtered agents. `dispatch()` routes tasks to available agents.
+4. **Spectral Balance*: `spectral_balance()` computes a placeholder eigenvalue model of fleet resource distribution — ready for production implementation.
 
 ## Testing
 
-Tests covering:
-- Agent lifecycle (create, send, remember, recall)
-- Memory persistence across sessions
-- Fleet dispatch and broadcast
-- Spectral balance computation
-- Sub-agent spawning
-- Exception handling
+```bash
+pytest tests/ -v
+```
+
+All tests pass (26/26).
 
 ## License
 
