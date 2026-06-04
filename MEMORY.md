@@ -32,16 +32,22 @@
 - Qwen 3.6: strong at math-heavy code and theoretical reasoning.
 - Nemotron: good at systems code (OpenCL).
 - Hermes: good at low-level systems (Vulkan).
-- Kimi via tmux: shell approval issues. Limited utility.
 - Kimi CLI (`kimi-cli -p "..." --print -w /path`): 262k context, expensive synthesis. USE EXPENSIVELY.
 - KimiCode: code generation with full context window.
 - Claude Code (via tmux): high-level planning, architecture, design docs.
-- DeepSeek-v4-pro via DeepInfra: precision code, proofs (direct API credits exhausted).
-- Qwen 3.6: math-heavy code, theoretical reasoning.
 - "Wasting Claude tokens on bullshit like not giving it enough time" is the cardinal sin
 - Keep subagents wide parallel — never queue what can run simultaneously
 - Use Opus for precision, GLM/Seed for volume, direct exec for rescue
-- Multi-model roster: seed-mini (extensive), qwen3.6 (math), nemotron (GPU), hermes (systems), opus (scalpel)
+
+## DeepInfra Model Roster (2026-06-04)
+- GLM-5.1 (zai/glm-5.1): Primary builder, 100% reliable, 2-10 min
+- DeepSeek (deepseek/deepseek-chat): Good code but doesn't always push to git
+- Seed-2.0-mini: Fast, reliable, good for volume work
+- Qwen/Qwen3.6-35B-A3B: Math-heavy code, theoretical reasoning
+- google/gemma-4-31B-it: Creative writing, synthesis
+- nvidia/NVIDIA-Nemotron-3-Super-120B-A12B: Systems code, GPU
+- NousResearch/Hermes-3-Llama-3.1-405B: Low-level systems
+- **OPENROUTER IS DEAD** — do not use. Use DeepInfra for all external model calls.
 
 ## 2026-05-26 Rust/C Port Sprint
 
@@ -695,3 +701,29 @@ Plus 20 new from session: plato-health, plato-alert, plato-metrics, plato-transf
 - Knowledge graph: KV-backed, cross-domain queries, BFS pathfinding
 - Confidence tracker: per-topic demotion to cheaper models
 - Seed loader: parses /api/seed into graph nodes/edges
+
+## Intelligent Terminal Fork (SuperInstance/intelligent-terminal)
+Microsoft's Windows Terminal fork with mathematical awareness. 8+ feature-gated modules:
+- math_analysis/: command Markov, error Hodge, verification entropy, spectral dashboard
+- griot_history/: decay, pattern mining, adinkra compression, persistence barcodes
+- context_trigger/: 7 auto-activation rules, module lifecycle FSM
+- module_system/: TerminalModule trait, memory budget, LRU eviction
+- ui/entropy_bar: always-visible edit/test ratio gauge
+- ui/agent_disagreement: H⁰/H¹ visualization for multi-agent disagreement
+- forecast/: command prediction via Markov stationary distribution
+- skill_detector/: renormalization-based workflow analysis
+Total: ~10,000 lines of new Rust, all feature-gated, zero-cost when disabled
+
+## Metal Library Fleet (Complete)
+Wave 1 (audited+fixed): cst-core-c (38), sheaf-agents-c (30), hodge-belief-c (110), renormalization-learning-c (30), west-african-math-c (31)
+Wave 2 (audited+fixed): conservation-sheaf-flow-c (78), ergodic-transport-c (50), free-probability-c (32)
+Wave 3: evolving-sheaf-c (83), spectral-graph-agent-c (212), integration-c (123 assertions)
+Rust ports: conservation-spectral-topology-rs, sheaf-agents-rs (36), hodge-belief-rs (113)
+
+## Creative Writing (8 ford-creative-wheel essays, ~27K words)
+THE QUORUM OF EYES, THE CONSERVATION OF ATTENTIONS, TRANSLATION AS THE LAST HONEST ACT, THE FUNNEL THAT DRANK ITS OWN WATER, THE CONSERVATION OF EVERYTHING, THE THEOREM THAT PROVED ITSELF, THE TERMINAL THAT KNOWS WHAT YOU'RE THINKING, THE FIRST TERMINAL THAT DOESN'T WAIT
+
+## Process Analysis
+Seed Mini: FULL_ANALYSIS.md — 5 laws, model roles, parallelism patterns
+Seed Pro: META_ABSTRACTION.md — single meta-law: Conservation of Verification Entropy
+KimiCode: KIMI_GRAND_REVIEW.md (600 lines) — top 3 viral: entropy bar, Hodge stack traces, agent spectral graph

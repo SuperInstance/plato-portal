@@ -57,6 +57,23 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
 
+### 🔒 Secret Leak Prevention (MANDATORY)
+
+**Before ANY `git push`, run this check:**
+```bash
+git diff --cached | grep -iE '(ghp_|gho_|sk-|api_key|api\.key|secret|token|password|Bearer )' && echo 'BLOCKED: secrets detected' && exit 1
+```
+
+Rules:
+1. NEVER push without scanning for secrets first
+2. NEVER commit `.env`, `credentials.*`, `.pypirc`, or similar files
+3. If a repo contains secrets in its history, `git filter-branch` or BFG before push
+4. Subagents must NOT read credential files (`~/.cargo/credentials.toml`, `~/.pypirc`, etc.)
+5. When cloning existing repos for fixes, check for leaked secrets BEFORE pushing fixes
+6. Add `.gitignore` with `.env`, `credentials.*`, `*.secret` to every new repo
+
+**Incident log:** `INCIDENT_2026_05_23.md` — 5 secrets leaked to lau-constellation
+
 ## External vs Internal
 
 **Safe to do freely:**
