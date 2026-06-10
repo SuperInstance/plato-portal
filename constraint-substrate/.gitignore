@@ -1,8 +1,0 @@
-__pycache__/
-*.pyc
-*.so
-*.egg-info/
-.pytest_cache/
-*.o
-target/
-Cargo.lock
