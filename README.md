@@ -2,6 +2,39 @@
 
 > Conservation spectral framework: persistent multi-agent AI with spectral resource management
 
+## ⚡ Quick Start
+
+Get up and running in 5 minutes:
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/SuperInstance/tminus-client.git
+cd tminus-client
+```
+
+### 2. Install the client
+
+The package isn't on npm yet — install from GitHub for now:
+
+```bash
+npm install github:SuperInstance/tminus-client
+```
+
+> **📝 Note:** `@superinstance/tminus-client` will be published to npm soon. Once it is, you'll be able to `npm install @superinstance/tminus-client` instead.
+
+### 3. Run the dispatcher + demo
+
+```bash
+# Start the local stack
+docker compose up -d
+
+# Run a demo dispatch
+node examples/demo.mjs
+```
+
+That's it — you've got a running dispatcher.
+
 ## What This Does
 
 SuperInstance is the main Python SDK for building persistent, multi-agent AI systems. It provides agents with long-term memory (stored as markdown files), fleet management for coordinating multiple agents, and a spectral conservation framework that treats agent resources (compute, attention, memory) as conserved quantities governed by spectral laws.
@@ -16,7 +49,7 @@ Think of a fleet of agents like a physical system: there's a total "energy budge
 pip install superinstance
 ```
 
-## Quick Start
+## Python SDK Example
 
 ```python
 from superinstance.agent import Agent, AgentConfig
