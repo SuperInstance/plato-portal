@@ -69,17 +69,58 @@ Your analysis is valuable even without live API access. Output structured insigh
 </section>
 <!-- Quickstart Section -->
 <section style="padding:4rem 2rem;text-align:center;background:linear-gradient(135deg,#0d1a2a,#0a1a1a);border-top:2px solid var(--accent);border-bottom:1px solid var(--border)">
-  <h2 style="color:#00E6D6;font-size:1.5rem;margin-bottom:.5rem">⚡ Start in 30 Seconds</h2>
-  <p style="color:var(--dim);max-width:520px;margin:0 auto 2rem;font-size:.85rem">Three commands. No config. Running fleet.</p>
-  <div style="max-width:600px;margin:0 auto;background:var(--bg);border:2px solid var(--accent);border-radius:10px;padding:1.5rem 1.5rem 1rem;text-align:left">
-    <div style="font-size:.7rem;color:var(--dim);margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.1em">Install &amp; Launch</div>
-    <pre style="font-size:.82rem;color:#c4b5fd;line-height:1.8;margin:0;white-space:pre-wrap"><span style="color:var(--dim)">$</span> npm install @superinstance/tminus-client @superinstance/tminus-dispatcher
-<span style="color:var(--dim)">$</span> npx tminus-dispatcher &amp;
-<span style="color:var(--dim)">$</span> node your-agent.js</pre>
-    <div style="text-align:right;margin-top:.6rem"><button class="btn btn-primary copy-btn" onclick="navigator.clipboard.writeText('npm install @superinstance/tminus-client @superinstance/tminus-dispatcher\nnpx tminus-dispatcher &\nnode your-agent.js');this.textContent='✓ Copied!';setTimeout(()=>this.textContent='📋 Copy Commands',2000)">📋 Copy Commands</button></div>
+  <h2 style="color:#00E6D6;font-size:1.5rem;margin-bottom:.5rem">⚡ Quickstart</h2>
+  <p style="color:var(--dim);max-width:520px;margin:0 auto 2rem;font-size:.85rem">Search the fleet knowledge base in three lines. Pick your language.</p>
+  <div style="max-width:680px;margin:0 auto;background:#12121a;border:1px solid #1a1a2e;border-radius:12px;overflow:hidden;text-align:left">
+    <!-- Tabs -->
+    <div style="display:flex;border-bottom:1px solid #1a1a2e">
+      <button onclick="switchTab('nodejs')" id="tab-nodejs" style="flex:1;padding:.75rem;background:transparent;color:#00E6D6;border:none;border-bottom:2px solid #00E6D6;font-family:'JetBrains Mono',monospace;font-size:.8rem;cursor:pointer">Node.js</button>
+      <button onclick="switchTab('python')" id="tab-python" style="flex:1;padding:.75rem;background:transparent;color:var(--dim);border:none;border-bottom:2px solid transparent;font-family:'JetBrains Mono',monospace;font-size:.8rem;cursor:pointer">Python</button>
+      <button onclick="switchTab('curl')" id="tab-curl" style="flex:1;padding:.75rem;background:transparent;color:var(--dim);border:none;border-bottom:2px solid transparent;font-family:'JetBrains Mono',monospace;font-size:.8rem;cursor:pointer">cURL</button>
+    </div>
+    <!-- Node.js Tab -->
+    <div id="panel-nodejs" style="padding:1.5rem">
+      <div style="font-size:.7rem;color:var(--dim);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.1em">Install</div>
+      <pre style="font-size:.82rem;color:#c4b5fd;line-height:1.8;margin:0 0 1rem;white-space:pre-wrap;border-left:3px solid #00E6D6;padding-left:1rem">npm install @superinstance/tminus-client</pre>
+      <div style="text-align:right;margin-bottom:.8rem"><button class="btn btn-ghost copy-btn" style="font-size:.7rem;padding:.3rem .8rem" onclick="copyCode('nodejs-install');this.textContent='✓ Copied!';setTimeout(()=>this.textContent='📋 Copy',1500)">📋 Copy</button></div>
+      <div style="font-size:.7rem;color:var(--dim);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.1em">Usage</div>
+      <pre id="nodejs-install" style="font-size:.82rem;color:#c4b5fd;line-height:1.8;margin:0 0 .5rem;white-space:pre-wrap;border-left:3px solid #00E6D6;padding-left:1rem">import { TMinusClient } from '@superinstance/tminus-client';
+const client = new TMinusClient();
+const results = await client.search('ternary math', { topK: 3 });
+console.log(results);</pre>
+      <div style="text-align:right"><button class="btn btn-ghost copy-btn" style="font-size:.7rem;padding:.3rem .8rem" onclick="copyCode('nodejs-usage');this.textContent='✓ Copied!';setTimeout(()=>this.textContent='📋 Copy',1500)">📋 Copy</button></div>
+    </div>
+    <!-- Python Tab -->
+    <div id="panel-python" style="padding:1.5rem;display:none">
+      <div style="font-size:.7rem;color:var(--dim);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.1em">Install</div>
+      <pre id="python-install" style="font-size:.82rem;color:#c4b5fd;line-height:1.8;margin:0 0 1rem;white-space:pre-wrap;border-left:3px solid #00E6D6;padding-left:1rem">pip install superinstance-fleet</pre>
+      <div style="text-align:right;margin-bottom:.8rem"><button class="btn btn-ghost copy-btn" style="font-size:.7rem;padding:.3rem .8rem" onclick="copyCode('python-install');this.textContent='✓ Copied!';setTimeout(()=>this.textContent='📋 Copy',1500)">📋 Copy</button></div>
+      <div style="font-size:.7rem;color:var(--dim);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.1em">Usage</div>
+      <pre id="python-usage" style="font-size:.82rem;color:#c4b5fd;line-height:1.8;margin:0 0 .5rem;white-space:pre-wrap;border-left:3px solid #00E6D6;padding-left:1rem">from superinstance_fleet import FleetClient
+client = FleetClient()
+results = client.search("ternary math", top_k=3)
+print(results)</pre>
+      <div style="text-align:right"><button class="btn btn-ghost copy-btn" style="font-size:.7rem;padding:.3rem .8rem" onclick="copyCode('python-usage');this.textContent='✓ Copied!';setTimeout(()=>this.textContent='📋 Copy',1500)">📋 Copy</button></div>
+    </div>
+    <!-- cURL Tab -->
+    <div id="panel-curl" style="padding:1.5rem;display:none">
+      <div style="font-size:.7rem;color:var(--dim);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.1em">Search the Fleet Vector API</div>
+      <pre id="curl-cmd" style="font-size:.82rem;color:#c4b5fd;line-height:1.8;margin:0 0 .5rem;white-space:pre-wrap;border-left:3px solid #00E6D6;padding-left:1rem">curl -X POST https://fleet-vector-api.casey-digennaro.workers.dev/search \
+  -H "Content-Type: application/json" \
+  -d '{"query":"ternary math","topK":3}'</pre>
+      <div style="text-align:right"><button class="btn btn-ghost copy-btn" style="font-size:.7rem;padding:.3rem .8rem" onclick="copyCode('curl-cmd');this.textContent='✓ Copied!';setTimeout(()=>this.textContent='📋 Copy',1500)">📋 Copy</button></div>
+    </div>
   </div>
-  <div style="margin-top:1.5rem"><a href="https://github.com/SuperInstance/SuperInstance/blob/main/ONBOARDING.md" style="color:var(--accent);font-size:.85rem;font-weight:600;text-decoration:none;border:1px solid var(--accent);padding:.5rem 1.2rem;border-radius:6px;display:inline-block;transition:all .2s" onmouseover="this.style.background='rgba(0,230,214,.1)'" onmouseout="this.style.background='transparent'">Full Guide →</a></div>
+  <!-- Buttons -->
+  <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center">
+    <a href="https://fleet-vector-api.casey-digennaro.workers.dev/docs" class="btn btn-primary" style="font-size:.85rem;padding:.7rem 1.8rem">Explore the API</a>
+    <a href="https://github.com/SuperInstance/SuperInstance" class="btn btn-ghost" style="font-size:.85rem;padding:.7rem 1.8rem">View on GitHub</a>
+  </div>
 </section>
+<script>
+function switchTab(name){['nodejs','python','curl'].forEach(function(t){var tab=document.getElementById('tab-'+t);var panel=document.getElementById('panel-'+t);if(t===name){tab.style.color='#00E6D6';tab.style.borderBottomColor='#00E6D6';panel.style.display='block'}else{tab.style.color='var(--dim)';tab.style.borderBottomColor='transparent';panel.style.display='none'}})}
+function copyCode(id){var el=document.getElementById(id);if(el){navigator.clipboard.writeText(el.textContent.trim())}}
+</script>
 
 <!-- What Can You Build Section -->
 <section style="padding:4rem 2rem;background:linear-gradient(180deg,#0a0a0f,#0d0d1a)">
