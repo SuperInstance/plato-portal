@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SuperInstance — System Status</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#0a0a0f;color:#e0e0e0;min-height:100vh}
+  .container{max-width:800px;margin:0 auto;padding:40px 24px}
+  a{color:#00E6D6;text-decoration:none}
+  a:hover{text-decoration:underline}
+  .back{font-size:14px;margin-bottom:32px;display:flex;align-items:center;gap:6px}
+  h1{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;margin-bottom:8px}
+  .subtitle{color:#888;margin-bottom:40px;font-size:14px}
+  .status-card{background:#12121a;border:1px solid #1a1a2e;border-radius:12px;padding:24px;margin-bottom:16px;transition:border-color 0.3s}
+  .status-card:hover{border-color:#00E6D633}
+  .status-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+  .status-name{font-family:'JetBrains Mono',monospace;font-size:16px;font-weight:600}
+  .badge{padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px}
+  .badge-ok{background:#00E6D622;color:#00E6D6}
+  .badge-err{background:#ff444422;color:#ff4444}
+  .badge-loading{background:#ffaa0022;color:#ffaa00}
+  .metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
+  .metric{text-align:center;padding:12px;background:#0a0a0f;border-radius:8px}
+  .metric-value{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:700;color:#00E6D6}
+  .metric-label{font-size:12px;color:#666;margin-top:4px}
+  .endpoint-table{width:100%;border-collapse:collapse;margin-top:12px}
+  .endpoint-table th,.endpoint-table td{text-align:left;padding:8px 12px;border-bottom:1px solid #1a1a2e;font-size:13px}
+  .endpoint-table th{color:#666;font-weight:500}
+  .endpoint-table td{font-family:'JetBrains Mono',monospace;font-size:12px}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px}
+  .dot-ok{background:#00E6D6}
+  .dot-err{background:#ff4444}
+  .dot-loading{background:#ffaa00;animation:pulse 1.5s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+  .last-checked{font-size:12px;color:#444;margin-top:32px;text-align:center}
+  .refresh-btn{background:transparent;border:1px solid #1a1a2e;color:#00E6D6;padding:8px 20px;border-radius:8px;cursor:pointer;font-family:inherit;font-size:13px;transition:all 0.2s}
+  .refresh-btn:hover{background:#00E6D611;border-color:#00E6D644}
+  .actions{display:flex;gap:12px;justify-content:center;margin-top:20px}
+  code{font-family:'JetBrains Mono',monospace;background:#0a0a0f;padding:2px 6px;border-radius:4px;font-size:12px}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <div class="back"><a href="index.html">← Back to Docs</a></div>
+  <h1>System Status</h1>
+  <p class="subtitle">Real-time health of SuperInstance services</p>
+
+  <div class="status-card" id="api-card">
+    <div class="status-header">
+      <span class="status-name">fleet-vector-api</span>
+      <span class="badge badge-loading" id="api-badge">Checking...</span>
+    </div>
+    <div class="metric-grid" id="api-metrics">
+      <div class="metric"><div class="metric-value" id="m-crates">—</div><div class="metric-label">Crates Indexed</div></div>
+      <div class="metric"><div class="metric-value" id="m-dims">—</div><div class="metric-label">Dimensions</div></div>
+      <div class="metric"><div class="metric-value" id="m-model">—</div><div class="metric-label">Embedding Model</div></div>
+      <div class="metric"><div class="metric-value" id="m-ingest">—</div><div class="metric-label">Last Ingest</div></div>
+    </div>
+    <table class="endpoint-table">
+      <thead><tr><th>Endpoint</th><th>Method</th><th>Status</th></tr></thead>
+      <tbody id="endpoint-rows"></tbody>
+    </table>
+  </div>
+
+  <div class="status-card" id="edge-card">
+    <div class="status-header">
+      <span class="status-name">fleet-edge-worker</span>
+      <span class="badge badge-loading" id="edge-badge">Checking...</span>
+    </div>
+    <p style="font-size:13px;color:#666" id="edge-info">Checking endpoint...</p>
+  </div>
+
+  <div class="status-card">
+    <div class="status-header">
+      <span class="status-name">npm Packages</span>
+      <span class="badge badge-loading" id="npm-badge">Checking...</span>
+    </div>
+    <table class="endpoint-table">
+      <thead><tr><th>Package</th><th>Version</th><th>Status</th></tr></thead>
+      <tbody id="npm-rows"></tbody>
+    </table>
+  </div>
+
+  <div class="actions">
+    <button class="refresh-btn" onclick="runChecks()">↻ Refresh</button>
+  </div>
+
+  <div class="last-checked" id="last-checked">Not yet checked</div>
+</div>
+
+<script>
+const API = 'https://fleet-vector-api.casey-digennaro.workers.dev';
+const EDGE = 'https://fleet-edge.casey-digennaro.workers.dev';
+const endpoints = [
+  { path: '/search', method: 'POST' },
+  { path: '/similar', method: 'POST' },
+  { path: '/recommend', method: 'POST' },
+  { path: '/stats', method: 'GET' },
+  { path: '/clusters', method: 'GET' },
+  { path: '/dashboard', method: 'GET' },
+  { path: '/docs', method: 'GET' },
+  { path: '/openapi.json', method: 'GET' },
+];
+
+function setBadge(id, status) {
+  const el = document.getElementById(id);
+  if (status === 'ok') { el.className = 'badge badge-ok'; el.textContent = 'Operational'; }
+  else if (status === 'err') { el.className = 'badge badge-err'; el.textContent = 'Down'; }
+  else { el.className = 'badge badge-loading'; el.textContent = 'Checking...'; }
+}
+
+async function checkEndpoint(path, method) {
+  try {
+    const opts = { method: method, headers: { 'Content-Type': 'application/json' } };
+    if (method === 'POST') opts.body = JSON.stringify({ query: 'test', topK: 1 });
+    const r = await fetch(API + path, opts);
+    return r.ok ? 200 : r.status;
+  } catch { return 0; }
+}
+
+async function runChecks() {
+  // Reset
+  setBadge('api-badge', 'loading');
+  setBadge('edge-badge', 'loading');
+  setBadge('npm-badge', 'loading');
+
+  // API stats
+  try {
+    const r = await fetch(API + '/stats');
+    const s = await r.json();
+    document.getElementById('m-crates').textContent = s.crate_count?.toLocaleString() || '—';
+    document.getElementById('m-dims').textContent = s.dimensions || '—';
+    document.getElementById('m-model').textContent = (s.model || '—').split('/').pop();
+    const ts = s.last_ingest ? new Date(s.last_ingest).toLocaleString() : '—';
+    document.getElementById('m-ingest').textContent = ts;
+  } catch {
+    document.getElementById('m-crates').textContent = 'err';
+  }
+
+  // Endpoints
+  const rows = document.getElementById('endpoint-rows');
+  rows.innerHTML = '';
+  let allOk = true;
+  for (const ep of endpoints) {
+    const status = await checkEndpoint(ep.path, ep.method);
+    if (status !== 200 && ep.method === 'GET') allOk = false;
+    // POST endpoints need auth or body, so 400/401 is fine
+    const ok = (status === 200) || (ep.method === 'POST' && (status === 400 || status === 401));
+    if (!ok) allOk = false;
+    rows.innerHTML += `<tr>
+      <td>${ep.path}</td><td>${ep.method}</td>
+      <td><span class="dot ${ok ? 'dot-ok' : 'dot-err'}"></span>${status || 'ERR'}</td>
+    </tr>`;
+  }
+  setBadge('api-badge', allOk ? 'ok' : 'err');
+
+  // Edge worker
+  try {
+    const r = await fetch(EDGE, { method: 'GET' });
+    const ok = r.ok || r.status === 404; // 404 means it's alive, just no root route
+    document.getElementById('edge-info').textContent = `Responding (${r.status}) — ${ok ? 'healthy' : 'check needed'}`;
+    setBadge('edge-badge', ok ? 'ok' : 'err');
+  } catch {
+    document.getElementById('edge-info').textContent = 'Unreachable';
+    setBadge('edge-badge', 'err');
+  }
+
+  // npm
+  const pkgs = [
+    { name: '@superinstance/tminus-client', url: 'https://registry.npmjs.org/@superinstance/tminus-client' },
+    { name: '@superinstance/tminus-dispatcher', url: 'https://registry.npmjs.org/@superinstance/tminus-dispatcher' },
+  ];
+  const npmRows = document.getElementById('npm-rows');
+  npmRows.innerHTML = '';
+  let npmOk = true;
+  for (const p of pkgs) {
+    try {
+      const r = await fetch(p.url);
+      const d = await r.json();
+      const v = d['dist-tags']?.latest || '—';
+      npmRows.innerHTML += `<tr><td>${p.name}</td><td>${v}</td><td><span class="dot dot-ok"></span>Published</td></tr>`;
+    } catch {
+      npmOk = false;
+      npmRows.innerHTML += `<tr><td>${p.name}</td><td>—</td><td><span class="dot dot-err"></span>Error</td></tr>`;
+    }
+  }
+  setBadge('npm-badge', npmOk ? 'ok' : 'err');
+
+  document.getElementById('last-checked').textContent = `Last checked: ${new Date().toLocaleString()}`;
+}
+
+runChecks();
+</script>
+</body>
+</html>
