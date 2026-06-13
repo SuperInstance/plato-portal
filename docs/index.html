@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SuperInstance — Docs</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+  :root {
+    --bg: #0a0a0f;
+    --bg-elevated: #12121a;
+    --bg-card: #16161f;
+    --bg-code: #1a1a25;
+    --border: #2a2a3a;
+    --border-light: #3a3a4a;
+    --text: #e4e4ed;
+    --text-muted: #8888a0;
+    --text-dim: #5a5a72;
+    --accent: #00E6D6;
+    --accent-dim: rgba(0, 230, 214, 0.15);
+    --accent-glow: rgba(0, 230, 214, 0.3);
+    --radius: 8px;
+    --radius-lg: 12px;
+    --mono: 'JetBrains Mono', 'Fira Code', monospace;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; min-height: 100vh; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,10,15,0.85); backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem; height: 60px;
+    display: flex; align-items: center; gap: 2rem;
+  }
+  nav .logo {
+    font-family: var(--mono); font-weight: 700; font-size: 1.1rem;
+    color: var(--accent); text-decoration: none; white-space: nowrap;
+  }
+  nav .nav-links { display: flex; gap: 0.25rem; overflow-x: auto; }
+  nav .nav-links a {
+    font-family: var(--mono); font-size: 0.78rem;
+    color: var(--text-muted); text-decoration: none;
+    padding: 0.35rem 0.65rem; border-radius: 6px;
+    white-space: nowrap; transition: all 0.15s;
+  }
+  nav .nav-links a:hover { color: var(--accent); background: var(--accent-dim); }
+  nav .nav-links a.active { color: var(--accent); background: var(--accent-dim); }
+
+  .hero {
+    margin-top: 60px; padding: 5rem 2rem 3rem; text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(0,230,214,0.04) 0%, transparent 70%);
+  }
+  .hero h1 {
+    font-family: var(--mono); font-size: 2.8rem; font-weight: 700;
+    letter-spacing: -0.02em; margin-bottom: 0.75rem;
+  }
+  .hero h1 .accent { color: var(--accent); }
+  .hero .tagline {
+    font-size: 1.15rem; color: var(--text-muted);
+    max-width: 640px; margin: 0 auto 2rem;
+  }
+  .hero .install-box {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 0.75rem 1.5rem;
+    font-family: var(--mono); font-size: 0.95rem; margin-bottom: 1rem;
+  }
+  .hero .install-box .cmd { color: var(--accent); }
+
+  main { max-width: 920px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+
+  .section { margin-bottom: 3rem; scroll-margin-top: 80px; }
+  .section-title {
+    font-family: var(--mono); font-size: 1.4rem; font-weight: 700;
+    margin-bottom: 1.25rem; padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .section-title .icon { color: var(--accent); }
+
+  .card-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 1.5rem;
+    transition: border-color 0.2s, transform 0.15s;
+    text-decoration: none; color: inherit; display: block;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card .card-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+  .card .card-title {
+    font-family: var(--mono); font-size: 1rem; font-weight: 600;
+    margin-bottom: 0.5rem; color: var(--text);
+  }
+  .card .card-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
+  .card .card-tag {
+    display: inline-block; margin-top: 0.75rem;
+    font-family: var(--mono); font-size: 0.7rem;
+    padding: 0.2rem 0.6rem; border-radius: 4px;
+    background: var(--accent-dim); color: var(--accent);
+  }
+
+  .note {
+    background: var(--accent-dim); border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1rem 1.25rem; font-size: 0.9rem; margin: 1.5rem 0;
+  }
+  .note strong { color: var(--accent); }
+
+  pre {
+    background: var(--bg-code); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1rem 1.25rem;
+    overflow-x: auto; font-family: var(--mono); font-size: 0.82rem;
+    line-height: 1.6;
+  }
+
+  footer {
+    text-align: center; padding: 3rem 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim); font-size: 0.85rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0 1rem; }
+    nav .nav-links { display: none; }
+    .hero h1 { font-size: 1.8rem; }
+    .hero { padding: 3rem 1rem 2rem; }
+    main { padding: 1.5rem 1rem 4rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">superinstance</a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Docs</a>
+    <a href="onboarding.html">Onboarding</a>
+    <a href="architecture.html">Architecture</a>
+    <a href="api.html">API Reference</a>
+    <a href="hello-world.md">Tutorial</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1><span class="accent">Super</span>Instance</h1>
+  <p class="tagline">Conservation spectral framework for persistent multi-agent AI. Coordinate fleets of agents with spectral resource management and conserved energy budgets.</p>
+  <div class="install-box">
+    <span class="cmd">pip install superinstance</span>
+  </div>
+  <div class="install-box">
+    <span class="cmd">npm i @superinstance/tminus-client</span>
+  </div>
+</section>
+
+<main>
+  <!-- Getting Started -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">⚡</span> Get Started</h2>
+    <div class="card-grid">
+      <a href="onboarding.html" class="card">
+        <div class="card-icon">🚀</div>
+        <div class="card-title">Onboarding Guide</div>
+        <div class="card-desc">Install the SDK, start a dispatcher, and build your first agent in 5 minutes.</div>
+        <span class="card-tag">beginner</span>
+      </a>
+      <a href="hello-world.md" class="card">
+        <div class="card-icon">👋</div>
+        <div class="card-title">Hello World Tutorial</div>
+        <div class="card-desc">Build a two-agent coordination system with Alpha and Beta in under 50 lines each.</div>
+        <span class="card-tag">tutorial</span>
+      </a>
+      <a href="architecture.html" class="card">
+        <div class="card-icon">🏗️</div>
+        <div class="card-title">Core Concepts</div>
+        <div class="card-desc">Understand the t-minus protocol, fleets, bottles, and the conservation law.</div>
+        <span class="card-tag">concepts</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- API -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">📡</span> API &amp; Reference</h2>
+    <div class="card-grid">
+      <a href="api.html" class="card">
+        <div class="card-icon">🔌</div>
+        <div class="card-title">Fleet Vector API</div>
+        <div class="card-desc">Semantic crate search, similarity, recommendations, gap analysis, and dashboard endpoints.</div>
+        <span class="card-tag">REST API</span>
+      </a>
+      <a href="openapi.yaml" class="card">
+        <div class="card-icon">📜</div>
+        <div class="card-title">OpenAPI Spec</div>
+        <div class="card-desc">Full OpenAPI 3.1 specification for the Fleet Vector API. Import into any client generator.</div>
+        <span class="card-tag">yaml</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Quick Examples -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">💻</span> Quick Examples</h2>
+
+    <div class="note">
+      <strong>Python SDK</strong> — Create an agent with persistent memory and spectral fleet coordination.
+    </div>
+    <pre>from superinstance.agent import Agent, AgentConfig
+from superinstance.fleet import Fleet
+
+agent = Agent(AgentConfig(name="researcher", model="gpt-4"))
+agent.remember("User prefers concise summaries")
+
+fleet = Fleet(name="analysis-team")
+fleet.add_agent(agent)
+result = fleet.dispatch("Analyze this dataset")
+print(result)</pre>
+
+    <div class="note" style="margin-top: 1.5rem">
+      <strong>Node.js SDK</strong> — Two agents coordinating through the t-minus dispatcher.
+    </div>
+    <pre>import { TminusClient } from "@superinstance/tminus-client";
+
+const client = new TminusClient("ws://localhost:8765");
+await client.connect();
+await client.register("alpha", { timbre: "direct" });
+await client.subscribe("hello");
+await client.cue("beta", 0, "hello", { task: "greet" });</pre>
+  </section>
+
+  <!-- Architecture -->
+  <section class="section">
+    <h2 class="section-title"><span class="icon">🧭</span> How It Works</h2>
+    <div class="card-grid">
+      <a href="architecture.html" class="card">
+        <div class="card-icon">⏱️</div>
+        <div class="card-title">T-Minus Protocol</div>
+        <div class="card-desc">Temporal cueing with offsets. Negative offsets give head starts, positive create countdowns. Zero is immediate.</div>
+      </a>
+      <a href="architecture.html" class="card">
+        <div class="card-icon">🛳️</div>
+        <div class="card-title">Fleet &amp; Vessels</div>
+        <div class="card-desc">Groups of agents coordinated through a central dispatcher with spectral load balancing.</div>
+      </a>
+      <a href="architecture.html" class="card">
+        <div class="card-icon">🍶</div>
+        <div class="card-title">Bottles</div>
+        <div class="card-desc">Encapsulated message containers that preserve state across agent handoffs.</div>
+      </a>
+      <a href="architecture.html" class="card">
+        <div class="card-icon">⚖️</div>
+        <div class="card-title">Conservation Law</div>
+        <div class="card-desc">Total fleet resources are conserved. Spectral eigenvalues track balance and trigger rebalancing.</div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>SuperInstance &mdash; <a href="https://superinstance.ai">superinstance.ai</a></p>
+</footer>
+
+</body>
+</html>

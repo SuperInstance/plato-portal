@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fleet Vector API — Documentation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg: #0a0a0f;
+    --bg-elevated: #12121a;
+    --bg-card: #16161f;
+    --bg-code: #1a1a25;
+    --border: #2a2a3a;
+    --border-light: #3a3a4a;
+    --text: #e4e4ed;
+    --text-muted: #8888a0;
+    --text-dim: #5a5a72;
+    --accent: #00E6D6;
+    --accent-dim: rgba(0, 230, 214, 0.15);
+    --accent-glow: rgba(0, 230, 214, 0.3);
+    --red: #ff5555;
+    --orange: #ffb86c;
+    --green: #50fa7b;
+    --purple: #bd93f9;
+    --yellow: #f1fa8c;
+    --blue: #8be9fd;
+    --pink: #ff79c6;
+    --method-get: #50fa7b;
+    --method-post: #ffb86c;
+    --radius: 8px;
+    --radius-lg: 12px;
+    --mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* Nav */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    height: 60px;
+    display: flex; align-items: center; gap: 2rem;
+  }
+  nav .logo {
+    font-family: var(--mono);
+    font-weight: 700; font-size: 1.05rem;
+    color: var(--accent);
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  nav .logo span { color: var(--text-muted); font-weight: 400; }
+  nav .nav-links { display: flex; gap: 0.25rem; overflow-x: auto; }
+  nav .nav-links a {
+    font-family: var(--mono); font-size: 0.78rem;
+    color: var(--text-muted); text-decoration: none;
+    padding: 0.35rem 0.65rem; border-radius: 6px;
+    white-space: nowrap; transition: all 0.15s;
+  }
+  nav .nav-links a:hover { color: var(--accent); background: var(--accent-dim); }
+  nav .nav-links a.post-link::before { content: 'POST '; color: var(--method-post); font-size: 0.65rem; margin-right: 2px; }
+  nav .nav-links a.get-link::before { content: 'GET '; color: var(--method-get); font-size: 0.65rem; margin-right: 2px; }
+
+  /* Hero */
+  .hero {
+    margin-top: 60px;
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(0,230,214,0.04) 0%, transparent 70%);
+  }
+  .hero h1 {
+    font-family: var(--mono);
+    font-size: 2.8rem; font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+  }
+  .hero h1 .accent { color: var(--accent); }
+  .hero .tagline {
+    font-size: 1.15rem; color: var(--text-muted);
+    max-width: 600px; margin: 0 auto 2rem;
+  }
+  .base-url-box {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 0.75rem 1.5rem;
+    font-family: var(--mono); font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  .base-url-box .label {
+    color: var(--text-dim); font-size: 0.75rem;
+    text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .base-url-box .url { color: var(--accent); }
+  .base-url-box .copy-btn {
+    background: none; border: 1px solid var(--border-light);
+    color: var(--text-muted); padding: 0.3rem 0.7rem;
+    border-radius: 6px; cursor: pointer; font-family: var(--mono);
+    font-size: 0.75rem; transition: all 0.15s;
+  }
+  .base-url-box .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  .meta-badges {
+    display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  .meta-badge {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 20px; padding: 0.4rem 1rem;
+    font-family: var(--mono); font-size: 0.78rem; color: var(--text-muted);
+  }
+  .meta-badge .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent); display: inline-block;
+  }
+
+  /* Main */
+  main {
+    max-width: 920px; margin: 0 auto;
+    padding: 2rem 2rem 6rem;
+  }
+
+  /* Section */
+  .section { margin-bottom: 4rem; scroll-margin-top: 80px; }
+  .section-title {
+    font-family: var(--mono); font-size: 1.5rem; font-weight: 700;
+    margin-bottom: 1.5rem; padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .section-title .icon { color: var(--accent); font-size: 1.2rem; }
+
+  /* Endpoint card */
+  .endpoint {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .endpoint-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .method-badge {
+    font-family: var(--mono); font-size: 0.72rem; font-weight: 700;
+    padding: 0.3rem 0.7rem; border-radius: 5px;
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .method-badge.get { background: rgba(80,250,123,0.12); color: var(--method-get); }
+  .method-badge.post { background: rgba(255,184,108,0.12); color: var(--method-post); }
+  .endpoint-path {
+    font-family: var(--mono); font-size: 1.05rem; font-weight: 600;
+    color: var(--text);
+  }
+  .endpoint-auth {
+    margin-left: auto;
+    font-family: var(--mono); font-size: 0.72rem;
+    padding: 0.25rem 0.65rem; border-radius: 5px;
+    border: 1px solid var(--border);
+  }
+  .endpoint-auth.locked { border-color: var(--red); color: var(--red); background: rgba(255,85,85,0.08); }
+  .endpoint-auth.public { border-color: var(--green); color: var(--green); background: rgba(80,250,123,0.08); }
+  .endpoint-body { padding: 1.5rem; }
+  .endpoint-desc {
+    font-size: 0.95rem; color: var(--text-muted);
+    margin-bottom: 1.5rem; line-height: 1.6;
+  }
+  .endpoint-desc strong { color: var(--text); }
+
+  /* Sub-sections inside an endpoint */
+  .sub-section { margin-bottom: 1.5rem; }
+  .sub-section-label {
+    font-family: var(--mono); font-size: 0.75rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--text-dim); margin-bottom: 0.6rem;
+  }
+
+  /* Schema table */
+  .schema-table {
+    width: 100%; border-collapse: collapse;
+    font-family: var(--mono); font-size: 0.82rem;
+  }
+  .schema-table th {
+    text-align: left; font-weight: 600;
+    color: var(--text-dim); font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-code);
+  }
+  .schema-table td {
+    padding: 0.55rem 0.75rem;
+    border-bottom: 1px solid rgba(42,42,58,0.5);
+    vertical-align: top;
+  }
+  .schema-table tr:last-child td { border-bottom: none; }
+  .schema-table .field { color: var(--blue); }
+  .schema-table .type { color: var(--purple); }
+  .schema-table .required { color: var(--orange); font-size: 0.7rem; }
+  .schema-table .optional { color: var(--text-dim); font-size: 0.7rem; }
+  .schema-table .desc { color: var(--text-muted); font-size: 0.78rem; }
+
+  /* Code blocks */
+  pre {
+    background: var(--bg-code);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    line-height: 1.6;
+    position: relative;
+  }
+  pre .comment { color: var(--text-dim); }
+  pre .keyword { color: var(--pink); }
+  pre .string { color: var(--yellow); }
+  pre .number { color: var(--purple); }
+  pre .key { color: var(--blue); }
+  pre .bool { color: var(--orange); }
+  pre .method-text { color: var(--method-post); font-weight: 700; }
+  pre .flag { color: var(--accent); }
+
+  .code-label {
+    font-family: var(--mono); font-size: 0.7rem;
+    color: var(--text-dim); text-transform: uppercase;
+    letter-spacing: 0.08em; margin-bottom: 0.4rem;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .code-label .lang-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+  }
+  .code-label .lang-dot.bash { background: var(--method-post); }
+  .code-label .lang-dot.json { background: var(--blue); }
+
+  /* Error table */
+  .error-table {
+    width: 100%; border-collapse: collapse;
+    font-family: var(--mono); font-size: 0.82rem;
+  }
+  .error-table th {
+    text-align: left; font-weight: 600;
+    color: var(--text-dim); font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-code);
+  }
+  .error-table td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid rgba(42,42,58,0.5);
+  }
+  .error-table tr:last-child td { border-bottom: none; }
+  .error-table .status { color: var(--red); }
+  .error-table .reason { color: var(--text-muted); }
+
+  /* Quick try section */
+  .quick-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  @media (max-width: 700px) { .quick-grid { grid-template-columns: 1fr; } }
+  .quick-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); overflow: hidden;
+  }
+  .quick-card-header {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid var(--border);
+    font-family: var(--mono); font-size: 0.78rem;
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--bg-code);
+  }
+  .quick-card-header .title { color: var(--text); font-weight: 600; }
+  .quick-card pre {
+    border: none; border-radius: 0; margin: 0;
+    font-size: 0.76rem;
+  }
+
+  /* Try it interactive */
+  .try-box {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); overflow: hidden;
+    margin-top: 1rem;
+  }
+  .try-box-header {
+    padding: 0.75rem 1rem;
+    background: var(--bg-code); border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .try-box-header span {
+    font-family: var(--mono); font-size: 0.78rem; color: var(--text-muted);
+  }
+  .try-run-btn {
+    font-family: var(--mono); font-size: 0.78rem;
+    padding: 0.35rem 1rem; border-radius: 6px;
+    background: var(--accent-dim); border: 1px solid var(--accent);
+    color: var(--accent); cursor: pointer; transition: all 0.15s;
+  }
+  .try-run-btn:hover { background: rgba(0,230,214,0.25); }
+
+  /* Note callouts */
+  .note {
+    background: var(--accent-dim);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+    color: var(--text);
+    margin: 1rem 0;
+  }
+  .note strong { color: var(--accent); }
+  .note code {
+    font-family: var(--mono); font-size: 0.85rem;
+    background: rgba(0,230,214,0.1); padding: 0.15rem 0.4rem;
+    border-radius: 4px; color: var(--accent);
+  }
+  .warn {
+    background: rgba(255,184,108,0.08);
+    border-left: 3px solid var(--orange);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+    color: var(--text);
+    margin: 1rem 0;
+  }
+  .warn strong { color: var(--orange); }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    nav { padding: 0 1rem; gap: 1rem; }
+    nav .nav-links { display: none; }
+    .hero h1 { font-size: 1.8rem; }
+    .hero { padding: 3rem 1rem 2rem; }
+    main { padding: 1.5rem 1rem 4rem; }
+    .endpoint-header { padding: 1rem; }
+    .endpoint-body { padding: 1rem; }
+    pre { font-size: 0.75rem; padding: 0.75rem; }
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--border-light); }
+</style>
+</head>
+<body>
+
+<!-- ─── Nav ─── -->
+<nav>
+  <a href="#" class="logo">fleet<span>-vector-api</span></a>
+  <div class="nav-links">
+    <a href="#quick-start">Quick Start</a>
+    <a href="#search" class="post-link">/search</a>
+    <a href="#similar" class="post-link">/similar</a>
+    <a href="#recommend" class="post-link">/recommend</a>
+    <a href="#gap-analysis" class="post-link">/gap-analysis</a>
+    <a href="#ingest" class="post-link">/ingest</a>
+    <a href="#stats" class="get-link">/stats</a>
+    <a href="#clusters" class="get-link">/clusters</a>
+    <a href="#dashboard" class="get-link">/dashboard</a>
+    <a href="#crates" class="get-link">/crates/:name</a>
+  </div>
+</nav>
+
+<!-- ─── Hero ─── -->
+<section class="hero">
+  <h1><span class="accent">Fleet</span> Vector API</h1>
+  <p class="tagline">Semantic crate intelligence powered by Cloudflare Workers AI and Vectorize. Search, discover, recommend, and analyze your Rust crate ecosystem.</p>
+  <div class="base-url-box">
+    <span class="label">Base URL</span>
+    <span class="url" id="baseUrl">https://fleet-vector-api.casey-digennaro.workers.dev</span>
+    <button class="copy-btn" onclick="copyBaseUrl()">Copy</button>
+  </div>
+  <div class="meta-badges">
+    <span class="meta-badge"><span class="dot"></span> @cf/baai/bge-small-en-v1.5</span>
+    <span class="meta-badge"><span class="dot"></span> 384-dim embeddings</span>
+    <span class="meta-badge"><span class="dot"></span> Cloudflare Vectorize</span>
+    <span class="meta-badge"><span class="dot"></span> 1,012 crates indexed</span>
+  </div>
+</section>
+
+<!-- ─── Main ─── -->
+<main>
+
+<!-- ─── Quick Start ─── -->
+<section id="quick-start" class="section">
+  <h2 class="section-title"><span class="icon">⚡</span> Quick Start</h2>
+  <p class="endpoint-desc">
+    All endpoints accept and return <strong>JSON</strong>. No API key needed for read operations — just <code>curl</code> and go.
+    The embedding model is <strong>@cf/baai/bge-small-en-v1.5</strong> producing <strong>384-dimensional</strong> vectors stored in Cloudflare Vectorize.
+  </p>
+  <div class="note">
+    <strong>Embedding model:</strong> <code>@cf/baai/bge-small-en-v1.5</code> — a compact English-language model optimized for semantic similarity.
+    All 384 dimensions are L2-normalized before indexing. Text is truncated to 2,000 characters per embedding call.
+  </div>
+
+  <div class="quick-grid">
+    <!-- Search -->
+    <div class="quick-card">
+      <div class="quick-card-header">
+        <span class="title">Semantic Search</span>
+        <span style="color:var(--method-post)">POST</span>
+      </div>
+      <pre>curl -X POST $BASE/search \
+  -H "Content-Type: application/json" \
+  -d '{"query":"http client","topK":5}'</pre>
+    </div>
+    <!-- Stats -->
+    <div class="quick-card">
+      <div class="quick-card-header">
+        <span class="title">Index Stats</span>
+        <span style="color:var(--method-get)">GET</span>
+      </div>
+      <pre>curl $BASE/stats</pre>
+    </div>
+    <!-- Similar -->
+    <div class="quick-card">
+      <div class="quick-card-header">
+        <span class="title">Find Similar</span>
+        <span style="color:var(--method-post)">POST</span>
+      </div>
+      <pre>curl -X POST $BASE/similar \
+  -H "Content-Type: application/json" \
+  -d '{"crate_name":"reqwest"}'</pre>
+    </div>
+    <!-- Recommend -->
+    <div class="quick-card">
+      <div class="quick-card-header">
+        <span class="title">Recommend</span>
+        <span style="color:var(--method-post)">POST</span>
+      </div>
+      <pre>curl -X POST $BASE/recommend \
+  -H "Content-Type: application/json" \
+  -d '{"context":"async websocket","topK":3}'</pre>
+    </div>
+  </div>
+
+  <div class="warn" style="margin-top:1.5rem">
+    <strong>Authentication:</strong> Only <code>POST /ingest</code> requires a <code>Bearer</code> token. All other endpoints are public.
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- POST /search                                                          -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section id="search" class="section">
+  <h2 class="section-title"><span class="icon">🔍</span> Search &amp; Discovery</h2>
+
+  <div class="endpoint">
+    <div class="endpoint-header">
+      <span class="method-badge post">POST</span>
+      <span class="endpoint-path">/search</span>
+      <span class="endpoint-auth public">🔓 Public</span>
+    </div>
+    <div class="endpoint-body">
+      <p class="endpoint-desc">
+        Perform a <strong>semantic search</strong> across all indexed crates. Your query is embedded using the same model as the crate data,
+        then matched against the Vectorize index using cosine similarity. Results are enriched with full metadata from KV storage.
+      </p>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Request Body</div>
+        <table class="schema-table">
+          <thead><tr><th>Field</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td class="field">query</td><td class="type">string</td><td class="required">required</td><td class="desc">Natural language search query</td></tr>
+            <tr><td class="field">topK</td><td class="type">number</td><td class="optional">optional</td><td class="desc">Max results to return (1–50, default 10)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot bash"></span> Example Request</div>
+        <pre>curl -X POST https://fleet-vector-api.casey-digennaro.workers.dev/search \
+  -H "Content-Type: application/json" \
+  -d '{
+    <span class="key">"query"</span>: <span class="string">"async http client with middleware"</span>,
+    <span class="key">"topK"</span>: <span class="number">3</span>
+  }'</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot json"></span> Example Response — 200</div>
+        <pre>{
+  <span class="key">"query"</span>: <span class="string">"async http client with middleware"</span>,
+  <span class="key">"model"</span>: <span class="string">"@cf/baai/bge-small-en-v1.5"</span>,
+  <span class="key">"results"</span>: [
+    {
+      <span class="key">"id"</span>: <span class="string">"reqwest"</span>,
+      <span class="key">"score"</span>: <span class="number">0.892</span>,
+      <span class="key">"name"</span>: <span class="string">"reqwest"</span>,
+      <span class="key">"description"</span>: <span class="string">"An HTTP client with middleware support"</span>,
+      <span class="key">"version"</span>: <span class="string">"0.12.4"</span>,
+      <span class="key">"domain"</span>: <span class="string">"networking"</span>,
+      <span class="key">"tests"</span>: <span class="number">142</span>,
+      <span class="key">"loc"</span>: <span class="number">8200</span>,
+      <span class="key">"keywords"</span>: [<span class="string">"http"</span>, <span class="string">"async"</span>, <span class="string">"client"</span>]
+    }
+  ],
+  <span class="key">"count"</span>: <span class="number">1</span>
+}</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Error Responses</div>
+        <table class="error-table">
+          <thead><tr><th>Status</th><th>Condition</th><th>Body</th></tr></thead>
+          <tbody>
+            <tr><td class="status">400</td><td class="reason">Missing <code>query</code></td><td><code>{"error": "Query required"}</code></td></tr>
+            <tr><td class="status">500</td><td class="reason">Internal error</td><td><code>{"error": "&lt;message&gt;"}</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═════════════════════════════════════════════════════════════════════ -->
+  <!-- POST /similar                                                        -->
+  <!-- ═════════════════════════════════════════════════════════════════════ -->
+  <div class="endpoint">
+    <div class="endpoint-header">
+      <span class="method-badge post">POST</span>
+      <span class="endpoint-path">/similar</span>
+      <span class="endpoint-auth public">🔓 Public</span>
+    </div>
+    <div class="endpoint-body">
+      <p class="endpoint-desc">
+        Find crates <strong>semantically similar</strong> to a known crate. Looks up the crate's metadata,
+        embeds its description + keywords, and queries Vectorize for nearest neighbors. The source crate is excluded from results.
+      </p>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Request Body</div>
+        <table class="schema-table">
+          <thead><tr><th>Field</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td class="field">crate_name</td><td class="type">string</td><td class="required">required*</td><td class="desc">Crate name to find similars for</td></tr>
+            <tr><td class="field">name</td><td class="type">string</td><td class="optional">alias</td><td class="desc">Alias for <code>crate_name</code></td></tr>
+            <tr><td class="field">id</td><td class="type">string</td><td class="optional">alias</td><td class="desc">Alias for <code>crate_name</code></td></tr>
+            <tr><td class="field">topK</td><td class="type">number</td><td class="optional">optional</td><td class="desc">Max results (default 10)</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.8rem;color:var(--text-dim);margin-top:0.4rem">* One of <code>crate_name</code>, <code>name</code>, or <code>id</code> is required.</p>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot bash"></span> Example Request</div>
+        <pre>curl -X POST https://fleet-vector-api.casey-digennaro.workers.dev/similar \
+  -H "Content-Type: application/json" \
+  -d '{ <span class="key">"crate_name"</span>: <span class="string">"reqwest"</span>, <span class="key">"topK"</span>: <span class="number">3</span> }'</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot json"></span> Example Response — 200</div>
+        <pre>{
+  <span class="key">"crate"</span>: <span class="string">"reqwest"</span>,
+  <span class="key">"similar"</span>: [
+    {
+      <span class="key">"id"</span>: <span class="string">"hyper"</span>,
+      <span class="key">"score"</span>: <span class="number">0.914</span>,
+      <span class="key">"metadata"</span>: { <span class="key">"name"</span>: <span class="string">"hyper"</span>, <span class="key">"desc"</span>: <span class="string">"..."</span> }
+    }
+  ],
+  <span class="key">"count"</span>: <span class="number">1</span>
+}</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Error Responses</div>
+        <table class="error-table">
+          <thead><tr><th>Status</th><th>Condition</th><th>Body</th></tr></thead>
+          <tbody>
+            <tr><td class="status">400</td><td class="reason">No identifier provided</td><td><code>{"error": "crate_name, name, or id required"}</code></td></tr>
+            <tr><td class="status">404</td><td class="reason">Crate not in index</td><td><code>{"error": "Crate not found: &lt;name&gt;. Try /search…"}</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═════════════════════════════════════════════════════════════════════ -->
+  <!-- POST /recommend                                                      -->
+  <!-- ═════════════════════════════════════════════════════════════════════ -->
+  <div class="endpoint">
+    <div class="endpoint-header">
+      <span class="method-badge post">POST</span>
+      <span class="endpoint-path">/recommend</span>
+      <span class="endpoint-auth public">🔓 Public</span>
+    </div>
+    <div class="endpoint-body">
+      <p class="endpoint-desc">
+        Get <strong>context-aware crate recommendations</strong> with quality-weighted scoring.
+        Over-fetches from Vectorize (3× topK), then applies quality bonuses for test count, lines of code, and description quality.
+        Each recommendation includes a human-readable <code>reasoning</code> array explaining why it was selected.
+      </p>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Request Body</div>
+        <table class="schema-table">
+          <thead><tr><th>Field</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td class="field">context</td><td class="type">string</td><td class="required">required</td><td class="desc">What you're trying to build — be descriptive</td></tr>
+            <tr><td class="field">topK</td><td class="type">number</td><td class="optional">optional</td><td class="desc">Max recommendations (default 5)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot bash"></span> Example Request</div>
+        <pre>curl -X POST https://fleet-vector-api.casey-digennaro.workers.dev/recommend \
+  -H "Content-Type: application/json" \
+  -d '{
+    <span class="key">"context"</span>: <span class="string">"building a real-time websocket server with tokio"</span>,
+    <span class="key">"topK"</span>: <span class="number">3</span>
+  }'</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot json"></span> Example Response — 200</div>
+        <pre>{
+  <span class="key">"context"</span>: <span class="string">"building a real-time websocket server with tokio"</span>,
+  <span class="key">"recommendations"</span>: [
+    {
+      <span class="key">"name"</span>: <span class="string">"tokio-tungstenite"</span>,
+      <span class="key">"description"</span>: <span class="string">"Async WebSocket streams"</span>,
+      <span class="key">"domain"</span>: <span class="string">"networking"</span>,
+      <span class="key">"version"</span>: <span class="string">"0.21.0"</span>,
+      <span class="key">"semantic_score"</span>: <span class="number">0.887</span>,
+      <span class="key">"composite_score"</span>: <span class="number">0.962</span>,
+      <span class="key">"quality_signals"</span>: {
+        <span class="key">"tests"</span>: <span class="number">34</span>,
+        <span class="key">"loc"</span>: <span class="number">2100</span>,
+        <span class="key">"has_description"</span>: <span class="bool">true</span>
+      },
+      <span class="key">"reasoning"</span>: [
+        <span class="string">"Semantic relevance: 88.7%"</span>,
+        <span class="string">"34 tests"</span>,
+        <span class="string">"2100 LOC"</span>,
+        <span class="string">"Domain: networking"</span>
+      ]
+    }
+  ],
+  <span class="key">"count"</span>: <span class="number">1</span>
+}</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Error Responses</div>
+        <table class="error-table">
+          <thead><tr><th>Status</th><th>Condition</th><th>Body</th></tr></thead>
+          <tbody>
+            <tr><td class="status">400</td><td class="reason">Missing <code>context</code></td><td><code>{"error": "context required"}</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- POST /gap-analysis                                                    -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section id="gap-analysis" class="section">
+  <h2 class="section-title"><span class="icon">📊</span> Analysis</h2>
+
+  <div class="endpoint">
+    <div class="endpoint-header">
+      <span class="method-badge post">POST</span>
+      <span class="endpoint-path">/gap-analysis</span>
+      <span class="endpoint-auth public">🔓 Public</span>
+    </div>
+    <div class="endpoint-body">
+      <p class="endpoint-desc">
+        Identify <strong>underdeveloped crates</strong> with quality gaps. Scans for missing descriptions,
+        zero/low test counts, and stub-level code. Returns prioritized suggestions with actionable fixes
+        and high-quality reference crates from other domains.
+      </p>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Request Body</div>
+        <table class="schema-table">
+          <thead><tr><th>Field</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td class="field">domain</td><td class="type">string</td><td class="optional">optional</td><td class="desc">Restrict analysis to a specific domain. Omit to scan all crates.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot bash"></span> Example Request</div>
+        <pre>curl -X POST https://fleet-vector-api.casey-digennaro.workers.dev/gap-analysis \
+  -H "Content-Type: application/json" \
+  -d '{ <span class="key">"domain"</span>: <span class="string">"networking"</span> }'</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot json"></span> Example Response — 200</div>
+        <pre>{
+  <span class="key">"domain"</span>: <span class="string">"networking"</span>,
+  <span class="key">"total_crates"</span>: <span class="number">87</span>,
+  <span class="key">"quality_crates"</span>: <span class="number">62</span>,
+  <span class="key">"gap_crates"</span>: <span class="number">25</span>,
+  <span class="key">"gap_percentage"</span>: <span class="number">29</span>,
+  <span class="key">"suggestions"</span>: [
+    {
+      <span class="key">"name"</span>: <span class="string">"some-crate"</span>,
+      <span class="key">"domain"</span>: <span class="string">"networking"</span>,
+      <span class="key">"issues"</span>: [<span class="string">"no_tests"</span>, <span class="string">"missing_description"</span>],
+      <span class="key">"severity"</span>: <span class="number">2</span>,
+      <span class="key">"priority"</span>: <span class="string">"high"</span>,
+      <span class="key">"suggestion"</span>: [
+        <span class="string">"Add comprehensive test suite"</span>,
+        <span class="string">"Write a descriptive README and description"</span>
+      ]
+    }
+  ],
+  <span class="key">"references"</span>: [
+    { <span class="key">"name"</span>: <span class="string">"well-tested-crate"</span>, <span class="key">"reason"</span>: <span class="string">"high_quality_reference"</span> }
+  ]
+}</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Error Responses</div>
+        <table class="error-table">
+          <thead><tr><th>Status</th><th>Condition</th><th>Body</th></tr></thead>
+          <tbody>
+            <tr><td class="status">404</td><td class="reason">No crates found</td><td><code>{"error": "No crates in domain: &lt;name&gt;"}</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Issue Types</div>
+        <table class="schema-table">
+          <thead><tr><th>Issue</th><th>Trigger</th></tr></thead>
+          <tbody>
+            <tr><td class="field">missing_description</td><td class="desc">Empty or &lt;10 chars</td></tr>
+            <tr><td class="field">no_tests</td><td class="desc">Test count is 0</td></tr>
+            <tr><td class="field">low_test_count</td><td class="desc">Between 1–4 tests</td></tr>
+            <tr><td class="field">zero_loc</td><td class="desc">0 lines of code</td></tr>
+            <tr><td class="field">low_loc</td><td class="desc">Between 1–99 LOC</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- POST /ingest                                                          -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section id="ingest" class="section">
+  <h2 class="section-title"><span class="icon">📦</span> Ingestion</h2>
+
+  <div class="endpoint">
+    <div class="endpoint-header">
+      <span class="method-badge post">POST</span>
+      <span class="endpoint-path">/ingest</span>
+      <span class="endpoint-auth locked">🔒 Bearer Token</span>
+    </div>
+    <div class="endpoint-body">
+      <p class="endpoint-desc">
+        Embed and index crates into Vectorize + KV. Accepts a single crate, an array of crates, or an object with a
+        <code>crates</code> array. Each crate's name, description, keywords, and README excerpt are concatenated and embedded.
+        Metadata is stored in both Vectorize (truncated) and KV (full). <strong>Maximum 50 crates per request.</strong>
+      </p>
+
+      <div class="warn">
+        <strong>Authentication required.</strong> Include <code>Authorization: Bearer &lt;INGEST_SECRET&gt;</code> header.
+        Requests without a valid token receive a <code>401</code> response.
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Request Body</div>
+        <table class="schema-table">
+          <thead><tr><th>Field</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td class="field">crates</td><td class="type">CrateInput[]</td><td class="required">required</td><td class="desc">Array of crate objects (or single object, or raw array)</td></tr>
+          </tbody>
+        </table>
+        <div style="margin-top:0.75rem">
+          <div class="sub-section-label">CrateInput Schema</div>
+          <table class="schema-table">
+            <thead><tr><th>Field</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td class="field">name</td><td class="type">string</td><td class="required">required</td><td class="desc">Crate name (used as Vectorize ID)</td></tr>
+              <tr><td class="field">description</td><td class="type">string</td><td class="required">required</td><td class="desc">Short description</td></tr>
+              <tr><td class="field">readme</td><td class="type">string</td><td class="required">required</td><td class="desc">README content (first 1,500 chars used)</td></tr>
+              <tr><td class="field">version</td><td class="type">string</td><td class="optional">optional</td><td class="desc">Semver string (default "0.1.0")</td></tr>
+              <tr><td class="field">domain</td><td class="type">string</td><td class="optional">optional</td><td class="desc">Category domain (default "unknown")</td></tr>
+              <tr><td class="field">wave</td><td class="type">number</td><td class="optional">optional</td><td class="desc">Deployment wave number</td></tr>
+              <tr><td class="field">tests</td><td class="type">number</td><td class="optional">optional</td><td class="desc">Test count</td></tr>
+              <tr><td class="field">loc</td><td class="type">number</td><td class="optional">optional</td><td class="desc">Lines of code</td></tr>
+              <tr><td class="field">github_url</td><td class="type">string</td><td class="optional">optional</td><td class="desc">GitHub repository URL</td></tr>
+              <tr><td class="field">keywords</td><td class="type">string[]</td><td class="optional">optional</td><td class="desc">Keyword tags</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot bash"></span> Example Request</div>
+        <pre>curl -X POST https://fleet-vector-api.casey-digennaro.workers.dev/ingest \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_SECRET_TOKEN" \
+  -d '{
+    <span class="key">"crates"</span>: [
+      {
+        <span class="key">"name"</span>: <span class="string">"my-crate"</span>,
+        <span class="key">"description"</span>: <span class="string">"A fantastic crate"</span>,
+        <span class="key">"readme"</span>: <span class="string">"# My Crate\n\nDoes awesome things..."</span>,
+        <span class="key">"version"</span>: <span class="string">"1.0.0"</span>,
+        <span class="key">"domain"</span>: <span class="string">"utilities"</span>,
+        <span class="key">"tests"</span>: <span class="number">42</span>,
+        <span class="key">"loc"</span>: <span class="number">3200</span>,
+        <span class="key">"keywords"</span>: [<span class="string">"utility"</span>, <span class="string">"helper"</span>]
+      }
+    ]
+  }'</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot json"></span> Example Response — 200</div>
+        <pre>{
+  <span class="key">"ok"</span>: <span class="bool">true</span>,
+  <span class="key">"inserted"</span>: <span class="number">1</span>,
+  <span class="key">"vectorize_upsert"</span>: {
+    <span class="key">"ids"</span>: [<span class="string">"my-crate"</span>],
+    <span class="key">"count"</span>: <span class="number">1</span>
+  }
+}</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Error Responses</div>
+        <table class="error-table">
+          <thead><tr><th>Status</th><th>Condition</th><th>Body</th></tr></thead>
+          <tbody>
+            <tr><td class="status">401</td><td class="reason">Missing or invalid token</td><td><code>{"error": "Unauthorized"}</code></td></tr>
+            <tr><td class="status">400</td><td class="reason">Empty crates array</td><td><code>{"error": "No crates"}</code></td></tr>
+            <tr><td class="status">400</td><td class="reason">Over 50 crates</td><td><code>{"error": "Max 50 per request"}</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- GET endpoints                                                         -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section id="read-endpoints" class="section">
+  <h2 class="section-title"><span class="icon">📖</span> Read Endpoints</h2>
+
+  <!-- GET /stats -->
+  <div class="endpoint" id="stats">
+    <div class="endpoint-header">
+      <span class="method-badge get">GET</span>
+      <span class="endpoint-path">/stats</span>
+      <span class="endpoint-auth public">🔓 Public</span>
+    </div>
+    <div class="endpoint-body">
+      <p class="endpoint-desc">
+        Returns <strong>index statistics</strong> — total crate count, last ingest timestamp,
+        embedding model info, and backend details. Lightweight endpoint for health checks.
+      </p>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot bash"></span> Example Request</div>
+        <pre>curl https://fleet-vector-api.casey-digennaro.workers.dev/stats</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot json"></span> Example Response — 200</div>
+        <pre>{
+  <span class="key">"service"</span>: <span class="string">"fleet-vector-api"</span>,
+  <span class="key">"model"</span>: <span class="string">"@cf/baai/bge-small-en-v1.5"</span>,
+  <span class="key">"dimensions"</span>: <span class="number">384</span>,
+  <span class="key">"crate_count"</span>: <span class="number">1012</span>,
+  <span class="key">"last_ingest"</span>: <span class="string">"2026-06-12T10:30:00.000Z"</span>,
+  <span class="key">"backend"</span>: <span class="string">"cloudflare-vectorize"</span>,
+  <span class="key">"index"</span>: <span class="string">"fleet-crates"</span>
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- GET /clusters -->
+  <div class="endpoint" id="clusters">
+    <div class="endpoint-header">
+      <span class="method-badge get">GET</span>
+      <span class="endpoint-path">/clusters</span>
+      <span class="endpoint-auth public">🔓 Public</span>
+    </div>
+    <div class="endpoint-body">
+      <p class="endpoint-desc">
+        Returns all crates grouped by <strong>domain clusters</strong> with aggregate stats (total tests, LOC, top keywords).
+        Also computes <strong>inter-cluster similarity</strong> based on shared keywords between domains.
+      </p>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot bash"></span> Example Request</div>
+        <pre>curl https://fleet-vector-api.casey-digennaro.workers.dev/clusters</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot json"></span> Example Response — 200</div>
+        <pre>{
+  <span class="key">"clusters"</span>: [
+    {
+      <span class="key">"domain"</span>: <span class="string">"networking"</span>,
+      <span class="key">"crate_count"</span>: <span class="number">87</span>,
+      <span class="key">"crates"</span>: [<span class="string">"reqwest"</span>, <span class="string">"hyper"</span>, <span class="string">"…"</span>],
+      <span class="key">"total_tests"</span>: <span class="number">3420</span>,
+      <span class="key">"total_loc"</span>: <span class="number">210000</span>,
+      <span class="key">"avg_tests_per_crate"</span>: <span class="number">39</span>,
+      <span class="key">"top_keywords"</span>: [<span class="string">"http"</span>, <span class="string">"async"</span>, <span class="string">"tcp"</span>]
+    }
+  ],
+  <span class="key">"inter_cluster"</span>: [
+    {
+      <span class="key">"domains"</span>: [<span class="string">"networking"</span>, <span class="string">"web"</span>],
+      <span class="key">"shared_keywords"</span>: [<span class="string">"http"</span>, <span class="string">"async"</span>],
+      <span class="key">"similarity"</span>: <span class="number">0.42</span>
+    }
+  ],
+  <span class="key">"total_domains"</span>: <span class="number">12</span>,
+  <span class="key">"total_crates"</span>: <span class="number">1012</span>
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- GET /dashboard -->
+  <div class="endpoint" id="dashboard">
+    <div class="endpoint-header">
+      <span class="method-badge get">GET</span>
+      <span class="endpoint-path">/dashboard</span>
+      <span class="endpoint-auth public">🔓 Public</span>
+    </div>
+    <div class="endpoint-body">
+      <p class="endpoint-desc">
+        <strong>Dashboard summary</strong> for website rendering. Includes quality breakdown (high/medium/low/stub),
+        domain distribution, recently published crates, most similar crate pairs, and per-domain gap analysis summary.
+      </p>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot bash"></span> Example Request</div>
+        <pre>curl https://fleet-vector-api.casey-digennaro.workers.dev/dashboard</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot json"></span> Example Response — 200</div>
+        <pre>{
+  <span class="key">"total_crates"</span>: <span class="number">1012</span>,
+  <span class="key">"quality_breakdown"</span>: {
+    <span class="key">"high"</span>: <span class="number">340</span>,
+    <span class="key">"medium"</span>: <span class="number">412</span>,
+    <span class="key">"low"</span>: <span class="number">198</span>,
+    <span class="key">"stub"</span>: <span class="number">62</span>
+  },
+  <span class="key">"domain_distribution"</span>: {
+    <span class="key">"networking"</span>: <span class="number">87</span>,
+    <span class="key">"web"</span>: <span class="number">134</span>
+  },
+  <span class="key">"recently_published"</span>: [
+    { <span class="key">"name"</span>: <span class="string">"new-crate"</span>, <span class="key">"domain"</span>: <span class="string">"utilities"</span>, <span class="key">"version"</span>: <span class="string">"0.1.0"</span> }
+  ],
+  <span class="key">"most_similar_pairs"</span>: [
+    { <span class="key">"crate_a"</span>: <span class="string">"hyper"</span>, <span class="key">"crate_b"</span>: <span class="string">"reqwest"</span>, <span class="key">"score"</span>: <span class="number">0.94</span> }
+  ],
+  <span class="key">"gap_analysis"</span>: {
+    <span class="key">"networking"</span>: { <span class="key">"total"</span>: <span class="number">87</span>, <span class="key">"gaps"</span>: <span class="number">25</span> }
+  },
+  <span class="key">"generated_at"</span>: <span class="string">"2026-06-12T13:00:00.000Z"</span>
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- GET /crates/:name -->
+  <div class="endpoint" id="crates">
+    <div class="endpoint-header">
+      <span class="method-badge get">GET</span>
+      <span class="endpoint-path">/crates/:name</span>
+      <span class="endpoint-auth public">🔓 Public</span>
+    </div>
+    <div class="endpoint-body">
+      <p class="endpoint-desc">
+        Retrieve <strong>full metadata</strong> for a single crate by name. Returns the complete
+        <code>CrateMetadata</code> object stored in KV, including embedding timestamp and model info.
+      </p>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Path Parameters</div>
+        <table class="schema-table">
+          <thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td class="field">name</td><td class="type">string</td><td class="desc">Exact crate name (case-sensitive)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot bash"></span> Example Request</div>
+        <pre>curl https://fleet-vector-api.casey-digennaro.workers.dev/crates/reqwest</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot json"></span> Example Response — 200</div>
+        <pre>{
+  <span class="key">"name"</span>: <span class="string">"reqwest"</span>,
+  <span class="key">"description"</span>: <span class="string">"An HTTP client with middleware support"</span>,
+  <span class="key">"version"</span>: <span class="string">"0.12.4"</span>,
+  <span class="key">"domain"</span>: <span class="string">"networking"</span>,
+  <span class="key">"wave"</span>: <span class="number">3</span>,
+  <span class="key">"tests"</span>: <span class="number">142</span>,
+  <span class="key">"loc"</span>: <span class="number">8200</span>,
+  <span class="key">"github_url"</span>: <span class="string">"https://github.com/seanmonstar/reqwest"</span>,
+  <span class="key">"keywords"</span>: [<span class="string">"http"</span>, <span class="string">"async"</span>, <span class="string">"client"</span>],
+  <span class="key">"embedded_at"</span>: <span class="number">1718197200000</span>,
+  <span class="key">"model"</span>: <span class="string">"@cf/baai/bge-small-en-v1.5"</span>,
+  <span class="key">"dims"</span>: <span class="number">384</span>
+}</pre>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-section-label">Error Responses</div>
+        <table class="error-table">
+          <thead><tr><th>Status</th><th>Condition</th><th>Body</th></tr></thead>
+          <tbody>
+            <tr><td class="status">404</td><td class="reason">Crate not in index</td><td><code>{"error": "Not found: &lt;name&gt;"}</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- General Info                                                          -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section id="general" class="section">
+  <h2 class="section-title"><span class="icon">ℹ️</span> General</h2>
+
+  <div class="note">
+    <strong>CORS:</strong> All endpoints include <code>Access-Control-Allow-Origin: *</code> headers.
+    <code>OPTIONS</code> preflight requests are handled automatically.
+  </div>
+
+  <div class="note">
+    <strong>Cache:</strong> All responses include <code>Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate</code>.
+    Every request hits live data.
+  </div>
+
+  <div class="endpoint">
+    <div class="endpoint-header">
+      <span class="method-badge get">GET</span>
+      <span class="endpoint-path">/health</span>
+      <span class="endpoint-auth public">🔓 Public</span>
+    </div>
+    <div class="endpoint-body">
+      <p class="endpoint-desc">Lightweight <strong>health check</strong> endpoint. Returns service status, model, and dimensions.</p>
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot bash"></span> Example</div>
+        <pre>curl https://fleet-vector-api.casey-digennaro.workers.dev/health</pre>
+      </div>
+      <div class="sub-section">
+        <div class="code-label"><span class="lang-dot json"></span> Response — 200</div>
+        <pre>{
+  <span class="key">"status"</span>: <span class="string">"ok"</span>,
+  <span class="key">"service"</span>: <span class="string">"fleet-vector-api"</span>,
+  <span class="key">"model"</span>: <span class="string">"@cf/baai/bge-small-en-v1.5"</span>,
+  <span class="key">"dims"</span>: <span class="number">384</span>,
+  <span class="key">"backend"</span>: <span class="string">"vectorize"</span>,
+  <span class="key">"timestamp"</span>: <span class="number">1718197200000</span>
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="warn" style="margin-top:1.5rem">
+    <strong>Rate limits:</strong> This API runs on Cloudflare Workers. Standard Workers limits apply.
+    Embedding queries are relatively expensive — avoid polling in tight loops.
+  </div>
+</section>
+
+</main>
+
+<!-- ─── Footer ─── -->
+<footer>
+  <p>
+    Fleet Vector API &mdash; Semantic crate intelligence for the <a href="https://superinstance.ai" target="_blank" rel="noopener">superinstance</a> ecosystem.<br>
+    Built on <a href="https://developers.cloudflare.com/workers/" target="_blank" rel="noopener">Cloudflare Workers</a>,
+    <a href="https://developers.cloudflare.com/workers-ai/" target="_blank" rel="noopener">Workers AI</a>, and
+    <a href="https://developers.cloudflare.com/vectorize/" target="_blank" rel="noopener">Vectorize</a>.
+  </p>
+</footer>
+
+<script>
+function copyBaseUrl() {
+  const url = document.getElementById('baseUrl').textContent;
+  navigator.clipboard.writeText(url).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    const orig = btn.textContent;
+    btn.textContent = 'Copied!';
+    btn.style.color = 'var(--accent)';
+    btn.style.borderColor = 'var(--accent)';
+    setTimeout(() => {
+      btn.textContent = orig;
+      btn.style.color = '';
+      btn.style.borderColor = '';
+    }, 1500);
+  });
+}
+</script>
+
+</body>
+</html>
