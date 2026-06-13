@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Policy — SuperInstance</title>
+<meta name="description" content="SuperInstance security policy. Report vulnerabilities, API authentication, scope, and best practices.">
+<link rel="icon" type="image/svg+xml" href="https://superinstance-assets.casey-digennaro.workers.dev/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a0a0f;--surface:#12121a;--accent:#00E6D6;--accent-dim:rgba(0,230,214,0.12);--text:#e0e0e0;--dim:#888;--border:#1e1e2e;--font:'JetBrains Mono',monospace}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.75;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+a:hover{opacity:.85}
+
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:.65rem 2rem;display:flex;align-items:center;justify-content:space-between}
+nav .logo{font-weight:700;font-size:.85rem;color:var(--accent);letter-spacing:.05em;display:flex;align-items:center;gap:.4rem}
+nav .links{display:flex;gap:1.5rem}
+nav .links a{font-size:.72rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;transition:color .2s}
+nav .links a:hover{color:var(--accent)}
+
+/* Main */
+main{max-width:820px;margin:0 auto;padding:5.5rem 2rem 4rem}
+
+h1{font-size:1.8rem;font-weight:700;margin-bottom:.4rem;letter-spacing:-.02em}
+h1 span{color:var(--accent)}
+.subtitle{color:var(--dim);font-size:.85rem;margin-bottom:3rem}
+
+h2{font-size:1.15rem;font-weight:600;color:var(--accent);margin:2.5rem 0 1rem;padding-top:1rem;border-top:1px solid var(--border)}
+h2:first-of-type{border-top:none;margin-top:0;padding-top:0}
+h3{font-size:.92rem;font-weight:600;color:var(--text);margin:1.5rem 0 .6rem}
+
+p{margin-bottom:1rem;font-size:.85rem}
+ul{margin:0 0 1rem 1.2rem;font-size:.85rem}
+li{margin-bottom:.4rem}
+
+/* Table */
+table{width:100%;border-collapse:collapse;margin:1rem 0 1.5rem;font-size:.8rem}
+thead{border-bottom:2px solid var(--accent)}
+th{text-align:left;padding:.6rem .8rem;color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:.72rem}
+td{padding:.55rem .8rem;border-bottom:1px solid var(--border);color:var(--text)}
+td strong{color:var(--accent);font-weight:600}
+tbody tr:hover{background:var(--accent-dim)}
+
+/* Code / email */
+code{background:var(--surface);border:1px solid var(--border);padding:.15em .4em;border-radius:3px;font-size:.8em;color:var(--accent)}
+
+/* Card */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.5rem;margin:1.5rem 0}
+.card h3{margin-top:0}
+.card ul{margin-bottom:0}
+
+/* Back link */
+.back{display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;color:var(--dim);margin-bottom:2rem}
+.back:hover{color:var(--accent)}
+
+/* Footer */
+footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:var(--dim);font-size:.72rem}
+footer a{color:var(--accent)}
+
+@media(max-width:600px){
+  main{padding:5rem 1.2rem 3rem}
+  table{font-size:.72rem}
+  th,td{padding:.4rem .5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">🔒 SUPERINSTANCE.AI</div>
+  <div class="links">
+    <a href="https://superinstance.ai">Home</a>
+    <a href="https://superinstance.ai/docs/">Docs</a>
+    <a href="https://github.com/SuperInstance/SuperInstance">GitHub</a>
+    <a href="https://www.npmjs.com/~superinstance">npm</a>
+  </div>
+</nav>
+
+<main>
+  <a href="https://superinstance.ai" class="back">← Back to SuperInstance.ai</a>
+
+  <h1>Security <span>Policy</span></h1>
+  <p class="subtitle">How we handle vulnerabilities, authentication, and responsible disclosure.</p>
+
+  <h2>Reporting a Vulnerability</h2>
+  <p>Email <code>security@superinstance.ai</code> or open a private security advisory at <a href="https://github.com/SuperInstance/SuperInstance/security">github.com/SuperInstance/SuperInstance/security</a>.</p>
+  <p>Please do <strong>not</strong> publicly disclose vulnerabilities before we've had a chance to respond.</p>
+
+  <h2>Response Time</h2>
+  <ul>
+    <li><strong>Acknowledgment:</strong> within 48 hours</li>
+    <li><strong>Initial assessment:</strong> within 5 business days</li>
+    <li><strong>Fix:</strong>
+      <ul>
+        <li>Critical — 24 hours</li>
+        <li>High — 72 hours</li>
+        <li>Medium — 2 weeks</li>
+        <li>Low — next release</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>API Authentication</h2>
+
+  <table>
+    <thead>
+      <tr><th>Endpoint</th><th>Auth Required</th><th>Method</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>POST /search</code></td><td>No</td><td>—</td></tr>
+      <tr><td><code>POST /recommend</code></td><td>No</td><td>—</td></tr>
+      <tr><td><code>POST /similar</code></td><td>No</td><td>—</td></tr>
+      <tr><td><code>GET /stats</code></td><td>No</td><td>—</td></tr>
+      <tr><td><code>GET /clusters</code></td><td>No</td><td>—</td></tr>
+      <tr><td><code>GET /docs</code></td><td>No</td><td>—</td></tr>
+      <tr><td><code>GET /openapi.json</code></td><td>No</td><td>—</td></tr>
+      <tr><td><code>POST /ingest</code></td><td><strong>Yes</strong></td><td><code>Authorization: Bearer &lt;token&gt;</code></td></tr>
+    </tbody>
+  </table>
+
+  <p>Only <code>/ingest</code> requires authentication. All read endpoints are public and free.</p>
+
+  <h3>Getting an Ingest Token</h3>
+  <p>Contact <code>security@superinstance.ai</code> or open a GitHub issue to request an ingest token.</p>
+
+  <div class="card">
+    <h3>Rate Limiting</h3>
+    <p>Public endpoints are currently unrate-limited for development. We ask that you:</p>
+    <ul>
+      <li>Keep requests under <strong>10/second</strong> sustained</li>
+      <li>Use <code>topK ≤ 20</code> for search queries</li>
+      <li>Cache results locally</li>
+    </ul>
+    <p style="margin-top:.8rem;color:var(--dim)">Abuse will result in IP-level blocking. Production rate limits coming soon.</p>
+  </div>
+
+  <h2>Scope</h2>
+  <div class="card">
+    <h3>In Scope</h3>
+    <p>Fleet Vector API, superinstance.ai, npm packages (<code>@superinstance/*</code>), GitHub repos</p>
+    <h3>Out of Scope</h3>
+    <p>Social media, third-party services, DoS attacks, social engineering</p>
+  </div>
+
+  <h2>Best Practices</h2>
+  <ul>
+    <li>Never share API tokens in public repos</li>
+    <li>Use environment variables for credentials</li>
+    <li>Pin npm package versions in production</li>
+    <li>Report unexpected behavior</li>
+  </ul>
+</main>
+
+<footer>
+  <p>© 2026 SuperInstance &middot; <a href="https://superinstance.ai">Home</a> &middot; <a href="https://superinstance.ai/docs/">Docs</a> &middot; <a href="https://github.com/SuperInstance/SuperInstance">GitHub</a></p>
+</footer>
+
+</body>
+</html>
