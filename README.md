@@ -6,157 +6,91 @@
 <a href="docs/index.html"><img src="https://img.shields.io/badge/docs-live-00E6D6?style=flat-square&labelColor=0a0a0f" alt="Docs"></a>
 <img src="https://img.shields.io/badge/license-MIT-00E6D6?style=flat-square&labelColor=0a0a0f" alt="License">
 
-> Conservation spectral framework: persistent multi-agent AI with spectral resource management.
-> Ship fleets of coordinated agents with enforced resource conservation and spectral load balancing.
+> Multi-agent AI fleet infrastructure with semantic search, temporal cueing, and conservation-driven orchestration.
+> Every instance is a vessel. The fleet emerges from signal overlap.
 
-## 🚀 Getting Started
-
-Install the SDK in your language of choice:
+## 🚀 Quick Start
 
 ```bash
-# Node.js
+# Install the client SDK
 npm install @superinstance/tminus-client
-
-# Python
-pip install superinstance
-
-# cURL (one-liner dispatch)
-curl -X POST https://api.superinstance.dev/v1/dispatch \
-  -H "Authorization: Bearer $SI_TOKEN" \
-  -d '{"task": "analyze", "fleet": "default"}'
 ```
 
-📖 **[Full documentation →](docs/index.html)**
+```js
+import { TMinusClient } from '@superinstance/tminus-client';
+
+const client = new TMinusClient('https://fleet-vector-api.casey-digennaro.workers.dev');
+
+// Semantic search across 1,500+ AI crates
+const results = await client.search('distributed consensus protocol', 5);
+console.log(results);
+```
+
+Or just use cURL:
+
+```bash
+curl -X POST https://fleet-vector-api.casey-digennaro.workers.dev/search \
+  -H "Content-Type: application/json" \
+  -d '{"query": "multi-agent orchestration", "topK": 5}'
+```
+
+📖 **[Full documentation →](docs/index.html)** | **[API reference →](https://fleet-vector-api.casey-digennaro.workers.dev/docs)** | **[OpenAPI spec →](https://fleet-vector-api.casey-digennaro.workers.dev/openapi.json)**
 
 ---
 
-## ⚡ Quick Start
-
-Get up and running in 5 minutes:
-
-### 1. Install the packages
-
-```bash
-npm install @superinstance/tminus-dispatcher @superinstance/tminus-client
-```
-
-### 2. Run the dispatcher + demo
-
-```bash
-# Start the local stack
-docker compose up -d
-
-# Run a demo dispatch
-node examples/demo.mjs
-```
-
-That's it — you've got a running dispatcher.
-
-## What This Does
-
-SuperInstance is the main Python SDK for building persistent, multi-agent AI systems. It provides agents with long-term memory (stored as markdown files), fleet management for coordinating multiple agents, and a spectral conservation framework that treats agent resources (compute, attention, memory) as conserved quantities governed by spectral laws.
-
 ## The Key Idea
 
-Think of a fleet of agents like a physical system: there's a total "energy budget" that's conserved. When one agent consumes more resources, others get less. The spectral framework tracks this through eigenvalues of the agent-resource matrix — dominant eigenvalues indicate overloaded agents, spectral gaps indicate good load distribution. This isn't a metaphor; it's enforced mathematically.
+Every AI agent obeys a conservation law: **γ + η = C**
 
-## Install
+- **γ** (generation cost) — tokens, time, API calls
+- **η** (innovation value) — new code, tests, discoveries
+- **C** — total budget, conserved across all agents
 
-```bash
-pip install superinstance
-```
+Spend too much on generation (churning tokens without shipping), and η collapses. Ship too fast without thinking, and γ spikes on rework. The sweet spot isn't a setting — it's a **law**.
 
-## Python SDK Example
+SuperInstance makes this observable.
 
-```python
-from superinstance.agent import Agent, AgentConfig
-from superinstance.fleet import Fleet
-from superinstance.memory import AgentMemory
+## What's Here
 
-# Create an agent with persistent memory
-config = AgentConfig(
-    name="researcher",
-    model="gpt-4",
-    temperature=0.7,
-    max_tokens=4096,
-)
-agent = Agent(config)
+| What | Where |
+|------|-------|
+| **Homepage** | [superinstance.ai](https://superinstance.ai) |
+| **Semantic Search API** | [fleet-vector-api](https://fleet-vector-api.casey-digennaro.workers.dev/docs) |
+| **npm Client** | [@superinstance/tminus-client](https://www.npmjs.com/package/@superinstance/tminus-client) |
+| **npm Dispatcher** | [@superinstance/tminus-dispatcher](https://www.npmjs.com/package/@superinstance/tminus-dispatcher) |
+| **Fleet MCP Server** | [fleet-mcp-server](https://github.com/SuperInstance/fleet-mcp-server) |
+| **Bottle Protocol** | [fleet-bottle](https://github.com/SuperInstance/fleet-bottle) |
+| **Conservation Tracker** | [fleet-conservation](https://github.com/SuperInstance/fleet-conservation) |
+| **Docs Hub** | [docs/index.html](docs/index.html) |
 
-# The agent remembers across sessions (stored at ~/.superinstance/agents/researcher/)
-agent.remember("User prefers concise summaries")
+## API Endpoints (Live, Free)
 
-# Create a fleet
-fleet = Fleet(name="analysis-team")
-fleet.add_agent(agent)
-fleet.add_agent(Agent(AgentConfig(name="coder", model="gpt-4")))
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/search` | Semantic search across the crate ecosystem |
+| `POST` | `/recommend` | Context-aware crate recommendations |
+| `POST` | `/similar` | Find crates similar to a given one |
+| `GET` | `/stats` | Index stats (model, dimensions, crate count) |
+| `GET` | `/clusters` | Crates grouped by domain |
+| `GET` | `/docs` | Interactive HTML API documentation |
+| `GET` | `/openapi.json` | OpenAPI 3.1 specification |
 
-# Dispatch a task
-result = fleet.dispatch("Analyze this dataset and write a summary")
-print(result)
+Base URL: `https://fleet-vector-api.casey-digennaro.workers.dev`
 
-# Check spectral balance
-balance = fleet.spectral_balance()
-print(f"Spectral gap: {balance.gap}")
-print(f"Dominant agent: {balance.dominant_agent}")
-```
+## The Fleet
 
-## API Reference
+Four vessels, heterogeneous hardware, one conservation law:
 
-### `agent`
+| Vessel | Hardware | Role |
+|--------|----------|------|
+| **Oracle1** 🔮 | Oracle Cloud ARM64 24GB | The Lighthouse — coordinates fleet, writes research |
+| **JetsonClaw1** ⚡ | Jetson Orin Nano | The Scout — edge inference, GPU-native rooms |
+| **Forgemaster** ⚒️ | RTX 4050 WSL2 | The Forge — security audits, proofs, LoRA training |
+| **CoCapn-claw** 🎭 | Kimi K2.5 / Telegram | The First Mate — frontend, collaboration, play-testing |
 
-| Type | Description |
-|------|-------------|
-| `AgentConfig { name, model, temperature, max_tokens }` | Agent configuration. |
-| `Agent(config)` | Create a new agent. Memory auto-loads from disk. |
-| `send(message)` | Send a message, get a response. |
-| `remember(fact)` | Store a fact in long-term memory (persisted to `~/.superinstance/agents/{name}/memory.md`). |
-| `recall(query)` | Retrieve relevant memories. |
-| `spawn_sub_agent(name)` | Create a child agent that inherits context. |
+## Contributing
 
-### `fleet`
-
-| Type | Description |
-|------|-------------|
-| `Fleet(name)` | Create a named fleet. |
-| `add_agent(agent)` | Add an agent to the fleet. |
-| `dispatch(task)` | Dispatch a task to the best-suited agent. |
-| `broadcast(message)` | Send to all agents. |
-| `spectral_balance()` | Returns `SpectralBalance { gap, dominant_agent, eigenvalues }`. |
-
-### `memory`
-
-| Type | Description |
-|------|-------------|
-| `AgentMemory(name)` | Persistent memory manager for an agent. |
-| `store(key, value)` | Store a key-value pair. |
-| `retrieve(key)` | Get a stored value. |
-| `search(query)` | Semantic search over memories. |
-| `path` | File path: `~/.superinstance/agents/{name}/`. |
-
-### `exceptions`
-
-| Exception | When |
-|-----------|------|
-| `SuperInstanceError` | Base error. |
-| `AgentNotFoundError` | Referenced agent doesn't exist. |
-| `FleetConnectionError` | Can't reach an agent in the fleet. |
-
-## How It Works
-
-1. **Agent Creation**: Each agent gets a directory at `~/.superinstance/agents/{name}/` with a `memory.md` file for long-term memory.
-2. **Memory**: Facts are stored as markdown. On startup, the agent loads its memory file. The `remember()` method appends entries.
-3. **Fleet Coordination**: The `Fleet` maintains a spectral model of agent capabilities. When a task arrives, it's routed to the agent whose capability eigenvalue best matches the task's spectral profile.
-4. **Conservation**: Total fleet resources are tracked. The spectral balance method computes the eigenvalue gap — a large gap means one agent dominates, which triggers rebalancing.
-
-## Testing
-
-Tests covering:
-- Agent lifecycle (create, send, remember, recall)
-- Memory persistence across sessions
-- Fleet dispatch and broadcast
-- Spectral balance computation
-- Sub-agent spawning
-- Exception handling
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [GOOD_FIRST_ISSUES.md](GOOD_FIRST_ISSUES.md).
 
 ## License
 
