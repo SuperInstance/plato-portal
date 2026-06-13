@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-06-12 08:58 UTC
+**Generated:** 2026-06-13 08:21 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -238,7 +238,6 @@
 - **[conservation-guardian](https://github.com/SuperInstance/conservation-guardian)** — Generic Workflow Conservation Engine
 - **[conservation-guardian-c](https://github.com/SuperInstance/conservation-guardian-c)**
 - **[conservation-law](https://github.com/SuperInstance/conservation-law)** — Generalized conservation law framework: γ + H = C
-- **[conservation-law-rs](https://github.com/SuperInstance/conservation-law-rs)** — Conservation laws for agent dynamics — Lagrangian mechanics, Noether theorem, and symmetry-based con
 - **[conservation-law-v2](https://github.com/SuperInstance/conservation-law-v2)**
 - **[conservation-lint](https://github.com/SuperInstance/conservation-lint)** — A cargo-compatible linter that verifies conservation laws across Rust crates at build time
 - **[conservation-matrix-c](https://github.com/SuperInstance/conservation-matrix-c)** — C implementation of conservation laws in ternary agent systems
@@ -332,7 +331,6 @@
 - **[edge-conservation-worker](https://github.com/SuperInstance/edge-conservation-worker)**
 - **[eigen-system](https://github.com/SuperInstance/eigen-system)**
 - **[eisenstein-embed](https://github.com/SuperInstance/eisenstein-embed)** — Enhanced static embeddings with 5-layer matching cascade. Drop-in Model2Vec enhancement with TUTOR b
-- **[eisenstein-triples](https://github.com/SuperInstance/eisenstein-triples)** — Eisenstein integer triples with D₆ symmetry and hexagonal lattice applications
 - **[electromagnetism](https://github.com/SuperInstance/electromagnetism)** — Electromagnetism in Rust. Maxwell's equations, solved.
 - **[elliptic-curve-ops](https://github.com/SuperInstance/elliptic-curve-ops)** — See README
 - **[emergent-coupling](https://github.com/SuperInstance/emergent-coupling)** — Spectral gap coupling: emergence when two systems produce structure larger than either alone
@@ -393,8 +391,11 @@
 - **[fleet-characters](https://github.com/SuperInstance/fleet-characters)** — Fleet Character System — agent identity, emergent classes, narrative arcs, dream cycles, music cogni
 - **[fleet-cicd-agent](https://github.com/SuperInstance/fleet-cicd-agent)** — Fleet CI/CD agents — automating deployments across agent fleets
 - **[fleet-conductor](https://github.com/SuperInstance/fleet-conductor)**
+- **[fleet-conservation](https://github.com/SuperInstance/fleet-conservation)** — Rust conservation tracker — γ + η = C budget tracking, 37 tests
+- **[fleet-coordinator](https://github.com/SuperInstance/fleet-coordinator)**
 - **[fleet-daemon](https://github.com/SuperInstance/fleet-daemon)** — Real-time MQTT agent daemon for the SuperInstance fleet C2 matrix.
 - **[fleet-dedup](https://github.com/SuperInstance/fleet-dedup)**
+- **[fleet-deepinfra-test](https://github.com/SuperInstance/fleet-deepinfra-test)**
 - **[fleet-diffrhythm-connector](https://github.com/SuperInstance/fleet-diffrhythm-connector)** — Bridge between fleet MIDI and DiffRhythm full song generation
 - **[fleet-edge-worker](https://github.com/SuperInstance/fleet-edge-worker)** — Cloudflare Workers edge runtime for the SuperInstance fleet
 - **[fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble)** — Multi-agent music coordination — orchestrates multiple ensigns
@@ -1009,7 +1010,6 @@
 - **[open-iterator](https://github.com/SuperInstance/open-iterator)** — Lightning-fast and Powerful Code Editor written in Rust
 - **[open-mind](https://github.com/SuperInstance/open-mind)** — open-interpreter that KNOWS your code. Ingest any repo → parse every function → build muscle memory 
 - **[open-parallel](https://github.com/SuperInstance/open-parallel)** — A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, schedu
-- **[open-tui](https://github.com/SuperInstance/open-tui)** — A Rust crate for cooking up terminal user interfaces (TUIs) 👨‍🍳🐀 https://ratatui.rs
 - **[open-vectors](https://github.com/SuperInstance/open-vectors)** — Weaviate is an open-source vector database that stores both objects and vectors, allowing for the co
 - **[openconstruct-abi](https://github.com/SuperInstance/openconstruct-abi)** — C ABI for OpenConstruct — any language that can call C can onboard agents into the SuperInstance eco
 - **[openconstruct-catalog](https://github.com/SuperInstance/openconstruct-catalog)** — Tech catalog and module discovery system for openConstruct
@@ -1751,7 +1751,6 @@
 - **[SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)** — Automatically Deconstruct logic into Spread Sheet Tiles and Cells, Instances Interconnected w/ Origi
 - **[symmetry-math-npm](https://github.com/SuperInstance/symmetry-math-npm)** — Mathematics of symmetry — group theory, wallpaper groups, orbit-stabilizer, Burnside lemma. npm inst
 - **[ternary-locks](https://github.com/SuperInstance/ternary-locks)** — Lock algebra inspired by Oracle1's research
-- **[tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)** — Research-grade tropical geometry in Rust — min-plus/max-plus semirings, Newton polytopes, tropical c
 - **[wal-journal](https://github.com/SuperInstance/wal-journal)** — Research-grade Rust crate
 - **[young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)** — Research-grade Rust crate
 
@@ -1774,6 +1773,7 @@
 - **[cortex-bus-protocol](https://github.com/SuperInstance/cortex-bus-protocol)** — Rust exocortex crate: cortex-bus-protocol
 - **[exocortex-wasm-runtime](https://github.com/SuperInstance/exocortex-wasm-runtime)** — Minimal C TAP protocol for WASM - zero heap allocation
 - **[fleet-architecture](https://github.com/SuperInstance/fleet-architecture)** — Complete architecture documentation for the SuperInstance fleet — 56+ repos, 5 layers, protocols, tu
+- **[fleet-bottle](https://github.com/SuperInstance/fleet-bottle)** — Rust bottle protocol library for inter-agent messaging — 26 tests
 - **[fleet-i2i-protocol](https://github.com/SuperInstance/fleet-i2i-protocol)** — Inter-agent messaging protocol (I2I): text-based bottles with speech-act semantics, capability disco
 - **[gossip-protocol](https://github.com/SuperInstance/gossip-protocol)** — Distributed systems primitive
 - **[holodeck-rust](https://github.com/SuperInstance/holodeck-rust)** — GPU-accelerated simulation environment for Cocapn fleet. Sentiment-aware NPCs, S1-3 tile format, DEA
@@ -1828,6 +1828,7 @@
 - **[fleet-fugue-engine](https://github.com/SuperInstance/fleet-fugue-engine)** — Deeper math fleet service — SuperInstance
 - **[fleet-gateway](https://github.com/SuperInstance/fleet-gateway)** — Unified API gateway for Pelagic fleet — service discovery, routing, auth, rate limiting
 - **[fleet-jam-engine](https://github.com/SuperInstance/fleet-jam-engine)** — Fleet service for SuperInstance
+- **[fleet-mcp-server](https://github.com/SuperInstance/fleet-mcp-server)** — TypeScript MCP server for fleet-vector-api semantic crate search
 - **[fleet-midi-articulation](https://github.com/SuperInstance/fleet-midi-articulation)** — Fleet MIDI service
 - **[fleet-midi-dynamics](https://github.com/SuperInstance/fleet-midi-dynamics)** — Fleet MIDI service
 - **[fleet-midi-expression](https://github.com/SuperInstance/fleet-midi-expression)** — Fleet MIDI service
@@ -1850,6 +1851,7 @@
 - **[fleet-sheet-music](https://github.com/SuperInstance/fleet-sheet-music)** — Fleet service for SuperInstance
 - **[fleet-symmetry-analyzer](https://github.com/SuperInstance/fleet-symmetry-analyzer)** — Deeper math fleet service — SuperInstance
 - **[fleet-ternary-music](https://github.com/SuperInstance/fleet-ternary-music)** — Deeper math fleet service — SuperInstance
+- **[fleet-vector-api](https://github.com/SuperInstance/fleet-vector-api)** — Semantic search API for SuperInstance crate ecosystem
 - **[fleet-voice-leader](https://github.com/SuperInstance/fleet-voice-leader)** — Deeper math fleet service — SuperInstance
 - **[flux-verify-api](https://github.com/SuperInstance/flux-verify-api)** — FLUX constraint safety - flux-verify-api
 - **[hermes-construct](https://github.com/SuperInstance/hermes-construct)** — Hermes understands the cave walls are a shell when seen from the outside. IO with other shells, APIs
@@ -1879,7 +1881,6 @@
 - **[cocapn-benchmark](https://github.com/SuperInstance/cocapn-benchmark)** — Cocapn fleet benchmark module
 - **[config-manager](https://github.com/SuperInstance/config-manager)** — Configuration management tool.
 - **[conservation-verify](https://github.com/SuperInstance/conservation-verify)** — Tools to verify and test conservation laws in ternary agent systems
-- **[constraint-solver-viz](https://github.com/SuperInstance/constraint-solver-viz)** — Visualization tools for constraint solving — funnel plots, holonomy fields, lattice rigidity, metron
 - **[constraint-toolkit](https://github.com/SuperInstance/constraint-toolkit)** — Constraint space analysis toolkit — lattice plots, dial positions, tradition clusters, and export
 - **[edge-benchmark](https://github.com/SuperInstance/edge-benchmark)**
 - **[eisenstein-vs-z2-c](https://github.com/SuperInstance/eisenstein-vs-z2-c)** — C port of eisenstein-vs-z2 — hexagonal vs square lattice benchmark
@@ -1899,7 +1900,6 @@
 - **[grand-pattern-ts](https://github.com/SuperInstance/grand-pattern-ts)** — TypeScript Grand Pattern toolkit — standalone cellular graph intelligence
 - **[grand-pattern-zig](https://github.com/SuperInstance/grand-pattern-zig)** — Zig Grand Pattern toolkit — comptime-powered cellular graph intelligence
 - **[harness-toolkit](https://github.com/SuperInstance/harness-toolkit)** — Templates, checklists, and process metrics for building production-grade guardian modules
-- **[hex-graph-constraint](https://github.com/SuperInstance/hex-graph-constraint)** — Hexagonal graph constraint theory — Laman rigidity, ZHC algorithm, benchmarking on hexagonal lattice
 - **[lau-bench](https://github.com/SuperInstance/lau-bench)** — Real hardware performance harness — benchmarking every lau-* crate against CPU, GPU, and cross-langu
 - **[lau-fuzzy-logic](https://github.com/SuperInstance/lau-fuzzy-logic)**
 - **[llvm-project](https://github.com/SuperInstance/llvm-project)** — The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
