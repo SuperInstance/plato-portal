@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plato Fleet Portal — Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --surface: #111827;
+      --surface2: #1a2332;
+      --border: #1e293b;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.3);
+      --green: #22c55e;
+      --green-glow: rgba(34, 197, 94, 0.2);
+      --amber: #f59e0b;
+      --red: #ef4444;
+      --purple: #a855f7;
+      --cyan: #06b6d4;
+      --text: #e2e8f0;
+      --text-dim: #64748b;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ---- Nav ---- */
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.5rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .nav-brand .logo {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--purple));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+    }
+    .nav-brand h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .nav-brand .badge {
+      font-size: 0.65rem;
+      background: var(--accent-glow);
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .status-dot {
+      display: flex; align-items: center; gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+    .status-dot::before {
+      content: '';
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    /* ---- Layout ---- */
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    /* ---- Status Cards ---- */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--accent-bar, var(--accent));
+      opacity: 0.8;
+    }
+    .card.cache { --accent-bar: linear-gradient(90deg, var(--cyan), var(--accent)); }
+    .card.agents { --accent-bar: linear-gradient(90deg, var(--green), var(--cyan)); }
+    .card.savings { --accent-bar: linear-gradient(90deg, var(--purple), var(--accent)); }
+    .card.events { --accent-bar: linear-gradient(90deg, var(--amber), var(--purple)); }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+    .card-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+    }
+    .card-icon {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem;
+    }
+    .card.cache .card-icon { background: rgba(6, 182, 212, 0.15); color: var(--cyan); }
+    .card.agents .card-icon { background: rgba(34, 197, 94, 0.15); color: var(--green); }
+    .card.savings .card-icon { background: rgba(168, 85, 247, 0.15); color: var(--purple); }
+    .card.events .card-icon { background: rgba(245, 158, 11, 0.15); color: var(--amber); }
+
+    .card-value {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+    .card-sub {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .trend-up { color: var(--green); }
+    .trend-down { color: var(--red); }
+
+    /* ---- Search ---- */
+    .search-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .search-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-dim);
+    }
+    .search-box {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .search-input {
+      flex: 1;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      color: var(--text);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+    .search-input::placeholder { color: var(--text-dim); }
+    .search-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .search-btn:hover { background: #2563eb; }
+    .search-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .search-results {
+      margin-top: 1rem;
+      display: none;
+    }
+    .search-results.visible { display: block; }
+    .result-item {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: border-color 0.15s;
+    }
+    .result-item:hover { border-color: var(--accent); }
+    .result-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .result-name { font-weight: 600; font-size: 0.88rem; }
+    .result-desc { font-size: 0.78rem; color: var(--text-dim); }
+    .result-score {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.8rem;
+      color: var(--cyan);
+      background: rgba(6, 182, 212, 0.1);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .search-empty {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    /* ---- Charts Row ---- */
+    .charts-grid {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 968px) {
+      .charts-grid { grid-template-columns: 1fr; }
+    }
+
+    .chart-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .chart-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .chart-legend {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+    .legend-dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      margin-right: 0.3rem;
+      vertical-align: middle;
+    }
+    canvas { display: block; }
+
+    /* ---- Conservation Gauge ---- */
+    .gauge-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0;
+    }
+    .gauge-canvas {
+      width: 240px;
+      height: 240px;
+    }
+    .gauge-readout {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .gauge-stat {
+      text-align: center;
+    }
+    .gauge-stat .val {
+      font-size: 1.3rem;
+      font-weight: 700;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+    .gauge-stat .lbl {
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .gauge-compliance {
+      margin-top: 0.75rem;
+      font-size: 0.78rem;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .gauge-compliance.ok {
+      background: var(--green-glow);
+      color: var(--green);
+    }
+    .gauge-compliance.warn {
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--amber);
+    }
+    .gauge-compliance.err {
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--red);
+    }
+
+    /* ---- Events Table ---- */
+    .table-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .table-wrapper {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 0.6rem 0.75rem;
+      font-size: 0.82rem;
+      border-bottom: 1px solid var(--border);
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: var(--surface2); }
+    .mono { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.78rem; }
+
+    /* ---- Misc ---- */
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+    .refresh-btn {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 6px;
+      padding: 0.4rem 0.85rem;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: border-color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .refresh-btn:hover { border-color: var(--accent); }
+
+    .spinner {
+      display: inline-block;
+      width: 14px; height: 14px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 1.5rem 1.5rem;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-brand">
+      <div class="logo">⚡</div>
+      <h1>Plato Fleet Portal</h1>
+      <span class="badge">Live</span>
+    </div>
+    <div class="nav-right">
+      <div class="status-dot">Systems Online</div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Status Cards -->
+    <div class="cards-grid">
+      <div class="card cache">
+        <div class="card-header">
+          <span class="card-label">Cache Hit Rate</span>
+          <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+        </div>
+        <div class="card-value" id="cacheHitRate">—</div>
+        <div class="card-sub" id="cacheSub">Connecting…</div>
+      </div>
+
+      <div class="card agents">
+        <div class="card-header">
+          <span class="card-label">Active Agents</span>
+          <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+        </div>
+        <div class="card-value" id="activeAgents">—</div>
+        <div class="card-sub" id="agentsSub">Connecting…</div>
+      </div>
+
+      <div class="card savings">
+        <div class="card-header">
+          <span class="card-label">Cost Savings</span>
+          <div class="card-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+        </div>
+        <div class="card-value" id="costSavings">—</div>
+        <div class="card-sub" id="savingsSub">Connecting…</div>
+      </div>
+
+      <div class="card events">
+        <div class="card-header">
+          <span class="card-label">Events Today</span>
+          <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+        </div>
+        <div class="card-value" id="todayEvents">—</div>
+        <div class="card-sub" id="eventsSub">Connecting…</div>
+      </div>
+    </div>
+
+    <!-- Semantic Search -->
+    <div class="search-section">
+      <div class="search-title">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Semantic Crate Search
+      </div>
+      <div class="search-box">
+        <input
+          type="text"
+          class="search-input"
+          id="searchInput"
+          placeholder="Search crates by meaning — e.g. 'async runtime for networked services'"
+          autocomplete="off"
+        />
+        <button class="search-btn" id="searchBtn" onclick="handleSearch()">
+          <i class="fa-solid fa-arrow-right"></i> Search
+        </button>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <!-- Charts Row -->
+    <div class="charts-grid">
+      <!-- Live Metrics Chart -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <span class="chart-title">Live Fleet Metrics</span>
+          <div class="chart-legend">
+            <span><span class="legend-dot" style="background:var(--cyan)"></span>Requests</span>
+            <span><span class="legend-dot" style="background:var(--green)"></span>Cache Hits</span>
+            <span><span class="legend-dot" style="background:var(--amber)"></span>Latency (ms)</span>
+          </div>
+        </div>
+        <canvas id="metricsChart" width="800" height="280"></canvas>
+      </div>
+
+      <!-- Conservation Gauge -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <span class="chart-title">Conservation Law: γ + η = C</span>
+        </div>
+        <div class="gauge-wrapper">
+          <canvas id="gaugeCanvas" class="gauge-canvas" width="240" height="240"></canvas>
+          <div class="gauge-readout">
+            <div class="gauge-stat">
+              <div class="val" style="color:var(--cyan)" id="gammaVal">0.00</div>
+              <div class="lbl">γ (cache)</div>
+            </div>
+            <div class="gauge-stat">
+              <div class="val" style="color:var(--green)" id="etaVal">0.00</div>
+              <div class="lbl">η (agents)</div>
+            </div>
+            <div class="gauge-stat">
+              <div class="val" style="color:var(--accent)" id="cVal">0.00</div>
+              <div class="lbl">C (total)</div>
+            </div>
+          </div>
+          <div class="gauge-compliance ok" id="complianceBadge">Compliant</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events Table -->
+    <div class="table-card">
+      <div class="section-header">
+        <span class="chart-title">Recent Fleet Events</span>
+        <button class="refresh-btn" onclick="fetchAll()">
+          <i class="fa-solid fa-rotate-right" id="refreshIcon"></i> Refresh
+        </button>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Timestamp</th>
+              <th>Fleet ID</th>
+              <th>Metric</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody id="eventsBody">
+            <tr><td colspan="4" style="text-align:center;padding:1.5rem;color:var(--text-dim)">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <div class="footer">
+    Plato Fleet Portal · Powered by Cloudflare Pages ·
+    <span style="color:var(--accent)">γ + η = C</span> Conservation Engine
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
