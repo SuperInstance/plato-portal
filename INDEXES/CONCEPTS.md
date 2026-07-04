@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-03 08:08 UTC
+**Generated:** 2026-07-04 07:44 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
