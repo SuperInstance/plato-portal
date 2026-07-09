@@ -102,9 +102,23 @@
 
       // Populate events table
       renderEvents(data.events || []);
+      setSystemStatus('online');
     } catch (e) {
       console.warn('[cards] fetch failed, using simulated data', e);
+      setSystemStatus('offline');
       simulateCardData();
+    }
+  }
+
+  function setSystemStatus(status) {
+    const el = $('systemStatus');
+    if (!el) return;
+    if (status === 'online') {
+      el.textContent = 'API Connected';
+      el.style.setProperty('--green', '#22c55e');
+    } else {
+      el.textContent = 'API Offline — Showing Demo Data';
+      el.style.color = 'var(--amber)';
     }
   }
 
