@@ -125,6 +125,30 @@ The planned harness would capture build failures as vectorized patterns, store t
 
 Planned components include PLATO rooms, t-minus scheduling, I2I and bottle messaging, a CoCapn auditor, keeper beaconing, and npm SDK packages. These are not present in the current codebase.
 
+## About the names (plato-portal, superinstance, PLATO)
+
+Three names meet in this repository, so here is the map:
+
+- **The repo is `plato-portal`; the PyPI package it ships is
+  [`superinstance`](https://pypi.org/project/superinstance/)** (see
+  `pyproject.toml`). `pip install superinstance` installs the SDK described
+  above.
+- **PLATO** is this sketchbook's name for a shared tile-server memory: a
+  **room** is a named collection on the server, a **tile** is one JSON record
+  in it. This repository does **not** contain the PLATO server — the
+  `scripts/plato-*.py` helpers are clients for an external one, as are the
+  sibling packages
+  [fishinglog-agent](https://github.com/SuperInstance/fishinglog-agent),
+  [activeledger-agent](https://github.com/SuperInstance/activeledger-agent),
+  and [reallog-agent](https://github.com/SuperInstance/reallog-agent)
+  (default `http://localhost:8847`).
+- **A PLATO tile is not an ActiveLog event.** The ActiveLog format
+  ([cocapn-foundation](https://github.com/SuperInstance/cocapn-foundation),
+  `activelog-spec`) is a different data model — an append-only,
+  `(dev, seq)`-keyed event envelope with set-union merge — and the two are
+  not interoperable today. Don't infer a bridge between them from the shared
+  nautical vocabulary.
+
 ## Repository layout
 
 | Path | What |
