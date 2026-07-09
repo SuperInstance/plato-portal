@@ -75,6 +75,35 @@ class AgentCache:
                 ttl=ttl or self._default_ttl
             )
     
+    def get_or_create(
+        self,
+        agent_name: str,
+        factory: Callable[[], Agent],
+        ttl: Optional[float] = None,
+    ) -> Agent:
+        """Atomically get a cached agent or create and cache one.
+
+        `get()` followed by a separate `put()` has a race: two threads can
+        both miss the cache and each construct their own agent, with only
+        the last `put()` winning. Holding the (reentrant) lock across the
+        whole check-then-create sequence closes that window.
+
+        Args:
+            agent_name: Name of the agent to retrieve or create
+            factory: Zero-arg callable that constructs the agent if missing
+            ttl: Optional TTL in seconds (uses default if not provided)
+
+        Returns:
+            The existing or newly created agent instance
+        """
+        with self._lock:
+            agent = self.get(agent_name)
+            if agent is not None:
+                return agent
+            agent = factory()
+            self.put(agent, ttl=ttl)
+            return agent
+
     def delete(self, agent_name: str) -> None:
         """Remove an agent from the cache."""
         with self._lock:
@@ -98,12 +127,16 @@ class AgentCache:
 
 # Global cache instance for easy use
 _default_cache: Optional[AgentCache] = None
+_default_cache_lock = threading.Lock()
 
 def get_default_cache() -> AgentCache:
     """Get the default global agent cache instance."""
     global _default_cache
     if _default_cache is None:
-        _default_cache = AgentCache()
+        with _default_cache_lock:
+            # Re-check: another thread may have created it while we waited.
+            if _default_cache is None:
+                _default_cache = AgentCache()
     return _default_cache
 
 
@@ -128,23 +161,14 @@ def get_agent(
         Existing or newly created agent instance
     """
     cache = cache or get_default_cache()
-    
+
     # Extract agent name from config if needed
     if isinstance(name, AgentConfig):
         agent_name = name.name
     else:
         agent_name = name
-        
-    # Try to get from cache first
-    agent = cache.get(agent_name)
-    
-    if agent is not None:
-        return agent
-        
-    # Create new agent if not found
-    agent = Agent(name, **kwargs)
-    cache.put(agent, ttl=ttl)
-    return agent
+
+    return cache.get_or_create(agent_name, lambda: Agent(name, **kwargs), ttl=ttl)
 
 
 # Convenience aliases
