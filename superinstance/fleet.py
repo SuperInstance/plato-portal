@@ -98,9 +98,10 @@ class Fleet:
         self._tags[agent.name] = agent.config.tags if agent.config else []
 
     def dispatch(self, task: str) -> str:
-        """Dispatch a task to the best-suited agent (first available).
-        
-        In production, this routes based on capability spectral profiles.
+        """Dispatch a task to the first available agent in the fleet.
+
+        This is a simple placeholder; it does not currently route by capability
+        or load.
         """
         if not self._agents:
             return "No agents available to dispatch task."
@@ -109,11 +110,10 @@ class Fleet:
         return f"Dispatched '{task}' to {agent.name}"
 
     def spectral_balance(self) -> SpectralBalance:
-        """Compute the spectral balance of the fleet.
-        
-        Returns a SpectralBalance with placeholder values.
-        In production, this uses eigenvalue decomposition of the
-        agent-resource matrix.
+        """Return a placeholder SpectralBalance for the fleet.
+
+        This method is a stub and does not perform real eigenvalue decomposition
+        or capability balancing.
         """
         if not self._agents:
             return SpectralBalance()
