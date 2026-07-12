@@ -1,7 +1,22 @@
-__pycache__/
-*.pyc
-.coverage
-.pytest_cache/
+
+*.a
+# Binaries
 build/
+# Build artifacts
+.coverage
+*.db
+*.db-wal
 dist/
 *.egg-info/
+# Node
+node_modules/
+*.o
+*.pyc
+__pycache__/
+.pytest_cache/
+*.so
+**/target/
+target/
+*.wav
+.zig-cache/
+zig-out/
