@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-07-12 07:27 UTC
+**Generated:** 2026-07-13 08:15 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -35,7 +35,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-bottles](https://github.com/SuperInstance/fleet-bottles)
 - [i2i-protocol](https://github.com/SuperInstance/i2i-protocol)
 - [message-in-a-bottle](https://github.com/SuperInstance/message-in-a-bottle)
-- [plato-bridge](https://github.com/SuperInstance/plato-bridge)
 - [superinstance-protocol](https://github.com/SuperInstance/superinstance-protocol)
 - [topological-flow](https://github.com/SuperInstance/topological-flow)
 
@@ -45,6 +44,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Consensus
 
+- [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core)
 - [fleet-math-go](https://github.com/SuperInstance/fleet-math-go)
 - [fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)
 - [fleet-router-integration](https://github.com/SuperInstance/fleet-router-integration)
@@ -68,9 +68,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Constraint Theory
 
 - [cocapn-cli](https://github.com/SuperInstance/cocapn-cli)
+- [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core)
 - [constraint-theory-py](https://github.com/SuperInstance/constraint-theory-py)
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
-- [describe-device](https://github.com/SuperInstance/describe-device)
 - [drift-analyzer](https://github.com/SuperInstance/drift-analyzer)
 - [eisenstein-cuda](https://github.com/SuperInstance/eisenstein-cuda)
 - [eisenstein-snap-python](https://github.com/SuperInstance/eisenstein-snap-python)
@@ -213,8 +213,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Eisenstein
 
+- [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core)
 - [constraint-theory-py](https://github.com/SuperInstance/constraint-theory-py)
-- [deadband-rs](https://github.com/SuperInstance/deadband-rs)
 - [eisenstein-bench](https://github.com/SuperInstance/eisenstein-bench)
 - [eisenstein-c](https://github.com/SuperInstance/eisenstein-c)
 - [eisenstein-cuda](https://github.com/SuperInstance/eisenstein-cuda)
@@ -243,7 +243,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [FORGE-FLUX-ECOSYSTEM](https://github.com/SuperInstance/FORGE-FLUX-ECOSYSTEM)
 - [cocapn-cli](https://github.com/SuperInstance/cocapn-cli)
-- [dashai-flux-model-package](https://github.com/SuperInstance/dashai-flux-model-package)
+- [conservation-enforcer](https://github.com/SuperInstance/conservation-enforcer)
+- [conservation-enforcer-rs](https://github.com/SuperInstance/conservation-enforcer-rs)
 - [fleet-midi-flux](https://github.com/SuperInstance/fleet-midi-flux)
 - [flux](https://github.com/SuperInstance/flux)
 - [flux-algebra](https://github.com/SuperInstance/flux-algebra)
@@ -258,6 +259,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flux-compiler](https://github.com/SuperInstance/flux-compiler)
 - [flux-compiler-agentic](https://github.com/SuperInstance/flux-compiler-agentic)
 - [flux-compiler-interpreter](https://github.com/SuperInstance/flux-compiler-interpreter)
+- [flux-compiler-rs](https://github.com/SuperInstance/flux-compiler-rs)
 - [flux-consciousness-engine-early-version](https://github.com/SuperInstance/flux-consciousness-engine-early-version)
 - [flux-constraint-py-early-version](https://github.com/SuperInstance/flux-constraint-py-early-version)
 - [flux-contracts](https://github.com/SuperInstance/flux-contracts)
@@ -295,17 +297,23 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flux-negative-space](https://github.com/SuperInstance/flux-negative-space)
 - [flux-plato-bridge](https://github.com/SuperInstance/flux-plato-bridge)
 - [flux-pli](https://github.com/SuperInstance/flux-pli)
+- [flux-policy-tester](https://github.com/SuperInstance/flux-policy-tester)
+- [flux-policy-tester-rs](https://github.com/SuperInstance/flux-policy-tester-rs)
 - [flux-realm](https://github.com/SuperInstance/flux-realm)
 - [flux-reasoner](https://github.com/SuperInstance/flux-reasoner)
 - [flux-reasoner-engine](https://github.com/SuperInstance/flux-reasoner-engine)
+- [flux-registry](https://github.com/SuperInstance/flux-registry)
+- [flux-registry-rs](https://github.com/SuperInstance/flux-registry-rs)
 - [flux-router](https://github.com/SuperInstance/flux-router)
 - [flux-rpg](https://github.com/SuperInstance/flux-rpg)
 - [flux-runtime](https://github.com/SuperInstance/flux-runtime)
 - [flux-scheduler](https://github.com/SuperInstance/flux-scheduler)
 - [flux-sdk-python](https://github.com/SuperInstance/flux-sdk-python)
+- [flux-showcase](https://github.com/SuperInstance/flux-showcase)
 - [flux-sim](https://github.com/SuperInstance/flux-sim)
 - [flux-snobol](https://github.com/SuperInstance/flux-snobol)
 - [flux-verify-api](https://github.com/SuperInstance/flux-verify-api)
+- [flux-visual-editor](https://github.com/SuperInstance/flux-visual-editor)
 - [flux-vm](https://github.com/SuperInstance/flux-vm)
 - [flux-vm-gpu](https://github.com/SuperInstance/flux-vm-gpu)
 - [flux-vm-php](https://github.com/SuperInstance/flux-vm-php)
@@ -341,8 +349,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Gpu Compute
 
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
-- [depgraph-gpu](https://github.com/SuperInstance/depgraph-gpu)
-- [device-router](https://github.com/SuperInstance/device-router)
 - [eisenstein-cuda](https://github.com/SuperInstance/eisenstein-cuda)
 - [fleet-constraint-kernel](https://github.com/SuperInstance/fleet-constraint-kernel)
 - [fleet-keel](https://github.com/SuperInstance/fleet-keel)
@@ -416,6 +422,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Guard Dsl
 
+- [build-guardian](https://github.com/SuperInstance/build-guardian)
+- [conservation-guardian](https://github.com/SuperInstance/conservation-guardian)
 - [fleet-warden-rs](https://github.com/SuperInstance/fleet-warden-rs)
 - [flux-certify](https://github.com/SuperInstance/flux-certify)
 - [flux-compiler](https://github.com/SuperInstance/flux-compiler)
@@ -438,11 +446,11 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [rig-budget-guard](https://github.com/SuperInstance/rig-budget-guard)
 - [ring-buffer](https://github.com/SuperInstance/ring-buffer)
 - [spacedrive](https://github.com/SuperInstance/spacedrive)
+- [storage-guardian](https://github.com/SuperInstance/storage-guardian)
 - [uv-cache-guardian](https://github.com/SuperInstance/uv-cache-guardian)
 
 ## H1 Cohomology
 
-- [fleet-coordinate-js](https://github.com/SuperInstance/fleet-coordinate-js)
 - [fleet-math-foundations](https://github.com/SuperInstance/fleet-math-foundations)
 - [graph-homology](https://github.com/SuperInstance/graph-homology)
 - [h1-emergence](https://github.com/SuperInstance/h1-emergence)
@@ -462,7 +470,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Holonomy
 
-- [fleet-coordinate-js](https://github.com/SuperInstance/fleet-coordinate-js)
+- [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core)
 - [fleet-math-demos](https://github.com/SuperInstance/fleet-math-demos)
 - [fleet-math-foundations](https://github.com/SuperInstance/fleet-math-foundations)
 - [fleet-math-go](https://github.com/SuperInstance/fleet-math-go)
@@ -484,7 +492,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Laman Rigidity
 
-- [fleet-coordinate-js](https://github.com/SuperInstance/fleet-coordinate-js)
+- [constraint-theory-core](https://github.com/SuperInstance/constraint-theory-core)
 - [fleet-math-demos](https://github.com/SuperInstance/fleet-math-demos)
 - [fleet-math-foundations](https://github.com/SuperInstance/fleet-math-foundations)
 - [fleet-math-go](https://github.com/SuperInstance/fleet-math-go)
@@ -497,13 +505,13 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Multi Agent
 
+- [Baton](https://github.com/SuperInstance/Baton)
 - [I](https://github.com/SuperInstance/I)
 - [Luma](https://github.com/SuperInstance/Luma)
-- [Studylog-AI](https://github.com/SuperInstance/Studylog-AI)
+- [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
 - [SuperInstance](https://github.com/SuperInstance/SuperInstance)
+- [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
 - [a2a-protocol](https://github.com/SuperInstance/a2a-protocol)
-- [ab-testing](https://github.com/SuperInstance/ab-testing)
-- [activeledger-agent](https://github.com/SuperInstance/activeledger-agent)
 - [activeledger-ai](https://github.com/SuperInstance/activeledger-ai)
 - [activelog-agent](https://github.com/SuperInstance/activelog-agent)
 - [agent-dna](https://github.com/SuperInstance/agent-dna)
@@ -514,6 +522,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [agent-vocabulary](https://github.com/SuperInstance/agent-vocabulary)
 - [agent-whisper](https://github.com/SuperInstance/agent-whisper)
 - [capitaine-1](https://github.com/SuperInstance/capitaine-1)
+- [casting-call](https://github.com/SuperInstance/casting-call)
 - [categorical-agents](https://github.com/SuperInstance/categorical-agents)
 - [cocapn-browser-agent](https://github.com/SuperInstance/cocapn-browser-agent)
 - [cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)
@@ -522,12 +531,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-matrix-rs](https://github.com/SuperInstance/conservation-matrix-rs)
 - [construct-core](https://github.com/SuperInstance/construct-core)
 - [crab](https://github.com/SuperInstance/crab)
-- [deadband-rs](https://github.com/SuperInstance/deadband-rs)
-- [decomp-agents](https://github.com/SuperInstance/decomp-agents)
-- [demo-memory](https://github.com/SuperInstance/demo-memory)
-- [dial-theory-rs](https://github.com/SuperInstance/dial-theory-rs)
-- [distill-pipeline](https://github.com/SuperInstance/distill-pipeline)
-- [dmlog-agent](https://github.com/SuperInstance/dmlog-agent)
 - [domain-agent-base](https://github.com/SuperInstance/domain-agent-base)
 - [dream-compiler](https://github.com/SuperInstance/dream-compiler)
 - [entropy-conservation-rs](https://github.com/SuperInstance/entropy-conservation-rs)
@@ -537,6 +540,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [evolving-sheaf-rs](https://github.com/SuperInstance/evolving-sheaf-rs)
 - [exocortex](https://github.com/SuperInstance/exocortex)
 - [exocortex-fleet-chapel](https://github.com/SuperInstance/exocortex-fleet-chapel)
+- [exocortex-rs](https://github.com/SuperInstance/exocortex-rs)
 - [federation-protocol](https://github.com/SuperInstance/federation-protocol)
 - [fiber-category](https://github.com/SuperInstance/fiber-category)
 - [fibonacci-growth-v2](https://github.com/SuperInstance/fibonacci-growth-v2)
@@ -571,7 +575,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-conservation](https://github.com/SuperInstance/fleet-conservation)
 - [fleet-constraint-kernel](https://github.com/SuperInstance/fleet-constraint-kernel)
 - [fleet-constraint-monitor](https://github.com/SuperInstance/fleet-constraint-monitor)
-- [fleet-coordinate-js](https://github.com/SuperInstance/fleet-coordinate-js)
 - [fleet-coordinator](https://github.com/SuperInstance/fleet-coordinator)
 - [fleet-crdt](https://github.com/SuperInstance/fleet-crdt)
 - [fleet-daemon](https://github.com/SuperInstance/fleet-daemon)
@@ -581,10 +584,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-diffrhythm-connector](https://github.com/SuperInstance/fleet-diffrhythm-connector)
 - [fleet-ecology](https://github.com/SuperInstance/fleet-ecology)
 - [fleet-ecosystem](https://github.com/SuperInstance/fleet-ecosystem)
+- [fleet-ensemble](https://github.com/SuperInstance/fleet-ensemble)
 - [fleet-event-router](https://github.com/SuperInstance/fleet-event-router)
 - [fleet-experiments](https://github.com/SuperInstance/fleet-experiments)
 - [fleet-formal-proofs](https://github.com/SuperInstance/fleet-formal-proofs)
-- [fleet-formation-protocol](https://github.com/SuperInstance/fleet-formation-protocol)
 - [fleet-fugue-engine](https://github.com/SuperInstance/fleet-fugue-engine)
 - [fleet-getting-started](https://github.com/SuperInstance/fleet-getting-started)
 - [fleet-graph](https://github.com/SuperInstance/fleet-graph)
@@ -734,6 +737,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-symmetry-analyzer](https://github.com/SuperInstance/fleet-symmetry-analyzer)
 - [fleet-ternary-music](https://github.com/SuperInstance/fleet-ternary-music)
 - [fleet-tool-registry](https://github.com/SuperInstance/fleet-tool-registry)
+- [fleet-topology](https://github.com/SuperInstance/fleet-topology)
 - [fleet-topology-rs](https://github.com/SuperInstance/fleet-topology-rs)
 - [fleet-touchdesigner-connector](https://github.com/SuperInstance/fleet-touchdesigner-connector)
 - [fleet-tutorials](https://github.com/SuperInstance/fleet-tutorials)
@@ -749,7 +753,11 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flux-js](https://github.com/SuperInstance/flux-js)
 - [flux-julia](https://github.com/SuperInstance/flux-julia)
 - [flux-plato-bridge](https://github.com/SuperInstance/flux-plato-bridge)
+- [flux-policy-tester](https://github.com/SuperInstance/flux-policy-tester)
+- [flux-policy-tester-rs](https://github.com/SuperInstance/flux-policy-tester-rs)
 - [flux-realm](https://github.com/SuperInstance/flux-realm)
+- [flux-registry](https://github.com/SuperInstance/flux-registry)
+- [flux-registry-rs](https://github.com/SuperInstance/flux-registry-rs)
 - [flux-runtime](https://github.com/SuperInstance/flux-runtime)
 - [flux-vm-php](https://github.com/SuperInstance/flux-vm-php)
 - [flywheel](https://github.com/SuperInstance/flywheel)
@@ -780,6 +788,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-agent](https://github.com/SuperInstance/git-agent)
 - [git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)
 - [git-agent-flux-pipeline](https://github.com/SuperInstance/git-agent-flux-pipeline)
+- [git-native-agents](https://github.com/SuperInstance/git-native-agents)
 - [glyph-language](https://github.com/SuperInstance/glyph-language)
 - [grand-pattern-adversarial](https://github.com/SuperInstance/grand-pattern-adversarial)
 - [grand-pattern-core](https://github.com/SuperInstance/grand-pattern-core)
@@ -985,16 +994,14 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [persona-engine](https://github.com/SuperInstance/persona-engine)
 - [personallog-agent](https://github.com/SuperInstance/personallog-agent)
 - [plato-a2a](https://github.com/SuperInstance/plato-a2a)
-- [plato-address](https://github.com/SuperInstance/plato-address)
 - [plato-agent-academy](https://github.com/SuperInstance/plato-agent-academy)
-- [plato-agent-python](https://github.com/SuperInstance/plato-agent-python)
-- [plato-bridge](https://github.com/SuperInstance/plato-bridge)
 - [plato-capability](https://github.com/SuperInstance/plato-capability)
 - [plato-chess-dojo](https://github.com/SuperInstance/plato-chess-dojo)
 - [plato-client-php](https://github.com/SuperInstance/plato-client-php)
 - [plato-construct](https://github.com/SuperInstance/plato-construct)
 - [plato-contract](https://github.com/SuperInstance/plato-contract)
 - [plato-coordination](https://github.com/SuperInstance/plato-coordination)
+- [plato-core-rs](https://github.com/SuperInstance/plato-core-rs)
 - [plato-correlator](https://github.com/SuperInstance/plato-correlator)
 - [plato-data](https://github.com/SuperInstance/plato-data)
 - [plato-dojo](https://github.com/SuperInstance/plato-dojo)
@@ -1017,6 +1024,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-papers](https://github.com/SuperInstance/plato-papers)
 - [plato-playwright](https://github.com/SuperInstance/plato-playwright)
 - [plato-policy](https://github.com/SuperInstance/plato-policy)
+- [plato-portal](https://github.com/SuperInstance/plato-portal)
 - [plato-puppeteer](https://github.com/SuperInstance/plato-puppeteer)
 - [plato-room-musician](https://github.com/SuperInstance/plato-room-musician)
 - [plato-sandbox](https://github.com/SuperInstance/plato-sandbox)
@@ -1203,7 +1211,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Physics
 
-- [distributed-algos](https://github.com/SuperInstance/distributed-algos)
 - [eisenstein-snap-python](https://github.com/SuperInstance/eisenstein-snap-python)
 - [fleet-clock](https://github.com/SuperInstance/fleet-clock)
 - [fleet-math-foundations](https://github.com/SuperInstance/fleet-math-foundations)
@@ -1226,12 +1233,11 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Plato
 
-- [Studylog-AI](https://github.com/SuperInstance/Studylog-AI)
-- [activeledger-agent](https://github.com/SuperInstance/activeledger-agent)
+- [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
+- [SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)
 - [adaptive-plato-early-version](https://github.com/SuperInstance/adaptive-plato-early-version)
+- [chart-room](https://github.com/SuperInstance/chart-room)
 - [cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)
-- [describe-device](https://github.com/SuperInstance/describe-device)
-- [dmlog-agent](https://github.com/SuperInstance/dmlog-agent)
 - [dojo-musician-rooms](https://github.com/SuperInstance/dojo-musician-rooms)
 - [domain-agent-base](https://github.com/SuperInstance/domain-agent-base)
 - [exocortex-tiny-py](https://github.com/SuperInstance/exocortex-tiny-py)
@@ -1328,13 +1334,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [penrose-memory-palace-early-version](https://github.com/SuperInstance/penrose-memory-palace-early-version)
 - [personallog-agent](https://github.com/SuperInstance/personallog-agent)
 - [plato-a2a](https://github.com/SuperInstance/plato-a2a)
-- [plato-achievement](https://github.com/SuperInstance/plato-achievement)
-- [plato-adapter-store](https://github.com/SuperInstance/plato-adapter-store)
 - [plato-adapters](https://github.com/SuperInstance/plato-adapters)
-- [plato-address](https://github.com/SuperInstance/plato-address)
-- [plato-afterlife-reef](https://github.com/SuperInstance/plato-afterlife-reef)
 - [plato-agent-academy](https://github.com/SuperInstance/plato-agent-academy)
-- [plato-agent-python](https://github.com/SuperInstance/plato-agent-python)
 - [plato-alert](https://github.com/SuperInstance/plato-alert)
 - [plato-alignments-early-version](https://github.com/SuperInstance/plato-alignments-early-version)
 - [plato-anomaly](https://github.com/SuperInstance/plato-anomaly)
@@ -1343,12 +1344,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-autonomy](https://github.com/SuperInstance/plato-autonomy)
 - [plato-backprop](https://github.com/SuperInstance/plato-backprop)
 - [plato-backtest](https://github.com/SuperInstance/plato-backtest)
-- [plato-bridge](https://github.com/SuperInstance/plato-bridge)
 - [plato-browser](https://github.com/SuperInstance/plato-browser)
 - [plato-calibration-early-version](https://github.com/SuperInstance/plato-calibration-early-version)
 - [plato-capability](https://github.com/SuperInstance/plato-capability)
 - [plato-chess-dojo](https://github.com/SuperInstance/plato-chess-dojo)
-- [plato-cli](https://github.com/SuperInstance/plato-cli)
 - [plato-client](https://github.com/SuperInstance/plato-client)
 - [plato-client-js](https://github.com/SuperInstance/plato-client-js)
 - [plato-client-php](https://github.com/SuperInstance/plato-client-php)
@@ -1359,6 +1358,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-contract](https://github.com/SuperInstance/plato-contract)
 - [plato-coordination](https://github.com/SuperInstance/plato-coordination)
 - [plato-core](https://github.com/SuperInstance/plato-core)
+- [plato-core-rs](https://github.com/SuperInstance/plato-core-rs)
 - [plato-correlate](https://github.com/SuperInstance/plato-correlate)
 - [plato-correlator](https://github.com/SuperInstance/plato-correlator)
 - [plato-cortex](https://github.com/SuperInstance/plato-cortex)
@@ -1415,6 +1415,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-perception](https://github.com/SuperInstance/plato-perception)
 - [plato-playwright](https://github.com/SuperInstance/plato-playwright)
 - [plato-policy](https://github.com/SuperInstance/plato-policy)
+- [plato-portal](https://github.com/SuperInstance/plato-portal)
 - [plato-predict](https://github.com/SuperInstance/plato-predict)
 - [plato-prediction](https://github.com/SuperInstance/plato-prediction)
 - [plato-protocol-test](https://github.com/SuperInstance/plato-protocol-test)
@@ -1423,7 +1424,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-room](https://github.com/SuperInstance/plato-room)
 - [plato-room-configs](https://github.com/SuperInstance/plato-room-configs)
 - [plato-room-deployment](https://github.com/SuperInstance/plato-room-deployment)
+- [plato-room-deployment-approval](https://github.com/SuperInstance/plato-room-deployment-approval)
 - [plato-room-musician](https://github.com/SuperInstance/plato-room-musician)
+- [plato-room-security-audit](https://github.com/SuperInstance/plato-room-security-audit)
+- [plato-room-security-audit-rs](https://github.com/SuperInstance/plato-room-security-audit-rs)
 - [plato-room-wasm](https://github.com/SuperInstance/plato-room-wasm)
 - [plato-rooms](https://github.com/SuperInstance/plato-rooms)
 - [plato-route](https://github.com/SuperInstance/plato-route)
@@ -1505,7 +1509,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Polyformalism
 
-- [delta-clt](https://github.com/SuperInstance/delta-clt)
 - [polyformalism](https://github.com/SuperInstance/polyformalism)
 
 ## Protocol Bridge
@@ -1514,7 +1517,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Pythagorean48
 
-- [fleet-coordinate-js](https://github.com/SuperInstance/fleet-coordinate-js)
 - [hex-lattice-explorer](https://github.com/SuperInstance/hex-lattice-explorer)
 - [openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)
 - [pythagorean-quantize](https://github.com/SuperInstance/pythagorean-quantize)
@@ -1542,6 +1544,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-raid5](https://github.com/SuperInstance/fleet-raid5)
 - [fleet-simulation](https://github.com/SuperInstance/fleet-simulation)
 - [paper-zero-crypto-fleet-security](https://github.com/SuperInstance/paper-zero-crypto-fleet-security)
+- [plato-room-security-audit](https://github.com/SuperInstance/plato-room-security-audit)
+- [plato-room-security-audit-rs](https://github.com/SuperInstance/plato-room-security-audit-rs)
 
 ## Sonar
 
@@ -1560,7 +1564,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [i2i-protocol](https://github.com/SuperInstance/i2i-protocol)
 - [lau-shell-transport](https://github.com/SuperInstance/lau-shell-transport)
 - [message-in-a-bottle](https://github.com/SuperInstance/message-in-a-bottle)
-- [plato-bridge](https://github.com/SuperInstance/plato-bridge)
 - [superinstance-protocol](https://github.com/SuperInstance/superinstance-protocol)
 - [ternary-rate-limiter](https://github.com/SuperInstance/ternary-rate-limiter)
 - [ternary-reassembly](https://github.com/SuperInstance/ternary-reassembly)
@@ -1576,30 +1579,19 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)
 - [Scrapcraft](https://github.com/SuperInstance/Scrapcraft)
 - [SubForge](https://github.com/SuperInstance/SubForge)
-- [active-probe](https://github.com/SuperInstance/active-probe)
+- [a2ui](https://github.com/SuperInstance/a2ui)
 - [activelog-ai](https://github.com/SuperInstance/activelog-ai)
 - [activelog-backend](https://github.com/SuperInstance/activelog-backend)
 - [activelog-claude](https://github.com/SuperInstance/activelog-claude)
 - [actualization-harbor](https://github.com/SuperInstance/actualization-harbor)
 - [actualizer-ai](https://github.com/SuperInstance/actualizer-ai)
+- [carry-protocol](https://github.com/SuperInstance/carry-protocol)
+- [chart-system](https://github.com/SuperInstance/chart-system)
+- [cocapn-pushdown](https://github.com/SuperInstance/cocapn-pushdown)
 - [cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)
-- [db-internals](https://github.com/SuperInstance/db-internals)
-- [deadband-constrained](https://github.com/SuperInstance/deadband-constrained)
-- [deadband-python](https://github.com/SuperInstance/deadband-python)
-- [deadband-snr](https://github.com/SuperInstance/deadband-snr)
-- [delta-encode](https://github.com/SuperInstance/delta-encode)
-- [demo](https://github.com/SuperInstance/demo)
-- [desire-loop](https://github.com/SuperInstance/desire-loop)
-- [dial-space-explorer](https://github.com/SuperInstance/dial-space-explorer)
-- [differential-regression](https://github.com/SuperInstance/differential-regression)
-- [diffie-hellman-rs](https://github.com/SuperInstance/diffie-hellman-rs)
-- [difftop-rs](https://github.com/SuperInstance/difftop-rs)
-- [dify-budget-watchdog](https://github.com/SuperInstance/dify-budget-watchdog)
-- [discrete-bayes-rs](https://github.com/SuperInstance/discrete-bayes-rs)
-- [discussions](https://github.com/SuperInstance/discussions)
-- [dissertation](https://github.com/SuperInstance/dissertation)
-- [dmlog-ai-pages](https://github.com/SuperInstance/dmlog-ai-pages)
-- [docs](https://github.com/SuperInstance/docs)
+- [conservation-art](https://github.com/SuperInstance/conservation-art)
+- [conservation-cli](https://github.com/SuperInstance/conservation-cli)
+- [conservation-rhythm-rs](https://github.com/SuperInstance/conservation-rhythm-rs)
 - [dojo](https://github.com/SuperInstance/dojo)
 - [dream-cycle](https://github.com/SuperInstance/dream-cycle)
 - [dual-connection](https://github.com/SuperInstance/dual-connection)
@@ -1636,6 +1628,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [extensive-form](https://github.com/SuperInstance/extensive-form)
 - [failure-detector](https://github.com/SuperInstance/failure-detector)
 - [feistel-net](https://github.com/SuperInstance/feistel-net)
+- [fencecraft](https://github.com/SuperInstance/fencecraft)
 - [fft-core](https://github.com/SuperInstance/fft-core)
 - [fft-rs](https://github.com/SuperInstance/fft-rs)
 - [fibonacci-growth](https://github.com/SuperInstance/fibonacci-growth)
@@ -1909,6 +1902,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lighthouse-cli-early-version](https://github.com/SuperInstance/lighthouse-cli-early-version)
 - [limits-colimits](https://github.com/SuperInstance/limits-colimits)
 - [line-sweep-rs](https://github.com/SuperInstance/line-sweep-rs)
+- [lineage-tracker](https://github.com/SuperInstance/lineage-tracker)
 - [linear-algebra-rs](https://github.com/SuperInstance/linear-algebra-rs)
 - [linguistic-spectral](https://github.com/SuperInstance/linguistic-spectral)
 - [liteparse-coverage](https://github.com/SuperInstance/liteparse-coverage)
@@ -1990,6 +1984,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [particle-swarm](https://github.com/SuperInstance/particle-swarm)
 - [particle-system](https://github.com/SuperInstance/particle-system)
 - [partition-tolerance](https://github.com/SuperInstance/partition-tolerance)
+- [pedigree](https://github.com/SuperInstance/pedigree)
 - [penrose-lattice](https://github.com/SuperInstance/penrose-lattice)
 - [persistence-landscape](https://github.com/SuperInstance/persistence-landscape)
 - [personallog-ai-pages](https://github.com/SuperInstance/personallog-ai-pages)
@@ -2069,6 +2064,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [sheaf-persistence-bundle](https://github.com/SuperInstance/sheaf-persistence-bundle)
 - [sheaf-spectral](https://github.com/SuperInstance/sheaf-spectral)
 - [shell](https://github.com/SuperInstance/shell)
+- [shepherds-console](https://github.com/SuperInstance/shepherds-console)
 - [shoal](https://github.com/SuperInstance/shoal)
 - [si](https://github.com/SuperInstance/si)
 - [si-compaction-poc](https://github.com/SuperInstance/si-compaction-poc)
@@ -2085,6 +2081,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [signaling-games](https://github.com/SuperInstance/signaling-games)
 - [simulated-anneal](https://github.com/SuperInstance/simulated-anneal)
 - [simulation-ledger](https://github.com/SuperInstance/simulation-ledger)
+- [skenna](https://github.com/SuperInstance/skenna)
 - [sketch-composite-headspace](https://github.com/SuperInstance/sketch-composite-headspace)
 - [sketch-forgemaster-experiments](https://github.com/SuperInstance/sketch-forgemaster-experiments)
 - [sketch-oracle2-construct-readme](https://github.com/SuperInstance/sketch-oracle2-construct-readme)
@@ -2129,6 +2126,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [style-dna](https://github.com/SuperInstance/style-dna)
 - [suffix-array-rs](https://github.com/SuperInstance/suffix-array-rs)
 - [suffix-automaton-rs](https://github.com/SuperInstance/suffix-automaton-rs)
+- [suna](https://github.com/SuperInstance/suna)
 - [superinstance-ai-pages](https://github.com/SuperInstance/superinstance-ai-pages)
 - [superinstance-cli](https://github.com/SuperInstance/superinstance-cli)
 - [superinstance-design](https://github.com/SuperInstance/superinstance-design)
@@ -2427,6 +2425,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)
 - [topology-bench](https://github.com/SuperInstance/topology-bench)
 - [transfer-entropy](https://github.com/SuperInstance/transfer-entropy)
+- [trawl](https://github.com/SuperInstance/trawl)
 - [tropical-algebra](https://github.com/SuperInstance/tropical-algebra)
 - [tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)
 - [tropical-graph](https://github.com/SuperInstance/tropical-graph)
@@ -2435,6 +2434,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [venue-personality](https://github.com/SuperInstance/venue-personality)
 - [vessel](https://github.com/SuperInstance/vessel)
 - [vessel-constellation](https://github.com/SuperInstance/vessel-constellation)
+- [vetcheck](https://github.com/SuperInstance/vetcheck)
 - [vibe-core](https://github.com/SuperInstance/vibe-core)
 - [vocabularies](https://github.com/SuperInstance/vocabularies)
 - [voronoi-traditions](https://github.com/SuperInstance/voronoi-traditions)
@@ -2446,6 +2446,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [wavelet-core](https://github.com/SuperInstance/wavelet-core)
 - [west-african-math-c](https://github.com/SuperInstance/west-african-math-c)
 - [west-african-math-rs](https://github.com/SuperInstance/west-african-math-rs)
+- [whistle](https://github.com/SuperInstance/whistle)
 - [wiki](https://github.com/SuperInstance/wiki)
 - [wire-harmony](https://github.com/SuperInstance/wire-harmony)
 - [witness-complex](https://github.com/SuperInstance/witness-complex)
@@ -2466,7 +2467,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Voice Signature
 
-- [digital-signature-rs](https://github.com/SuperInstance/digital-signature-rs)
 - [fleet-midi-weave](https://github.com/SuperInstance/fleet-midi-weave)
 - [fleet-voice-leader](https://github.com/SuperInstance/fleet-voice-leader)
 - [handy-marine-voice](https://github.com/SuperInstance/handy-marine-voice)
