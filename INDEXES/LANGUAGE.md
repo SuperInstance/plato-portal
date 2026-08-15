@@ -1,10 +1,11 @@
 # Index by Language
 
-**Generated:** 2026-08-14 06:11 UTC
+**Generated:** 2026-08-15 05:21 UTC
 **Total repos:** 2000
 
 ## C
 
+- **[ACE-Step-1.5](https://github.com/SuperInstance/ACE-Step-1.5)** — Auto-created for sync 2026-08-13
 - **[activelog-app](https://github.com/SuperInstance/activelog-app)** — Essential domain-agnostic voice transcriber with location annotation
 - **[bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)** — Tiny C PLATO client for ESP32/RP2040 + embodiment protocol: agents discover IoT devices as MUD rooms
 - **[boat-agent](https://github.com/SuperInstance/boat-agent)** — Like Commander Data for your wheelhouse. Works with any marine IO from Navigation/Autopilot to IR en
@@ -23,9 +24,6 @@
 - **[fleet-gateway](https://github.com/SuperInstance/fleet-gateway)** — Unified API gateway for Pelagic fleet — service discovery, routing, auth, rate limiting
 - **[fleet-jepa-midi](https://github.com/SuperInstance/fleet-jepa-midi)** — Three-layer real-time music intelligence: LLM thinks in phrasing, JEPA feels in pulse, algorithms ex
 - **[fleet-memory](https://github.com/SuperInstance/fleet-memory)** — Content-addressable distributed memory for fleets: store, retrieve, error-correct, holographic stora
-- **[fleet-midi-pedagogy](https://github.com/SuperInstance/fleet-midi-pedagogy)** — Music theory education through fleet MIDI generation
-- **[fleet-midi-prob](https://github.com/SuperInstance/fleet-midi-prob)** — Probabilistic state transition music from agent Markov chains
-- **[fleet-midi-rand](https://github.com/SuperInstance/fleet-midi-rand)** — Aleatoric music generation from agent randomness
 - **[fleet-midi-remapper](https://github.com/SuperInstance/fleet-midi-remapper)** — MIDI note/CC remapping engine
 - **[fleet-midi-symusic](https://github.com/SuperInstance/fleet-midi-symusic)** — Fleet MIDI integration service
 - **[fleet-midi-tide](https://github.com/SuperInstance/fleet-midi-tide)** — Tidal harmonic generation from agent cycles
@@ -199,6 +197,8 @@
 - **[spectral-prosody-rs](https://github.com/SuperInstance/spectral-prosody-rs)** — Spectral analysis of prosodic features in agent communication
 - **[spline-midi-smooth](https://github.com/SuperInstance/spline-midi-smooth)** — 〰️ Spline interpolation for MIDI automation — bridge discrete CC events into smooth curves, eliminat
 - **[step-back-operator](https://github.com/SuperInstance/step-back-operator)** — 🎣 Topological step-back operator β₁ = E - V + C — pattern detection in event networks. The intellige
+- **[study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)** — Auto-created for sync 2026-08-13
+- **[study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)** — Auto-created for sync 2026-08-13
 - **[superinstance-embedder](https://github.com/SuperInstance/superinstance-embedder)** — 32-dimensional embeddings for 560+ SuperInstance crates. Seeds Cloudflare Vectorize for semantic sea
 - **[superinstance-ffi](https://github.com/SuperInstance/superinstance-ffi)** — Unified C FFI and WASM bindings for SuperInstance math primitives — Eisenstein norm, Laman rigidity,
 - **[superinstance-harness](https://github.com/SuperInstance/superinstance-harness)** — Self-optimizing development harness using γ + η = C conservation law — 25 build/quality patterns, CL
@@ -211,6 +211,7 @@
 - **[symplectic-music](https://github.com/SuperInstance/symplectic-music)** — Hamiltonian mechanics of musical harmony — symplectic integrators preserve tonal structure
 - **[symplectic-opt](https://github.com/SuperInstance/symplectic-opt)** — Symplectic optimization — Hamiltonian integrators, conservation laws, natural gradient descent on Ri
 - **[system_prompts_leaks](https://github.com/SuperInstance/system_prompts_leaks)** — Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. Open
+- **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** — Auto-created for sync 2026-08-13
 - **[tapscript-studio](https://github.com/SuperInstance/tapscript-studio)** — Plain-text music notation that compiles to MIDI. Embeds in markdown like mermaid.
 - **[tda-c](https://github.com/SuperInstance/tda-c)**
 - **[temporal-logic](https://github.com/SuperInstance/temporal-logic)**
@@ -252,6 +253,7 @@
 - **[ternary-spreadsheet](https://github.com/SuperInstance/ternary-spreadsheet)** — Ternary Spreadsheet  Core logic for the SuperInstance Spreadsheet — a familiar spreadsheet inte...
 - **[ternary-symbiont](https://github.com/SuperInstance/ternary-symbiont)** — Symbiotic relationships between ternary agents
 - **[ternary-sync](https://github.com/SuperInstance/ternary-sync)** — Sync for ternary {-1, 0, +1} systems — `SyncGroup`
+- **[the-listeners-ear](https://github.com/SuperInstance/the-listeners-ear)** — Auto-created for sync 2026-08-13
 - **[tminus-music](https://github.com/SuperInstance/tminus-music)** — T-minus musical event prediction using conservation spectral theory
 - **[turbovec-integration-ccc](https://github.com/SuperInstance/turbovec-integration-ccc)** — TurboVec integration for CCC — vector acceleration primitives for constraint computation
 - **[vessel-agent](https://github.com/SuperInstance/vessel-agent)** — Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelli
@@ -595,15 +597,6 @@
 - **[fleet-experiments](https://github.com/SuperInstance/fleet-experiments)** — Experimental verification of fleet math assumptions — script speedup, One Delta accuracy, H1 emergen
 - **[fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)** — Fleet liaison service for inter-vessel communication and tender coordination
 - **[fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)** — Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence,
-- **[fleet-midi-morph](https://github.com/SuperInstance/fleet-midi-morph)** — Smooth morphing between agent state vectors as musical transitions
-- **[fleet-midi-musiclang](https://github.com/SuperInstance/fleet-midi-musiclang)** — Fleet MIDI integration service
-- **[fleet-midi-pan](https://github.com/SuperInstance/fleet-midi-pan)** — Panning/ spatialization from agent state position
-- **[fleet-midi-pattern](https://github.com/SuperInstance/fleet-midi-pattern)** — Pattern language for fleet MIDI generation
-- **[fleet-midi-phase](https://github.com/SuperInstance/fleet-midi-phase)** — Phase-shifted MIDI from agent state offsets
-- **[fleet-midi-player](https://github.com/SuperInstance/fleet-midi-player)** — Fleet service for SuperInstance
-- **[fleet-midi-quantizer](https://github.com/SuperInstance/fleet-midi-quantizer)** — MIDI quantization from ternary timing
-- **[fleet-midi-quantum](https://github.com/SuperInstance/fleet-midi-quantum)** — Quantum state-inspired MIDI generation from superposition/entanglement
-- **[fleet-midi-recorder](https://github.com/SuperInstance/fleet-midi-recorder)** — Record and replay fleet MIDI sessions
 - **[fleet-midi-register](https://github.com/SuperInstance/fleet-midi-register)** — Ternary octave register agent — one of 16 MIDI agents controlling frequency spectrum placement via {
 - **[fleet-midi-resonance](https://github.com/SuperInstance/fleet-midi-resonance)** — Resonant frequency MIDI from agent harmonics
 - **[fleet-midi-reverb](https://github.com/SuperInstance/fleet-midi-reverb)** — Convolution reverb MIDI from agent decay profiles
@@ -664,6 +657,7 @@
 - **[fleet-topology](https://github.com/SuperInstance/fleet-topology)** — Fleet network topology — agent connectivity, routing, and graph analysis
 - **[fleet-topology-rs](https://github.com/SuperInstance/fleet-topology-rs)** — Fleet network topology with constraint-aware routing and holonomy verification
 - **[fleet-touchdesigner-connector](https://github.com/SuperInstance/fleet-touchdesigner-connector)** — Bridge between fleet agent states and TouchDesigner 3D visualization
+- **[fleet-tts](https://github.com/SuperInstance/fleet-tts)** — fleet-tts
 - **[fleet-tutorials](https://github.com/SuperInstance/fleet-tutorials)** — Step-by-step tutorials for the SuperInstance fleet — beginner to research deep-dives
 - **[fleet-types](https://github.com/SuperInstance/fleet-types)** — fleet-types — canonical fleet-core library
 - **[fleet-vessel](https://github.com/SuperInstance/fleet-vessel)** — Fleet's git-native garbage collector agent
@@ -823,9 +817,11 @@
 - **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** — Hebbian routing — connection strengthening based on usage patterns for agent communication networks
 - **[hermes-agent-core](https://github.com/SuperInstance/hermes-agent-core)** — Core agent runtime for the Hermes system — part of the SuperInstance fleet ecosystem
 - **[hermes-avatar](https://github.com/SuperInstance/hermes-avatar)** — Hermes sensory avatar — visual, voice, music, and sensory blueprints
+- **[hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)** — Hermes's architecture brain-docs — the Oxide Stack, Shared Canvas, Digital Twin data flow, and the f
 - **[hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)**
 - **[hermes-cloudflare](https://github.com/SuperInstance/hermes-cloudflare)**
 - **[hermes-construct](https://github.com/SuperInstance/hermes-construct)** — Hermes understands the cave walls are a shell when seen from the outside. IO with other shells, APIs
+- **[hermes-home](https://github.com/SuperInstance/hermes-home)** — Hermes's runtime home — SOUL, agents, CNS monitors, cron bridges. The nervous system's identity and 
 - **[hermes-memory-mcp](https://github.com/SuperInstance/hermes-memory-mcp)**
 - **[hermes-nerve-center](https://github.com/SuperInstance/hermes-nerve-center)** — Hermes nerve center — worker queue, watchdog, and signal processing
 - **[hermes-nmi](https://github.com/SuperInstance/hermes-nmi)** — Neuro-Muscular Interface — bridges reasoning pulses to cellular agent actions. The synapse between t
@@ -1138,11 +1134,13 @@
 - **[loom-weaver](https://github.com/SuperInstance/loom-weaver)**
 - **[luau-git-world](https://github.com/SuperInstance/luau-git-world)** — Learn version control through Roblox gameplay. Git concepts as game mechanics.
 - **[lucid-dreamer](https://github.com/SuperInstance/lucid-dreamer)** — Lucid Dreamer — text and image loops dream together during the night watch
+- **[lucid-dreamer-interactive](https://github.com/SuperInstance/lucid-dreamer-interactive)** — lucid-dreamer-interactive
 - **[lucid-tutor](https://github.com/SuperInstance/lucid-tutor)** — Lucid tutoring system for SuperInstance interactive learning
 - **[luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)** — AI creative exploration through lucid dreaming themed rooms. Generate poetry, fiction, music, and vi
 - **[luciddreamer-ai](https://github.com/SuperInstance/luciddreamer-ai)** — Cocapn vessel — accumulated context IS the product
 - **[luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)** — GitHub Pages for luciddreamer.ai
 - **[luciddreamer-os](https://github.com/SuperInstance/luciddreamer-os)** — Concept OS named Lucid Dreamer for OS development.
+- **[luciddreamer-research](https://github.com/SuperInstance/luciddreamer-research)** — luciddreamer-research
 - **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** — LucidDreamer vision module for SuperInstance dream-state agents
 - **[lucineer-brain](https://github.com/SuperInstance/lucineer-brain)** — 🧮 Multi-model build intelligence — routes natural language through DeepInfra models to generate Robl
 - **[lucineer-creative](https://github.com/SuperInstance/lucineer-creative)** — 🎨 MMX-powered creative asset pipeline — concept art, ambient music, and build previews for Lucineer'
@@ -1443,6 +1441,7 @@
 - **[rom24-quickmud](https://github.com/SuperInstance/rom24-quickmud)** — ROM 2.4b6 with a few additional features
 - **[room-lifecycle](https://github.com/SuperInstance/room-lifecycle)** — PLATO room lifecycle: rooms that are born, learn, mature, and dissolve when perfectly adapted
 - **[room-micro-models](https://github.com/SuperInstance/room-micro-models)** — room-micro-models
+- **[room-render](https://github.com/SuperInstance/room-render)** — room-render
 - **[run-length](https://github.com/SuperInstance/run-length)** — Run-length encoding compression utility
 - **[sailor-workspace](https://github.com/SuperInstance/sailor-workspace)** — Sailor workspace — fleet orchestration, audits, memory, docs, scripts
 - **[salidiere](https://github.com/SuperInstance/salidiere)** — 🧂 Multi-model AI orchestrator by Claude Sonnet 5 — the salt-keeper
@@ -1614,6 +1613,7 @@
 - **[sync-primitive](https://github.com/SuperInstance/sync-primitive)**
 - **[t-minus](https://github.com/SuperInstance/t-minus)** — T-minus event coordination for multi-agent systems
 - **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** — Countdown/timer primitives with scheduling, deadline propagation, and backpressure
+- **[tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp)**
 - **[tapscript-worker](https://github.com/SuperInstance/tapscript-worker)**
 - **[tasklog-ai](https://github.com/SuperInstance/tasklog-ai)** — Task Manager — AI-powered Task Manager
 - **[technician](https://github.com/SuperInstance/technician)** — Technician tooling

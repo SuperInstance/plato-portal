@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-08-14 06:11 UTC
+**Generated:** 2026-08-15 05:21 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -211,18 +211,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)** | Forgemaster | Fleet liaison service for inter-vessel communication and tender coordination | 🟢 active |
 | **[fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)** | Forgemaster | Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence, | 🟢 active |
 | **[fleet-memory](https://github.com/SuperInstance/fleet-memory)** | Forgemaster | Content-addressable distributed memory for fleets: store, retrieve, error-correct, holographic stora | 🟢 active |
-| **[fleet-midi-morph](https://github.com/SuperInstance/fleet-midi-morph)** | Forgemaster | Smooth morphing between agent state vectors as musical transitions | 🟢 active |
-| **[fleet-midi-musiclang](https://github.com/SuperInstance/fleet-midi-musiclang)** | Forgemaster | Fleet MIDI integration service | 🟢 active |
-| **[fleet-midi-pan](https://github.com/SuperInstance/fleet-midi-pan)** | Forgemaster | Panning/ spatialization from agent state position | 🟢 active |
-| **[fleet-midi-pattern](https://github.com/SuperInstance/fleet-midi-pattern)** | Forgemaster | Pattern language for fleet MIDI generation | 🟢 active |
-| **[fleet-midi-pedagogy](https://github.com/SuperInstance/fleet-midi-pedagogy)** | Forgemaster | Music theory education through fleet MIDI generation | 🟢 active |
-| **[fleet-midi-phase](https://github.com/SuperInstance/fleet-midi-phase)** | Forgemaster | Phase-shifted MIDI from agent state offsets | 🟢 active |
-| **[fleet-midi-player](https://github.com/SuperInstance/fleet-midi-player)** | Forgemaster | Fleet service for SuperInstance | 🟢 active |
-| **[fleet-midi-prob](https://github.com/SuperInstance/fleet-midi-prob)** | Forgemaster | Probabilistic state transition music from agent Markov chains | 🟢 active |
-| **[fleet-midi-quantizer](https://github.com/SuperInstance/fleet-midi-quantizer)** | Forgemaster | MIDI quantization from ternary timing | 🟢 active |
-| **[fleet-midi-quantum](https://github.com/SuperInstance/fleet-midi-quantum)** | Forgemaster | Quantum state-inspired MIDI generation from superposition/entanglement | 🟢 active |
-| **[fleet-midi-rand](https://github.com/SuperInstance/fleet-midi-rand)** | Forgemaster | Aleatoric music generation from agent randomness | 🟢 active |
-| **[fleet-midi-recorder](https://github.com/SuperInstance/fleet-midi-recorder)** | Forgemaster | Record and replay fleet MIDI sessions | 🟢 active |
 | **[fleet-midi-register](https://github.com/SuperInstance/fleet-midi-register)** | Forgemaster | Ternary octave register agent — one of 16 MIDI agents controlling frequency spectrum placement via { | 🟢 active |
 | **[fleet-midi-remapper](https://github.com/SuperInstance/fleet-midi-remapper)** | Forgemaster | MIDI note/CC remapping engine | 🟢 active |
 | **[fleet-midi-resonance](https://github.com/SuperInstance/fleet-midi-resonance)** | Forgemaster | Resonant frequency MIDI from agent harmonics | 🟢 active |
@@ -290,6 +278,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-topology](https://github.com/SuperInstance/fleet-topology)** | Forgemaster | Fleet network topology — agent connectivity, routing, and graph analysis | 🟢 active |
 | **[fleet-topology-rs](https://github.com/SuperInstance/fleet-topology-rs)** | Forgemaster | Fleet network topology with constraint-aware routing and holonomy verification | 🟢 active |
 | **[fleet-touchdesigner-connector](https://github.com/SuperInstance/fleet-touchdesigner-connector)** | Forgemaster | Bridge between fleet agent states and TouchDesigner 3D visualization | 🟢 active |
+| **[fleet-tts](https://github.com/SuperInstance/fleet-tts)** | Forgemaster | fleet-tts | 🟢 active |
 | **[fleet-tutorials](https://github.com/SuperInstance/fleet-tutorials)** | Forgemaster | Step-by-step tutorials for the SuperInstance fleet — beginner to research deep-dives | 🟢 active |
 | **[fleet-types](https://github.com/SuperInstance/fleet-types)** | Forgemaster | fleet-types — canonical fleet-core library | 🟢 active |
 | **[fleet-vessel](https://github.com/SuperInstance/fleet-vessel)** | Forgemaster | Fleet's git-native garbage collector agent | 🟢 active |
@@ -550,6 +539,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[.github](https://github.com/SuperInstance/.github)** | Various | SuperInstance organization profile and community health files | ⚪ unknown |
 | **[a2ui](https://github.com/SuperInstance/a2ui)** | Various | A2UI — Adaptive Interface. The Whistle Layer of Working Animal Architecture. | ⚪ unknown |
 | **[able-bodied-crew](https://github.com/SuperInstance/able-bodied-crew)** | Various | The crew member who knows where everything is. Lightweight local retriever agent for SuperInstance w | 🟢 active |
+| **[ACE-Step-1.5](https://github.com/SuperInstance/ACE-Step-1.5)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
 | **[activelog-ai](https://github.com/SuperInstance/activelog-ai)** | Various | Activelog.ai — AI fitness and activity tracker. Workouts, progress, goals. Part of the Lucineer ecos | ⚪ unknown |
 | **[activelog-app](https://github.com/SuperInstance/activelog-app)** | Various | Essential domain-agnostic voice transcriber with location annotation | ⚪ unknown |
 | **[agent-handoff](https://github.com/SuperInstance/agent-handoff)** | Various | Generational handoff documents for SuperInstance AI agents — bootstrap briefs and lessons carried be | 🟢 active |
@@ -712,8 +702,10 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[harness-experiments](https://github.com/SuperInstance/harness-experiments)** | Various | 🔬 AI agent harness productivity experiments — measured, not guessed. D1-backed findings on optimal b | 🟢 active |
 | **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** | Various | Hebbian routing — connection strengthening based on usage patterns for agent communication networks | 🟢 active |
 | **[hermes-agent-core](https://github.com/SuperInstance/hermes-agent-core)** | Various | Core agent runtime for the Hermes system — part of the SuperInstance fleet ecosystem | 🟢 active |
+| **[hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)** | Various | Hermes's architecture brain-docs — the Oxide Stack, Shared Canvas, Digital Twin data flow, and the f | ⚪ unknown |
 | **[hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)** | Various | hermes-chronicle | ⚪ unknown |
 | **[hermes-cloudflare](https://github.com/SuperInstance/hermes-cloudflare)** | Various | hermes-cloudflare | ⚪ unknown |
+| **[hermes-home](https://github.com/SuperInstance/hermes-home)** | Various | Hermes's runtime home — SOUL, agents, CNS monitors, cron bridges. The nervous system's identity and  | 🟢 active |
 | **[hermes-memory-mcp](https://github.com/SuperInstance/hermes-memory-mcp)** | Various | hermes-memory-mcp | ⚪ unknown |
 | **[hermes-nerve-center](https://github.com/SuperInstance/hermes-nerve-center)** | Various | Hermes nerve center — worker queue, watchdog, and signal processing | ⚪ unknown |
 | **[hermes-nmi](https://github.com/SuperInstance/hermes-nmi)** | Various | Neuro-Muscular Interface — bridges reasoning pulses to cellular agent actions. The synapse between t | 🟢 active |
@@ -1087,10 +1079,12 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ltl-spec](https://github.com/SuperInstance/ltl-spec)** | Various | Linear Temporal Logic (LTL) specification library for Rust agents | 🟢 active |
 | **[luau-git-world](https://github.com/SuperInstance/luau-git-world)** | Various | Learn version control through Roblox gameplay. Git concepts as game mechanics. | ⚪ unknown |
 | **[lucid-dreamer](https://github.com/SuperInstance/lucid-dreamer)** | Various | Lucid Dreamer — text and image loops dream together during the night watch | ⚪ unknown |
+| **[lucid-dreamer-interactive](https://github.com/SuperInstance/lucid-dreamer-interactive)** | Various | lucid-dreamer-interactive | ⚪ unknown |
 | **[lucid-tutor](https://github.com/SuperInstance/lucid-tutor)** | Various | Lucid tutoring system for SuperInstance interactive learning | ⚪ unknown |
 | **[lucid-tutor-c](https://github.com/SuperInstance/lucid-tutor-c)** | Various | Lucid tutoring system in C for SuperInstance education agents | 🟢 active |
 | **[luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)** | Various | AI creative exploration through lucid dreaming themed rooms. Generate poetry, fiction, music, and vi | 🟢 active |
 | **[luciddreamer-os](https://github.com/SuperInstance/luciddreamer-os)** | Various | Concept OS named Lucid Dreamer for OS development. | ⚪ unknown |
+| **[luciddreamer-research](https://github.com/SuperInstance/luciddreamer-research)** | Various | luciddreamer-research | ⚪ unknown |
 | **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** | Various | LucidDreamer vision module for SuperInstance dream-state agents | 🟢 active |
 | **[lucineer-brain](https://github.com/SuperInstance/lucineer-brain)** | Various | 🧮 Multi-model build intelligence — routes natural language through DeepInfra models to generate Robl | ⚪ unknown |
 | **[lucineer-creative](https://github.com/SuperInstance/lucineer-creative)** | Various | 🎨 MMX-powered creative asset pipeline — concept art, ambient music, and build previews for Lucineer' | ⚪ unknown |
@@ -1419,6 +1413,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[rom24-quickmud](https://github.com/SuperInstance/rom24-quickmud)** | Various | ROM 2.4b6 with a few additional features | ⚪ unknown |
 | **[room-lifecycle](https://github.com/SuperInstance/room-lifecycle)** | Various | PLATO room lifecycle: rooms that are born, learn, mature, and dissolve when perfectly adapted | ⚪ unknown |
 | **[room-micro-models](https://github.com/SuperInstance/room-micro-models)** | Various | room-micro-models | ⚪ unknown |
+| **[room-render](https://github.com/SuperInstance/room-render)** | Various | room-render | ⚪ unknown |
 | **[routing-table](https://github.com/SuperInstance/routing-table)** | Various | Rust crate: routing-table | ⚪ unknown |
 | **[run-length](https://github.com/SuperInstance/run-length)** | Various | Run-length encoding compression utility | ⚪ unknown |
 | **[rusty-series](https://github.com/SuperInstance/rusty-series)** | Various | Comprehensive time-series analysis in Rust — decomposition, ARIMA, anomaly detection, spectral analy | ⚪ unknown |
@@ -1551,6 +1546,8 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[step-back-operator](https://github.com/SuperInstance/step-back-operator)** | Various | 🎣 Topological step-back operator β₁ = E - V + C — pattern detection in event networks. The intellige | ⚪ unknown |
 | **[stigmergy](https://github.com/SuperInstance/stigmergy)** | Various | Bio-inspired indirect coordination — pheromone signals, trail following, swarm intelligence for dece | 🟢 active |
 | **[string-search-rs](https://github.com/SuperInstance/string-search-rs)** | Various | string-search-rs | ⚪ unknown |
+| **[study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
+| **[study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
 | **[studylog-agent](https://github.com/SuperInstance/studylog-agent)** | Various | PLATO Study Partner Agent — tracks learning progression, logs sessions as PLATO tiles | 🟢 active |
 | **[stunt-double](https://github.com/SuperInstance/stunt-double)** | Various | 🏃 Ephemeral x86_64 offload harness — run any command on any GitHub repo, collect results, destroy. Z | ⚪ unknown |
 | **[style-dna](https://github.com/SuperInstance/style-dna)** | Various | Musical DNA extraction, analysis, and style morphing system | ⚪ unknown |
@@ -1598,6 +1595,8 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[system_prompts_leaks](https://github.com/SuperInstance/system_prompts_leaks)** | Various | Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. Open | ⚪ unknown |
 | **[t-minus](https://github.com/SuperInstance/t-minus)** | Various | T-minus event coordination for multi-agent systems | 🟢 active |
 | **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** | Various | Countdown/timer primitives with scheduling, deadline propagation, and backpressure | ⚪ unknown |
+| **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
+| **[tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp)** | Various | tapscript-mcp | ⚪ unknown |
 | **[tapscript-studio](https://github.com/SuperInstance/tapscript-studio)** | Various | Plain-text music notation that compiles to MIDI. Embeds in markdown like mermaid. | ⚪ unknown |
 | **[tapscript-worker](https://github.com/SuperInstance/tapscript-worker)** | Various | tapscript-worker | ⚪ unknown |
 | **[tasklog-ai](https://github.com/SuperInstance/tasklog-ai)** | Various | Task Manager — AI-powered Task Manager | ⚪ unknown |
@@ -1944,6 +1943,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[test-tool-extract](https://github.com/SuperInstance/test-tool-extract)** | Various | test | ⚪ unknown |
 | **[tests](https://github.com/SuperInstance/tests)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[texture-synth](https://github.com/SuperInstance/texture-synth)** | Various | Texture synthesis library for SuperInstance graphics pipeline | ⚪ unknown |
+| **[the-listeners-ear](https://github.com/SuperInstance/the-listeners-ear)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
 | **[the-lock](https://github.com/SuperInstance/the-lock)** | Various | Iterative reasoning engine — 5 rounds of structured self-debate, 8 strategies. Zero deps Python. | ⚪ unknown |
 | **[the-relay](https://github.com/SuperInstance/the-relay)** | Various | the-relay | ⚪ unknown |
 | **[the-revolution](https://github.com/SuperInstance/the-revolution)** | Various | The Revolution — SuperInstance manifesto and founding documents | ⚪ unknown |
@@ -3403,90 +3403,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
-### [fleet-midi-morph](https://github.com/SuperInstance/fleet-midi-morph)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Smooth morphing between agent state vectors as musical transitions
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-musiclang](https://github.com/SuperInstance/fleet-midi-musiclang)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Fleet MIDI integration service
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-pan](https://github.com/SuperInstance/fleet-midi-pan)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Panning/ spatialization from agent state position
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-pattern](https://github.com/SuperInstance/fleet-midi-pattern)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Pattern language for fleet MIDI generation
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-pedagogy](https://github.com/SuperInstance/fleet-midi-pedagogy)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Music theory education through fleet MIDI generation
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-phase](https://github.com/SuperInstance/fleet-midi-phase)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Phase-shifted MIDI from agent state offsets
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-player](https://github.com/SuperInstance/fleet-midi-player)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Fleet service for SuperInstance
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-prob](https://github.com/SuperInstance/fleet-midi-prob)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Probabilistic state transition music from agent Markov chains
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-quantizer](https://github.com/SuperInstance/fleet-midi-quantizer)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** MIDI quantization from ternary timing
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-quantum](https://github.com/SuperInstance/fleet-midi-quantum)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Quantum state-inspired MIDI generation from superposition/entanglement
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-rand](https://github.com/SuperInstance/fleet-midi-rand)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Aleatoric music generation from agent randomness
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [fleet-midi-recorder](https://github.com/SuperInstance/fleet-midi-recorder)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Record and replay fleet MIDI sessions
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
 ### [fleet-midi-register](https://github.com/SuperInstance/fleet-midi-register)
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
@@ -3953,6 +3869,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** Bridge between fleet agent states and TouchDesigner 3D visualization
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
+### [fleet-tts](https://github.com/SuperInstance/fleet-tts)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** fleet-tts
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
@@ -5934,6 +5857,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Core agent runtime for the Hermes system — part of the SuperInstance fleet ecosystem
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [hermes-home](https://github.com/SuperInstance/hermes-home)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Hermes's runtime home — SOUL, agents, CNS monitors, cron bridges. The nervous system's identity and tooling.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

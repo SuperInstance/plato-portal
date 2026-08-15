@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-08-14 06:11 UTC
+**Generated:** 2026-08-15 05:21 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -548,18 +548,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)
 - [fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)
 - [fleet-memory](https://github.com/SuperInstance/fleet-memory)
-- [fleet-midi-morph](https://github.com/SuperInstance/fleet-midi-morph)
-- [fleet-midi-musiclang](https://github.com/SuperInstance/fleet-midi-musiclang)
-- [fleet-midi-pan](https://github.com/SuperInstance/fleet-midi-pan)
-- [fleet-midi-pattern](https://github.com/SuperInstance/fleet-midi-pattern)
-- [fleet-midi-pedagogy](https://github.com/SuperInstance/fleet-midi-pedagogy)
-- [fleet-midi-phase](https://github.com/SuperInstance/fleet-midi-phase)
-- [fleet-midi-player](https://github.com/SuperInstance/fleet-midi-player)
-- [fleet-midi-prob](https://github.com/SuperInstance/fleet-midi-prob)
-- [fleet-midi-quantizer](https://github.com/SuperInstance/fleet-midi-quantizer)
-- [fleet-midi-quantum](https://github.com/SuperInstance/fleet-midi-quantum)
-- [fleet-midi-rand](https://github.com/SuperInstance/fleet-midi-rand)
-- [fleet-midi-recorder](https://github.com/SuperInstance/fleet-midi-recorder)
 - [fleet-midi-register](https://github.com/SuperInstance/fleet-midi-register)
 - [fleet-midi-remapper](https://github.com/SuperInstance/fleet-midi-remapper)
 - [fleet-midi-resonance](https://github.com/SuperInstance/fleet-midi-resonance)
@@ -627,6 +615,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-topology](https://github.com/SuperInstance/fleet-topology)
 - [fleet-topology-rs](https://github.com/SuperInstance/fleet-topology-rs)
 - [fleet-touchdesigner-connector](https://github.com/SuperInstance/fleet-touchdesigner-connector)
+- [fleet-tts](https://github.com/SuperInstance/fleet-tts)
 - [fleet-tutorials](https://github.com/SuperInstance/fleet-tutorials)
 - [fleet-types](https://github.com/SuperInstance/fleet-types)
 - [fleet-vessel](https://github.com/SuperInstance/fleet-vessel)
@@ -690,6 +679,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hebbian-router](https://github.com/SuperInstance/hebbian-router)
 - [herdr-cocapn](https://github.com/SuperInstance/herdr-cocapn)
 - [hermes-agent-core](https://github.com/SuperInstance/hermes-agent-core)
+- [hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)
+- [hermes-home](https://github.com/SuperInstance/hermes-home)
 - [hermes-nmi](https://github.com/SuperInstance/hermes-nmi)
 - [hermes-plato-shell](https://github.com/SuperInstance/hermes-plato-shell)
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
@@ -1407,6 +1398,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ptx-room](https://github.com/SuperInstance/ptx-room)
 - [room-lifecycle](https://github.com/SuperInstance/room-lifecycle)
 - [room-micro-models](https://github.com/SuperInstance/room-micro-models)
+- [room-render](https://github.com/SuperInstance/room-render)
 - [scummvm-prototype](https://github.com/SuperInstance/scummvm-prototype)
 - [seed-tick-audit](https://github.com/SuperInstance/seed-tick-audit)
 - [servo-mind](https://github.com/SuperInstance/servo-mind)
@@ -1505,6 +1497,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Uncategorized
 
 - [.github](https://github.com/SuperInstance/.github)
+- [ACE-Step-1.5](https://github.com/SuperInstance/ACE-Step-1.5)
 - [AI-Writings](https://github.com/SuperInstance/AI-Writings)
 - [AIR](https://github.com/SuperInstance/AIR)
 - [CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)
@@ -1836,10 +1829,12 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lsm-tree](https://github.com/SuperInstance/lsm-tree)
 - [luau-git-world](https://github.com/SuperInstance/luau-git-world)
 - [lucid-dreamer](https://github.com/SuperInstance/lucid-dreamer)
+- [lucid-dreamer-interactive](https://github.com/SuperInstance/lucid-dreamer-interactive)
 - [lucid-tutor](https://github.com/SuperInstance/lucid-tutor)
 - [luciddreamer-ai](https://github.com/SuperInstance/luciddreamer-ai)
 - [luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)
 - [luciddreamer-os](https://github.com/SuperInstance/luciddreamer-os)
+- [luciddreamer-research](https://github.com/SuperInstance/luciddreamer-research)
 - [lucineer-brain](https://github.com/SuperInstance/lucineer-brain)
 - [lucineer-com-pages](https://github.com/SuperInstance/lucineer-com-pages)
 - [lucineer-creative](https://github.com/SuperInstance/lucineer-creative)
@@ -2087,6 +2082,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [step-back-operator](https://github.com/SuperInstance/step-back-operator)
 - [step-back-topology](https://github.com/SuperInstance/step-back-topology)
 - [string-search-rs](https://github.com/SuperInstance/string-search-rs)
+- [study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)
+- [study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)
 - [studylog-ai-pages](https://github.com/SuperInstance/studylog-ai-pages)
 - [stunt-double](https://github.com/SuperInstance/stunt-double)
 - [style-dna](https://github.com/SuperInstance/style-dna)
@@ -2119,6 +2116,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [sync-primitive](https://github.com/SuperInstance/sync-primitive)
 - [system_prompts_leaks](https://github.com/SuperInstance/system_prompts_leaks)
 - [t-minus-rs](https://github.com/SuperInstance/t-minus-rs)
+- [tap-frontend](https://github.com/SuperInstance/tap-frontend)
+- [tapscript-mcp](https://github.com/SuperInstance/tapscript-mcp)
 - [tapscript-studio](https://github.com/SuperInstance/tapscript-studio)
 - [tapscript-worker](https://github.com/SuperInstance/tapscript-worker)
 - [tasklog-ai](https://github.com/SuperInstance/tasklog-ai)
@@ -2381,6 +2380,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [test-tool-extract](https://github.com/SuperInstance/test-tool-extract)
 - [tests](https://github.com/SuperInstance/tests)
 - [texture-synth](https://github.com/SuperInstance/texture-synth)
+- [the-listeners-ear](https://github.com/SuperInstance/the-listeners-ear)
 - [the-lock](https://github.com/SuperInstance/the-lock)
 - [the-plenum-early-version](https://github.com/SuperInstance/the-plenum-early-version)
 - [the-relay](https://github.com/SuperInstance/the-relay)
