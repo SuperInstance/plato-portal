@@ -4,6 +4,8 @@
 
 > **γ + η = C** is the long-term design direction for the SuperInstance fleet, not a feature of the current SDK. See [Where this is going](#where-this-is-going).
 
+<p align="center"><img src="assets/images/hero.jpg" alt="A portal of markdown memory aboard the ship" width="640"></p>
+
 ---
 
 ## What SuperInstance is today
