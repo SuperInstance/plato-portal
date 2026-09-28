@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-09-27 10:21 UTC
+**Generated:** 2026-09-28 11:26 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -105,6 +105,7 @@
 - **[ChainForgeLegend-Quilt](https://github.com/SuperInstance/ChainForgeLegend-Quilt)** — a quilt version. ChainForgeLegend is a real-time distributed system engine that enables scalable, au
 - **[chart-room](https://github.com/SuperInstance/chart-room)** — The Chart Room — Four panels. Four perspectives. One truth.
 - **[chart-system](https://github.com/SuperInstance/chart-system)** — Polyformal navigation: four chart configurations that cross-reference the same problem space
+- **[chiaroscuro](https://github.com/SuperInstance/chiaroscuro)** — Real-time webcam-to-text rendering — characters are shapes, not pixels. Four doors: Mirror, Sculptor
 - **[circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)** — Go library implementing the circuit breaker pattern for fault tolerance and graceful degradation. St
 - **[claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)** — Claude Code workhorse vessel with experience journal and task delegation
 - **[claw](https://github.com/SuperInstance/claw)** — A simple Claw engine for cellular logic in spreadsheet instances within a superinstance/spreadsheet-
@@ -125,6 +126,7 @@
 - **[code-city](https://github.com/SuperInstance/code-city)** — Your codebase as a living 3D city. Files become buildings, folders become districts, bugs become fir
 - **[codespace-edge-rd](https://github.com/SuperInstance/codespace-edge-rd)** — R&D: Codespace→Edge agent lifecycle, yoke transfer, devcontainer templates
 - **[coding-3d](https://github.com/SuperInstance/coding-3d)** — Repository test sur AI-Factory
+- **[coev](https://github.com/SuperInstance/coev)** — Adversarial coevolution engine with champion-integrity auditing. Zero-dep Node. Extracted from pong-
 - **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
 - **[collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)** — Quilt backend for Real-time collaborative drawing platform built with Java, JavaFX, TCP sockets, and
 - **[collective-unconscious](https://github.com/SuperInstance/collective-unconscious)**
@@ -175,6 +177,7 @@
 - **[emergency-dispatch-simulation-system](https://github.com/SuperInstance/emergency-dispatch-simulation-system)** — Quilt-compatible emergency dispatch — dispatch as cell-graph operations (5+1 opcodes; original by Mo
 - **[engine-ensign](https://github.com/SuperInstance/engine-ensign)** — ESP32 engine monitoring agent — git-native, tripartite-compiled. The Doctor lives in the repo.
 - **[ensign-protocol](https://github.com/SuperInstance/ensign-protocol)** — Cocapn fleet crate
+- **[eos-seed](https://github.com/SuperInstance/eos-seed)**
 - **[Equipment-Consensus-Engine](https://github.com/SuperInstance/Equipment-Consensus-Engine)** — Multi-agent deliberation with Pathos/Logos/Ethos weighting
 - **[erised](https://github.com/SuperInstance/erised)** — A mirror for cooperative fiction — model-only TTRPG engine. Authors the conditions; the fiction play
 - **[erised-cli](https://github.com/SuperInstance/erised-cli)** — Terminal runner for erised — cooperative-fiction scenarios in the terminal. Single-file Python, no d
@@ -317,6 +320,7 @@
 - **[jev-diffusion-rust](https://github.com/SuperInstance/jev-diffusion-rust)** — JEV-Diffusion Rust bindings — substrate-segmented image description.
 - **[jev-gan](https://github.com/SuperInstance/jev-gan)** — The substrate GAN — JEV decides, JEPA predicts, multi-LLM plays producer/critic in a fully-observabl
 - **[jev-gan-cli](https://github.com/SuperInstance/jev-gan-cli)** — Unified CLI for the JEV-GAN family of tools (diffusion, gallery, madlibs, edges).
+- **[jev-garden](https://github.com/SuperInstance/jev-garden)** — The living JEV training system — grows from quilt judgments, idle-compiles its ExoJ into weave artif
 - **[jev-quilt](https://github.com/SuperInstance/jev-quilt)** — JEV for quilt as understood output: cellular-first decision substrate — typed cells, hook-and-drop d
 - **[jev-receipts](https://github.com/SuperInstance/jev-receipts)** — JEV booking layer — receipts for the duke-lab instrument. Hash-chained, deterministic, cross-languag
 - **[jev-turbovec](https://github.com/SuperInstance/jev-turbovec)** — JEV-Diffusion + TurboQuant substrate memory. Find similar past diffusions.
@@ -331,11 +335,6 @@
 - **[knowledge-vault-rs](https://github.com/SuperInstance/knowledge-vault-rs)** — Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust)
 - **[lau-conservation-experiment](https://github.com/SuperInstance/lau-conservation-experiment)** — Tests emergent conservation law — Landauer cost + free energy + H¹ risk score ≈ constant across agen
 - **[lau-hodge-theory](https://github.com/SuperInstance/lau-hodge-theory)** — Hodge theory for agent knowledge spaces — decomposition, harmonic forms, and spectral sequences
-- **[lau-sobolev-agents](https://github.com/SuperInstance/lau-sobolev-agents)**
-- **[lau-solid-mechanics](https://github.com/SuperInstance/lau-solid-mechanics)** — Continuum mechanics library — stress, strain, deformation, beam mechanics, FEM basics, and yield cri
-- **[lau-songline](https://github.com/SuperInstance/lau-songline)** — Walking IS computing — Aboriginal songlines as executable algorithms
-- **[lau-soundtrack](https://github.com/SuperInstance/lau-soundtrack)**
-- **[lau-spatial](https://github.com/SuperInstance/lau-spatial)** — Spatial indexing library for game worlds — QuadTree, GridHash, and SpatialHash
 - **[lau-spectral-agent](https://github.com/SuperInstance/lau-spectral-agent)** — Unified spectral agent — belief updates in frequency domain, conservation-aware, GPU-dispatchable
 - **[lau-spectral-gap-experiment](https://github.com/SuperInstance/lau-spectral-gap-experiment)** — lau-spectral-gap-experiment
 - **[lau-spectral-graph-agent](https://github.com/SuperInstance/lau-spectral-graph-agent)**
@@ -478,6 +477,7 @@
 - **[metal-integration](https://github.com/SuperInstance/metal-integration)** — Integration tests proving all 12 Rust metal libraries work together as a coherent system
 - **[micro-onnx](https://github.com/SuperInstance/micro-onnx)** — ONNX export + benchmark pipeline for micro-models. 186x speedup over PyTorch CPU.
 - **[micrograd-quilt](https://github.com/SuperInstance/micrograd-quilt)** — A tiny scalar-valued autograd engine and a neural net library on top of it with PyTorch-like API
+- **[MicroMoth-quilt](https://github.com/SuperInstance/MicroMoth-quilt)**
 - **[midden](https://github.com/SuperInstance/midden)**
 - **[migrations](https://github.com/SuperInstance/migrations)** — Preserved workspace artifact
 - **[minimax-code](https://github.com/SuperInstance/minimax-code)** — Minimax game tree search for SuperInstance strategic reasoning
@@ -615,6 +615,7 @@
 - **[othismos-reef](https://github.com/SuperInstance/othismos-reef)** — Reef: structured knowledge graph with erosion, layering, and cascading failure
 - **[ouroboros](https://github.com/SuperInstance/ouroboros)** — Ouroboros — self-creating AI agent. Born Feb 16, 2026.
 - **[oxide-pipeline](https://github.com/SuperInstance/oxide-pipeline)** — Full 5-layer pipeline simulation: Intent→Pincher→Flux→cuda-oxide→cudaclaw with conservation verifica
+- **[paced-seam](https://github.com/SuperInstance/paced-seam)**
 - **[packet-capture](https://github.com/SuperInstance/packet-capture)** — Rust crate: packet-capture
 - **[page-agent](https://github.com/SuperInstance/page-agent)** — JavaScript in-page GUI agent. Control web interfaces with natural language.
 - **[page-replace](https://github.com/SuperInstance/page-replace)** — Page replacement algorithm suite for memory management
@@ -842,7 +843,9 @@
 - **[pythagorean48](https://github.com/SuperInstance/pythagorean48)** — Exact 6-bit vector encoding for ARM64 edge. 8 components per uint64, zero drift, 80M queries/s on Je
 - **[q16-trajectories](https://github.com/SuperInstance/q16-trajectories)** — Q16 breed trajectories: duke-lab's generative argument bred in tidepool's 16-dim rational vector spa
 - **[qthe](https://github.com/SuperInstance/qthe)** — QTHE — Quilt-Ternary Hyper-Embeddings: the 8-bit primitive (6-bit data + 2-bit timbre Ground/Attract
+- **[qthe-codec](https://github.com/SuperInstance/qthe-codec)**
 - **[quality-gate-stream](https://github.com/SuperInstance/quality-gate-stream)** — Quality Gate Stream — novelty × correctness × completeness × depth scoring. Part of Cocapn reverse-a
+- **[quantum-audio-honesty](https://github.com/SuperInstance/quantum-audio-honesty)**
 - **[quantum-coin](https://github.com/SuperInstance/quantum-coin)** — 0.1.0
 - **[quantum-thermo](https://github.com/SuperInstance/quantum-thermo)** — Quantum thermodynamics: quantum limits on computation, heat, and information
 - **[query-plan](https://github.com/SuperInstance/query-plan)** — Research-grade Rust crate
@@ -952,11 +955,13 @@
 - **[quilt-gemini-worker](https://github.com/SuperInstance/quilt-gemini-worker)** — Gemini 2.5 Flash as a substrate walker canon-worker — generates lores + probes via JEV schema
 - **[quilt-geometry](https://github.com/SuperInstance/quilt-geometry)**
 - **[quilt-go](https://github.com/SuperInstance/quilt-go)** — The Quilt cell-fabric runtime in Go — stdlib only, byte-exact FNV-1a 64-bit hash. Generated by a Cla
+- **[quilt-gpu-lab](https://github.com/SuperInstance/quilt-gpu-lab)**
 - **[quilt-haskell](https://github.com/SuperInstance/quilt-haskell)** — The Quilt cell-fabric runtime in Haskell. Pure functional, lazy. 5-sigma polyformalism port.
 - **[quilt-i2i](https://github.com/SuperInstance/quilt-i2i)** — Low-level Quilt cells in distant language families (Forth/Prolog/Erlang) — each language carves a di
 - **[quilt-id](https://github.com/SuperInstance/quilt-id)** — phi-Address Penrose content addressing
 - **[quilt-iterator](https://github.com/SuperInstance/quilt-iterator)** — Self-improving canon via ZAI generation + multi-model chord + iterative refinement
 - **[quilt-j](https://github.com/SuperInstance/quilt-j)** — The Quilt cell-fabric runtime in J. Array language, point-free. 5-sigma polyformalism port.
+- **[quilt-jepa](https://github.com/SuperInstance/quilt-jepa)** — The latent grid — a tiny JEPA world model living inside an anisotropic cell mesh, stone-receipted (q
 - **[quilt-jetson](https://github.com/SuperInstance/quilt-jetson)** — Quilt runtime for NVIDIA Jetson edge ML, ROS2, vision, sensor fusion
 - **[quilt-jev-oracle](https://github.com/SuperInstance/quilt-jev-oracle)** — JEV (Joint Embedding Validator) oracle as a Quilt cell — composite scoring for canon promotion
 - **[quilt-jev-toolkit](https://github.com/SuperInstance/quilt-jev-toolkit)** — JEV (TypeSafe) canon oracle toolkit for Quilt
@@ -998,6 +1003,7 @@
 - **[quilt-polyformalism-dsl](https://github.com/SuperInstance/quilt-polyformalism-dsl)** — The 5 opcodes (BIND, LINK, EFFECT, VIEW, TICK) as language-level syntax in Python/Rust/Haskell. Laye
 - **[quilt-port](https://github.com/SuperInstance/quilt-port)** — The user's port to their quilts. Open-source SDK + cost-plus hosted service. Four projections (ESP32
 - **[quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)** — Polyformalism: Quilt as a type-safe Pydantic-AI agent
+- **[quilt-qcells](https://github.com/SuperInstance/quilt-qcells)** — CELL-MAPPING implementation — quantum ops as quilt cells (modular plugin)
 - **[quilt-quant](https://github.com/SuperInstance/quilt-quant)** — The trading desk as a spreadsheet: backtest-as-cells, walk-forward honesty (S6), gated self-improvem
 - **[quilt-quantum-audio](https://github.com/SuperInstance/quilt-quantum-audio)** — Quilt canon walks through the quantum audio substrate (Moth quantumaudio) — 5 quantum modulation sch
 - **[quilt-quantum-canary](https://github.com/SuperInstance/quilt-quantum-canary)** — Quantum polyformalism canary — empirical finding: 0/5 quantum schemes match fleet canary. Quantum po
@@ -1426,22 +1432,14 @@
 - **[SuperInstance](https://github.com/SuperInstance/SuperInstance)**
 - **[superinstance-advisor](https://github.com/SuperInstance/superinstance-advisor)** — A cell in the SuperInstance substrate. Patches into the canon (2,786+ AI writings via real bge-base 
 - **[superinstance-agent](https://github.com/SuperInstance/superinstance-agent)** — Agent abstractions for the SuperInstance fleet — vessel traits, lifecycle, and orchestration types
-- **[superinstance-agent-trait](https://github.com/SuperInstance/superinstance-agent-trait)** — Two-method Agent trait with enforced lifecycle transitions and structural conservation for the Super
 - **[superinstance-ai](https://github.com/SuperInstance/superinstance-ai)**
 - **[superinstance-ai-pages](https://github.com/SuperInstance/superinstance-ai-pages)** — GitHub Pages for superinstance.ai
 - **[superinstance-architecture](https://github.com/SuperInstance/superinstance-architecture)** — SuperInstance architecture: CopilotKit fork analysis, distributed IoT patterns, edge AI agent models
 - **[SuperInstance-archive](https://github.com/SuperInstance/SuperInstance-archive)** — SuperInstance portfolio snapshot: 6000+ files of operational scripts, multi-bot coordination, multi-
-- **[superinstance-ci](https://github.com/SuperInstance/superinstance-ci)** — Shared CI/CD templates for SuperInstance fleet repos
-- **[superinstance-cli](https://github.com/SuperInstance/superinstance-cli)**
 - **[superinstance-cocapn](https://github.com/SuperInstance/superinstance-cocapn)** — Captain-level fleet coordination — conservation auditing, vessel oversight, fleet-wide resource mana
-- **[superinstance-core](https://github.com/SuperInstance/superinstance-core)** — Core traits and types shared across the SuperInstance fleet
-- **[superinstance-design](https://github.com/SuperInstance/superinstance-design)** — Shared design system for all SuperInstance web properties
 - **[superinstance-design-system](https://github.com/SuperInstance/superinstance-design-system)**
 - **[superinstance-ecosystem](https://github.com/SuperInstance/superinstance-ecosystem)** — The agent operating system — four layers that compose
 - **[superinstance-embedder](https://github.com/SuperInstance/superinstance-embedder)** — 32-dimensional embeddings for 560+ SuperInstance crates. Seeds Cloudflare Vectorize for semantic sea
-- **[superinstance-ffi](https://github.com/SuperInstance/superinstance-ffi)** — Unified C FFI and WASM bindings for SuperInstance math primitives — Eisenstein norm, Laman rigidity,
-- **[superinstance-fleet-proto](https://github.com/SuperInstance/superinstance-fleet-proto)** — Shared PLATO client, I2I protocol, and FleetAgent trait for Cocapn fleet
-- **[superinstance-flux-runtime-ruby](https://github.com/SuperInstance/superinstance-flux-runtime-ruby)** — Pure Ruby FLUX ISA v3.0 virtual machine with runtime metaprogramming — 16 GP + 16 FP + 16 VR registe
 - **[superinstance-gpu-compute](https://github.com/SuperInstance/superinstance-gpu-compute)** — Shared CUDA compute harness for Cocapn fleet GPU agents
 - **[superinstance-harness](https://github.com/SuperInstance/superinstance-harness)** — Self-optimizing development harness using γ + η = C conservation law — 25 build/quality patterns, CL
 - **[superinstance-hdc-core](https://github.com/SuperInstance/superinstance-hdc-core)**
@@ -1872,10 +1870,12 @@
 - **[ternary-watermark](https://github.com/SuperInstance/ternary-watermark)** — Ternary watermarking for neural model provenance. Embed {-1,0,+1} fingerprints in weights that survi
 - **[ternary-wave](https://github.com/SuperInstance/ternary-wave)** — Wave for ternary systems — `square`, `saw`, `triangle`, `pulse`
 - **[ternary-weather](https://github.com/SuperInstance/ternary-weather)** — Environmental conditions and their effects on agent operations
+- **[ternary-wiki](https://github.com/SuperInstance/ternary-wiki)**
 - **[ternary-world](https://github.com/SuperInstance/ternary-world)** — World model for ternary simulations
 - **[ternary-zigzag](https://github.com/SuperInstance/ternary-zigzag)** — Zigzag scanning for ternary matrix compression
 - **[ternary-zkp](https://github.com/SuperInstance/ternary-zkp)** — Zero-knowledge proofs over ternary fields GF(3^n)
 - **[terrain](https://github.com/SuperInstance/terrain)** — MUD-to-Visual bridge — rooms as explorable scenes. Crabs stir the mud into walkable terrain.
+- **[tessera](https://github.com/SuperInstance/tessera)**
 - **[test-mutator](https://github.com/SuperInstance/test-mutator)** — Mutation testing library for Rust — generate mutants, run tests, calculate mutation scores
 - **[test-pages-repo](https://github.com/SuperInstance/test-pages-repo)** — Test
 - **[test-tool-extract](https://github.com/SuperInstance/test-tool-extract)** — test
