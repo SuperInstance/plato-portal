@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-09-29 11:04 UTC
+**Generated:** 2026-09-30 10:53 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -47,6 +47,7 @@
 - **[constrainttheory-ml-demo](https://github.com/SuperInstance/constrainttheory-ml-demo)**
 - **[cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)** — GPU constraint checking at 1B+ constraints/sec — CUDA library with C and Python APIs
 - **[fleet-constraint](https://github.com/SuperInstance/fleet-constraint)** — Fleet coordination safety constraint runtime
+- **[futhark-lab](https://github.com/SuperInstance/futhark-lab)** — Futhark experiments for the Quilt cellular substrate — TICK-as-one-kernel, witness-chain prefix scan
 - **[intent-directed-compilation](https://github.com/SuperInstance/intent-directed-compilation)** — Semantic criticality → instruction-level precision: AVX-512 mixed-precision constraint checking with
 - **[marine-gpu-edge](https://github.com/SuperInstance/marine-gpu-edge)** — Novel GPU edge computing for marine sensor fusion — CUDA kernels, MEP protocol, constraint-aware sch
 - **[plato-kernel-constraints](https://github.com/SuperInstance/plato-kernel-constraints)** — Preserved workspace artifact
@@ -82,7 +83,6 @@
 - **[splay-tree-rs](https://github.com/SuperInstance/splay-tree-rs)** — Splay tree with zig/zig-zig/zig-zag operations, amortized O(log n) access, split/merge, sequential a
 - **[spline-instrument](https://github.com/SuperInstance/spline-instrument)** — The graphing calculator as instrument. Sculpt waveforms with splines, hear them as sound, see qualit
 - **[substrate-merger](https://github.com/SuperInstance/substrate-merger)** — substrate-merger - substrate observation primitive
-- **[swarm](https://github.com/SuperInstance/swarm)** — Distributed swarm intelligence — protocols and patterns for emergent collective behavior
 - **[ternary-diff](https://github.com/SuperInstance/ternary-diff)** — ternary-diff  Diff and patch for ternary strategies: compare, merge, and resolve conflicts
 - **[ternary-heap](https://github.com/SuperInstance/ternary-heap)** — Ternary min-heap priority queue: 3 children per node, O(log₃ n) push/pop, merge, decrease-key
 - **[ternary-hotswap-inference](https://github.com/SuperInstance/ternary-hotswap-inference)** — Adaptive ternary inference with atomic model hotswap and CRDT audit trail. 16x weight density, zero-
@@ -101,6 +101,7 @@
 - **[neural-quilt](https://github.com/SuperInstance/neural-quilt)** — Wearable neural device + Quilt = signaling-as-play. F139. Try the live demo.
 - **[quilt-canvas-adversary](https://github.com/SuperInstance/quilt-canvas-adversary)** — quilt-transformer arena engine
 - **[quilt-canvas-ascetic](https://github.com/SuperInstance/quilt-canvas-ascetic)** — quilt-transformer arena engine
+- **[quilt-nn](https://github.com/SuperInstance/quilt-nn)** — Neural nets as quilt cell graphs — weights, gradients and SGD steps are cells; every epoch receipted
 - **[quilt-transformer-arena](https://github.com/SuperInstance/quilt-transformer-arena)** — Adversarial GAN lane: quilt-transformer paradigm — archival canvas + disposable workers. claude/crus
 - **[ternary-inference-sim](https://github.com/SuperInstance/ternary-inference-sim)** — Simulated ternary neural network inference. Ternary weight packing, batch inference, conservation ve
 - **[ternary-llm](https://github.com/SuperInstance/ternary-llm)** — Ternary LLM building blocks: token embeddings, transformer blocks with ternary weights, BitNet 1.58-
@@ -157,7 +158,6 @@
 - **[plato-midi-bridge](https://github.com/SuperInstance/plato-midi-bridge)** — PLATO rooms as musicians — connects FM's flux-tensor-midi to live fleet tiles
 - **[quilt-full-stack-demo](https://github.com/SuperInstance/quilt-full-stack-demo)** — The canonical hello-world for SuperInstance: FLUX VM + conservation + LLM + PLATO + polyformality in
 - **[snapkit-flux-bridge](https://github.com/SuperInstance/snapkit-flux-bridge)** — Bridge from snapkit harmony governor configs to FLUX bytecode. Python enforcement can be bypassed; b
-- **[temporal-flux](https://github.com/SuperInstance/temporal-flux)** — Temporal constraint opcodes for FLUX ISA
 - **[ternary-compiler-optimizer](https://github.com/SuperInstance/ternary-compiler-optimizer)** — Optimization passes for ternary bytecode
 - **[ternary-flux](https://github.com/SuperInstance/ternary-flux)** — Flux/state-flow engine for tracking ternary value propagation
 - **[ternary-intent-cache](https://github.com/SuperInstance/ternary-intent-cache)** — Cache for intent→bytecode compilations. Same intent = cached Flux bytecode. LRU eviction with compil
@@ -273,6 +273,7 @@
 - **[cartographer](https://github.com/SuperInstance/cartographer)** — The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed.
 - **[casting-call](https://github.com/SuperInstance/casting-call)** — Which model plays which role — fleet knowledge base of LLM capabilities, failure modes, and casting 
 - **[categorical-agents](https://github.com/SuperInstance/categorical-agents)** — Category theory for agents — capabilities as objects, protocols as morphisms, symmetric monoidal cat
+- **[cellgraph](https://github.com/SuperInstance/cellgraph)** — A transformer forward pass as a Quilt cell graph — witness and the fleet canary at every cell bounda
 - **[cns-bridge](https://github.com/SuperInstance/cns-bridge)** — Python library that lets any agent plug into the Hermes CNS bus via USCP.
 - **[cns-echo](https://github.com/SuperInstance/cns-echo)** — CNS echo agent — receives USCP signals, echoes back with analysis
 - **[cocapn-browser-agent](https://github.com/SuperInstance/cocapn-browser-agent)** — Browser-native fleet agent using Chrome's built-in Gemini Nano AI. Zero-install fleet coordination.
@@ -283,6 +284,8 @@
 - **[construct-core](https://github.com/SuperInstance/construct-core)** — Hardware-agnostic agent runtime with layered trait system for the SuperInstance Construct API
 - **[crab](https://github.com/SuperInstance/crab)** — Hermit crab agent shell — agents find repos, grow, move shells
 - **[DMLogn8n](https://github.com/SuperInstance/DMLogn8n)** — D&D campaign management design workspace: FastAPI + Postgres + Redis + n8n + parallel Claude Code ag
+- **[edge-ledger](https://github.com/SuperInstance/edge-ledger)** — fleet-state@v1 — the SuperInstance fleet sync contract: per-node envelope hash chains, idempotent in
+- **[edge-native-paper](https://github.com/SuperInstance/edge-native-paper)** — Edge-Native Agent Infrastructure: Zero-Dependency Cloudflare Workers for Harsh Environments
 - **[edge-relay-agent](https://github.com/SuperInstance/edge-relay-agent)** — Edge Relay Agent — standalone research relay, discovery, bandwidth management
 - **[elephant](https://github.com/SuperInstance/elephant)** — Personal JEPA vs the zeitgeist. Every reading is someone's reading: subjective, shaped by that agent
 - **[engine-ensign](https://github.com/SuperInstance/engine-ensign)** — ESP32 engine monitoring agent — git-native, tripartite-compiled. The Doctor lives in the repo.
@@ -338,6 +341,7 @@
 - **[git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)** — One-click Codespace template for git-agent runtime development
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
 - **[harness-experiments](https://github.com/SuperInstance/harness-experiments)** — 🔬 AI agent harness productivity experiments — measured, not guessed. D1-backed findings on optimal b
+- **[harness-rssi](https://github.com/SuperInstance/harness-rssi)** — RRSI applied to the fleet: a liveness probe for our own durable recipes, which found that zero of fi
 - **[hebbian-router](https://github.com/SuperInstance/hebbian-router)** — Hebbian routing — connection strengthening based on usage patterns for agent communication networks
 - **[hermes-brainstorm](https://github.com/SuperInstance/hermes-brainstorm)** — Hermes's architecture brain-docs — the Oxide Stack, Shared Canvas, Digital Twin data flow, and the f
 - **[hermes-home](https://github.com/SuperInstance/hermes-home)** — Hermes's runtime home — SOUL, agents, CNS monitors, cron bridges. The nervous system's identity and 
@@ -349,9 +353,6 @@
 - **[jev-ultrafast-quilt](https://github.com/SuperInstance/jev-ultrafast-quilt)** — Fastest and cheapest web agent
 - **[lau-conservation-experiment](https://github.com/SuperInstance/lau-conservation-experiment)** — Tests emergent conservation law — Landauer cost + free energy + H¹ risk score ≈ constant across agen
 - **[lau-hodge-theory](https://github.com/SuperInstance/lau-hodge-theory)** — Hodge theory for agent knowledge spaces — decomposition, harmonic forms, and spectral sequences
-- **[lau-stochastic-geometry](https://github.com/SuperInstance/lau-stochastic-geometry)** — Stochastic geometry for agent uncertainty — Poisson processes, random tessellations, and spatial sta
-- **[lau-stochastic-processes](https://github.com/SuperInstance/lau-stochastic-processes)** — Stochastic processes library: random walks, martingales, Brownian motion, Poisson processes, Markov 
-- **[lau-symplectic-agent](https://github.com/SuperInstance/lau-symplectic-agent)** — lau-symplectic-agent
 - **[lau-tminus](https://github.com/SuperInstance/lau-tminus)** — T-minus event perception — agents predict, pre-script, zero-latency execute
 - **[lau-tropical-agent](https://github.com/SuperInstance/lau-tropical-agent)** — Tropical geometry for agent decisions — the ℏ→0 computational limit where everything becomes piecewi
 - **[lau-tropical-geometry-agents](https://github.com/SuperInstance/lau-tropical-geometry-agents)** — LAU tropical geometry agents for algebraic reasoning
@@ -442,6 +443,7 @@
 - **[quilt-fleet-snapshot](https://github.com/SuperInstance/quilt-fleet-snapshot)** — Bake the Quilt fleet state into a portable tarball. Solves the wipe problem.
 - **[quilt-jepa](https://github.com/SuperInstance/quilt-jepa)** — The latent grid — a tiny JEPA world model living inside an anisotropic cell mesh, stone-receipted (q
 - **[quilt-jev-toolkit-push](https://github.com/SuperInstance/quilt-jev-toolkit-push)** — Quilt fleet member — auto-swept from local commit. Mavis × Casey session line 2026-09-24.
+- **[quilt-lab](https://github.com/SuperInstance/quilt-lab)** — The fleet's experiment protocol as a tool: register → run → receipt → seal. Tools that make tools.
 - **[quilt-makepad-demo](https://github.com/SuperInstance/quilt-makepad-demo)** — Quilt fleet member — auto-swept from local commit. Mavis × Casey session line 2026-09-24.
 - **[quilt-pydantic-ai](https://github.com/SuperInstance/quilt-pydantic-ai)** — Polyformalism: Quilt as a type-safe Pydantic-AI agent
 - **[quilt-quant](https://github.com/SuperInstance/quilt-quant)** — The trading desk as a spreadsheet: backtest-as-cells, walk-forward honesty (S6), gated self-improvem
@@ -451,6 +453,8 @@
 - **[quilt-readme-expansions](https://github.com/SuperInstance/quilt-readme-expansions)** — Batch PR-ready README expansions for the quilt-* fleet, brewed from Z.ai + DeepSeek. Companion to je
 - **[quilt-research-canons](https://github.com/SuperInstance/quilt-research-canons)** — Canonical research artifacts from the Mavis × Casey session line — sprint lineage, novel-problem exp
 - **[quilt-voice-agent](https://github.com/SuperInstance/quilt-voice-agent)** — Voice agent that listens to UNO Q context packets (HTTP) — bridges edge observers and LLM-synthesize
+- **[QuiltCanary.jl](https://github.com/SuperInstance/QuiltCanary.jl)** — Julia port from the SuperInstance fleet — polyformalism canary / the Quilt cell
+- **[QuiltEgg.jl](https://github.com/SuperInstance/QuiltEgg.jl)** — Julia port from the SuperInstance fleet — polyformalism canary / the Quilt cell
 - **[random-walk-agent](https://github.com/SuperInstance/random-walk-agent)** — random-walk-agent
 - **[reallog-agent](https://github.com/SuperInstance/reallog-agent)** — Vision/Fitness Turbo-Shell for cocapn domain
 - **[recovered-copy-20260824-agent-writings-archive](https://github.com/SuperInstance/recovered-copy-20260824-agent-writings-archive)**
@@ -505,6 +509,7 @@
 - **[signal-chain-integration](https://github.com/SuperInstance/signal-chain-integration)** — Signal chain integration crates for OpenShell fleet
 - **[simd-perception-loop](https://github.com/SuperInstance/simd-perception-loop)** — SIMD perception-action loop: fleet-math at assembly-level, microsecond latency
 - **[simplicial-agent](https://github.com/SuperInstance/simplicial-agent)** — Simplicial complexes modeling agent collaboration topology
+- **[site-repair](https://github.com/SuperInstance/site-repair)** — Diagnosis of the fleet website outage: one real link bug, one dangerous false fix, and eleven specif
 - **[sketch-fleet-oracle-construct](https://github.com/SuperInstance/sketch-fleet-oracle-construct)** — 4 Rust services (relay/log/event/oracle) running on ARM64, ternary decision engine, pulse protocol
 - **[sketch-gc-pid-feedback-loop](https://github.com/SuperInstance/sketch-gc-pid-feedback-loop)** — Disk GC with PID controller, ternary confidence, intelligent predictor. Cross-domain synergy between
 - **[sketch-rotation-adaptation-to-fleet-oracle](https://github.com/SuperInstance/sketch-rotation-adaptation-to-fleet-oracle)** — Forgemaster pushed rotation crates (neon-kernel, pid-cascade, attractor, log-tensor, rotation-core).
@@ -532,15 +537,10 @@
 - **[superinstance-voyage](https://github.com/SuperInstance/superinstance-voyage)** — Voyage blog — Casey's writing-from-the-fleet piece
 - **[superinstance-website](https://github.com/SuperInstance/superinstance-website)** — Static website for superinstance.ai — fleet dashboard, ecosystem map, and ternary computing document
 - **[superz-vessel](https://github.com/SuperInstance/superz-vessel)** — Super Z's vessel — quartermaster scout, fleet auditor, continuity keeper
-- **[swarm-signals](https://github.com/SuperInstance/swarm-signals)** — Stigmergy-based coordination — agents communicate through environment modifications, not direct mess
-- **[symphony-orchestrator](https://github.com/SuperInstance/symphony-orchestrator)** — Symphony Orchestrator — master run script for the full fleet stack
-- **[symplectic-fleet](https://github.com/SuperInstance/symplectic-fleet)** — Fleet state as symplectic manifold with Noether's theorem for conserved quantities
 - **[synesis-agents](https://github.com/SuperInstance/synesis-agents)** — Agent persona specifications: Pathos, Logos, Ethos — the tripartite council members
 - **[synesis-prompts](https://github.com/SuperInstance/synesis-prompts)** — Agent prompt designs used in the synesis council system
 - **[t-minus](https://github.com/SuperInstance/t-minus)** — T-minus event coordination for multi-agent systems
-- **[temporal-pattern](https://github.com/SuperInstance/temporal-pattern)** — Temporal pattern library for agent specification — response, precedence, existence, absence, scope, 
 - **[tensor-midi](https://github.com/SuperInstance/tensor-midi)** — Tensor-based MIDI timing for musical agent dialogue cadence
-- **[tensor-penrose](https://github.com/SuperInstance/tensor-penrose)** — Extracted from forgemaster/tensor-penrose — Cocapn fleet component
 - **[terax-gateway](https://github.com/SuperInstance/terax-gateway)** — Terax REST API gateway — shell, filesystem, and fleet operations
 - **[ternary-adversarial](https://github.com/SuperInstance/ternary-adversarial)** — Ternary Adversarial  Adversarial testing for ternary agents — stress-testing strategies against...
 - **[ternary-agent](https://github.com/SuperInstance/ternary-agent)** — Core agent types for the ternary ecosystem
@@ -835,6 +835,7 @@
 - **[Spreadsheet-ai](https://github.com/SuperInstance/Spreadsheet-ai)** — Tile Intelligence in real-time spreadsheets for simulation or monitoring. Deconstruct Agents into Es
 - **[starter-shell](https://github.com/SuperInstance/starter-shell)** — A starting shell for any application. Clone it, and it adapts to your hardware — discovers compilers
 - **[substrate-game-engine](https://github.com/SuperInstance/substrate-game-engine)** — Room/scene engine for substrate games
+- **[superinstance-api](https://github.com/SuperInstance/superinstance-api)** — The fleet's growing context brain: tiles + meaning + reflex + field + growth, with MCP tooling
 - **[superinstance-architecture](https://github.com/SuperInstance/superinstance-architecture)** — SuperInstance architecture: CopilotKit fork analysis, distributed IoT patterns, edge AI agent models
 - **[SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)** — Automatically Deconstruct logic into Spread Sheet Tiles and Cells, Instances Interconnected w/ Origi
 - **[terax-fleet-modules](https://github.com/SuperInstance/terax-fleet-modules)** — Terax fleet TypeScript modules — PLATO bridge, casting-call
@@ -860,6 +861,8 @@
 
 ## Polyformalism
 
+- **[canary-3lang](https://github.com/SuperInstance/canary-3lang)** — The FNV-1a 64 polyformalism canary 0x24a555471370b18d in Futhark and BQN, with the Futhark/BQN/Uiua 
+- **[forge-quilt](https://github.com/SuperInstance/forge-quilt)** — The Quilt cell kernel as an OpenAPI 3.1 spec — Cloudflare Forge input, and the artifact that makes t
 - **[polyvocoder-bindings](https://github.com/SuperInstance/polyvocoder-bindings)** — TypeScript bindings for the Polyvocoder universal head (schema-parity with Python polyvocoder, polyf
 - **[polyvocoder-sql](https://github.com/SuperInstance/polyvocoder-sql)** — SQL polyformalism port — SQLite byte-exact canon archive
 - **[quf-vhdl](https://github.com/SuperInstance/quf-vhdl)** — VHDL-2008 port of the Quilt Universal Format (QUF) — 5th substrate in the polyformalism, byte-exact 
@@ -951,6 +954,7 @@
 - **[alphabet](https://github.com/SuperInstance/alphabet)** — Standard Galactic Alphabet
 - **[api-orchestra](https://github.com/SuperInstance/api-orchestra)** — API Orchestra — multi-LLM creative chorus using ZAI, DeepInfra, Cloudflare, JEV as substrate walkers
 - **[asset-ranch](https://github.com/SuperInstance/asset-ranch)**
+- **[audit-trail](https://github.com/SuperInstance/audit-trail)** — Append-only audit trail with a hash-chained head, in the shape the SuperInstance witness log needs
 - **[back-deck-game](https://github.com/SuperInstance/back-deck-game)** — The Back-Deck Game — gamified crew training for commercial fishing. F141-F143. Live demo.
 - **[base60-lattice](https://github.com/SuperInstance/base60-lattice)**
 - **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** — 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton
@@ -1000,6 +1004,7 @@
 - **[deckboss-app](https://github.com/SuperInstance/deckboss-app)**
 - **[deckhand-rs](https://github.com/SuperInstance/deckhand-rs)** — Rust BM25 retriever. Zero-dep. 10-100x faster than Python.
 - **[deepseek-harness-quilt](https://github.com/SuperInstance/deepseek-harness-quilt)** — DeepSeek Harness: Everything is a Plugin.
+- **[delta-shape](https://github.com/SuperInstance/delta-shape)** — Deltas-as-shape made checkable: content-addressed identity of change (sign-pattern + change-points),
 - **[domain-landing](https://github.com/SuperInstance/domain-landing)** — Reusable landing page Worker — deploy to any custom domain
 - **[dsh-assessment](https://github.com/SuperInstance/dsh-assessment)**
 - **[duke-lab](https://github.com/SuperInstance/duke-lab)**
@@ -1008,6 +1013,7 @@
 - **[edge-equipment-catalog](https://github.com/SuperInstance/edge-equipment-catalog)** — Edge-Native concept: Edge Equipment Catalog
 - **[Edge-Native](https://github.com/SuperInstance/Edge-Native)** — Embed intelligence in distributed IoT
 - **[edge-weight](https://github.com/SuperInstance/edge-weight)** — Adaptive thresholds at the Cloudflare edge — extends WebClaw to edge
+- **[education](https://github.com/SuperInstance/education)** — The pages SITE-MAP.md specified: six concepts with live calculators, a generated crate catalog, buil
 - **[elephant-sim-worker](https://github.com/SuperInstance/elephant-sim-worker)**
 - **[email-oracle](https://github.com/SuperInstance/email-oracle)** — Incoming email to Oracle relay event pipeline
 - **[eos-seed](https://github.com/SuperInstance/eos-seed)**
@@ -1071,16 +1077,10 @@
 - **[jev-turbovec](https://github.com/SuperInstance/jev-turbovec)** — JEV-Diffusion + TurboQuant substrate memory. Find similar past diffusions.
 - **[jeviter](https://github.com/SuperInstance/jeviter)** — JEV (Joint Embedding Validator) UI — promote/REVIEW/DISCUSS/REJECT oracle for canon-vs-speculation. 
 - **[kev-substrate](https://github.com/SuperInstance/kev-substrate)** — tiny Jev-like family of decision models built on top of Qwen3.5 you can train and run on your own
+- **[keyprobe](https://github.com/SuperInstance/keyprobe)** — Are the keys working, and if not, in which way — IDENTITY / SHAPE / LOAD, because "down" is not a di
 - **[kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)** — C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle
 - **[knowledge-vault](https://github.com/SuperInstance/knowledge-vault)**
 - **[knowledge-vault-rs](https://github.com/SuperInstance/knowledge-vault-rs)** — Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust)
-- **[lau-state-machine](https://github.com/SuperInstance/lau-state-machine)**
-- **[lau-statistical-learning](https://github.com/SuperInstance/lau-statistical-learning)**
-- **[lau-stochastic-homotopy](https://github.com/SuperInstance/lau-stochastic-homotopy)**
-- **[lau-supergeometry](https://github.com/SuperInstance/lau-supergeometry)**
-- **[lau-swarm-intelligence](https://github.com/SuperInstance/lau-swarm-intelligence)** — Swarm intelligence algorithms: ACO, PSO, bee algorithm, firefly, wolf pack, bacterial foraging, SDS,
-- **[lau-symmetry-engine](https://github.com/SuperInstance/lau-symmetry-engine)**
-- **[lau-symplectic-geometry](https://github.com/SuperInstance/lau-symplectic-geometry)**
 - **[lau-teleomorphic](https://github.com/SuperInstance/lau-teleomorphic)** — lau-teleomorphic
 - **[lau-tensor-analysis](https://github.com/SuperInstance/lau-tensor-analysis)** — Tensor analysis on manifolds — tensors, metric tensors, Christoffel symbols, covariant derivatives, 
 - **[lau-tensor-midi](https://github.com/SuperInstance/lau-tensor-midi)**
@@ -1268,6 +1268,7 @@
 - **[peanut-gallery-turbovec](https://github.com/SuperInstance/peanut-gallery-turbovec)** — Peanut Gallery + TurboQuant critique memory. Similar past critiques inform new ones.
 - **[pedigree](https://github.com/SuperInstance/pedigree)** — Pedigree: model lineage tracking as bloodline records
 - **[penrose-lattice](https://github.com/SuperInstance/penrose-lattice)** — Penrose tilings as spectral graphs. Fibonacci substitution. Inflation/deflation symmetry. Farey sequ
+- **[percept-plugs](https://github.com/SuperInstance/percept-plugs)**
 - **[perception-cascade](https://github.com/SuperInstance/perception-cascade)** — Tiered perception daemon for time-series frames — racehorse/scribe/analyst loops with a gaze attenti
 - **[persistence-landscape](https://github.com/SuperInstance/persistence-landscape)** — Persistence landscapes for statistical topological data analysis: piecewise-linear landscape functio
 - **[personallog-ai-pages](https://github.com/SuperInstance/personallog-ai-pages)** — GitHub Pages for personallog.ai
@@ -1316,6 +1317,7 @@
 - **[quilt-arch](https://github.com/SuperInstance/quilt-arch)** — The Complete Solution conformance core: Q32 bit-exact, JS==Python 0/10000 mismatches (cross-substrat
 - **[quilt-arena](https://github.com/SuperInstance/quilt-arena)**
 - **[quilt-atlas](https://github.com/SuperInstance/quilt-atlas)** — The living map of the SuperInstance account: 4000+ repos, families, motion, CI coverage. Regenerated
+- **[quilt-attention](https://github.com/SuperInstance/quilt-attention)** — One-head self-attention as a quilt cell DAG — hand-rolled backprop, epoch receipts, digest-localized
 - **[quilt-base](https://github.com/SuperInstance/quilt-base)** — Quilt ecosystem component: <!--
 - **[quilt-bathy](https://github.com/SuperInstance/quilt-bathy)** — The bathy cross-section as a working tool. The substrate, applied to the sailor use case. The Inner 
 - **[quilt-blueprint](https://github.com/SuperInstance/quilt-blueprint)** — The blueprint-to-metal compiler: GraphQL-shaped schema in, byte-exact fixed-offset layouts + monoton
@@ -1336,7 +1338,9 @@
 - **[quilt-canon-search](https://github.com/SuperInstance/quilt-canon-search)** — TF-IDF search over Quilt substrate walker canon lore
 - **[quilt-canon-trace](https://github.com/SuperInstance/quilt-canon-trace)** — Substrate walker trajectory — walks canon graph, visualizes path
 - **[quilt-canon-witness](https://github.com/SuperInstance/quilt-canon-witness)** — Cryptographic witness log — append-only ledger for canon events
+- **[quilt-canvas](https://github.com/SuperInstance/quilt-canvas)**
 - **[quilt-canvas-demo](https://github.com/SuperInstance/quilt-canvas-demo)** — Working HTML demo that pulls together the npm canon packages (claim, drill, hash, paper, recs). One 
+- **[quilt-canvas-tui](https://github.com/SuperInstance/quilt-canvas-tui)** — claude-canvas-style TUI whose second panel is a quilt: fabric ports (Python/Node/C99 over quilt-c), 
 - **[quilt-casting](https://github.com/SuperInstance/quilt-casting)** — The casting-call plugin: Wilson + LinUCB model router for the Quilt.
 - **[quilt-cell](https://github.com/SuperInstance/quilt-cell)** — The Quilt cell as a JavaScript library. 16-dial Q1.15 vectors, FNV-1a 64-bit state hash, byte-exact 
 - **[quilt-cell-harness](https://github.com/SuperInstance/quilt-cell-harness)** — Non-hub-and-spoke cell architecture for Quilt. Engine with PTO, genetic weights as nudges, compartme
@@ -1363,6 +1367,7 @@
 - **[quilt-engine-ports](https://github.com/SuperInstance/quilt-engine-ports)** — The quilt 5+1 opcodes (BIND/LINK/EFFECT/VIEW/TICK + FORGET) mapped to Godot, Unity, and Unreal — cel
 - **[quilt-esp32](https://github.com/SuperInstance/quilt-esp32)** — A Quilt reactive runtime for ESP32-class microcontrollers. no_std Rust, ~3KB flash, sensors as cells
 - **[quilt-evolve](https://github.com/SuperInstance/quilt-evolve)** — Self-improvement loops for Quilt. LLMs as adversarial input generators and output judges. Evolve any
+- **[quilt-ewitness](https://github.com/SuperInstance/quilt-ewitness)** — Anytime-valid e-process witnesses for training claims — Ville-bound honesty for it-learned statement
 - **[quilt-executor](https://github.com/SuperInstance/quilt-executor)**
 - **[quilt-fiction](https://github.com/SuperInstance/quilt-fiction)** — The quilt as operational fiction — instances-as-sheets, Delta protocol, reputation beta>alpha, local
 - **[quilt-flow](https://github.com/SuperInstance/quilt-flow)** — Quilt sketch — see README.
@@ -1392,8 +1397,11 @@
 - **[quilt-loom](https://github.com/SuperInstance/quilt-loom)** — The Divergent Logic Foundry — a GAN over logic itself: a breeder generates new implementations of ga
 - **[quilt-mesh-bridge](https://github.com/SuperInstance/quilt-mesh-bridge)** — Bridges cellular Quilt cells over a mesh network
 - **[quilt-mhs](https://github.com/SuperInstance/quilt-mhs)** — quilt × Anthropic's Model Hardware Standard: quilt cells drive MHS devices; quilt runtimes exposed A
+- **[quilt-ml-architecture](https://github.com/SuperInstance/quilt-ml-architecture)** — What Quilt should build for ML: the model as a cell graph, witness at every activation, and the cana
+- **[quilt-ml-recipes](https://github.com/SuperInstance/quilt-ml-recipes)** — Recipes that work: receipted, negative-controlled, growable ML/RL/judge/convergence setups in the qu
 - **[quilt-multi-oracle](https://github.com/SuperInstance/quilt-multi-oracle)** — Multi-model JEV oracle — probes canon across N LLMs in parallel, aggregates via canonical chord
 - **[quilt-murmur](https://github.com/SuperInstance/quilt-murmur)** — the murmur lineage, metamorphosed into a reactive spreadsheet mesh — twelve vessels, one flying quil
+- **[quilt-neighbourhood](https://github.com/SuperInstance/quilt-neighbourhood)** — Diff-DAG convergence for Quilt sheets — a neighbourhood of replicas that partition, diverge, and rej
 - **[quilt-nomad](https://github.com/SuperInstance/quilt-nomad)** — Quilt as a control plane for HashiCorp Nomad. Edit a spreadsheet cell; the Nomad cluster reconfigure
 - **[quilt-optimization](https://github.com/SuperInstance/quilt-optimization)** — NVIDIA cuOpt (LP/MILP/QP/routing) as a Quilt substrate
 - **[quilt-orchestrator](https://github.com/SuperInstance/quilt-orchestrator)** — Substrate walker brewed by quilt-brewer
@@ -1412,12 +1420,14 @@
 - **[quilt-rag](https://github.com/SuperInstance/quilt-rag)** — Quilt runtime for production RAG — loader, chunker, embedder, vector store, retriever, reranker, gen
 - **[quilt-raw](https://github.com/SuperInstance/quilt-raw)** — The raw executable line v->L->G->v': seven ops per tick, Q32 integer machine, journal with EXACT inv
 - **[quilt-rips](https://github.com/SuperInstance/quilt-rips)** — TDA as a 5-opcode quilt cell: GUDHI persistence with stone-v1-shaped hash-chained receipts. Signal->
+- **[quilt-rl](https://github.com/SuperInstance/quilt-rl)** — RL that converges, in a quilt sheet: the MDP is the sheet, Q-learning over cell states, QRNG-seeded 
 - **[Quilt-Robotic-Arm---Gesture-Controlled](https://github.com/SuperInstance/Quilt-Robotic-Arm---Gesture-Controlled)** — Quilt version of- Gesture-controlled robotic arm with pick-and-place functionality, utilizing a sens
 - **[quilt-rust](https://github.com/SuperInstance/quilt-rust)** — Rust port of Quilt — a reactive, typed, cellular runtime.
 - **[quilt-rust-vibe](https://github.com/SuperInstance/quilt-rust-vibe)** — The Quilt cell-fabric runtime in Rust — std-only, byte-exact FNV-1a 64-bit hash. Vibe-coded from QUI
 - **[quilt-saddle-bridge](https://github.com/SuperInstance/quilt-saddle-bridge)** — Bridge between the Quilt casting-call witness log and saddle double-entry ledger. FNV-1a64 hash chai
 - **[quilt-sandbox](https://github.com/SuperInstance/quilt-sandbox)** — Canon that runs — extracts Python code blocks from canon lore and verifies execution
 - **[quilt-schema-registry](https://github.com/SuperInstance/quilt-schema-registry)** — Canonical 14-tuple schema + envelope contract. The 5th-layer substrate walker.
+- **[quilt-score](https://github.com/SuperInstance/quilt-score)** — A cell graph as an editable ABC-notation score — the generalisation of YuE2-Studio: the model emits 
 - **[quilt-seed](https://github.com/SuperInstance/quilt-seed)** — The four-scalar genome + the vessel + the bearing + the legalese. The substrate layer where the five
 - **[quilt-show](https://github.com/SuperInstance/quilt-show)** — The Quilt Show — witty educational episodes on natural programming in the Quilt reactive system
 - **[quilt-silicon](https://github.com/SuperInstance/quilt-silicon)** — The silicon map executed without silicon: SIMT warp emulator over quilt-arch kernels — schedule-inva
@@ -1471,6 +1481,7 @@
 - **[rc-20260824-11](https://github.com/SuperInstance/rc-20260824-11)**
 - **[rd](https://github.com/SuperInstance/rd)**
 - **[reallog-ai-pages](https://github.com/SuperInstance/reallog-ai-pages)** — GitHub Pages for reallog.ai
+- **[realm-ml](https://github.com/SuperInstance/realm-ml)** — Realm-specific claim verification: evidence-grounded verification for codebase claims, with the doma
 - **[recovered-copy-20260824-ACE-Step-1.5](https://github.com/SuperInstance/recovered-copy-20260824-ACE-Step-1.5)**
 - **[recovered-copy-20260824-base60-lattice](https://github.com/SuperInstance/recovered-copy-20260824-base60-lattice)**
 - **[recovered-copy-20260824-batten-spline](https://github.com/SuperInstance/recovered-copy-20260824-batten-spline)**
@@ -1519,6 +1530,7 @@
 - **[renormalization](https://github.com/SuperInstance/renormalization)** — Renormalization group theory library for SuperInstance
 - **[renormalization-learning-rs](https://github.com/SuperInstance/renormalization-learning-rs)** — Renormalization group methods for machine learning, in Rust
 - **[repo-consolidation-plan](https://github.com/SuperInstance/repo-consolidation-plan)** — SuperInstance repo consolidation analysis and roadmap (2026-05-05)
+- **[repo-publication-log](https://github.com/SuperInstance/repo-publication-log)** — The log of going through the 201 private SuperInstance repos: what each one is, what was wrong, what
 - **[repos](https://github.com/SuperInstance/repos)** — Preserved workspace artifact
 - **[representation-theory](https://github.com/SuperInstance/representation-theory)** — Representation theory in Rust — group representations, irreducible representations, characters, Lie 
 - **[research](https://github.com/SuperInstance/research)** — Preserved workspace artifact
@@ -1604,6 +1616,7 @@
 - **[skills](https://github.com/SuperInstance/skills)** — Preserved workspace artifact
 - **[skip-list-rs](https://github.com/SuperInstance/skip-list-rs)** — Skip list with probabilistic balancing, range queries, and iterator support — pure Rust, no dependen
 - **[slackwater-orchestrator](https://github.com/SuperInstance/slackwater-orchestrator)** — 🌊 Multi-model AI orchestrator by GLM-5.2 — the full ensemble
+- **[slackwater-quilt](https://github.com/SuperInstance/slackwater-quilt)** — The ledger is the build — every slackwater lattice operation as a receipted quilt cell. Seed expansi
 - **[slackwater-substrate](https://github.com/SuperInstance/slackwater-substrate)** — Multi-track MIDI perception with substrate cell integration. Each event = substrate cell with prev_h
 - **[slam-core](https://github.com/SuperInstance/slam-core)** — SLAM (Simultaneous Localization and Mapping) core for SuperInstance robotics
 - **[smart-404](https://github.com/SuperInstance/smart-404)** — Smart 404 page with semantic search and did-you-mean
@@ -1646,6 +1659,7 @@
 - **[stock-screener](https://github.com/SuperInstance/stock-screener)** — Quilt cellular visualizer design (tickers as cells, screener rules as routing edges, scans as route 
 - **[study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)** — Auto-created for sync 2026-08-13
 - **[study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)** — Auto-created for sync 2026-08-13
+- **[subleq-fabric](https://github.com/SuperInstance/subleq-fabric)** — Single-instruction execution substrate (SUBLEQ): code is an integer array, self-healing is a conditi
 - **[substrate-attest](https://github.com/SuperInstance/substrate-attest)** — ATTEST opcode (R10): add a trust score to an observation. Witness-typed.
 - **[substrate-attest-rs](https://github.com/SuperInstance/substrate-attest-rs)** — substrate-attest Rust crate - substrate observation primitive
 - **[substrate-bench](https://github.com/SuperInstance/substrate-bench)** — Benchmark harness for the substrate math layer. Reference value verification + ops/sec measurement.
@@ -1683,19 +1697,6 @@
 - **[superinstance-design-system](https://github.com/SuperInstance/superinstance-design-system)**
 - **[superinstance-embedder](https://github.com/SuperInstance/superinstance-embedder)** — 32-dimensional embeddings for 560+ SuperInstance crates. Seeds Cloudflare Vectorize for semantic sea
 - **[SuperInstance.github.io](https://github.com/SuperInstance/SuperInstance.github.io)** — SuperInstance — the front door. Brand kit, honest landscape table, and four live sheets running in o
-- **[surrealdb](https://github.com/SuperInstance/surrealdb)** — A scalable, distributed, collaborative, document-graph database, for the realtime web
-- **[swarm-code](https://github.com/SuperInstance/swarm-code)** — Preserved workspace artifact
-- **[symbiont-network](https://github.com/SuperInstance/symbiont-network)**
-- **[symbol-table](https://github.com/SuperInstance/symbol-table)** — A Rust library for Symbol Table
-- **[symmetry-math](https://github.com/SuperInstance/symmetry-math)**
-- **[symmetry-math-c](https://github.com/SuperInstance/symmetry-math-c)**
-- **[symmetry-math-npm](https://github.com/SuperInstance/symmetry-math-npm)** — Mathematics of symmetry — group theory, wallpaper groups, orbit-stabilizer, Burnside lemma. npm inst
-- **[symplectic-geometry](https://github.com/SuperInstance/symplectic-geometry)** — Symplectic geometry, Hamiltonian systems, and symplectic integrators — pure Rust, zero dependencies
-- **[symplectic-music](https://github.com/SuperInstance/symplectic-music)** — Hamiltonian mechanics of musical harmony — symplectic integrators preserve tonal structure
-- **[symplectic-opt](https://github.com/SuperInstance/symplectic-opt)** — Symplectic optimization — Hamiltonian integrators, conservation laws, natural gradient descent on Ri
-- **[symplectic-opt-rs](https://github.com/SuperInstance/symplectic-opt-rs)**
-- **[symplectic-spin](https://github.com/SuperInstance/symplectic-spin)** — Symplectic integrators: Euler drifts, Verlet conserves. Spin abstracts time as distance. Pure Rust, 
-- **[sync-primitive](https://github.com/SuperInstance/sync-primitive)**
 - **[synesis-architecture](https://github.com/SuperInstance/synesis-architecture)** — High/medium/low-level architecture specs for the synesis workspace
 - **[synesis-cloud-app](https://github.com/SuperInstance/synesis-cloud-app)** — Cloudflare Workers backend for synesis (billing, routing, session-state, sync)
 - **[synesis-context-docs](https://github.com/SuperInstance/synesis-context-docs)** — Slice-of-life design docs from the synesis workspace root: architecture, ecosystem, branding, naming
@@ -1711,15 +1712,11 @@
 - **[synesis-templates](https://github.com/SuperInstance/synesis-templates)** — Extraction and conversion templates used to peel synesis subcrates out of the monorepo
 - **[synthcity](https://github.com/SuperInstance/synthcity)** — An Infinite Procedural Cyberpunk City
 - **[Syzygy](https://github.com/SuperInstance/Syzygy)** — **Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable 
+- **[syzygy-lattice](https://github.com/SuperInstance/syzygy-lattice)**
 - **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** — Countdown/timer primitives with scheduling, deadline propagation, and backpressure
 - **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** — Auto-created for sync 2026-08-13
 - **[tap-gamenight](https://github.com/SuperInstance/tap-gamenight)**
-- **[tasklog-ai](https://github.com/SuperInstance/tasklog-ai)** — Task Manager — AI-powered Task Manager
-- **[tda-c](https://github.com/SuperInstance/tda-c)**
 - **[technician](https://github.com/SuperInstance/technician)** — Technician tooling
-- **[templates](https://github.com/SuperInstance/templates)** — Preserved workspace artifact
-- **[temporal-compress](https://github.com/SuperInstance/temporal-compress)**
-- **[temporal-logic](https://github.com/SuperInstance/temporal-logic)**
 - **[terminal-entropy-harness](https://github.com/SuperInstance/terminal-entropy-harness)** — Standalone crate: Verification Entropy tracker extracted from the Intelligent Terminal. Tracks edit/
 - **[terminal-forecast-harness](https://github.com/SuperInstance/terminal-forecast-harness)** — Standalone Markov chain forecasting harness — wraps ergodic-transport-rs (96 tests)
 - **[terminal-hodge-harness](https://github.com/SuperInstance/terminal-hodge-harness)** — Standalone Hodge decomposition harness — wraps hodge-belief-rs for terminal integration (34 tests)
@@ -2011,6 +2008,7 @@
 - **[tropical-graph](https://github.com/SuperInstance/tropical-graph)** — Tropical algebra graph algorithms for SuperInstance
 - **[tropical-harmony-rs](https://github.com/SuperInstance/tropical-harmony-rs)** — Self-Improving Band: tropical-harmony-rs
 - **[turbovec-substrate](https://github.com/SuperInstance/turbovec-substrate)** — TurboQuant for substrate cells — 8x compression, FNV-1a prev_hash chain.
+- **[typesafe-quilts](https://github.com/SuperInstance/typesafe-quilts)** — System One as judge: calibration battery + routing judgments + the judge protocol for quilt lanes. L
 - **[UniRL](https://github.com/SuperInstance/UniRL)** — UniRL is a Framework for Unified Multimodal Model Reinforcement Learning
 - **[universe-chain](https://github.com/SuperInstance/universe-chain)** — Signal Chain Thesis - universe-chain
 - **[urban-transportation-system](https://github.com/SuperInstance/urban-transportation-system)** — Quilt-compatible urban transit routing — routing as cell-graph operations (5+1 opcodes; original by 
@@ -2048,9 +2046,11 @@
 - **[witness-complex](https://github.com/SuperInstance/witness-complex)** — Witness complex construction for landmark-based topological data analysis with random, maxmin, and k
 - **[witness-is-prediction](https://github.com/SuperInstance/witness-is-prediction)** — witness-is-prediction - R10 substrate canon point as code
 - **[witness-topology-rs](https://github.com/SuperInstance/witness-topology-rs)** — Witness complex for topology approximation from point clouds
+- **[witness-validation](https://github.com/SuperInstance/witness-validation)** — Design for making the canon witness log predictive, rewindable, and integrity-checked — e-processes 
 - **[ws-snapshot-hermit-crab](https://github.com/SuperInstance/ws-snapshot-hermit-crab)** — Windows-workspace snapshot of hermit-crab (partial; original pending support restore)
 - **[ws-snapshot-soundcrab](https://github.com/SuperInstance/ws-snapshot-soundcrab)** — Windows-workspace snapshot of soundcrab (partial; original pending support restore)
 - **[ws-status-indicator](https://github.com/SuperInstance/ws-status-indicator)** — React WebSocket status indicator component with auto-reconnection and customizable UI
+- **[xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)** — The cell convention evaluated in two runtimes that never shared source: 23/23 per-cell digests agree
 - **[yiluodi](https://github.com/SuperInstance/yiluodi)** — 已落地 — the hello-world for SuperInstance: cellular arrays within cellular arrays, beliefs that land w
 - **[young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)** — Research-grade Rust crate
 - **[zero-knowledge](https://github.com/SuperInstance/zero-knowledge)** — Zero-knowledge proof primitives: Schnorr, DLEQ, range proofs, sigma protocols, Fiat-Shamir
