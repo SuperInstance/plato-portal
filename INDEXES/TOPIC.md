@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-10-03 10:12 UTC
+**Generated:** 2026-10-04 10:53 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -112,6 +112,7 @@
 - **[neural-quilt](https://github.com/SuperInstance/neural-quilt)** — Wearable neural device + Quilt = signaling-as-play. F139. Try the live demo.
 - **[quilt-canvas-adversary](https://github.com/SuperInstance/quilt-canvas-adversary)** — quilt-transformer arena engine
 - **[quilt-canvas-ascetic](https://github.com/SuperInstance/quilt-canvas-ascetic)** — quilt-transformer arena engine
+- **[quilt-matrix](https://github.com/SuperInstance/quilt-matrix)** — The external mind: a spreadsheet-viewable neural network of relational weights. Small cells ask, typ
 - **[quilt-nn](https://github.com/SuperInstance/quilt-nn)** — Neural nets as quilt cell graphs — weights, gradients and SGD steps are cells; every epoch receipted
 - **[quilt-transformer-arena](https://github.com/SuperInstance/quilt-transformer-arena)** — Adversarial GAN lane: quilt-transformer paradigm — archival canvas + disposable workers. claude/crus
 - **[ternary-tnn](https://github.com/SuperInstance/ternary-tnn)** — Ternary Neural Network layers: {-1,0,+1} weights with LUT matmul, straight-through estimation, and B
@@ -189,7 +190,6 @@
 - **[quilt-gpu-lab-witness](https://github.com/SuperInstance/quilt-gpu-lab-witness)** — WITNESS. 2026-10-03: I deleted play/quilt-gpu-lab (702MB) after my own precondition check printed ST
 - **[quilt-metal](https://github.com/SuperInstance/quilt-metal)** — Polyformalism: Quilt in Metal (GPU-evaluated cells)
 - **[slackwater-forge](https://github.com/SuperInstance/slackwater-forge)** — Overnight GPU production line that produces a morning briefing. Works with any Ollama model.
-- **[ternary-pack](https://github.com/SuperInstance/ternary-pack)** — Experimental bit-packing of ternary {-1,0,+1} values for GPU memory efficiency. Tests 2-bit packing,
 - **[ternary-pheromone-market](https://github.com/SuperInstance/ternary-pheromone-market)** — Autonomous GPU load balancing via ternary pheromone markets. Emergent coordination without central s
 - **[ternary-priority-queue](https://github.com/SuperInstance/ternary-priority-queue)** — Priority queue for GPU kernel scheduling with ternary scoring. {-1=deprioritize, 0=normal, +1=priori
 - **[ternary-register-file](https://github.com/SuperInstance/ternary-register-file)** — Register file allocation for ternary GPU kernels
@@ -273,6 +273,7 @@
 - **[cf-deployments](https://github.com/SuperInstance/cf-deployments)** — The fleet Cloudflare Workers + Pages deployments: erised hosted gate, cot-quilt graph viewer, gotcha
 - **[cns-bridge](https://github.com/SuperInstance/cns-bridge)** — Python library that lets any agent plug into the Hermes CNS bus via USCP.
 - **[cns-echo](https://github.com/SuperInstance/cns-echo)** — CNS echo agent — receives USCP signals, echoes back with analysis
+- **[cocapn](https://github.com/SuperInstance/cocapn)** — repo-first Agent for local or cloud. grow an agent in a repo using the repo itself as the muscle-mem
 - **[cocapn-browser-agent](https://github.com/SuperInstance/cocapn-browser-agent)** — Browser-native fleet agent using Chrome's built-in Gemini Nano AI. Zero-install fleet coordination.
 - **[cocapn-health](https://github.com/SuperInstance/cocapn-health)** — Cocapn fleet health monitoring — vessel status, heartbeat, and observability utilities
 - **[codespace-edge-rd](https://github.com/SuperInstance/codespace-edge-rd)** — R&D: Codespace→Edge agent lifecycle, yoke transfer, devcontainer templates
@@ -339,6 +340,7 @@
 - **[fleet-tts](https://github.com/SuperInstance/fleet-tts)** — fleet-tts
 - **[fleet-twin](https://github.com/SuperInstance/fleet-twin)** — Vector twin of the SuperInstance corpus — cloud (Workers+Vectorize) + local (Ollama) query, MCP serv
 - **[fleet-vessel](https://github.com/SuperInstance/fleet-vessel)** — Fleet's git-native garbage collector agent
+- **[fleet-witness](https://github.com/SuperInstance/fleet-witness)** — Fleet WAL completeness layer: RFC 6962 Merkle checkpoints over five-opcode receipts (witnessing stud
 - **[fleet-yaw](https://github.com/SuperInstance/fleet-yaw)** — Fleet yaw autopilot — learns fleet physics from first-person perspective bearing-rate observations i
 - **[fm-experiments](https://github.com/SuperInstance/fm-experiments)** — Extracted from forgemaster/experiments — Cocapn fleet component
 - **[frozen-clock-lab](https://github.com/SuperInstance/frozen-clock-lab)** — PoC: novel mechanism lab (fleet snowball)
@@ -520,6 +522,7 @@
 - **[simd-perception-loop](https://github.com/SuperInstance/simd-perception-loop)** — SIMD perception-action loop: fleet-math at assembly-level, microsecond latency
 - **[simplicial-agent](https://github.com/SuperInstance/simplicial-agent)** — Simplicial complexes modeling agent collaboration topology
 - **[site-repair](https://github.com/SuperInstance/site-repair)** — Diagnosis of the fleet website outage: one real link bug, one dangerous false fix, and eleven specif
+- **[skein](https://github.com/SuperInstance/skein)** — Thread not yet woven. Open discussions behind the building — agents, harness, and the ideas that sta
 - **[sketch-fleet-oracle-construct](https://github.com/SuperInstance/sketch-fleet-oracle-construct)** — 4 Rust services (relay/log/event/oracle) running on ARM64, ternary decision engine, pulse protocol
 - **[sketch-gc-pid-feedback-loop](https://github.com/SuperInstance/sketch-gc-pid-feedback-loop)** — Disk GC with PID controller, ternary confidence, intelligent predictor. Cross-domain synergy between
 - **[sketch-rotation-adaptation-to-fleet-oracle](https://github.com/SuperInstance/sketch-rotation-adaptation-to-fleet-oracle)** — Forgemaster pushed rotation crates (neon-kernel, pid-cascade, attractor, log-tensor, rotation-core).
@@ -559,8 +562,6 @@
 - **[ternary-harbor](https://github.com/SuperInstance/ternary-harbor)** — Harbor pattern for agent docking and resource management
 - **[ternary-inference](https://github.com/SuperInstance/ternary-inference)** — ternary-inference  Inference from ternary negative spaces — deducing knowledge from what agents...
 - **[ternary-memory](https://github.com/SuperInstance/ternary-memory)** — ternary-memory  Memory systems for ternary agents — short-term, long-term, and episodic memory ...
-- **[ternary-oracle](https://github.com/SuperInstance/ternary-oracle)** — Prediction market for fleet intelligence with ternary confidence staking
-- **[ternary-pareto](https://github.com/SuperInstance/ternary-pareto)** — ternary-pareto  Pareto optimization for ternary agents — multi-objective strategies where you c...
 - **[ternary-popgen](https://github.com/SuperInstance/ternary-popgen)** — Population genetics for ternary agent systems
 - **[ternary-protocol](https://github.com/SuperInstance/ternary-protocol)** — ternary-protocol  Wire protocol for communication between ternary agents — message passing, ser...
 - **[ternary-replay](https://github.com/SuperInstance/ternary-replay)** — Deterministic replay of agent experiments from seeds
@@ -1042,6 +1043,7 @@
 - **[covers](https://github.com/SuperInstance/covers)** — ACE-Step cover song experiments
 - **[cqrs-framework](https://github.com/SuperInstance/cqrs-framework)** — A Rust library for Cqrs Framework
 - **[cra-analysis](https://github.com/SuperInstance/cra-analysis)** — Deep analysis of the SuperInstance CRA + Quilt + casting-call projects. Multiple LLMs, multiple ques
+- **[crab-cell](https://github.com/SuperInstance/crab-cell)** — A crab is something that owes, a watcher is something that checks, and the ledger is where they meet
 - **[CrashPilot](https://github.com/SuperInstance/CrashPilot)** — Our SSL Robot Controller
 - **[credential-store](https://github.com/SuperInstance/credential-store)** — A Rust library for Credential Store
 - **[cuckoo-filter](https://github.com/SuperInstance/cuckoo-filter)** — A Rust library for Cuckoo Filter
@@ -1247,12 +1249,9 @@
 - **[mentis-thinker-adapter](https://github.com/SuperInstance/mentis-thinker-adapter)** — Mental World Modeling layer for the SuperInstance constant thinker
 - **[MicroMoth-quilt](https://github.com/SuperInstance/MicroMoth-quilt)**
 - **[midden](https://github.com/SuperInstance/midden)**
-- **[migrations](https://github.com/SuperInstance/migrations)** — Preserved workspace artifact
-- **[minimax-code](https://github.com/SuperInstance/minimax-code)** — Minimax game tree search for SuperInstance strategic reasoning
 - **[mist-game](https://github.com/SuperInstance/mist-game)**
 - **[mist-lab](https://github.com/SuperInstance/mist-lab)**
 - **[mist-quilt](https://github.com/SuperInstance/mist-quilt)**
-- **[mitochondria](https://github.com/SuperInstance/mitochondria)** — mitochondria
 - **[model-breaking](https://github.com/SuperInstance/model-breaking)** — model-breaking
 - **[model-check](https://github.com/SuperInstance/model-check)** — Model checking tools for formal verification of SuperInstance systems
 - **[model-field-guide](https://github.com/SuperInstance/model-field-guide)** — Forkable model exploration tool with crowd-sourced improvements. Every fork is a reporter.
@@ -1282,6 +1281,7 @@
 - **[mux-demux](https://github.com/SuperInstance/mux-demux)** — Rust crate: mux-demux
 - **[mvcc-tx](https://github.com/SuperInstance/mvcc-tx)** — Research-grade Rust crate
 - **[mycelium-route](https://github.com/SuperInstance/mycelium-route)** — Mycelium-inspired routing protocol for SuperInstance mesh networks
+- **[naDir](https://github.com/SuperInstance/naDir)** — naDir: async work as directories. A running job is just a folder — open while it runs, moved when it
 - **[negative-knowledge](https://github.com/SuperInstance/negative-knowledge)** — Negative knowledge as the primary computational resource — knowing where violations are NOT is cheap
 - **[network-flow](https://github.com/SuperInstance/network-flow)** — network-flow
 - **[network-science](https://github.com/SuperInstance/network-science)** — Network science in Rust — centrality, community detection (Louvain, Girvan-Newman), epidemic models,
@@ -1322,6 +1322,7 @@
 - **[operational-fiction](https://github.com/SuperInstance/operational-fiction)**
 - **[optimal-control](https://github.com/SuperInstance/optimal-control)** — Optimal control in Rust. From LQR to HJB.
 - **[optimization-algorithms](https://github.com/SuperInstance/optimization-algorithms)** — Every optimization algorithm you learned in grad school, in Rust.
+- **[oracle1-workspace](https://github.com/SuperInstance/oracle1-workspace)** — Oracle1 workspace — config, memory, prompts, logs
 - **[orations-metal](https://github.com/SuperInstance/orations-metal)** — Three orations on deadbands, eigenvectors, and load-bearing abstractions — plus critic synthesis
 - **[org-audit](https://github.com/SuperInstance/org-audit)** — Organization audit reports and GC analysis for SuperInstance
 - **[os-concepts](https://github.com/SuperInstance/os-concepts)** — Operating system concepts in Rust — process scheduling, memory management, file systems, virtual mem
@@ -1748,6 +1749,7 @@
 - **[spacemap](https://github.com/SuperInstance/spacemap)** — Spatial mapping component for SuperInstance perception systems
 - **[sparse-matrix](https://github.com/SuperInstance/sparse-matrix)** — A Rust library for Sparse Matrix
 - **[spatial-registry](https://github.com/SuperInstance/spatial-registry)**
+- **[spec-prereg](https://github.com/SuperInstance/spec-prereg)** — Hash-bound pre-registration of expectation specs: canon/sha256 seal, fnv1a-64 append-only chain, REF
 - **[spectral-cayley](https://github.com/SuperInstance/spectral-cayley)** — Cayley graph spectral analysis: group generators to graph structure to spectral properties, expansio
 - **[spectral-clustering](https://github.com/SuperInstance/spectral-clustering)** — Spectral clustering algorithms using graph Laplacian eigenvalues — normalized cuts, Fiedler partitio
 - **[spectral-control](https://github.com/SuperInstance/spectral-control)** — Spectral controllability analysis for graphs in Rust
@@ -1861,10 +1863,7 @@
 - **[ternary-metrics](https://github.com/SuperInstance/ternary-metrics)** — Performance metrics collection and reporting for ternary systems
 - **[ternary-network](https://github.com/SuperInstance/ternary-network)** — Network science for ternary-weighted graphs
 - **[ternary-norm](https://github.com/SuperInstance/ternary-norm)** — ternary-norm - SuperInstance ecosystem crate
-- **[ternary-observatory](https://github.com/SuperInstance/ternary-observatory)** — Ternary Observatory — Long-range observation and forecasting
 - **[ternary-optimizer](https://github.com/SuperInstance/ternary-optimizer)** — ternary-optimizer - SuperInstance ecosystem crate
-- **[ternary-pagerank](https://github.com/SuperInstance/ternary-pagerank)** — ternary-pagerank  PageRank and centrality measures on ternary-weighted graphs
-- **[ternary-pan](https://github.com/SuperInstance/ternary-pan)** — Pan for ternary {-1, 0, +1} systems — `Pan`
 - **[ternary-pca](https://github.com/SuperInstance/ternary-pca)** — Principal component analysis for ternary data ({-1, 0, +1})
 - **[ternary-percolate](https://github.com/SuperInstance/ternary-percolate)** — Ternary percolation theory: cluster finding, threshold detection, conductance
 - **[ternary-percolation](https://github.com/SuperInstance/ternary-percolation)** — Percolation for ternary systems — `fill_grid`, `percolates`, `cluster_count`, `largest_cluster`
@@ -2030,6 +2029,7 @@
 - **[wasm-verify](https://github.com/SuperInstance/wasm-verify)** — WebAssembly binary analysis, verification, and health reporting library in Rust
 - **[wasserstein-narrative](https://github.com/SuperInstance/wasserstein-narrative)** — Wasserstein distance applied to narrative structure — optimal transport between story embeddings
 - **[wasserstein-ot-c](https://github.com/SuperInstance/wasserstein-ot-c)** — Optimal transport in plain C11 — Sinkhorn, Wasserstein-1/2, barycenter, JKO gradient flow
+- **[wave69](https://github.com/SuperInstance/wave69)** — Wave-69: multi-model cellular paradigm / sticky evolution — Track A dual-cell GAN SUCCESS at preregi
 - **[wavelet-core](https://github.com/SuperInstance/wavelet-core)** — Wavelet transform core library for SuperInstance signal processing
 - **[wesley](https://github.com/SuperInstance/wesley)**
 - **[wesley-cns-adapter](https://github.com/SuperInstance/wesley-cns-adapter)** — Connects Wesley (Granite via Ollama) to the CNS signal bus
