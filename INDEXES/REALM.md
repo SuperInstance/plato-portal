@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-10-04 10:53 UTC
+**Generated:** 2026-10-05 12:02 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -121,6 +121,7 @@
 - **[breed-registry](https://github.com/SuperInstance/breed-registry)** — The Breed Registry: model selection as breeding selection
 - **[brownian-motion](https://github.com/SuperInstance/brownian-motion)** — Brownian motion / Wiener process simulation — stochastic differential equations for financial and ph
 - **[build-guardian](https://github.com/SuperInstance/build-guardian)** — Build Budget Guardian — tracks build resource usage, enforces budgets, detects bloat trends
+- **[businesslog-ai-pages](https://github.com/SuperInstance/businesslog-ai-pages)** — GitHub Pages for businesslog.ai
 - **[bytecode-gen](https://github.com/SuperInstance/bytecode-gen)** — Bytecode generator — emits VM instructions from typed AST for stack-based and register-based VMs
 - **[cache-hierarchy](https://github.com/SuperInstance/cache-hierarchy)** — Multi-level cache hierarchy simulator — L1/L2/L3 with configurable associativity, eviction, and cohe
 - **[canary-3lang](https://github.com/SuperInstance/canary-3lang)** — The FNV-1a 64 polyformalism canary 0x24a555471370b18d in Futhark and BQN, with the Futhark/BQN/Uiua 
@@ -135,6 +136,7 @@
 - **[canon-zoo](https://github.com/SuperInstance/canon-zoo)** — A system prompt for inspiration through play. Hit the button. Watch what happens. Tweak it. Have you
 - **[canonical-form](https://github.com/SuperInstance/canonical-form)** — A Rust library for Canonical Form
 - **[capitaine-1](https://github.com/SuperInstance/capitaine-1)** — Capitaine — fork a repo, click Codespaces, the agent is alive. The repo IS the agent.
+- **[capitaine-ai-pages](https://github.com/SuperInstance/capitaine-ai-pages)** — GitHub Pages for capitaine.ai
 - **[capnp-schema](https://github.com/SuperInstance/capnp-schema)** — A Rust library for Capnp Schema
 - **[captain](https://github.com/SuperInstance/captain)** — Captain agent — fleet commanding vessel, strategic coordination for the Cocapn fleet
 - **[captain-console](https://github.com/SuperInstance/captain-console)**
@@ -174,6 +176,7 @@
 - **[cns-monitor](https://github.com/SuperInstance/cns-monitor)** — Real-time CNS traffic monitor — htop for USCP signals
 - **[cns-substrate](https://github.com/SuperInstance/cns-substrate)** — CNS bus with substrate cell integration. Every USCP packet = substrate cell with prev_hash chain.
 - **[cocapn](https://github.com/SuperInstance/cocapn)** — repo-first Agent for local or cloud. grow an agent in a repo using the repo itself as the muscle-mem
+- **[cocapn-ai-pages](https://github.com/SuperInstance/cocapn-ai-pages)** — GitHub Pages for cocapn.ai
 - **[cocapn-browser-agent](https://github.com/SuperInstance/cocapn-browser-agent)** — Browser-native fleet agent using Chrome's built-in Gemini Nano AI. Zero-install fleet coordination.
 - **[cocapn-cli](https://github.com/SuperInstance/cocapn-cli)** — FLUX constraint safety - cocapn-cli
 - **[cocapn-dashboard](https://github.com/SuperInstance/cocapn-dashboard)** — Live bioluminescent dashboard for the Cocapn AI Fleet. Tracks services, PLATO rooms, knowledge tiles
@@ -249,6 +252,7 @@
 - **[dataflow-analysis](https://github.com/SuperInstance/dataflow-analysis)** — A Rust library for Dataflow_analysis
 - **[debug-dwarf](https://github.com/SuperInstance/debug-dwarf)** — A Rust library for Debug Dwarf
 - **[decentralized-uav-grid](https://github.com/SuperInstance/decentralized-uav-grid)**
+- **[deckboss-ai-pages](https://github.com/SuperInstance/deckboss-ai-pages)** — GitHub Pages for deckboss.ai
 - **[deckboss-app](https://github.com/SuperInstance/deckboss-app)**
 - **[deckboss-site](https://github.com/SuperInstance/deckboss-site)**
 - **[deckhand-rs](https://github.com/SuperInstance/deckhand-rs)** — Rust BM25 retriever. Zero-dep. 10-100x faster than Python.
@@ -263,6 +267,7 @@
 - **[diff-patience](https://github.com/SuperInstance/diff-patience)** — A Rust library for Diff Patience
 - **[dirichlet-process](https://github.com/SuperInstance/dirichlet-process)** — A Rust library for Dirichlet Process
 - **[disjoint-set](https://github.com/SuperInstance/disjoint-set)** — A Rust library for Disjoint Set
+- **[dmlog-ai-pages](https://github.com/SuperInstance/dmlog-ai-pages)** — GitHub Pages for dmlog.ai
 - **[DMLogn8n](https://github.com/SuperInstance/DMLogn8n)** — D&D campaign management design workspace: FastAPI + Postgres + Redis + n8n + parallel Claude Code ag
 - **[document-store](https://github.com/SuperInstance/document-store)** — A Rust library for Document Store
 - **[domain-landing](https://github.com/SuperInstance/domain-landing)** — Reusable landing page Worker — deploy to any custom domain
@@ -344,6 +349,7 @@
 - **[fibonacci-heap](https://github.com/SuperInstance/fibonacci-heap)** — A Rust library for Fibonacci Heap
 - **[fiedler-universal](https://github.com/SuperInstance/fiedler-universal)** — Benchmarking Fiedler vector partition across 6 domains — honest results
 - **[fisher-information](https://github.com/SuperInstance/fisher-information)** — A Rust library for Fisher Information
+- **[fishinglog-ai-pages](https://github.com/SuperInstance/fishinglog-ai-pages)** — GitHub Pages for fishinglog.ai
 - **[fishinglog-ai-site](https://github.com/SuperInstance/fishinglog-ai-site)**
 - **[flac-decoder](https://github.com/SuperInstance/flac-decoder)** — A Rust library for Flac Decoder
 - **[flatbuf-gen](https://github.com/SuperInstance/flatbuf-gen)** — A Rust library for Flatbuf Gen
@@ -428,6 +434,7 @@
 - **[fm-experiments](https://github.com/SuperInstance/fm-experiments)** — Extracted from forgemaster/experiments — Cocapn fleet component
 - **[font-rasterizer](https://github.com/SuperInstance/font-rasterizer)** — A Rust library for Font Rasterizer
 - **[font_atlas_packager](https://github.com/SuperInstance/font_atlas_packager)** — Shape-first glyph rasterizer: ttf outlines → 4x6 subpixel coverage → 24-bit u32 signatures
+- **[forge-portal](https://github.com/SuperInstance/forge-portal)** — One door to every image engine the fleet has: local RV-Hyper on RTX 4050, MMX, Workers AI FLUX, Deep
 - **[forge-quilt](https://github.com/SuperInstance/forge-quilt)** — The Quilt cell kernel as an OpenAPI 3.1 spec — Cloudflare Forge input, and the artifact that makes t
 - **[forgemaster-shell](https://github.com/SuperInstance/forgemaster-shell)** — ⚒️ OpenClaw Power Armor — Don the Forgemaster Shell and become a relentless execution engine
 - **[fourier-optics](https://github.com/SuperInstance/fourier-optics)** — A Rust library for Fourier Optics
@@ -571,6 +578,7 @@
 - **[madlibs-jev](https://github.com/SuperInstance/madlibs-jev)** — SuperInstance fleet wave-67
 - **[magda-core-study](https://github.com/SuperInstance/magda-core-study)**
 - **[magda-tensor](https://github.com/SuperInstance/magda-tensor)** — An open ecosystem for music production.
+- **[makerlog-ai-pages](https://github.com/SuperInstance/makerlog-ai-pages)** — GitHub Pages for makerlog.ai
 - **[marine-gpu-edge](https://github.com/SuperInstance/marine-gpu-edge)** — Novel GPU edge computing for marine sensor fusion — CUDA kernels, MEP protocol, constraint-aware sch
 - **[mavis-axui-feedback](https://github.com/SuperInstance/mavis-axui-feedback)** — Mavis — bidirectional projection: workbook ↔ runtime with typed events, signed commands, polyformali
 - **[mavis-canary-watcher](https://github.com/SuperInstance/mavis-canary-watcher)** — Canary watcher: monitors fleet polyformalism over time, detects drift events.
@@ -601,12 +609,7 @@
 - **[mist-lab](https://github.com/SuperInstance/mist-lab)**
 - **[mist-quilt](https://github.com/SuperInstance/mist-quilt)**
 - **[mist-voice](https://github.com/SuperInstance/mist-voice)**
-- **[mmx-toolkit](https://github.com/SuperInstance/mmx-toolkit)** — 🎵 MiniMax multimodal SDK — speech (332 voices), music generation, vision analysis in one import. Zer
-- **[model-breaking](https://github.com/SuperInstance/model-breaking)** — model-breaking
-- **[model-check](https://github.com/SuperInstance/model-check)** — Model checking tools for formal verification of SuperInstance systems
-- **[model-field-guide](https://github.com/SuperInstance/model-field-guide)** — Forkable model exploration tool with crowd-sourced improvements. Every fork is a reporter.
 - **[model-registry-archive](https://github.com/SuperInstance/model-registry-archive)** — Model registry for LLM artifact management (local + S3 storage, Rust)
-- **[modem-core](https://github.com/SuperInstance/modem-core)** — Software modem core for SuperInstance legacy communication bridges
 - **[modular-arithmetic](https://github.com/SuperInstance/modular-arithmetic)** — See README
 - **[module-registry](https://github.com/SuperInstance/module-registry)** — Module registry for ship-log-search add-ons
 - **[monte-carlo-rs](https://github.com/SuperInstance/monte-carlo-rs)** — Monte Carlo methods: uniform sampling, importance sampling, rejection sampling, MC integration, vari
@@ -634,6 +637,7 @@
 - **[multi-armed-bandit](https://github.com/SuperInstance/multi-armed-bandit)** — [package]
 - **[multi-model-adversarial-testing](https://github.com/SuperInstance/multi-model-adversarial-testing)** — What four AI models found wrong with our code: multi-model adversarial testing methodology for safet
 - **[multiagent-project-archive](https://github.com/SuperInstance/multiagent-project-archive)** — Slice-of-life snapshot of a meta-circular multi-agent orchestration framework — built by 4 parallel 
+- **[murex](https://github.com/SuperInstance/murex)** — A smarter shell and scripting environment with advanced features designed for usability, safety and 
 - **[Murmur](https://github.com/SuperInstance/Murmur)** — Knowledge Tensors for self-improving agents
 - **[murmur-agent](https://github.com/SuperInstance/murmur-agent)** — All-night thinking git-agent — drop into any project, point it at a topic, let it think. TypeScript 
 - **[murmur-protocol](https://github.com/SuperInstance/murmur-protocol)** — Gossip protocol — standalone murmur communication for the Grand Pattern
@@ -1529,6 +1533,7 @@
 - **[slackwater-substrate](https://github.com/SuperInstance/slackwater-substrate)** — Multi-track MIDI perception with substrate cell integration. Each event = substrate cell with prev_h
 - **[slackwater-tempo](https://github.com/SuperInstance/slackwater-tempo)** — Modular component of the Slackwater spatial-temporal AI agent framework
 - **[slackwater-tminus](https://github.com/SuperInstance/slackwater-tminus)** — Modular component of the Slackwater spatial-temporal AI agent framework
+- **[slackwater-tools](https://github.com/SuperInstance/slackwater-tools)** — Modular tooling extracted from the Slackwater design archive: multi-model roundtable pipelines, MOLT
 - **[slam-core](https://github.com/SuperInstance/slam-core)** — SLAM (Simultaneous Localization and Mapping) core for SuperInstance robotics
 - **[smart-404](https://github.com/SuperInstance/smart-404)** — Smart 404 page with semantic search and did-you-mean
 - **[SmartCRDT](https://github.com/SuperInstance/SmartCRDT)** — Utilizing CRDT technology for self-improving AI
@@ -1603,6 +1608,7 @@
 - **[streamer](https://github.com/SuperInstance/streamer)** — Audio streaming muxer with scheduling and crossfades
 - **[study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)** — Auto-created for sync 2026-08-13
 - **[study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)** — Auto-created for sync 2026-08-13
+- **[studylog-ai-pages](https://github.com/SuperInstance/studylog-ai-pages)** — GitHub Pages for studylog.ai
 - **[subleq-fabric](https://github.com/SuperInstance/subleq-fabric)** — Single-instruction execution substrate (SUBLEQ): code is an integer array, self-healing is a conditi
 - **[substrate-attest](https://github.com/SuperInstance/substrate-attest)** — ATTEST opcode (R10): add a trust score to an observation. Witness-typed.
 - **[substrate-attest-rs](https://github.com/SuperInstance/substrate-attest-rs)** — substrate-attest Rust crate - substrate observation primitive
@@ -1648,6 +1654,7 @@
 - **[superinstance-design-system](https://github.com/SuperInstance/superinstance-design-system)**
 - **[superinstance-ecosystem](https://github.com/SuperInstance/superinstance-ecosystem)** — The agent operating system — four layers that compose
 - **[superinstance-embedder](https://github.com/SuperInstance/superinstance-embedder)** — 32-dimensional embeddings for 560+ SuperInstance crates. Seeds Cloudflare Vectorize for semantic sea
+- **[superinstance-lab](https://github.com/SuperInstance/superinstance-lab)** — SuperInstance lab wave-67 (pushed by push_all.sh)
 - **[SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)** — Automatically Deconstruct logic into Spread Sheet Tiles and Cells, Instances Interconnected w/ Origi
 - **[superinstance-polyformalism-harness](https://github.com/SuperInstance/superinstance-polyformalism-harness)** — Unified harness for the 7-port polyformalism fleet — byte-exact canary verification
 - **[superinstance-protocol](https://github.com/SuperInstance/superinstance-protocol)** — Hybrid Bottle wire protocol — JSON envelope + msgpack payload with ternary conservation auditing for
@@ -1724,17 +1731,8 @@
 - **[ternary-norm](https://github.com/SuperInstance/ternary-norm)** — ternary-norm - SuperInstance ecosystem crate
 - **[ternary-optimizer](https://github.com/SuperInstance/ternary-optimizer)** — ternary-optimizer - SuperInstance ecosystem crate
 - **[ternary-paxos](https://github.com/SuperInstance/ternary-paxos)** — Simplified Paxos consensus for GPU cluster decisions with ternary votes. Proposer/Acceptor/Learner r
-- **[ternary-pca](https://github.com/SuperInstance/ternary-pca)** — Principal component analysis for ternary data ({-1, 0, +1})
-- **[ternary-percolate](https://github.com/SuperInstance/ternary-percolate)** — Ternary percolation theory: cluster finding, threshold detection, conductance
-- **[ternary-percolation](https://github.com/SuperInstance/ternary-percolation)** — Percolation for ternary systems — `fill_grid`, `percolates`, `cluster_count`, `largest_cluster`
 - **[ternary-permutation](https://github.com/SuperInstance/ternary-permutation)** — Permutation groups acting on ternary vectors
-- **[ternary-petri](https://github.com/SuperInstance/ternary-petri)** — Petri for ternary {-1, 0, +1} systems — `Transition`
-- **[ternary-phase](https://github.com/SuperInstance/ternary-phase)** — ternary-phase Phase relationships between ternary oscillators
-- **[ternary-pheromone-market](https://github.com/SuperInstance/ternary-pheromone-market)** — Autonomous GPU load balancing via ternary pheromone markets. Emergent coordination without central s
 - **[ternary-pid](https://github.com/SuperInstance/ternary-pid)** — Ternary PID controller: continuous PID with ternary output {-1, 0, +1}
-- **[ternary-pilgrim](https://github.com/SuperInstance/ternary-pilgrim)** — Journey patterns and pilgrimage routes through fleet rooms
-- **[ternary-pipeline](https://github.com/SuperInstance/ternary-pipeline)** — Composable pipelines for ternary data processing
-- **[ternary-pipeline-parallel](https://github.com/SuperInstance/ternary-pipeline-parallel)** — Pipeline parallelism for ternary models
 - **[ternary-planning](https://github.com/SuperInstance/ternary-planning)** — Planning and scheduling with ternary priorities
 - **[ternary-platoon](https://github.com/SuperInstance/ternary-platoon)** — Group formation and coordinated movement for ternary agents
 - **[ternary-polyrhythm](https://github.com/SuperInstance/ternary-polyrhythm)** — ternary-polyrhythm Multiple simultaneous rhythmic patterns with ternary support
@@ -2011,6 +2009,8 @@
 - **[young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)** — Research-grade Rust crate
 - **[zeitgeist-protocol](https://github.com/SuperInstance/zeitgeist-protocol)** — Extracted from forgemaster/zeitgeist-protocol — Cocapn fleet component
 - **[zero-knowledge](https://github.com/SuperInstance/zero-knowledge)** — Zero-knowledge proof primitives: Schnorr, DLEQ, range proofs, sigma protocols, Fiat-Shamir
+- **[zero-msg-test](https://github.com/SuperInstance/zero-msg-test)**
+- **[zero-poc](https://github.com/SuperInstance/zero-poc)** — Purple Pincher Zero — the minimal git-native agent template. Fork it, register it, and it starts wor
 - **[zeroclaw-arena](https://github.com/SuperInstance/zeroclaw-arena)** — ZeroClaw agents learn text-based games algorithmically — no neural nets, just vectors + patterns + e
 - **[zeroclaw-dissertation](https://github.com/SuperInstance/zeroclaw-dissertation)**
 - **[zeroclaw-plato](https://github.com/SuperInstance/zeroclaw-plato)** — 3-agent zeroclaw loop posting to PLATO rooms
