@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-05 12:02 UTC
+**Generated:** 2026-10-06 11:46 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -494,6 +494,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [jev-ultrafast-quilt](https://github.com/SuperInstance/jev-ultrafast-quilt)
 - [lau-conservation-experiment](https://github.com/SuperInstance/lau-conservation-experiment)
 - [lau-hodge-theory](https://github.com/SuperInstance/lau-hodge-theory)
+- [ledger-continuity](https://github.com/SuperInstance/ledger-continuity)
 - [luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)
 - [luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)
 - [lucineer-flagship](https://github.com/SuperInstance/lucineer-flagship)
@@ -765,7 +766,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-harbor](https://github.com/SuperInstance/ternary-harbor)
 - [ternary-inference](https://github.com/SuperInstance/ternary-inference)
 - [ternary-memory](https://github.com/SuperInstance/ternary-memory)
-- [ternary-platoon](https://github.com/SuperInstance/ternary-platoon)
 - [ternary-popgen](https://github.com/SuperInstance/ternary-popgen)
 - [ternary-protocol](https://github.com/SuperInstance/ternary-protocol)
 - [ternary-replay](https://github.com/SuperInstance/ternary-replay)
@@ -1057,7 +1057,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [substrate-game-engine](https://github.com/SuperInstance/substrate-game-engine)
 - [superinstance-api](https://github.com/SuperInstance/superinstance-api)
 - [superinstance-architecture](https://github.com/SuperInstance/superinstance-architecture)
-- [ternary-platoon](https://github.com/SuperInstance/ternary-platoon)
 - [ternary-rack](https://github.com/SuperInstance/ternary-rack)
 - [ternary-room](https://github.com/SuperInstance/ternary-room)
 - [terrain](https://github.com/SuperInstance/terrain)
@@ -1190,6 +1189,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)
 - [CrashPilot](https://github.com/SuperInstance/CrashPilot)
 - [Edge-Native](https://github.com/SuperInstance/Edge-Native)
+- [Evolver](https://github.com/SuperInstance/Evolver)
 - [F5-TTS](https://github.com/SuperInstance/F5-TTS)
 - [FastGen4quilt](https://github.com/SuperInstance/FastGen4quilt)
 - [Full-stack-Free-Movie-Streaming-Website](https://github.com/SuperInstance/Full-stack-Free-Movie-Streaming-Website)
@@ -1264,6 +1264,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [branch-prediction](https://github.com/SuperInstance/branch-prediction)
 - [breakthrough-prospector](https://github.com/SuperInstance/breakthrough-prospector)
 - [breed-registry](https://github.com/SuperInstance/breed-registry)
+- [brief-assembler](https://github.com/SuperInstance/brief-assembler)
 - [brownian-motion](https://github.com/SuperInstance/brownian-motion)
 - [businesslog-ai-pages](https://github.com/SuperInstance/businesslog-ai-pages)
 - [cache-hierarchy](https://github.com/SuperInstance/cache-hierarchy)
@@ -1540,7 +1541,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [mist-lab](https://github.com/SuperInstance/mist-lab)
 - [mist-quilt](https://github.com/SuperInstance/mist-quilt)
 - [model-registry-archive](https://github.com/SuperInstance/model-registry-archive)
-- [modular-arithmetic](https://github.com/SuperInstance/modular-arithmetic)
 - [module-registry](https://github.com/SuperInstance/module-registry)
 - [monte-carlo-rs](https://github.com/SuperInstance/monte-carlo-rs)
 - [morphic-canvas](https://github.com/SuperInstance/morphic-canvas)
@@ -2055,6 +2055,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [step-back-operator](https://github.com/SuperInstance/step-back-operator)
 - [step-back-topology](https://github.com/SuperInstance/step-back-topology)
 - [stock-screener](https://github.com/SuperInstance/stock-screener)
+- [stream-curator](https://github.com/SuperInstance/stream-curator)
 - [streamer](https://github.com/SuperInstance/streamer)
 - [study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)
 - [study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)
@@ -2142,8 +2143,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-optimizer](https://github.com/SuperInstance/ternary-optimizer)
 - [ternary-permutation](https://github.com/SuperInstance/ternary-permutation)
 - [ternary-pid](https://github.com/SuperInstance/ternary-pid)
-- [ternary-planning](https://github.com/SuperInstance/ternary-planning)
-- [ternary-polyrhythm](https://github.com/SuperInstance/ternary-polyrhythm)
 - [ternary-pool](https://github.com/SuperInstance/ternary-pool)
 - [ternary-predict](https://github.com/SuperInstance/ternary-predict)
 - [ternary-projection](https://github.com/SuperInstance/ternary-projection)
