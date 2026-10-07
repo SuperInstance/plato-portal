@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-10-06 11:46 UTC
+**Generated:** 2026-10-07 11:31 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -59,6 +59,7 @@
 - **[adinkra-math-pypi](https://github.com/SuperInstance/adinkra-math-pypi)** — West African Adinkra symbolic encoding + SUSY adinkras for data scientists
 - **[agent-field](https://github.com/SuperInstance/agent-field)** — Extracted from plato-training
 - **[agent-handoff](https://github.com/SuperInstance/agent-handoff)** — Generational handoff documents for SuperInstance AI agents — bootstrap briefs and lessons carried be
+- **[agent-inbox](https://github.com/SuperInstance/agent-inbox)** — Hooks and drops: a git-native task queue for agents that don't share a chat channel.
 - **[agent-loop](https://github.com/SuperInstance/agent-loop)** — Self-improving local pair-programming loop — one file, zero deps, persistent style memory
 - **[agent-memory](https://github.com/SuperInstance/agent-memory)** — Three-tier memory for AI agents: short-term (LRU), working (KV store), and long-term (vector-indexed
 - **[agent-operations](https://github.com/SuperInstance/agent-operations)** — Patterns and protocols for multi-agent operations on large codebases — reliability analysis, task te
@@ -66,6 +67,7 @@
 - **[agent-priming](https://github.com/SuperInstance/agent-priming)** — The Mechanic Doctrine — a system prompt for LLMs/agents serving human users who are vibe-coding. Liv
 - **[agent-priming-toolkit](https://github.com/SuperInstance/agent-priming-toolkit)** — The Agent Priming Toolkit — 4 layers, 3 jobs, JSON Schema, streaming. For LLM agents landing at live
 - **[agent-priming-toolkit-pkg](https://github.com/SuperInstance/agent-priming-toolkit-pkg)** — PyPI distribution of agent-priming-toolkit (F165: 4 layers, 3 jobs, JSON Schema).
+- **[agent-tiles](https://github.com/SuperInstance/agent-tiles)** — Public distillation of agent-to-agent communication tiles: mad-lib templates for briefing, handoffs,
 - **[agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)**
 - **[AgentCompute](https://github.com/SuperInstance/AgentCompute)** — Thin agent-facing CLI over the quilt MCP server: serve sheets, list cells, call capabilities. Stdlib
 - **[AgentGossip](https://github.com/SuperInstance/AgentGossip)** — AgentGossip is a distributed, real-time data processing engine that utilizes intelligent clustering 
@@ -459,6 +461,7 @@
 - **[git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)** — One-click Codespace template for git-agent runtime development
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
 - **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** — 🔮 The repo IS the world. Commits ARE actions. Zero server MUD.
+- **[git.pp](https://github.com/SuperInstance/git.pp)** — git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa
 - **[glyphcast](https://github.com/SuperInstance/glyphcast)** — Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as 
 - **[glyphspace](https://github.com/SuperInstance/glyphspace)** — Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje
 - **[glyphtensor](https://github.com/SuperInstance/glyphtensor)**
@@ -518,6 +521,7 @@
 - **[jev-gan-cli](https://github.com/SuperInstance/jev-gan-cli)** — Unified CLI for the JEV-GAN family of tools (diffusion, gallery, madlibs, edges).
 - **[jev-garden](https://github.com/SuperInstance/jev-garden)** — The living JEV training system — grows from quilt judgments, idle-compiles its ExoJ into weave artif
 - **[jev-harness](https://github.com/SuperInstance/jev-harness)** — A client for TypeSafe.ai Jev that cannot fail quietly — preflight contract checks, structured scorin
+- **[jev-ideation](https://github.com/SuperInstance/jev-ideation)** — Jev ideation: multiple models picking at the frontier concepts — the reptilian layer, floating gates
 - **[jev-net](https://github.com/SuperInstance/jev-net)** — A neural network whose neurons are JEV calls — prism projection, hebbian weights, spawn-triggered it
 - **[jev-net-worker](https://github.com/SuperInstance/jev-net-worker)** — Hosted JEV neural net on Cloudflare — learns from every call, self-plays nightly, serves bootable le
 - **[jev-paint-quilt](https://github.com/SuperInstance/jev-paint-quilt)**
@@ -574,6 +578,7 @@
 - **[lucineer-roblox](https://github.com/SuperInstance/lucineer-roblox)** — 🎮 Lucineer Roblox client — Lua modules for in-game AI companion with live build execution
 - **[lucineer-system](https://github.com/SuperInstance/lucineer-system)** — ⚒️ Lucineer — persistent AI game-building companion. Lives in Roblox, browser, and Godot. Remembers 
 - **[lucineer-vector](https://github.com/SuperInstance/lucineer-vector)** — 🧬 Semantic skill search for Lucineer — Vectorize index with 10 seeded Luau build patterns
+- **[lucineer-workspace](https://github.com/SuperInstance/lucineer-workspace)** — Lucineer workspace: process, decisions, and structured knowledge from the zero-shot visitor audit, t
 - **[Luma](https://github.com/SuperInstance/Luma)** — Systems programming language agent — low-level compiled alternative to C with static analysis. Boota
 - **[madlibs-gan](https://github.com/SuperInstance/madlibs-gan)** — MADLIBS on a higher abstraction — models fill in paradigms from other models in a GAN game.
 - **[madlibs-gan-npm](https://github.com/SuperInstance/madlibs-gan-npm)** — MADLIBS-GAN: higher-abstraction Madlibs for AI paradigms.
@@ -614,9 +619,7 @@
 - **[mist-voice](https://github.com/SuperInstance/mist-voice)**
 - **[model-registry-archive](https://github.com/SuperInstance/model-registry-archive)** — Model registry for LLM artifact management (local + S3 storage, Rust)
 - **[module-registry](https://github.com/SuperInstance/module-registry)** — Module registry for ship-log-search add-ons
-- **[monte-carlo-rs](https://github.com/SuperInstance/monte-carlo-rs)** — Monte Carlo methods: uniform sampling, importance sampling, rejection sampling, MC integration, vari
 - **[morphic-canvas](https://github.com/SuperInstance/morphic-canvas)**
-- **[morphogenesis](https://github.com/SuperInstance/morphogenesis)** — Morphogenesis simulator for SuperInstance biological modeling
 - **[morse-theory](https://github.com/SuperInstance/morse-theory)** — Morse theory on manifolds — critical points, Morse complex, handle attachments
 - **[moth-cells](https://github.com/SuperInstance/moth-cells)** — Kernel 1: cellular predation over corpus terrain — hunters, energy, decoys, receipted walks
 - **[moth-corpus](https://github.com/SuperInstance/moth-corpus)** — Corpus adapter pack: turn target repos into receipted attack-surface maps
@@ -987,6 +990,7 @@
 - **[quantum-coin](https://github.com/SuperInstance/quantum-coin)** — 0.1.0
 - **[quantum-thermo](https://github.com/SuperInstance/quantum-thermo)** — Quantum thermodynamics: quantum limits on computation, heat, and information
 - **[query-plan](https://github.com/SuperInstance/query-plan)** — Research-grade Rust crate
+- **[question-tree](https://github.com/SuperInstance/question-tree)** — Question-tree memory for a git agent: folders are questions, leaves are tools. The agent builds the 
 - **[queueing-theory](https://github.com/SuperInstance/queueing-theory)** — Queueing theory in Rust — M/M/1, M/M/c, Erlang, Jackson networks, priority queues. Model capacity be
 - **[quf-vhdl](https://github.com/SuperInstance/quf-vhdl)** — VHDL-2008 port of the Quilt Universal Format (QUF) — 5th substrate in the polyformalism, byte-exact 
 - **[quicunnel](https://github.com/SuperInstance/quicunnel)** — High-performance QUIC tunnel with mTLS authentication and automatic reconnection
@@ -1418,6 +1422,7 @@
 - **[seed-tick-audit](https://github.com/SuperInstance/seed-tick-audit)** — Multi-model fleet analysis — 9-model climbing tournament, 30K+ PLATO tiles validated
 - **[segment-tree-rs](https://github.com/SuperInstance/segment-tree-rs)** — Segment tree with point updates, range queries (sum/min/max/gcd), and lazy propagation
 - **[selectlib](https://github.com/SuperInstance/selectlib)** — Choosing which cells to touch, and proving you chose well. Controls run before any number is produce
+- **[self-assembly](https://github.com/SuperInstance/self-assembly)** — Self-assembling agent systems: designs, council, bridge spec, and sanitized proof-of-concept builds.
 - **[self-improving-band](https://github.com/SuperInstance/self-improving-band)** — Self-improving autonomous musical AI ensemble — t-minus timing, SIA spectral identity, conservation 
 - **[semantic-field](https://github.com/SuperInstance/semantic-field)** — Force fields in embedding space for semantic navigation and manipulation
 - **[sensor-bridge](https://github.com/SuperInstance/sensor-bridge)** — MQTT-based sensor bridge connecting ESP32 hardware devices to the exocortex
@@ -1736,12 +1741,6 @@
 - **[ternary-paxos](https://github.com/SuperInstance/ternary-paxos)** — Simplified Paxos consensus for GPU cluster decisions with ternary votes. Proposer/Acceptor/Learner r
 - **[ternary-permutation](https://github.com/SuperInstance/ternary-permutation)** — Permutation groups acting on ternary vectors
 - **[ternary-pid](https://github.com/SuperInstance/ternary-pid)** — Ternary PID controller: continuous PID with ternary output {-1, 0, +1}
-- **[ternary-pool](https://github.com/SuperInstance/ternary-pool)** — Ternary pooling operations for {-1, 0, +1} matrices
-- **[ternary-popgen](https://github.com/SuperInstance/ternary-popgen)** — Population genetics for ternary agent systems
-- **[ternary-predict](https://github.com/SuperInstance/ternary-predict)** — Prediction-first perception — simulation drives, sensors confirm
-- **[ternary-priority-queue](https://github.com/SuperInstance/ternary-priority-queue)** — Priority queue for GPU kernel scheduling with ternary scoring. {-1=deprioritize, 0=normal, +1=priori
-- **[ternary-projection](https://github.com/SuperInstance/ternary-projection)** — ternary-projection  Dimensionality reduction techniques adapted for ternary data (`-1`, `0`, `+1`)
-- **[ternary-proof](https://github.com/SuperInstance/ternary-proof)** — Ternary proof system: verification returns {-1=invalid, 0=inconclusive, +1=valid}
 - **[ternary-prophet](https://github.com/SuperInstance/ternary-prophet)** — Prediction and forecasting with uncertainty for ternary state systems
 - **[ternary-protocol](https://github.com/SuperInstance/ternary-protocol)** — ternary-protocol  Wire protocol for communication between ternary agents — message passing, ser...
 - **[ternary-prune](https://github.com/SuperInstance/ternary-prune)** — Ternary network pruning. When every weight is ±1, you prune uncertainty — flip counts, gradient weak
@@ -1933,6 +1932,7 @@
 - **[tzpro-agent](https://github.com/SuperInstance/tzpro-agent)** — First sensor node of the FishingLog.ai ecosystem. Watches the TZ Pro sounder, reads the bottom, lear
 - **[UniRL](https://github.com/SuperInstance/UniRL)** — UniRL is a Framework for Unified Multimodal Model Reinforcement Learning
 - **[universe-chain](https://github.com/SuperInstance/universe-chain)** — Signal Chain Thesis - universe-chain
+- **[unoq-node](https://github.com/SuperInstance/unoq-node)** — Git-native bodies: Arduino Uno Q node package
 - **[unspoken-resonance](https://github.com/SuperInstance/unspoken-resonance)** — SuperInstance fleet wave-67
 - **[urban-transportation-system](https://github.com/SuperInstance/urban-transportation-system)** — Quilt-compatible urban transit routing — routing as cell-graph operations (5+1 opcodes; original by 
 - **[usemeter-archive](https://github.com/SuperInstance/usemeter-archive)** — Usage metering and billing aggregation library (Rust)
