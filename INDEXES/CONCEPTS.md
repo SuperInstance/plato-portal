@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-07 11:31 UTC
+**Generated:** 2026-10-08 11:46 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -26,7 +26,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Bottle Protocol
 
+- [bottle-seed](https://github.com/SuperInstance/bottle-seed)
 - [cell-router-pkg](https://github.com/SuperInstance/cell-router-pkg)
+- [dad-son-channel](https://github.com/SuperInstance/dad-son-channel)
 - [fleet-bottles](https://github.com/SuperInstance/fleet-bottles)
 - [fleet-murmur](https://github.com/SuperInstance/fleet-murmur)
 - [quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)
@@ -109,6 +111,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Crdt
 
 - [SmartCRDT](https://github.com/SuperInstance/SmartCRDT)
+- [anti-gan-test](https://github.com/SuperInstance/anti-gan-test)
 - [crdt-gcounter](https://github.com/SuperInstance/crdt-gcounter)
 - [crdt-gset](https://github.com/SuperInstance/crdt-gset)
 - [crdt-lwwreg](https://github.com/SuperInstance/crdt-lwwreg)
@@ -257,8 +260,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-metal](https://github.com/SuperInstance/quilt-metal)
 - [slackwater-forge](https://github.com/SuperInstance/slackwater-forge)
 - [ternary-paxos](https://github.com/SuperInstance/ternary-paxos)
-- [ternary-rate-limiter](https://github.com/SuperInstance/ternary-rate-limiter)
-- [ternary-reassembly](https://github.com/SuperInstance/ternary-reassembly)
 - [ternary-register-file](https://github.com/SuperInstance/ternary-register-file)
 - [ternary-retry](https://github.com/SuperInstance/ternary-retry)
 - [ternary-search-index](https://github.com/SuperInstance/ternary-search-index)
@@ -511,7 +512,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [mavis-pincher](https://github.com/SuperInstance/mavis-pincher)
 - [mavis-pincher-pages](https://github.com/SuperInstance/mavis-pincher-pages)
 - [mavis-workspace](https://github.com/SuperInstance/mavis-workspace)
-- [mud-agent](https://github.com/SuperInstance/mud-agent)
 - [mud-arena](https://github.com/SuperInstance/mud-arena)
 - [mud-engine](https://github.com/SuperInstance/mud-engine)
 - [mud2scummvm](https://github.com/SuperInstance/mud2scummvm)
@@ -525,6 +525,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [nerve-agent](https://github.com/SuperInstance/nerve-agent)
 - [nexus-edge-runtime](https://github.com/SuperInstance/nexus-edge-runtime)
 - [nexus-git-agent](https://github.com/SuperInstance/nexus-git-agent)
+- [nursery](https://github.com/SuperInstance/nursery)
 - [open-terminal](https://github.com/SuperInstance/open-terminal)
 - [openconstruct-abi](https://github.com/SuperInstance/openconstruct-abi)
 - [openconstruct-cs](https://github.com/SuperInstance/openconstruct-cs)
@@ -681,6 +682,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [scheduling-rs](https://github.com/SuperInstance/scheduling-rs)
 - [screen-agent](https://github.com/SuperInstance/screen-agent)
 - [scummvm-prototype](https://github.com/SuperInstance/scummvm-prototype)
+- [seed](https://github.com/SuperInstance/seed)
 - [seed-tick-audit](https://github.com/SuperInstance/seed-tick-audit)
 - [self-assembly](https://github.com/SuperInstance/self-assembly)
 - [sheaf-agents](https://github.com/SuperInstance/sheaf-agents)
@@ -770,7 +772,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-harbor](https://github.com/SuperInstance/ternary-harbor)
 - [ternary-inference](https://github.com/SuperInstance/ternary-inference)
 - [ternary-memory](https://github.com/SuperInstance/ternary-memory)
-- [ternary-protocol](https://github.com/SuperInstance/ternary-protocol)
 - [ternary-replay](https://github.com/SuperInstance/ternary-replay)
 - [ternary-resonance](https://github.com/SuperInstance/ternary-resonance)
 - [ternary-sandbox](https://github.com/SuperInstance/ternary-sandbox)
@@ -815,6 +816,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [workspace-rescue](https://github.com/SuperInstance/workspace-rescue)
 - [yoneda](https://github.com/SuperInstance/yoneda)
 - [zeitgeist-protocol](https://github.com/SuperInstance/zeitgeist-protocol)
+- [zero-innate](https://github.com/SuperInstance/zero-innate)
 - [zero-poc](https://github.com/SuperInstance/zero-poc)
 - [zeroclaw-arena](https://github.com/SuperInstance/zeroclaw-arena)
 - [zeroclaw-plato](https://github.com/SuperInstance/zeroclaw-plato)
@@ -1061,7 +1063,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [substrate-game-engine](https://github.com/SuperInstance/substrate-game-engine)
 - [superinstance-api](https://github.com/SuperInstance/superinstance-api)
 - [superinstance-architecture](https://github.com/SuperInstance/superinstance-architecture)
-- [ternary-rack](https://github.com/SuperInstance/ternary-rack)
 - [ternary-room](https://github.com/SuperInstance/ternary-room)
 - [terrain](https://github.com/SuperInstance/terrain)
 - [tile-chain](https://github.com/SuperInstance/tile-chain)
@@ -1172,14 +1173,14 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 ## Ttl
 
+- [bottle-seed](https://github.com/SuperInstance/bottle-seed)
 - [cell-router-pkg](https://github.com/SuperInstance/cell-router-pkg)
+- [dad-son-channel](https://github.com/SuperInstance/dad-son-channel)
 - [fleet-bottles](https://github.com/SuperInstance/fleet-bottles)
 - [fleet-murmur](https://github.com/SuperInstance/fleet-murmur)
 - [moth-runner](https://github.com/SuperInstance/moth-runner)
 - [quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)
 - [superinstance-protocol](https://github.com/SuperInstance/superinstance-protocol)
-- [ternary-rate-limiter](https://github.com/SuperInstance/ternary-rate-limiter)
-- [ternary-reassembly](https://github.com/SuperInstance/ternary-reassembly)
 - [topological-flow](https://github.com/SuperInstance/topological-flow)
 - [training-throttle](https://github.com/SuperInstance/training-throttle)
 
@@ -1298,6 +1299,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [cgroup-monitor](https://github.com/SuperInstance/cgroup-monitor)
 - [change-point](https://github.com/SuperInstance/change-point)
 - [channel-model](https://github.com/SuperInstance/channel-model)
+- [character-tensor](https://github.com/SuperInstance/character-tensor)
 - [chart-system](https://github.com/SuperInstance/chart-system)
 - [chiaroscuro](https://github.com/SuperInstance/chiaroscuro)
 - [circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)
@@ -1426,6 +1428,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [flow-state](https://github.com/SuperInstance/flow-state)
 - [flow-state-orchestra](https://github.com/SuperInstance/flow-state-orchestra)
 - [font-rasterizer](https://github.com/SuperInstance/font-rasterizer)
+- [forge-seed](https://github.com/SuperInstance/forge-seed)
 - [forgemaster-shell](https://github.com/SuperInstance/forgemaster-shell)
 - [fourier-optics](https://github.com/SuperInstance/fourier-optics)
 - [fragment-reassembler](https://github.com/SuperInstance/fragment-reassembler)
@@ -1435,6 +1438,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fundamental-group](https://github.com/SuperInstance/fundamental-group)
 - [fuzz-engine](https://github.com/SuperInstance/fuzz-engine)
 - [ga4444](https://github.com/SuperInstance/ga4444)
+- [garden-seed](https://github.com/SuperInstance/garden-seed)
 - [gauge](https://github.com/SuperInstance/gauge)
 - [gauss-markov](https://github.com/SuperInstance/gauss-markov)
 - [gesture-kit](https://github.com/SuperInstance/gesture-kit)
@@ -1455,6 +1459,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [graph-astar](https://github.com/SuperInstance/graph-astar)
 - [graph-bellman-ford](https://github.com/SuperInstance/graph-bellman-ford)
 - [gravity-well-protocol](https://github.com/SuperInstance/gravity-well-protocol)
+- [harbor-seed](https://github.com/SuperInstance/harbor-seed)
 - [headspace-rs](https://github.com/SuperInstance/headspace-rs)
 - [hermes-chronicle](https://github.com/SuperInstance/hermes-chronicle)
 - [hermes-cloudflare](https://github.com/SuperInstance/hermes-cloudflare)
@@ -1489,6 +1494,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [jev-paint-quilt](https://github.com/SuperInstance/jev-paint-quilt)
 - [jev-quilt](https://github.com/SuperInstance/jev-quilt)
 - [jev-receipts](https://github.com/SuperInstance/jev-receipts)
+- [jev-semantic](https://github.com/SuperInstance/jev-semantic)
 - [jev-turbovec](https://github.com/SuperInstance/jev-turbovec)
 - [jeviter](https://github.com/SuperInstance/jeviter)
 - [kennel](https://github.com/SuperInstance/kennel)
@@ -1502,6 +1508,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [laya4quilt](https://github.com/SuperInstance/laya4quilt)
 - [lever-runner](https://github.com/SuperInstance/lever-runner)
 - [lexical-substrate](https://github.com/SuperInstance/lexical-substrate)
+- [lighthouse-seed](https://github.com/SuperInstance/lighthouse-seed)
 - [lineage-tracker](https://github.com/SuperInstance/lineage-tracker)
 - [lingbot-map](https://github.com/SuperInstance/lingbot-map)
 - [live-canon-gh](https://github.com/SuperInstance/live-canon-gh)
@@ -1549,7 +1556,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [model-registry-archive](https://github.com/SuperInstance/model-registry-archive)
 - [module-registry](https://github.com/SuperInstance/module-registry)
 - [morphic-canvas](https://github.com/SuperInstance/morphic-canvas)
-- [morse-theory](https://github.com/SuperInstance/morse-theory)
 - [moth-cells](https://github.com/SuperInstance/moth-cells)
 - [moth-corpus](https://github.com/SuperInstance/moth-corpus)
 - [moth-honest](https://github.com/SuperInstance/moth-honest)
@@ -1557,7 +1563,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [moth-jev-lab](https://github.com/SuperInstance/moth-jev-lab)
 - [moth-ledger](https://github.com/SuperInstance/moth-ledger)
 - [moth-waveform](https://github.com/SuperInstance/moth-waveform)
-- [motion-planning](https://github.com/SuperInstance/motion-planning)
 - [mud-terminal](https://github.com/SuperInstance/mud-terminal)
 - [mudra-bridge-core](https://github.com/SuperInstance/mudra-bridge-core)
 - [mudra-vessel-bridge-pkg](https://github.com/SuperInstance/mudra-vessel-bridge-pkg)
@@ -2147,11 +2152,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-optimizer](https://github.com/SuperInstance/ternary-optimizer)
 - [ternary-permutation](https://github.com/SuperInstance/ternary-permutation)
 - [ternary-pid](https://github.com/SuperInstance/ternary-pid)
-- [ternary-prophet](https://github.com/SuperInstance/ternary-prophet)
-- [ternary-prune](https://github.com/SuperInstance/ternary-prune)
-- [ternary-quantize](https://github.com/SuperInstance/ternary-quantize)
-- [ternary-quantum](https://github.com/SuperInstance/ternary-quantum)
-- [ternary-reef](https://github.com/SuperInstance/ternary-reef)
 - [ternary-regex](https://github.com/SuperInstance/ternary-regex)
 - [ternary-registry](https://github.com/SuperInstance/ternary-registry)
 - [ternary-registry-v2](https://github.com/SuperInstance/ternary-registry-v2)
