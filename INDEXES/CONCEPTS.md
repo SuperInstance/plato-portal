@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-09 11:39 UTC
+**Generated:** 2026-10-10 10:57 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -91,6 +91,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [plato-papers](https://github.com/SuperInstance/plato-papers)
 - [polyformalism](https://github.com/SuperInstance/polyformalism)
 - [ptx-room](https://github.com/SuperInstance/ptx-room)
+- [quilt-cells](https://github.com/SuperInstance/quilt-cells)
 - [recovered-copy-20260824-Constraint-Theory](https://github.com/SuperInstance/recovered-copy-20260824-Constraint-Theory)
 - [rg-flow](https://github.com/SuperInstance/rg-flow)
 - [roadmaps](https://github.com/SuperInstance/roadmaps)
@@ -260,7 +261,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-metal](https://github.com/SuperInstance/quilt-metal)
 - [slackwater-forge](https://github.com/SuperInstance/slackwater-forge)
 - [ternary-paxos](https://github.com/SuperInstance/ternary-paxos)
-- [ternary-retry](https://github.com/SuperInstance/ternary-retry)
 - [ternary-search-index](https://github.com/SuperInstance/ternary-search-index)
 - [ternary-semaphore](https://github.com/SuperInstance/ternary-semaphore)
 - [ternary-shard](https://github.com/SuperInstance/ternary-shard)
@@ -774,7 +774,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-harbor](https://github.com/SuperInstance/ternary-harbor)
 - [ternary-inference](https://github.com/SuperInstance/ternary-inference)
 - [ternary-memory](https://github.com/SuperInstance/ternary-memory)
-- [ternary-resonance](https://github.com/SuperInstance/ternary-resonance)
 - [ternary-sandbox](https://github.com/SuperInstance/ternary-sandbox)
 - [ternary-shipyard](https://github.com/SuperInstance/ternary-shipyard)
 - [ternary-symbiont](https://github.com/SuperInstance/ternary-symbiont)
@@ -817,6 +816,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [workspace-rescue](https://github.com/SuperInstance/workspace-rescue)
 - [yoneda](https://github.com/SuperInstance/yoneda)
 - [zeitgeist-protocol](https://github.com/SuperInstance/zeitgeist-protocol)
+- [zero-bootcamp](https://github.com/SuperInstance/zero-bootcamp)
 - [zero-innate](https://github.com/SuperInstance/zero-innate)
 - [zero-poc](https://github.com/SuperInstance/zero-poc)
 - [zeroclaw-arena](https://github.com/SuperInstance/zeroclaw-arena)
@@ -1552,6 +1552,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [mentis-superinstance](https://github.com/SuperInstance/mentis-superinstance)
 - [mentis-thinker-adapter](https://github.com/SuperInstance/mentis-thinker-adapter)
 - [midden](https://github.com/SuperInstance/midden)
+- [midi-temporal](https://github.com/SuperInstance/midi-temporal)
 - [minimax-worker](https://github.com/SuperInstance/minimax-worker)
 - [mist-game](https://github.com/SuperInstance/mist-game)
 - [mist-lab](https://github.com/SuperInstance/mist-lab)
@@ -1570,8 +1571,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [mudra-bridge-core](https://github.com/SuperInstance/mudra-bridge-core)
 - [mudra-vessel-bridge-pkg](https://github.com/SuperInstance/mudra-vessel-bridge-pkg)
 - [murex-test-repo](https://github.com/SuperInstance/murex-test-repo)
-- [mux-demux](https://github.com/SuperInstance/mux-demux)
-- [mvcc-tx](https://github.com/SuperInstance/mvcc-tx)
 - [mycelium-route](https://github.com/SuperInstance/mycelium-route)
 - [naDir](https://github.com/SuperInstance/naDir)
 - [negative-knowledge](https://github.com/SuperInstance/negative-knowledge)
@@ -1782,6 +1781,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-multi-oracle](https://github.com/SuperInstance/quilt-multi-oracle)
 - [quilt-murmur](https://github.com/SuperInstance/quilt-murmur)
 - [quilt-neighbourhood](https://github.com/SuperInstance/quilt-neighbourhood)
+- [quilt-neudecide](https://github.com/SuperInstance/quilt-neudecide)
 - [quilt-nomad](https://github.com/SuperInstance/quilt-nomad)
 - [quilt-optimization](https://github.com/SuperInstance/quilt-optimization)
 - [quilt-orchestrator](https://github.com/SuperInstance/quilt-orchestrator)
@@ -2025,6 +2025,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [slackwater-substrate](https://github.com/SuperInstance/slackwater-substrate)
 - [slackwater-tools](https://github.com/SuperInstance/slackwater-tools)
 - [slam-core](https://github.com/SuperInstance/slam-core)
+- [sleep-cycle](https://github.com/SuperInstance/sleep-cycle)
 - [smart-404](https://github.com/SuperInstance/smart-404)
 - [smp-notebook](https://github.com/SuperInstance/smp-notebook)
 - [smt-core](https://github.com/SuperInstance/smt-core)
@@ -2101,6 +2102,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [substrate-witness-log](https://github.com/SuperInstance/substrate-witness-log)
 - [substrate-witness-log-rs](https://github.com/SuperInstance/substrate-witness-log-rs)
 - [suna](https://github.com/SuperInstance/suna)
+- [sunset-quilt-page](https://github.com/SuperInstance/sunset-quilt-page)
 - [superinstance-advisor](https://github.com/SuperInstance/superinstance-advisor)
 - [superinstance-ai](https://github.com/SuperInstance/superinstance-ai)
 - [superinstance-ai-pages](https://github.com/SuperInstance/superinstance-ai-pages)
@@ -2157,9 +2159,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-regex](https://github.com/SuperInstance/ternary-regex)
 - [ternary-registry](https://github.com/SuperInstance/ternary-registry)
 - [ternary-regression](https://github.com/SuperInstance/ternary-regression)
-- [ternary-reservoir](https://github.com/SuperInstance/ternary-reservoir)
-- [ternary-resilience](https://github.com/SuperInstance/ternary-resilience)
-- [ternary-rigging](https://github.com/SuperInstance/ternary-rigging)
 - [ternary-ring](https://github.com/SuperInstance/ternary-ring)
 - [ternary-rl](https://github.com/SuperInstance/ternary-rl)
 - [ternary-robotics](https://github.com/SuperInstance/ternary-robotics)
@@ -2354,6 +2353,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-apps](https://github.com/SuperInstance/quilt-apps)
 - [quilt-edge-observer](https://github.com/SuperInstance/quilt-edge-observer)
 - [quilt-fable](https://github.com/SuperInstance/quilt-fable)
+- [quilt-neudecide-demo](https://github.com/SuperInstance/quilt-neudecide-demo)
 - [quilt-tts](https://github.com/SuperInstance/quilt-tts)
 - [quilt-voice-agent](https://github.com/SuperInstance/quilt-voice-agent)
 - [quilt-zai-writer](https://github.com/SuperInstance/quilt-zai-writer)
