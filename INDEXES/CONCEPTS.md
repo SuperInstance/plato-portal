@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-10 10:57 UTC
+**Generated:** 2026-10-11 11:11 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -260,6 +260,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-gpu-lab-witness](https://github.com/SuperInstance/quilt-gpu-lab-witness)
 - [quilt-metal](https://github.com/SuperInstance/quilt-metal)
 - [slackwater-forge](https://github.com/SuperInstance/slackwater-forge)
+- [spread](https://github.com/SuperInstance/spread)
 - [ternary-paxos](https://github.com/SuperInstance/ternary-paxos)
 - [ternary-search-index](https://github.com/SuperInstance/ternary-search-index)
 - [ternary-semaphore](https://github.com/SuperInstance/ternary-semaphore)
@@ -814,6 +815,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [whisper-sync](https://github.com/SuperInstance/whisper-sync)
 - [witness-topology](https://github.com/SuperInstance/witness-topology)
 - [workspace-rescue](https://github.com/SuperInstance/workspace-rescue)
+- [xero](https://github.com/SuperInstance/xero)
 - [yoneda](https://github.com/SuperInstance/yoneda)
 - [zeitgeist-protocol](https://github.com/SuperInstance/zeitgeist-protocol)
 - [zero-bootcamp](https://github.com/SuperInstance/zero-bootcamp)
@@ -1065,7 +1067,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [substrate-game-engine](https://github.com/SuperInstance/substrate-game-engine)
 - [superinstance-api](https://github.com/SuperInstance/superinstance-api)
 - [superinstance-architecture](https://github.com/SuperInstance/superinstance-architecture)
-- [ternary-room](https://github.com/SuperInstance/ternary-room)
 - [terrain](https://github.com/SuperInstance/terrain)
 - [tile-chain](https://github.com/SuperInstance/tile-chain)
 - [tile-lifecycle](https://github.com/SuperInstance/tile-lifecycle)
@@ -1483,6 +1484,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)
 - [image-distillation-loop-jev](https://github.com/SuperInstance/image-distillation-loop-jev)
 - [integration-examples](https://github.com/SuperInstance/integration-examples)
+- [intuition](https://github.com/SuperInstance/intuition)
 - [jev-diffusion](https://github.com/SuperInstance/jev-diffusion)
 - [jev-diffusion-npm](https://github.com/SuperInstance/jev-diffusion-npm)
 - [jev-diffusion-pypi](https://github.com/SuperInstance/jev-diffusion-pypi)
@@ -1571,7 +1573,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [mudra-bridge-core](https://github.com/SuperInstance/mudra-bridge-core)
 - [mudra-vessel-bridge-pkg](https://github.com/SuperInstance/mudra-vessel-bridge-pkg)
 - [murex-test-repo](https://github.com/SuperInstance/murex-test-repo)
-- [mycelium-route](https://github.com/SuperInstance/mycelium-route)
 - [naDir](https://github.com/SuperInstance/naDir)
 - [negative-knowledge](https://github.com/SuperInstance/negative-knowledge)
 - [network-flow](https://github.com/SuperInstance/network-flow)
@@ -1661,6 +1662,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [port-generator](https://github.com/SuperInstance/port-generator)
 - [portfolio](https://github.com/SuperInstance/portfolio)
 - [privox](https://github.com/SuperInstance/privox)
+- [proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)
 - [products](https://github.com/SuperInstance/products)
 - [profile-lane](https://github.com/SuperInstance/profile-lane)
 - [projects](https://github.com/SuperInstance/projects)
@@ -2159,11 +2161,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-regex](https://github.com/SuperInstance/ternary-regex)
 - [ternary-registry](https://github.com/SuperInstance/ternary-registry)
 - [ternary-regression](https://github.com/SuperInstance/ternary-regression)
-- [ternary-ring](https://github.com/SuperInstance/ternary-ring)
-- [ternary-rl](https://github.com/SuperInstance/ternary-rl)
-- [ternary-robotics](https://github.com/SuperInstance/ternary-robotics)
 - [ternary-rom](https://github.com/SuperInstance/ternary-rom)
-- [ternary-route](https://github.com/SuperInstance/ternary-route)
 - [ternary-routing](https://github.com/SuperInstance/ternary-routing)
 - [ternary-runlength](https://github.com/SuperInstance/ternary-runlength)
 - [ternary-sampler](https://github.com/SuperInstance/ternary-sampler)
@@ -2319,6 +2317,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)
 - [yiluodi](https://github.com/SuperInstance/yiluodi)
 - [young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)
+- [zai-router](https://github.com/SuperInstance/zai-router)
 - [zai-worker](https://github.com/SuperInstance/zai-worker)
 - [zero-knowledge](https://github.com/SuperInstance/zero-knowledge)
 - [zero-msg-test](https://github.com/SuperInstance/zero-msg-test)
@@ -2364,6 +2363,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [spectral-music-v2](https://github.com/SuperInstance/spectral-music-v2)
 - [tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)
 - [topo-sonata](https://github.com/SuperInstance/topo-sonata)
+- [voice-games](https://github.com/SuperInstance/voice-games)
 - [voice-note-app](https://github.com/SuperInstance/voice-note-app)
 - [voice-reflex-gate](https://github.com/SuperInstance/voice-reflex-gate)
 - [voice-signature-tool](https://github.com/SuperInstance/voice-signature-tool)

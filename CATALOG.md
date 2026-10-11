@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-10 10:57 UTC
+**Generated:** 2026-10-11 11:11 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -288,6 +288,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[sketch-workspace-sketchbook-pattern](https://github.com/SuperInstance/sketch-workspace-sketchbook-pattern)** | Forgemaster | Push ideas to GitHub repos, clear local workspace. fleet-sketchbook CLI tool. The workspace is a dra | 🟢 active |
 | **[spectral-fleet-rs](https://github.com/SuperInstance/spectral-fleet-rs)** | Forgemaster | Spectral methods for fleet matrices — Lanczos iteration, power iteration, spectral clustering | 🟢 active |
 | **[spectral-spreadsheet](https://github.com/SuperInstance/spectral-spreadsheet)** | Forgemaster | The Second Moment — spreadsheet where formulas compute spectral graph quantities | 🟢 active |
+| **[spread](https://github.com/SuperInstance/spread)** | Forgemaster | Spreadsheet viewer, in Rust using GPUI | 🟢 active |
 | **[Spreader-tool](https://github.com/SuperInstance/Spreader-tool)** | Forgemaster | Intelligence tiling for PLATO rooms — frozen context windows, seed locking, deadband detection | 🟢 active |
 | **[Spreadsheet-ai](https://github.com/SuperInstance/Spreadsheet-ai)** | Forgemaster | Tile Intelligence in real-time spreadsheets for simulation or monitoring. Deconstruct Agents into Es | 🟢 active |
 | **[spreadsheet-conservation-wasm](https://github.com/SuperInstance/spreadsheet-conservation-wasm)** | Forgemaster | WASM module for spreadsheet data conservation and integrity | 🟢 active |
@@ -860,6 +861,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[image-distillation-loop-jev](https://github.com/SuperInstance/image-distillation-loop-jev)** | Various | Wesley learns to generate images via JEV-Diffusion (LLM-as-GAN, no image generator). | ⚪ unknown |
 | **[integration-examples](https://github.com/SuperInstance/integration-examples)** | Various | Integration examples showing how to combine the synesis crates into working apps (Rust) | ⚪ unknown |
 | **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** | Various | Integration guides and documentation | ⚪ unknown |
+| **[intuition](https://github.com/SuperInstance/intuition)** | Various | Intuition — contrast-pair phantom verdict analysis, v-JEPA2 training | ⚪ unknown |
 | **[jev-diffusion](https://github.com/SuperInstance/jev-diffusion)** | Various | Substrate-segmented image description via JEV + LLMs as GAN. No actual image generator needed. | ⚪ unknown |
 | **[jev-diffusion-npm](https://github.com/SuperInstance/jev-diffusion-npm)** | Various | JEV-Diffusion npm wrapper — substrate-segmented image description. | ⚪ unknown |
 | **[jev-diffusion-pypi](https://github.com/SuperInstance/jev-diffusion-pypi)** | Various | JEV-Diffusion PyPI package — substrate-segmented image description. | ⚪ unknown |
@@ -963,7 +965,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[murex](https://github.com/SuperInstance/murex)** | Various | A smarter shell and scripting environment with advanced features designed for usability, safety and  | ⚪ unknown |
 | **[murex-test-repo](https://github.com/SuperInstance/murex-test-repo)** | Various | Test repo for murex shell experiments | ⚪ unknown |
 | **[musician-soul](https://github.com/SuperInstance/musician-soul)** | Various | Vector DB personas that learn musicians through MIDI digestion and develop emergent musical soul thr | ⚪ unknown |
-| **[mycelium-route](https://github.com/SuperInstance/mycelium-route)** | Various | Mycelium-inspired routing protocol for SuperInstance mesh networks | ⚪ unknown |
 | **[naDir](https://github.com/SuperInstance/naDir)** | Various | naDir: async work as directories. A running job is just a folder — open while it runs, moved when it | ⚪ unknown |
 | **[narrative-field](https://github.com/SuperInstance/narrative-field)** | Various | Narrative field generation for SuperInstance storytelling agents | 🟢 active |
 | **[nash-finder](https://github.com/SuperInstance/nash-finder)** | Various | Nash equilibrium computation for agent strategic interactions | 🟢 active |
@@ -1214,6 +1215,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[port-generator](https://github.com/SuperInstance/port-generator)** | Various | Port number generator and allocator for SuperInstance services | ⚪ unknown |
 | **[portfolio](https://github.com/SuperInstance/portfolio)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[privox](https://github.com/SuperInstance/privox)** | Various | PII/PHI redaction library for LLM pipelines (Rust) | ⚪ unknown |
+| **[proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)** | Various | ProArt WSL rebuild backup | ⚪ unknown |
 | **[products](https://github.com/SuperInstance/products)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[profile-lane](https://github.com/SuperInstance/profile-lane)** | Various | Long-running lane that grows superinstance/superinstance README via Z.AI draft + Groq audit double-e | ⚪ unknown |
 | **[Projectionist](https://github.com/SuperInstance/Projectionist)** | Various | Projectionist | ⚪ unknown |
@@ -1814,12 +1816,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-regex](https://github.com/SuperInstance/ternary-regex)** | Various | ternary-regex  Pattern matching on ternary sequences (`-1`, `0`, `+1`) | ⚪ unknown |
 | **[ternary-registry](https://github.com/SuperInstance/ternary-registry)** | Various | Capability and skill registry for construct-core integration | ⚪ unknown |
 | **[ternary-regression](https://github.com/SuperInstance/ternary-regression)** | Various | ternary-regression - SuperInstance ecosystem crate | ⚪ unknown |
-| **[ternary-ring](https://github.com/SuperInstance/ternary-ring)** | Various | Ring and field structures for ternary values | ⚪ unknown |
-| **[ternary-rl](https://github.com/SuperInstance/ternary-rl)** | Various | Reinforcement learning with ternary actions | ⚪ unknown |
-| **[ternary-robotics](https://github.com/SuperInstance/ternary-robotics)** | Various | Robotics control with ternary decisions | ⚪ unknown |
 | **[ternary-rom](https://github.com/SuperInstance/ternary-rom)** | Various | ternary-rom | ⚪ unknown |
-| **[ternary-room](https://github.com/SuperInstance/ternary-room)** | Various | Recursive room-tensor architecture | ⚪ unknown |
-| **[ternary-route](https://github.com/SuperInstance/ternary-route)** | Various | Ternary routing: route requests with {-1=reject, 0=queue, +1=accept} decisions | ⚪ unknown |
 | **[ternary-routing](https://github.com/SuperInstance/ternary-routing)** | Various | Self-optimizing request routing with ternary feedback. Routes converge to optimal distribution witho | ⚪ unknown |
 | **[ternary-runlength](https://github.com/SuperInstance/ternary-runlength)** | Various | ternary-runlength - SuperInstance ecosystem crate | ⚪ unknown |
 | **[ternary-sampler](https://github.com/SuperInstance/ternary-sampler)** | Various | Sampling strategies for ternary (-1, 0, +1) populations | ⚪ unknown |
@@ -1978,6 +1975,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[vibe-protocol](https://github.com/SuperInstance/vibe-protocol)** | Various | vibe-protocol | ⚪ unknown |
 | **[vibe-world](https://github.com/SuperInstance/vibe-world)** | Various | Vibe world project | ⚪ unknown |
 | **[vocabularies](https://github.com/SuperInstance/vocabularies)** | Various | Preserved workspace artifact | ⚪ unknown |
+| **[voice-games](https://github.com/SuperInstance/voice-games)** | Various | Voice games: Sitka Skies flight + COLOR SQUAD RTS + tournament demo — proof of concept for voice-com | ⚪ unknown |
 | **[voice-note-app](https://github.com/SuperInstance/voice-note-app)** | Various | voice-note-app | ⚪ unknown |
 | **[voice-reflex-gate](https://github.com/SuperInstance/voice-reflex-gate)** | Various | STT output as hash key for deterministic response routing — the voice reflex gate. | ⚪ unknown |
 | **[voice-signature-tool](https://github.com/SuperInstance/voice-signature-tool)** | Various | Zero-dependency voice signature analyzer — analyze any text against 10 anchor points and find matchi | ⚪ unknown |
@@ -2013,9 +2011,11 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[witness-validation](https://github.com/SuperInstance/witness-validation)** | Various | Design for making the canon witness log predictive, rewindable, and integrity-checked — e-processes  | ⚪ unknown |
 | **[workspace-rescue](https://github.com/SuperInstance/workspace-rescue)** | Various | RESCUED 2026-10-03. 605 files from the local NAS that had NO git, NO remote and NO backup - 96 piece | ⚪ unknown |
 | **[ws-status-indicator](https://github.com/SuperInstance/ws-status-indicator)** | Various | React WebSocket status indicator component with auto-reconnection and customizable UI | ⚪ unknown |
+| **[xero](https://github.com/SuperInstance/xero)** | Various | Xero — production release of the zero agent template. | 🟢 active |
 | **[xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)** | Various | The cell convention evaluated in two runtimes that never shared source: 23/23 per-cell digests agree | ⚪ unknown |
 | **[yoneda](https://github.com/SuperInstance/yoneda)** | Various | Yoneda lemma and representable functors for agent systems | 🟢 active |
 | **[young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)** | Various | Research-grade Rust crate | ⚪ unknown |
+| **[zai-router](https://github.com/SuperInstance/zai-router)** | Various | ZAI router — key-free fallback system | ⚪ unknown |
 | **[zai-worker](https://github.com/SuperInstance/zai-worker)** | Various | Git-native zai-worker: disposable machine, durable repo | ⚪ unknown |
 | **[zero-bootcamp](https://github.com/SuperInstance/zero-bootcamp)** | Various | The zero-agent bootcamp system. Growing agents from zero, one skill at a time. | 🟢 active |
 | **[zero-innate](https://github.com/SuperInstance/zero-innate)** | Various | Zero agent, self-bootstrapping: single file, stdlib only, no network. The loop without the story. | 🟢 active |
@@ -3939,6 +3939,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** The Second Moment — spreadsheet where formulas compute spectral graph quantities
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
+### [spread](https://github.com/SuperInstance/spread)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** Spreadsheet viewer, in Rust using GPUI
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
@@ -7250,6 +7257,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Watch-and-follow pattern for agent observation and learning
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [xero](https://github.com/SuperInstance/xero)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Xero — production release of the zero agent template.
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
