@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-11 11:11 UTC
+**Generated:** 2026-10-12 12:44 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -227,7 +227,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[Murmur](https://github.com/SuperInstance/Murmur)** | Oracle1 | Knowledge Tensors for self-improving agents | 🟢 active |
 | **[murmur-agent](https://github.com/SuperInstance/murmur-agent)** | Oracle1 | All-night thinking git-agent — drop into any project, point it at a topic, let it think. TypeScript  | 🟢 active |
 | **[murmuration](https://github.com/SuperInstance/murmuration)** | Oracle1 | A swarm of first-person cells that reach consensus by local deference alone, with no central authori | 🟢 active |
-| **[nebula-docs](https://github.com/SuperInstance/nebula-docs)** | Oracle1 | Nebula fleet murmur worker — edge agent docs | 🟢 active |
 | **[octomap-conservation-poc](https://github.com/SuperInstance/octomap-conservation-poc)** | Forgemaster | Conservation + sheaf cohomology for 3D occupancy mapping — detects conflicts, extracts topology | 🟢 active |
 | **[openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)** | Forgemaster | Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense ty | 🟢 active |
 | **[openrooms](https://github.com/SuperInstance/openrooms)** | Forgemaster | Agent-powered collaborative rooms with topology, intention fields, and Hodge decomposition | 🟢 active |
@@ -675,6 +674,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** | Various | Core cognitive processing engine. | ⚪ unknown |
 | **[collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)** | Various | Quilt backend for Real-time collaborative drawing platform built with Java, JavaFX, TCP sockets, and | ⚪ unknown |
 | **[collective-unconscious](https://github.com/SuperInstance/collective-unconscious)** | Various | collective-unconscious | ⚪ unknown |
+| **[color-squad](https://github.com/SuperInstance/color-squad)** | Various | COLOR SQUAD: JSON strategy scripts play deterministic 4v4 capture-the-flag; a running season with in | ⚪ unknown |
 | **[columnar-store](https://github.com/SuperInstance/columnar-store)** | Various | Columnar storage engine — Apache Parquet-style columnar format with compression and predicate pushdo | ⚪ unknown |
 | **[compaction-teacher](https://github.com/SuperInstance/compaction-teacher)** | Various | Compaction teacher module | ⚪ unknown |
 | **[compliance-check](https://github.com/SuperInstance/compliance-check)** | Various | A Rust library for Compliance_check | ⚪ unknown |
@@ -799,6 +799,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[flow-state](https://github.com/SuperInstance/flow-state)** | Various | Entropy-based stream observation — spline observers with learning engines for anomaly detection | ⚪ unknown |
 | **[flow-state-orchestra](https://github.com/SuperInstance/flow-state-orchestra)** | Various | 4 cheap LLM instruments playing basketball combo as r̂-first intelligence loop — the doctrines in ac | ⚪ unknown |
 | **[flx-cuda](https://github.com/SuperInstance/flx-cuda)** | Various | GPU-accelerated priority scheduler for cell-graph queues. The GPU sibling of MCPMempool. | ⚪ unknown |
+| **[fold-bout](https://github.com/SuperInstance/fold-bout)** | Various | Judged head-to-head: MiniMax vs Claude Code implement the deterministic fold (task-atom state deriva | ⚪ unknown |
 | **[font-rasterizer](https://github.com/SuperInstance/font-rasterizer)** | Various | A Rust library for Font Rasterizer | ⚪ unknown |
 | **[font_atlas_packager](https://github.com/SuperInstance/font_atlas_packager)** | Various | Shape-first glyph rasterizer: ttf outlines → 4x6 subpixel coverage → 24-bit u32 signatures | ⚪ unknown |
 | **[forge-seed](https://github.com/SuperInstance/forge-seed)** | Various | Seed: Forge Seed | ⚪ unknown |
@@ -966,9 +967,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[murex-test-repo](https://github.com/SuperInstance/murex-test-repo)** | Various | Test repo for murex shell experiments | ⚪ unknown |
 | **[musician-soul](https://github.com/SuperInstance/musician-soul)** | Various | Vector DB personas that learn musicians through MIDI digestion and develop emergent musical soul thr | ⚪ unknown |
 | **[naDir](https://github.com/SuperInstance/naDir)** | Various | naDir: async work as directories. A running job is just a folder — open while it runs, moved when it | ⚪ unknown |
-| **[narrative-field](https://github.com/SuperInstance/narrative-field)** | Various | Narrative field generation for SuperInstance storytelling agents | 🟢 active |
-| **[nash-finder](https://github.com/SuperInstance/nash-finder)** | Various | Nash equilibrium computation for agent strategic interactions | 🟢 active |
-| **[native-conservation-core](https://github.com/SuperInstance/native-conservation-core)** | Various | ⚡ Bulletproof C/CUDA conservation law (γ+η=C) with lock-free ring buffers, ternary MAC kernels, and  | ⚪ unknown |
 | **[network-flow](https://github.com/SuperInstance/network-flow)** | Various | network-flow | ⚪ unknown |
 | **[network-science](https://github.com/SuperInstance/network-science)** | Various | Network science in Rust — centrality, community detection (Louvain, Girvan-Newman), epidemic models, | ⚪ unknown |
 | **[neural-conservation](https://github.com/SuperInstance/neural-conservation)** | Various | Conservation spectral experiment: neural-conservation | ⚪ unknown |
@@ -1021,6 +1019,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[openPlan3D](https://github.com/SuperInstance/openPlan3D)** | Various | Open source 2D/3D floor plan editor built with SvelteKit and Three.js | ⚪ unknown |
 | **[openshell-compatibility-audit](https://github.com/SuperInstance/openshell-compatibility-audit)** | Various | Categorizes all SuperInstance repos for OpenShell integration — native, wrapper, backend, tool, depr | ⚪ unknown |
 | **[openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)** | Various | OpenShell wrapper re-exporting pythagorean48-codes (48-directional trust encoding) | ⚪ unknown |
+| **[opensky-terrain](https://github.com/SuperInstance/opensky-terrain)** | Various | Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum | ⚪ unknown |
 | **[opensmile-bridge](https://github.com/SuperInstance/opensmile-bridge)** | Various | Modular OpenSMILE bridge for fleet voice feature extraction. WebSocket server, MIDI CC mapping, I2I  | ⚪ unknown |
 | **[operational-fiction](https://github.com/SuperInstance/operational-fiction)** | Various | operational-fiction | ⚪ unknown |
 | **[optimal-control](https://github.com/SuperInstance/optimal-control)** | Various | Optimal control in Rust. From LQR to HJB. | ⚪ unknown |
@@ -1768,7 +1767,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[synesis-status](https://github.com/SuperInstance/synesis-status)** | Various | Build status, audit reports, changelogs, and bug-hunt fix records from the synesis era | ⚪ unknown |
 | **[synesis-templates](https://github.com/SuperInstance/synesis-templates)** | Various | Extraction and conversion templates used to peel synesis subcrates out of the monorepo | ⚪ unknown |
 | **[synthcity](https://github.com/SuperInstance/synthcity)** | Various | An Infinite Procedural Cyberpunk City | ⚪ unknown |
+| **[syzygy-curriculum](https://github.com/SuperInstance/syzygy-curriculum)** | Various | The Syzygy reading experiments: can text-only models read a scene rendered as text? Episodes, frozen | ⚪ unknown |
+| **[syzygy-demo](https://github.com/SuperInstance/syzygy-demo)** | Various | A playable demo: an AI plays an ASCII raycaster by reading its screen as text. Only the seeing is le | ⚪ unknown |
+| **[syzygy-forge](https://github.com/SuperInstance/syzygy-forge)** | Various | Syzygy-forge: teaching the Syzygy tokenizer a learned codebook — integer k-means tables, honest eval | ⚪ unknown |
 | **[syzygy-lattice](https://github.com/SuperInstance/syzygy-lattice)** | Various | syzygy-lattice | ⚪ unknown |
+| **[syzygy-program](https://github.com/SuperInstance/syzygy-program)** | Various | The Syzygy program office: plan, architecture synthesis, design notes, seed vetting — and the map to | ⚪ unknown |
+| **[syzygy-studio](https://github.com/SuperInstance/syzygy-studio)** | Various | Syzygy studio — the public site: watch it play, learn at three levels, one camera one job, receipts | ⚪ unknown |
+| **[syzygy-video](https://github.com/SuperInstance/syzygy-video)** | Various | Real video through the Syzygy kernel — frames become readable text (glyphs, Braille, tone); side-by- | ⚪ unknown |
 | **[t-minus](https://github.com/SuperInstance/t-minus)** | Various | T-minus event coordination for multi-agent systems | 🟢 active |
 | **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** | Various | Countdown/timer primitives with scheduling, deadline propagation, and backpressure | ⚪ unknown |
 | **[tagseq2tagseq4quilt](https://github.com/SuperInstance/tagseq2tagseq4quilt)** | Various | Framework for pretraining LLMs on graph-structured corpora (Wikipedia, The Stack, arXiv): link-aware | ⚪ unknown |
@@ -1817,14 +1822,9 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-registry](https://github.com/SuperInstance/ternary-registry)** | Various | Capability and skill registry for construct-core integration | ⚪ unknown |
 | **[ternary-regression](https://github.com/SuperInstance/ternary-regression)** | Various | ternary-regression - SuperInstance ecosystem crate | ⚪ unknown |
 | **[ternary-rom](https://github.com/SuperInstance/ternary-rom)** | Various | ternary-rom | ⚪ unknown |
-| **[ternary-routing](https://github.com/SuperInstance/ternary-routing)** | Various | Self-optimizing request routing with ternary feedback. Routes converge to optimal distribution witho | ⚪ unknown |
-| **[ternary-runlength](https://github.com/SuperInstance/ternary-runlength)** | Various | ternary-runlength - SuperInstance ecosystem crate | ⚪ unknown |
-| **[ternary-sampler](https://github.com/SuperInstance/ternary-sampler)** | Various | Sampling strategies for ternary (-1, 0, +1) populations | ⚪ unknown |
 | **[ternary-sandbox](https://github.com/SuperInstance/ternary-sandbox)** | Various | ternary-sandbox  A safe sandbox for running ternary agent experiments with configurable environ... | 🟢 active |
-| **[ternary-sandpile](https://github.com/SuperInstance/ternary-sandpile)** | Various | Sandpile for ternary {-1, 0, +1} systems — `Sandpile` | ⚪ unknown |
 | **[ternary-scheduler](https://github.com/SuperInstance/ternary-scheduler)** | Various | Ternary task scheduler with priority {-1=deferred, 0=normal, +1=urgent} | ⚪ unknown |
 | **[ternary-scheduling](https://github.com/SuperInstance/ternary-scheduling)** | Various | Task scheduling using ternary decisions | ⚪ unknown |
-| **[ternary-scheduling-v2](https://github.com/SuperInstance/ternary-scheduling-v2)** | Various | Advanced scheduling with ternary priorities | ⚪ unknown |
 | **[ternary-science](https://github.com/SuperInstance/ternary-science)** | Various | Ternary Science — Experimental Evidence  This crate is **not** another algorithm library | ⚪ unknown |
 | **[ternary-scoring](https://github.com/SuperInstance/ternary-scoring)** | Various | Multi-criteria scoring for ternary strategies | ⚪ unknown |
 | **[ternary-search](https://github.com/SuperInstance/ternary-search)** | Various | Search algorithms over ternary strategy spaces | ⚪ unknown |
@@ -3512,13 +3512,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Oracle1
 - **Purpose:** A swarm of first-person cells that reach consensus by local deference alone, with no central authority. Includes a null result for JEV as an oracle.
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [nebula-docs](https://github.com/SuperInstance/nebula-docs)
-- **Domain:** Agent Coordination
-- **Vessel:** Oracle1
-- **Purpose:** Nebula fleet murmur worker — edge agent docs
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
@@ -6088,20 +6081,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Slice-of-life snapshot of a meta-circular multi-agent orchestration framework — built by 4 parallel Claude Code bots via LangGraph. Archive only.
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [narrative-field](https://github.com/SuperInstance/narrative-field)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Narrative field generation for SuperInstance storytelling agents
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [nash-finder](https://github.com/SuperInstance/nash-finder)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Nash equilibrium computation for agent strategic interactions
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
