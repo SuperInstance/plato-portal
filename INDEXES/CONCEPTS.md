@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-12 12:44 UTC
+**Generated:** 2026-10-13 12:27 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -261,7 +261,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [slackwater-forge](https://github.com/SuperInstance/slackwater-forge)
 - [spread](https://github.com/SuperInstance/spread)
 - [ternary-paxos](https://github.com/SuperInstance/ternary-paxos)
-- [ternary-search-index](https://github.com/SuperInstance/ternary-search-index)
 - [ternary-semaphore](https://github.com/SuperInstance/ternary-semaphore)
 - [ternary-shard](https://github.com/SuperInstance/ternary-shard)
 - [ternary-signal-flow](https://github.com/SuperInstance/ternary-signal-flow)
@@ -486,6 +485,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)
 - [git-native-agents](https://github.com/SuperInstance/git-native-agents)
 - [git.pp](https://github.com/SuperInstance/git.pp)
+- [git.pp-ng](https://github.com/SuperInstance/git.pp-ng)
 - [harness-experiments](https://github.com/SuperInstance/harness-experiments)
 - [harness-rssi](https://github.com/SuperInstance/harness-rssi)
 - [hebbian-router](https://github.com/SuperInstance/hebbian-router)
@@ -760,6 +760,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [synesis-agents](https://github.com/SuperInstance/synesis-agents)
 - [synesis-benches](https://github.com/SuperInstance/synesis-benches)
 - [synesis-prompts](https://github.com/SuperInstance/synesis-prompts)
+- [synoptic-sheet](https://github.com/SuperInstance/synoptic-sheet)
 - [t-minus](https://github.com/SuperInstance/t-minus)
 - [tensor-midi](https://github.com/SuperInstance/tensor-midi)
 - [ternary-benchmark](https://github.com/SuperInstance/ternary-benchmark)
@@ -812,6 +813,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [witness-topology](https://github.com/SuperInstance/witness-topology)
 - [workspace-rescue](https://github.com/SuperInstance/workspace-rescue)
 - [xero](https://github.com/SuperInstance/xero)
+- [xero-lab](https://github.com/SuperInstance/xero-lab)
 - [yoneda](https://github.com/SuperInstance/yoneda)
 - [zeitgeist-protocol](https://github.com/SuperInstance/zeitgeist-protocol)
 - [zero-bootcamp](https://github.com/SuperInstance/zero-bootcamp)
@@ -2172,8 +2174,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-science](https://github.com/SuperInstance/ternary-science)
 - [ternary-scoring](https://github.com/SuperInstance/ternary-scoring)
 - [ternary-search](https://github.com/SuperInstance/ternary-search)
-- [ternary-search-rs](https://github.com/SuperInstance/ternary-search-rs)
-- [ternary-secret-share](https://github.com/SuperInstance/ternary-secret-share)
 - [ternary-seed](https://github.com/SuperInstance/ternary-seed)
 - [ternary-sensor](https://github.com/SuperInstance/ternary-sensor)
 - [ternary-shard-split](https://github.com/SuperInstance/ternary-shard-split)

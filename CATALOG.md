@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-12 12:44 UTC
+**Generated:** 2026-10-13 12:27 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -432,6 +432,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[synesis-examples](https://github.com/SuperInstance/synesis-examples)** | JetsonClaw1 | Standalone Rust example files for the synesis workspace: knowledge RAG, privacy proxy, mTLS setup, r | 🟢 active |
 | **[synesis-manifests](https://github.com/SuperInstance/synesis-manifests)** | JetsonClaw1 | Hardware capability manifests for synesis tier calculations | 🟢 active |
 | **[synesis-tools](https://github.com/SuperInstance/synesis-tools)** | JetsonClaw1 | Internal tool reference docs for the synesis tripartite consensus engine, knowledge vault, and priva | 🟢 active |
+| **[synoptic-sheet](https://github.com/SuperInstance/synoptic-sheet)** | JetsonClaw1 | The synoptic sheet — a live agent ledger, rendered. Every row written by an agent; nothing is ever d | 🟢 active |
 | **[Syzygy](https://github.com/SuperInstance/Syzygy)** | JetsonClaw1 | **Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable  | 🟢 active |
 | **[ternary-graph](https://github.com/SuperInstance/ternary-graph)** | JetsonClaw1 | ternary-graph  Graph algorithms operating on ternary-weighted edges (`-1`, `0`, `+1`) | 🟢 active |
 | **[ternary-inference](https://github.com/SuperInstance/ternary-inference)** | JetsonClaw1 | ternary-inference  Inference from ternary negative spaces — deducing knowledge from what agents... | 🟢 active |
@@ -822,6 +823,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** | Various | Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o | 🟢 active |
 | **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** | Various | 🔮 The repo IS the world. Commits ARE actions. Zero server MUD. | ⚪ unknown |
 | **[git.pp](https://github.com/SuperInstance/git.pp)** | Various | git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa | 🟢 active |
+| **[git.pp-ng](https://github.com/SuperInstance/git.pp-ng)** | Various | git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the | 🟢 active |
 | **[glyphcast](https://github.com/SuperInstance/glyphcast)** | Various | Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as  | ⚪ unknown |
 | **[glyphspace](https://github.com/SuperInstance/glyphspace)** | Various | Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje | ⚪ unknown |
 | **[glyphtensor](https://github.com/SuperInstance/glyphtensor)** | Various | glyphtensor | ⚪ unknown |
@@ -1828,9 +1830,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-science](https://github.com/SuperInstance/ternary-science)** | Various | Ternary Science — Experimental Evidence  This crate is **not** another algorithm library | ⚪ unknown |
 | **[ternary-scoring](https://github.com/SuperInstance/ternary-scoring)** | Various | Multi-criteria scoring for ternary strategies | ⚪ unknown |
 | **[ternary-search](https://github.com/SuperInstance/ternary-search)** | Various | Search algorithms over ternary strategy spaces | ⚪ unknown |
-| **[ternary-search-index](https://github.com/SuperInstance/ternary-search-index)** | Various | Ternary-weighted search index for GPU-accelerable retrieval. Negative demotes, positive promotes, co | ⚪ unknown |
-| **[ternary-search-rs](https://github.com/SuperInstance/ternary-search-rs)** | Various | High-performance ternary vector search server in Rust (axum + rayon + SIMD) | ⚪ unknown |
-| **[ternary-secret-share](https://github.com/SuperInstance/ternary-secret-share)** | Various | Secret sharing schemes over Z/3Z | ⚪ unknown |
 | **[ternary-seed](https://github.com/SuperInstance/ternary-seed)** | Various | Seeded-Model-Programming (SMP) foundation for balanced ternary systems | ⚪ unknown |
 | **[ternary-semaphore](https://github.com/SuperInstance/ternary-semaphore)** | Various | Ternary semaphore for GPU resource control. Permits as {-1=overcommitted, 0=at_capacity, +1=availabl | ⚪ unknown |
 | **[ternary-shard](https://github.com/SuperInstance/ternary-shard)** | Various | Sharded ternary data for multi-GPU inference. Partitions weight matrices across nodes, merges via te | ⚪ unknown |
@@ -2012,6 +2011,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[workspace-rescue](https://github.com/SuperInstance/workspace-rescue)** | Various | RESCUED 2026-10-03. 605 files from the local NAS that had NO git, NO remote and NO backup - 96 piece | ⚪ unknown |
 | **[ws-status-indicator](https://github.com/SuperInstance/ws-status-indicator)** | Various | React WebSocket status indicator component with auto-reconnection and customizable UI | ⚪ unknown |
 | **[xero](https://github.com/SuperInstance/xero)** | Various | Xero — production release of the zero agent template. | 🟢 active |
+| **[xero-lab](https://github.com/SuperInstance/xero-lab)** | Various | Xero lab — prototypes and design notes for the zero agent production line (release line: SuperInstan | 🟢 active |
 | **[xruntime-conformance](https://github.com/SuperInstance/xruntime-conformance)** | Various | The cell convention evaluated in two runtimes that never shared source: 23/23 per-cell digests agree | ⚪ unknown |
 | **[yoneda](https://github.com/SuperInstance/yoneda)** | Various | Yoneda lemma and representable functors for agent systems | 🟢 active |
 | **[young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)** | Various | Research-grade Rust crate | ⚪ unknown |
@@ -4922,6 +4922,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [synoptic-sheet](https://github.com/SuperInstance/synoptic-sheet)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** The synoptic sheet — a live agent ledger, rendered. Every row written by an agent; nothing is ever deleted.
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [Syzygy](https://github.com/SuperInstance/Syzygy)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -5927,6 +5934,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the database; this is the projection.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [git.pp-ng](https://github.com/SuperInstance/git.pp-ng)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the record, provenance is the arbiter. Built on Cloud
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
@@ -7243,6 +7257,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Xero — production release of the zero agent template.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [xero-lab](https://github.com/SuperInstance/xero-lab)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Xero lab — prototypes and design notes for the zero agent production line (release line: SuperInstance/xero)
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
