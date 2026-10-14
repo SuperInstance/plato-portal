@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-13 12:27 UTC
+**Generated:** 2026-10-14 09:55 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -362,7 +362,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[MerkleMesh](https://github.com/SuperInstance/MerkleMesh)** | JetsonClaw1 | One fleet, one root: merkle aggregation + inclusion proofs over quilt cell-ledger journals (bit-for- | 🟢 active |
 | **[moth-ledger](https://github.com/SuperInstance/moth-ledger)** | JetsonClaw1 | MOTH findings as quilt-native receipted cells — the receipt spine of the moth family | 🟢 active |
 | **[negative-knowledge](https://github.com/SuperInstance/negative-knowledge)** | JetsonClaw1 | Negative knowledge as the primary computational resource — knowing where violations are NOT is cheap | 🟢 active |
-| **[negative-space-interpolator](https://github.com/SuperInstance/negative-space-interpolator)** | JetsonClaw1 | Continuous field theory for PLATO knowledge tiles — gap detection, RBF interpolation, emergence prec | 🟢 active |
 | **[nerve-agent](https://github.com/SuperInstance/nerve-agent)** | JetsonClaw1 | Čech nerve and nerve theorem for sensor/agent network coverage | 🟢 active |
 | **[nexus-edge-runtime](https://github.com/SuperInstance/nexus-edge-runtime)** | JetsonClaw1 | Edge runtime for autonomous agents — bytecode VM, INCREMENTS trust, wire protocol, safety system, in | 🟢 active |
 | **[nexus-git-agent](https://github.com/SuperInstance/nexus-git-agent)** | JetsonClaw1 | Cloud-side brain for edge intelligence fleets. Jetson + ESP32 + Cocapn coordination. | 🟢 active |
@@ -436,7 +435,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[Syzygy](https://github.com/SuperInstance/Syzygy)** | JetsonClaw1 | **Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable  | 🟢 active |
 | **[ternary-graph](https://github.com/SuperInstance/ternary-graph)** | JetsonClaw1 | ternary-graph  Graph algorithms operating on ternary-weighted edges (`-1`, `0`, `+1`) | 🟢 active |
 | **[ternary-inference](https://github.com/SuperInstance/ternary-inference)** | JetsonClaw1 | ternary-inference  Inference from ternary negative spaces — deducing knowledge from what agents... | 🟢 active |
-| **[ternary-sensor](https://github.com/SuperInstance/ternary-sensor)** | JetsonClaw1 | Sensor data processing with ternary classification | 🟢 active |
 | **[ternary-transfer](https://github.com/SuperInstance/ternary-transfer)** | JetsonClaw1 | ternary-transfer  Transfer learning for ternary agents — take knowledge learned in one environm... | 🟢 active |
 | **[ternary-zkp](https://github.com/SuperInstance/ternary-zkp)** | JetsonClaw1 | Zero-knowledge proofs over ternary fields GF(3^n) | 🟢 active |
 | **[the-plenum-early-version](https://github.com/SuperInstance/the-plenum-early-version)** | JetsonClaw1 | [ARCHIVED] Early knowledge field explorer. 4KB scaffolding only. | 🟢 active |
@@ -659,6 +657,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[chart-system](https://github.com/SuperInstance/chart-system)** | Various | Polyformal navigation: four chart configurations that cross-reference the same problem space | ⚪ unknown |
 | **[chiaroscuro](https://github.com/SuperInstance/chiaroscuro)** | Various | Real-time webcam-to-text rendering — characters are shapes, not pixels. Four doors: Mirror, Sculptor | 🟢 active |
 | **[circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)** | Various | Go library implementing the circuit breaker pattern for fault tolerance and graceful degradation. St | ⚪ unknown |
+| **[classroom](https://github.com/SuperInstance/classroom)** | Various | One artefact, many agents, one shared record — a git.pp classroom: turns, patches, overrides, nothin | 🟢 active |
 | **[claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)** | Various | Claude Code workhorse vessel with experience journal and task delegation | 🟢 active |
 | **[claw-extensions](https://github.com/SuperInstance/claw-extensions)** | Various | claw-extensions | ⚪ unknown |
 | **[clip-quantize](https://github.com/SuperInstance/clip-quantize)** | Various | A Rust library for Clip Quantize | ⚪ unknown |
@@ -823,6 +822,8 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** | Various | Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o | 🟢 active |
 | **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** | Various | 🔮 The repo IS the world. Commits ARE actions. Zero server MUD. | ⚪ unknown |
 | **[git.pp](https://github.com/SuperInstance/git.pp)** | Various | git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa | 🟢 active |
+| **[git.pp-desk](https://github.com/SuperInstance/git.pp-desk)** | Various | The captain's desk for git.pp — a Cloudflare Agents projection of the record. Read-only; the record  | 🟢 active |
+| **[git.pp-grid](https://github.com/SuperInstance/git.pp-grid)** | Various | The Grid — a shared month derived from a default and an append-only record; proposals wear a color,  | ⚪ unknown |
 | **[git.pp-ng](https://github.com/SuperInstance/git.pp-ng)** | Various | git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the | 🟢 active |
 | **[glyphcast](https://github.com/SuperInstance/glyphcast)** | Various | Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as  | ⚪ unknown |
 | **[glyphspace](https://github.com/SuperInstance/glyphspace)** | Various | Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje | ⚪ unknown |
@@ -950,6 +951,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[mist-voice](https://github.com/SuperInstance/mist-voice)** | Various | mist-voice | ⚪ unknown |
 | **[model-registry-archive](https://github.com/SuperInstance/model-registry-archive)** | Various | Model registry for LLM artifact management (local + S3 storage, Rust) | ⚪ unknown |
 | **[module-registry](https://github.com/SuperInstance/module-registry)** | Various | Module registry for ship-log-search add-ons | ⚪ unknown |
+| **[moldmaker](https://github.com/SuperInstance/moldmaker)** | Various | Grow builds out of conversations: specs as markdowns, questions as the appreciating asset. A mold ma | ⚪ unknown |
 | **[morphic-canvas](https://github.com/SuperInstance/morphic-canvas)** | Various | morphic-canvas | ⚪ unknown |
 | **[moth-cells](https://github.com/SuperInstance/moth-cells)** | Various | Kernel 1: cellular predation over corpus terrain — hunters, energy, decoys, receipted walks | ⚪ unknown |
 | **[moth-corpus](https://github.com/SuperInstance/moth-corpus)** | Various | Corpus adapter pack: turn target repos into receipted attack-surface maps | ⚪ unknown |
@@ -967,6 +969,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[multiagent-project-archive](https://github.com/SuperInstance/multiagent-project-archive)** | Various | Slice-of-life snapshot of a meta-circular multi-agent orchestration framework — built by 4 parallel  | 🟢 active |
 | **[murex](https://github.com/SuperInstance/murex)** | Various | A smarter shell and scripting environment with advanced features designed for usability, safety and  | ⚪ unknown |
 | **[murex-test-repo](https://github.com/SuperInstance/murex-test-repo)** | Various | Test repo for murex shell experiments | ⚪ unknown |
+| **[muse-join](https://github.com/SuperInstance/muse-join)** | Various | One command gives a Muse agent permanent, revocable SSH access to your machine — dedicated keypair,  | 🟢 active |
 | **[musician-soul](https://github.com/SuperInstance/musician-soul)** | Various | Vector DB personas that learn musicians through MIDI digestion and develop emergent musical soul thr | ⚪ unknown |
 | **[naDir](https://github.com/SuperInstance/naDir)** | Various | naDir: async work as directories. A running job is just a folder — open while it runs, moved when it | ⚪ unknown |
 | **[network-flow](https://github.com/SuperInstance/network-flow)** | Various | network-flow | ⚪ unknown |
@@ -1021,7 +1024,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[openPlan3D](https://github.com/SuperInstance/openPlan3D)** | Various | Open source 2D/3D floor plan editor built with SvelteKit and Three.js | ⚪ unknown |
 | **[openshell-compatibility-audit](https://github.com/SuperInstance/openshell-compatibility-audit)** | Various | Categorizes all SuperInstance repos for OpenShell integration — native, wrapper, backend, tool, depr | ⚪ unknown |
 | **[openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)** | Various | OpenShell wrapper re-exporting pythagorean48-codes (48-directional trust encoding) | ⚪ unknown |
-| **[opensky-terrain](https://github.com/SuperInstance/opensky-terrain)** | Various | Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum | ⚪ unknown |
 | **[opensmile-bridge](https://github.com/SuperInstance/opensmile-bridge)** | Various | Modular OpenSMILE bridge for fleet voice feature extraction. WebSocket server, MIDI CC mapping, I2I  | ⚪ unknown |
 | **[operational-fiction](https://github.com/SuperInstance/operational-fiction)** | Various | operational-fiction | ⚪ unknown |
 | **[optimal-control](https://github.com/SuperInstance/optimal-control)** | Various | Optimal control in Rust. From LQR to HJB. | ⚪ unknown |
@@ -1591,6 +1593,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ship-log-search](https://github.com/SuperInstance/ship-log-search)** | Various | Semantic + spatial + timeline search for ship logs — time/location-stamped vessel records | 🟢 active |
 | **[ship-log-sync](https://github.com/SuperInstance/ship-log-sync)** | Various | Offline-first local SQLite sync for ship-log-search — works on the boat | ⚪ unknown |
 | **[shoal](https://github.com/SuperInstance/shoal)** | Various | 🔮 Conservation-bounded semantic search — the oracle that knows its limits | ⚪ unknown |
+| **[shoalwater](https://github.com/SuperInstance/shoalwater)** | Various | Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum | ⚪ unknown |
 | **[si](https://github.com/SuperInstance/si)** | Various | 🎛️  SuperInstance developer tool ecosystem CLI — one command to install, compose, and manage all dev | ⚪ unknown |
 | **[si-compaction-poc](https://github.com/SuperInstance/si-compaction-poc)** | Various | Proof of concept: conservation-law-optimal context compaction — Heddle's auto-compact formalized as  | ⚪ unknown |
 | **[si-conductor](https://github.com/SuperInstance/si-conductor)** | Various | Agent routing layer for multi-agent systems | 🟢 active |
@@ -1830,9 +1833,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-science](https://github.com/SuperInstance/ternary-science)** | Various | Ternary Science — Experimental Evidence  This crate is **not** another algorithm library | ⚪ unknown |
 | **[ternary-scoring](https://github.com/SuperInstance/ternary-scoring)** | Various | Multi-criteria scoring for ternary strategies | ⚪ unknown |
 | **[ternary-search](https://github.com/SuperInstance/ternary-search)** | Various | Search algorithms over ternary strategy spaces | ⚪ unknown |
-| **[ternary-seed](https://github.com/SuperInstance/ternary-seed)** | Various | Seeded-Model-Programming (SMP) foundation for balanced ternary systems | ⚪ unknown |
-| **[ternary-semaphore](https://github.com/SuperInstance/ternary-semaphore)** | Various | Ternary semaphore for GPU resource control. Permits as {-1=overcommitted, 0=at_capacity, +1=availabl | ⚪ unknown |
-| **[ternary-shard](https://github.com/SuperInstance/ternary-shard)** | Various | Sharded ternary data for multi-GPU inference. Partitions weight matrices across nodes, merges via te | ⚪ unknown |
 | **[ternary-shard-merge](https://github.com/SuperInstance/ternary-shard-merge)** | Various | Merge distributed ternary weight shards back together | ⚪ unknown |
 | **[ternary-shard-split](https://github.com/SuperInstance/ternary-shard-split)** | Various | Shard ternary model weights across devices. 16-trit aligned boundaries for clean packed representati | ⚪ unknown |
 | **[ternary-shared-memory](https://github.com/SuperInstance/ternary-shared-memory)** | Various | ternary-shared-memory - SuperInstance ecosystem crate | ⚪ unknown |
@@ -4432,13 +4432,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
-### [negative-space-interpolator](https://github.com/SuperInstance/negative-space-interpolator)
-- **Domain:** Hardware & Edge
-- **Vessel:** JetsonClaw1
-- **Purpose:** Continuous field theory for PLATO knowledge tiles — gap detection, RBF interpolation, emergence precursors
-- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
-
 ### [nerve-agent](https://github.com/SuperInstance/nerve-agent)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -4947,13 +4940,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** ternary-inference  Inference from ternary negative spaces — deducing knowledge from what agents...
-- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
-
-### [ternary-sensor](https://github.com/SuperInstance/ternary-sensor)
-- **Domain:** Hardware & Edge
-- **Vessel:** JetsonClaw1
-- **Purpose:** Sensor data processing with ternary classification
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
@@ -5755,6 +5741,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
+### [classroom](https://github.com/SuperInstance/classroom)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** One artefact, many agents, one shared record — a git.pp classroom: turns, patches, overrides, nothing deleted.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
 ### [claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -5937,6 +5930,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
+### [git.pp-desk](https://github.com/SuperInstance/git.pp-desk)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** The captain's desk for git.pp — a Cloudflare Agents projection of the record. Read-only; the record is the truth.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
 ### [git.pp-ng](https://github.com/SuperInstance/git.pp-ng)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -6095,6 +6095,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Slice-of-life snapshot of a meta-circular multi-agent orchestration framework — built by 4 parallel Claude Code bots via LangGraph. Archive only.
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [muse-join](https://github.com/SuperInstance/muse-join)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** One command gives a Muse agent permanent, revocable SSH access to your machine — dedicated keypair, self-healing reverse tunnel, pinned hub fingerprin
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

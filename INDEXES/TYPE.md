@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-10-13 12:27 UTC
+**Generated:** 2026-10-14 09:55 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -42,6 +42,7 @@
 - **[mavis-axui-feedback](https://github.com/SuperInstance/mavis-axui-feedback)** — Mavis — bidirectional projection: workbook ↔ runtime with typed events, signed commands, polyformali
 - **[mud2scummvm](https://github.com/SuperInstance/mud2scummvm)** — Bridge between agent MUD world and SCUMM-like point-and-click UI — humans step into the cave through
 - **[murmur-agent](https://github.com/SuperInstance/murmur-agent)** — All-night thinking git-agent — drop into any project, point it at a topic, let it think. TypeScript 
+- **[muse-join](https://github.com/SuperInstance/muse-join)** — One command gives a Muse agent permanent, revocable SSH access to your machine — dedicated keypair, 
 - **[onboard](https://github.com/SuperInstance/onboard)** — 🚀 Automatic repo integration tool — add any SuperInstance tool to any GitHub repo with one command. 
 - **[open-terminal](https://github.com/SuperInstance/open-terminal)** — A fork of Windows Terminal with native agent integration, right in your command line.
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
@@ -218,6 +219,7 @@
 - **[chart-room](https://github.com/SuperInstance/chart-room)** — The Chart Room — Four panels. Four perspectives. One truth.
 - **[chart-system](https://github.com/SuperInstance/chart-system)** — Polyformal navigation: four chart configurations that cross-reference the same problem space
 - **[circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)** — Go library implementing the circuit breaker pattern for fault tolerance and graceful degradation. St
+- **[classroom](https://github.com/SuperInstance/classroom)** — One artefact, many agents, one shared record — a git.pp classroom: turns, patches, overrides, nothin
 - **[claw-extensions](https://github.com/SuperInstance/claw-extensions)**
 - **[cns-bridge](https://github.com/SuperInstance/cns-bridge)** — Python library that lets any agent plug into the Hermes CNS bus via USCP.
 - **[cns-echo](https://github.com/SuperInstance/cns-echo)** — CNS echo agent — receives USCP signals, echoes back with analysis
@@ -451,6 +453,8 @@
 - **[git-agent](https://github.com/SuperInstance/git-agent)** — 🦀 Repo-native agent that lives in git — the shell IS the agent.
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
 - **[git.pp](https://github.com/SuperInstance/git.pp)** — git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa
+- **[git.pp-desk](https://github.com/SuperInstance/git.pp-desk)** — The captain's desk for git.pp — a Cloudflare Agents projection of the record. Read-only; the record 
+- **[git.pp-grid](https://github.com/SuperInstance/git.pp-grid)** — The Grid — a shared month derived from a default and an append-only record; proposals wear a color, 
 - **[git.pp-ng](https://github.com/SuperInstance/git.pp-ng)** — git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the
 - **[glyphcast](https://github.com/SuperInstance/glyphcast)** — Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as 
 - **[glyphspace](https://github.com/SuperInstance/glyphspace)** — Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje
@@ -582,6 +586,7 @@
 - **[mist-voice](https://github.com/SuperInstance/mist-voice)**
 - **[model-registry-archive](https://github.com/SuperInstance/model-registry-archive)** — Model registry for LLM artifact management (local + S3 storage, Rust)
 - **[module-registry](https://github.com/SuperInstance/module-registry)** — Module registry for ship-log-search add-ons
+- **[moldmaker](https://github.com/SuperInstance/moldmaker)** — Grow builds out of conversations: specs as markdowns, questions as the appreciating asset. A mold ma
 - **[morphic-canvas](https://github.com/SuperInstance/morphic-canvas)**
 - **[moth-cells](https://github.com/SuperInstance/moth-cells)** — Kernel 1: cellular predation over corpus terrain — hunters, energy, decoys, receipted walks
 - **[moth-corpus](https://github.com/SuperInstance/moth-corpus)** — Corpus adapter pack: turn target repos into receipted attack-surface maps
@@ -599,7 +604,6 @@
 - **[murmuration](https://github.com/SuperInstance/murmuration)** — A swarm of first-person cells that reach consensus by local deference alone, with no central authori
 - **[musician-soul](https://github.com/SuperInstance/musician-soul)** — Vector DB personas that learn musicians through MIDI digestion and develop emergent musical soul thr
 - **[negative-knowledge](https://github.com/SuperInstance/negative-knowledge)** — Negative knowledge as the primary computational resource — knowing where violations are NOT is cheap
-- **[negative-space-interpolator](https://github.com/SuperInstance/negative-space-interpolator)** — Continuous field theory for PLATO knowledge tiles — gap detection, RBF interpolation, emergence prec
 - **[nerve-agent](https://github.com/SuperInstance/nerve-agent)** — Čech nerve and nerve theorem for sensor/agent network coverage
 - **[network-flow](https://github.com/SuperInstance/network-flow)** — network-flow
 - **[network-science](https://github.com/SuperInstance/network-science)** — Network science in Rust — centrality, community detection (Louvain, Girvan-Newman), epidemic models,
@@ -647,7 +651,6 @@
 - **[openPlan3D](https://github.com/SuperInstance/openPlan3D)** — Open source 2D/3D floor plan editor built with SvelteKit and Three.js
 - **[OpenRoom](https://github.com/SuperInstance/OpenRoom)** — A browser-based desktop where AI Agent operates every app through natural language.
 - **[openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)** — OpenShell wrapper re-exporting pythagorean48-codes (48-directional trust encoding)
-- **[opensky-terrain](https://github.com/SuperInstance/opensky-terrain)** — Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum
 - **[operational-fiction](https://github.com/SuperInstance/operational-fiction)**
 - **[optimal-control](https://github.com/SuperInstance/optimal-control)** — Optimal control in Rust. From LQR to HJB.
 - **[optimal-transport-agents-rs](https://github.com/SuperInstance/optimal-transport-agents-rs)** — Wasserstein distance and optimal transport between agent distributions — Sinkhorn algorithm, JKO gra
@@ -1261,6 +1264,7 @@
 - **[ship-log-modules](https://github.com/SuperInstance/ship-log-modules)** — Modular add-ons for ship-log-search — maps, analytics, AIS, weather, engine hours
 - **[ship-log-sync](https://github.com/SuperInstance/ship-log-sync)** — Offline-first local SQLite sync for ship-log-search — works on the boat
 - **[shoal](https://github.com/SuperInstance/shoal)** — 🔮 Conservation-bounded semantic search — the oracle that knows its limits
+- **[shoalwater](https://github.com/SuperInstance/shoalwater)** — Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum
 - **[si-compaction-poc](https://github.com/SuperInstance/si-compaction-poc)** — Proof of concept: conservation-law-optimal context compaction — Heddle's auto-compact formalized as 
 - **[si-conductor](https://github.com/SuperInstance/si-conductor)** — Agent routing layer for multi-agent systems
 - **[si-conservation-diffusion](https://github.com/SuperInstance/si-conservation-diffusion)** — Proof of concept: conservation-law-constrained diffusion on agent graphs — γ+η=C manifold shapes bud
@@ -1526,10 +1530,6 @@
 - **[ternary-science](https://github.com/SuperInstance/ternary-science)** — Ternary Science — Experimental Evidence  This crate is **not** another algorithm library
 - **[ternary-scoring](https://github.com/SuperInstance/ternary-scoring)** — Multi-criteria scoring for ternary strategies
 - **[ternary-search](https://github.com/SuperInstance/ternary-search)** — Search algorithms over ternary strategy spaces
-- **[ternary-seed](https://github.com/SuperInstance/ternary-seed)** — Seeded-Model-Programming (SMP) foundation for balanced ternary systems
-- **[ternary-semaphore](https://github.com/SuperInstance/ternary-semaphore)** — Ternary semaphore for GPU resource control. Permits as {-1=overcommitted, 0=at_capacity, +1=availabl
-- **[ternary-sensor](https://github.com/SuperInstance/ternary-sensor)** — Sensor data processing with ternary classification
-- **[ternary-shard](https://github.com/SuperInstance/ternary-shard)** — Sharded ternary data for multi-GPU inference. Partitions weight matrices across nodes, merges via te
 - **[ternary-shard-merge](https://github.com/SuperInstance/ternary-shard-merge)** — Merge distributed ternary weight shards back together
 - **[ternary-shard-split](https://github.com/SuperInstance/ternary-shard-split)** — Shard ternary model weights across devices. 16-trit aligned boundaries for clean packed representati
 - **[ternary-shared-memory](https://github.com/SuperInstance/ternary-shared-memory)** — ternary-shared-memory - SuperInstance ecosystem crate
