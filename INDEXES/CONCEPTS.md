@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-14 09:55 UTC
+**Generated:** 2026-10-15 09:36 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -132,6 +132,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-adjudication](https://github.com/SuperInstance/quilt-adjudication)
 - [quilt-mesh](https://github.com/SuperInstance/quilt-mesh)
 - [recovered-copy-20260824-emergence-engine](https://github.com/SuperInstance/recovered-copy-20260824-emergence-engine)
+- [slack-water](https://github.com/SuperInstance/slack-water)
 - [snapkit-rs](https://github.com/SuperInstance/snapkit-rs)
 - [splay-tree-rs](https://github.com/SuperInstance/splay-tree-rs)
 - [spline-instrument](https://github.com/SuperInstance/spline-instrument)
@@ -481,9 +482,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [git-agent](https://github.com/SuperInstance/git-agent)
 - [git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)
 - [git-native-agents](https://github.com/SuperInstance/git-native-agents)
-- [git.pp](https://github.com/SuperInstance/git.pp)
-- [git.pp-desk](https://github.com/SuperInstance/git.pp-desk)
-- [git.pp-ng](https://github.com/SuperInstance/git.pp-ng)
 - [harness-experiments](https://github.com/SuperInstance/harness-experiments)
 - [harness-rssi](https://github.com/SuperInstance/harness-rssi)
 - [hebbian-router](https://github.com/SuperInstance/hebbian-router)
@@ -837,6 +835,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-spreadsheet](https://github.com/SuperInstance/quilt-spreadsheet)
 - [resonance-engine](https://github.com/SuperInstance/resonance-engine)
 - [roblox-beatclock](https://github.com/SuperInstance/roblox-beatclock)
+- [slack-water](https://github.com/SuperInstance/slack-water)
 - [sonar-vision-c](https://github.com/SuperInstance/sonar-vision-c)
 - [spline-physics](https://github.com/SuperInstance/spline-physics)
 - [spring-mass](https://github.com/SuperInstance/spring-mass)
@@ -1059,6 +1058,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [seed-tick-audit](https://github.com/SuperInstance/seed-tick-audit)
 - [servo-mind](https://github.com/SuperInstance/servo-mind)
 - [session-room](https://github.com/SuperInstance/session-room)
+- [shoalwater-full](https://github.com/SuperInstance/shoalwater-full)
 - [signal-chain](https://github.com/SuperInstance/signal-chain)
 - [starter-shell](https://github.com/SuperInstance/starter-shell)
 - [substrate-game-engine](https://github.com/SuperInstance/substrate-game-engine)
@@ -1309,6 +1309,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [clip-quantize](https://github.com/SuperInstance/clip-quantize)
 - [cns-monitor](https://github.com/SuperInstance/cns-monitor)
 - [cns-substrate](https://github.com/SuperInstance/cns-substrate)
+- [coach-player](https://github.com/SuperInstance/coach-player)
 - [cocapn-ai-pages](https://github.com/SuperInstance/cocapn-ai-pages)
 - [cocapn-pushdown](https://github.com/SuperInstance/cocapn-pushdown)
 - [cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)
@@ -1447,7 +1448,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [gesture-kit](https://github.com/SuperInstance/gesture-kit)
 - [ghost-ledger](https://github.com/SuperInstance/ghost-ledger)
 - [git-native-mud](https://github.com/SuperInstance/git-native-mud)
-- [git.pp-grid](https://github.com/SuperInstance/git.pp-grid)
 - [glyphcast](https://github.com/SuperInstance/glyphcast)
 - [glyphspace](https://github.com/SuperInstance/glyphspace)
 - [glyphtensor](https://github.com/SuperInstance/glyphtensor)
@@ -1987,6 +1987,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ship-log-sync](https://github.com/SuperInstance/ship-log-sync)
 - [shoal](https://github.com/SuperInstance/shoal)
 - [shoalwater](https://github.com/SuperInstance/shoalwater)
+- [shoalwater-survey](https://github.com/SuperInstance/shoalwater-survey)
 - [si](https://github.com/SuperInstance/si)
 - [si-compaction-poc](https://github.com/SuperInstance/si-compaction-poc)
 - [si-conservation-python](https://github.com/SuperInstance/si-conservation-python)

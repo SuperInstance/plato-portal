@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-14 09:55 UTC
+**Generated:** 2026-10-15 09:36 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -665,6 +665,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[cns-echo](https://github.com/SuperInstance/cns-echo)** | Various | CNS echo agent — receives USCP signals, echoes back with analysis | 🟢 active |
 | **[cns-monitor](https://github.com/SuperInstance/cns-monitor)** | Various | Real-time CNS traffic monitor — htop for USCP signals | ⚪ unknown |
 | **[cns-substrate](https://github.com/SuperInstance/cns-substrate)** | Various | CNS bus with substrate cell integration. Every USCP packet = substrate cell with prev_hash chain. | ⚪ unknown |
+| **[coach-player](https://github.com/SuperInstance/coach-player)** | Various | Coach Player: a coachable auto-player grown by questions, frontier gaps and taste. Question database | ⚪ unknown |
 | **[code-city](https://github.com/SuperInstance/code-city)** | Various | Your codebase as a living 3D city. Files become buildings, folders become districts, bugs become fir | ⚪ unknown |
 | **[codegen-llvm](https://github.com/SuperInstance/codegen-llvm)** | Various | A Rust library for Codegen Llvm | ⚪ unknown |
 | **[codespace-worker](https://github.com/SuperInstance/codespace-worker)** | Various | 🚀 GitHub Codespaces worker utilities — run commands remotely in ephemeral x86_64 codespaces, pipelin | 🟢 active |
@@ -821,10 +822,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)** | Various | One-click Codespace template for git-agent runtime development | 🟢 active |
 | **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** | Various | Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o | 🟢 active |
 | **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** | Various | 🔮 The repo IS the world. Commits ARE actions. Zero server MUD. | ⚪ unknown |
-| **[git.pp](https://github.com/SuperInstance/git.pp)** | Various | git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa | 🟢 active |
-| **[git.pp-desk](https://github.com/SuperInstance/git.pp-desk)** | Various | The captain's desk for git.pp — a Cloudflare Agents projection of the record. Read-only; the record  | 🟢 active |
-| **[git.pp-grid](https://github.com/SuperInstance/git.pp-grid)** | Various | The Grid — a shared month derived from a default and an append-only record; proposals wear a color,  | ⚪ unknown |
-| **[git.pp-ng](https://github.com/SuperInstance/git.pp-ng)** | Various | git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the | 🟢 active |
 | **[glyphcast](https://github.com/SuperInstance/glyphcast)** | Various | Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as  | ⚪ unknown |
 | **[glyphspace](https://github.com/SuperInstance/glyphspace)** | Various | Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje | ⚪ unknown |
 | **[glyphtensor](https://github.com/SuperInstance/glyphtensor)** | Various | glyphtensor | ⚪ unknown |
@@ -1594,6 +1591,8 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ship-log-sync](https://github.com/SuperInstance/ship-log-sync)** | Various | Offline-first local SQLite sync for ship-log-search — works on the boat | ⚪ unknown |
 | **[shoal](https://github.com/SuperInstance/shoal)** | Various | 🔮 Conservation-bounded semantic search — the oracle that knows its limits | ⚪ unknown |
 | **[shoalwater](https://github.com/SuperInstance/shoalwater)** | Various | Bathymetric game platform for Sitka Sound — region packs, sounding audits, NOAA-verified tide datum | ⚪ unknown |
+| **[shoalwater-full](https://github.com/SuperInstance/shoalwater-full)** | Various | Shoalwater Full: the full-extent Sitka Sound pack (3,266 verified tiles) with an adaptive-fidelity v | ⚪ unknown |
+| **[shoalwater-survey](https://github.com/SuperInstance/shoalwater-survey)** | Various | Shoalwater Survey: kayak bottom-portrait passes over Sitka Sound, filed against the chart and kept i | ⚪ unknown |
 | **[si](https://github.com/SuperInstance/si)** | Various | 🎛️  SuperInstance developer tool ecosystem CLI — one command to install, compose, and manage all dev | ⚪ unknown |
 | **[si-compaction-poc](https://github.com/SuperInstance/si-compaction-poc)** | Various | Proof of concept: conservation-law-optimal context compaction — Heddle's auto-compact formalized as  | ⚪ unknown |
 | **[si-conductor](https://github.com/SuperInstance/si-conductor)** | Various | Agent routing layer for multi-agent systems | 🟢 active |
@@ -1646,6 +1645,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[sketch-oracle2-construct-readme](https://github.com/SuperInstance/sketch-oracle2-construct-readme)** | Various | Living document: what runs on oracle2, what ports, what services, the feedback loop | ⚪ unknown |
 | **[skills](https://github.com/SuperInstance/skills)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[skip-list-rs](https://github.com/SuperInstance/skip-list-rs)** | Various | Skip list with probabilistic balancing, range queries, and iterator support — pure Rust, no dependen | ⚪ unknown |
+| **[slack-water](https://github.com/SuperInstance/slack-water)** | Various | Slack Water - a Roblox fishing game with a shared, simulated ocean. Fish stocks are a real persisten | ⚪ unknown |
 | **[slackwater-art-spectrum](https://github.com/SuperInstance/slackwater-art-spectrum)** | Various | slackwater-art-spectrum | ⚪ unknown |
 | **[slackwater-cognition](https://github.com/SuperInstance/slackwater-cognition)** | Various | slackwater-cognition | ⚪ unknown |
 | **[slackwater-forge](https://github.com/SuperInstance/slackwater-forge)** | Various | Overnight GPU production line that produces a morning briefing. Works with any Ollama model. | ⚪ unknown |
@@ -5920,27 +5920,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead of databases or message queues
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [git.pp](https://github.com/SuperInstance/git.pp)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the database; this is the projection.
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [git.pp-desk](https://github.com/SuperInstance/git.pp-desk)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** The captain's desk for git.pp — a Cloudflare Agents projection of the record. Read-only; the record is the truth.
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [git.pp-ng](https://github.com/SuperInstance/git.pp-ng)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** git.pp — next-gen Git substrate for concurrent agents: tasks are the atom, state is derived from the record, provenance is the arbiter. Built on Cloud
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
