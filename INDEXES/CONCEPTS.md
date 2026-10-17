@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-16 09:29 UTC
+**Generated:** 2026-10-17 09:00 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -864,6 +864,8 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-rooms](https://github.com/SuperInstance/fleet-rooms)
 - [fleet-scribe](https://github.com/SuperInstance/fleet-scribe)
 - [gh-dungeons](https://github.com/SuperInstance/gh-dungeons)
+- [gitpp-reading-room](https://github.com/SuperInstance/gitpp-reading-room)
+- [gitpp-rsi-audit](https://github.com/SuperInstance/gitpp-rsi-audit)
 - [lucid](https://github.com/SuperInstance/lucid)
 - [luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)
 - [mavis-tile-pipeline](https://github.com/SuperInstance/mavis-tile-pipeline)
@@ -1189,6 +1191,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [MCPMempool-quilt](https://github.com/SuperInstance/MCPMempool-quilt)
 - [MicroMoth-quilt](https://github.com/SuperInstance/MicroMoth-quilt)
 - [OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)
+- [Otherhere](https://github.com/SuperInstance/Otherhere)
 - [Projectionist](https://github.com/SuperInstance/Projectionist)
 - [Quilt-Robotic-Arm---Gesture-Controlled](https://github.com/SuperInstance/Quilt-Robotic-Arm---Gesture-Controlled)
 - [RTSnavigator](https://github.com/SuperInstance/RTSnavigator)
@@ -1429,6 +1432,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [frobenius-norm](https://github.com/SuperInstance/frobenius-norm)
 - [fundamental-group](https://github.com/SuperInstance/fundamental-group)
 - [fuzz-engine](https://github.com/SuperInstance/fuzz-engine)
+- [g1-ble-backend](https://github.com/SuperInstance/g1-ble-backend)
 - [ga4444](https://github.com/SuperInstance/ga4444)
 - [garden-seed](https://github.com/SuperInstance/garden-seed)
 - [gauge](https://github.com/SuperInstance/gauge)
@@ -1458,7 +1462,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [gitpp-pl](https://github.com/SuperInstance/gitpp-pl)
 - [gitpp-playground](https://github.com/SuperInstance/gitpp-playground)
 - [gitpp-ports](https://github.com/SuperInstance/gitpp-ports)
+- [gitpp-rr-reader3](https://github.com/SuperInstance/gitpp-rr-reader3)
+- [gitpp-rr-reader4](https://github.com/SuperInstance/gitpp-rr-reader4)
 - [gitpp-rust](https://github.com/SuperInstance/gitpp-rust)
+- [gitpp-v046-cases](https://github.com/SuperInstance/gitpp-v046-cases)
 - [glyphcast](https://github.com/SuperInstance/glyphcast)
 - [glyphspace](https://github.com/SuperInstance/glyphspace)
 - [glyphtensor](https://github.com/SuperInstance/glyphtensor)
@@ -1593,8 +1600,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [night-city](https://github.com/SuperInstance/night-city)
 - [nmea-bridge](https://github.com/SuperInstance/nmea-bridge)
 - [nmea-quilt-cell](https://github.com/SuperInstance/nmea-quilt-cell)
-- [normal-form](https://github.com/SuperInstance/normal-form)
-- [notebooklm-bridge](https://github.com/SuperInstance/notebooklm-bridge)
 - [number-theory](https://github.com/SuperInstance/number-theory)
 - [number-theory-core](https://github.com/SuperInstance/number-theory-core)
 - [numeric-integration-rs](https://github.com/SuperInstance/numeric-integration-rs)
@@ -2193,12 +2198,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-spreadsheet](https://github.com/SuperInstance/ternary-spreadsheet)
 - [ternary-svm](https://github.com/SuperInstance/ternary-svm)
 - [ternary-swarm](https://github.com/SuperInstance/ternary-swarm)
-- [ternary-sync](https://github.com/SuperInstance/ternary-sync)
-- [ternary-temperament](https://github.com/SuperInstance/ternary-temperament)
-- [ternary-tempo](https://github.com/SuperInstance/ternary-tempo)
 - [ternary-tenforward](https://github.com/SuperInstance/ternary-tenforward)
-- [ternary-tensor](https://github.com/SuperInstance/ternary-tensor)
-- [ternary-tensor-parallel](https://github.com/SuperInstance/ternary-tensor-parallel)
 - [ternary-texture-memory](https://github.com/SuperInstance/ternary-texture-memory)
 - [ternary-thermostat](https://github.com/SuperInstance/ternary-thermostat)
 - [ternary-thread-block](https://github.com/SuperInstance/ternary-thread-block)

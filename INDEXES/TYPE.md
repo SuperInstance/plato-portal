@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-10-16 09:29 UTC
+**Generated:** 2026-10-17 09:00 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -445,6 +445,7 @@
 - **[fundamental-group](https://github.com/SuperInstance/fundamental-group)** — A Rust library for Fundamental Group
 - **[futhark-lab](https://github.com/SuperInstance/futhark-lab)** — Futhark experiments for the Quilt cellular substrate — TICK-as-one-kernel, witness-chain prefix scan
 - **[fuzz-engine](https://github.com/SuperInstance/fuzz-engine)** — A Rust library for Fuzz Engine
+- **[g1-ble-backend](https://github.com/SuperInstance/g1-ble-backend)** — Custom bleak-based developer backend for Even Realities G1 smart glasses: scan both arms, connect, r
 - **[ga4444](https://github.com/SuperInstance/ga4444)** — 4x4 four-in-a-row: the rung with complete ground truth. The composition test.
 - **[garden-seed](https://github.com/SuperInstance/garden-seed)** — Seed: Garden Seed
 - **[gauge](https://github.com/SuperInstance/gauge)**
@@ -466,7 +467,11 @@
 - **[gitpp-nudge](https://github.com/SuperInstance/gitpp-nudge)** — Setter-aware nudging for the git.pp fold. Author a nudge that reliably lands, and prove the loop con
 - **[gitpp-oracle](https://github.com/SuperInstance/gitpp-oracle)** — Continuous cross-port differential conformance oracle for the git.pp fold. Append-only ledger, known
 - **[gitpp-pl](https://github.com/SuperInstance/gitpp-pl)** — A Perl 5 port of the git.pp fold. 6th fold port. 28/28 conformance cases pass; doc-only discipline p
+- **[gitpp-reading-room](https://github.com/SuperInstance/gitpp-reading-room)** — Independent readings of the git.pp spec, with disagreement as the output. A measurement of how much 
+- **[gitpp-rr-reader3](https://github.com/SuperInstance/gitpp-rr-reader3)** — Independent reading 3 of the git.pp fold spec (C99)
+- **[gitpp-rr-reader4](https://github.com/SuperInstance/gitpp-rr-reader4)** — Adversarial ambiguity audit of the git.pp spec
 - **[gitpp-rust](https://github.com/SuperInstance/gitpp-rust)** — git.pp fold on Rust: a 4th port written from DESIGN.md alone (doc-only discipline), passes the full 
+- **[gitpp-v046-cases](https://github.com/SuperInstance/gitpp-v046-cases)** — Conformance cases for git.pp spec v0.4.6 clarified clauses
 - **[glyphcast](https://github.com/SuperInstance/glyphcast)** — Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as 
 - **[glyphspace](https://github.com/SuperInstance/glyphspace)** — Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje
 - **[glyphtensor](https://github.com/SuperInstance/glyphtensor)**
@@ -619,7 +624,6 @@
 - **[nexus-git-agent](https://github.com/SuperInstance/nexus-git-agent)** — Cloud-side brain for edge intelligence fleets. Jetson + ESP32 + Cocapn coordination.
 - **[nmea-bridge](https://github.com/SuperInstance/nmea-bridge)**
 - **[nmea-quilt-cell](https://github.com/SuperInstance/nmea-quilt-cell)** — NMEA 0183 gateway -> append-only journal cell. Byte-exact replay, kill -9 crash canary, receipts inc
-- **[notebooklm-bridge](https://github.com/SuperInstance/notebooklm-bridge)** — Bridge to Google NotebookLM for SuperInstance knowledge integration
 - **[number-theory](https://github.com/SuperInstance/number-theory)** — Number theory in Rust — primes, modular arithmetic, Diophantine equations, quadratic residues, conti
 - **[number-theory-core](https://github.com/SuperInstance/number-theory-core)** — See README
 - **[numeric-integration-rs](https://github.com/SuperInstance/numeric-integration-rs)** — Numerical integration: trapezoidal rule, Simpson's rule, Romberg integration, Gaussian quadrature, a
@@ -666,6 +670,7 @@
 - **[ordewell4quilt](https://github.com/SuperInstance/ordewell4quilt)** — Multi-agent task orchestration for coding agents. Turn one goal into an ordered plan of tasks — each
 - **[org-audit](https://github.com/SuperInstance/org-audit)** — Organization audit reports and GC analysis for SuperInstance
 - **[os-concepts](https://github.com/SuperInstance/os-concepts)** — Operating system concepts in Rust — process scheduling, memory management, file systems, virtual mem
+- **[Otherhere](https://github.com/SuperInstance/Otherhere)**
 - **[othismos](https://github.com/SuperInstance/othismos)** — Óthismos — the force a bounded system exerts against its bounds. The push IS the knowing.
 - **[othismos-llm](https://github.com/SuperInstance/othismos-llm)** — Context pressure for LLMs: measure how truncation changes output distributions
 - **[othismos-reef](https://github.com/SuperInstance/othismos-reef)** — Reef: structured knowledge graph with erosion, layering, and cascading failure
@@ -1544,12 +1549,7 @@
 - **[ternary-spreadsheet](https://github.com/SuperInstance/ternary-spreadsheet)** — Ternary Spreadsheet  Core logic for the SuperInstance Spreadsheet — a familiar spreadsheet inte...
 - **[ternary-svm](https://github.com/SuperInstance/ternary-svm)** — Support Vector Machines for Ternary Feature Spaces
 - **[ternary-swarm](https://github.com/SuperInstance/ternary-swarm)** — Swarm intelligence with ternary movement and decision making
-- **[ternary-sync](https://github.com/SuperInstance/ternary-sync)** — Sync for ternary {-1, 0, +1} systems — `SyncGroup`
-- **[ternary-temperament](https://github.com/SuperInstance/ternary-temperament)** — Temperament for ternary {-1, 0, +1} systems — `Pitch`, `Interval`, `Chord`
-- **[ternary-tempo](https://github.com/SuperInstance/ternary-tempo)** — Tempo and rhythm detection for ternary sequences
 - **[ternary-tenforward](https://github.com/SuperInstance/ternary-tenforward)** — Ten-Forward — the conversation engine
-- **[ternary-tensor](https://github.com/SuperInstance/ternary-tensor)** — Tensor operations for ternary multi-dimensional arrays
-- **[ternary-tensor-parallel](https://github.com/SuperInstance/ternary-tensor-parallel)** — Tensor parallelism for ternary models
 - **[ternary-texture-memory](https://github.com/SuperInstance/ternary-texture-memory)** — ternary-texture-memory - SuperInstance ecosystem crate
 - **[ternary-thermodynamics](https://github.com/SuperInstance/ternary-thermodynamics)** — Ternary Thermodynamics  Statistical mechanics analogs for ternary agent systems
 - **[ternary-thread-block](https://github.com/SuperInstance/ternary-thread-block)** — ternary-thread-block - SuperInstance ecosystem crate
@@ -1781,6 +1781,7 @@
 - **[claw](https://github.com/SuperInstance/claw)** — A simple Claw engine for cellular logic in spreadsheet instances within a superinstance/spreadsheet-
 - **[ensign-protocol](https://github.com/SuperInstance/ensign-protocol)** — Cocapn fleet crate
 - **[flux](https://github.com/SuperInstance/flux)** — FLUX — Fluid Language Universal eXecution: High-performance Rust runtime with bytecode VM, SSA IR, p
+- **[gitpp-rsi-audit](https://github.com/SuperInstance/gitpp-rsi-audit)** — Reading-room audit of arXiv 2610.13912 (RSI-Anything): does the text determine its own retention pro
 - **[gravity-well-protocol](https://github.com/SuperInstance/gravity-well-protocol)** — Edge-Native concept: Gravity Well Protocol
 - **[marine-gpu-edge](https://github.com/SuperInstance/marine-gpu-edge)** — Novel GPU edge computing for marine sensor fusion — CUDA kernels, MEP protocol, constraint-aware sch
 - **[mentis-thinker-adapter](https://github.com/SuperInstance/mentis-thinker-adapter)** — Mental World Modeling layer for the SuperInstance constant thinker
@@ -1899,7 +1900,6 @@
 - **[mavis-pincher-pages](https://github.com/SuperInstance/mavis-pincher-pages)** — SuperInstance fleet tool POC (Mavis, 2026-09-28)
 - **[mavis-self-review](https://github.com/SuperInstance/mavis-self-review)** — Self-review tool for Mavis: analyzes past memory + code for productivity, gaps, and improvement sugg
 - **[murex](https://github.com/SuperInstance/murex)** — A smarter shell and scripting environment with advanced features designed for usability, safety and 
-- **[normal-form](https://github.com/SuperInstance/normal-form)** — Database normal form analysis and transformation tools
 - **[openshell-compatibility-audit](https://github.com/SuperInstance/openshell-compatibility-audit)** — Categorizes all SuperInstance repos for OpenShell integration — native, wrapper, backend, tool, depr
 - **[plato-shell-bridge](https://github.com/SuperInstance/plato-shell-bridge)** — The weapon rack — dynamic tool discovery, loading, and lifecycle for PLATO shells
 - **[plato-tools](https://github.com/SuperInstance/plato-tools)** — Persistent agent memory + fleet coordination tools for the Plato MUD ecosystem

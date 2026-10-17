@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-16 09:29 UTC
+**Generated:** 2026-10-17 09:00 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -366,7 +366,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[negative-knowledge](https://github.com/SuperInstance/negative-knowledge)** | JetsonClaw1 | Negative knowledge as the primary computational resource — knowing where violations are NOT is cheap | 🟢 active |
 | **[nexus-edge-runtime](https://github.com/SuperInstance/nexus-edge-runtime)** | JetsonClaw1 | Edge runtime for autonomous agents — bytecode VM, INCREMENTS trust, wire protocol, safety system, in | 🟢 active |
 | **[nexus-git-agent](https://github.com/SuperInstance/nexus-git-agent)** | JetsonClaw1 | Cloud-side brain for edge intelligence fleets. Jetson + ESP32 + Cocapn coordination. | 🟢 active |
-| **[notebooklm-bridge](https://github.com/SuperInstance/notebooklm-bridge)** | JetsonClaw1 | Bridge to Google NotebookLM for SuperInstance knowledge integration | 🟢 active |
 | **[old-school-machine-wisdom](https://github.com/SuperInstance/old-school-machine-wisdom)** | JetsonClaw1 | Old-school machine wisdom: FORTH threaded code, DGD trampoline JIT, MUD1 shared memory, MUDDL databa | 🟢 active |
 | **[open-mythos-edge](https://github.com/SuperInstance/open-mythos-edge)** | JetsonClaw1 | Edge-optimized OpenMythos RDT for Jetson/ARM64 — pure PyTorch, no Triton, 1B/3B variants | 🟢 active |
 | **[openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)** | JetsonClaw1 | GPU-accelerated edge node for OpenConstruct - local inference, camera/sonar processing, Plato shell  | 🟢 active |
@@ -817,6 +816,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[frozen-clock-lab](https://github.com/SuperInstance/frozen-clock-lab)** | Various | PoC: novel mechanism lab (fleet snowball) | ⚪ unknown |
 | **[fundamental-group](https://github.com/SuperInstance/fundamental-group)** | Various | A Rust library for Fundamental Group | ⚪ unknown |
 | **[fuzz-engine](https://github.com/SuperInstance/fuzz-engine)** | Various | A Rust library for Fuzz Engine | ⚪ unknown |
+| **[g1-ble-backend](https://github.com/SuperInstance/g1-ble-backend)** | Various | Custom bleak-based developer backend for Even Realities G1 smart glasses: scan both arms, connect, r | ⚪ unknown |
 | **[ga4444](https://github.com/SuperInstance/ga4444)** | Various | 4x4 four-in-a-row: the rung with complete ground truth. The composition test. | ⚪ unknown |
 | **[garden-seed](https://github.com/SuperInstance/garden-seed)** | Various | Seed: Garden Seed | ⚪ unknown |
 | **[gauge](https://github.com/SuperInstance/gauge)** | Various | gauge | ⚪ unknown |
@@ -842,7 +842,12 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[gitpp-nudge](https://github.com/SuperInstance/gitpp-nudge)** | Various | Setter-aware nudging for the git.pp fold. Author a nudge that reliably lands, and prove the loop con | ⚪ unknown |
 | **[gitpp-pl](https://github.com/SuperInstance/gitpp-pl)** | Various | A Perl 5 port of the git.pp fold. 6th fold port. 28/28 conformance cases pass; doc-only discipline p | ⚪ unknown |
 | **[gitpp-ports](https://github.com/SuperInstance/gitpp-ports)** | Various | Landing page for the 7 git.pp fold ports. | ⚪ unknown |
+| **[gitpp-reading-room](https://github.com/SuperInstance/gitpp-reading-room)** | Various | Independent readings of the git.pp spec, with disagreement as the output. A measurement of how much  | ⚪ unknown |
+| **[gitpp-rr-reader3](https://github.com/SuperInstance/gitpp-rr-reader3)** | Various | Independent reading 3 of the git.pp fold spec (C99) | ⚪ unknown |
+| **[gitpp-rr-reader4](https://github.com/SuperInstance/gitpp-rr-reader4)** | Various | Adversarial ambiguity audit of the git.pp spec | ⚪ unknown |
+| **[gitpp-rsi-audit](https://github.com/SuperInstance/gitpp-rsi-audit)** | Various | Reading-room audit of arXiv 2610.13912 (RSI-Anything): does the text determine its own retention pro | ⚪ unknown |
 | **[gitpp-rust](https://github.com/SuperInstance/gitpp-rust)** | Various | git.pp fold on Rust: a 4th port written from DESIGN.md alone (doc-only discipline), passes the full  | ⚪ unknown |
+| **[gitpp-v046-cases](https://github.com/SuperInstance/gitpp-v046-cases)** | Various | Conformance cases for git.pp spec v0.4.6 clarified clauses | ⚪ unknown |
 | **[glyphcast](https://github.com/SuperInstance/glyphcast)** | Various | Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as  | ⚪ unknown |
 | **[glyphspace](https://github.com/SuperInstance/glyphspace)** | Various | Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje | ⚪ unknown |
 | **[glyphtensor](https://github.com/SuperInstance/glyphtensor)** | Various | glyphtensor | ⚪ unknown |
@@ -996,7 +1001,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[night-city](https://github.com/SuperInstance/night-city)** | Various | 3D website game featuring cyberpunk-themed city filled with easter-eggs and references to the develo | ⚪ unknown |
 | **[nmea-bridge](https://github.com/SuperInstance/nmea-bridge)** | Various | nmea-bridge | ⚪ unknown |
 | **[nmea-quilt-cell](https://github.com/SuperInstance/nmea-quilt-cell)** | Various | NMEA 0183 gateway -> append-only journal cell. Byte-exact replay, kill -9 crash canary, receipts inc | ⚪ unknown |
-| **[normal-form](https://github.com/SuperInstance/normal-form)** | Various | Database normal form analysis and transformation tools | ⚪ unknown |
 | **[number-theory](https://github.com/SuperInstance/number-theory)** | Various | Number theory in Rust — primes, modular arithmetic, Diophantine equations, quadratic residues, conti | ⚪ unknown |
 | **[number-theory-core](https://github.com/SuperInstance/number-theory-core)** | Various | See README | ⚪ unknown |
 | **[numeric-integration-rs](https://github.com/SuperInstance/numeric-integration-rs)** | Various | Numerical integration: trapezoidal rule, Simpson's rule, Romberg integration, Gaussian quadrature, a | ⚪ unknown |
@@ -1049,6 +1053,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ordewell4quilt](https://github.com/SuperInstance/ordewell4quilt)** | Various | Multi-agent task orchestration for coding agents. Turn one goal into an ordered plan of tasks — each | 🟢 active |
 | **[org-audit](https://github.com/SuperInstance/org-audit)** | Various | Organization audit reports and GC analysis for SuperInstance | ⚪ unknown |
 | **[os-concepts](https://github.com/SuperInstance/os-concepts)** | Various | Operating system concepts in Rust — process scheduling, memory management, file systems, virtual mem | ⚪ unknown |
+| **[Otherhere](https://github.com/SuperInstance/Otherhere)** | Various | Otherhere | ⚪ unknown |
 | **[othismos](https://github.com/SuperInstance/othismos)** | Various | Óthismos — the force a bounded system exerts against its bounds. The push IS the knowing. | ⚪ unknown |
 | **[othismos-llm](https://github.com/SuperInstance/othismos-llm)** | Various | Context pressure for LLMs: measure how truncation changes output distributions | ⚪ unknown |
 | **[ouroboros](https://github.com/SuperInstance/ouroboros)** | Various | Ouroboros — self-creating AI agent. Born Feb 16, 2026. | 🟢 active |
@@ -1856,12 +1861,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-spiral](https://github.com/SuperInstance/ternary-spiral)** | Various | Spiral wave dynamics from Rock-Paper-Scissors cyclic dominance | ⚪ unknown |
 | **[ternary-svm](https://github.com/SuperInstance/ternary-svm)** | Various | Support Vector Machines for Ternary Feature Spaces | ⚪ unknown |
 | **[ternary-swarm](https://github.com/SuperInstance/ternary-swarm)** | Various | Swarm intelligence with ternary movement and decision making | ⚪ unknown |
-| **[ternary-sync](https://github.com/SuperInstance/ternary-sync)** | Various | Sync for ternary {-1, 0, +1} systems — `SyncGroup` | ⚪ unknown |
-| **[ternary-temperament](https://github.com/SuperInstance/ternary-temperament)** | Various | Temperament for ternary {-1, 0, +1} systems — `Pitch`, `Interval`, `Chord` | ⚪ unknown |
-| **[ternary-tempo](https://github.com/SuperInstance/ternary-tempo)** | Various | Tempo and rhythm detection for ternary sequences | ⚪ unknown |
 | **[ternary-tenforward](https://github.com/SuperInstance/ternary-tenforward)** | Various | Ten-Forward — the conversation engine | ⚪ unknown |
-| **[ternary-tensor](https://github.com/SuperInstance/ternary-tensor)** | Various | Tensor operations for ternary multi-dimensional arrays | ⚪ unknown |
-| **[ternary-tensor-parallel](https://github.com/SuperInstance/ternary-tensor-parallel)** | Various | Tensor parallelism for ternary models | ⚪ unknown |
 | **[ternary-texture-memory](https://github.com/SuperInstance/ternary-texture-memory)** | Various | ternary-texture-memory - SuperInstance ecosystem crate | ⚪ unknown |
 | **[ternary-thermodynamics](https://github.com/SuperInstance/ternary-thermodynamics)** | Various | Ternary Thermodynamics  Statistical mechanics analogs for ternary agent systems | 🟢 active |
 | **[ternary-thermostat](https://github.com/SuperInstance/ternary-thermostat)** | Various | Ternary thermostat: climate control with PID, multi-zone, and scheduling | ⚪ unknown |
@@ -4457,13 +4457,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** Cloud-side brain for edge intelligence fleets. Jetson + ESP32 + Cocapn coordination.
-- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
-
-### [notebooklm-bridge](https://github.com/SuperInstance/notebooklm-bridge)
-- **Domain:** Hardware & Edge
-- **Vessel:** JetsonClaw1
-- **Purpose:** Bridge to Google NotebookLM for SuperInstance knowledge integration
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 

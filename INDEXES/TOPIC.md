@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-10-16 09:29 UTC
+**Generated:** 2026-10-17 09:00 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -638,6 +638,8 @@
 - **[fleet-rooms](https://github.com/SuperInstance/fleet-rooms)** — fleet-rooms: the runtime keel — glue repo (field_score.py :4073/field → JSONL MIDI spool; demo.sh on
 - **[fleet-scribe](https://github.com/SuperInstance/fleet-scribe)** — Download-and-try digital twin builder. Sits beside any app, builds a PLATO twin.
 - **[gh-dungeons](https://github.com/SuperInstance/gh-dungeons)** — PLATO-powered dungeon crawler — gh extension that turns knowledge rooms into playable roguelike leve
+- **[gitpp-reading-room](https://github.com/SuperInstance/gitpp-reading-room)** — Independent readings of the git.pp spec, with disagreement as the output. A measurement of how much 
+- **[gitpp-rsi-audit](https://github.com/SuperInstance/gitpp-rsi-audit)** — Reading-room audit of arXiv 2610.13912 (RSI-Anything): does the text determine its own retention pro
 - **[lucid](https://github.com/SuperInstance/lucid)** — LucidDreamer — the elephant's interpreter. Rooms dream. We make them lucid.
 - **[luciddreamer-agent](https://github.com/SuperInstance/luciddreamer-agent)** — AI creative exploration through lucid dreaming themed rooms. Generate poetry, fiction, music, and vi
 - **[mavis-tile-pipeline](https://github.com/SuperInstance/mavis-tile-pipeline)** — Tile pipeline: discrete knowledge tiles for canon. PLATO pattern ported to Quilt — 8 stages from imp
@@ -1149,6 +1151,7 @@
 - **[Full-stack-Free-Movie-Streaming-Website](https://github.com/SuperInstance/Full-stack-Free-Movie-Streaming-Website)** — A modern movie and TV show streaming discovery app built with React 18, Vite, and Tailwind CSS. Brow
 - **[fundamental-group](https://github.com/SuperInstance/fundamental-group)** — A Rust library for Fundamental Group
 - **[fuzz-engine](https://github.com/SuperInstance/fuzz-engine)** — A Rust library for Fuzz Engine
+- **[g1-ble-backend](https://github.com/SuperInstance/g1-ble-backend)** — Custom bleak-based developer backend for Even Realities G1 smart glasses: scan both arms, connect, r
 - **[ga4444](https://github.com/SuperInstance/ga4444)** — 4x4 four-in-a-row: the rung with complete ground truth. The composition test.
 - **[garden-seed](https://github.com/SuperInstance/garden-seed)** — Seed: Garden Seed
 - **[gauge](https://github.com/SuperInstance/gauge)**
@@ -1178,7 +1181,10 @@
 - **[gitpp-pl](https://github.com/SuperInstance/gitpp-pl)** — A Perl 5 port of the git.pp fold. 6th fold port. 28/28 conformance cases pass; doc-only discipline p
 - **[gitpp-playground](https://github.com/SuperInstance/gitpp-playground)** — A single-page browser playground for the git.pp fold. Edit records, see the closure root, derived st
 - **[gitpp-ports](https://github.com/SuperInstance/gitpp-ports)** — Landing page for the 7 git.pp fold ports.
+- **[gitpp-rr-reader3](https://github.com/SuperInstance/gitpp-rr-reader3)** — Independent reading 3 of the git.pp fold spec (C99)
+- **[gitpp-rr-reader4](https://github.com/SuperInstance/gitpp-rr-reader4)** — Adversarial ambiguity audit of the git.pp spec
 - **[gitpp-rust](https://github.com/SuperInstance/gitpp-rust)** — git.pp fold on Rust: a 4th port written from DESIGN.md alone (doc-only discipline), passes the full 
+- **[gitpp-v046-cases](https://github.com/SuperInstance/gitpp-v046-cases)** — Conformance cases for git.pp spec v0.4.6 clarified clauses
 - **[glyphcast](https://github.com/SuperInstance/glyphcast)** — Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as 
 - **[glyphspace](https://github.com/SuperInstance/glyphspace)** — Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=obje
 - **[glyphtensor](https://github.com/SuperInstance/glyphtensor)**
@@ -1316,8 +1322,6 @@
 - **[night-city](https://github.com/SuperInstance/night-city)** — 3D website game featuring cyberpunk-themed city filled with easter-eggs and references to the develo
 - **[nmea-bridge](https://github.com/SuperInstance/nmea-bridge)**
 - **[nmea-quilt-cell](https://github.com/SuperInstance/nmea-quilt-cell)** — NMEA 0183 gateway -> append-only journal cell. Byte-exact replay, kill -9 crash canary, receipts inc
-- **[normal-form](https://github.com/SuperInstance/normal-form)** — Database normal form analysis and transformation tools
-- **[notebooklm-bridge](https://github.com/SuperInstance/notebooklm-bridge)** — Bridge to Google NotebookLM for SuperInstance knowledge integration
 - **[number-theory](https://github.com/SuperInstance/number-theory)** — Number theory in Rust — primes, modular arithmetic, Diophantine equations, quadratic residues, conti
 - **[number-theory-core](https://github.com/SuperInstance/number-theory-core)** — See README
 - **[numeric-integration-rs](https://github.com/SuperInstance/numeric-integration-rs)** — Numerical integration: trapezoidal rule, Simpson's rule, Romberg integration, Gaussian quadrature, a
@@ -1351,6 +1355,7 @@
 - **[orations-metal](https://github.com/SuperInstance/orations-metal)** — Three orations on deadbands, eigenvectors, and load-bearing abstractions — plus critic synthesis
 - **[org-audit](https://github.com/SuperInstance/org-audit)** — Organization audit reports and GC analysis for SuperInstance
 - **[os-concepts](https://github.com/SuperInstance/os-concepts)** — Operating system concepts in Rust — process scheduling, memory management, file systems, virtual mem
+- **[Otherhere](https://github.com/SuperInstance/Otherhere)**
 - **[othismos](https://github.com/SuperInstance/othismos)** — Óthismos — the force a bounded system exerts against its bounds. The push IS the knowing.
 - **[othismos-llm](https://github.com/SuperInstance/othismos-llm)** — Context pressure for LLMs: measure how truncation changes output distributions
 - **[othismos-reef](https://github.com/SuperInstance/othismos-reef)** — Reef: structured knowledge graph with erosion, layering, and cascading failure
@@ -1926,12 +1931,7 @@
 - **[ternary-spreadsheet](https://github.com/SuperInstance/ternary-spreadsheet)** — Ternary Spreadsheet  Core logic for the SuperInstance Spreadsheet — a familiar spreadsheet inte...
 - **[ternary-svm](https://github.com/SuperInstance/ternary-svm)** — Support Vector Machines for Ternary Feature Spaces
 - **[ternary-swarm](https://github.com/SuperInstance/ternary-swarm)** — Swarm intelligence with ternary movement and decision making
-- **[ternary-sync](https://github.com/SuperInstance/ternary-sync)** — Sync for ternary {-1, 0, +1} systems — `SyncGroup`
-- **[ternary-temperament](https://github.com/SuperInstance/ternary-temperament)** — Temperament for ternary {-1, 0, +1} systems — `Pitch`, `Interval`, `Chord`
-- **[ternary-tempo](https://github.com/SuperInstance/ternary-tempo)** — Tempo and rhythm detection for ternary sequences
 - **[ternary-tenforward](https://github.com/SuperInstance/ternary-tenforward)** — Ten-Forward — the conversation engine
-- **[ternary-tensor](https://github.com/SuperInstance/ternary-tensor)** — Tensor operations for ternary multi-dimensional arrays
-- **[ternary-tensor-parallel](https://github.com/SuperInstance/ternary-tensor-parallel)** — Tensor parallelism for ternary models
 - **[ternary-texture-memory](https://github.com/SuperInstance/ternary-texture-memory)** — ternary-texture-memory - SuperInstance ecosystem crate
 - **[ternary-thermostat](https://github.com/SuperInstance/ternary-thermostat)** — Ternary thermostat: climate control with PID, multi-zone, and scheduling
 - **[ternary-thread-block](https://github.com/SuperInstance/ternary-thread-block)** — ternary-thread-block - SuperInstance ecosystem crate
