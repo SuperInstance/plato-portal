@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-17 09:00 UTC
+**Generated:** 2026-10-18 09:19 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -47,6 +47,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[dual-band-guard](https://github.com/SuperInstance/dual-band-guard)** | Forgemaster | dual-band-guard | 🟢 active |
 | **[flux](https://github.com/SuperInstance/flux)** | Forgemaster | FLUX — Fluid Language Universal eXecution: High-performance Rust runtime with bytecode VM, SSA IR, p | 🟢 active |
 | **[flux-agent-runtime](https://github.com/SuperInstance/flux-agent-runtime)** | Forgemaster | FLUX-native agent runtime — self-bootstrapping agents in Docker sandboxes that create vessels, pick  | 🟢 active |
+| **[flux-check-js](https://github.com/SuperInstance/flux-check-js)** | Forgemaster | Exact constraint checking, fracture-coalesce, and sediment layers. Zero-dep TypeScript/ESM. | 🟢 active |
 | **[flux-compiler](https://github.com/SuperInstance/flux-compiler)** | Forgemaster | The first certifiable constraint compiler — GUARD DSL → verified machine code | 🟢 active |
 | **[flux-compiler-rs](https://github.com/SuperInstance/flux-compiler-rs)** | Forgemaster | FLUX bytecode assembler, disassembler, and validator (Rust) | 🟢 active |
 | **[flux-core](https://github.com/SuperInstance/flux-core)** | Forgemaster | FLUX bytecode runtime — Fluid Language Universal eXecution: a zero-dependency register-based VM. Pub | 🟢 active |
@@ -137,7 +138,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[spacedrive](https://github.com/SuperInstance/spacedrive)** | Forgemaster | Spacedrive fork with Storage Conservation Guardian | 🟢 active |
 | **[storage-guardian](https://github.com/SuperInstance/storage-guardian)** | Forgemaster | Storage Guardian — duplicate detection, deduplication, budget enforcement, trend analysis, and alert | 🟢 active |
 | **[superinstance-polyformalism-harness](https://github.com/SuperInstance/superinstance-polyformalism-harness)** | Forgemaster | Unified harness for the 7-port polyformalism fleet — byte-exact canary verification | 🟢 active |
-| **[ternary-validation](https://github.com/SuperInstance/ternary-validation)** | Forgemaster | Validate ternary strategies against constraints | 🟢 active |
 | **[tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)** | Forgemaster | Constraint satisfaction through musical voice-leading — the Eisenstein lattice IS the Tonnetz | 🟢 active |
 | **[tripartite-room](https://github.com/SuperInstance/tripartite-room)** | Forgemaster | Three innate agents per PLATO room: Ground Truth (physics), Constraint (engineer), Communication (di | 🟢 active |
 | **[turbovec-integration-ccc](https://github.com/SuperInstance/turbovec-integration-ccc)** | Forgemaster | TurboVec integration for CCC — vector acceleration primitives for constraint computation | 🟢 active |
@@ -151,6 +151,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 |------|--------|---------|--------|
 | **[a2a-adapter](https://github.com/SuperInstance/a2a-adapter)** | Oracle1 | I2I-to-A2A protocol bridge — allows git-native agents to participate in the A2A ecosystem. | 🟢 active |
 | **[A2A-native-notebookLM](https://github.com/SuperInstance/A2A-native-notebookLM)** | Oracle1 |  Notebook LM for agents. let them build automations themselves for themselves | 🟢 active |
+| **[adinkra-math-npm](https://github.com/SuperInstance/adinkra-math-npm)** | Forgemaster | Adinkra symbols as mathematics for JavaScript/TypeScript — symbolic encoding, topology, and ML | 🟢 active |
 | **[agent-operations](https://github.com/SuperInstance/agent-operations)** | Oracle1 | Patterns and protocols for multi-agent operations on large codebases — reliability analysis, task te | 🟢 active |
 | **[ax-quilt](https://github.com/SuperInstance/ax-quilt)** | Forgemaster |  a Designer Agent moves cells around the spreadsheet like Rubik's cube faces (sort, transpose, swap) | 🟢 active |
 | **[bottle-seed](https://github.com/SuperInstance/bottle-seed)** | Oracle1 | Seed: Bottle Seed | 🟢 active |
@@ -159,6 +160,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[dad-son-channel](https://github.com/SuperInstance/dad-son-channel)** | Oracle1 | Asymmetric inbox for two captains, two sergeants. A bottle on the beach, not email, not IM. | 🟢 active |
 | **[edge-ledger](https://github.com/SuperInstance/edge-ledger)** | Forgemaster | fleet-state@v1 — the SuperInstance fleet sync contract: per-node envelope hash chains, idempotent in | 🟢 active |
 | **[eisenstein](https://github.com/SuperInstance/eisenstein)** | Forgemaster | Zero-drift hexagonal lattice arithmetic via Eisenstein integers. Exact computation, no floating poin | 🟢 active |
+| **[Equipment-CellLogic-Distiller](https://github.com/SuperInstance/Equipment-CellLogic-Distiller)** | Forgemaster | Breaks down LLM logic into spreadsheet-visualized cells with tile decomposition | 🟢 active |
 | **[erised-fleet-table](https://github.com/SuperInstance/erised-fleet-table)** | Forgemaster | THE FLEET TABLE — erised x platonic-randomness fleet playtest: the SuperInstance fleet as a TTRPG pa | 🟢 active |
 | **[fleet-agent-core](https://github.com/SuperInstance/fleet-agent-core)** | Forgemaster | A single-binary fleet agent — one loop from metal to meaning | 🟢 active |
 | **[fleet-agent-early-version](https://github.com/SuperInstance/fleet-agent-early-version)** | Forgemaster | Universal agent server for all 16 fleet-midi agents (ports 2160-2175) | 🟢 active |
@@ -219,6 +221,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-witness](https://github.com/SuperInstance/fleet-witness)** | Forgemaster | Fleet WAL completeness layer: RFC 6962 Merkle checkpoints over five-opcode receipts (witnessing stud | 🟢 active |
 | **[fleet-yaw](https://github.com/SuperInstance/fleet-yaw)** | Forgemaster | Fleet yaw autopilot — learns fleet physics from first-person perspective bearing-rate observations i | 🟢 active |
 | **[flux-js](https://github.com/SuperInstance/flux-js)** | Oracle1 | FLUX.js — JavaScript bytecode VM with A2A agent messaging. 373ns/iter via V8 JIT. | 🟢 active |
+| **[gitpp-sheet](https://github.com/SuperInstance/gitpp-sheet)** | Forgemaster | A git.pp fold as a spreadsheet with cell-level confidence, and the graph that shows where the confid | 🟢 active |
 | **[holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)** | Forgemaster | Zero-voting, zero-CRDT, zero-Byzantine-threshold consensus via geometric parallel transport. | 🟢 active |
 | **[lucineer-fleet-wiki](https://github.com/SuperInstance/lucineer-fleet-wiki)** | Forgemaster | lucineer-fleet-wiki | 🟢 active |
 | **[mavis-fleet-canary](https://github.com/SuperInstance/mavis-fleet-canary)** | Forgemaster | Meta-canary: verifies polyformalism across the entire Quilt fleet. All 35 repos produce the same can | 🟢 active |
@@ -226,7 +229,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[Murmur](https://github.com/SuperInstance/Murmur)** | Oracle1 | Knowledge Tensors for self-improving agents | 🟢 active |
 | **[murmur-agent](https://github.com/SuperInstance/murmur-agent)** | Oracle1 | All-night thinking git-agent — drop into any project, point it at a topic, let it think. TypeScript  | 🟢 active |
 | **[murmuration](https://github.com/SuperInstance/murmuration)** | Oracle1 | A swarm of first-person cells that reach consensus by local deference alone, with no central authori | 🟢 active |
-| **[octomap-conservation-poc](https://github.com/SuperInstance/octomap-conservation-poc)** | Forgemaster | Conservation + sheaf cohomology for 3D occupancy mapping — detects conflicts, extracts topology | 🟢 active |
 | **[openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)** | Forgemaster | Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense ty | 🟢 active |
 | **[openrooms](https://github.com/SuperInstance/openrooms)** | Forgemaster | Agent-powered collaborative rooms with topology, intention fields, and Hodge decomposition | 🟢 active |
 | **[paper-zero-crypto-fleet-security](https://github.com/SuperInstance/paper-zero-crypto-fleet-security)** | Forgemaster | Zero-Crypto Fleet Security via Physics-Based Temporal Authentication — research paper | 🟢 active |
@@ -236,6 +238,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[plato-server](https://github.com/SuperInstance/plato-server)** | Oracle1 | Room server that acts as the fleet's shared memory. Agents write tiles (Q&A pairs) and read each oth | 🟢 active |
 | **[polln](https://github.com/SuperInstance/polln)** | Forgemaster | SuperInstance Visualized in Spreadsheets for Tile Intelligence in real-time workflows, simulations o | 🟢 active |
 | **[polychora](https://github.com/SuperInstance/polychora)** | Forgemaster | Genuine 4D voxel game engine built on Vulkan — full spatial X/Y/Z/W coordinates, native 4D rotation  | 🟢 active |
+| **[polyformalism-a2a-js](https://github.com/SuperInstance/polyformalism-a2a-js)** | Oracle1 | 9-channel polyglot communication framework for multi-agent alignment (JS/Node.js) | 🟢 active |
 | **[quilt](https://github.com/SuperInstance/quilt)** | Forgemaster | A spreadsheet where every cell is a live, addressable capability. The grid is the runtime. | 🟢 active |
 | **[quilt-arcade](https://github.com/SuperInstance/quilt-arcade)** | Forgemaster | Five spreadsheet games (tictactoe, reversi, connect4, gomoku, texas hold-em) — rules as cells, visib | 🟢 active |
 | **[quilt-canon-explorer](https://github.com/SuperInstance/quilt-canon-explorer)** | Oracle1 | A2A-friendly canon archive browser for the Quilt substrate walker | 🟢 active |
@@ -294,6 +297,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[superinstance-cocapn](https://github.com/SuperInstance/superinstance-cocapn)** | Forgemaster | Captain-level fleet coordination — conservation auditing, vessel oversight, fleet-wide resource mana | 🟢 active |
 | **[SuperInstance-papers](https://github.com/SuperInstance/SuperInstance-papers)** | Forgemaster | Automatically Deconstruct logic into Spread Sheet Tiles and Cells, Instances Interconnected w/ Origi | 🟢 active |
 | **[superinstance-protocol](https://github.com/SuperInstance/superinstance-protocol)** | Oracle1 | Hybrid Bottle wire protocol — JSON envelope + msgpack payload with ternary conservation auditing for | 🟢 active |
+| **[SuperInstance-Starter-Agent](https://github.com/SuperInstance/SuperInstance-Starter-Agent)** | Forgemaster | Minimal Origin-Centric agent with modular equipment system for the SuperInstance spreadsheet paradig | 🟢 active |
 | **[ternary-spreadsheet](https://github.com/SuperInstance/ternary-spreadsheet)** | Forgemaster | Ternary Spreadsheet  Core logic for the SuperInstance Spreadsheet — a familiar spreadsheet inte... | 🟢 active |
 | **[ternary-topology](https://github.com/SuperInstance/ternary-topology)** | Forgemaster | ternary-topology  Persistent homology for ternary networks | 🟢 active |
 | **[tile-memory-early-version](https://github.com/SuperInstance/tile-memory-early-version)** | Forgemaster | [ARCHIVED] Early lossy memory experiment. See SuperInstance/fleet-memory for lifecycle-aware distrib | 🟢 active |
@@ -325,6 +329,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[codespace-edge-rd](https://github.com/SuperInstance/codespace-edge-rd)** | JetsonClaw1 | R&D: Codespace→Edge agent lifecycle, yoke transfer, devcontainer templates | 🟢 active |
 | **[construct-core](https://github.com/SuperInstance/construct-core)** | JetsonClaw1 | Hardware-agnostic agent runtime with layered trait system for the SuperInstance Construct API | 🟢 active |
 | **[crab-cell](https://github.com/SuperInstance/crab-cell)** | JetsonClaw1 | A crab is something that owes, a watcher is something that checks, and the ledger is where they meet | 🟢 active |
+| **[decision-ledger](https://github.com/SuperInstance/decision-ledger)** | JetsonClaw1 | decision-ledger | 🟢 active |
 | **[doubt-ledger](https://github.com/SuperInstance/doubt-ledger)** | JetsonClaw1 | PoC: novel mechanism lab (fleet snowball) | 🟢 active |
 | **[edge-compiler](https://github.com/SuperInstance/edge-compiler)** | JetsonClaw1 | Compile and optimize models for specific hardware targets | 🟢 active |
 | **[edge-equipment-catalog](https://github.com/SuperInstance/edge-equipment-catalog)** | JetsonClaw1 | Edge-Native concept: Edge Equipment Catalog | 🟢 active |
@@ -350,6 +355,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[hermit-crab](https://github.com/SuperInstance/hermit-crab)** | JetsonClaw1 | Agent that migrates between hardware shells preserving knowledge — tracks conservation ratio across  | 🟢 active |
 | **[holodeck-c](https://github.com/SuperInstance/holodeck-c)** | JetsonClaw1 | 🔧 Lightweight C holodeck for embedded and edge deployment. | 🟢 active |
 | **[hwscan](https://github.com/SuperInstance/hwscan)** | JetsonClaw1 | Cross-platform hardware detection and tier calculation for Rust. Slice-of-life archive. | 🟢 active |
+| **[intercontext-map](https://github.com/SuperInstance/intercontext-map)** | JetsonClaw1 | Kira the Cartographer: the cellular-first substrate as a graph. 48 nodes / 70 edges. Every node and  | 🟢 active |
 | **[jev-gan-cli](https://github.com/SuperInstance/jev-gan-cli)** | JetsonClaw1 | Unified CLI for the JEV-GAN family of tools (diffusion, gallery, madlibs, edges). | 🟢 active |
 | **[kev-substrate-mojo](https://github.com/SuperInstance/kev-substrate-mojo)** | JetsonClaw1 | Mojo port of kev-substrate — vendor-hardware GPU native, horizontal-abilities engineering per CUDACL | 🟢 active |
 | **[kintsugi-math-c](https://github.com/SuperInstance/kintsugi-math-c)** | JetsonClaw1 | C99 edge/embedded golden repair mathematics — fault tolerance as aesthetic principle | 🟢 active |
@@ -366,7 +372,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[negative-knowledge](https://github.com/SuperInstance/negative-knowledge)** | JetsonClaw1 | Negative knowledge as the primary computational resource — knowing where violations are NOT is cheap | 🟢 active |
 | **[nexus-edge-runtime](https://github.com/SuperInstance/nexus-edge-runtime)** | JetsonClaw1 | Edge runtime for autonomous agents — bytecode VM, INCREMENTS trust, wire protocol, safety system, in | 🟢 active |
 | **[nexus-git-agent](https://github.com/SuperInstance/nexus-git-agent)** | JetsonClaw1 | Cloud-side brain for edge intelligence fleets. Jetson + ESP32 + Cocapn coordination. | 🟢 active |
-| **[old-school-machine-wisdom](https://github.com/SuperInstance/old-school-machine-wisdom)** | JetsonClaw1 | Old-school machine wisdom: FORTH threaded code, DGD trampoline JIT, MUD1 shared memory, MUDDL databa | 🟢 active |
 | **[open-mythos-edge](https://github.com/SuperInstance/open-mythos-edge)** | JetsonClaw1 | Edge-optimized OpenMythos RDT for Jetson/ARM64 — pure PyTorch, no Triton, 1B/3B variants | 🟢 active |
 | **[openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)** | JetsonClaw1 | GPU-accelerated edge node for OpenConstruct - local inference, camera/sonar processing, Plato shell  | 🟢 active |
 | **[openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)** | JetsonClaw1 | Landing page for OpenConstruct — any agent, any hardware, any language | 🟢 active |
@@ -441,6 +446,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[the-technician](https://github.com/SuperInstance/the-technician)** | JetsonClaw1 | The Technician Paradigm — white papers on physical AI systems, edge robotics, and technician trainin | 🟢 active |
 | **[tit-quilt](https://github.com/SuperInstance/tit-quilt)** | JetsonClaw1 | A terminal toolbox that outlives its terminal — the session is a graph, not a process. Quilt-native  | 🟢 active |
 | **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** | JetsonClaw1 | Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t | 🟢 active |
+| **[trust-ledger](https://github.com/SuperInstance/trust-ledger)** | JetsonClaw1 | trust-ledger | 🟢 active |
 | **[twist-engine](https://github.com/SuperInstance/twist-engine)** | JetsonClaw1 | Four substrates, one law: layers + deliberate offset → interference → emergence. TWIST / FLOCK / CHI | 🟢 active |
 | **[tzpro-agent](https://github.com/SuperInstance/tzpro-agent)** | JetsonClaw1 | First sensor node of the FishingLog.ai ecosystem. Watches the TZ Pro sounder, reads the bottom, lear | 🟢 active |
 | **[vessel-bridge](https://github.com/SuperInstance/vessel-bridge)** | JetsonClaw1 | Hardware abstraction layer for ESP32 to Jetson to Cloud — unified sensor/actuator/power API across v | 🟢 active |
@@ -461,6 +467,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[cocapn-glue-core](https://github.com/SuperInstance/cocapn-glue-core)** | CCC | Keeper↔Fleet binary wire protocol — the nervous system of the Cocapn Fleet. msgpack-based message fr | 🟢 active |
 | **[cocapn-health](https://github.com/SuperInstance/cocapn-health)** | CCC | Cocapn fleet health monitoring — vessel status, heartbeat, and observability utilities | 🟢 active |
 | **[cocapn-pushdown](https://github.com/SuperInstance/cocapn-pushdown)** | CCC | CoCapn push-down engine — AI-optional feature degradation, device profiles, A/B versioned fallback c | 🟢 active |
+| **[cocapn-sdk](https://github.com/SuperInstance/cocapn-sdk)** | CCC | cocapn SDK — npm install cocapn — one API key, any AI model | 🟢 active |
 | **[cocapn-wasm](https://github.com/SuperInstance/cocapn-wasm)** | CCC | CoCapn in WebAssembly — the browser tier. Same deadband, same PID, runs in Chrome. | 🟢 active |
 | **[cocapn-zig](https://github.com/SuperInstance/cocapn-zig)** | CCC | CoCapn in Zig — comptime safety for bare metal. Verify your deadbands before the boat leaves the doc | 🟢 active |
 | **[crab](https://github.com/SuperInstance/crab)** | CCC | Hermit crab agent shell — agents find repos, grow, move shells | 🟢 active |
@@ -478,6 +485,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[hermes-ob1-core](https://github.com/SuperInstance/hermes-ob1-core)** | CCC | Hermes Digital Provenance — the Hermit Crab shell | 🟢 active |
 | **[hermit-crab-ecology](https://github.com/SuperInstance/hermit-crab-ecology)** | CCC | Multi-model exploration of the hermit crab architecture — shell ecology, instance molting, and the i | 🟢 active |
 | **[hermit-crab-ecology-archive-copy](https://github.com/SuperInstance/hermit-crab-ecology-archive-copy)** | CCC | Archive copy: Windows-side workspace snapshot of hermit-crab-ecology (content diff vs restored origi | 🟢 active |
+| **[intent-inference](https://github.com/SuperInstance/intent-inference)** | CCC | Intent Inference Engine — reverse-engineers productive lane from user behavior. Part of Cocapn rever | 🟢 active |
 | **[luciddreamer-ai](https://github.com/SuperInstance/luciddreamer-ai)** | CCC | Cocapn vessel — accumulated context IS the product | 🟢 active |
 | **[luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)** | CCC | GitHub Pages for luciddreamer.ai | 🟢 active |
 | **[lucineer-system](https://github.com/SuperInstance/lucineer-system)** | CCC | ⚒️ Lucineer — persistent AI game-building companion. Lives in Roblox, browser, and Godot. Remembers  | 🟢 active |
@@ -523,7 +531,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[superinstance-ai-pages](https://github.com/SuperInstance/superinstance-ai-pages)** | CCC | GitHub Pages for superinstance.ai | 🟢 active |
 | **[superinstance-website](https://github.com/SuperInstance/superinstance-website)** | CCC | Static website for superinstance.ai — fleet dashboard, ecosystem map, and ternary computing document | 🟢 active |
 | **[Syzygy-OpenSkyFlight](https://github.com/SuperInstance/Syzygy-OpenSkyFlight)** | CCC | Side by Side ASCII rendering and original- Browser-based 3D flight simulator over real-world terrain | 🟢 active |
-| **[ternary-visualizer](https://github.com/SuperInstance/ternary-visualizer)** | CCC | Ternary agent dynamics visualizer — ASCII/text visualizations for terminals, logs, and docs | 🟢 active |
 | **[terrain](https://github.com/SuperInstance/terrain)** | CCC | MUD-to-Visual bridge — rooms as explorable scenes. Crabs stir the mud into walkable terrain. | 🟢 active |
 | **[test-pages-repo](https://github.com/SuperInstance/test-pages-repo)** | CCC | Test | 🟢 active |
 | **[warp](https://github.com/SuperInstance/warp)** | CCC | Warp is an agentic development environment, born out of the terminal. | 🟢 active |
@@ -676,9 +683,12 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[cog-lab](https://github.com/SuperInstance/cog-lab)** | Various | The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf | ⚪ unknown |
 | **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** | Various | Core cognitive processing engine. | ⚪ unknown |
 | **[collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)** | Various | Quilt backend for Real-time collaborative drawing platform built with Java, JavaFX, TCP sockets, and | ⚪ unknown |
+| **[collective-ai](https://github.com/SuperInstance/collective-ai)** | Various | Extracted from plato-training | ⚪ unknown |
 | **[collective-unconscious](https://github.com/SuperInstance/collective-unconscious)** | Various | collective-unconscious | ⚪ unknown |
 | **[color-squad](https://github.com/SuperInstance/color-squad)** | Various | COLOR SQUAD: JSON strategy scripts play deterministic 4v4 capture-the-flag; a running season with in | ⚪ unknown |
 | **[columnar-store](https://github.com/SuperInstance/columnar-store)** | Various | Columnar storage engine — Apache Parquet-style columnar format with compression and predicate pushdo | ⚪ unknown |
+| **[commit-predictor](https://github.com/SuperInstance/commit-predictor)** | Various | Extracted from plato-training | ⚪ unknown |
+| **[communicator](https://github.com/SuperInstance/communicator)** | Various | communicator | ⚪ unknown |
 | **[compaction-teacher](https://github.com/SuperInstance/compaction-teacher)** | Various | Compaction teacher module | ⚪ unknown |
 | **[compliance-check](https://github.com/SuperInstance/compliance-check)** | Various | A Rust library for Compliance_check | ⚪ unknown |
 | **[composite-metric](https://github.com/SuperInstance/composite-metric)** | Various | A Rust library for Composite Metric | ⚪ unknown |
@@ -696,6 +706,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[conservation-law-rs](https://github.com/SuperInstance/conservation-law-rs)** | Various | Conservation laws for agent dynamics — Lagrangian mechanics, Noether theorem, and symmetry-based con | 🟢 active |
 | **[conservation-matrix-rs](https://github.com/SuperInstance/conservation-matrix-rs)** | Various | Conservation laws in ternary agent systems — avoidance ratio, fitness convergence, ecological resili | 🟢 active |
 | **[conservation-rhythm-rs](https://github.com/SuperInstance/conservation-rhythm-rs)** | Various | Self-Improving Band: conservation-rhythm-rs | ⚪ unknown |
+| **[conservation-spectral-js](https://github.com/SuperInstance/conservation-spectral-js)** | Various | Conservation Spectral SDK — spectral graph theory for conservation analysis in TypeScript | ⚪ unknown |
 | **[conservation-spectral-mojo](https://github.com/SuperInstance/conservation-spectral-mojo)** | Various | Conservation Spectral SDK — SIMD-accelerated spectral graph analysis in Mojo | ⚪ unknown |
 | **[consul-client](https://github.com/SuperInstance/consul-client)** | Various | Consul service discovery client — health checking, KV store, and service mesh integration | ⚪ unknown |
 | **[container-runtime](https://github.com/SuperInstance/container-runtime)** | Various | A Rust library for Container Runtime | ⚪ unknown |
@@ -715,6 +726,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[credential-store](https://github.com/SuperInstance/credential-store)** | Various | A Rust library for Credential Store | ⚪ unknown |
 | **[cuckoo-filter](https://github.com/SuperInstance/cuckoo-filter)** | Various | A Rust library for Cuckoo Filter | ⚪ unknown |
 | **[cudaclaw](https://github.com/SuperInstance/cudaclaw)** | Various | ⚡ GPU-accelerated SmartCRDT with persistent CUDA kernels — warp-level consensus. | 🟢 active |
+| **[cycle-judge](https://github.com/SuperInstance/cycle-judge)** | Various | cycle-judge | ⚪ unknown |
 | **[dag-runner](https://github.com/SuperInstance/dag-runner)** | Various | A Rust library for Dag Runner | ⚪ unknown |
 | **[dashboard-render](https://github.com/SuperInstance/dashboard-render)** | Various | A Rust library for Dashboard Render | ⚪ unknown |
 | **[datadog-forwarder](https://github.com/SuperInstance/datadog-forwarder)** | Various | A Rust library for Datadog Forwarder | ⚪ unknown |
@@ -738,6 +750,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[DMLogn8n](https://github.com/SuperInstance/DMLogn8n)** | Various | D&D campaign management design workspace: FastAPI + Postgres + Redis + n8n + parallel Claude Code ag | 🟢 active |
 | **[document-store](https://github.com/SuperInstance/document-store)** | Various | A Rust library for Document Store | ⚪ unknown |
 | **[domain-landing](https://github.com/SuperInstance/domain-landing)** | Various | Reusable landing page Worker — deploy to any custom domain | ⚪ unknown |
+| **[drift-probe](https://github.com/SuperInstance/drift-probe)** | Various | drift-probe | ⚪ unknown |
 | **[dropbox](https://github.com/SuperInstance/dropbox)** | Various | Shared fleet dropbox. Git-backed, pull-based. Nodes pull, nobody pushes commands. | ⚪ unknown |
 | **[dsh-assessment](https://github.com/SuperInstance/dsh-assessment)** | Various | dsh-assessment | ⚪ unknown |
 | **[duke-lab](https://github.com/SuperInstance/duke-lab)** | Various | duke-lab | ⚪ unknown |
@@ -762,6 +775,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[eos-seed](https://github.com/SuperInstance/eos-seed)** | Various | eos-seed | ⚪ unknown |
 | **[epoll-wrapper](https://github.com/SuperInstance/epoll-wrapper)** | Various | High-level safe wrapper around Linux epoll | ⚪ unknown |
 | **[Equipment-Consensus-Engine](https://github.com/SuperInstance/Equipment-Consensus-Engine)** | Various | Multi-agent deliberation with Pathos/Logos/Ethos weighting | 🟢 active |
+| **[Equipment-NLP-Explainer](https://github.com/SuperInstance/Equipment-NLP-Explainer)** | Various | Generates human-readable descriptions of cell logic and operations | ⚪ unknown |
 | **[erised](https://github.com/SuperInstance/erised)** | Various | A mirror for cooperative fiction — model-only TTRPG engine. Authors the conditions; the fiction play | ⚪ unknown |
 | **[erised-exocortex](https://github.com/SuperInstance/erised-exocortex)** | Various | The autopilot layer for erised iterators — compile proven strategies into ExoJs (autoplay scripts),  | ⚪ unknown |
 | **[etcd-client](https://github.com/SuperInstance/etcd-client)** | Various | Async etcd v3 gRPC-style client for distributed coordination | ⚪ unknown |
@@ -819,6 +833,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[g1-ble-backend](https://github.com/SuperInstance/g1-ble-backend)** | Various | Custom bleak-based developer backend for Even Realities G1 smart glasses: scan both arms, connect, r | ⚪ unknown |
 | **[ga4444](https://github.com/SuperInstance/ga4444)** | Various | 4x4 four-in-a-row: the rung with complete ground truth. The composition test. | ⚪ unknown |
 | **[garden-seed](https://github.com/SuperInstance/garden-seed)** | Various | Seed: Garden Seed | ⚪ unknown |
+| **[gate-replay](https://github.com/SuperInstance/gate-replay)** | Various | gate-replay | ⚪ unknown |
 | **[gauge](https://github.com/SuperInstance/gauge)** | Various | gauge | ⚪ unknown |
 | **[gauss-markov](https://github.com/SuperInstance/gauss-markov)** | Various | A Rust library for Gauss Markov | ⚪ unknown |
 | **[gesture-kit](https://github.com/SuperInstance/gesture-kit)** | Various | gesture-kit | ⚪ unknown |
@@ -863,6 +878,8 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[grand-pattern-rs](https://github.com/SuperInstance/grand-pattern-rs)** | Various | Grand Pattern Fibonacci Dual-Direction Architecture - Rust Implementation | ⚪ unknown |
 | **[graph-astar](https://github.com/SuperInstance/graph-astar)** | Various | A Rust library for Graph Astar | ⚪ unknown |
 | **[graph-bellman-ford](https://github.com/SuperInstance/graph-bellman-ford)** | Various | A Rust library for Graph Bellman Ford | ⚪ unknown |
+| **[griot-math](https://github.com/SuperInstance/griot-math)** | Various | Living memory mathematics — npm/TypeScript — stories as data structures, inspired by West African gr | ⚪ unknown |
+| **[griot-math-v2](https://github.com/SuperInstance/griot-math-v2)** | Various | Oral tradition math primitives – memory, praise names, call-and-response, genealogy, federation | ⚪ unknown |
 | **[harbor-seed](https://github.com/SuperInstance/harbor-seed)** | Various | Seed: Harbor Seed | ⚪ unknown |
 | **[harness-experiments](https://github.com/SuperInstance/harness-experiments)** | Various | 🔬 AI agent harness productivity experiments — measured, not guessed. D1-backed findings on optimal b | 🟢 active |
 | **[harness-rssi](https://github.com/SuperInstance/harness-rssi)** | Various | RRSI applied to the fleet: a liveness probe for our own durable recipes, which found that zero of fi | ⚪ unknown |
@@ -898,6 +915,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[jev-garden](https://github.com/SuperInstance/jev-garden)** | Various | The living JEV training system — grows from quilt judgments, idle-compiles its ExoJ into weave artif | ⚪ unknown |
 | **[jev-harness](https://github.com/SuperInstance/jev-harness)** | Various | A client for TypeSafe.ai Jev that cannot fail quietly — preflight contract checks, structured scorin | ⚪ unknown |
 | **[jev-ideation](https://github.com/SuperInstance/jev-ideation)** | Various | Jev ideation: multiple models picking at the frontier concepts — the reptilian layer, floating gates | ⚪ unknown |
+| **[jev-lattice](https://github.com/SuperInstance/jev-lattice)** | Various | jev-lattice | ⚪ unknown |
 | **[jev-net](https://github.com/SuperInstance/jev-net)** | Various | A neural network whose neurons are JEV calls — prism projection, hebbian weights, spawn-triggered it | ⚪ unknown |
 | **[jev-net-worker](https://github.com/SuperInstance/jev-net-worker)** | Various | Hosted JEV neural net on Cloudflare — learns from every call, self-plays nightly, serves bootable le | ⚪ unknown |
 | **[jev-paint-quilt](https://github.com/SuperInstance/jev-paint-quilt)** | Various | jev-paint-quilt | ⚪ unknown |
@@ -910,6 +928,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[kev-receipts](https://github.com/SuperInstance/kev-receipts)** | Various | quilt-transformer arena engine | ⚪ unknown |
 | **[kev-substrate](https://github.com/SuperInstance/kev-substrate)** | Various | tiny Jev-like family of decision models built on top of Qwen3.5 you can train and run on your own | ⚪ unknown |
 | **[keyprobe](https://github.com/SuperInstance/keyprobe)** | Various | Are the keys working, and if not, in which way — IDENTITY / SHAPE / LOAD, because "down" is not a di | ⚪ unknown |
+| **[kintsugi-math-npm](https://github.com/SuperInstance/kintsugi-math-npm)** | Various | The mathematics of beautiful error recovery — TypeScript/npm | ⚪ unknown |
 | **[ladder](https://github.com/SuperInstance/ladder)** | Various | An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why  | ⚪ unknown |
 | **[lau-conservation-experiment](https://github.com/SuperInstance/lau-conservation-experiment)** | Various | Tests emergent conservation law — Landauer cost + free energy + H¹ risk score ≈ constant across agen | 🟢 active |
 | **[laya4quilt](https://github.com/SuperInstance/laya4quilt)** | Various | laya4quilt | ⚪ unknown |
@@ -932,6 +951,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[luciddreamer-content](https://github.com/SuperInstance/luciddreamer-content)** | Various | luciddreamer-content | ⚪ unknown |
 | **[luciddreamer-os](https://github.com/SuperInstance/luciddreamer-os)** | Various | Concept OS named Lucid Dreamer for OS development. | ⚪ unknown |
 | **[luciddreamer-prototype](https://github.com/SuperInstance/luciddreamer-prototype)** | Various | LucidDreamer.AI — prototype and research | ⚪ unknown |
+| **[luciddreamer-py](https://github.com/SuperInstance/luciddreamer-py)** | Various | Recovered source for @superinstance/luciddreamer - maritime intelligence that compiles soft model be | ⚪ unknown |
 | **[luciddreamer-research](https://github.com/SuperInstance/luciddreamer-research)** | Various | luciddreamer-research | ⚪ unknown |
 | **[luciddreamer-vision](https://github.com/SuperInstance/luciddreamer-vision)** | Various | LucidDreamer vision module for SuperInstance dream-state agents | 🟢 active |
 | **[lucineer-brain](https://github.com/SuperInstance/lucineer-brain)** | Various | 🧮 Multi-model build intelligence — routes natural language through DeepInfra models to generate Robl | ⚪ unknown |
@@ -967,6 +987,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[MicroMoth-quilt](https://github.com/SuperInstance/MicroMoth-quilt)** | Various | MicroMoth-quilt | ⚪ unknown |
 | **[midden](https://github.com/SuperInstance/midden)** | Various | midden | ⚪ unknown |
 | **[midi-temporal](https://github.com/SuperInstance/midi-temporal)** | Various | MIDI as a temporal protocol. Not just music — triggers, commentary, 16 tracks as characters. | 🟢 active |
+| **[minigate](https://github.com/SuperInstance/minigate)** | Various | minigate | ⚪ unknown |
 | **[minimax-worker](https://github.com/SuperInstance/minimax-worker)** | Various | Git-native minimax-worker: disposable machine, durable repo | ⚪ unknown |
 | **[mist-game](https://github.com/SuperInstance/mist-game)** | Various | mist-game | ⚪ unknown |
 | **[mist-lab](https://github.com/SuperInstance/mist-lab)** | Various | mist-lab | ⚪ unknown |
@@ -985,6 +1006,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[Motifcode4quilt](https://github.com/SuperInstance/Motifcode4quilt)** | Various | A coding agent harness built specifically for Motif-3 | 🟢 active |
 | **[mud-arena](https://github.com/SuperInstance/mud-arena)** | Various | Flow-state engineering arena — agents run forward simulations, listen for spectral nudges, maintain  | 🟢 active |
 | **[mud-engine](https://github.com/SuperInstance/mud-engine)** | Various | MUD Engine — 2026-native multi-agent MUD architecture | 🟢 active |
+| **[mud-mcp](https://github.com/SuperInstance/mud-mcp)** | Various | TypeScript MUD server using Model Context Protocol | ⚪ unknown |
 | **[mud2scummvm](https://github.com/SuperInstance/mud2scummvm)** | Various | Bridge between agent MUD world and SCUMM-like point-and-click UI — humans step into the cave through | 🟢 active |
 | **[mudra-bridge-core](https://github.com/SuperInstance/mudra-bridge-core)** | Various | Mudra vessel bridge gesture vocabulary (Node.js) | 🟢 active |
 | **[mudra-vessel-bridge](https://github.com/SuperInstance/mudra-vessel-bridge)** | Various | Plug-and-play integration of the Mudra Pro / Mudra Link neural wristband with the vessel-agent syste | 🟢 active |
@@ -1001,20 +1023,11 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[night-city](https://github.com/SuperInstance/night-city)** | Various | 3D website game featuring cyberpunk-themed city filled with easter-eggs and references to the develo | ⚪ unknown |
 | **[nmea-bridge](https://github.com/SuperInstance/nmea-bridge)** | Various | nmea-bridge | ⚪ unknown |
 | **[nmea-quilt-cell](https://github.com/SuperInstance/nmea-quilt-cell)** | Various | NMEA 0183 gateway -> append-only journal cell. Byte-exact replay, kill -9 crash canary, receipts inc | ⚪ unknown |
-| **[number-theory](https://github.com/SuperInstance/number-theory)** | Various | Number theory in Rust — primes, modular arithmetic, Diophantine equations, quadratic residues, conti | ⚪ unknown |
-| **[number-theory-core](https://github.com/SuperInstance/number-theory-core)** | Various | See README | ⚪ unknown |
-| **[numeric-integration-rs](https://github.com/SuperInstance/numeric-integration-rs)** | Various | Numerical integration: trapezoidal rule, Simpson's rule, Romberg integration, Gaussian quadrature, a | ⚪ unknown |
-| **[numerics-interp](https://github.com/SuperInstance/numerics-interp)** | Various | Research-grade interpolation: linear, Lagrange polynomial, cubic natural spline, barycentric — pure  | ⚪ unknown |
-| **[numerics-ode](https://github.com/SuperInstance/numerics-ode)** | Various | Research-grade ODE solvers: Euler, RK4, Adams-Bashforth, Dormand-Prince (adaptive RK45) — pure Rust, | ⚪ unknown |
 | **[nursery](https://github.com/SuperInstance/nursery)** | Various | Anti-GAN breeding framework: selective breeding of agent children on the zero platform | 🟢 active |
 | **[nursery-v2](https://github.com/SuperInstance/nursery-v2)** | Various | Nursery v2: rebuilt with pattern corrections - tokens, debts, recomputable lineage | ⚪ unknown |
 | **[observation-primitive](https://github.com/SuperInstance/observation-primitive)** | Various | The canonical substrate atom: observation as fundamental primitive. FNV-1a signed, type-safe, federa | ⚪ unknown |
 | **[observation-primitive-rs](https://github.com/SuperInstance/observation-primitive-rs)** | Various | observation-primitive Rust crate | ⚪ unknown |
-| **[octomap](https://github.com/SuperInstance/octomap)** | Various | An Efficient Probabilistic 3D Mapping Framework Based on Octrees. Contains the main OctoMap library, | ⚪ unknown |
-| **[ode-solver](https://github.com/SuperInstance/ode-solver)** | Various | Ordinary differential equation solver for SuperInstance physics | ⚪ unknown |
 | **[officers-quarters](https://github.com/SuperInstance/officers-quarters)** | Various | officers-quarters | ⚪ unknown |
-| **[omd](https://github.com/SuperInstance/omd)** | Various | OpenManus with Enhanced research capabilities through DSPy and MCP integration | ⚪ unknown |
-| **[onboard](https://github.com/SuperInstance/onboard)** | Various | 🚀 Automatic repo integration tool — add any SuperInstance tool to any GitHub repo with one command.  | ⚪ unknown |
 | **[onboard-demo](https://github.com/SuperInstance/onboard-demo)** | Various | Demo repo for testing the onboard system | ⚪ unknown |
 | **[opcode-canon](https://github.com/SuperInstance/opcode-canon)** | Various | opcode-canon - R10 substrate canon point as code | ⚪ unknown |
 | **[open-mind](https://github.com/SuperInstance/open-mind)** | Various | open-interpreter that KNOWS your code. Ingest any repo → parse every function → build muscle memory  | ⚪ unknown |
@@ -1034,6 +1047,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)** | Various | Ruby SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem | 🟢 active |
 | **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** | Various | Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem | 🟢 active |
 | **[openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)** | Various | Swift binding for OpenConstruct onboarding — iOS/macOS agent apps | 🟢 active |
+| **[openconstruct-ts](https://github.com/SuperInstance/openconstruct-ts)** | Various | TypeScript SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem | 🟢 active |
 | **[openconstruct-zig](https://github.com/SuperInstance/openconstruct-zig)** | Various | OpenConstruct Zig binding — thin client for agent onboarding | 🟢 active |
 | **[OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)** | Various | A Google Colab version of the OpenManus AI. | ⚪ unknown |
 | **[openPlan3D](https://github.com/SuperInstance/openPlan3D)** | Various | Open source 2D/3D floor plan editor built with SvelteKit and Three.js | ⚪ unknown |
@@ -1058,9 +1072,11 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[othismos-llm](https://github.com/SuperInstance/othismos-llm)** | Various | Context pressure for LLMs: measure how truncation changes output distributions | ⚪ unknown |
 | **[ouroboros](https://github.com/SuperInstance/ouroboros)** | Various | Ouroboros — self-creating AI agent. Born Feb 16, 2026. | 🟢 active |
 | **[paced-seam](https://github.com/SuperInstance/paced-seam)** | Various | paced-seam | ⚪ unknown |
+| **[pacemaker](https://github.com/SuperInstance/pacemaker)** | Various | pacemaker | ⚪ unknown |
 | **[packet-capture](https://github.com/SuperInstance/packet-capture)** | Various | Rust crate: packet-capture | ⚪ unknown |
 | **[page-agent](https://github.com/SuperInstance/page-agent)** | Various | JavaScript in-page GUI agent. Control web interfaces with natural language. | 🟢 active |
 | **[page-replace](https://github.com/SuperInstance/page-replace)** | Various | Page replacement algorithm suite for memory management | ⚪ unknown |
+| **[palaver-math](https://github.com/SuperInstance/palaver-math)** | Various | palaver-math | ⚪ unknown |
 | **[palaver-math-c](https://github.com/SuperInstance/palaver-math-c)** | Various | Palaver mathematical library in C for SuperInstance | ⚪ unknown |
 | **[palaver-math-pypi](https://github.com/SuperInstance/palaver-math-pypi)** | Various | Palaver mathematical library distributed via PyPI | ⚪ unknown |
 | **[palaver-math-rs](https://github.com/SuperInstance/palaver-math-rs)** | Various | Pure-Rust port of palaver-math — consensus, dialogue trees, coalition detection. | ⚪ unknown |
@@ -1583,6 +1599,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[scummvm-arcade](https://github.com/SuperInstance/scummvm-arcade)** | Various | scummvm-arcade | ⚪ unknown |
 | **[scummvm-gui-design](https://github.com/SuperInstance/scummvm-gui-design)** | Various | scummvm-gui-design | ⚪ unknown |
 | **[scummvm-prototype](https://github.com/SuperInstance/scummvm-prototype)** | Various | First playable prototype — ScummVM-style agentic GUI. One room, one NPC, nine verbs. | 🟢 active |
+| **[sdk](https://github.com/SuperInstance/sdk)** | Various | Conservation-law governance for AI agent fleets — the source of @superinstance/sdk, recovered from i | 🟢 active |
 | **[search-superinstance-ai](https://github.com/SuperInstance/search-superinstance-ai)** | Various | Semantic search over SuperInstance repos — Cloudflare Worker + Workers AI + Vectorize | ⚪ unknown |
 | **[secret-share](https://github.com/SuperInstance/secret-share)** | Various | Secret sharing cryptography library for SuperInstance | ⚪ unknown |
 | **[secret-sharing](https://github.com/SuperInstance/secret-sharing)** | Various | Shamir's secret sharing, Feldman VSS, and threshold schemes in Rust | ⚪ unknown |
@@ -1693,6 +1710,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[solid-mechanics](https://github.com/SuperInstance/solid-mechanics)** | Various | Solid mechanics in Rust — stress/strain tensors, beam theory, FEM basics, yield criteria, energy met | ⚪ unknown |
 | **[sonar-vision-c](https://github.com/SuperInstance/sonar-vision-c)** | JetsonClaw1, Oracle1 | Underwater acoustics physics engine in C for embedded systems (Jetson, Raspberry Pi). | 🟢 active |
 | **[songforge](https://github.com/SuperInstance/songforge)** | Various | AI-powered song cover generation from imperfect source recordings | ⚪ unknown |
+| **[songline-math](https://github.com/SuperInstance/songline-math)** | Various | songline-math | ⚪ unknown |
 | **[songline-math-wasm](https://github.com/SuperInstance/songline-math-wasm)** | Various | Songline mathematical routines compiled to WASM | ⚪ unknown |
 | **[sonic-shape](https://github.com/SuperInstance/sonic-shape)** | Various | Confidence-to-music mapping engine | ⚪ unknown |
 | **[sort-algo-rs](https://github.com/SuperInstance/sort-algo-rs)** | Various | Sorting algorithm benchmarks and implementations in Rust | ⚪ unknown |
@@ -1775,13 +1793,16 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[superinstance-ecosystem](https://github.com/SuperInstance/superinstance-ecosystem)** | Various | The agent operating system — four layers that compose | 🟢 active |
 | **[superinstance-embedder](https://github.com/SuperInstance/superinstance-embedder)** | Various | 32-dimensional embeddings for 560+ SuperInstance crates. Seeds Cloudflare Vectorize for semantic sea | ⚪ unknown |
 | **[superinstance-lab](https://github.com/SuperInstance/superinstance-lab)** | Various | SuperInstance lab wave-67 (pushed by push_all.sh) | ⚪ unknown |
+| **[superinstance-mcp](https://github.com/SuperInstance/superinstance-mcp)** | Various | MCP server exposing the SuperInstance fleet as tools to Claude Code | ⚪ unknown |
 | **[superinstance-voyage](https://github.com/SuperInstance/superinstance-voyage)** | Various | Voyage blog — Casey's writing-from-the-fleet piece | ⚪ unknown |
 | **[SuperInstance.github.io](https://github.com/SuperInstance/SuperInstance.github.io)** | Various | SuperInstance — the front door. Brand kit, honest landscape table, and four live sheets running in o | ⚪ unknown |
 | **[superz-vessel](https://github.com/SuperInstance/superz-vessel)** | Various | Super Z's vessel — quartermaster scout, fleet auditor, continuity keeper | 🟢 active |
 | **[svelte-quilt](https://github.com/SuperInstance/svelte-quilt)** | Various | svelte-quilt | ⚪ unknown |
 | **[swarm-anchor](https://github.com/SuperInstance/swarm-anchor)** | Various | File-based shared state for multi-agent swarms. Each animal writes its heartbeat, the roster is what | 🟢 active |
+| **[swarm-rooms](https://github.com/SuperInstance/swarm-rooms)** | Various | Extracted from plato-training | ⚪ unknown |
 | **[swarm-tminus](https://github.com/SuperInstance/swarm-tminus)** | Various | Time-shaped coordination primitives for swarm-anchor: predict-and-confirm, deadlines, rate limiters, | ⚪ unknown |
 | **[sweep](https://github.com/SuperInstance/sweep)** | Various | sweep | ⚪ unknown |
+| **[symmetry-math-npm](https://github.com/SuperInstance/symmetry-math-npm)** | Various | Mathematics of symmetry — group theory, wallpaper groups, orbit-stabilizer, Burnside lemma. npm inst | ⚪ unknown |
 | **[synesis-agents](https://github.com/SuperInstance/synesis-agents)** | Various | Agent persona specifications: Pathos, Logos, Ethos — the tripartite council members | 🟢 active |
 | **[synesis-architecture](https://github.com/SuperInstance/synesis-architecture)** | Various | High/medium/low-level architecture specs for the synesis workspace | ⚪ unknown |
 | **[synesis-benches](https://github.com/SuperInstance/synesis-benches)** | Various | Benchmark suite for synesis core operations (consensus, query, agent execution, etc.) | 🟢 active |
@@ -1862,35 +1883,10 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-svm](https://github.com/SuperInstance/ternary-svm)** | Various | Support Vector Machines for Ternary Feature Spaces | ⚪ unknown |
 | **[ternary-swarm](https://github.com/SuperInstance/ternary-swarm)** | Various | Swarm intelligence with ternary movement and decision making | ⚪ unknown |
 | **[ternary-tenforward](https://github.com/SuperInstance/ternary-tenforward)** | Various | Ten-Forward — the conversation engine | ⚪ unknown |
-| **[ternary-texture-memory](https://github.com/SuperInstance/ternary-texture-memory)** | Various | ternary-texture-memory - SuperInstance ecosystem crate | ⚪ unknown |
-| **[ternary-thermodynamics](https://github.com/SuperInstance/ternary-thermodynamics)** | Various | Ternary Thermodynamics  Statistical mechanics analogs for ternary agent systems | 🟢 active |
-| **[ternary-thermostat](https://github.com/SuperInstance/ternary-thermostat)** | Various | Ternary thermostat: climate control with PID, multi-zone, and scheduling | ⚪ unknown |
-| **[ternary-thread-block](https://github.com/SuperInstance/ternary-thread-block)** | Various | ternary-thread-block - SuperInstance ecosystem crate | ⚪ unknown |
-| **[ternary-tidelight](https://github.com/SuperInstance/ternary-tidelight)** | Various | Temporal rhythm and timing coordination across the fleet | ⚪ unknown |
-| **[ternary-tidepool](https://github.com/SuperInstance/ternary-tidepool)** | Various | ternary-tidepool: Small protected environments for agent experimentation | 🟢 active |
-| **[ternary-timbre](https://github.com/SuperInstance/ternary-timbre)** | Various | **Timbre analysis for agent output characterization.** | 🟢 active |
-| **[ternary-tnn](https://github.com/SuperInstance/ternary-tnn)** | Various | Ternary Neural Network layers: {-1,0,+1} weights with LUT matmul, straight-through estimation, and B | ⚪ unknown |
-| **[ternary-transform](https://github.com/SuperInstance/ternary-transform)** | Various | Transform theory for ternary data on {-1, 0, +1} | ⚪ unknown |
 | **[ternary-transformer](https://github.com/SuperInstance/ternary-transformer)** | Various | ternary-transformer - SuperInstance ecosystem crate | ⚪ unknown |
-| **[ternary-trees](https://github.com/SuperInstance/ternary-trees)** | Various | Decision trees and forests for ternary classification on {-1, 0, +1} | ⚪ unknown |
 | **[ternary-trust](https://github.com/SuperInstance/ternary-trust)** | Various | ternary-trust: Trust and relationship dynamics between agents | 🟢 active |
 | **[ternary-tuple](https://github.com/SuperInstance/ternary-tuple)** | Various | Tuple for ternary {-1, 0, +1} systems — `TernaryTuple` | ⚪ unknown |
 | **[ternary-turing](https://github.com/SuperInstance/ternary-turing)** | Various | ternary-turing  Turing machines over ternary alphabet {-1, 0, 1} | ⚪ unknown |
-| **[ternary-types](https://github.com/SuperInstance/ternary-types)** | Various | Types for the SuperInstance ternary {-1, 0, +1} ecosystem | ⚪ unknown |
-| **[ternary-version](https://github.com/SuperInstance/ternary-version)** | Various | Version vectors with ternary comparison for distributed GPU state. Conflict detection, merge, domina | ⚪ unknown |
-| **[ternary-visualization](https://github.com/SuperInstance/ternary-visualization)** | Various | Visualization data generation for ternary systems | ⚪ unknown |
-| **[ternary-viterbi](https://github.com/SuperInstance/ternary-viterbi)** | Various | Viterbi decoder for ternary state sequences. Find the most likely path through {-1,0,+1} states. Log | ⚪ unknown |
-| **[ternary-vortex](https://github.com/SuperInstance/ternary-vortex)** | Various | ternary-vortex  Vortex dynamics and fluid-like flow on ternary grids | ⚪ unknown |
-| **[ternary-voting](https://github.com/SuperInstance/ternary-voting)** | Various | ternary-voting  Voting and consensus mechanisms with ternary values | ⚪ unknown |
-| **[ternary-voyage](https://github.com/SuperInstance/ternary-voyage)** | Various | Long-duration mission planning and execution with ternary progress tracking | ⚪ unknown |
-| **[ternary-vu](https://github.com/SuperInstance/ternary-vu)** | Various | Vu for ternary {-1, 0, +1} systems — `VuMeter` | ⚪ unknown |
-| **[ternary-walk](https://github.com/SuperInstance/ternary-walk)** | Various | Ternary random walks: simple, biased, correlated, and Lévy flights on Z₃ state space | ⚪ unknown |
-| **[ternary-walsh](https://github.com/SuperInstance/ternary-walsh)** | Various | Walsh functions and transforms for ternary-valued signal analysis | ⚪ unknown |
-| **[ternary-warp](https://github.com/SuperInstance/ternary-warp)** | Various | Warp for ternary systems — `clamp`, `quantize`, `fold`, `warp` | ⚪ unknown |
-| **[ternary-warp-block](https://github.com/SuperInstance/ternary-warp-block)** | Various | ternary-warp-block - SuperInstance ecosystem crate | ⚪ unknown |
-| **[ternary-wasm](https://github.com/SuperInstance/ternary-wasm)** | Various | Wasm for the SuperInstance ternary {-1, 0, +1} ecosystem | ⚪ unknown |
-| **[ternary-watermark](https://github.com/SuperInstance/ternary-watermark)** | Various | Ternary watermarking for neural model provenance. Embed {-1,0,+1} fingerprints in weights that survi | ⚪ unknown |
-| **[ternary-wave](https://github.com/SuperInstance/ternary-wave)** | Various | Wave for ternary systems — `square`, `saw`, `triangle`, `pulse` | ⚪ unknown |
 | **[ternary-weather](https://github.com/SuperInstance/ternary-weather)** | Various | Environmental conditions and their effects on agent operations | 🟢 active |
 | **[ternary-wiki](https://github.com/SuperInstance/ternary-wiki)** | Various | ternary-wiki | ⚪ unknown |
 | **[ternary-world](https://github.com/SuperInstance/ternary-world)** | Various | World model for ternary simulations | ⚪ unknown |
@@ -1927,10 +1923,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tiny-ecs](https://github.com/SuperInstance/tiny-ecs)** | Various | Minimal archetype-based Entity-Component-System in Rust | ⚪ unknown |
 | **[tiny-neural](https://github.com/SuperInstance/tiny-neural)** | Various | Tiny neural network library in Rust — from-scratch tensors, layers, backprop, optimizers. No GPU, no | ⚪ unknown |
 | **[tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)** | Various | tit_quilt_elixir | ⚪ unknown |
+| **[tminus-client](https://github.com/SuperInstance/tminus-client)** | Various | T-Minus Client SDK — Node.js client library and CLI for the t-minus dispatcher protocol | ⚪ unknown |
+| **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** | Various | T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration | 🟢 active |
 | **[tminus-music](https://github.com/SuperInstance/tminus-music)** | Various | T-minus musical event prediction using conservation spectral theory | ⚪ unknown |
 | **[tminus-os](https://github.com/SuperInstance/tminus-os)** | Various | Swarm coordination OS — wires the ecosystem into one .swarm/ directory | ⚪ unknown |
 | **[token-stream](https://github.com/SuperInstance/token-stream)** | Various | Token streaming library for LLM inference in SuperInstance | ⚪ unknown |
 | **[token-wavelet](https://github.com/SuperInstance/token-wavelet)** | Various | AI token spending intelligence: wavelet decomposition, conservation law budgeting, and spectral mode | ⚪ unknown |
+| **[tool-judge](https://github.com/SuperInstance/tool-judge)** | Various | A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa | ⚪ unknown |
 | **[tools](https://github.com/SuperInstance/tools)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** | Various | Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden | ⚪ unknown |
 | **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** | Various | Topological analysis of musical sonata form | ⚪ unknown |
@@ -1972,6 +1971,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[vibe-graph](https://github.com/SuperInstance/vibe-graph)** | Various | Vibe-graph social network analysis for SuperInstance agents | 🟢 active |
 | **[vibe-protocol](https://github.com/SuperInstance/vibe-protocol)** | Various | vibe-protocol | ⚪ unknown |
 | **[vibe-world](https://github.com/SuperInstance/vibe-world)** | Various | Vibe world project | ⚪ unknown |
+| **[vision](https://github.com/SuperInstance/vision)** | Various | vision | ⚪ unknown |
 | **[vocabularies](https://github.com/SuperInstance/vocabularies)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[voice-games](https://github.com/SuperInstance/voice-games)** | Various | Voice games: Sitka Skies flight + COLOR SQUAD RTS + tournament demo — proof of concept for voice-com | ⚪ unknown |
 | **[voice-note-app](https://github.com/SuperInstance/voice-note-app)** | Various | voice-note-app | ⚪ unknown |
@@ -2280,6 +2280,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
 - **Purpose:** FLUX-native agent runtime — self-bootstrapping agents in Docker sandboxes that create vessels, pick tasks, and produce real work
+- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
+- **Status:** active
+
+### [flux-check-js](https://github.com/SuperInstance/flux-check-js)
+- **Domain:** Constraint Theory & Math
+- **Vessel:** Forgemaster
+- **Purpose:** Exact constraint checking, fracture-coalesce, and sediment layers. Zero-dep TypeScript/ESM.
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
@@ -2913,13 +2920,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
-### [ternary-validation](https://github.com/SuperInstance/ternary-validation)
-- **Domain:** Constraint Theory & Math
-- **Vessel:** Forgemaster
-- **Purpose:** Validate ternary strategies against constraints
-- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
-
 ### [tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
@@ -2983,6 +2983,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
+### [adinkra-math-npm](https://github.com/SuperInstance/adinkra-math-npm)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** Adinkra symbols as mathematics for JavaScript/TypeScript — symbolic encoding, topology, and ML
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
 ### [agent-operations](https://github.com/SuperInstance/agent-operations)
 - **Domain:** Agent Coordination
 - **Vessel:** Oracle1
@@ -3037,6 +3044,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Vessel:** Forgemaster
 - **Purpose:** Zero-drift hexagonal lattice arithmetic via Eisenstein integers. Exact computation, no floating point.
 - **Research lineage:** Hexagonal lattice arithmetic research. Zero-drift integer encoding for trust vectors.
+- **Status:** active
+
+### [Equipment-CellLogic-Distiller](https://github.com/SuperInstance/Equipment-CellLogic-Distiller)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** Breaks down LLM logic into spreadsheet-visualized cells with tile decomposition
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
 ### [erised-fleet-table](https://github.com/SuperInstance/erised-fleet-table)
@@ -3459,6 +3473,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
+### [gitpp-sheet](https://github.com/SuperInstance/gitpp-sheet)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** A git.pp fold as a spreadsheet with cell-level confidence, and the graph that shows where the confidence came from
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
 ### [holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
@@ -3505,13 +3526,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Oracle1
 - **Purpose:** A swarm of first-person cells that reach consensus by local deference alone, with no central authority. Includes a null result for JEV as an oracle.
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [octomap-conservation-poc](https://github.com/SuperInstance/octomap-conservation-poc)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Conservation + sheaf cohomology for 3D occupancy mapping — detects conflicts, extracts topology
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
@@ -3575,6 +3589,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** Genuine 4D voxel game engine built on Vulkan — full spatial X/Y/Z/W coordinates, native 4D rotation across all six planes, procedural world generation
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
+### [polyformalism-a2a-js](https://github.com/SuperInstance/polyformalism-a2a-js)
+- **Domain:** Agent Coordination
+- **Vessel:** Oracle1
+- **Purpose:** 9-channel polyglot communication framework for multi-agent alignment (JS/Node.js)
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
@@ -3984,6 +4005,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
+### [SuperInstance-Starter-Agent](https://github.com/SuperInstance/SuperInstance-Starter-Agent)
+- **Domain:** Agent Coordination
+- **Vessel:** Forgemaster
+- **Purpose:** Minimal Origin-Centric agent with modular equipment system for the SuperInstance spreadsheet paradigm
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
 ### [ternary-spreadsheet](https://github.com/SuperInstance/ternary-spreadsheet)
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
@@ -4173,6 +4201,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [decision-ledger](https://github.com/SuperInstance/decision-ledger)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** decision-ledger
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [doubt-ledger](https://github.com/SuperInstance/doubt-ledger)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -4348,6 +4383,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [intercontext-map](https://github.com/SuperInstance/intercontext-map)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** Kira the Cartographer: the cellular-first substrate as a graph. 48 nodes / 70 edges. Every node and edge cites a file:line or a commit sha. Gaps drawn
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [jev-gan-cli](https://github.com/SuperInstance/jev-gan-cli)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -4457,13 +4499,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** Cloud-side brain for edge intelligence fleets. Jetson + ESP32 + Cocapn coordination.
-- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
-
-### [old-school-machine-wisdom](https://github.com/SuperInstance/old-school-machine-wisdom)
-- **Domain:** Hardware & Edge
-- **Vessel:** JetsonClaw1
-- **Purpose:** Old-school machine wisdom: FORTH threaded code, DGD trampoline JIT, MUD1 shared memory, MUDDL database-as-program, LISP Machine architecture — resurre
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
@@ -4985,6 +5020,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [trust-ledger](https://github.com/SuperInstance/trust-ledger)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** trust-ledger
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [twist-engine](https://github.com/SuperInstance/twist-engine)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -5094,6 +5136,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Web & Browser
 - **Vessel:** CCC
 - **Purpose:** CoCapn push-down engine — AI-optional feature degradation, device profiles, A/B versioned fallback configs
+- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
+- **Status:** active
+
+### [cocapn-sdk](https://github.com/SuperInstance/cocapn-sdk)
+- **Domain:** Web & Browser
+- **Vessel:** CCC
+- **Purpose:** cocapn SDK — npm install cocapn — one API key, any AI model
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
@@ -5213,6 +5262,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Web & Browser
 - **Vessel:** CCC
 - **Purpose:** Archive copy: Windows-side workspace snapshot of hermit-crab-ecology (content diff vs restored original)
+- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
+- **Status:** active
+
+### [intent-inference](https://github.com/SuperInstance/intent-inference)
+- **Domain:** Web & Browser
+- **Vessel:** CCC
+- **Purpose:** Intent Inference Engine — reverse-engineers productive lane from user behavior. Part of Cocapn reverse-actualization truck.
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
@@ -5528,13 +5584,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Web & Browser
 - **Vessel:** CCC
 - **Purpose:** Side by Side ASCII rendering and original- Browser-based 3D flight simulator over real-world terrain using Three.js, with satellite imagery, elevation
-- **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
-- **Status:** active
-
-### [ternary-visualizer](https://github.com/SuperInstance/ternary-visualizer)
-- **Domain:** Web & Browser
-- **Vessel:** CCC
-- **Purpose:** Ternary agent dynamics visualizer — ASCII/text visualizations for terminals, logs, and docs
 - **Research lineage:** Auto-categorized. Part of the web/browser ecosystem.
 - **Status:** active
 
@@ -6189,6 +6238,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
+### [openconstruct-ts](https://github.com/SuperInstance/openconstruct-ts)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** TypeScript SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
 ### [openconstruct-zig](https://github.com/SuperInstance/openconstruct-zig)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -6721,6 +6777,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
+### [sdk](https://github.com/SuperInstance/sdk)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Conservation-law governance for AI agent fleets — the source of @superinstance/sdk, recovered from its published tarball
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
 ### [seed](https://github.com/SuperInstance/seed)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -7064,27 +7127,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
-### [ternary-thermodynamics](https://github.com/SuperInstance/ternary-thermodynamics)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Ternary Thermodynamics  Statistical mechanics analogs for ternary agent systems
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [ternary-tidepool](https://github.com/SuperInstance/ternary-tidepool)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** ternary-tidepool: Small protected environments for agent experimentation
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [ternary-timbre](https://github.com/SuperInstance/ternary-timbre)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** **Timbre analysis for agent output characterization.**
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
 ### [ternary-trust](https://github.com/SuperInstance/ternary-trust)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -7117,6 +7159,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Rust exocortex crate: tiny-agent-protocol
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
