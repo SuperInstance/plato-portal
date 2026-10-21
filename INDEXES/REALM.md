@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-10-20 09:48 UTC
+**Generated:** 2026-10-21 09:49 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -1793,6 +1793,7 @@
 - **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** — Auto-created for sync 2026-08-13
 - **[tap-gamenight](https://github.com/SuperInstance/tap-gamenight)**
 - **[technician](https://github.com/SuperInstance/technician)** — Technician tooling
+- **[tells](https://github.com/SuperInstance/tells)**
 - **[tensor-midi](https://github.com/SuperInstance/tensor-midi)** — Tensor-based MIDI timing for musical agent dialogue cadence
 - **[ternary-benchmark](https://github.com/SuperInstance/ternary-benchmark)** — ternary-benchmark  Standardized benchmarks for ternary agent systems — reproducible performance...
 - **[ternary-compression](https://github.com/SuperInstance/ternary-compression)** — ternary-compression  Compress ternary sequences using various algorithms
@@ -1873,7 +1874,6 @@
 - **[three-forms-of-evidence](https://github.com/SuperInstance/three-forms-of-evidence)** — Three canonical forms of evidence (R10 canon)
 - **[three-forms-of-forgetting](https://github.com/SuperInstance/three-forms-of-forgetting)** — Three canonical forms of forgetting (R10 canon)
 - **[tidepool](https://github.com/SuperInstance/tidepool)**
-- **[tile-chain](https://github.com/SuperInstance/tile-chain)** — Signal Chain Thesis - tile-chain
 - **[tile-lifecycle](https://github.com/SuperInstance/tile-lifecycle)** — tile-lifecycle
 - **[tile-memory-early-version](https://github.com/SuperInstance/tile-memory-early-version)** — [ARCHIVED] Early lossy memory experiment. See SuperInstance/fleet-memory for lifecycle-aware distrib
 - **[tiny-agent-protocol](https://github.com/SuperInstance/tiny-agent-protocol)** — Rust exocortex crate: tiny-agent-protocol

@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-10-20 09:48 UTC
+**Generated:** 2026-10-21 09:49 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -838,7 +838,6 @@
 - **[swarm-rooms](https://github.com/SuperInstance/swarm-rooms)** — Extracted from plato-training
 - **[syzygy-demo](https://github.com/SuperInstance/syzygy-demo)** — A playable demo: an AI plays an ASCII raycaster by reading its screen as text. Only the seeing is le
 - **[terrain](https://github.com/SuperInstance/terrain)** — MUD-to-Visual bridge — rooms as explorable scenes. Crabs stir the mud into walkable terrain.
-- **[tile-chain](https://github.com/SuperInstance/tile-chain)** — Signal Chain Thesis - tile-chain
 - **[tile-lifecycle](https://github.com/SuperInstance/tile-lifecycle)** — tile-lifecycle
 - **[tile-memory-early-version](https://github.com/SuperInstance/tile-memory-early-version)** — [ARCHIVED] Early lossy memory experiment. See SuperInstance/fleet-memory for lifecycle-aware distrib
 - **[vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)** — Your boat as a navigable 3D web space — ScummVM meets Google Street View. Walk rooms, warp instantly
@@ -1917,6 +1916,7 @@
 - **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** — Auto-created for sync 2026-08-13
 - **[tap-gamenight](https://github.com/SuperInstance/tap-gamenight)**
 - **[technician](https://github.com/SuperInstance/technician)** — Technician tooling
+- **[tells](https://github.com/SuperInstance/tells)**
 - **[ternary-compression](https://github.com/SuperInstance/ternary-compression)** — ternary-compression  Compress ternary sequences using various algorithms
 - **[ternary-conserve](https://github.com/SuperInstance/ternary-conserve)** — Parametric conservation across resource domains — fish stocks, fuel, battery, inference tokens, crew
 - **[ternary-constant-cache](https://github.com/SuperInstance/ternary-constant-cache)** — Constant cache simulation for ternary kernels

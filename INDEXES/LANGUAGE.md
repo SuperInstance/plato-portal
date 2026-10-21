@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-10-20 09:48 UTC
+**Generated:** 2026-10-21 09:49 UTC
 **Total repos:** 2000
 
 ## C
@@ -1843,6 +1843,7 @@
 - **[tagseq2tagseq4quilt](https://github.com/SuperInstance/tagseq2tagseq4quilt)** — Framework for pretraining LLMs on graph-structured corpora (Wikipedia, The Stack, arXiv): link-aware
 - **[tap-gamenight](https://github.com/SuperInstance/tap-gamenight)**
 - **[technician](https://github.com/SuperInstance/technician)** — Technician tooling
+- **[tells](https://github.com/SuperInstance/tells)**
 - **[tensor-midi](https://github.com/SuperInstance/tensor-midi)** — Tensor-based MIDI timing for musical agent dialogue cadence
 - **[ternary-benchmark](https://github.com/SuperInstance/ternary-benchmark)** — ternary-benchmark  Standardized benchmarks for ternary agent systems — reproducible performance...
 - **[ternary-compression](https://github.com/SuperInstance/ternary-compression)** — ternary-compression  Compress ternary sequences using various algorithms
@@ -1913,7 +1914,6 @@
 - **[three-forms-of-evidence](https://github.com/SuperInstance/three-forms-of-evidence)** — Three canonical forms of evidence (R10 canon)
 - **[three-forms-of-forgetting](https://github.com/SuperInstance/three-forms-of-forgetting)** — Three canonical forms of forgetting (R10 canon)
 - **[tidepool](https://github.com/SuperInstance/tidepool)**
-- **[tile-chain](https://github.com/SuperInstance/tile-chain)** — Signal Chain Thesis - tile-chain
 - **[tile-lifecycle](https://github.com/SuperInstance/tile-lifecycle)** — tile-lifecycle
 - **[tile-memory-early-version](https://github.com/SuperInstance/tile-memory-early-version)** — [ARCHIVED] Early lossy memory experiment. See SuperInstance/fleet-memory for lifecycle-aware distrib
 - **[tit-quilt](https://github.com/SuperInstance/tit-quilt)** — A terminal toolbox that outlives its terminal — the session is a graph, not a process. Quilt-native 

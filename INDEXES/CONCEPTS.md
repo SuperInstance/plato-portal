@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-20 09:48 UTC
+**Generated:** 2026-10-21 09:49 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1079,7 +1079,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [swarm-rooms](https://github.com/SuperInstance/swarm-rooms)
 - [syzygy-demo](https://github.com/SuperInstance/syzygy-demo)
 - [terrain](https://github.com/SuperInstance/terrain)
-- [tile-chain](https://github.com/SuperInstance/tile-chain)
 - [tile-lifecycle](https://github.com/SuperInstance/tile-lifecycle)
 - [tile-memory-early-version](https://github.com/SuperInstance/tile-memory-early-version)
 - [tripartite-room](https://github.com/SuperInstance/tripartite-room)
@@ -2196,6 +2195,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tap-frontend](https://github.com/SuperInstance/tap-frontend)
 - [tap-gamenight](https://github.com/SuperInstance/tap-gamenight)
 - [technician](https://github.com/SuperInstance/technician)
+- [tells](https://github.com/SuperInstance/tells)
 - [ternary-compression](https://github.com/SuperInstance/ternary-compression)
 - [ternary-conserve](https://github.com/SuperInstance/ternary-conserve)
 - [ternary-constant-cache](https://github.com/SuperInstance/ternary-constant-cache)

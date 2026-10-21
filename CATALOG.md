@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-20 09:48 UTC
+**Generated:** 2026-10-21 09:49 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -1843,6 +1843,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
 | **[tap-gamenight](https://github.com/SuperInstance/tap-gamenight)** | Various | tap-gamenight | ⚪ unknown |
 | **[technician](https://github.com/SuperInstance/technician)** | Various | Technician tooling | ⚪ unknown |
+| **[tells](https://github.com/SuperInstance/tells)** | Various | tells | ⚪ unknown |
 | **[tensor-midi](https://github.com/SuperInstance/tensor-midi)** | Various | Tensor-based MIDI timing for musical agent dialogue cadence | 🟢 active |
 | **[ternary-benchmark](https://github.com/SuperInstance/ternary-benchmark)** | Various | ternary-benchmark  Standardized benchmarks for ternary agent systems — reproducible performance... | 🟢 active |
 | **[ternary-compression](https://github.com/SuperInstance/ternary-compression)** | Various | ternary-compression  Compress ternary sequences using various algorithms | ⚪ unknown |
@@ -1915,7 +1916,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[three-forms-of-evidence](https://github.com/SuperInstance/three-forms-of-evidence)** | Various | Three canonical forms of evidence (R10 canon) | ⚪ unknown |
 | **[three-forms-of-forgetting](https://github.com/SuperInstance/three-forms-of-forgetting)** | Various | Three canonical forms of forgetting (R10 canon) | ⚪ unknown |
 | **[tidepool](https://github.com/SuperInstance/tidepool)** | Various | tidepool | ⚪ unknown |
-| **[tile-chain](https://github.com/SuperInstance/tile-chain)** | Various | Signal Chain Thesis - tile-chain | ⚪ unknown |
 | **[tile-lifecycle](https://github.com/SuperInstance/tile-lifecycle)** | Various | tile-lifecycle | ⚪ unknown |
 | **[tiny-agent-protocol](https://github.com/SuperInstance/tiny-agent-protocol)** | Various | Rust exocortex crate: tiny-agent-protocol | 🟢 active |
 | **[tiny-ecs](https://github.com/SuperInstance/tiny-ecs)** | Various | Minimal archetype-based Entity-Component-System in Rust | ⚪ unknown |
