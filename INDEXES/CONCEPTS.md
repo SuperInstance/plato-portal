@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-21 09:49 UTC
+**Generated:** 2026-10-22 09:50 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -161,7 +161,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-nn](https://github.com/SuperInstance/quilt-nn)
 - [quilt-transformer-arena](https://github.com/SuperInstance/quilt-transformer-arena)
 - [ternary-transformer](https://github.com/SuperInstance/ternary-transformer)
-- [tiny-neural](https://github.com/SuperInstance/tiny-neural)
 - [tropical-attention](https://github.com/SuperInstance/tropical-attention)
 - [tropical-geometry](https://github.com/SuperInstance/tropical-geometry)
 - [tropical-neural](https://github.com/SuperInstance/tropical-neural)
@@ -260,7 +259,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [slackwater-forge](https://github.com/SuperInstance/slackwater-forge)
 - [spread](https://github.com/SuperInstance/spread)
 - [ternary-paxos](https://github.com/SuperInstance/ternary-paxos)
-- [tiny-neural](https://github.com/SuperInstance/tiny-neural)
 - [tropical-attention-kernel](https://github.com/SuperInstance/tropical-attention-kernel)
 - [vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)
 - [warp-room](https://github.com/SuperInstance/warp-room)
@@ -341,6 +339,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [Motifcode4quilt](https://github.com/SuperInstance/Motifcode4quilt)
 - [Murmur](https://github.com/SuperInstance/Murmur)
 - [OpenConstruct](https://github.com/SuperInstance/OpenConstruct)
+- [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
 - [OpenRoom](https://github.com/SuperInstance/OpenRoom)
 - [Patchwork-experts](https://github.com/SuperInstance/Patchwork-experts)
 - [PersonalLog](https://github.com/SuperInstance/PersonalLog)
@@ -370,6 +369,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ax-quilt](https://github.com/SuperInstance/ax-quilt)
 - [bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)
 - [baton-protocol](https://github.com/SuperInstance/baton-protocol)
+- [blender-bridge](https://github.com/SuperInstance/blender-bridge)
 - [boat-agent](https://github.com/SuperInstance/boat-agent)
 - [capitaine-1](https://github.com/SuperInstance/capitaine-1)
 - [captain](https://github.com/SuperInstance/captain)
@@ -520,8 +520,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [nexus-git-agent](https://github.com/SuperInstance/nexus-git-agent)
 - [nursery](https://github.com/SuperInstance/nursery)
 - [open-terminal](https://github.com/SuperInstance/open-terminal)
-- [openconstruct-java](https://github.com/SuperInstance/openconstruct-java)
-- [openconstruct-jupyter](https://github.com/SuperInstance/openconstruct-jupyter)
 - [openconstruct-kernel](https://github.com/SuperInstance/openconstruct-kernel)
 - [openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)
 - [openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)
@@ -761,7 +759,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [synesis-benches](https://github.com/SuperInstance/synesis-benches)
 - [synesis-prompts](https://github.com/SuperInstance/synesis-prompts)
 - [synoptic-sheet](https://github.com/SuperInstance/synoptic-sheet)
-- [t-minus](https://github.com/SuperInstance/t-minus)
 - [tensor-midi](https://github.com/SuperInstance/tensor-midi)
 - [ternary-benchmark](https://github.com/SuperInstance/ternary-benchmark)
 - [ternary-consensus](https://github.com/SuperInstance/ternary-consensus)
@@ -776,8 +773,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ternary-transfer](https://github.com/SuperInstance/ternary-transfer)
 - [ternary-trust](https://github.com/SuperInstance/ternary-trust)
 - [the-beyond](https://github.com/SuperInstance/the-beyond)
-- [tile-memory-early-version](https://github.com/SuperInstance/tile-memory-early-version)
-- [tiny-agent-protocol](https://github.com/SuperInstance/tiny-agent-protocol)
 - [tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)
 - [tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)
 - [topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)
@@ -843,6 +838,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Plato
 
 - [Equipment-CellLogic-Distiller](https://github.com/SuperInstance/Equipment-CellLogic-Distiller)
+- [OpenMAIC](https://github.com/SuperInstance/OpenMAIC)
 - [OpenRoom](https://github.com/SuperInstance/OpenRoom)
 - [PuddnHead](https://github.com/SuperInstance/PuddnHead)
 - [Spreader-tool](https://github.com/SuperInstance/Spreader-tool)
@@ -854,6 +850,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [agent-tiles](https://github.com/SuperInstance/agent-tiles)
 - [arch-gateway-room-clean](https://github.com/SuperInstance/arch-gateway-room-clean)
 - [bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)
+- [blender-bridge](https://github.com/SuperInstance/blender-bridge)
 - [boat-agent](https://github.com/SuperInstance/boat-agent)
 - [cargo-line-tycoon](https://github.com/SuperInstance/cargo-line-tycoon)
 - [chart-room](https://github.com/SuperInstance/chart-room)
@@ -1063,6 +1060,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-tutor](https://github.com/SuperInstance/quilt-tutor)
 - [recovered-copy-20260824-openrooms](https://github.com/SuperInstance/recovered-copy-20260824-openrooms)
 - [recovered-copy-20260824-platos-shell](https://github.com/SuperInstance/recovered-copy-20260824-platos-shell)
+- [room-lens](https://github.com/SuperInstance/room-lens)
 - [room-lifecycle](https://github.com/SuperInstance/room-lifecycle)
 - [room-micro-models](https://github.com/SuperInstance/room-micro-models)
 - [room-render](https://github.com/SuperInstance/room-render)
@@ -1072,6 +1070,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [session-room](https://github.com/SuperInstance/session-room)
 - [shoalwater-full](https://github.com/SuperInstance/shoalwater-full)
 - [signal-chain](https://github.com/SuperInstance/signal-chain)
+- [splat-room](https://github.com/SuperInstance/splat-room)
 - [starter-shell](https://github.com/SuperInstance/starter-shell)
 - [substrate-game-engine](https://github.com/SuperInstance/substrate-game-engine)
 - [superinstance-api](https://github.com/SuperInstance/superinstance-api)
@@ -1079,8 +1078,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [swarm-rooms](https://github.com/SuperInstance/swarm-rooms)
 - [syzygy-demo](https://github.com/SuperInstance/syzygy-demo)
 - [terrain](https://github.com/SuperInstance/terrain)
-- [tile-lifecycle](https://github.com/SuperInstance/tile-lifecycle)
-- [tile-memory-early-version](https://github.com/SuperInstance/tile-memory-early-version)
 - [tripartite-room](https://github.com/SuperInstance/tripartite-room)
 - [vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)
 - [wardroom](https://github.com/SuperInstance/wardroom)
@@ -1275,6 +1272,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [batten-spline](https://github.com/SuperInstance/batten-spline)
 - [bayesian-inference](https://github.com/SuperInstance/bayesian-inference)
 - [bch-code](https://github.com/SuperInstance/bch-code)
+- [beam-quilt](https://github.com/SuperInstance/beam-quilt)
 - [bech32-encode](https://github.com/SuperInstance/bech32-encode)
 - [bench-runner](https://github.com/SuperInstance/bench-runner)
 - [beta-test-framework](https://github.com/SuperInstance/beta-test-framework)
@@ -1320,6 +1318,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [character-tensor](https://github.com/SuperInstance/character-tensor)
 - [chart-system](https://github.com/SuperInstance/chart-system)
 - [chiaroscuro](https://github.com/SuperInstance/chiaroscuro)
+- [chiaroscuro-embedding](https://github.com/SuperInstance/chiaroscuro-embedding)
+- [chrono-flight](https://github.com/SuperInstance/chrono-flight)
+- [chrono-tensor](https://github.com/SuperInstance/chrono-tensor)
 - [circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)
 - [claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)
 - [claw](https://github.com/SuperInstance/claw)
@@ -1360,6 +1361,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-spectral-mojo](https://github.com/SuperInstance/conservation-spectral-mojo)
 - [consul-client](https://github.com/SuperInstance/consul-client)
 - [container-runtime](https://github.com/SuperInstance/container-runtime)
+- [continuum-runtime](https://github.com/SuperInstance/continuum-runtime)
 - [conversation-archive](https://github.com/SuperInstance/conversation-archive)
 - [cot-quilt](https://github.com/SuperInstance/cot-quilt)
 - [covers](https://github.com/SuperInstance/covers)
@@ -1655,7 +1657,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [open-mythos-edge](https://github.com/SuperInstance/open-mythos-edge)
 - [openPlan3D](https://github.com/SuperInstance/openPlan3D)
 - [openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)
-- [openconstruct-hub](https://github.com/SuperInstance/openconstruct-hub)
 - [openshell-compatibility-audit](https://github.com/SuperInstance/openshell-compatibility-audit)
 - [operational-fiction](https://github.com/SuperInstance/operational-fiction)
 - [optimal-control](https://github.com/SuperInstance/optimal-control)
@@ -1791,6 +1792,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-edge-ml](https://github.com/SuperInstance/quilt-edge-ml)
 - [quilt-edge-node](https://github.com/SuperInstance/quilt-edge-node)
 - [quilt-elf](https://github.com/SuperInstance/quilt-elf)
+- [quilt-engine](https://github.com/SuperInstance/quilt-engine)
 - [quilt-engine-ports](https://github.com/SuperInstance/quilt-engine-ports)
 - [quilt-esp32](https://github.com/SuperInstance/quilt-esp32)
 - [quilt-evolve](https://github.com/SuperInstance/quilt-evolve)
@@ -2256,11 +2258,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [three-forms-of-evidence](https://github.com/SuperInstance/three-forms-of-evidence)
 - [three-forms-of-forgetting](https://github.com/SuperInstance/three-forms-of-forgetting)
 - [tidepool](https://github.com/SuperInstance/tidepool)
-- [tiny-ecs](https://github.com/SuperInstance/tiny-ecs)
 - [tit-quilt](https://github.com/SuperInstance/tit-quilt)
 - [tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)
 - [tminus-client](https://github.com/SuperInstance/tminus-client)
-- [tminus-music](https://github.com/SuperInstance/tminus-music)
 - [tminus-os](https://github.com/SuperInstance/tminus-os)
 - [token-stream](https://github.com/SuperInstance/token-stream)
 - [token-wavelet](https://github.com/SuperInstance/token-wavelet)
@@ -2336,6 +2336,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 ## Underwater
 
 - [quality-gate-stream](https://github.com/SuperInstance/quality-gate-stream)
+- [splat-room](https://github.com/SuperInstance/splat-room)
 - [ternary-depth](https://github.com/SuperInstance/ternary-depth)
 
 ## Vessel
