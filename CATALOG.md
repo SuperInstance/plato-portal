@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-22 09:50 UTC
+**Generated:** 2026-10-23 09:44 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -943,6 +943,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[keyprobe](https://github.com/SuperInstance/keyprobe)** | Various | Are the keys working, and if not, in which way — IDENTITY / SHAPE / LOAD, because "down" is not a di | ⚪ unknown |
 | **[kintsugi-math-npm](https://github.com/SuperInstance/kintsugi-math-npm)** | Various | The mathematics of beautiful error recovery — TypeScript/npm | ⚪ unknown |
 | **[ladder](https://github.com/SuperInstance/ladder)** | Various | An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why  | ⚪ unknown |
+| **[lane-sheets](https://github.com/SuperInstance/lane-sheets)** | Various | Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG | 🟢 active |
 | **[lau-conservation-experiment](https://github.com/SuperInstance/lau-conservation-experiment)** | Various | Tests emergent conservation law — Landauer cost + free energy + H¹ risk score ≈ constant across agen | 🟢 active |
 | **[laya4quilt](https://github.com/SuperInstance/laya4quilt)** | Various | laya4quilt | ⚪ unknown |
 | **[lever-runner](https://github.com/SuperInstance/lever-runner)** | Various | Post-inference command executor. A token-lean AI operator that runs pre-approved shell commands by i | ⚪ unknown |
@@ -1843,7 +1844,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[syzygy-program](https://github.com/SuperInstance/syzygy-program)** | Various | The Syzygy program office: plan, architecture synthesis, design notes, seed vetting — and the map to | ⚪ unknown |
 | **[syzygy-studio](https://github.com/SuperInstance/syzygy-studio)** | Various | Syzygy studio — the public site: watch it play, learn at three levels, one camera one job, receipts | ⚪ unknown |
 | **[syzygy-video](https://github.com/SuperInstance/syzygy-video)** | Various | Real video through the Syzygy kernel — frames become readable text (glyphs, Braille, tone); side-by- | ⚪ unknown |
-| **[t-minus-rs](https://github.com/SuperInstance/t-minus-rs)** | Various | Countdown/timer primitives with scheduling, deadline propagation, and backpressure | ⚪ unknown |
 | **[tagseq2tagseq4quilt](https://github.com/SuperInstance/tagseq2tagseq4quilt)** | Various | Framework for pretraining LLMs on graph-structured corpora (Wikipedia, The Stack, arXiv): link-aware | ⚪ unknown |
 | **[tap-frontend](https://github.com/SuperInstance/tap-frontend)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
 | **[tap-gamenight](https://github.com/SuperInstance/tap-gamenight)** | Various | tap-gamenight | ⚪ unknown |
@@ -6081,6 +6081,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Fastest and cheapest web agent
+- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
+- **Status:** active
+
+### [lane-sheets](https://github.com/SuperInstance/lane-sheets)
+- **Domain:** Other / Uncategorized
+- **Vessel:** Various
+- **Purpose:** Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangGraph lifter, byte-exact trace conformance
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

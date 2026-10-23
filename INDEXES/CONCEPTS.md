@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-22 09:50 UTC
+**Generated:** 2026-10-23 09:44 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -491,6 +491,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermit-crab](https://github.com/SuperInstance/hermit-crab)
 - [hybrid-lab](https://github.com/SuperInstance/hybrid-lab)
 - [jev-ultrafast-quilt](https://github.com/SuperInstance/jev-ultrafast-quilt)
+- [lane-sheets](https://github.com/SuperInstance/lane-sheets)
 - [lau-conservation-experiment](https://github.com/SuperInstance/lau-conservation-experiment)
 - [lau-hodge-theory](https://github.com/SuperInstance/lau-hodge-theory)
 - [ledger-continuity](https://github.com/SuperInstance/ledger-continuity)
@@ -2193,7 +2194,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [syzygy-program](https://github.com/SuperInstance/syzygy-program)
 - [syzygy-studio](https://github.com/SuperInstance/syzygy-studio)
 - [syzygy-video](https://github.com/SuperInstance/syzygy-video)
-- [t-minus-rs](https://github.com/SuperInstance/t-minus-rs)
 - [tap-frontend](https://github.com/SuperInstance/tap-frontend)
 - [tap-gamenight](https://github.com/SuperInstance/tap-gamenight)
 - [technician](https://github.com/SuperInstance/technician)
