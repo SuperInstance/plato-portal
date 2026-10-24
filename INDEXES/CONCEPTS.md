@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-23 09:44 UTC
+**Generated:** 2026-10-24 09:17 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -1272,6 +1272,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)
 - [batten-spline](https://github.com/SuperInstance/batten-spline)
 - [bayesian-inference](https://github.com/SuperInstance/bayesian-inference)
+- [bc-thor](https://github.com/SuperInstance/bc-thor)
 - [bch-code](https://github.com/SuperInstance/bch-code)
 - [beam-quilt](https://github.com/SuperInstance/beam-quilt)
 - [bech32-encode](https://github.com/SuperInstance/bech32-encode)
@@ -2262,7 +2263,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)
 - [tminus-client](https://github.com/SuperInstance/tminus-client)
 - [tminus-os](https://github.com/SuperInstance/tminus-os)
-- [token-stream](https://github.com/SuperInstance/token-stream)
 - [token-wavelet](https://github.com/SuperInstance/token-wavelet)
 - [tool-judge](https://github.com/SuperInstance/tool-judge)
 - [tools](https://github.com/SuperInstance/tools)

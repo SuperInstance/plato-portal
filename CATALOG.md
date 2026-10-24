@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-23 09:44 UTC
+**Generated:** 2026-10-24 09:17 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -618,6 +618,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[baton-protocol](https://github.com/SuperInstance/baton-protocol)** | Various | Session-level handoff for AI agents (state/next/meta). Lighter than baton-handoff (model generationa | 🟢 active |
 | **[batten-spline](https://github.com/SuperInstance/batten-spline)** | Various | batten-spline | ⚪ unknown |
 | **[bayesian-inference](https://github.com/SuperInstance/bayesian-inference)** | Various | Bayesian inference engine — posterior update, conjugate priors, and MCMC sampling for probabilistic  | ⚪ unknown |
+| **[bc-thor](https://github.com/SuperInstance/bc-thor)** | Various | Bridge Command ship simulator | ⚪ unknown |
 | **[bch-code](https://github.com/SuperInstance/bch-code)** | Various | BCH error-correcting codes — cyclic codes with configurable error correction capability for noisy ch | ⚪ unknown |
 | **[beam-quilt](https://github.com/SuperInstance/beam-quilt)** | Various | State, transmission, algorithm — a patchwork architecture for distributed, self-coordinating intelli | ⚪ unknown |
 | **[bech32-encode](https://github.com/SuperInstance/bech32-encode)** | Various | Bech32 encoding — BIP-173 checksummed encoding for SegWit addresses | ⚪ unknown |
@@ -1925,7 +1926,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tminus-client](https://github.com/SuperInstance/tminus-client)** | Various | T-Minus Client SDK — Node.js client library and CLI for the t-minus dispatcher protocol | ⚪ unknown |
 | **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** | Various | T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration | 🟢 active |
 | **[tminus-os](https://github.com/SuperInstance/tminus-os)** | Various | Swarm coordination OS — wires the ecosystem into one .swarm/ directory | ⚪ unknown |
-| **[token-stream](https://github.com/SuperInstance/token-stream)** | Various | Token streaming library for LLM inference in SuperInstance | ⚪ unknown |
 | **[token-wavelet](https://github.com/SuperInstance/token-wavelet)** | Various | AI token spending intelligence: wavelet decomposition, conservation law budgeting, and spectral mode | ⚪ unknown |
 | **[tool-judge](https://github.com/SuperInstance/tool-judge)** | Various | A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa | ⚪ unknown |
 | **[tools](https://github.com/SuperInstance/tools)** | Various | Preserved workspace artifact | ⚪ unknown |
