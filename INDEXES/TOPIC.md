@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-10-24 09:17 UTC
+**Generated:** 2026-10-25 09:34 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -142,6 +142,7 @@
 - **[conservation-enforcer-rs](https://github.com/SuperInstance/conservation-enforcer-rs)** — Rust implementation of FLUX bytecode conservation-law enforcement for LLM outputs
 - **[expr-bytecode](https://github.com/SuperInstance/expr-bytecode)** — A Rust library for Expr Bytecode
 - **[fleet-containers](https://github.com/SuperInstance/fleet-containers)** — Docker-based agent containerization for the FLUX Fleet
+- **[fleet-mechanic](https://github.com/SuperInstance/fleet-mechanic)** — 🔧 Autonomous fleet maintenance agent — A2A-native, FLUX-powered, git-first
 - **[flux](https://github.com/SuperInstance/flux)** — FLUX — Fluid Language Universal eXecution: High-performance Rust runtime with bytecode VM, SSA IR, p
 - **[flux-agent-runtime](https://github.com/SuperInstance/flux-agent-runtime)** — FLUX-native agent runtime — self-bootstrapping agents in Docker sandboxes that create vessels, pick 
 - **[flux-check-js](https://github.com/SuperInstance/flux-check-js)** — Exact constraint checking, fracture-coalesce, and sediment layers. Zero-dep TypeScript/ESM.
@@ -1983,7 +1984,6 @@
 - **[tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)**
 - **[tminus-client](https://github.com/SuperInstance/tminus-client)** — T-Minus Client SDK — Node.js client library and CLI for the t-minus dispatcher protocol
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
-- **[token-wavelet](https://github.com/SuperInstance/token-wavelet)** — AI token spending intelligence: wavelet decomposition, conservation law budgeting, and spectral mode
 - **[tool-judge](https://github.com/SuperInstance/tool-judge)** — A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa
 - **[tools](https://github.com/SuperInstance/tools)** — Preserved workspace artifact
 - **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form

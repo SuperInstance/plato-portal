@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-24 09:17 UTC
+**Generated:** 2026-10-25 09:34 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -198,6 +198,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)** | Forgemaster | Fleet liaison service for inter-vessel communication and tender coordination | 🟢 active |
 | **[fleet-lighthouse](https://github.com/SuperInstance/fleet-lighthouse)** | Forgemaster | fleet-lighthouse | 🟢 active |
 | **[fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)** | Forgemaster | Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence, | 🟢 active |
+| **[fleet-mechanic](https://github.com/SuperInstance/fleet-mechanic)** | Oracle1 | 🔧 Autonomous fleet maintenance agent — A2A-native, FLUX-powered, git-first | 🟢 active |
 | **[fleet-memory](https://github.com/SuperInstance/fleet-memory)** | Forgemaster | Content-addressable distributed memory for fleets: store, retrieve, error-correct, holographic stora | 🟢 active |
 | **[fleet-midi](https://github.com/SuperInstance/fleet-midi)** | Forgemaster | MIDI message parsing and fleet broadcast for agent coordination via musical signals | 🟢 active |
 | **[fleet-murmur](https://github.com/SuperInstance/fleet-murmur)** | Oracle1 | CCC agent workspace — logs, bottles, fleet coordination data. Not a library. | 🟢 active |
@@ -1926,7 +1927,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tminus-client](https://github.com/SuperInstance/tminus-client)** | Various | T-Minus Client SDK — Node.js client library and CLI for the t-minus dispatcher protocol | ⚪ unknown |
 | **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** | Various | T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration | 🟢 active |
 | **[tminus-os](https://github.com/SuperInstance/tminus-os)** | Various | Swarm coordination OS — wires the ecosystem into one .swarm/ directory | ⚪ unknown |
-| **[token-wavelet](https://github.com/SuperInstance/token-wavelet)** | Various | AI token spending intelligence: wavelet decomposition, conservation law budgeting, and spectral mode | ⚪ unknown |
 | **[tool-judge](https://github.com/SuperInstance/tool-judge)** | Various | A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa | ⚪ unknown |
 | **[tools](https://github.com/SuperInstance/tools)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** | Various | Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden | ⚪ unknown |
@@ -3309,6 +3309,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
 - **Purpose:** Core fleet math for multi-agent constraint systems — zero holonomy consensus, homological emergence, Laman rigidity, field analysis
+- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
+- **Status:** active
+
+### [fleet-mechanic](https://github.com/SuperInstance/fleet-mechanic)
+- **Domain:** Agent Coordination
+- **Vessel:** Oracle1
+- **Purpose:** 🔧 Autonomous fleet maintenance agent — A2A-native, FLUX-powered, git-first
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 

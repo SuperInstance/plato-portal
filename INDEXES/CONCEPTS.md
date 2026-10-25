@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-24 09:17 UTC
+**Generated:** 2026-10-25 09:34 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -13,6 +13,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [A2A-native-notebookLM](https://github.com/SuperInstance/A2A-native-notebookLM)
 - [agent-operations](https://github.com/SuperInstance/agent-operations)
 - [cell-router-pkg](https://github.com/SuperInstance/cell-router-pkg)
+- [fleet-mechanic](https://github.com/SuperInstance/fleet-mechanic)
 - [flux-js](https://github.com/SuperInstance/flux-js)
 - [plato-a2a](https://github.com/SuperInstance/plato-a2a)
 - [polyformalism-a2a-js](https://github.com/SuperInstance/polyformalism-a2a-js)
@@ -192,6 +193,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [conservation-enforcer-rs](https://github.com/SuperInstance/conservation-enforcer-rs)
 - [expr-bytecode](https://github.com/SuperInstance/expr-bytecode)
 - [fleet-containers](https://github.com/SuperInstance/fleet-containers)
+- [fleet-mechanic](https://github.com/SuperInstance/fleet-mechanic)
 - [flux](https://github.com/SuperInstance/flux)
 - [flux-agent-runtime](https://github.com/SuperInstance/flux-agent-runtime)
 - [flux-check-js](https://github.com/SuperInstance/flux-check-js)
@@ -441,6 +443,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-liaison-tender](https://github.com/SuperInstance/fleet-liaison-tender)
 - [fleet-lighthouse](https://github.com/SuperInstance/fleet-lighthouse)
 - [fleet-math-ts](https://github.com/SuperInstance/fleet-math-ts)
+- [fleet-mechanic](https://github.com/SuperInstance/fleet-mechanic)
 - [fleet-memory](https://github.com/SuperInstance/fleet-memory)
 - [fleet-midi](https://github.com/SuperInstance/fleet-midi)
 - [fleet-murmur](https://github.com/SuperInstance/fleet-murmur)
@@ -2263,7 +2266,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)
 - [tminus-client](https://github.com/SuperInstance/tminus-client)
 - [tminus-os](https://github.com/SuperInstance/tminus-os)
-- [token-wavelet](https://github.com/SuperInstance/token-wavelet)
 - [tool-judge](https://github.com/SuperInstance/tool-judge)
 - [tools](https://github.com/SuperInstance/tools)
 - [topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)
