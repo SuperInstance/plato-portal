@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-26 10:45 UTC
+**Generated:** 2026-10-27 10:11 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -142,7 +142,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[spacedrive](https://github.com/SuperInstance/spacedrive)** | Forgemaster | Spacedrive fork with Storage Conservation Guardian | 🟢 active |
 | **[storage-guardian](https://github.com/SuperInstance/storage-guardian)** | Forgemaster | Storage Guardian — duplicate detection, deduplication, budget enforcement, trend analysis, and alert | 🟢 active |
 | **[superinstance-polyformalism-harness](https://github.com/SuperInstance/superinstance-polyformalism-harness)** | Forgemaster | Unified harness for the 7-port polyformalism fleet — byte-exact canary verification | 🟢 active |
-| **[tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)** | Forgemaster | Constraint satisfaction through musical voice-leading — the Eisenstein lattice IS the Tonnetz | 🟢 active |
 | **[tripartite-room](https://github.com/SuperInstance/tripartite-room)** | Forgemaster | Three innate agents per PLATO room: Ground Truth (physics), Constraint (engineer), Communication (di | 🟢 active |
 | **[turbovec-integration-ccc](https://github.com/SuperInstance/turbovec-integration-ccc)** | Forgemaster | TurboVec integration for CCC — vector acceleration primitives for constraint computation | 🟢 active |
 | **[uv-cache-guardian](https://github.com/SuperInstance/uv-cache-guardian)** | Forgemaster | Resource-aware caching for uv — conservation laws for disk, bandwidth, and CI time budgets | 🟢 active |
@@ -438,6 +437,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[splat-room](https://github.com/SuperInstance/splat-room)** | JetsonClaw1 | ASCII-guided 3D Gaussian splatting for rapid room learning - ASCII/edge structure as the middle laye | 🟢 active |
 | **[starship-jetsonclaw1](https://github.com/SuperInstance/starship-jetsonclaw1)** | JetsonClaw1 | MUD bridge for USS JetsonClaw1 - real Jetson telemetry as a starship TUI | 🟢 active |
 | **[starter-shell](https://github.com/SuperInstance/starter-shell)** | JetsonClaw1 | A starting shell for any application. Clone it, and it adapts to your hardware — discovers compilers | 🟢 active |
+| **[stitch](https://github.com/SuperInstance/stitch)** | JetsonClaw1 | A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a | 🟢 active |
 | **[stock-screener](https://github.com/SuperInstance/stock-screener)** | JetsonClaw1 | Quilt cellular visualizer design (tickers as cells, screener rules as routing edges, scans as route  | 🟢 active |
 | **[superinstance-architecture](https://github.com/SuperInstance/superinstance-architecture)** | JetsonClaw1 | SuperInstance architecture: CopilotKit fork analysis, distributed IoT patterns, edge AI agent models | 🟢 active |
 | **[synesis](https://github.com/SuperInstance/synesis)** | JetsonClaw1 | Multi-agent LLM orchestration workspace: council consensus, RAG, privacy, hardware-tier model select | 🟢 active |
@@ -2948,13 +2948,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
 - **Status:** active
 
-### [tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)
-- **Domain:** Constraint Theory & Math
-- **Vessel:** Forgemaster
-- **Purpose:** Constraint satisfaction through musical voice-leading — the Eisenstein lattice IS the Tonnetz
-- **Research lineage:** Auto-categorized. Part of the constraint theory ecosystem.
-- **Status:** active
-
 ### [tripartite-room](https://github.com/SuperInstance/tripartite-room)
 - **Domain:** Constraint Theory & Math
 - **Vessel:** Forgemaster
@@ -4961,6 +4954,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** A starting shell for any application. Clone it, and it adapts to your hardware — discovers compilers, creates PLATO rooms, and bootstraps an agent fle
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
+### [stitch](https://github.com/SuperInstance/stitch)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an append-only hash-chained ledger. No sequencer, no c
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 

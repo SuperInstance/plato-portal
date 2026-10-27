@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-26 10:45 UTC
+**Generated:** 2026-10-27 10:11 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -107,7 +107,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [si-runtime-js](https://github.com/SuperInstance/si-runtime-js)
 - [si-runtime-zig](https://github.com/SuperInstance/si-runtime-zig)
 - [si-variational-agent](https://github.com/SuperInstance/si-variational-agent)
-- [tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)
 - [tripartite-room](https://github.com/SuperInstance/tripartite-room)
 - [turbovec-integration-ccc](https://github.com/SuperInstance/turbovec-integration-ccc)
 - [warp-flux-poc](https://github.com/SuperInstance/warp-flux-poc)
@@ -181,7 +180,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [snapkit-js](https://github.com/SuperInstance/snapkit-js)
 - [snapkit-python](https://github.com/SuperInstance/snapkit-python)
 - [snapkit-v2](https://github.com/SuperInstance/snapkit-v2)
-- [tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)
 
 ## Flux
 
@@ -745,6 +743,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [spectral-shape](https://github.com/SuperInstance/spectral-shape)
 - [starter-shell](https://github.com/SuperInstance/starter-shell)
 - [stigmergy](https://github.com/SuperInstance/stigmergy)
+- [stitch](https://github.com/SuperInstance/stitch)
 - [sunset-ecosystem](https://github.com/SuperInstance/sunset-ecosystem)
 - [superinstance-agent](https://github.com/SuperInstance/superinstance-agent)
 - [superinstance-api](https://github.com/SuperInstance/superinstance-api)
@@ -833,6 +832,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [sonar-vision-c](https://github.com/SuperInstance/sonar-vision-c)
 - [spline-physics](https://github.com/SuperInstance/spline-physics)
 - [spring-mass](https://github.com/SuperInstance/spring-mass)
+- [stitch](https://github.com/SuperInstance/stitch)
 - [swarm-tminus](https://github.com/SuperInstance/swarm-tminus)
 - [tripartite-room](https://github.com/SuperInstance/tripartite-room)
 - [vector-clock](https://github.com/SuperInstance/vector-clock)
@@ -2375,7 +2375,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ring-sign](https://github.com/SuperInstance/ring-sign)
 - [scrap-voice](https://github.com/SuperInstance/scrap-voice)
 - [spectral-music-v2](https://github.com/SuperInstance/spectral-music-v2)
-- [tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)
 - [topo-sonata](https://github.com/SuperInstance/topo-sonata)
 - [voice-games](https://github.com/SuperInstance/voice-games)
 - [voice-note-app](https://github.com/SuperInstance/voice-note-app)

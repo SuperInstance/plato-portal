@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-10-26 10:45 UTC
+**Generated:** 2026-10-27 10:11 UTC
 **Total repos:** 2000
 
 ## C
@@ -1767,6 +1767,7 @@
 - **[state](https://github.com/SuperInstance/state)** — Preserved workspace artifact
 - **[step-back-topology](https://github.com/SuperInstance/step-back-topology)** — Step-Back Operator (β₁ = E - V + C) for topological data analysis and simplicial complexes
 - **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Bio-inspired indirect coordination — pheromone signals, trail following, swarm intelligence for dece
+- **[stitch](https://github.com/SuperInstance/stitch)** — A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a
 - **[stock-screener](https://github.com/SuperInstance/stock-screener)** — Quilt cellular visualizer design (tickers as cells, screener rules as routing edges, scans as route 
 - **[storage-guardian](https://github.com/SuperInstance/storage-guardian)** — Storage Guardian — duplicate detection, deduplication, budget enforcement, trend analysis, and alert
 - **[stream-curator](https://github.com/SuperInstance/stream-curator)** — Content in, judgment out — gold/shit scoring, nudges, and taste distillation
@@ -1923,7 +1924,6 @@
 - **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** — T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration
 - **[tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)** — Heavy architectural documentation of the SuperInstance T-Minus ecosystem (t-minus, t-minus-rs, tminu
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
-- **[tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)** — Constraint satisfaction through musical voice-leading — the Eisenstein lattice IS the Tonnetz
 - **[tools](https://github.com/SuperInstance/tools)** — Preserved workspace artifact
 - **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** — Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden
 - **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form

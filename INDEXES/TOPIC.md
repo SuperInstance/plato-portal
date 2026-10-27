@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-10-26 10:45 UTC
+**Generated:** 2026-10-27 10:11 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -130,7 +130,6 @@
 - **[snapkit-js](https://github.com/SuperInstance/snapkit-js)** — Eisenstein A₂ lattice snap, temporal beat grids, and spectral analysis for JavaScript/TypeScript. Ze
 - **[snapkit-python](https://github.com/SuperInstance/snapkit-python)** — Tolerance-compressed attention allocation — Eisenstein lattices, delta detection, attention budgets.
 - **[snapkit-v2](https://github.com/SuperInstance/snapkit-v2)** — Eisenstein A₂ lattice snap, temporal beat grids, spectral analysis, connectome detection, and FLUX-T
-- **[tonnetz-constraints](https://github.com/SuperInstance/tonnetz-constraints)** — Constraint satisfaction through musical voice-leading — the Eisenstein lattice IS the Tonnetz
 
 ## Flux
 
@@ -538,6 +537,7 @@
 - **[spectral-prosody-rs](https://github.com/SuperInstance/spectral-prosody-rs)** — Spectral analysis of prosodic features in agent communication
 - **[spectral-shape](https://github.com/SuperInstance/spectral-shape)** — Spectral methods for shape analysis of agent behavior distributions
 - **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Bio-inspired indirect coordination — pheromone signals, trail following, swarm intelligence for dece
+- **[stitch](https://github.com/SuperInstance/stitch)** — A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a
 - **[sunset-ecosystem](https://github.com/SuperInstance/sunset-ecosystem)** — Trinity-architecture agent ecosystem: ethos, pathos, logos. Agents sunset with dignity and seed the 
 - **[superinstance-agent](https://github.com/SuperInstance/superinstance-agent)** — Agent abstractions for the SuperInstance fleet — vessel traits, lifecycle, and orchestration types
 - **[superinstance-cocapn](https://github.com/SuperInstance/superinstance-cocapn)** — Captain-level fleet coordination — conservation auditing, vessel oversight, fleet-wide resource mana
