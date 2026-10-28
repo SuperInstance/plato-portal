@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-27 10:11 UTC
+**Generated:** 2026-10-28 10:58 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -459,6 +459,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[vessel-bridge](https://github.com/SuperInstance/vessel-bridge)** | JetsonClaw1 | Hardware abstraction layer for ESP32 to Jetson to Cloud — unified sensor/actuator/power API across v | 🟢 active |
 | **[warp-vote-consensus](https://github.com/SuperInstance/warp-vote-consensus)** | JetsonClaw1 | GPU warp-vote hardware as agent consensus. 32-thread ballots → ternary voting → quorum tree → fleet  | 🟢 active |
 | **[wasm-cert-wedge](https://github.com/SuperInstance/wasm-cert-wedge)** | JetsonClaw1 | wasm-cert-wedge | 🟢 active |
+| **[whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)** | JetsonClaw1 | The whole-house quilt: rooms of text state, stationed residents, decision-model dice, and an append- | 🟢 active |
 | **[zero-knowledge](https://github.com/SuperInstance/zero-knowledge)** | JetsonClaw1 | Zero-knowledge proof primitives: Schnorr, DLEQ, range proofs, sigma protocols, Fiat-Shamir | 🟢 active |
 
 ## Web & Browser
@@ -614,6 +615,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[backward-holdem](https://github.com/SuperInstance/backward-holdem)** | Various | backward-holdem | ⚪ unknown |
 | **[base58-check](https://github.com/SuperInstance/base58-check)** | Various | Base58Check encoding — Bitcoin-style base58 with version byte and double-SHA256 checksum | ⚪ unknown |
 | **[base60-lattice](https://github.com/SuperInstance/base60-lattice)** | Various | base60-lattice | ⚪ unknown |
+| **[BasicC2](https://github.com/SuperInstance/BasicC2)** | Various | A basic no-Login Command & Control written in Python, works on Windows & Linux and has XOR encryptio | ⚪ unknown |
 | **[Baton](https://github.com/SuperInstance/Baton)** | Various | automate agents training their successors for a better way to have infinite context without limits | 🟢 active |
 | **[baton-orchestrator](https://github.com/SuperInstance/baton-orchestrator)** | Various | 🎼 Multi-model AI orchestrator by KimiCode — the conductor's baton | ⚪ unknown |
 | **[baton-protocol](https://github.com/SuperInstance/baton-protocol)** | Various | Session-level handoff for AI agents (state/next/meta). Lighter than baton-handoff (model generationa | 🟢 active |
@@ -1048,7 +1050,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[open-mind](https://github.com/SuperInstance/open-mind)** | Various | open-interpreter that KNOWS your code. Ingest any repo → parse every function → build muscle memory  | ⚪ unknown |
 | **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** | Various | Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces | 🟢 active |
 | **[openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)** | Various | Embedded OpenConstruct client for ESP32 microcontrollers | ⚪ unknown |
-| **[openconstruct-kernel](https://github.com/SuperInstance/openconstruct-kernel)** | Various | Core kernel for the OpenConstruct modular agent framework | 🟢 active |
 | **[openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)** | Various | Modular construction framework for SuperInstance agent architecture | 🟢 active |
 | **[openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)** | Various | Ruby SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem | 🟢 active |
 | **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** | Various | Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem | 🟢 active |
@@ -1928,7 +1929,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** | Various | T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration | 🟢 active |
 | **[tminus-os](https://github.com/SuperInstance/tminus-os)** | Various | Swarm coordination OS — wires the ecosystem into one .swarm/ directory | ⚪ unknown |
 | **[tool-judge](https://github.com/SuperInstance/tool-judge)** | Various | A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa | ⚪ unknown |
-| **[tools](https://github.com/SuperInstance/tools)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** | Various | Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden | ⚪ unknown |
 | **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** | Various | Topological analysis of musical sonata form | ⚪ unknown |
 | **[topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)** | Various | Advanced topological sorting with parallel, priority-aware, and incremental algorithms | 🟢 active |
@@ -5111,6 +5111,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** The whole-house quilt: rooms of text state, stationed residents, decision-model dice, and an append-only ledger — design corpus, protocols, and a refe
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [zero-knowledge](https://github.com/SuperInstance/zero-knowledge)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -6221,13 +6228,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces. Fork of NVIDIA/OpenShell (Apache 2.0)
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [openconstruct-kernel](https://github.com/SuperInstance/openconstruct-kernel)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Core kernel for the OpenConstruct modular agent framework
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

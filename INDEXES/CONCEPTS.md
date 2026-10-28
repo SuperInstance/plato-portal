@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-27 10:11 UTC
+**Generated:** 2026-10-28 10:58 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -522,7 +522,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [nexus-git-agent](https://github.com/SuperInstance/nexus-git-agent)
 - [nursery](https://github.com/SuperInstance/nursery)
 - [open-terminal](https://github.com/SuperInstance/open-terminal)
-- [openconstruct-kernel](https://github.com/SuperInstance/openconstruct-kernel)
 - [openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)
 - [openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)
 - [openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)
@@ -1087,6 +1086,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [wardroom](https://github.com/SuperInstance/wardroom)
 - [warp-room](https://github.com/SuperInstance/warp-room)
 - [whisper-sync](https://github.com/SuperInstance/whisper-sync)
+- [whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)
 - [zeroclaw-plato](https://github.com/SuperInstance/zeroclaw-plato)
 - [zeroclaws](https://github.com/SuperInstance/zeroclaws)
 
@@ -1205,6 +1205,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ACE-Step-1.5](https://github.com/SuperInstance/ACE-Step-1.5)
 - [AI-Writings](https://github.com/SuperInstance/AI-Writings)
 - [AIR](https://github.com/SuperInstance/AIR)
+- [BasicC2](https://github.com/SuperInstance/BasicC2)
 - [ChainForgeLegend-Quilt](https://github.com/SuperInstance/ChainForgeLegend-Quilt)
 - [CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)
 - [CrashPilot](https://github.com/SuperInstance/CrashPilot)
@@ -2267,7 +2268,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tminus-client](https://github.com/SuperInstance/tminus-client)
 - [tminus-os](https://github.com/SuperInstance/tminus-os)
 - [tool-judge](https://github.com/SuperInstance/tool-judge)
-- [tools](https://github.com/SuperInstance/tools)
 - [topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)
 - [topology-bench](https://github.com/SuperInstance/topology-bench)
 - [tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)
