@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-10-28 10:58 UTC
+**Generated:** 2026-10-29 11:17 UTC
 **Total repos:** 2000
 
 ## C
@@ -987,6 +987,7 @@
 - **[knowledge-vault](https://github.com/SuperInstance/knowledge-vault)**
 - **[ladder](https://github.com/SuperInstance/ladder)** — An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why 
 - **[lane-sheets](https://github.com/SuperInstance/lane-sheets)** — Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG
+- **[last-mile](https://github.com/SuperInstance/last-mile)** — Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt ren
 - **[lau-conservation-experiment](https://github.com/SuperInstance/lau-conservation-experiment)** — Tests emergent conservation law — Landauer cost + free energy + H¹ risk score ≈ constant across agen
 - **[laya4quilt](https://github.com/SuperInstance/laya4quilt)**
 - **[ledger-continuity](https://github.com/SuperInstance/ledger-continuity)** — The ledger outlives the agent — minimal ledger pattern for agent crash recovery
@@ -1926,7 +1927,6 @@
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
 - **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** — Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden
 - **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form
-- **[topological-flow](https://github.com/SuperInstance/topological-flow)** — Persistent homology for flow networks: Vietoris-Rips filtration, Betti numbers, bottleneck distance,
 - **[topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)** — Advanced topological sorting with parallel, priority-aware, and incremental algorithms
 - **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** — Real-time anomaly detection on fleet coordination topology
 - **[topology-bench](https://github.com/SuperInstance/topology-bench)** — CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem

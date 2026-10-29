@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-10-28 10:58 UTC
+**Generated:** 2026-10-29 11:17 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -623,6 +623,7 @@
 - **[knowledge-vault-rs](https://github.com/SuperInstance/knowledge-vault-rs)** — Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust)
 - **[ladder](https://github.com/SuperInstance/ladder)** — An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why 
 - **[lane-sheets](https://github.com/SuperInstance/lane-sheets)** — Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG
+- **[last-mile](https://github.com/SuperInstance/last-mile)** — Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt ren
 - **[lau-conservation-experiment](https://github.com/SuperInstance/lau-conservation-experiment)** — Tests emergent conservation law — Landauer cost + free energy + H¹ risk score ≈ constant across agen
 - **[lau-hodge-theory](https://github.com/SuperInstance/lau-hodge-theory)** — Hodge theory for agent knowledge spaces — decomposition, harmonic forms, and spectral sequences
 - **[laya4quilt](https://github.com/SuperInstance/laya4quilt)**
@@ -1892,7 +1893,6 @@
 - **[tool-judge](https://github.com/SuperInstance/tool-judge)** — A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa
 - **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** — Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden
 - **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form
-- **[topological-flow](https://github.com/SuperInstance/topological-flow)** — Persistent homology for flow networks: Vietoris-Rips filtration, Betti numbers, bottleneck distance,
 - **[topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)** — Advanced topological sorting with parallel, priority-aware, and incremental algorithms
 - **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** — Real-time anomaly detection on fleet coordination topology
 - **[topology-bench](https://github.com/SuperInstance/topology-bench)** — CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem

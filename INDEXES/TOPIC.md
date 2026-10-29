@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-10-28 10:58 UTC
+**Generated:** 2026-10-29 11:17 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -916,7 +916,6 @@
 - **[moth-runner](https://github.com/SuperInstance/moth-runner)** — P0 #4: the adversarial runner — campaigns, witness.jsonl, homeostatic-throttle admission
 - **[quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)** — The Quilt cell-router: a BIND/LINK/GHOST/TICK engine for A2A bottle-cells. F145. Lifts i2i-bottle-ag
 - **[superinstance-protocol](https://github.com/SuperInstance/superinstance-protocol)** — Hybrid Bottle wire protocol — JSON envelope + msgpack payload with ternary conservation auditing for
-- **[topological-flow](https://github.com/SuperInstance/topological-flow)** — Persistent homology for flow networks: Vietoris-Rips filtration, Betti numbers, bottleneck distance,
 - **[training-throttle](https://github.com/SuperInstance/training-throttle)** — Training rate throttling and backpressure for ML pipelines
 
 ## Uncategorized
@@ -1283,6 +1282,7 @@
 - **[knowledge-vault](https://github.com/SuperInstance/knowledge-vault)**
 - **[knowledge-vault-rs](https://github.com/SuperInstance/knowledge-vault-rs)** — Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust)
 - **[ladder](https://github.com/SuperInstance/ladder)** — An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why 
+- **[last-mile](https://github.com/SuperInstance/last-mile)** — Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt ren
 - **[laya4quilt](https://github.com/SuperInstance/laya4quilt)**
 - **[lever-runner](https://github.com/SuperInstance/lever-runner)** — Post-inference command executor. A token-lean AI operator that runs pre-approved shell commands by i
 - **[lexical-substrate](https://github.com/SuperInstance/lexical-substrate)**

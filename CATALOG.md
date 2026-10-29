@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-28 10:58 UTC
+**Generated:** 2026-10-29 11:17 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -306,7 +306,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-spreadsheet](https://github.com/SuperInstance/ternary-spreadsheet)** | Forgemaster | Ternary Spreadsheet  Core logic for the SuperInstance Spreadsheet — a familiar spreadsheet inte... | 🟢 active |
 | **[ternary-topology](https://github.com/SuperInstance/ternary-topology)** | Forgemaster | ternary-topology  Persistent homology for ternary networks | 🟢 active |
 | **[tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)** | Forgemaster | Heavy architectural documentation of the SuperInstance T-Minus ecosystem (t-minus, t-minus-rs, tminu | 🟢 active |
-| **[topological-flow](https://github.com/SuperInstance/topological-flow)** | Oracle1 | Persistent homology for flow networks: Vietoris-Rips filtration, Betti numbers, bottleneck distance, | 🟢 active |
 | **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** | Forgemaster | Real-time anomaly detection on fleet coordination topology | 🟢 active |
 | **[topology-bench](https://github.com/SuperInstance/topology-bench)** | Forgemaster | CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem | 🟢 active |
 | **[unspoken-resonance](https://github.com/SuperInstance/unspoken-resonance)** | Forgemaster | SuperInstance fleet wave-67 | 🟢 active |
@@ -367,6 +366,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[knowledge-graph](https://github.com/SuperInstance/knowledge-graph)** | JetsonClaw1 | Recursive vectorized idea graph for institutional knowledge | 🟢 active |
 | **[knowledge-vault](https://github.com/SuperInstance/knowledge-vault)** | JetsonClaw1 | knowledge-vault | 🟢 active |
 | **[knowledge-vault-rs](https://github.com/SuperInstance/knowledge-vault-rs)** | JetsonClaw1 | Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust) | 🟢 active |
+| **[last-mile](https://github.com/SuperInstance/last-mile)** | JetsonClaw1 | Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt ren | 🟢 active |
 | **[lau-hodge-theory](https://github.com/SuperInstance/lau-hodge-theory)** | JetsonClaw1 | Hodge theory for agent knowledge spaces — decomposition, harmonic forms, and spectral sequences | 🟢 active |
 | **[ledger-continuity](https://github.com/SuperInstance/ledger-continuity)** | JetsonClaw1 | The ledger outlives the agent — minimal ledger pattern for agent crash recovery | 🟢 active |
 | **[lucineer-workspace](https://github.com/SuperInstance/lucineer-workspace)** | JetsonClaw1 | Lucineer workspace: process, decisions, and structured knowledge from the zero-shot visitor audit, t | 🟢 active |
@@ -4068,13 +4068,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
-### [topological-flow](https://github.com/SuperInstance/topological-flow)
-- **Domain:** Agent Coordination
-- **Vessel:** Oracle1
-- **Purpose:** Persistent homology for flow networks: Vietoris-Rips filtration, Betti numbers, bottleneck distance, persistence spectra
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
 ### [topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
@@ -4464,6 +4457,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust)
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
+### [last-mile](https://github.com/SuperInstance/last-mile)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt renders, Jetson Thor thinks, Orin archives
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 

@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-28 10:58 UTC
+**Generated:** 2026-10-29 11:17 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -35,7 +35,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-murmur](https://github.com/SuperInstance/fleet-murmur)
 - [quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)
 - [superinstance-protocol](https://github.com/SuperInstance/superinstance-protocol)
-- [topological-flow](https://github.com/SuperInstance/topological-flow)
 
 ## Bytecode
 
@@ -292,7 +291,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [persistent-sheaf-rs](https://github.com/SuperInstance/persistent-sheaf-rs)
 - [sheaf-cohomology](https://github.com/SuperInstance/sheaf-cohomology)
 - [si-persistence-agent](https://github.com/SuperInstance/si-persistence-agent)
-- [topological-flow](https://github.com/SuperInstance/topological-flow)
 
 ## Hex
 
@@ -1196,7 +1194,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [moth-runner](https://github.com/SuperInstance/moth-runner)
 - [quilt-cell-router](https://github.com/SuperInstance/quilt-cell-router)
 - [superinstance-protocol](https://github.com/SuperInstance/superinstance-protocol)
-- [topological-flow](https://github.com/SuperInstance/topological-flow)
 - [training-throttle](https://github.com/SuperInstance/training-throttle)
 
 ## Uncategorized
@@ -1578,6 +1575,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [knowledge-vault](https://github.com/SuperInstance/knowledge-vault)
 - [knowledge-vault-rs](https://github.com/SuperInstance/knowledge-vault-rs)
 - [ladder](https://github.com/SuperInstance/ladder)
+- [last-mile](https://github.com/SuperInstance/last-mile)
 - [laya4quilt](https://github.com/SuperInstance/laya4quilt)
 - [lever-runner](https://github.com/SuperInstance/lever-runner)
 - [lexical-substrate](https://github.com/SuperInstance/lexical-substrate)
