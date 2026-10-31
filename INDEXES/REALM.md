@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-10-30 11:10 UTC
+**Generated:** 2026-10-31 10:43 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -211,6 +211,7 @@
 - **[coding-3d](https://github.com/SuperInstance/coding-3d)** — Repository test sur AI-Factory
 - **[coev](https://github.com/SuperInstance/coev)** — Adversarial coevolution engine with champion-integrity auditing. Zero-dep Node. Extracted from pong-
 - **[cog-lab](https://github.com/SuperInstance/cog-lab)** — The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf
+- **[cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)** — A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world o
 - **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
 - **[collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)** — Quilt backend for Real-time collaborative drawing platform built with Java, JavaFX, TCP sockets, and
 - **[collective-ai](https://github.com/SuperInstance/collective-ai)** — Extracted from plato-training
@@ -758,7 +759,6 @@
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
 - **[openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)** — Embedded OpenConstruct client for ESP32 microcontrollers
 - **[openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)** — GPU-accelerated edge node for OpenConstruct - local inference, camera/sonar processing, Plato shell 
-- **[openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)** — Landing page for OpenConstruct — any agent, any hardware, any language
 - **[openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)** — Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense ty
 - **[openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)** — Modular construction framework for SuperInstance agent architecture
 - **[openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)** — Ruby SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
@@ -1893,7 +1893,6 @@
 - **[tool-judge](https://github.com/SuperInstance/tool-judge)** — A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa
 - **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** — Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden
 - **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form
-- **[topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)** — Advanced topological sorting with parallel, priority-aware, and incremental algorithms
 - **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** — Real-time anomaly detection on fleet coordination topology
 - **[topology-bench](https://github.com/SuperInstance/topology-bench)** — CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem
 - **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
@@ -1984,6 +1983,7 @@
 - **[whisper-sync](https://github.com/SuperInstance/whisper-sync)** — Rust CLI/crate bridging Murmurer ambient whisper protocol to PLATO room infrastructure — short, ambi
 - **[whistle](https://github.com/SuperInstance/whistle)** — Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled
 - **[whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)** — The whole-house quilt: rooms of text state, stationed residents, decision-model dice, and an append-
+- **[why](https://github.com/SuperInstance/why)** — Does this still deserve to exist? A justification-reachability engine — one question, two files, man
 - **[wiki](https://github.com/SuperInstance/wiki)** — ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs
 - **[wire-harmony](https://github.com/SuperInstance/wire-harmony)** — Wire-level protocol harmony layer for SuperInstance networking
 - **[witness-anchor](https://github.com/SuperInstance/witness-anchor)** — THE fleet's out-of-band witness anchor -- a Cloudflare Worker that publishes signed heads and comput

@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-10-30 11:10 UTC
+**Generated:** 2026-10-31 10:43 UTC
 **Total repos:** 2000
 
 ## C
@@ -739,6 +739,7 @@
 - **[codespace-worker](https://github.com/SuperInstance/codespace-worker)** — 🚀 GitHub Codespaces worker utilities — run commands remotely in ephemeral x86_64 codespaces, pipelin
 - **[coding-3d](https://github.com/SuperInstance/coding-3d)** — Repository test sur AI-Factory
 - **[cog-lab](https://github.com/SuperInstance/cog-lab)** — The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf
+- **[cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)** — A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world o
 - **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
 - **[collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)** — Quilt backend for Real-time collaborative drawing platform built with Java, JavaFX, TCP sockets, and
 - **[collective-ai](https://github.com/SuperInstance/collective-ai)** — Extracted from plato-training
@@ -1095,7 +1096,6 @@
 - **[open-terminal](https://github.com/SuperInstance/open-terminal)** — A fork of Windows Terminal with native agent integration, right in your command line.
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
 - **[openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)** — Embedded OpenConstruct client for ESP32 microcontrollers
-- **[openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)** — Landing page for OpenConstruct — any agent, any hardware, any language
 - **[openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)** — Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense ty
 - **[openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)** — Modular construction framework for SuperInstance agent architecture
 - **[openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)** — Ruby SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
@@ -1927,7 +1927,6 @@
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
 - **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** — Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden
 - **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form
-- **[topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)** — Advanced topological sorting with parallel, priority-aware, and incremental algorithms
 - **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** — Real-time anomaly detection on fleet coordination topology
 - **[topology-bench](https://github.com/SuperInstance/topology-bench)** — CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem
 - **[training-throttle](https://github.com/SuperInstance/training-throttle)** — Training rate throttling and backpressure for ML pipelines
@@ -1993,6 +1992,7 @@
 - **[wheelhouse-game](https://github.com/SuperInstance/wheelhouse-game)** — The Wheelhouse Game — weather routing for commercial fishing, F140 audit. F151.
 - **[whistle](https://github.com/SuperInstance/whistle)** — Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled
 - **[whole-house-quilt](https://github.com/SuperInstance/whole-house-quilt)** — The whole-house quilt: rooms of text state, stationed residents, decision-model dice, and an append-
+- **[why](https://github.com/SuperInstance/why)** — Does this still deserve to exist? A justification-reachability engine — one question, two files, man
 - **[wire-harmony](https://github.com/SuperInstance/wire-harmony)** — Wire-level protocol harmony layer for SuperInstance networking
 - **[witness-anchor](https://github.com/SuperInstance/witness-anchor)** — THE fleet's out-of-band witness anchor -- a Cloudflare Worker that publishes signed heads and comput
 - **[witness-complex](https://github.com/SuperInstance/witness-complex)** — Witness complex construction for landmark-based topological data analysis with random, maxmin, and k

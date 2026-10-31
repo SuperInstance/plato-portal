@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-10-30 11:10 UTC
+**Generated:** 2026-10-31 10:43 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -520,7 +520,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [nexus-git-agent](https://github.com/SuperInstance/nexus-git-agent)
 - [nursery](https://github.com/SuperInstance/nursery)
 - [open-terminal](https://github.com/SuperInstance/open-terminal)
-- [openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)
 - [openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)
 - [openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)
 - [openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)
@@ -775,7 +774,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [the-beyond](https://github.com/SuperInstance/the-beyond)
 - [tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)
 - [tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)
-- [topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)
 - [topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)
 - [trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)
 - [tripartite-room](https://github.com/SuperInstance/tripartite-room)
@@ -1341,6 +1339,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [coding-3d](https://github.com/SuperInstance/coding-3d)
 - [coev](https://github.com/SuperInstance/coev)
 - [cog-lab](https://github.com/SuperInstance/cog-lab)
+- [cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)
 - [collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)
 - [collective-unconscious](https://github.com/SuperInstance/collective-unconscious)
 - [color-squad](https://github.com/SuperInstance/color-squad)
@@ -2315,6 +2314,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [what-is-the-quilt](https://github.com/SuperInstance/what-is-the-quilt)
 - [wheelhouse-game](https://github.com/SuperInstance/wheelhouse-game)
 - [whistle](https://github.com/SuperInstance/whistle)
+- [why](https://github.com/SuperInstance/why)
 - [wiki](https://github.com/SuperInstance/wiki)
 - [wire-harmony](https://github.com/SuperInstance/wire-harmony)
 - [witness-complex](https://github.com/SuperInstance/witness-complex)

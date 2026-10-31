@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-10-30 11:10 UTC
+**Generated:** 2026-10-31 10:43 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -383,7 +383,6 @@
 - **[nursery](https://github.com/SuperInstance/nursery)** — Anti-GAN breeding framework: selective breeding of agent children on the zero platform
 - **[open-terminal](https://github.com/SuperInstance/open-terminal)** — A fork of Windows Terminal with native agent integration, right in your command line.
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
-- **[openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)** — Landing page for OpenConstruct — any agent, any hardware, any language
 - **[openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)** — Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense ty
 - **[openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)** — Modular construction framework for SuperInstance agent architecture
 - **[openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)** — Ruby SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
@@ -565,7 +564,6 @@
 - **[the-beyond](https://github.com/SuperInstance/the-beyond)** — Quilt fleet member — auto-swept from local commit. Mavis × Casey session line 2026-09-24.
 - **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** — T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration
 - **[tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)** — Heavy architectural documentation of the SuperInstance T-Minus ecosystem (t-minus, t-minus-rs, tminu
-- **[topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)** — Advanced topological sorting with parallel, priority-aware, and incremental algorithms
 - **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** — Real-time anomaly detection on fleet coordination topology
 - **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** — Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t
 - **[tzpro-agent](https://github.com/SuperInstance/tzpro-agent)** — First sensor node of the FishingLog.ai ecosystem. Watches the TZ Pro sounder, reads the bottom, lear
@@ -1039,6 +1037,7 @@
 - **[coding-3d](https://github.com/SuperInstance/coding-3d)** — Repository test sur AI-Factory
 - **[coev](https://github.com/SuperInstance/coev)** — Adversarial coevolution engine with champion-integrity auditing. Zero-dep Node. Extracted from pong-
 - **[cog-lab](https://github.com/SuperInstance/cog-lab)** — The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf
+- **[cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)** — A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world o
 - **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
 - **[collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)** — Quilt backend for Real-time collaborative drawing platform built with Java, JavaFX, TCP sockets, and
 - **[collective-unconscious](https://github.com/SuperInstance/collective-unconscious)**
@@ -2036,6 +2035,7 @@
 - **[what-is-the-quilt](https://github.com/SuperInstance/what-is-the-quilt)** — A one-page explainer for the Quilt project family. Public front door for newcomers.
 - **[wheelhouse-game](https://github.com/SuperInstance/wheelhouse-game)** — The Wheelhouse Game — weather routing for commercial fishing, F140 audit. F151.
 - **[whistle](https://github.com/SuperInstance/whistle)** — Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled
+- **[why](https://github.com/SuperInstance/why)** — Does this still deserve to exist? A justification-reachability engine — one question, two files, man
 - **[wiki](https://github.com/SuperInstance/wiki)** — ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs
 - **[wire-harmony](https://github.com/SuperInstance/wire-harmony)** — Wire-level protocol harmony layer for SuperInstance networking
 - **[witness-complex](https://github.com/SuperInstance/witness-complex)** — Witness complex construction for landmark-based topological data analysis with random, maxmin, and k

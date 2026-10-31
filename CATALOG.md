@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-30 11:10 UTC
+**Generated:** 2026-10-31 10:43 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -379,7 +379,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[nexus-git-agent](https://github.com/SuperInstance/nexus-git-agent)** | JetsonClaw1 | Cloud-side brain for edge intelligence fleets. Jetson + ESP32 + Cocapn coordination. | 🟢 active |
 | **[open-mythos-edge](https://github.com/SuperInstance/open-mythos-edge)** | JetsonClaw1 | Edge-optimized OpenMythos RDT for Jetson/ARM64 — pure PyTorch, no Triton, 1B/3B variants | 🟢 active |
 | **[openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)** | JetsonClaw1 | GPU-accelerated edge node for OpenConstruct - local inference, camera/sonar processing, Plato shell  | 🟢 active |
-| **[openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)** | JetsonClaw1 | Landing page for OpenConstruct — any agent, any hardware, any language | 🟢 active |
 | **[othismos-reef](https://github.com/SuperInstance/othismos-reef)** | JetsonClaw1 | Reef: structured knowledge graph with erosion, layering, and cascading failure | 🟢 active |
 | **[paradigm-edges](https://github.com/SuperInstance/paradigm-edges)** | JetsonClaw1 | Find the edges of AI paradigms — systematic probing for hallucinations, inconsistencies, missing cap | 🟢 active |
 | **[paradigm-edges-turbovec](https://github.com/SuperInstance/paradigm-edges-turbovec)** | JetsonClaw1 | Paradigm-Edges + TurboQuant edge memory. Similar past edges inform new probes. | 🟢 active |
@@ -696,6 +695,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[coding-3d](https://github.com/SuperInstance/coding-3d)** | Various | Repository test sur AI-Factory | ⚪ unknown |
 | **[coev](https://github.com/SuperInstance/coev)** | Various | Adversarial coevolution engine with champion-integrity auditing. Zero-dep Node. Extracted from pong- | ⚪ unknown |
 | **[cog-lab](https://github.com/SuperInstance/cog-lab)** | Various | The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf | ⚪ unknown |
+| **[cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)** | Various | A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world o | ⚪ unknown |
 | **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** | Various | Core cognitive processing engine. | ⚪ unknown |
 | **[collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)** | Various | Quilt backend for Real-time collaborative drawing platform built with Java, JavaFX, TCP sockets, and | ⚪ unknown |
 | **[collective-ai](https://github.com/SuperInstance/collective-ai)** | Various | Extracted from plato-training | ⚪ unknown |
@@ -1931,7 +1931,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tool-judge](https://github.com/SuperInstance/tool-judge)** | Various | A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa | ⚪ unknown |
 | **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** | Various | Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden | ⚪ unknown |
 | **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** | Various | Topological analysis of musical sonata form | ⚪ unknown |
-| **[topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)** | Various | Advanced topological sorting with parallel, priority-aware, and incremental algorithms | 🟢 active |
 | **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** | Various | Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif | ⚪ unknown |
 | **[training-throttle](https://github.com/SuperInstance/training-throttle)** | Various | Training rate throttling and backpressure for ML pipelines | ⚪ unknown |
 | **[transfer-entropy](https://github.com/SuperInstance/transfer-entropy)** | Various | transfer-entropy | ⚪ unknown |
@@ -2001,6 +2000,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[what-is-the-quilt](https://github.com/SuperInstance/what-is-the-quilt)** | Various | A one-page explainer for the Quilt project family. Public front door for newcomers. | ⚪ unknown |
 | **[wheelhouse-game](https://github.com/SuperInstance/wheelhouse-game)** | Various | The Wheelhouse Game — weather routing for commercial fishing, F140 audit. F151. | ⚪ unknown |
 | **[whistle](https://github.com/SuperInstance/whistle)** | Various | Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled | ⚪ unknown |
+| **[why](https://github.com/SuperInstance/why)** | Various | Does this still deserve to exist? A justification-reachability engine — one question, two files, man | ⚪ unknown |
 | **[wiki](https://github.com/SuperInstance/wiki)** | Various | ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs | ⚪ unknown |
 | **[wire-harmony](https://github.com/SuperInstance/wire-harmony)** | Various | Wire-level protocol harmony layer for SuperInstance networking | ⚪ unknown |
 | **[witness-anchor](https://github.com/SuperInstance/witness-anchor)** | Various | THE fleet's out-of-band witness anchor -- a Cloudflare Worker that publishes signed heads and comput | ⚪ unknown |
@@ -4548,13 +4548,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** GPU-accelerated edge node for OpenConstruct - local inference, camera/sonar processing, Plato shell on NVIDIA Jetson
-- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
-
-### [openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)
-- **Domain:** Hardware & Edge
-- **Vessel:** JetsonClaw1
-- **Purpose:** Landing page for OpenConstruct — any agent, any hardware, any language
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
@@ -7166,13 +7159,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Advanced topological sorting with parallel, priority-aware, and incremental algorithms
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

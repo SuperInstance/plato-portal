@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-10-30 11:10 UTC
+**Generated:** 2026-10-31 10:43 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -242,6 +242,7 @@
 - **[coding-3d](https://github.com/SuperInstance/coding-3d)** — Repository test sur AI-Factory
 - **[coev](https://github.com/SuperInstance/coev)** — Adversarial coevolution engine with champion-integrity auditing. Zero-dep Node. Extracted from pong-
 - **[cog-lab](https://github.com/SuperInstance/cog-lab)** — The Cog Thesis, tested: are cellular-system cells trainable from simulated I/O? Determinacy + transf
+- **[cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)** — A persistent cognitive ecology: WHY (live justification) as the conservation law governing a world o
 - **[CognitiveEngine](https://github.com/SuperInstance/CognitiveEngine)** — Core cognitive processing engine.
 - **[collective-ai](https://github.com/SuperInstance/collective-ai)** — Extracted from plato-training
 - **[collective-unconscious](https://github.com/SuperInstance/collective-unconscious)**
@@ -1686,6 +1687,7 @@
 - **[west-african-math-rs](https://github.com/SuperInstance/west-african-math-rs)** — West African mathematical traditions implemented in Rust
 - **[what-is-the-quilt](https://github.com/SuperInstance/what-is-the-quilt)** — A one-page explainer for the Quilt project family. Public front door for newcomers.
 - **[wheelhouse-game](https://github.com/SuperInstance/wheelhouse-game)** — The Wheelhouse Game — weather routing for commercial fishing, F140 audit. F151.
+- **[why](https://github.com/SuperInstance/why)** — Does this still deserve to exist? A justification-reachability engine — one question, two files, man
 - **[wiki](https://github.com/SuperInstance/wiki)** — ⚠️ DEPRECATED — see https://github.com/SuperInstance/repo-docs
 - **[witness-anchor](https://github.com/SuperInstance/witness-anchor)** — THE fleet's out-of-band witness anchor -- a Cloudflare Worker that publishes signed heads and comput
 - **[witness-complex](https://github.com/SuperInstance/witness-complex)** — Witness complex construction for landmark-based topological data analysis with random, maxmin, and k
@@ -1979,7 +1981,6 @@
 - **[spectral-graph-agent-rs](https://github.com/SuperInstance/spectral-graph-agent-rs)** — Spectral graph analysis for agent reasoning, in Rust
 - **[superinstance-agent](https://github.com/SuperInstance/superinstance-agent)** — Agent abstractions for the SuperInstance fleet — vessel traits, lifecycle, and orchestration types
 - **[superinstance-cocapn](https://github.com/SuperInstance/superinstance-cocapn)** — Captain-level fleet coordination — conservation auditing, vessel oversight, fleet-wide resource mana
-- **[topological-sort-agent-rs](https://github.com/SuperInstance/topological-sort-agent-rs)** — Advanced topological sorting with parallel, priority-aware, and incremental algorithms
 - **[trawl](https://github.com/SuperInstance/trawl)** — Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels 
 - **[VaaS](https://github.com/SuperInstance/VaaS)** — VaaS Resonance Substrate — multi-agent cognitive architecture for vessel-as-a-robot systems. Seven p
 - **[vessel](https://github.com/SuperInstance/vessel)** — Preserved workspace artifact
@@ -2015,7 +2016,6 @@
 - **[luciddreamer-ai-pages](https://github.com/SuperInstance/luciddreamer-ai-pages)** — GitHub Pages for luciddreamer.ai
 - **[makerlog-ai-pages](https://github.com/SuperInstance/makerlog-ai-pages)** — GitHub Pages for makerlog.ai
 - **[night-city](https://github.com/SuperInstance/night-city)** — 3D website game featuring cyberpunk-themed city filled with easter-eggs and references to the develo
-- **[openconstruct-landing](https://github.com/SuperInstance/openconstruct-landing)** — Landing page for OpenConstruct — any agent, any hardware, any language
 - **[oracle1-chronicle](https://github.com/SuperInstance/oracle1-chronicle)** — Modular drop-in reporting office for any PLATO room or OpenClaw agent. Reports accumulate, summarize
 - **[page-agent](https://github.com/SuperInstance/page-agent)** — JavaScript in-page GUI agent. Control web interfaces with natural language.
 - **[personallog-ai-pages](https://github.com/SuperInstance/personallog-ai-pages)** — GitHub Pages for personallog.ai
