@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-10-31 10:43 UTC
+**Generated:** 2026-11-01 11:39 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -366,7 +366,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[knowledge-graph](https://github.com/SuperInstance/knowledge-graph)** | JetsonClaw1 | Recursive vectorized idea graph for institutional knowledge | 🟢 active |
 | **[knowledge-vault](https://github.com/SuperInstance/knowledge-vault)** | JetsonClaw1 | knowledge-vault | 🟢 active |
 | **[knowledge-vault-rs](https://github.com/SuperInstance/knowledge-vault-rs)** | JetsonClaw1 | Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust) | 🟢 active |
-| **[last-mile](https://github.com/SuperInstance/last-mile)** | JetsonClaw1 | Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt ren | 🟢 active |
 | **[lau-hodge-theory](https://github.com/SuperInstance/lau-hodge-theory)** | JetsonClaw1 | Hodge theory for agent knowledge spaces — decomposition, harmonic forms, and spectral sequences | 🟢 active |
 | **[ledger-continuity](https://github.com/SuperInstance/ledger-continuity)** | JetsonClaw1 | The ledger outlives the agent — minimal ledger pattern for agent crash recovery | 🟢 active |
 | **[lucineer-workspace](https://github.com/SuperInstance/lucineer-workspace)** | JetsonClaw1 | Lucineer workspace: process, decisions, and structured knowledge from the zero-shot visitor audit, t | 🟢 active |
@@ -948,6 +947,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[kintsugi-math-npm](https://github.com/SuperInstance/kintsugi-math-npm)** | Various | The mathematics of beautiful error recovery — TypeScript/npm | ⚪ unknown |
 | **[ladder](https://github.com/SuperInstance/ladder)** | Various | An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why  | ⚪ unknown |
 | **[lane-sheets](https://github.com/SuperInstance/lane-sheets)** | Various | Agent workflows as sheet data, one abstraction below LangGraph — reference interpreter + sheet→LangG | 🟢 active |
+| **[last-mile](https://github.com/SuperInstance/last-mile)** | Various | Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score | ⚪ unknown |
 | **[lau-conservation-experiment](https://github.com/SuperInstance/lau-conservation-experiment)** | Various | Tests emergent conservation law — Landauer cost + free energy + H¹ risk score ≈ constant across agen | 🟢 active |
 | **[laya4quilt](https://github.com/SuperInstance/laya4quilt)** | Various | laya4quilt | ⚪ unknown |
 | **[lever-runner](https://github.com/SuperInstance/lever-runner)** | Various | Post-inference command executor. A token-lean AI operator that runs pre-approved shell commands by i | ⚪ unknown |
@@ -4457,13 +4457,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust)
-- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
-- **Status:** active
-
-### [last-mile](https://github.com/SuperInstance/last-mile)
-- **Domain:** Hardware & Edge
-- **Vessel:** JetsonClaw1
-- **Purpose:** Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt renders, Jetson Thor thinks, Orin archives
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 

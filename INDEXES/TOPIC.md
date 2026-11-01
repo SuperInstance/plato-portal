@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-10-31 10:43 UTC
+**Generated:** 2026-11-01 11:39 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -1281,7 +1281,7 @@
 - **[knowledge-vault](https://github.com/SuperInstance/knowledge-vault)**
 - **[knowledge-vault-rs](https://github.com/SuperInstance/knowledge-vault-rs)** — Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust)
 - **[ladder](https://github.com/SuperInstance/ladder)** — An adversarial reading of the seeded training ladder: what is still checkable at each rung, and why 
-- **[last-mile](https://github.com/SuperInstance/last-mile)** — Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score; ProArt ren
+- **[last-mile](https://github.com/SuperInstance/last-mile)** — Distributed procgen game/sim where self-harnessing AI squads play from a MIDI-like score
 - **[laya4quilt](https://github.com/SuperInstance/laya4quilt)**
 - **[lever-runner](https://github.com/SuperInstance/lever-runner)** — Post-inference command executor. A token-lean AI operator that runs pre-approved shell commands by i
 - **[lexical-substrate](https://github.com/SuperInstance/lexical-substrate)**
