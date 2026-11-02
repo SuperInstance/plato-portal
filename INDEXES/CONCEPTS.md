@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-11-01 11:39 UTC
+**Generated:** 2026-11-02 13:04 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -241,6 +241,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [kev-substrate-competition](https://github.com/SuperInstance/kev-substrate-competition)
 - [kev-substrate-mojo](https://github.com/SuperInstance/kev-substrate-mojo)
 - [marine-gpu-edge](https://github.com/SuperInstance/marine-gpu-edge)
+- [nv-uefi-unlocker](https://github.com/SuperInstance/nv-uefi-unlocker)
 - [openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)
 - [oxide-pipeline](https://github.com/SuperInstance/oxide-pipeline)
 - [plato-cuda-dreamcycle](https://github.com/SuperInstance/plato-cuda-dreamcycle)
@@ -362,6 +363,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [agent-priming-toolkit](https://github.com/SuperInstance/agent-priming-toolkit)
 - [agent-priming-toolkit-pkg](https://github.com/SuperInstance/agent-priming-toolkit-pkg)
 - [agent-tiles](https://github.com/SuperInstance/agent-tiles)
+- [agent-world](https://github.com/SuperInstance/agent-world)
 - [agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)
 - [autoclaw](https://github.com/SuperInstance/autoclaw)
 - [ax-quilt](https://github.com/SuperInstance/ax-quilt)
@@ -520,7 +522,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [nexus-git-agent](https://github.com/SuperInstance/nexus-git-agent)
 - [nursery](https://github.com/SuperInstance/nursery)
 - [open-terminal](https://github.com/SuperInstance/open-terminal)
-- [openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)
 - [openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)
 - [openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)
 - [openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)
@@ -774,7 +775,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [the-beyond](https://github.com/SuperInstance/the-beyond)
 - [tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)
 - [tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)
-- [topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)
 - [trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)
 - [tripartite-room](https://github.com/SuperInstance/tripartite-room)
 - [tripartite-rs-archive](https://github.com/SuperInstance/tripartite-rs-archive)
@@ -847,6 +847,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [adaptive-plato-early-version](https://github.com/SuperInstance/adaptive-plato-early-version)
 - [agent-field](https://github.com/SuperInstance/agent-field)
 - [agent-tiles](https://github.com/SuperInstance/agent-tiles)
+- [agent-world](https://github.com/SuperInstance/agent-world)
 - [arch-gateway-room-clean](https://github.com/SuperInstance/arch-gateway-room-clean)
 - [bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)
 - [blender-bridge](https://github.com/SuperInstance/blender-bridge)
@@ -1159,7 +1160,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [guardc](https://github.com/SuperInstance/guardc)
 - [murex](https://github.com/SuperInstance/murex)
 - [nexus-edge-runtime](https://github.com/SuperInstance/nexus-edge-runtime)
-- [openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)
 
 ## Security
 
@@ -1286,6 +1286,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [branch-prediction](https://github.com/SuperInstance/branch-prediction)
 - [breakthrough-prospector](https://github.com/SuperInstance/breakthrough-prospector)
 - [breed-registry](https://github.com/SuperInstance/breed-registry)
+- [bridgekeeper-bakeoff](https://github.com/SuperInstance/bridgekeeper-bakeoff)
 - [brief-assembler](https://github.com/SuperInstance/brief-assembler)
 - [brownian-motion](https://github.com/SuperInstance/brownian-motion)
 - [businesslog-ai-pages](https://github.com/SuperInstance/businesslog-ai-pages)
@@ -2266,7 +2267,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tminus-os](https://github.com/SuperInstance/tminus-os)
 - [tool-judge](https://github.com/SuperInstance/tool-judge)
 - [topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)
-- [topology-bench](https://github.com/SuperInstance/topology-bench)
 - [tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)
 - [transfer-entropy](https://github.com/SuperInstance/transfer-entropy)
 - [trawl](https://github.com/SuperInstance/trawl)
@@ -2351,6 +2351,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 
 - [AVA-AI-Voice-Agent-for-Asterisk](https://github.com/SuperInstance/AVA-AI-Voice-Agent-for-Asterisk)
 - [activelog-app](https://github.com/SuperInstance/activelog-app)
+- [agent-world](https://github.com/SuperInstance/agent-world)
 - [flux-signatures](https://github.com/SuperInstance/flux-signatures)
 - [font_atlas_packager](https://github.com/SuperInstance/font_atlas_packager)
 - [hermes-avatar](https://github.com/SuperInstance/hermes-avatar)

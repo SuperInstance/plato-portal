@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-01 11:39 UTC
+**Generated:** 2026-11-02 13:04 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -233,7 +233,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[Murmur](https://github.com/SuperInstance/Murmur)** | Oracle1 | Knowledge Tensors for self-improving agents | 🟢 active |
 | **[murmur-agent](https://github.com/SuperInstance/murmur-agent)** | Oracle1 | All-night thinking git-agent — drop into any project, point it at a topic, let it think. TypeScript  | 🟢 active |
 | **[murmuration](https://github.com/SuperInstance/murmuration)** | Oracle1 | A swarm of first-person cells that reach consensus by local deference alone, with no central authori | 🟢 active |
-| **[openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)** | Forgemaster | Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense ty | 🟢 active |
 | **[openrooms](https://github.com/SuperInstance/openrooms)** | Forgemaster | Agent-powered collaborative rooms with topology, intention fields, and Hodge decomposition | 🟢 active |
 | **[paper-zero-crypto-fleet-security](https://github.com/SuperInstance/paper-zero-crypto-fleet-security)** | Forgemaster | Zero-Crypto Fleet Security via Physics-Based Temporal Authentication — research paper | 🟢 active |
 | **[particle-swarm](https://github.com/SuperInstance/particle-swarm)** | Forgemaster | Particle swarm optimization with velocity update and swarm topology — Rust optimization library | 🟢 active |
@@ -306,8 +305,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ternary-spreadsheet](https://github.com/SuperInstance/ternary-spreadsheet)** | Forgemaster | Ternary Spreadsheet  Core logic for the SuperInstance Spreadsheet — a familiar spreadsheet inte... | 🟢 active |
 | **[ternary-topology](https://github.com/SuperInstance/ternary-topology)** | Forgemaster | ternary-topology  Persistent homology for ternary networks | 🟢 active |
 | **[tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)** | Forgemaster | Heavy architectural documentation of the SuperInstance T-Minus ecosystem (t-minus, t-minus-rs, tminu | 🟢 active |
-| **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** | Forgemaster | Real-time anomaly detection on fleet coordination topology | 🟢 active |
-| **[topology-bench](https://github.com/SuperInstance/topology-bench)** | Forgemaster | CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem | 🟢 active |
 | **[unspoken-resonance](https://github.com/SuperInstance/unspoken-resonance)** | Forgemaster | SuperInstance fleet wave-67 | 🟢 active |
 | **[VaaS](https://github.com/SuperInstance/VaaS)** | Forgemaster | VaaS Resonance Substrate — multi-agent cognitive architecture for vessel-as-a-robot systems. Seven p | 🟢 active |
 | **[vessel-prototype](https://github.com/SuperInstance/vessel-prototype)** | Forgemaster | Agent/Vessel separation prototype — fleet-wide agent scheduling, migration, and capability scoring | 🟢 active |
@@ -321,8 +318,10 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[activeledger-agent](https://github.com/SuperInstance/activeledger-agent)** | JetsonClaw1 | activeledger domain agent for PLATO fleet | 🟢 active |
 | **[activeledger-ai-pages](https://github.com/SuperInstance/activeledger-ai-pages)** | JetsonClaw1 | GitHub Pages for activeledger.ai | 🟢 active |
 | **[activeledger-ai-site](https://github.com/SuperInstance/activeledger-ai-site)** | JetsonClaw1 | activeledger-ai-site | 🟢 active |
+| **[agent-world](https://github.com/SuperInstance/agent-world)** | JetsonClaw1 | A Minecraft world on the Jetson AGX Thor where four bots build together: a shared fast decision mode | 🟢 active |
 | **[bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)** | JetsonClaw1 | Tiny C PLATO client for ESP32/RP2040 + embodiment protocol: agents discover IoT devices as MUD rooms | 🟢 active |
 | **[boat-agent](https://github.com/SuperInstance/boat-agent)** | JetsonClaw1 | Like Commander Data for your wheelhouse. Works with any marine IO from Navigation/Autopilot to IR en | 🟢 active |
+| **[bridgekeeper-bakeoff](https://github.com/SuperInstance/bridgekeeper-bakeoff)** | JetsonClaw1 | One daemon contract, three runtimes (Elixir/BEAM, Rust, C++), raced on real hardware: robustness fir | 🟢 active |
 | **[cartographer](https://github.com/SuperInstance/cartographer)** | JetsonClaw1 | The agent that charts the workspace as graphed knowledge. Pen-on-paper. Exo-filed. | 🟢 active |
 | **[casting-call](https://github.com/SuperInstance/casting-call)** | JetsonClaw1 | Which model plays which role — fleet knowledge base of LLM capabilities, failure modes, and casting  | 🟢 active |
 | **[cf-deployments](https://github.com/SuperInstance/cf-deployments)** | JetsonClaw1 | The fleet Cloudflare Workers + Pages deployments: erised hosted gate, cot-quilt graph viewer, gotcha | 🟢 active |
@@ -1043,6 +1042,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[nmea-quilt-cell](https://github.com/SuperInstance/nmea-quilt-cell)** | Various | NMEA 0183 gateway -> append-only journal cell. Byte-exact replay, kill -9 crash canary, receipts inc | ⚪ unknown |
 | **[nursery](https://github.com/SuperInstance/nursery)** | Various | Anti-GAN breeding framework: selective breeding of agent children on the zero platform | 🟢 active |
 | **[nursery-v2](https://github.com/SuperInstance/nursery-v2)** | Various | Nursery v2: rebuilt with pattern corrections - tokens, debts, recomputable lineage | ⚪ unknown |
+| **[nv-uefi-unlocker](https://github.com/SuperInstance/nv-uefi-unlocker)** | Various | UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust): | ⚪ unknown |
 | **[observation-primitive](https://github.com/SuperInstance/observation-primitive)** | Various | The canonical substrate atom: observation as fundamental primitive. FNV-1a signed, type-safe, federa | ⚪ unknown |
 | **[observation-primitive-rs](https://github.com/SuperInstance/observation-primitive-rs)** | Various | observation-primitive Rust crate | ⚪ unknown |
 | **[officers-quarters](https://github.com/SuperInstance/officers-quarters)** | Various | officers-quarters | ⚪ unknown |
@@ -3557,13 +3557,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
-### [openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense type safety, fleet topology
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
 ### [openrooms](https://github.com/SuperInstance/openrooms)
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
@@ -4068,20 +4061,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
 - **Status:** active
 
-### [topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** Real-time anomaly detection on fleet coordination topology
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
-### [topology-bench](https://github.com/SuperInstance/topology-bench)
-- **Domain:** Agent Coordination
-- **Vessel:** Forgemaster
-- **Purpose:** CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem
-- **Research lineage:** Auto-categorized. Part of the fleet coordination ecosystem.
-- **Status:** active
-
 ### [unspoken-resonance](https://github.com/SuperInstance/unspoken-resonance)
 - **Domain:** Agent Coordination
 - **Vessel:** Forgemaster
@@ -4145,6 +4124,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 
+### [agent-world](https://github.com/SuperInstance/agent-world)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** A Minecraft world on the Jetson AGX Thor where four bots build together: a shared fast decision model (Liquid d1) choosing actions, cloud-written skil
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
 ### [bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
@@ -4156,6 +4142,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Hardware & Edge
 - **Vessel:** JetsonClaw1
 - **Purpose:** Like Commander Data for your wheelhouse. Works with any marine IO from Navigation/Autopilot to IR engine room cameras. Collect data asynchrousally and
+- **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
+- **Status:** active
+
+### [bridgekeeper-bakeoff](https://github.com/SuperInstance/bridgekeeper-bakeoff)
+- **Domain:** Hardware & Edge
+- **Vessel:** JetsonClaw1
+- **Purpose:** One daemon contract, three runtimes (Elixir/BEAM, Rust, C++), raced on real hardware: robustness first, speed second. The bridgekeeper bake-off for si
 - **Research lineage:** Auto-categorized. Part of the hardware/edge ecosystem.
 - **Status:** active
 

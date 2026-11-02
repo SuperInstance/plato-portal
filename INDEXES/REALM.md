@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-11-01 11:39 UTC
+**Generated:** 2026-11-02 13:04 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -69,6 +69,7 @@
 - **[agent-priming-toolkit](https://github.com/SuperInstance/agent-priming-toolkit)** — The Agent Priming Toolkit — 4 layers, 3 jobs, JSON Schema, streaming. For LLM agents landing at live
 - **[agent-priming-toolkit-pkg](https://github.com/SuperInstance/agent-priming-toolkit-pkg)** — PyPI distribution of agent-priming-toolkit (F165: 4 layers, 3 jobs, JSON Schema).
 - **[agent-tiles](https://github.com/SuperInstance/agent-tiles)** — Public distillation of agent-to-agent communication tiles: mad-lib templates for briefing, handoffs,
+- **[agent-world](https://github.com/SuperInstance/agent-world)** — A Minecraft world on the Jetson AGX Thor where four bots build together: a shared fast decision mode
 - **[agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)**
 - **[AgentCompute](https://github.com/SuperInstance/AgentCompute)** — Thin agent-facing CLI over the quilt MCP server: serve sheets, list cells, call capabilities. Stdlib
 - **[AgentGossip](https://github.com/SuperInstance/AgentGossip)** — AgentGossip is a distributed, real-time data processing engine that utilizes intelligent clustering 
@@ -129,6 +130,7 @@
 - **[branch-prediction](https://github.com/SuperInstance/branch-prediction)** — Branch prediction simulation — Bimodal, GShare, and Perceptron predictors for pipeline optimization 
 - **[breakthrough-prospector](https://github.com/SuperInstance/breakthrough-prospector)**
 - **[breed-registry](https://github.com/SuperInstance/breed-registry)** — The Breed Registry: model selection as breeding selection
+- **[bridgekeeper-bakeoff](https://github.com/SuperInstance/bridgekeeper-bakeoff)** — One daemon contract, three runtimes (Elixir/BEAM, Rust, C++), raced on real hardware: robustness fir
 - **[brief-assembler](https://github.com/SuperInstance/brief-assembler)** — Topics in, morning briefing out — the overnight research loop
 - **[brownian-motion](https://github.com/SuperInstance/brownian-motion)** — Brownian motion / Wiener process simulation — stochastic differential equations for financial and ph
 - **[build-guardian](https://github.com/SuperInstance/build-guardian)** — Build Budget Guardian — tracks build resource usage, enforces budgets, detects bloat trends
@@ -748,6 +750,7 @@
 - **[nmea-quilt-cell](https://github.com/SuperInstance/nmea-quilt-cell)** — NMEA 0183 gateway -> append-only journal cell. Byte-exact replay, kill -9 crash canary, receipts inc
 - **[nursery](https://github.com/SuperInstance/nursery)** — Anti-GAN breeding framework: selective breeding of agent children on the zero platform
 - **[nursery-v2](https://github.com/SuperInstance/nursery-v2)** — Nursery v2: rebuilt with pattern corrections - tokens, debts, recomputable lineage
+- **[nv-uefi-unlocker](https://github.com/SuperInstance/nv-uefi-unlocker)** — UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust):
 - **[observation-primitive](https://github.com/SuperInstance/observation-primitive)** — The canonical substrate atom: observation as fundamental primitive. FNV-1a signed, type-safe, federa
 - **[observation-primitive-rs](https://github.com/SuperInstance/observation-primitive-rs)** — observation-primitive Rust crate
 - **[officers-quarters](https://github.com/SuperInstance/officers-quarters)**
@@ -759,7 +762,6 @@
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
 - **[openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)** — Embedded OpenConstruct client for ESP32 microcontrollers
 - **[openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)** — GPU-accelerated edge node for OpenConstruct - local inference, camera/sonar processing, Plato shell 
-- **[openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)** — Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense ty
 - **[openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)** — Modular construction framework for SuperInstance agent architecture
 - **[openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)** — Ruby SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
 - **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** — Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
@@ -1893,8 +1895,6 @@
 - **[tool-judge](https://github.com/SuperInstance/tool-judge)** — A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa
 - **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** — Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden
 - **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form
-- **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** — Real-time anomaly detection on fleet coordination topology
-- **[topology-bench](https://github.com/SuperInstance/topology-bench)** — CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem
 - **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
 - **[training-throttle](https://github.com/SuperInstance/training-throttle)** — Training rate throttling and backpressure for ML pipelines
 - **[transfer-entropy](https://github.com/SuperInstance/transfer-entropy)** — transfer-entropy

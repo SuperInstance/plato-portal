@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-11-01 11:39 UTC
+**Generated:** 2026-11-02 13:04 UTC
 **Total repos:** 2000
 
 ## C
@@ -403,6 +403,7 @@
 - **[bench-runner](https://github.com/SuperInstance/bench-runner)** — A Rust library for Bench Runner
 - **[beta-test-framework](https://github.com/SuperInstance/beta-test-framework)** — A Rust library for Beta Test Framework
 - **[betti-number](https://github.com/SuperInstance/betti-number)** — A Rust library for Betti Number
+- **[bridgekeeper-bakeoff](https://github.com/SuperInstance/bridgekeeper-bakeoff)** — One daemon contract, three runtimes (Elixir/BEAM, Rust, C++), raced on real hardware: robustness fir
 - **[canonical-form](https://github.com/SuperInstance/canonical-form)** — A Rust library for Canonical Form
 - **[capnp-schema](https://github.com/SuperInstance/capnp-schema)** — A Rust library for Capnp Schema
 - **[cauchy-distribution](https://github.com/SuperInstance/cauchy-distribution)** — A Rust library for Cauchy Distribution
@@ -502,6 +503,7 @@
 - **[MerkleMesh](https://github.com/SuperInstance/MerkleMesh)** — One fleet, one root: merkle aggregation + inclusion proofs over quilt cell-ledger journals (bit-for-
 - **[model-registry-archive](https://github.com/SuperInstance/model-registry-archive)** — Model registry for LLM artifact management (local + S3 storage, Rust)
 - **[nexus-edge-runtime](https://github.com/SuperInstance/nexus-edge-runtime)** — Edge runtime for autonomous agents — bytecode VM, INCREMENTS trust, wire protocol, safety system, in
+- **[nv-uefi-unlocker](https://github.com/SuperInstance/nv-uefi-unlocker)** — UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust):
 - **[observation-primitive-rs](https://github.com/SuperInstance/observation-primitive-rs)** — observation-primitive Rust crate
 - **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** — Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
 - **[openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)** — OpenShell wrapper re-exporting pythagorean48-codes (48-directional trust encoding)
@@ -647,6 +649,7 @@
 - **[agent-orchestration](https://github.com/SuperInstance/agent-orchestration)** — Orchestration for agent fleets. Roles as instruments, dynamics as resource allocation, sections as c
 - **[agent-priming-toolkit](https://github.com/SuperInstance/agent-priming-toolkit)** — The Agent Priming Toolkit — 4 layers, 3 jobs, JSON Schema, streaming. For LLM agents landing at live
 - **[agent-priming-toolkit-pkg](https://github.com/SuperInstance/agent-priming-toolkit-pkg)** — PyPI distribution of agent-priming-toolkit (F165: 4 layers, 3 jobs, JSON Schema).
+- **[agent-world](https://github.com/SuperInstance/agent-world)** — A Minecraft world on the Jetson AGX Thor where four bots build together: a shared fast decision mode
 - **[agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)**
 - **[AgentGossip](https://github.com/SuperInstance/AgentGossip)** — AgentGossip is a distributed, real-time data processing engine that utilizes intelligent clustering 
 - **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** — Creative writing, essays, and philosophical explorations from the Exocortex project
@@ -1096,7 +1099,6 @@
 - **[open-terminal](https://github.com/SuperInstance/open-terminal)** — A fork of Windows Terminal with native agent integration, right in your command line.
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
 - **[openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)** — Embedded OpenConstruct client for ESP32 microcontrollers
-- **[openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)** — Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense ty
 - **[openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)** — Modular construction framework for SuperInstance agent architecture
 - **[openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)** — Ruby SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
 - **[openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)** — Swift binding for OpenConstruct onboarding — iOS/macOS agent apps
@@ -1927,8 +1929,6 @@
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
 - **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** — Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden
 - **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form
-- **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** — Real-time anomaly detection on fleet coordination topology
-- **[topology-bench](https://github.com/SuperInstance/topology-bench)** — CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem
 - **[training-throttle](https://github.com/SuperInstance/training-throttle)** — Training rate throttling and backpressure for ML pipelines
 - **[trawl](https://github.com/SuperInstance/trawl)** — Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels 
 - **[treap-rs](https://github.com/SuperInstance/treap-rs)** — Treap with random priorities, split/merge operations, union, intersection, and order statistics

@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-11-01 11:39 UTC
+**Generated:** 2026-11-02 13:04 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -76,7 +76,6 @@
 - **[synesis-research](https://github.com/SuperInstance/synesis-research)** — Design research for ~58 planned Rust crates: actor-rs, allocator-rs, async-rs, ... zkp-rs. Each subf
 - **[ternary-spiral](https://github.com/SuperInstance/ternary-spiral)** — Spiral wave dynamics from Rock-Paper-Scissors cyclic dominance
 - **[tminus-client](https://github.com/SuperInstance/tminus-client)** — T-Minus Client SDK — Node.js client library and CLI for the t-minus dispatcher protocol
-- **[topology-bench](https://github.com/SuperInstance/topology-bench)** — CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem
 - **[voice-games](https://github.com/SuperInstance/voice-games)** — Voice games: Sitka Skies flight + COLOR SQUAD RTS + tournament demo — proof of concept for voice-com
 - **[whisper-sync](https://github.com/SuperInstance/whisper-sync)** — Rust CLI/crate bridging Murmurer ambient whisper protocol to PLATO room infrastructure — short, ambi
 - **[whistle](https://github.com/SuperInstance/whistle)** — Intent DSL for Working Animal Architecture — replaces system-prompt sprawl with structured, compiled
@@ -663,6 +662,7 @@
 - **[nmea-quilt-cell](https://github.com/SuperInstance/nmea-quilt-cell)** — NMEA 0183 gateway -> append-only journal cell. Byte-exact replay, kill -9 crash canary, receipts inc
 - **[nursery](https://github.com/SuperInstance/nursery)** — Anti-GAN breeding framework: selective breeding of agent children on the zero platform
 - **[nursery-v2](https://github.com/SuperInstance/nursery-v2)** — Nursery v2: rebuilt with pattern corrections - tokens, debts, recomputable lineage
+- **[nv-uefi-unlocker](https://github.com/SuperInstance/nv-uefi-unlocker)** — UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust):
 - **[observation-primitive](https://github.com/SuperInstance/observation-primitive)** — The canonical substrate atom: observation as fundamental primitive. FNV-1a signed, type-safe, federa
 - **[observation-primitive-rs](https://github.com/SuperInstance/observation-primitive-rs)** — observation-primitive Rust crate
 - **[officers-quarters](https://github.com/SuperInstance/officers-quarters)**
@@ -671,7 +671,6 @@
 - **[open-mind](https://github.com/SuperInstance/open-mind)** — open-interpreter that KNOWS your code. Ingest any repo → parse every function → build muscle memory 
 - **[open-mythos-edge](https://github.com/SuperInstance/open-mythos-edge)** — Edge-optimized OpenMythos RDT for Jetson/ARM64 — pure PyTorch, no Triton, 1B/3B variants
 - **[openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)** — GPU-accelerated edge node for OpenConstruct - local inference, camera/sonar processing, Plato shell 
-- **[openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)** — Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense ty
 - **[openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)** — Modular construction framework for SuperInstance agent architecture
 - **[openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)** — Ruby SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
 - **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** — Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
@@ -1623,7 +1622,6 @@
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
 - **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** — Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden
 - **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form
-- **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** — Real-time anomaly detection on fleet coordination topology
 - **[training-throttle](https://github.com/SuperInstance/training-throttle)** — Training rate throttling and backpressure for ML pipelines
 - **[transfer-entropy](https://github.com/SuperInstance/transfer-entropy)** — transfer-entropy
 - **[treap-rs](https://github.com/SuperInstance/treap-rs)** — Treap with random priorities, split/merge operations, union, intersection, and order statistics
@@ -1821,6 +1819,7 @@
 - **[agent-priming](https://github.com/SuperInstance/agent-priming)** — The Mechanic Doctrine — a system prompt for LLMs/agents serving human users who are vibe-coding. Liv
 - **[api-orchestra](https://github.com/SuperInstance/api-orchestra)** — API Orchestra — multi-LLM creative chorus using ZAI, DeepInfra, Cloudflare, JEV as substrate walkers
 - **[arch-gateway-room-clean](https://github.com/SuperInstance/arch-gateway-room-clean)** — MCP server that routes every request to the cheapest LLM that can actually do the job. Cost-in-respo
+- **[bridgekeeper-bakeoff](https://github.com/SuperInstance/bridgekeeper-bakeoff)** — One daemon contract, three runtimes (Elixir/BEAM, Rust, C++), raced on real hardware: robustness fir
 - **[capitaine-ai-pages](https://github.com/SuperInstance/capitaine-ai-pages)** — GitHub Pages for capitaine.ai
 - **[ccc-os](https://github.com/SuperInstance/ccc-os)** — Autonomous fleet monitoring — YAML config, REST API, Discord/Telegram/webhook notifications, constra
 - **[cocapn-dashboard](https://github.com/SuperInstance/cocapn-dashboard)** — Live bioluminescent dashboard for the Cocapn AI Fleet. Tracks services, PLATO rooms, knowledge tiles
@@ -1950,6 +1949,7 @@
 - **[agent-priming-toolkit](https://github.com/SuperInstance/agent-priming-toolkit)** — The Agent Priming Toolkit — 4 layers, 3 jobs, JSON Schema, streaming. For LLM agents landing at live
 - **[agent-priming-toolkit-pkg](https://github.com/SuperInstance/agent-priming-toolkit-pkg)** — PyPI distribution of agent-priming-toolkit (F165: 4 layers, 3 jobs, JSON Schema).
 - **[agent-tiles](https://github.com/SuperInstance/agent-tiles)** — Public distillation of agent-to-agent communication tiles: mad-lib templates for briefing, handoffs,
+- **[agent-world](https://github.com/SuperInstance/agent-world)** — A Minecraft world on the Jetson AGX Thor where four bots build together: a shared fast decision mode
 - **[agent-writings-archive](https://github.com/SuperInstance/agent-writings-archive)**
 - **[AVA-AI-Voice-Agent-for-Asterisk](https://github.com/SuperInstance/AVA-AI-Voice-Agent-for-Asterisk)** — Open-source AI Voice Agent for Asterisk/FreePBX — modular STT/LLM/TTS pipeline, 6 golden baselines. 
 - **[claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)** — Claude Code workhorse vessel with experience journal and task delegation

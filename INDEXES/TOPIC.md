@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-11-01 11:39 UTC
+**Generated:** 2026-11-02 13:04 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -182,6 +182,7 @@
 - **[gpu_bpe4quilt](https://github.com/SuperInstance/gpu_bpe4quilt)** — tutorial for training a BPE tokenizer on multiple GPUs
 - **[kev-substrate-competition](https://github.com/SuperInstance/kev-substrate-competition)** — Cross-API CUDA/PTX native competition — challenge model APIs to compete on innovative methods for su
 - **[kev-substrate-mojo](https://github.com/SuperInstance/kev-substrate-mojo)** — Mojo port of kev-substrate — vendor-hardware GPU native, horizontal-abilities engineering per CUDACL
+- **[nv-uefi-unlocker](https://github.com/SuperInstance/nv-uefi-unlocker)** — UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust):
 - **[podiumjs-rocks](https://github.com/SuperInstance/podiumjs-rocks)** — WebGPU-based rendering framework (forked from vdmo/podiumjs-rocks)
 - **[quilt-cellular-arch](https://github.com/SuperInstance/quilt-cellular-arch)** — The cellular-relationship-first design: each cell plays as a first-person shooter; the cowboy sees t
 - **[quilt-cuda](https://github.com/SuperInstance/quilt-cuda)** — The GPU side of the quilt substrate — 5+1 opcodes as CUDA operations. A cudaGraph IS a compiled cell
@@ -383,7 +384,6 @@
 - **[nursery](https://github.com/SuperInstance/nursery)** — Anti-GAN breeding framework: selective breeding of agent children on the zero platform
 - **[open-terminal](https://github.com/SuperInstance/open-terminal)** — A fork of Windows Terminal with native agent integration, right in your command line.
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
-- **[openconstruct-mercury](https://github.com/SuperInstance/openconstruct-mercury)** — Formal verification of OpenConstruct invariants in Mercury — policy proofs, CR correctness, sense ty
 - **[openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)** — Modular construction framework for SuperInstance agent architecture
 - **[openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)** — Ruby SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
 - **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** — Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
@@ -564,7 +564,6 @@
 - **[the-beyond](https://github.com/SuperInstance/the-beyond)** — Quilt fleet member — auto-swept from local commit. Mavis × Casey session line 2026-09-24.
 - **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** — T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration
 - **[tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)** — Heavy architectural documentation of the SuperInstance T-Minus ecosystem (t-minus, t-minus-rs, tminu
-- **[topology-anomaly-detector](https://github.com/SuperInstance/topology-anomaly-detector)** — Real-time anomaly detection on fleet coordination topology
 - **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** — Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t
 - **[tzpro-agent](https://github.com/SuperInstance/tzpro-agent)** — First sensor node of the FishingLog.ai ecosystem. Watches the TZ Pro sounder, reads the bottom, lear
 - **[unspoken-resonance](https://github.com/SuperInstance/unspoken-resonance)** — SuperInstance fleet wave-67
@@ -613,6 +612,7 @@
 - **[adaptive-plato-early-version](https://github.com/SuperInstance/adaptive-plato-early-version)** — [ARCHIVED] Early adaptive PLATO experiment. See SuperInstance/plato-sdk v3.0.0 for tile lifecycle + 
 - **[agent-field](https://github.com/SuperInstance/agent-field)** — Extracted from plato-training
 - **[agent-tiles](https://github.com/SuperInstance/agent-tiles)** — Public distillation of agent-to-agent communication tiles: mad-lib templates for briefing, handoffs,
+- **[agent-world](https://github.com/SuperInstance/agent-world)** — A Minecraft world on the Jetson AGX Thor where four bots build together: a shared fast decision mode
 - **[arch-gateway-room-clean](https://github.com/SuperInstance/arch-gateway-room-clean)** — MCP server that routes every request to the cheapest LLM that can actually do the job. Cost-in-respo
 - **[bare-metal-plato](https://github.com/SuperInstance/bare-metal-plato)** — Tiny C PLATO client for ESP32/RP2040 + embodiment protocol: agents discover IoT devices as MUD rooms
 - **[blender-bridge](https://github.com/SuperInstance/blender-bridge)** — Splat/ASCII room maps into Blender scenes, agents as the interface to the Blender toolset
@@ -983,6 +983,7 @@
 - **[branch-prediction](https://github.com/SuperInstance/branch-prediction)** — Branch prediction simulation — Bimodal, GShare, and Perceptron predictors for pipeline optimization 
 - **[breakthrough-prospector](https://github.com/SuperInstance/breakthrough-prospector)**
 - **[breed-registry](https://github.com/SuperInstance/breed-registry)** — The Breed Registry: model selection as breeding selection
+- **[bridgekeeper-bakeoff](https://github.com/SuperInstance/bridgekeeper-bakeoff)** — One daemon contract, three runtimes (Elixir/BEAM, Rust, C++), raced on real hardware: robustness fir
 - **[brief-assembler](https://github.com/SuperInstance/brief-assembler)** — Topics in, morning briefing out — the overnight research loop
 - **[brownian-motion](https://github.com/SuperInstance/brownian-motion)** — Brownian motion / Wiener process simulation — stochastic differential equations for financial and ph
 - **[businesslog-ai-pages](https://github.com/SuperInstance/businesslog-ai-pages)** — GitHub Pages for businesslog.ai
@@ -1986,7 +1987,6 @@
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
 - **[tool-judge](https://github.com/SuperInstance/tool-judge)** — A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa
 - **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form
-- **[topology-bench](https://github.com/SuperInstance/topology-bench)** — CLI/library for benchmarking graph topologies in the Grand Pattern ecosystem
 - **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
 - **[transfer-entropy](https://github.com/SuperInstance/transfer-entropy)** — transfer-entropy
 - **[trawl](https://github.com/SuperInstance/trawl)** — Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels 
