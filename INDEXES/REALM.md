@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-11-02 13:04 UTC
+**Generated:** 2026-11-03 12:36 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -506,6 +506,7 @@
 - **[git-agent-codespace](https://github.com/SuperInstance/git-agent-codespace)** — One-click Codespace template for git-agent runtime development
 - **[git-native-agents](https://github.com/SuperInstance/git-native-agents)** — Multi-agent orchestration system using git primitives — commits, branches, tags, and notes instead o
 - **[git-native-mud](https://github.com/SuperInstance/git-native-mud)** — 🔮 The repo IS the world. Commits ARE actions. Zero server MUD.
+- **[git.pp](https://github.com/SuperInstance/git.pp)** — git.pp — git projected as an agent substrate: the tick, the projector, the bodies. Git is the databa
 - **[git.pp-doctor](https://github.com/SuperInstance/git.pp-doctor)** — Validate a git.pp record set against the pinned closure root. One command, no setup, byte-identical 
 - **[git.pp-spec](https://github.com/SuperInstance/git.pp-spec)** — The canonical, normative spec for the git.pp record format. The contract a port must satisfy to be c
 - **[gitpp-bench](https://github.com/SuperInstance/gitpp-bench)** — A benchmark suite for git.pp fold ports. Fold time, closure-root time, and memory against the live p
@@ -515,6 +516,10 @@
 - **[gitpp-cross-port](https://github.com/SuperInstance/gitpp-cross-port)** — Byte-level cross-port equivalence test for the git.pp fold. 30/30 cases agree across Python, JS, C#,
 - **[gitpp-cs](https://github.com/SuperInstance/gitpp-cs)** — A C# / .NET 9 port of the git.pp fold. 5th fold port. 28/28 conformance cases pass; closure root at 
 - **[gitpp-decision-parent](https://github.com/SuperInstance/gitpp-decision-parent)** — Make a gate decision the PARENT of the action it authorises, so the closure root proves the action w
+- **[gitpp-demo-contested](https://github.com/SuperInstance/gitpp-demo-contested)** — Live demo of git.pp retraction law: a contested retraction, marked not hidden
+- **[gitpp-demo-quilt](https://github.com/SuperInstance/gitpp-demo-quilt)** — Dogfood project for the gitpp-app: a git.pp project (poc-quilt-1 records) hosted on GitHub.
+- **[gitpp-dogfood-b1](https://github.com/SuperInstance/gitpp-dogfood-b1)** — Dogfood for git.pp Mapping B: an ordinary ferry-ops repo with a declared coordination surface on git
+- **[gitpp-dogfood-day1](https://github.com/SuperInstance/gitpp-dogfood-day1)** — M2 live-day dogfood: five agents, conflicting records, referee-chosen merge order — merged state vs 
 - **[gitpp-examples](https://github.com/SuperInstance/gitpp-examples)** — Annotated example record sets for the git.pp fold: family calendar, tournament scoring, service moni
 - **[gitpp-fold-conformance](https://github.com/SuperInstance/gitpp-fold-conformance)** — Cross-port FOLD conformance for the git.pp spec. Tests fold semantics (ancestry, precedence, orphans
 - **[gitpp-fold-dashboard](https://github.com/SuperInstance/gitpp-fold-dashboard)** — A live viewer for the git.pp fold. Add records, watch the fold update in real time. Single HTML file
@@ -592,6 +597,8 @@
 - **[intent-inference](https://github.com/SuperInstance/intent-inference)** — Intent Inference Engine — reverse-engineers productive lane from user behavior. Part of Cocapn rever
 - **[intercontext-map](https://github.com/SuperInstance/intercontext-map)** — Kira the Cartographer: the cellular-first substrate as a graph. 48 nodes / 70 edges. Every node and 
 - **[intuition](https://github.com/SuperInstance/intuition)** — Intuition — contrast-pair phantom verdict analysis, v-JEPA2 training
+- **[jacquard](https://github.com/SuperInstance/jacquard)** — A supervised runtime: untrusted producers submit proposals, a small auditable kernel decides what ma
+- **[jacquard-anchors](https://github.com/SuperInstance/jacquard-anchors)** — Chain-head anchoring checkpoints for Jacquard logs (spec section 15) — signed, append-only witness h
 - **[jev-diffusion](https://github.com/SuperInstance/jev-diffusion)** — Substrate-segmented image description via JEV + LLMs as GAN. No actual image generator needed.
 - **[jev-diffusion-npm](https://github.com/SuperInstance/jev-diffusion-npm)** — JEV-Diffusion npm wrapper — substrate-segmented image description.
 - **[jev-diffusion-pypi](https://github.com/SuperInstance/jev-diffusion-pypi)** — JEV-Diffusion PyPI package — substrate-segmented image description.
@@ -636,6 +643,7 @@
 - **[lighthouse-seed](https://github.com/SuperInstance/lighthouse-seed)** — Seed: Lighthouse Seed
 - **[lineage-tracker](https://github.com/SuperInstance/lineage-tracker)** — Fine-tune provenance as bloodline records
 - **[lingbot-map](https://github.com/SuperInstance/lingbot-map)** — A feed-forward 3D foundation model for reconstructing scenes from streaming data
+- **[liquid-world-model](https://github.com/SuperInstance/liquid-world-model)** — An engine-agnostic framework for liquid world models: the chart an agent draws of a world it cannot 
 - **[live-canon-gh](https://github.com/SuperInstance/live-canon-gh)** — Live Canon GitHub Packages mirror
 - **[live-canon-npm](https://github.com/SuperInstance/live-canon-npm)** — Live Canon npm package — 5 operations on AI-Writings canon
 - **[live-canon-pypi](https://github.com/SuperInstance/live-canon-pypi)** — Live Canon PyPI package — 5 operations on AI-Writings canon
@@ -762,8 +770,6 @@
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
 - **[openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)** — Embedded OpenConstruct client for ESP32 microcontrollers
 - **[openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)** — GPU-accelerated edge node for OpenConstruct - local inference, camera/sonar processing, Plato shell 
-- **[openconstruct-modular](https://github.com/SuperInstance/openconstruct-modular)** — Modular construction framework for SuperInstance agent architecture
-- **[openconstruct-ruby](https://github.com/SuperInstance/openconstruct-ruby)** — Ruby SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
 - **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** — Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
 - **[openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)** — Swift binding for OpenConstruct onboarding — iOS/macOS agent apps
 - **[openconstruct-ts](https://github.com/SuperInstance/openconstruct-ts)** — TypeScript SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
@@ -796,6 +802,7 @@
 - **[othismos-llm](https://github.com/SuperInstance/othismos-llm)** — Context pressure for LLMs: measure how truncation changes output distributions
 - **[othismos-reef](https://github.com/SuperInstance/othismos-reef)** — Reef: structured knowledge graph with erosion, layering, and cascading failure
 - **[ouroboros](https://github.com/SuperInstance/ouroboros)** — Ouroboros — self-creating AI agent. Born Feb 16, 2026.
+- **[outbound-scanner](https://github.com/SuperInstance/outbound-scanner)** — A pre-send egress scanner for agent harnesses: catches session secrets in outbound replies before th
 - **[oxide-pipeline](https://github.com/SuperInstance/oxide-pipeline)** — Full 5-layer pipeline simulation: Intent→Pincher→Flux→cuda-oxide→cudaclaw with conservation verifica
 - **[paced-seam](https://github.com/SuperInstance/paced-seam)**
 - **[pacemaker](https://github.com/SuperInstance/pacemaker)**
@@ -1702,7 +1709,6 @@
 - **[step-back-operator](https://github.com/SuperInstance/step-back-operator)** — 🎣 Topological step-back operator β₁ = E - V + C — pattern detection in event networks. The intellige
 - **[step-back-topology](https://github.com/SuperInstance/step-back-topology)** — Step-Back Operator (β₁ = E - V + C) for topological data analysis and simplicial complexes
 - **[stigmergy](https://github.com/SuperInstance/stigmergy)** — Bio-inspired indirect coordination — pheromone signals, trail following, swarm intelligence for dece
-- **[stitch](https://github.com/SuperInstance/stitch)** — A tiny ledger primitive for accountable agent state: 11 stitches, a per-tenant surprise budget, an a
 - **[stock-screener](https://github.com/SuperInstance/stock-screener)** — Quilt cellular visualizer design (tickers as cells, screener rules as routing edges, scans as route 
 - **[storage-guardian](https://github.com/SuperInstance/storage-guardian)** — Storage Guardian — duplicate detection, deduplication, budget enforcement, trend analysis, and alert
 - **[stream-curator](https://github.com/SuperInstance/stream-curator)** — Content in, judgment out — gold/shit scoring, nudges, and taste distillation
@@ -1806,6 +1812,7 @@
 - **[tap-gamenight](https://github.com/SuperInstance/tap-gamenight)**
 - **[technician](https://github.com/SuperInstance/technician)** — Technician tooling
 - **[tells](https://github.com/SuperInstance/tells)**
+- **[telltape](https://github.com/SuperInstance/telltape)** — telltape watches video, live or recorded, and writes a ledger of what changed - a seek index into fo
 - **[tensor-midi](https://github.com/SuperInstance/tensor-midi)** — Tensor-based MIDI timing for musical agent dialogue cadence
 - **[ternary-benchmark](https://github.com/SuperInstance/ternary-benchmark)** — ternary-benchmark  Standardized benchmarks for ternary agent systems — reproducible performance...
 - **[ternary-compression](https://github.com/SuperInstance/ternary-compression)** — ternary-compression  Compress ternary sequences using various algorithms
@@ -1893,19 +1900,12 @@
 - **[tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)** — Heavy architectural documentation of the SuperInstance T-Minus ecosystem (t-minus, t-minus-rs, tminu
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
 - **[tool-judge](https://github.com/SuperInstance/tool-judge)** — A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa
-- **[topo-sonata](https://github.com/SuperInstance/topo-sonata)** — Topological sonata: musical form as topological space, contrapuntal voice-leading as homotopy, caden
-- **[topo-sonata-rs](https://github.com/SuperInstance/topo-sonata-rs)** — Topological analysis of musical sonata form
 - **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
+- **[tracker-ce](https://github.com/SuperInstance/tracker-ce)** — Official Polyend Tracker Community Editon for all Polyend Tracker devices.
 - **[training-throttle](https://github.com/SuperInstance/training-throttle)** — Training rate throttling and backpressure for ML pipelines
-- **[transfer-entropy](https://github.com/SuperInstance/transfer-entropy)** — transfer-entropy
 - **[trawl](https://github.com/SuperInstance/trawl)** — Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels 
-- **[treap-rs](https://github.com/SuperInstance/treap-rs)** — Treap with random priorities, split/merge operations, union, intersection, and order statistics
 - **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** — Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t
-- **[tripartite-room](https://github.com/SuperInstance/tripartite-room)** — Three innate agents per PLATO room: Ground Truth (physics), Constraint (engineer), Communication (di
 - **[tripartite-rs-archive](https://github.com/SuperInstance/tripartite-rs-archive)** — Tripartite agent council: weighted consensus engine for multi-agent LLM orchestration (Rust)
-- **[tropical-algebra](https://github.com/SuperInstance/tropical-algebra)** — Tropical algebra (max-plus semiring) with spectral analysis, polynomial roots, and ReLU network equi
-- **[tropical-attention](https://github.com/SuperInstance/tropical-attention)** — Tropical attention — max-plus softmax, tropical transformer layers, Newton polytopes, piecewise-line
-- **[tropical-attention-kernel](https://github.com/SuperInstance/tropical-attention-kernel)** — CUDA kernels: tropical (max-plus) attention and numerically-stable online-softmax attention, benchma
 - **[tropical-geometry](https://github.com/SuperInstance/tropical-geometry)** — Tropical geometry for neural network analysis: max-plus algebra, tropical polynomials, and ReLU netw
 - **[tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)** — Research-grade tropical geometry in Rust — min-plus/max-plus semirings, Newton polytopes, tropical c
 - **[tropical-graph](https://github.com/SuperInstance/tropical-graph)** — Tropical algebra graph algorithms for SuperInstance
