@@ -1,6 +1,6 @@
 # Index by Language
 
-**Generated:** 2026-11-06 12:42 UTC
+**Generated:** 2026-11-07 11:29 UTC
 **Total repos:** 2000
 
 ## C
@@ -589,7 +589,6 @@
 - **[ternary-trust](https://github.com/SuperInstance/ternary-trust)** — ternary-trust: Trust and relationship dynamics between agents
 - **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
 - **[tripartite-rs-archive](https://github.com/SuperInstance/tripartite-rs-archive)** — Tripartite agent council: weighted consensus engine for multi-agent LLM orchestration (Rust)
-- **[tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)** — Research-grade tropical geometry in Rust — min-plus/max-plus semirings, Newton polytopes, tropical c
 - **[trust-ledger](https://github.com/SuperInstance/trust-ledger)**
 - **[usemeter-archive](https://github.com/SuperInstance/usemeter-archive)** — Usage metering and billing aggregation library (Rust)
 - **[wal-journal](https://github.com/SuperInstance/wal-journal)** — Research-grade Rust crate
@@ -725,6 +724,7 @@
 - **[classroom](https://github.com/SuperInstance/classroom)** — One artefact, many agents, one shared record — a git.pp classroom: turns, patches, overrides, nothin
 - **[claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)** — Claude Code workhorse vessel with experience journal and task delegation
 - **[claw-extensions](https://github.com/SuperInstance/claw-extensions)**
+- **[cloudflare-code](https://github.com/SuperInstance/cloudflare-code)** — Cloudflare code examples.
 - **[cns-echo](https://github.com/SuperInstance/cns-echo)** — CNS echo agent — receives USCP signals, echoes back with analysis
 - **[cns-substrate](https://github.com/SuperInstance/cns-substrate)** — CNS bus with substrate cell integration. Every USCP packet = substrate cell with prev_hash chain.
 - **[coach-player](https://github.com/SuperInstance/coach-player)** — Coach Player: a coachable auto-player grown by questions, frontier gaps and taste. Question database
@@ -969,6 +969,7 @@
 - **[ideation-games](https://github.com/SuperInstance/ideation-games)**
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **[image-distillation-loop-jev](https://github.com/SuperInstance/image-distillation-loop-jev)** — Wesley learns to generate images via JEV-Diffusion (LLM-as-GAN, no image generator).
+- **[imagegen1](https://github.com/SuperInstance/imagegen1)** — AI-powered image generation tool for text prompts.
 - **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** — Integration guides and documentation
 - **[intent-inference](https://github.com/SuperInstance/intent-inference)** — Intent Inference Engine — reverse-engineers productive lane from user behavior. Part of Cocapn rever
 - **[intuition](https://github.com/SuperInstance/intuition)** — Intuition — contrast-pair phantom verdict analysis, v-JEPA2 training
@@ -1036,6 +1037,7 @@
 - **[madlibs-gan-npm](https://github.com/SuperInstance/madlibs-gan-npm)** — MADLIBS-GAN: higher-abstraction Madlibs for AI paradigms.
 - **[madlibs-jev](https://github.com/SuperInstance/madlibs-jev)** — SuperInstance fleet wave-67
 - **[magda-core-study](https://github.com/SuperInstance/magda-core-study)**
+- **[makerlog-ai](https://github.com/SuperInstance/makerlog-ai)** — AI tools for tracking and analyzing Makerlog productivity.
 - **[makerlog-ai-pages](https://github.com/SuperInstance/makerlog-ai-pages)** — GitHub Pages for makerlog.ai
 - **[marine-gpu-edge](https://github.com/SuperInstance/marine-gpu-edge)** — Novel GPU edge computing for marine sensor fusion — CUDA kernels, MEP protocol, constraint-aware sch
 - **[mavis-axui-feedback](https://github.com/SuperInstance/mavis-axui-feedback)** — Mavis — bidirectional projection: workbook ↔ runtime with typed events, signed commands, polyformali
@@ -1106,7 +1108,6 @@
 - **[open-terminal](https://github.com/SuperInstance/open-terminal)** — A fork of Windows Terminal with native agent integration, right in your command line.
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
 - **[openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)** — Embedded OpenConstruct client for ESP32 microcontrollers
-- **[openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)** — Swift binding for OpenConstruct onboarding — iOS/macOS agent apps
 - **[openconstruct-zig](https://github.com/SuperInstance/openconstruct-zig)** — OpenConstruct Zig binding — thin client for agent onboarding
 - **[OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)** — A Google Colab version of the OpenManus AI.
 - **[OpenRoom](https://github.com/SuperInstance/OpenRoom)** — A browser-based desktop where AI Agent operates every app through natural language.
@@ -1313,6 +1314,7 @@
 - **[porch](https://github.com/SuperInstance/porch)** — The Quilt canon as code: porch
 - **[port-generator](https://github.com/SuperInstance/port-generator)** — Port number generator and allocator for SuperInstance services
 - **[portfolio](https://github.com/SuperInstance/portfolio)** — Preserved workspace artifact
+- **[prism](https://github.com/SuperInstance/prism)** — Data transformation library using color-coded routing
 - **[proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)** — ProArt WSL rebuild backup
 - **[products](https://github.com/SuperInstance/products)** — Preserved workspace artifact
 - **[profile-lane](https://github.com/SuperInstance/profile-lane)** — Long-running lane that grows superinstance/superinstance README via Z.AI draft + Groq audit double-e
@@ -1932,13 +1934,11 @@
 - **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** — T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration
 - **[tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)** — Heavy architectural documentation of the SuperInstance T-Minus ecosystem (t-minus, t-minus-rs, tminu
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
+- **[tmux-quilt](https://github.com/SuperInstance/tmux-quilt)**
 - **[tracker-ce](https://github.com/SuperInstance/tracker-ce)** — Official Polyend Tracker Community Editon for all Polyend Tracker devices.
 - **[training-throttle](https://github.com/SuperInstance/training-throttle)** — Training rate throttling and backpressure for ML pipelines
 - **[trawl](https://github.com/SuperInstance/trawl)** — Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels 
 - **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** — Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t
-- **[tropical-geometry](https://github.com/SuperInstance/tropical-geometry)** — Tropical geometry for neural network analysis: max-plus algebra, tropical polynomials, and ReLU netw
-- **[tropical-graph](https://github.com/SuperInstance/tropical-graph)** — Tropical algebra graph algorithms for SuperInstance
-- **[tropical-harmony-rs](https://github.com/SuperInstance/tropical-harmony-rs)** — Self-Improving Band: tropical-harmony-rs
 - **[tropical-neural](https://github.com/SuperInstance/tropical-neural)** — Tropical geometry for neural networks — max-plus semiring, tropical polynomials, Newton polytopes, t
 - **[turbovec-substrate](https://github.com/SuperInstance/turbovec-substrate)** — TurboQuant for substrate cells — 8x compression, FNV-1a prev_hash chain.
 - **[twist-engine](https://github.com/SuperInstance/twist-engine)** — Four substrates, one law: layers + deliberate offset → interference → emergence. TWIST / FLOCK / CHI

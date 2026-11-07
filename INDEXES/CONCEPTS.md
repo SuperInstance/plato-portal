@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-11-06 12:42 UTC
+**Generated:** 2026-11-07 11:29 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -159,7 +159,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-nn](https://github.com/SuperInstance/quilt-nn)
 - [quilt-transformer-arena](https://github.com/SuperInstance/quilt-transformer-arena)
 - [ternary-transformer](https://github.com/SuperInstance/ternary-transformer)
-- [tropical-geometry](https://github.com/SuperInstance/tropical-geometry)
 - [tropical-neural](https://github.com/SuperInstance/tropical-neural)
 - [zeroclaw-arena](https://github.com/SuperInstance/zeroclaw-arena)
 
@@ -523,7 +522,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [nursery](https://github.com/SuperInstance/nursery)
 - [open-terminal](https://github.com/SuperInstance/open-terminal)
 - [openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)
-- [openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)
 - [openconstruct-ts](https://github.com/SuperInstance/openconstruct-ts)
 - [openconstruct-zig](https://github.com/SuperInstance/openconstruct-zig)
 - [openrooms](https://github.com/SuperInstance/openrooms)
@@ -1322,6 +1320,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [claw](https://github.com/SuperInstance/claw)
 - [claw-extensions](https://github.com/SuperInstance/claw-extensions)
 - [clip-quantize](https://github.com/SuperInstance/clip-quantize)
+- [cloudflare-code](https://github.com/SuperInstance/cloudflare-code)
 - [cns-monitor](https://github.com/SuperInstance/cns-monitor)
 - [cns-substrate](https://github.com/SuperInstance/cns-substrate)
 - [coach-player](https://github.com/SuperInstance/coach-player)
@@ -1542,6 +1541,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [ideation-games](https://github.com/SuperInstance/ideation-games)
 - [image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)
 - [image-distillation-loop-jev](https://github.com/SuperInstance/image-distillation-loop-jev)
+- [imagegen1](https://github.com/SuperInstance/imagegen1)
 - [integration-examples](https://github.com/SuperInstance/integration-examples)
 - [intent-inference](https://github.com/SuperInstance/intent-inference)
 - [intuition](https://github.com/SuperInstance/intuition)
@@ -1610,6 +1610,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [madlibs-gan-turbovec](https://github.com/SuperInstance/madlibs-gan-turbovec)
 - [magda-core-study](https://github.com/SuperInstance/magda-core-study)
 - [magda-tensor](https://github.com/SuperInstance/magda-tensor)
+- [makerlog-ai](https://github.com/SuperInstance/makerlog-ai)
 - [makerlog-ai-pages](https://github.com/SuperInstance/makerlog-ai-pages)
 - [mavis-axui-feedback](https://github.com/SuperInstance/mavis-axui-feedback)
 - [mavis-flywheel](https://github.com/SuperInstance/mavis-flywheel)
@@ -1713,6 +1714,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [porch](https://github.com/SuperInstance/porch)
 - [port-generator](https://github.com/SuperInstance/port-generator)
 - [portfolio](https://github.com/SuperInstance/portfolio)
+- [prism](https://github.com/SuperInstance/prism)
 - [privox](https://github.com/SuperInstance/privox)
 - [proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)
 - [products](https://github.com/SuperInstance/products)
@@ -2265,13 +2267,11 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)
 - [tminus-client](https://github.com/SuperInstance/tminus-client)
 - [tminus-os](https://github.com/SuperInstance/tminus-os)
+- [tmux-quilt](https://github.com/SuperInstance/tmux-quilt)
 - [tool-judge](https://github.com/SuperInstance/tool-judge)
 - [tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)
 - [tracker-ce](https://github.com/SuperInstance/tracker-ce)
 - [trawl](https://github.com/SuperInstance/trawl)
-- [tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)
-- [tropical-graph](https://github.com/SuperInstance/tropical-graph)
-- [tropical-harmony-rs](https://github.com/SuperInstance/tropical-harmony-rs)
 - [trust-ledger](https://github.com/SuperInstance/trust-ledger)
 - [turbovec-substrate](https://github.com/SuperInstance/turbovec-substrate)
 - [typesafe-quilts](https://github.com/SuperInstance/typesafe-quilts)

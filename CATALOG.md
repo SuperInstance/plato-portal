@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-06 12:42 UTC
+**Generated:** 2026-11-07 11:29 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -681,6 +681,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)** | Various | Claude Code workhorse vessel with experience journal and task delegation | 🟢 active |
 | **[claw-extensions](https://github.com/SuperInstance/claw-extensions)** | Various | claw-extensions | ⚪ unknown |
 | **[clip-quantize](https://github.com/SuperInstance/clip-quantize)** | Various | A Rust library for Clip Quantize | ⚪ unknown |
+| **[cloudflare-code](https://github.com/SuperInstance/cloudflare-code)** | Various | Cloudflare code examples. | ⚪ unknown |
 | **[cns-bridge](https://github.com/SuperInstance/cns-bridge)** | Various | Python library that lets any agent plug into the Hermes CNS bus via USCP. | 🟢 active |
 | **[cns-echo](https://github.com/SuperInstance/cns-echo)** | Various | CNS echo agent — receives USCP signals, echoes back with analysis | 🟢 active |
 | **[cns-monitor](https://github.com/SuperInstance/cns-monitor)** | Various | Real-time CNS traffic monitor — htop for USCP signals | ⚪ unknown |
@@ -921,6 +922,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[ideation-games](https://github.com/SuperInstance/ideation-games)** | Various | ideation-games | ⚪ unknown |
 | **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** | Various | Image Distillation Loop — Wesley learns to generate images through teacher-model feedback | ⚪ unknown |
 | **[image-distillation-loop-jev](https://github.com/SuperInstance/image-distillation-loop-jev)** | Various | Wesley learns to generate images via JEV-Diffusion (LLM-as-GAN, no image generator). | ⚪ unknown |
+| **[imagegen1](https://github.com/SuperInstance/imagegen1)** | Various | AI-powered image generation tool for text prompts. | ⚪ unknown |
 | **[integration-examples](https://github.com/SuperInstance/integration-examples)** | Various | Integration examples showing how to combine the synesis crates into working apps (Rust) | ⚪ unknown |
 | **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** | Various | Integration guides and documentation | ⚪ unknown |
 | **[intuition](https://github.com/SuperInstance/intuition)** | Various | Intuition — contrast-pair phantom verdict analysis, v-JEPA2 training | ⚪ unknown |
@@ -992,6 +994,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[madlibs-jev](https://github.com/SuperInstance/madlibs-jev)** | Various | SuperInstance fleet wave-67 | ⚪ unknown |
 | **[magda-core-study](https://github.com/SuperInstance/magda-core-study)** | Various | magda-core-study | ⚪ unknown |
 | **[magda-tensor](https://github.com/SuperInstance/magda-tensor)** | Various | An open ecosystem for music production. | ⚪ unknown |
+| **[makerlog-ai](https://github.com/SuperInstance/makerlog-ai)** | Various | AI tools for tracking and analyzing Makerlog productivity. | ⚪ unknown |
 | **[mavis-axui-feedback](https://github.com/SuperInstance/mavis-axui-feedback)** | Various | Mavis — bidirectional projection: workbook ↔ runtime with typed events, signed commands, polyformali | ⚪ unknown |
 | **[mavis-erised](https://github.com/SuperInstance/mavis-erised)** | Various | Agent playground: zero-shot agents reach for tools; we capture instincts and move yokes. Foundation  | 🟢 active |
 | **[mavis-essay-scout](https://github.com/SuperInstance/mavis-essay-scout)** | Various | SuperInstance fleet tool POC (Mavis, 2026-09-28) | ⚪ unknown |
@@ -1058,7 +1061,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** | Various | Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces | 🟢 active |
 | **[openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)** | Various | Embedded OpenConstruct client for ESP32 microcontrollers | ⚪ unknown |
 | **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** | Various | Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem | 🟢 active |
-| **[openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)** | Various | Swift binding for OpenConstruct onboarding — iOS/macOS agent apps | 🟢 active |
 | **[openconstruct-ts](https://github.com/SuperInstance/openconstruct-ts)** | Various | TypeScript SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem | 🟢 active |
 | **[openconstruct-zig](https://github.com/SuperInstance/openconstruct-zig)** | Various | OpenConstruct Zig binding — thin client for agent onboarding | 🟢 active |
 | **[OpenMAIC](https://github.com/SuperInstance/OpenMAIC)** | Various | Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just o | 🟢 active |
@@ -1274,6 +1276,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[porch](https://github.com/SuperInstance/porch)** | Various | The Quilt canon as code: porch | ⚪ unknown |
 | **[port-generator](https://github.com/SuperInstance/port-generator)** | Various | Port number generator and allocator for SuperInstance services | ⚪ unknown |
 | **[portfolio](https://github.com/SuperInstance/portfolio)** | Various | Preserved workspace artifact | ⚪ unknown |
+| **[prism](https://github.com/SuperInstance/prism)** | Various | Data transformation library using color-coded routing | ⚪ unknown |
 | **[privox](https://github.com/SuperInstance/privox)** | Various | PII/PHI redaction library for LLM pipelines (Rust) | ⚪ unknown |
 | **[proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)** | Various | ProArt WSL rebuild backup | ⚪ unknown |
 | **[products](https://github.com/SuperInstance/products)** | Various | Preserved workspace artifact | ⚪ unknown |
@@ -1934,16 +1937,13 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[tminus-client](https://github.com/SuperInstance/tminus-client)** | Various | T-Minus Client SDK — Node.js client library and CLI for the t-minus dispatcher protocol | ⚪ unknown |
 | **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** | Various | T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration | 🟢 active |
 | **[tminus-os](https://github.com/SuperInstance/tminus-os)** | Various | Swarm coordination OS — wires the ecosystem into one .swarm/ directory | ⚪ unknown |
+| **[tmux-quilt](https://github.com/SuperInstance/tmux-quilt)** | Various | tmux-quilt | ⚪ unknown |
 | **[tool-judge](https://github.com/SuperInstance/tool-judge)** | Various | A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa | ⚪ unknown |
 | **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** | Various | Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif | ⚪ unknown |
 | **[tracker-ce](https://github.com/SuperInstance/tracker-ce)** | Various | Official Polyend Tracker Community Editon for all Polyend Tracker devices. | ⚪ unknown |
 | **[training-throttle](https://github.com/SuperInstance/training-throttle)** | Various | Training rate throttling and backpressure for ML pipelines | ⚪ unknown |
 | **[trawl](https://github.com/SuperInstance/trawl)** | Various | Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels  | 🟢 active |
 | **[tripartite-rs-archive](https://github.com/SuperInstance/tripartite-rs-archive)** | Various | Tripartite agent council: weighted consensus engine for multi-agent LLM orchestration (Rust) | 🟢 active |
-| **[tropical-geometry](https://github.com/SuperInstance/tropical-geometry)** | Various | Tropical geometry for neural network analysis: max-plus algebra, tropical polynomials, and ReLU netw | ⚪ unknown |
-| **[tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)** | Various | Research-grade tropical geometry in Rust — min-plus/max-plus semirings, Newton polytopes, tropical c | ⚪ unknown |
-| **[tropical-graph](https://github.com/SuperInstance/tropical-graph)** | Various | Tropical algebra graph algorithms for SuperInstance | ⚪ unknown |
-| **[tropical-harmony-rs](https://github.com/SuperInstance/tropical-harmony-rs)** | Various | Self-Improving Band: tropical-harmony-rs | ⚪ unknown |
 | **[tropical-neural](https://github.com/SuperInstance/tropical-neural)** | Various | Tropical geometry for neural networks — max-plus semiring, tropical polynomials, Newton polytopes, t | ⚪ unknown |
 | **[turbovec-substrate](https://github.com/SuperInstance/turbovec-substrate)** | Various | TurboQuant for substrate cells — 8x compression, FNV-1a prev_hash chain. | ⚪ unknown |
 | **[typesafe-quilts](https://github.com/SuperInstance/typesafe-quilts)** | Various | System One as judge: calibration battery + routing judgments + the judge protocol for quilt lanes. L | ⚪ unknown |
@@ -6228,13 +6228,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Swift binding for OpenConstruct onboarding — iOS/macOS agent apps
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 

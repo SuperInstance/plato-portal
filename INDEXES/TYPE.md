@@ -1,6 +1,6 @@
 # Index by Type
 
-**Generated:** 2026-11-06 12:42 UTC
+**Generated:** 2026-11-07 11:29 UTC
 **Total repos:** 2000
 
 ## Cli
@@ -85,6 +85,7 @@
 - **[ackermann-function](https://github.com/SuperInstance/ackermann-function)** — Ackermann function — the canonical example of a total computable, non-primitive-recursive function
 - **[algebra-explorer](https://github.com/SuperInstance/algebra-explorer)** — An interactive demo of the 4-move pipeline as algebra (F156). R ∘ D ∘ C ∘ L. Each move is a button. 
 - **[back-deck-game](https://github.com/SuperInstance/back-deck-game)** — The Back-Deck Game — gamified crew training for commercial fishing. F141-F143. Live demo.
+- **[cloudflare-code](https://github.com/SuperInstance/cloudflare-code)** — Cloudflare code examples.
 - **[constrainttheory-ml-demo](https://github.com/SuperInstance/constrainttheory-ml-demo)**
 - **[gitpp-demo-contested](https://github.com/SuperInstance/gitpp-demo-contested)** — Live demo of git.pp retraction law: a contested retraction, marked not hidden
 - **[gitpp-demo-quilt](https://github.com/SuperInstance/gitpp-demo-quilt)** — Dogfood project for the gitpp-app: a git.pp project (poc-quilt-1 records) hosted on GitHub.
@@ -680,7 +681,6 @@
 - **[open-mythos-edge](https://github.com/SuperInstance/open-mythos-edge)** — Edge-optimized OpenMythos RDT for Jetson/ARM64 — pure PyTorch, no Triton, 1B/3B variants
 - **[openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)** — GPU-accelerated edge node for OpenConstruct - local inference, camera/sonar processing, Plato shell 
 - **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** — Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
-- **[openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)** — Swift binding for OpenConstruct onboarding — iOS/macOS agent apps
 - **[openconstruct-ts](https://github.com/SuperInstance/openconstruct-ts)** — TypeScript SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
 - **[OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)** — A Google Colab version of the OpenManus AI.
 - **[openPlan3D](https://github.com/SuperInstance/openPlan3D)** — Open source 2D/3D floor plan editor built with SvelteKit and Three.js
@@ -890,6 +890,7 @@
 - **[pong-quilt](https://github.com/SuperInstance/pong-quilt)**
 - **[porch](https://github.com/SuperInstance/porch)** — The Quilt canon as code: porch
 - **[portfolio](https://github.com/SuperInstance/portfolio)** — Preserved workspace artifact
+- **[prism](https://github.com/SuperInstance/prism)** — Data transformation library using color-coded routing
 - **[privox](https://github.com/SuperInstance/privox)** — PII/PHI redaction library for LLM pipelines (Rust)
 - **[proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)** — ProArt WSL rebuild backup
 - **[products](https://github.com/SuperInstance/products)** — Preserved workspace artifact
@@ -1627,12 +1628,10 @@
 - **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** — T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration
 - **[tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)** — Heavy architectural documentation of the SuperInstance T-Minus ecosystem (t-minus, t-minus-rs, tminu
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
+- **[tmux-quilt](https://github.com/SuperInstance/tmux-quilt)**
 - **[tracker-ce](https://github.com/SuperInstance/tracker-ce)** — Official Polyend Tracker Community Editon for all Polyend Tracker devices.
 - **[training-throttle](https://github.com/SuperInstance/training-throttle)** — Training rate throttling and backpressure for ML pipelines
 - **[tripartite-rs-archive](https://github.com/SuperInstance/tripartite-rs-archive)** — Tripartite agent council: weighted consensus engine for multi-agent LLM orchestration (Rust)
-- **[tropical-geometry](https://github.com/SuperInstance/tropical-geometry)** — Tropical geometry for neural network analysis: max-plus algebra, tropical polynomials, and ReLU netw
-- **[tropical-graph](https://github.com/SuperInstance/tropical-graph)** — Tropical algebra graph algorithms for SuperInstance
-- **[tropical-harmony-rs](https://github.com/SuperInstance/tropical-harmony-rs)** — Self-Improving Band: tropical-harmony-rs
 - **[tropical-neural](https://github.com/SuperInstance/tropical-neural)** — Tropical geometry for neural networks — max-plus semiring, tropical polynomials, Newton polytopes, t
 - **[trust-ledger](https://github.com/SuperInstance/trust-ledger)**
 - **[turbovec-integration-ccc](https://github.com/SuperInstance/turbovec-integration-ccc)** — TurboVec integration for CCC — vector acceleration primitives for constraint computation
@@ -1765,7 +1764,6 @@
 - **[symmetry-math-npm](https://github.com/SuperInstance/symmetry-math-npm)** — Mathematics of symmetry — group theory, wallpaper groups, orbit-stabilizer, Burnside lemma. npm inst
 - **[the-technician](https://github.com/SuperInstance/the-technician)** — The Technician Paradigm — white papers on physical AI systems, edge robotics, and technician trainin
 - **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
-- **[tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)** — Research-grade tropical geometry in Rust — min-plus/max-plus semirings, Newton polytopes, tropical c
 - **[wal-journal](https://github.com/SuperInstance/wal-journal)** — Research-grade Rust crate
 - **[young-tableau-rs](https://github.com/SuperInstance/young-tableau-rs)** — Research-grade Rust crate
 
@@ -1896,8 +1894,10 @@
 - **[gitpp-conformance-report](https://github.com/SuperInstance/gitpp-conformance-report)** — A polished single-page HTML report on cross-port byte-equivalence for the git.pp fold. 7 ports, 1000
 - **[gitpp-fold-conformance](https://github.com/SuperInstance/gitpp-fold-conformance)** — Cross-port FOLD conformance for the git.pp spec. Tests fold semantics (ancestry, precedence, orphans
 - **[hermes-home](https://github.com/SuperInstance/hermes-home)** — Hermes's runtime home — SOUL, agents, CNS monitors, cron bridges. The nervous system's identity and 
+- **[imagegen1](https://github.com/SuperInstance/imagegen1)** — AI-powered image generation tool for text prompts.
 - **[logtensor](https://github.com/SuperInstance/logtensor)** — Geometric tensor transformers — missile-guidance-inspired attention mechanics and decomposition tool
 - **[lucineer-workspace](https://github.com/SuperInstance/lucineer-workspace)** — Lucineer workspace: process, decisions, and structured knowledge from the zero-shot visitor audit, t
+- **[makerlog-ai](https://github.com/SuperInstance/makerlog-ai)** — AI tools for tracking and analyzing Makerlog productivity.
 - **[mavis-essay-scout](https://github.com/SuperInstance/mavis-essay-scout)** — SuperInstance fleet tool POC (Mavis, 2026-09-28)
 - **[mavis-pincher](https://github.com/SuperInstance/mavis-pincher)** — SuperInstance fleet tool POC (Mavis, 2026-09-28)
 - **[mavis-pincher-pages](https://github.com/SuperInstance/mavis-pincher-pages)** — SuperInstance fleet tool POC (Mavis, 2026-09-28)

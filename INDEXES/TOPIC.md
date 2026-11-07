@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-11-06 12:42 UTC
+**Generated:** 2026-11-07 11:29 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -112,7 +112,6 @@
 - **[quilt-nn](https://github.com/SuperInstance/quilt-nn)** — Neural nets as quilt cell graphs — weights, gradients and SGD steps are cells; every epoch receipted
 - **[quilt-transformer-arena](https://github.com/SuperInstance/quilt-transformer-arena)** — Adversarial GAN lane: quilt-transformer paradigm — archival canvas + disposable workers. claude/crus
 - **[ternary-transformer](https://github.com/SuperInstance/ternary-transformer)** — ternary-transformer - SuperInstance ecosystem crate
-- **[tropical-geometry](https://github.com/SuperInstance/tropical-geometry)** — Tropical geometry for neural network analysis: max-plus algebra, tropical polynomials, and ReLU netw
 - **[tropical-neural](https://github.com/SuperInstance/tropical-neural)** — Tropical geometry for neural networks — max-plus semiring, tropical polynomials, Newton polytopes, t
 
 ## Eisenstein
@@ -384,7 +383,6 @@
 - **[open-terminal](https://github.com/SuperInstance/open-terminal)** — A fork of Windows Terminal with native agent integration, right in your command line.
 - **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — Agent onboarding platform — plug-and-play shell commands to create fully functional agent workspaces
 - **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** — Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
-- **[openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)** — Swift binding for OpenConstruct onboarding — iOS/macOS agent apps
 - **[openconstruct-ts](https://github.com/SuperInstance/openconstruct-ts)** — TypeScript SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
 - **[openconstruct-zig](https://github.com/SuperInstance/openconstruct-zig)** — OpenConstruct Zig binding — thin client for agent onboarding
 - **[opensmile-bridge](https://github.com/SuperInstance/opensmile-bridge)** — Modular OpenSMILE bridge for fleet voice feature extraction. WebSocket server, MIDI CC mapping, I2I 
@@ -1023,6 +1021,7 @@
 - **[claw](https://github.com/SuperInstance/claw)** — A simple Claw engine for cellular logic in spreadsheet instances within a superinstance/spreadsheet-
 - **[claw-extensions](https://github.com/SuperInstance/claw-extensions)**
 - **[clip-quantize](https://github.com/SuperInstance/clip-quantize)** — A Rust library for Clip Quantize
+- **[cloudflare-code](https://github.com/SuperInstance/cloudflare-code)** — Cloudflare code examples.
 - **[cns-monitor](https://github.com/SuperInstance/cns-monitor)** — Real-time CNS traffic monitor — htop for USCP signals
 - **[cns-substrate](https://github.com/SuperInstance/cns-substrate)** — CNS bus with substrate cell integration. Every USCP packet = substrate cell with prev_hash chain.
 - **[coach-player](https://github.com/SuperInstance/coach-player)** — Coach Player: a coachable auto-player grown by questions, frontier gaps and taste. Question database
@@ -1251,6 +1250,7 @@
 - **[ideation-games](https://github.com/SuperInstance/ideation-games)**
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **[image-distillation-loop-jev](https://github.com/SuperInstance/image-distillation-loop-jev)** — Wesley learns to generate images via JEV-Diffusion (LLM-as-GAN, no image generator).
+- **[imagegen1](https://github.com/SuperInstance/imagegen1)** — AI-powered image generation tool for text prompts.
 - **[integration-examples](https://github.com/SuperInstance/integration-examples)** — Integration examples showing how to combine the synesis crates into working apps (Rust)
 - **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** — Integration guides and documentation
 - **[intent-inference](https://github.com/SuperInstance/intent-inference)** — Intent Inference Engine — reverse-engineers productive lane from user behavior. Part of Cocapn rever
@@ -1320,6 +1320,7 @@
 - **[madlibs-gan-turbovec](https://github.com/SuperInstance/madlibs-gan-turbovec)** — Madlibs-GAN + TurboQuant paradigm memory. Similar past games inform new ones.
 - **[magda-core-study](https://github.com/SuperInstance/magda-core-study)**
 - **[magda-tensor](https://github.com/SuperInstance/magda-tensor)** — An open ecosystem for music production.
+- **[makerlog-ai](https://github.com/SuperInstance/makerlog-ai)** — AI tools for tracking and analyzing Makerlog productivity.
 - **[makerlog-ai-pages](https://github.com/SuperInstance/makerlog-ai-pages)** — GitHub Pages for makerlog.ai
 - **[mavis-axui-feedback](https://github.com/SuperInstance/mavis-axui-feedback)** — Mavis — bidirectional projection: workbook ↔ runtime with typed events, signed commands, polyformali
 - **[mavis-flywheel](https://github.com/SuperInstance/mavis-flywheel)** — Automated research loop with multi-LLM verification. When N LLMs agree, the answer is canon.
@@ -1427,6 +1428,7 @@
 - **[porch](https://github.com/SuperInstance/porch)** — The Quilt canon as code: porch
 - **[port-generator](https://github.com/SuperInstance/port-generator)** — Port number generator and allocator for SuperInstance services
 - **[portfolio](https://github.com/SuperInstance/portfolio)** — Preserved workspace artifact
+- **[prism](https://github.com/SuperInstance/prism)** — Data transformation library using color-coded routing
 - **[privox](https://github.com/SuperInstance/privox)** — PII/PHI redaction library for LLM pipelines (Rust)
 - **[proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)** — ProArt WSL rebuild backup
 - **[products](https://github.com/SuperInstance/products)** — Preserved workspace artifact
@@ -1988,13 +1990,11 @@
 - **[tit_quilt_elixir](https://github.com/SuperInstance/tit_quilt_elixir)**
 - **[tminus-client](https://github.com/SuperInstance/tminus-client)** — T-Minus Client SDK — Node.js client library and CLI for the t-minus dispatcher protocol
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
+- **[tmux-quilt](https://github.com/SuperInstance/tmux-quilt)**
 - **[tool-judge](https://github.com/SuperInstance/tool-judge)** — A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa
 - **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
 - **[tracker-ce](https://github.com/SuperInstance/tracker-ce)** — Official Polyend Tracker Community Editon for all Polyend Tracker devices.
 - **[trawl](https://github.com/SuperInstance/trawl)** — Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels 
-- **[tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)** — Research-grade tropical geometry in Rust — min-plus/max-plus semirings, Newton polytopes, tropical c
-- **[tropical-graph](https://github.com/SuperInstance/tropical-graph)** — Tropical algebra graph algorithms for SuperInstance
-- **[tropical-harmony-rs](https://github.com/SuperInstance/tropical-harmony-rs)** — Self-Improving Band: tropical-harmony-rs
 - **[trust-ledger](https://github.com/SuperInstance/trust-ledger)**
 - **[turbovec-substrate](https://github.com/SuperInstance/turbovec-substrate)** — TurboQuant for substrate cells — 8x compression, FNV-1a prev_hash chain.
 - **[typesafe-quilts](https://github.com/SuperInstance/typesafe-quilts)** — System One as judge: calibration battery + routing judgments + the judge protocol for quilt lanes. L

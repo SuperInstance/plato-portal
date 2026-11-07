@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-11-06 12:42 UTC
+**Generated:** 2026-11-07 11:29 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -189,6 +189,7 @@
 - **[claw](https://github.com/SuperInstance/claw)** — A simple Claw engine for cellular logic in spreadsheet instances within a superinstance/spreadsheet-
 - **[claw-extensions](https://github.com/SuperInstance/claw-extensions)**
 - **[clip-quantize](https://github.com/SuperInstance/clip-quantize)** — A Rust library for Clip Quantize
+- **[cloudflare-code](https://github.com/SuperInstance/cloudflare-code)** — Cloudflare code examples.
 - **[cns-bridge](https://github.com/SuperInstance/cns-bridge)** — Python library that lets any agent plug into the Hermes CNS bus via USCP.
 - **[cns-echo](https://github.com/SuperInstance/cns-echo)** — CNS echo agent — receives USCP signals, echoes back with analysis
 - **[cns-monitor](https://github.com/SuperInstance/cns-monitor)** — Real-time CNS traffic monitor — htop for USCP signals
@@ -591,6 +592,7 @@
 - **[ideation-games](https://github.com/SuperInstance/ideation-games)**
 - **[image-distillation-loop](https://github.com/SuperInstance/image-distillation-loop)** — Image Distillation Loop — Wesley learns to generate images through teacher-model feedback
 - **[image-distillation-loop-jev](https://github.com/SuperInstance/image-distillation-loop-jev)** — Wesley learns to generate images via JEV-Diffusion (LLM-as-GAN, no image generator).
+- **[imagegen1](https://github.com/SuperInstance/imagegen1)** — AI-powered image generation tool for text prompts.
 - **[integration-examples](https://github.com/SuperInstance/integration-examples)** — Integration examples showing how to combine the synesis crates into working apps (Rust)
 - **[INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)** — Integration guides and documentation
 - **[intent-directed-compilation](https://github.com/SuperInstance/intent-directed-compilation)** — Semantic criticality → instruction-level precision: AVX-512 mixed-precision constraint checking with
@@ -682,6 +684,7 @@
 - **[madlibs-jev](https://github.com/SuperInstance/madlibs-jev)** — SuperInstance fleet wave-67
 - **[magda-core-study](https://github.com/SuperInstance/magda-core-study)**
 - **[magda-tensor](https://github.com/SuperInstance/magda-tensor)** — An open ecosystem for music production.
+- **[makerlog-ai](https://github.com/SuperInstance/makerlog-ai)** — AI tools for tracking and analyzing Makerlog productivity.
 - **[makerlog-ai-pages](https://github.com/SuperInstance/makerlog-ai-pages)** — GitHub Pages for makerlog.ai
 - **[marine-gpu-edge](https://github.com/SuperInstance/marine-gpu-edge)** — Novel GPU edge computing for marine sensor fusion — CUDA kernels, MEP protocol, constraint-aware sch
 - **[mavis-axui-feedback](https://github.com/SuperInstance/mavis-axui-feedback)** — Mavis — bidirectional projection: workbook ↔ runtime with typed events, signed commands, polyformali
@@ -771,7 +774,6 @@
 - **[openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)** — Embedded OpenConstruct client for ESP32 microcontrollers
 - **[openconstruct-jetson](https://github.com/SuperInstance/openconstruct-jetson)** — GPU-accelerated edge node for OpenConstruct - local inference, camera/sonar processing, Plato shell 
 - **[openconstruct-rust](https://github.com/SuperInstance/openconstruct-rust)** — Rust SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
-- **[openconstruct-swift](https://github.com/SuperInstance/openconstruct-swift)** — Swift binding for OpenConstruct onboarding — iOS/macOS agent apps
 - **[openconstruct-ts](https://github.com/SuperInstance/openconstruct-ts)** — TypeScript SDK for OpenConstruct — agent onboarding for the SuperInstance ecosystem
 - **[openconstruct-zig](https://github.com/SuperInstance/openconstruct-zig)** — OpenConstruct Zig binding — thin client for agent onboarding
 - **[OpenMAIC](https://github.com/SuperInstance/OpenMAIC)** — Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just o
@@ -1035,6 +1037,7 @@
 - **[porch](https://github.com/SuperInstance/porch)** — The Quilt canon as code: porch
 - **[port-generator](https://github.com/SuperInstance/port-generator)** — Port number generator and allocator for SuperInstance services
 - **[portfolio](https://github.com/SuperInstance/portfolio)** — Preserved workspace artifact
+- **[prism](https://github.com/SuperInstance/prism)** — Data transformation library using color-coded routing
 - **[privox](https://github.com/SuperInstance/privox)** — PII/PHI redaction library for LLM pipelines (Rust)
 - **[proart-wsl-backup](https://github.com/SuperInstance/proart-wsl-backup)** — ProArt WSL rebuild backup
 - **[products](https://github.com/SuperInstance/products)** — Preserved workspace artifact
@@ -1899,6 +1902,7 @@
 - **[tminus-dispatcher](https://github.com/SuperInstance/tminus-dispatcher)** — T-Minus Cue Dispatcher — temporal heartbeat for distributed cognitive agent orchestration
 - **[tminus-ecosystem-review](https://github.com/SuperInstance/tminus-ecosystem-review)** — Heavy architectural documentation of the SuperInstance T-Minus ecosystem (t-minus, t-minus-rs, tminu
 - **[tminus-os](https://github.com/SuperInstance/tminus-os)** — Swarm coordination OS — wires the ecosystem into one .swarm/ directory
+- **[tmux-quilt](https://github.com/SuperInstance/tmux-quilt)**
 - **[tool-judge](https://github.com/SuperInstance/tool-judge)** — A permission layer that knows what your project is: scoped grants, deterministic rails, advisory goa
 - **[tracer-rs-archive](https://github.com/SuperInstance/tracer-rs-archive)** — Research/design package for an OpenTelemetry-lite distributed tracing library for Rust. Slice-of-lif
 - **[tracker-ce](https://github.com/SuperInstance/tracker-ce)** — Official Polyend Tracker Community Editon for all Polyend Tracker devices.
@@ -1906,10 +1910,6 @@
 - **[trawl](https://github.com/SuperInstance/trawl)** — Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels 
 - **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** — Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t
 - **[tripartite-rs-archive](https://github.com/SuperInstance/tripartite-rs-archive)** — Tripartite agent council: weighted consensus engine for multi-agent LLM orchestration (Rust)
-- **[tropical-geometry](https://github.com/SuperInstance/tropical-geometry)** — Tropical geometry for neural network analysis: max-plus algebra, tropical polynomials, and ReLU netw
-- **[tropical-geometry-rs](https://github.com/SuperInstance/tropical-geometry-rs)** — Research-grade tropical geometry in Rust — min-plus/max-plus semirings, Newton polytopes, tropical c
-- **[tropical-graph](https://github.com/SuperInstance/tropical-graph)** — Tropical algebra graph algorithms for SuperInstance
-- **[tropical-harmony-rs](https://github.com/SuperInstance/tropical-harmony-rs)** — Self-Improving Band: tropical-harmony-rs
 - **[tropical-neural](https://github.com/SuperInstance/tropical-neural)** — Tropical geometry for neural networks — max-plus semiring, tropical polynomials, Newton polytopes, t
 - **[trust-ledger](https://github.com/SuperInstance/trust-ledger)**
 - **[turbovec-integration-ccc](https://github.com/SuperInstance/turbovec-integration-ccc)** — TurboVec integration for CCC — vector acceleration primitives for constraint computation
