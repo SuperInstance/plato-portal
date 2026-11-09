@@ -1,6 +1,6 @@
 # Index by Topic
 
-**Generated:** 2026-11-08 11:41 UTC
+**Generated:** 2026-11-09 13:36 UTC
 **Total repos:** 2000
 
 ## A2A
@@ -112,7 +112,6 @@
 - **[quilt-nn](https://github.com/SuperInstance/quilt-nn)** — Neural nets as quilt cell graphs — weights, gradients and SGD steps are cells; every epoch receipted
 - **[quilt-transformer-arena](https://github.com/SuperInstance/quilt-transformer-arena)** — Adversarial GAN lane: quilt-transformer paradigm — archival canvas + disposable workers. claude/crus
 - **[ternary-transformer](https://github.com/SuperInstance/ternary-transformer)** — ternary-transformer - SuperInstance ecosystem crate
-- **[tropical-neural](https://github.com/SuperInstance/tropical-neural)** — Tropical geometry for neural networks — max-plus semiring, tropical polynomials, Newton polytopes, t
 
 ## Eisenstein
 
@@ -1140,6 +1139,7 @@
 - **[F5-TTS](https://github.com/SuperInstance/F5-TTS)** — Official code for "F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching"
 - **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)**
 - **[falcon-7b-tools](https://github.com/SuperInstance/falcon-7b-tools)** — A Rust library for Falcon 7b Tools
+- **[falcon-hash](https://github.com/SuperInstance/falcon-hash)** — Falcon hash: FNV-1a rolling hash and hash combiner utilities
 - **[fallback-strategy](https://github.com/SuperInstance/fallback-strategy)** — A Rust library for Fallback Strategy
 - **[FastGen4quilt](https://github.com/SuperInstance/FastGen4quilt)** — NVIDIA FastGen: Fast Generation from Diffusion Models
 - **[feature-flag](https://github.com/SuperInstance/feature-flag)** — A Rust library for Feature Flag

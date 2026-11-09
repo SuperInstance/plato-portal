@@ -1,6 +1,6 @@
 # Index by Realm
 
-**Generated:** 2026-11-08 11:41 UTC
+**Generated:** 2026-11-09 13:36 UTC
 **Total repos:** 2000
 
 ## Infrastructure
@@ -374,6 +374,7 @@
 - **[F5-TTS](https://github.com/SuperInstance/F5-TTS)** — Official code for "F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching"
 - **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)**
 - **[falcon-7b-tools](https://github.com/SuperInstance/falcon-7b-tools)** — A Rust library for Falcon 7b Tools
+- **[falcon-hash](https://github.com/SuperInstance/falcon-hash)** — Falcon hash: FNV-1a rolling hash and hash combiner utilities
 - **[fallback-strategy](https://github.com/SuperInstance/fallback-strategy)** — A Rust library for Fallback Strategy
 - **[FastGen4quilt](https://github.com/SuperInstance/FastGen4quilt)** — NVIDIA FastGen: Fast Generation from Diffusion Models
 - **[feature-flag](https://github.com/SuperInstance/feature-flag)** — A Rust library for Feature Flag
@@ -1910,7 +1911,6 @@
 - **[trawl](https://github.com/SuperInstance/trawl)** — Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels 
 - **[trinity-marine-station](https://github.com/SuperInstance/trinity-marine-station)** — Trinity: agentic-first marine navigation station. Phase 1 - sensory ingestion foundation (Signal K t
 - **[tripartite-rs-archive](https://github.com/SuperInstance/tripartite-rs-archive)** — Tripartite agent council: weighted consensus engine for multi-agent LLM orchestration (Rust)
-- **[tropical-neural](https://github.com/SuperInstance/tropical-neural)** — Tropical geometry for neural networks — max-plus semiring, tropical polynomials, Newton polytopes, t
 - **[trust-ledger](https://github.com/SuperInstance/trust-ledger)**
 - **[turbovec-integration-ccc](https://github.com/SuperInstance/turbovec-integration-ccc)** — TurboVec integration for CCC — vector acceleration primitives for constraint computation
 - **[turbovec-substrate](https://github.com/SuperInstance/turbovec-substrate)** — TurboQuant for substrate cells — 8x compression, FNV-1a prev_hash chain.

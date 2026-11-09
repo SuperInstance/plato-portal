@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-08 11:41 UTC
+**Generated:** 2026-11-09 13:36 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -811,6 +811,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[F5-TTS](https://github.com/SuperInstance/F5-TTS)** | Various | Official code for "F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching" | ⚪ unknown |
 | **[fabric-mcp](https://github.com/SuperInstance/fabric-mcp)** | Various | fabric-mcp | ⚪ unknown |
 | **[falcon-7b-tools](https://github.com/SuperInstance/falcon-7b-tools)** | Various | A Rust library for Falcon 7b Tools | ⚪ unknown |
+| **[falcon-hash](https://github.com/SuperInstance/falcon-hash)** | Various | Falcon hash: FNV-1a rolling hash and hash combiner utilities | ⚪ unknown |
 | **[fallback-strategy](https://github.com/SuperInstance/fallback-strategy)** | Various | A Rust library for Fallback Strategy | ⚪ unknown |
 | **[FastGen4quilt](https://github.com/SuperInstance/FastGen4quilt)** | Various | NVIDIA FastGen: Fast Generation from Diffusion Models | ⚪ unknown |
 | **[feature-flag](https://github.com/SuperInstance/feature-flag)** | Various | A Rust library for Feature Flag | ⚪ unknown |
@@ -1944,7 +1945,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[training-throttle](https://github.com/SuperInstance/training-throttle)** | Various | Training rate throttling and backpressure for ML pipelines | ⚪ unknown |
 | **[trawl](https://github.com/SuperInstance/trawl)** | Various | Commercial fishing on Working Animal Architecture — routes are pastures, quotas are fences, vessels  | 🟢 active |
 | **[tripartite-rs-archive](https://github.com/SuperInstance/tripartite-rs-archive)** | Various | Tripartite agent council: weighted consensus engine for multi-agent LLM orchestration (Rust) | 🟢 active |
-| **[tropical-neural](https://github.com/SuperInstance/tropical-neural)** | Various | Tropical geometry for neural networks — max-plus semiring, tropical polynomials, Newton polytopes, t | ⚪ unknown |
 | **[turbovec-substrate](https://github.com/SuperInstance/turbovec-substrate)** | Various | TurboQuant for substrate cells — 8x compression, FNV-1a prev_hash chain. | ⚪ unknown |
 | **[typesafe-quilts](https://github.com/SuperInstance/typesafe-quilts)** | Various | System One as judge: calibration battery + routing judgments + the judge protocol for quilt lanes. L | ⚪ unknown |
 | **[UniRL](https://github.com/SuperInstance/UniRL)** | Various | UniRL is a Framework for Unified Multimodal Model Reinforcement Learning | ⚪ unknown |

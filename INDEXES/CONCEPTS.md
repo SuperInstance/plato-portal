@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-11-08 11:41 UTC
+**Generated:** 2026-11-09 13:36 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -159,7 +159,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [quilt-nn](https://github.com/SuperInstance/quilt-nn)
 - [quilt-transformer-arena](https://github.com/SuperInstance/quilt-transformer-arena)
 - [ternary-transformer](https://github.com/SuperInstance/ternary-transformer)
-- [tropical-neural](https://github.com/SuperInstance/tropical-neural)
 - [zeroclaw-arena](https://github.com/SuperInstance/zeroclaw-arena)
 
 ## Eisenstein
@@ -1433,6 +1432,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [f170-federated-tinyml-paper](https://github.com/SuperInstance/f170-federated-tinyml-paper)
 - [fabric-mcp](https://github.com/SuperInstance/fabric-mcp)
 - [falcon-7b-tools](https://github.com/SuperInstance/falcon-7b-tools)
+- [falcon-hash](https://github.com/SuperInstance/falcon-hash)
 - [fallback-strategy](https://github.com/SuperInstance/fallback-strategy)
 - [feature-flag](https://github.com/SuperInstance/feature-flag)
 - [federated-tinyml-npm](https://github.com/SuperInstance/federated-tinyml-npm)
