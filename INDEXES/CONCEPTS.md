@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-11-09 13:36 UTC
+**Generated:** 2026-11-10 13:14 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -77,6 +77,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [constraint-theory-mojo](https://github.com/SuperInstance/constraint-theory-mojo)
 - [constraint-theory-papers](https://github.com/SuperInstance/constraint-theory-papers)
 - [constraint-theory-py](https://github.com/SuperInstance/constraint-theory-py)
+- [constraint-theory-research](https://github.com/SuperInstance/constraint-theory-research)
 - [constrainttheory-ml-demo](https://github.com/SuperInstance/constrainttheory-ml-demo)
 - [cuda-constraint-engine](https://github.com/SuperInstance/cuda-constraint-engine)
 - [fleet-constraint](https://github.com/SuperInstance/fleet-constraint)
@@ -106,7 +107,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [si-runtime-js](https://github.com/SuperInstance/si-runtime-js)
 - [si-runtime-zig](https://github.com/SuperInstance/si-runtime-zig)
 - [si-variational-agent](https://github.com/SuperInstance/si-variational-agent)
-- [turbovec-integration-ccc](https://github.com/SuperInstance/turbovec-integration-ccc)
 - [warp-flux-poc](https://github.com/SuperInstance/warp-flux-poc)
 
 ## Crdt
@@ -276,7 +276,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [spacedrive](https://github.com/SuperInstance/spacedrive)
 - [storage-guardian](https://github.com/SuperInstance/storage-guardian)
 - [tagseq2tagseq4quilt](https://github.com/SuperInstance/tagseq2tagseq4quilt)
-- [uv-cache-guardian](https://github.com/SuperInstance/uv-cache-guardian)
 
 ## H1 Cohomology
 
@@ -822,8 +821,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [spline-physics](https://github.com/SuperInstance/spline-physics)
 - [spring-mass](https://github.com/SuperInstance/spring-mass)
 - [swarm-tminus](https://github.com/SuperInstance/swarm-tminus)
-- [vector-clock](https://github.com/SuperInstance/vector-clock)
-- [vector-clock-rs](https://github.com/SuperInstance/vector-clock-rs)
 - [zhc-yang-mills](https://github.com/SuperInstance/zhc-yang-mills)
 
 ## Plato
@@ -1202,9 +1199,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [FastGen4quilt](https://github.com/SuperInstance/FastGen4quilt)
 - [Full-stack-Free-Movie-Streaming-Website](https://github.com/SuperInstance/Full-stack-Free-Movie-Streaming-Website)
 - [INTEGRATION_GUIDES](https://github.com/SuperInstance/INTEGRATION_GUIDES)
+- [Lucineer](https://github.com/SuperInstance/Lucineer)
 - [MCPMempool-quilt](https://github.com/SuperInstance/MCPMempool-quilt)
 - [MicroMoth-quilt](https://github.com/SuperInstance/MicroMoth-quilt)
-- [OpenManus-colab](https://github.com/SuperInstance/OpenManus-colab)
 - [Otherhere](https://github.com/SuperInstance/Otherhere)
 - [Projectionist](https://github.com/SuperInstance/Projectionist)
 - [Quilt-Robotic-Arm---Gesture-Controlled](https://github.com/SuperInstance/Quilt-Robotic-Arm---Gesture-Controlled)
@@ -1237,6 +1234,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [adinkra-math-pypi](https://github.com/SuperInstance/adinkra-math-pypi)
 - [ai-smart-notifications-archive](https://github.com/SuperInstance/ai-smart-notifications-archive)
 - [ai-writings-vectorizer](https://github.com/SuperInstance/ai-writings-vectorizer)
+- [air-architecture](https://github.com/SuperInstance/air-architecture)
 - [albanese-variety](https://github.com/SuperInstance/albanese-variety)
 - [algebra-explorer](https://github.com/SuperInstance/algebra-explorer)
 - [alphabet](https://github.com/SuperInstance/alphabet)
@@ -1316,6 +1314,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [chrono-tensor](https://github.com/SuperInstance/chrono-tensor)
 - [circuit-breaker-archive](https://github.com/SuperInstance/circuit-breaker-archive)
 - [claude-code-vessel](https://github.com/SuperInstance/claude-code-vessel)
+- [claudeflare-archive](https://github.com/SuperInstance/claudeflare-archive)
 - [claw](https://github.com/SuperInstance/claw)
 - [claw-extensions](https://github.com/SuperInstance/claw-extensions)
 - [clip-quantize](https://github.com/SuperInstance/clip-quantize)
@@ -1332,7 +1331,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [coding-3d](https://github.com/SuperInstance/coding-3d)
 - [coev](https://github.com/SuperInstance/coev)
 - [cog-lab](https://github.com/SuperInstance/cog-lab)
+- [cognitemill](https://github.com/SuperInstance/cognitemill)
 - [cognitive-ecology](https://github.com/SuperInstance/cognitive-ecology)
+- [cognitivemell](https://github.com/SuperInstance/cognitivemell)
 - [collaborative-realtime-drawing-system-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt)
 - [collective-unconscious](https://github.com/SuperInstance/collective-unconscious)
 - [color-squad](https://github.com/SuperInstance/color-squad)
@@ -1385,6 +1386,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [diff-myers](https://github.com/SuperInstance/diff-myers)
 - [diff-patch](https://github.com/SuperInstance/diff-patch)
 - [diff-patience](https://github.com/SuperInstance/diff-patience)
+- [diff-shepherd](https://github.com/SuperInstance/diff-shepherd)
 - [dirichlet-process](https://github.com/SuperInstance/dirichlet-process)
 - [disjoint-set](https://github.com/SuperInstance/disjoint-set)
 - [dmlog-ai-pages](https://github.com/SuperInstance/dmlog-ai-pages)
@@ -1600,6 +1602,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [lucineer-com-site](https://github.com/SuperInstance/lucineer-com-site)
 - [lucineer-creative](https://github.com/SuperInstance/lucineer-creative)
 - [lucineer-memory](https://github.com/SuperInstance/lucineer-memory)
+- [lucineer-minecraft](https://github.com/SuperInstance/lucineer-minecraft)
 - [lucineer-relay](https://github.com/SuperInstance/lucineer-relay)
 - [lucineer-roblox](https://github.com/SuperInstance/lucineer-roblox)
 - [lucineer-system](https://github.com/SuperInstance/lucineer-system)
@@ -1661,7 +1664,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [open-mythos-edge](https://github.com/SuperInstance/open-mythos-edge)
 - [openPlan3D](https://github.com/SuperInstance/openPlan3D)
 - [openconstruct-esp32](https://github.com/SuperInstance/openconstruct-esp32)
-- [openshell-compatibility-audit](https://github.com/SuperInstance/openshell-compatibility-audit)
 - [operational-fiction](https://github.com/SuperInstance/operational-fiction)
 - [optimal-control](https://github.com/SuperInstance/optimal-control)
 - [optimization-algorithms](https://github.com/SuperInstance/optimization-algorithms)
@@ -2175,6 +2177,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [superinstance-design-system](https://github.com/SuperInstance/superinstance-design-system)
 - [superinstance-embedder](https://github.com/SuperInstance/superinstance-embedder)
 - [superinstance-lab](https://github.com/SuperInstance/superinstance-lab)
+- [superinstance-planning](https://github.com/SuperInstance/superinstance-planning)
 - [svelte-quilt](https://github.com/SuperInstance/svelte-quilt)
 - [sweep](https://github.com/SuperInstance/sweep)
 - [symmetry-math-npm](https://github.com/SuperInstance/symmetry-math-npm)
@@ -2275,12 +2278,9 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [trust-ledger](https://github.com/SuperInstance/trust-ledger)
 - [turbovec-substrate](https://github.com/SuperInstance/turbovec-substrate)
 - [typesafe-quilts](https://github.com/SuperInstance/typesafe-quilts)
-- [universe-chain](https://github.com/SuperInstance/universe-chain)
 - [unoq-node](https://github.com/SuperInstance/unoq-node)
 - [urban-transportation-system](https://github.com/SuperInstance/urban-transportation-system)
 - [usemeter-archive](https://github.com/SuperInstance/usemeter-archive)
-- [venue-personality](https://github.com/SuperInstance/venue-personality)
-- [vessel](https://github.com/SuperInstance/vessel)
 - [vessel-bridge](https://github.com/SuperInstance/vessel-bridge)
 - [vessel-constellation](https://github.com/SuperInstance/vessel-constellation)
 - [vessel-monitor](https://github.com/SuperInstance/vessel-monitor)
