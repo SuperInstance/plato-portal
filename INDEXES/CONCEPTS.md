@@ -1,6 +1,6 @@
 # Concept Index
 
-**Generated:** 2026-11-14 11:56 UTC
+**Generated:** 2026-11-15 12:28 UTC
 
 Fleet concepts organized by topic. Each concept links to the repos that implement it.
 
@@ -523,7 +523,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [openconstruct-ts](https://github.com/SuperInstance/openconstruct-ts)
 - [openconstruct-zig](https://github.com/SuperInstance/openconstruct-zig)
 - [openrooms](https://github.com/SuperInstance/openrooms)
-- [opensmile-bridge](https://github.com/SuperInstance/opensmile-bridge)
 - [optimal-transport-agents-rs](https://github.com/SuperInstance/optimal-transport-agents-rs)
 - [optimal-transport-rs](https://github.com/SuperInstance/optimal-transport-rs)
 - [oracle-relay](https://github.com/SuperInstance/oracle-relay)
@@ -777,7 +776,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [vessel-agent](https://github.com/SuperInstance/vessel-agent)
 - [vessel-agent-system](https://github.com/SuperInstance/vessel-agent-system)
 - [vessel-prototype](https://github.com/SuperInstance/vessel-prototype)
-- [vibe-graph](https://github.com/SuperInstance/vibe-graph)
 - [voxelglyph](https://github.com/SuperInstance/voxelglyph)
 - [wardroom](https://github.com/SuperInstance/wardroom)
 - [warp](https://github.com/SuperInstance/warp)
@@ -1135,7 +1133,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [fleet-coordinate-js](https://github.com/SuperInstance/fleet-coordinate-js)
 - [holonomy-consensus](https://github.com/SuperInstance/holonomy-consensus)
 - [intercontext-map](https://github.com/SuperInstance/intercontext-map)
-- [openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)
 - [pythagorean-quantize](https://github.com/SuperInstance/pythagorean-quantize)
 - [pythagorean48](https://github.com/SuperInstance/pythagorean48)
 - [snap-lut](https://github.com/SuperInstance/snap-lut)
@@ -1364,6 +1361,10 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [cqrs-framework](https://github.com/SuperInstance/cqrs-framework)
 - [cra-analysis](https://github.com/SuperInstance/cra-analysis)
 - [crab-cell](https://github.com/SuperInstance/crab-cell)
+- [craftmind-curator](https://github.com/SuperInstance/craftmind-curator)
+- [craftmind-league](https://github.com/SuperInstance/craftmind-league)
+- [craftmind-steward](https://github.com/SuperInstance/craftmind-steward)
+- [craftmind-world](https://github.com/SuperInstance/craftmind-world)
 - [credential-store](https://github.com/SuperInstance/credential-store)
 - [cuckoo-filter](https://github.com/SuperInstance/cuckoo-filter)
 - [cycle-judge](https://github.com/SuperInstance/cycle-judge)
@@ -1622,6 +1623,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [mavis-skill-miner](https://github.com/SuperInstance/mavis-skill-miner)
 - [mavis-substrate-walker](https://github.com/SuperInstance/mavis-substrate-walker)
 - [mavis-tfm](https://github.com/SuperInstance/mavis-tfm)
+- [mcp-verbs](https://github.com/SuperInstance/mcp-verbs)
 - [mentis-superinstance](https://github.com/SuperInstance/mentis-superinstance)
 - [mentis-thinker-adapter](https://github.com/SuperInstance/mentis-thinker-adapter)
 - [midden](https://github.com/SuperInstance/midden)
@@ -1654,6 +1656,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [night-city](https://github.com/SuperInstance/night-city)
 - [nmea-bridge](https://github.com/SuperInstance/nmea-bridge)
 - [nmea-quilt-cell](https://github.com/SuperInstance/nmea-quilt-cell)
+- [npc-town](https://github.com/SuperInstance/npc-town)
 - [nursery-v2](https://github.com/SuperInstance/nursery-v2)
 - [observation-primitive](https://github.com/SuperInstance/observation-primitive)
 - [observation-primitive-rs](https://github.com/SuperInstance/observation-primitive-rs)
@@ -2137,6 +2140,7 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [stock-screener](https://github.com/SuperInstance/stock-screener)
 - [stream-curator](https://github.com/SuperInstance/stream-curator)
 - [streamer](https://github.com/SuperInstance/streamer)
+- [studies](https://github.com/SuperInstance/studies)
 - [study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)
 - [study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)
 - [studylog-ai-pages](https://github.com/SuperInstance/studylog-ai-pages)
@@ -2282,15 +2286,12 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [urban-transportation-system](https://github.com/SuperInstance/urban-transportation-system)
 - [usemeter-archive](https://github.com/SuperInstance/usemeter-archive)
 - [vessel-bridge](https://github.com/SuperInstance/vessel-bridge)
-- [vessel-constellation](https://github.com/SuperInstance/vessel-constellation)
 - [vessel-monitor](https://github.com/SuperInstance/vessel-monitor)
 - [vessel-quest](https://github.com/SuperInstance/vessel-quest)
 - [vetcheck](https://github.com/SuperInstance/vetcheck)
-- [vibe-core](https://github.com/SuperInstance/vibe-core)
 - [vibe-protocol](https://github.com/SuperInstance/vibe-protocol)
 - [vibe-world](https://github.com/SuperInstance/vibe-world)
 - [vision](https://github.com/SuperInstance/vision)
-- [vocabularies](https://github.com/SuperInstance/vocabularies)
 - [voronoi-traditions](https://github.com/SuperInstance/voronoi-traditions)
 - [voxel-logic](https://github.com/SuperInstance/voxel-logic)
 - [voxelworks](https://github.com/SuperInstance/voxelworks)
@@ -2356,7 +2357,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [hermes-roblox-construct](https://github.com/SuperInstance/hermes-roblox-construct)
 - [mavis-tap-pulse](https://github.com/SuperInstance/mavis-tap-pulse)
 - [mist-voice](https://github.com/SuperInstance/mist-voice)
-- [opensmile-bridge](https://github.com/SuperInstance/opensmile-bridge)
 - [plato-uidl](https://github.com/SuperInstance/plato-uidl)
 - [plato-vessel-technician](https://github.com/SuperInstance/plato-vessel-technician)
 - [plato-voice](https://github.com/SuperInstance/plato-voice)
@@ -2375,7 +2375,6 @@ Fleet concepts organized by topic. Each concept links to the repos that implemen
 - [voice-games](https://github.com/SuperInstance/voice-games)
 - [voice-note-app](https://github.com/SuperInstance/voice-note-app)
 - [voice-reflex-gate](https://github.com/SuperInstance/voice-reflex-gate)
-- [voice-signature-tool](https://github.com/SuperInstance/voice-signature-tool)
 
 ## Zhc
 

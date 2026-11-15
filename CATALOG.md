@@ -1,5 +1,5 @@
 # Fleet Catalog
-**Generated:** 2026-11-14 11:56 UTC
+**Generated:** 2026-11-15 12:28 UTC
 **Total repositories:** 2000
 A detailed catalog of every repo in the SuperInstance organization — what it does, who built it, what it evolved from, and its current status.
 ---
@@ -734,6 +734,10 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[cqrs-framework](https://github.com/SuperInstance/cqrs-framework)** | Various | A Rust library for Cqrs Framework | ⚪ unknown |
 | **[cra-analysis](https://github.com/SuperInstance/cra-analysis)** | Various | Deep analysis of the SuperInstance CRA + Quilt + casting-call projects. Multiple LLMs, multiple ques | ⚪ unknown |
 | **[crab-traps](https://github.com/SuperInstance/crab-traps)** | CCC, Oracle1 | Chatbot prompts (lures) that generate PLATO tiles by walking agents through the MUD environment. | 🟢 active |
+| **[craftmind-curator](https://github.com/SuperInstance/craftmind-curator)** | Various | craftmind-curator | ⚪ unknown |
+| **[craftmind-league](https://github.com/SuperInstance/craftmind-league)** | Various | craftmind-league | ⚪ unknown |
+| **[craftmind-steward](https://github.com/SuperInstance/craftmind-steward)** | Various | craftmind-steward | ⚪ unknown |
+| **[craftmind-world](https://github.com/SuperInstance/craftmind-world)** | Various | craftmind-world | ⚪ unknown |
 | **[CrashPilot](https://github.com/SuperInstance/CrashPilot)** | Various | Our SSL Robot Controller | ⚪ unknown |
 | **[crdt-gcounter](https://github.com/SuperInstance/crdt-gcounter)** | Various | A Rust library for Crdt Gcounter | 🟢 active |
 | **[crdt-gset](https://github.com/SuperInstance/crdt-gset)** | Various | A Rust library for Crdt Gset | 🟢 active |
@@ -1015,6 +1019,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[mavis-substrate-walker](https://github.com/SuperInstance/mavis-substrate-walker)** | Various | A substrate-agnostic walker for the Quilt. STITCH/WITNESS/PROMOTE primitives. The walker that walks  | ⚪ unknown |
 | **[mavis-tap-pulse](https://github.com/SuperInstance/mavis-tap-pulse)** | Various | Tap pulse: generates canon via chord-validated 3-voice pulses. Encapsulates the taps creative-break  | ⚪ unknown |
 | **[mavis-tfm](https://github.com/SuperInstance/mavis-tfm)** | Various | Mavis TFM/SFM — Time-First and Simulation-First Models for cell-based systems. | ⚪ unknown |
+| **[mcp-verbs](https://github.com/SuperInstance/mcp-verbs)** | Various | mcp-verbs | ⚪ unknown |
 | **[MCPMempool-quilt](https://github.com/SuperInstance/MCPMempool-quilt)** | Various | Auto-Scalable MCPMempool Manager that handles Priority Based Scheduling, built for everyday use. | ⚪ unknown |
 | **[mentis-superinstance](https://github.com/SuperInstance/mentis-superinstance)** | Various | A mental world model for the constant thinker — SuperInstance-native fork of Mentis | ⚪ unknown |
 | **[mentis-thinker-adapter](https://github.com/SuperInstance/mentis-thinker-adapter)** | Various | Mental World Modeling layer for the SuperInstance constant thinker | ⚪ unknown |
@@ -1057,6 +1062,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[night-city](https://github.com/SuperInstance/night-city)** | Various | 3D website game featuring cyberpunk-themed city filled with easter-eggs and references to the develo | ⚪ unknown |
 | **[nmea-bridge](https://github.com/SuperInstance/nmea-bridge)** | Various | nmea-bridge | ⚪ unknown |
 | **[nmea-quilt-cell](https://github.com/SuperInstance/nmea-quilt-cell)** | Various | NMEA 0183 gateway -> append-only journal cell. Byte-exact replay, kill -9 crash canary, receipts inc | ⚪ unknown |
+| **[npc-town](https://github.com/SuperInstance/npc-town)** | Various | npc-town | ⚪ unknown |
 | **[nursery](https://github.com/SuperInstance/nursery)** | Various | Anti-GAN breeding framework: selective breeding of agent children on the zero platform | 🟢 active |
 | **[nursery-v2](https://github.com/SuperInstance/nursery-v2)** | Various | Nursery v2: rebuilt with pattern corrections - tokens, debts, recomputable lineage | ⚪ unknown |
 | **[nv-uefi-unlocker](https://github.com/SuperInstance/nv-uefi-unlocker)** | Various | UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust): | ⚪ unknown |
@@ -1072,8 +1078,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[openconstruct-zig](https://github.com/SuperInstance/openconstruct-zig)** | Various | OpenConstruct Zig binding — thin client for agent onboarding | 🟢 active |
 | **[OpenMAIC](https://github.com/SuperInstance/OpenMAIC)** | Various | Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just o | 🟢 active |
 | **[openPlan3D](https://github.com/SuperInstance/openPlan3D)** | Various | Open source 2D/3D floor plan editor built with SvelteKit and Three.js | ⚪ unknown |
-| **[openshell-pythagorean48](https://github.com/SuperInstance/openshell-pythagorean48)** | Various | OpenShell wrapper re-exporting pythagorean48-codes (48-directional trust encoding) | ⚪ unknown |
-| **[opensmile-bridge](https://github.com/SuperInstance/opensmile-bridge)** | Various | Modular OpenSMILE bridge for fleet voice feature extraction. WebSocket server, MIDI CC mapping, I2I  | ⚪ unknown |
 | **[operational-fiction](https://github.com/SuperInstance/operational-fiction)** | Various | operational-fiction | ⚪ unknown |
 | **[optimal-control](https://github.com/SuperInstance/optimal-control)** | Various | Optimal control in Rust. From LQR to HJB. | ⚪ unknown |
 | **[optimal-transport-agents-rs](https://github.com/SuperInstance/optimal-transport-agents-rs)** | Various | Wasserstein distance and optimal transport between agent distributions — Sinkhorn algorithm, JKO gra | 🟢 active |
@@ -1786,6 +1790,7 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[stigmergy](https://github.com/SuperInstance/stigmergy)** | Various | Bio-inspired indirect coordination — pheromone signals, trail following, swarm intelligence for dece | 🟢 active |
 | **[stream-curator](https://github.com/SuperInstance/stream-curator)** | Various | Content in, judgment out — gold/shit scoring, nudges, and taste distillation | ⚪ unknown |
 | **[streamer](https://github.com/SuperInstance/streamer)** | Various | Audio streaming muxer with scheduling and crossfades | ⚪ unknown |
+| **[studies](https://github.com/SuperInstance/studies)** | Various | studies | ⚪ unknown |
 | **[study-smartcomponent](https://github.com/SuperInstance/study-smartcomponent)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
 | **[study-weird-roblox-ai](https://github.com/SuperInstance/study-weird-roblox-ai)** | Various | Auto-created for sync 2026-08-13 | ⚪ unknown |
 | **[subleq-fabric](https://github.com/SuperInstance/subleq-fabric)** | Various | Single-instruction execution substrate (SUBLEQ): code is an integer array, self-healing is a conditi | ⚪ unknown |
@@ -1959,21 +1964,16 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 | **[vector-novelty](https://github.com/SuperInstance/vector-novelty)** | Various | Vector novelty detection — identifying novel patterns in high-dimensional agent embeddings | 🟢 active |
 | **[vessel-agent](https://github.com/SuperInstance/vessel-agent)** | Various | Holistic vessel-agent system for F/V EILEEN - Commercial fishing data capture, analysis, and intelli | 🟢 active |
 | **[vessel-agent-system](https://github.com/SuperInstance/vessel-agent-system)** | Various | Vessel intelligence OS for commercial fishing vessels (F/V EILEEN, Southeast Alaska). BMAD methodolo | 🟢 active |
-| **[vessel-constellation](https://github.com/SuperInstance/vessel-constellation)** | Various | 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, a | 🟢 active |
 | **[vessel-monitor](https://github.com/SuperInstance/vessel-monitor)** | Various | Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and i | 🟢 active |
 | **[vessel-quest](https://github.com/SuperInstance/vessel-quest)** | Various | The boat is the game engine. The sea is the level designer. The logbook is the quest log. The scoreb | 🟢 active |
 | **[vessel-room-navigator](https://github.com/SuperInstance/vessel-room-navigator)** | Various | Your boat as a navigable 3D web space — ScummVM meets Google Street View. Walk rooms, warp instantly | 🟢 active |
 | **[vetcheck](https://github.com/SuperInstance/vetcheck)** | Various | Vetcheck: model health monitoring as veterinary care | ⚪ unknown |
-| **[vibe-core](https://github.com/SuperInstance/vibe-core)** | Various | 16-dim vibe embeddings — standalone but composable primitive for the Grand Pattern | ⚪ unknown |
-| **[vibe-graph](https://github.com/SuperInstance/vibe-graph)** | Various | Vibe-graph social network analysis for SuperInstance agents | 🟢 active |
 | **[vibe-protocol](https://github.com/SuperInstance/vibe-protocol)** | Various | vibe-protocol | ⚪ unknown |
 | **[vibe-world](https://github.com/SuperInstance/vibe-world)** | Various | Vibe world project | ⚪ unknown |
 | **[vision](https://github.com/SuperInstance/vision)** | Various | vision | ⚪ unknown |
-| **[vocabularies](https://github.com/SuperInstance/vocabularies)** | Various | Preserved workspace artifact | ⚪ unknown |
 | **[voice-games](https://github.com/SuperInstance/voice-games)** | Various | Voice games: Sitka Skies flight + COLOR SQUAD RTS + tournament demo — proof of concept for voice-com | ⚪ unknown |
 | **[voice-note-app](https://github.com/SuperInstance/voice-note-app)** | Various | voice-note-app | ⚪ unknown |
 | **[voice-reflex-gate](https://github.com/SuperInstance/voice-reflex-gate)** | Various | STT output as hash key for deterministic response routing — the voice reflex gate. | ⚪ unknown |
-| **[voice-signature-tool](https://github.com/SuperInstance/voice-signature-tool)** | Various | Zero-dependency voice signature analyzer — analyze any text against 10 anchor points and find matchi | ⚪ unknown |
 | **[voronoi-traditions](https://github.com/SuperInstance/voronoi-traditions)** | Various | Voronoi tessellation of musical tradition parameter space | ⚪ unknown |
 | **[voxel-logic](https://github.com/SuperInstance/voxel-logic)** | Various | Logic engine for voxel data structures and 3D simulations. | ⚪ unknown |
 | **[voxelglyph](https://github.com/SuperInstance/voxelglyph)** | Various | What a voxel agent can read through Syzygy's text encoding: a provable rank-one luma ceiling, and th | 🟢 active |
@@ -7176,13 +7176,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
-### [vessel-constellation](https://github.com/SuperInstance/vessel-constellation)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** 4 vessels as N-body gravitational system with leapfrog integration, angular momentum conservation, and Lagrange point detection
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
 ### [vessel-monitor](https://github.com/SuperInstance/vessel-monitor)
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
@@ -7201,13 +7194,6 @@ A detailed catalog of every repo in the SuperInstance organization — what it d
 - **Domain:** Other / Uncategorized
 - **Vessel:** Various
 - **Purpose:** Your boat as a navigable 3D web space — ScummVM meets Google Street View. Walk rooms, warp instantly, monitor cameras, design mockups. Three.js, ESP32
-- **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
-- **Status:** active
-
-### [vibe-graph](https://github.com/SuperInstance/vibe-graph)
-- **Domain:** Other / Uncategorized
-- **Vessel:** Various
-- **Purpose:** Vibe-graph social network analysis for SuperInstance agents
 - **Research lineage:** Auto-categorized. Part of the AI agents ecosystem.
 - **Status:** active
 
